@@ -15,7 +15,7 @@ struct MainView: View {
     
     var body: some View {
         TabView{
-            Text("Hidden Women")
+            WomanView(woman: Woman(name: "Ada", birthYear: "1900"))
                 .tabItem {
                     VStack {
                         Image(systemName: "heart.circle")
