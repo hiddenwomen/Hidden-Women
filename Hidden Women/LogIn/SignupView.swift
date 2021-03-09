@@ -12,9 +12,11 @@ struct SignupView: View {
     @AppStorage ("userID") var userID = ""
 
     @Binding var currentPage: Page
+    
     @State var email = ""
     @State var password = ""
     @State var repeatedPassword = ""
+    
     @State var showErrorAlert = false
     @State var errorMessage = ""
     

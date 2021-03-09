@@ -16,7 +16,7 @@
 		F58710C025F761F500B47462 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F58710BF25F761F500B47462 /* Podfile */; };
 		F5A9822E25F769C1005EB566 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9822D25F769C1005EB566 /* LoginView.swift */; };
 		F5A9823825F7722C005EB566 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9823725F7722C005EB566 /* SignupView.swift */; };
-		F5A9823C25F77814005EB566 /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9823B25F77814005EB566 /* GamesView.swift */; };
+		F5A9823C25F77814005EB566 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9823B25F77814005EB566 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		F58710BF25F761F500B47462 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		F5A9822D25F769C1005EB566 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F5A9823725F7722C005EB566 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
-		F5A9823B25F77814005EB566 /* GamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
+		F5A9823B25F77814005EB566 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +119,7 @@
 		F5A9823A25F777E5005EB566 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				F5A9823B25F77814005EB566 /* GamesView.swift */,
+				F5A9823B25F77814005EB566 /* MainView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -241,7 +241,7 @@
 			files = (
 				F5A9823825F7722C005EB566 /* SignupView.swift in Sources */,
 				F5A9822E25F769C1005EB566 /* LoginView.swift in Sources */,
-				F5A9823C25F77814005EB566 /* GamesView.swift in Sources */,
+				F5A9823C25F77814005EB566 /* MainView.swift in Sources */,
 				F58710AF25F7611C00B47462 /* ContentView.swift in Sources */,
 				F58710AD25F7611C00B47462 /* Hidden_WomenApp.swift in Sources */,
 			);

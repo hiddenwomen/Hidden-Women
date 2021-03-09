@@ -18,14 +18,14 @@ struct ContentView: View {
     @State var currentPage: Page = .login
     
     var body: some View {
-        VStack {
-        if currentPage == .login {
-            LoginView(currentPage: $currentPage)
-        } else if currentPage == .signup {
-            SignupView(currentPage: $currentPage)
-        } else {
-            GamesView(currentPage: $currentPage)
-        }
+        Group {
+            if currentPage == .login {
+                LoginView(currentPage: $currentPage)
+            } else if currentPage == .signup {
+                SignupView(currentPage: $currentPage)
+            } else {
+                MainView(currentPage: $currentPage)
+            }
         }
         .onAppear {
             if userID == "" {

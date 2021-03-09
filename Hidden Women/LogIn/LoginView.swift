@@ -12,6 +12,7 @@ struct LoginView: View {
     @AppStorage ("userID") var userID = ""
     
     @Binding var currentPage: Page
+    
     @State var email = ""
     @State var password = ""
     @State var showErrorAlert = false
@@ -19,6 +20,7 @@ struct LoginView: View {
     
     var body: some View {
         VStack {
+            Text("LOGO")
             TextField("Email...", text: $email)
             SecureField("Password...", text: $password)
             Button(action: signin) {
