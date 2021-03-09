@@ -15,6 +15,13 @@ struct MainView: View {
     
     var body: some View {
         TabView{
+            Text("Hidden Women")
+                .tabItem {
+                    VStack {
+                        Image(systemName: "heart.circle")
+                        Text("Hidden Women")
+                    }
+                }
             VStack {
                 Text(userID)
                 Button(action: {
