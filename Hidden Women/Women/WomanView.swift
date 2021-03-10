@@ -19,10 +19,16 @@ struct WomanView: View {
                 .font(.title)
             Text("\(woman.birthYear) - \(woman.deathYear)")
             Text(woman.nationalities.localized.joined(separator: ", "))
-            Image(woman.pictures[0])
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 150, height: 200)
+            TabView {
+                ForEach(woman.pictures, id: \.self) { picture in
+                    Image(picture)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 150, height: 200)
+                }
+            }
+            .tabViewStyle(PageTabViewStyle())
+            .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
             Text(woman.fields.localized.joined(separator: ", "))
             ForEach(woman.achievements.localized, id: \.self) { achievement in
                 Text(achievement)
@@ -52,41 +58,41 @@ struct WomanView_Previews: PreviewProvider {
         ],
         fields: [
             "en": [
-              "Mathematician",
-              "Writer",
-              "Programmer"
+                "Mathematician",
+                "Writer",
+                "Programmer"
             ],
             "es": [
-              "Matemática",
-              "Escritora",
-              "Programadora"
+                "Matemática",
+                "Escritora",
+                "Programadora"
             ],
             "ca": [
-              "Matemàtica",
-              "Escritora",
-              "Programadora"
+                "Matemàtica",
+                "Escritora",
+                "Programadora"
             ]
         ],
         achievements: [
             "en": [
-              "First computer programmer"
+                "First computer programmer"
             ],
             "es": [
-              "Primera persona en programar una computadora"
+                "Primera persona en programar una computadora"
             ],
             "ca": [
-              "Primera persona en programar una computadora"
+                "Primera persona en programar una computadora"
             ]
         ],
         nationalities: [
             "en": [
-              "Brittish"
+                "Brittish"
             ],
             "es": [
-              "Británica"
+                "Británica"
             ],
             "ca": [
-              "Britànica"
+                "Britànica"
             ]
         ],
         wikipedia: "Ada_Lovelace")

@@ -18,7 +18,7 @@ struct MainView: View {
             WomenView()
                 .tabItem {
                     VStack {
-                        Image(systemName: "heart.circle")
+                        Image(systemName: "magnifyingglass")
                         Text("Hidden Women")
                     }
                 }
@@ -39,6 +39,7 @@ struct MainView: View {
                 }
             }
         }
+        .accentColor(Color("Morado"))
     }
 }
 

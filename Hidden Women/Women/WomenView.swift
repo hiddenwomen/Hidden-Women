@@ -9,7 +9,7 @@ import SwiftUI
 
 struct WomenView: View {
     let women: [Woman]
-
+    
     init() {
         if let location = Bundle.main.url(forResource: "women", withExtension: "json") {
             do {
@@ -25,7 +25,7 @@ struct WomenView: View {
                 print("Error en la lectura del JSON: \(error)")
             }
         } else {
-          women = []
+            women = []
         }
     }
     
@@ -37,11 +37,18 @@ struct WomenView: View {
                         Image(woman.pictures[0])
                             .resizable()
                             .aspectRatio(contentMode: .fit)
-                            .frame(width: 30, height: 40)
-                        Text(woman.name)
+                            .frame(width: 45, height: 60)
+                            .clipShape(RoundedRectangle(cornerRadius: 8))
+                            .shadow(radius: 3, x: 3, y: 3)
+                        VStack (alignment: .leading){
+                            Text(woman.name)
+                            Text(woman.fields.localized.joined(separator: ", "))
+                                .font(.caption)
+                                .foregroundColor(.gray)
+                        }
+                        .padding(.leading, 10)
                     }
                 }
-                    
             }
         }
     }

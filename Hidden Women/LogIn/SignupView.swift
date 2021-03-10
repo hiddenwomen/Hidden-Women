@@ -10,7 +10,7 @@ import Firebase
 
 struct SignupView: View {
     @AppStorage ("userID") var userID = ""
-
+    
     @Binding var currentPage: Page
     
     @State var email = ""
@@ -21,15 +21,52 @@ struct SignupView: View {
     @State var errorMessage = ""
     
     var body: some View {
-        VStack {
-            TextField("Email...", text: $email)
-            SecureField("Password...", text: $password)
-            SecureField("Repeat password...", text: $repeatedPassword)
+        VStack (spacing: 15){
+            Image("logo_nombre")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 300, height: 300)
+            HStack {
+                Image(systemName: "envelope")
+                TextField("Email...", text: $email)
+            }
+            .frame(height: 60)
+            .padding(.horizontal, 20)
+            .background(Color("Hueso"))
+            .cornerRadius(16)
+            .padding(.horizontal, 20)
+            
+            HStack {
+                Image(systemName: "lock")
+                SecureField("Password...", text: $password)
+            }
+            .frame(height: 60)
+            .padding(.horizontal, 20)
+            .background(Color("Hueso"))
+            .cornerRadius(16)
+            .padding(.horizontal, 20)
+            
+            HStack {
+                Image(systemName: "lock")
+                SecureField("Repeat password...", text: $repeatedPassword)
+            }
+            .frame(height: 60)
+            .padding(.horizontal, 20)
+            .background(Color("Hueso"))
+            .cornerRadius(16)
+            .padding(.horizontal, 20)
+            
             Button(action: signup) {
                 Text("Sign up")
+                    .fontWeight(.bold)
+                    .padding(EdgeInsets(top: 12, leading: 40, bottom: 12, trailing: 40))
+                    .foregroundColor(Color.white)
+                    .background(Color("Morado"))
+                    .cornerRadius(10)
             }
             Button(action: {currentPage = .login}) {
                 Text("Cancel")
+                    .foregroundColor(Color("Morado"))
             }
             .alert(isPresented: $showErrorAlert) {
                 Alert(
@@ -38,6 +75,7 @@ struct SignupView: View {
                     dismissButton: .default(Text("OK"))
                 )
             }
+           Spacer()
         }
     }
     
@@ -59,18 +97,18 @@ struct SignupView: View {
                     }
                 }
             }
-            } else {
-                errorMessage = "Passwords do not match"
-                showErrorAlert = true
-        
-    }
-}
-}
-    struct SignupView_Previews: PreviewProvider {
-        @State static var page: Page = .signup
-        
-        static var previews: some View {
-            SignupView(currentPage: $page)
+        } else {
+            errorMessage = "Passwords do not match"
+            showErrorAlert = true
+            
         }
     }
+}
+struct SignupView_Previews: PreviewProvider {
+    @State static var page: Page = .signup
+    
+    static var previews: some View {
+        SignupView(currentPage: $page)
+    }
+}
 
