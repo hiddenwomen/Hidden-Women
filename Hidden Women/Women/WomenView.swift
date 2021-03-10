@@ -31,7 +31,7 @@ struct WomenView: View {
     
     var body: some View {
         NavigationView {
-            List(women){ woman in
+            List(women) { woman in
                 NavigationLink(destination: WomanView(woman: woman)) {
                     HStack {
                         Image(woman.pictures[0])
@@ -50,17 +50,13 @@ struct WomenView: View {
                     }
                 }
             }
+            .navigationBarHidden(true)
         }
     }
 }
 
-//struct WomenView_Previews: PreviewProvider {
-//    static let testWomenList = [
-//        Woman(name: "Ada", birthYear: "1900", pictures: ["Curie1"]),
-//        Woman(name: "Pepa", birthYear: "2010", pictures: ["Curie2"])
-//    ]
-//
-//    static var previews: some View {
-//        WomenView(women: testWomenList)
-//    }
-//}
+struct WomenView_Previews: PreviewProvider {
+    static var previews: some View {
+        WomenView()
+    }
+}

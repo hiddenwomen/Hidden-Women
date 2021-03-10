@@ -22,6 +22,7 @@ struct MainView: View {
                         Text("Hidden Women")
                     }
                 }
+
             VStack {
                 Text(userID)
                 Button(action: {

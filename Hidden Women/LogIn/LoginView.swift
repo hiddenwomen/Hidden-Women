@@ -19,54 +19,56 @@ struct LoginView: View {
     @State var errorMessage = ""
     
     var body: some View {
-        VStack (spacing: 15) {
-            Image("logo_nombre")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 300, height: 300)
-            HStack {
-                Image(systemName: "envelope")
-                TextField("Email...", text: $email)
-            }
-            .frame(height: 60)
-            .padding(.horizontal, 20)
-            .background(Color("Hueso"))
-            .cornerRadius(16)
-            .padding(.horizontal, 20)
-            
-            HStack {
-                Image(systemName: "lock")
-                SecureField("Password...", text: $password)
-            }
-            .frame(height: 60)
-            .padding(.horizontal, 20)
-            .background(Color("Hueso"))
-            .cornerRadius(16)
-            .padding(.horizontal, 20)
-            Button(action: signin) {
-                Text("Sign in")
-                    .fontWeight(.bold)
-                    .padding(EdgeInsets(top: 12, leading: 40, bottom: 12, trailing: 40))
-                    .foregroundColor(Color.white)
-                    .background(Color("Morado"))
-                    .cornerRadius(10)
-            }
-            .padding()
-            HStack {
-                Text("Don't have an account?")
-                Button(action: {currentPage = .signup}) {
-                    Text("Sign up")
-                        .foregroundColor(Color("Morado"))
+        ScrollView {
+            VStack (spacing: 15) {
+                Image("logo_nombre")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 300, height: 300)
+                HStack {
+                    Image(systemName: "envelope")
+                    TextField("Email...", text: $email)
                 }
+                .frame(height: 60)
+                .padding(.horizontal, 20)
+                .background(Color("Hueso"))
+                .cornerRadius(16)
+                .padding(.horizontal, 20)
+
+                HStack {
+                    Image(systemName: "lock")
+                    SecureField("Password...", text: $password)
+                }
+                .frame(height: 60)
+                .padding(.horizontal, 20)
+                .background(Color("Hueso"))
+                .cornerRadius(16)
+                .padding(.horizontal, 20)
+                Button(action: signin) {
+                    Text("Sign in")
+                        .fontWeight(.bold)
+                        .padding(EdgeInsets(top: 12, leading: 40, bottom: 12, trailing: 40))
+                        .foregroundColor(Color.white)
+                        .background(Color("Morado"))
+                        .cornerRadius(10)
+                }
+                .padding()
+                HStack {
+                    Text("Don't have an account?")
+                    Button(action: {currentPage = .signup}) {
+                        Text("Sign up")
+                            .foregroundColor(Color("Morado"))
+                    }
+                }
+                Spacer()
             }
-            Spacer()
-        }
-        .alert(isPresented: $showErrorAlert) {
-            Alert(
-                title: Text("Sign in error"),
-                message: Text(errorMessage),
-                dismissButton: .default(Text("OK"))
-            )
+            .alert(isPresented: $showErrorAlert) {
+                Alert(
+                    title: Text("Sign in error"),
+                    message: Text(errorMessage),
+                    dismissButton: .default(Text("OK"))
+                )
+            }
         }
     }
     
