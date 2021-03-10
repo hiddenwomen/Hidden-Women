@@ -11,6 +11,8 @@
 		CB746FFD25F7FC62006795BB /* WomanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB746FFC25F7FC62006795BB /* WomanView.swift */; };
 		CB74700025F7FC91006795BB /* Woman.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB746FFF25F7FC91006795BB /* Woman.swift */; };
 		CB74700325F7FEF5006795BB /* WomenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74700225F7FEF5006795BB /* WomenView.swift */; };
+		F53AA8B125F8B6D80045977A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F53AA8B325F8B6D80045977A /* Localizable.strings */; };
+		F53AA8BB25F8BD750045977A /* women.json in Resources */ = {isa = PBXBuildFile; fileRef = F53AA8BA25F8BD750045977A /* women.json */; };
 		F58710AD25F7611C00B47462 /* Hidden_WomenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58710AC25F7611C00B47462 /* Hidden_WomenApp.swift */; };
 		F58710AF25F7611C00B47462 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58710AE25F7611C00B47462 /* ContentView.swift */; };
 		F58710B125F7611D00B47462 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F58710B025F7611D00B47462 /* Assets.xcassets */; };
@@ -29,6 +31,10 @@
 		CB746FFC25F7FC62006795BB /* WomanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomanView.swift; sourceTree = "<group>"; };
 		CB746FFF25F7FC91006795BB /* Woman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Woman.swift; sourceTree = "<group>"; };
 		CB74700225F7FEF5006795BB /* WomenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomenView.swift; sourceTree = "<group>"; };
+		F53AA8B225F8B6D80045977A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F53AA8B525F8B6FA0045977A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F53AA8B725F8B7A10045977A /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F53AA8BA25F8BD750045977A /* women.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = women.json; sourceTree = "<group>"; };
 		F58710A925F7611C00B47462 /* Hidden Women.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hidden Women.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F58710AC25F7611C00B47462 /* Hidden_WomenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hidden_WomenApp.swift; sourceTree = "<group>"; };
 		F58710AE25F7611C00B47462 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,9 +87,19 @@
 			path = Women;
 			sourceTree = "<group>";
 		};
+		F53AA8B925F8BD500045977A /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F53AA8BA25F8BD750045977A /* women.json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		F58710A025F7611C00B47462 = {
 			isa = PBXGroup;
 			children = (
+				F53AA8B925F8BD500045977A /* Data */,
+				F53AA8B325F8B6D80045977A /* Localizable.strings */,
 				F58710BC25F7612D00B47462 /* GoogleService-Info.plist */,
 				F58710BF25F761F500B47462 /* Podfile */,
 				F58710AB25F7611C00B47462 /* Hidden Women */,
@@ -184,6 +200,8 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
+				ca,
 			);
 			mainGroup = F58710A025F7611C00B47462;
 			productRefGroup = F58710AA25F7611C00B47462 /* Products */;
@@ -200,9 +218,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F53AA8B125F8B6D80045977A /* Localizable.strings in Resources */,
 				F58710B425F7611D00B47462 /* Preview Assets.xcassets in Resources */,
 				F58710B125F7611D00B47462 /* Assets.xcassets in Resources */,
 				F58710C025F761F500B47462 /* Podfile in Resources */,
+				F53AA8BB25F8BD750045977A /* women.json in Resources */,
 				F58710BD25F7612D00B47462 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,11 +289,25 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		F53AA8B325F8B6D80045977A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F53AA8B225F8B6D80045977A /* en */,
+				F53AA8B525F8B6FA0045977A /* es */,
+				F53AA8B725F8B7A10045977A /* ca */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
 		F58710B625F7611D00B47462 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -335,6 +369,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

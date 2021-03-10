@@ -1,0 +1,648 @@
+[
+  {
+    "name": "Ada Lovelace",
+    "pictures": [
+      "Lovelace1",
+      "Lovelace2"
+    ],
+    "bio": {
+      "en": "Was an English mathematician and writer, chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine. She is believed by some to be the first to recognise that the machine had applications beyond pure calculation, and to have published the first algorithm intended to be carried out by such a machine. As a result, she is often regarded as the first to recognise the full potential of computers and as one of the first computer programmers.",
+      "es": "Fue una matemática y escritora inglesa, principalmente conocida por su trabajo en la computadora mecánica de propósito general propuesta por Charles Babbage, la Máquina Analítica. Algunos creen que fue la primera en reconocer que la máquina tenía aplicaciones más allá del cálculo puro, y publicó el primer algoritmo destinado a ser llevado a cabo por dicha máquina. Como resultado, a menudo se la considera la primera en reconocer todo el potencial de las computadoras y como una de las primeras programadoras de computadoras.",
+      "ca": "Va ser una matemàtica i escriptora anglesa, principalment coneguda pel seu treball en la computadora mecànica de propòsit general proposta per Charles Babbage, la Màquina Analítica. Alguns creuen que va ser la primera a reconéixer que la màquina tenia aplicacions més enllà del càlcul pur, i va publicar el primer algorisme destinat a ser dut a terme per aquesta màquina. Com a resultat, sovint se la considera la primera a reconéixer tot el potencial de les computadores i com una de les primeres programadores de computadores."
+    },
+    "birthYear": "1815",
+    "deathYear": "1852",
+    "awards": {
+      "en": [],
+      "es": [],
+      "ca": []
+    },
+    "fields": {
+      "en": [
+        "Mathematician",
+        "Writer",
+        "Programmer"
+      ],
+      "es": [
+        "Matemática",
+        "Escritora",
+        "Programadora"
+      ],
+      "ca": [
+        "Matemàtica",
+        "Escritora",
+        "Programadora"
+      ]
+    },
+    "achievements": {
+      "en": [
+        "First computer programmer"
+      ],
+      "es": [
+        "Primera persona en programar una computadora"
+      ],
+      "ca": [
+        "Primera persona en programar una computadora"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "Brittish"
+      ],
+      "es": [
+        "Británica"
+      ],
+      "ca": [
+        "Britànica"
+      ]
+    },
+    "wikipedia": "Ada_Lovelace"
+  },
+  {
+    "name": "Chien-Shiung Wu",
+    "pictures": [
+      "chiengshiungwu",
+      "chiengshiungwu2"
+    ],
+    "bio": {
+      "en": "Was a Chinese-American experimental physicist who made significant contributions in the field of nuclear physics. Wu worked on the Manhattan Project, where she helped develop the process for separating uranium into uranium-235 and uranium-238 isotopes by gaseous diffusion. She is best known for conducting the Wu experiment, which proved that parity is not conserved.\n",
+      "es": "Fue una física experimental china-estadounidense que hizo importantes contribuciones en el campo de la física nuclear. Wu trabajó en el Proyecto Manhattan, donde contribuyó a desarrollar el proceso para separar el uranio metálico en isótopos de uranio-235 y uranio-238 mediante difusión gaseosa. Es conocida por llevar a cabo el Experimento de Wu, que contradecía la ley hipotética de la conservación de la paridad.\n",
+      "ca": "Va ser una física experimental xinesa-estatunidenca que va fer importants contribucions en el camp de la física nuclear. Wu va treballar en el Projecte Manhattan, on va contribuir a desenvolupar el procés per a separar l'urani metàl·lic en isòtops d'urani-235 i urani-238 mitjançant difusió gasosa. És coneguda per dur a terme l'Experiment de Wu, que contradeia la llei hipotètica de la conservació de la paritat.\n"
+    },
+    "birthYear": "1912",
+    "deathYear": "1997",
+    "awards": {
+      "en": [],
+      "es": [],
+      "ca": []
+    },
+    "achievements": {
+      "en": [],
+      "es": [],
+      "ca": []
+    },
+    "fields": {
+      "en": [
+        "Physicist"
+      ],
+      "es": [
+        "Física"
+      ],
+      "ca": [
+        "Física"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "Chinese"
+      ],
+      "es": [
+        "China"
+      ],
+      "ca": [
+        "Xinesa"
+      ]
+    },
+    "wikipedia": "Chien-Shiung_Wu"
+  },
+  {
+    "name": "Grace Murray Hopper",
+    "pictures": [
+      "gracemurrayhopper",
+      "gracemurrayhopper2"
+    ],
+    "bio": {
+      "en": "She was an American computer scientist. One of the first programmers of the Harvard Mark I computer, she was a pioneer of computer programming who invented one of the first linkers. Hopper was the first to devise the theory of machine-independent programming languages, and the FLOW-MATIC programming language she created using this theory was later extended to create COBOL, an early high-level programming language still in use today\n",
+      "es": "Fue una científica de la computación. Una de las primeras programadoras de la computadora Harvard Mark I, fue una pionera de la programación de computadoras que inventó uno de los primeros enlazadores. Hopper fue la primera en idear la teoría de los lenguajes de programación independientes de la máquina, y el lenguaje de programación FLOW-MATIC que creó utilizando esta teoría y se amplió más tarde para crear COBOL, uno de los primeros lenguajes de programación de alto nivel que todavía se utilizan en la actualidad.\n",
+      "ca": "Va ser una científica de la computació. Una de les primeres programadores de la computadora Harvard Mark I, va ser una pionera de la programació de computadores que va inventar un dels primers enlazadores. Hopper va ser la primera a idear la teoria dels llenguatges de programació independents de la màquina, i el llenguatge de programació FLOW-MATIC que va crear utilitzant aquesta teoria i es va ampliar més tard per a crear COBOL, un dels primers llenguatges de programació d'alt nivell que encara s'utilitzen en l'actualitat.\n"
+    },
+    "birthYear": "1906",
+    "deathYear": "1992",
+    "awards": {
+      "en": [],
+      "es": [],
+      "ca": []
+    },
+    "achievements": {
+      "en": [],
+      "es": [],
+      "ca": []
+    },
+    "fields": {
+      "en": [
+        "Mathematician",
+        "Computer Scientist"
+      ],
+      "es": [
+        "Matemática",
+        "Informática"
+      ],
+      "ca": [
+        "Matemàtica",
+        "Informàtica"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "American"
+      ],
+      "es": [
+        "Norteamericana"
+      ],
+      "ca": [
+        "Nord-americana"
+      ]
+    },
+    "wikipedia": "Grace_Murray_Hopper"
+  },
+  {
+    "name": "Hedy Lamarr",
+    "pictures": [
+      "hedylamarr"
+    ],
+    "bio": {
+      "en": "Hedy Lamarr (/ˈhɛdi/, born Hedwig Eva Maria Kiesler; September or November 9, 1914[a] – January 19, 2000) was an Austrian-born American actress, inventor, and film producer. She appeared in 30 films over a 28-year career and co-invented an early version of frequency-hopping spread spectrum communication for torpedo guidance.\n",
+      "ca": "Hedy Lamarr (Viena, 9 de novembre de 1914 – Altamonte Springs, 19 de gener de 2000) nascuda Hedwig Eva Maria Kiesler, va ser una actriu, productora i inventora estatunidenca.\nDurant la Segona Guerra Mundial i amb 27 anys va registrar, juntament amb George Antheil, la patent d''un sistema secret de transmissions de ràdio que permetia saltar entre 88 freqüències diferents per a guiar per radiofreqüència els torpedes de les forces navals aliades, fent impossible la detecció per l''enemic de l''atac submarí. Lamarr i Antheil van rebre una patent dels EUA per aquesta invenció el 1942: Frequency Hopping Communication System - US patent 2,292,387- serial number 397412.[1]'\n",
+      "es": "Hedwig Eva Maria Kiesler, conocida como Hedy Lamarr (Viena, 9 de noviembre de 1914n 1​ - Casselberry, Florida, 19 de enero de 2000),1​ fue una actriz de cine e inventora austriaca. Fue inventora de la primera versión del espectro ensanchado que permitiría las comunicaciones inalámbricas de larga distancia.2\n"
+    },
+    "birthYear": "1914",
+    "deathYear": "2000",
+    "awards": {
+      "en": [
+        "Electronic Frontier Foundation's Pioneer Award"
+      ]
+    },
+    "achievements": {
+      "en": [
+        "Inventor of the frequency-hopping spread spectrum"
+      ],
+      "es": [
+        "Inventora del frequency-hopping spread spectrum"
+      ],
+      "ca": [
+        "Inventora del frequency-hopping spread spectrum"
+      ]
+    },
+    "fields": {
+      "en": [
+        "Physicist",
+        "Actress"
+      ],
+      "es": [
+        "Física",
+        "Actriz"
+      ],
+      "ca": [
+        "Física",
+        "Actriu"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "Austrian"
+      ],
+      "es": [
+        "Austriaca"
+      ],
+      "ca": [
+        "Austríaca"
+      ]
+    },
+    "wikipedia": "Hedy_Lamarr"
+  },
+  {
+    "name": "Inge Lehman",
+    "pictures": [
+      "ingelehmann"
+    ],
+    "bio": {
+      "en": "She was a Danish seismologist, known for conducting the first tests of earthquake magnitudes and their consequences. He was the first person to postulate that the inner core of the Earth is divided into two parts: a solid inner sphere and a layer of liquid consistency that surrounds the previous one, that is, the discoverer of the discontinuity that separates the outer core from the nucleus. internal, and named after him (Lehmann discontinuity).",
+      "es": "Fue una sismóloga danesa, conocida por realizar las primeras pruebas de magnitudes de sismos y sus consecuencias. Fue la primera persona en postular que el núcleo interno de la Tierra está dividido en dos partes: una esfera interna sólida y una capa de consistencia líquida que envuelve a la anterior, es decir, la descubridora de la discontinuidad que separa el núcleo externo del núcleo interno, y que lleva su nombre en su honor (discontinuidad de Lehmann).",
+      "ca": "Va ser una sismòloga danesa, coneguda per realitzar les primeres proves de magnituds de sismes i les seues conseqüències. Va ser la primera persona a postular que el nucli intern de la Terra està dividit en dues parts: una esfera interna sòlida i una capa de consistència líquida que embolica a l'anterior, és a dir, la descobridora de la discontinuïtat que separa el nucli extern del nucli intern, i que porta el seu nom en el seu honor (discontinuïtat de Lehmann)."
+    },
+    "birthYear": "1888",
+    "deathYear": "1993",
+    "awards": {
+      "en": [],
+      "es": [],
+      "ca": []
+    },
+    "achievements": {
+      "en": [
+        "Conducted first tests of earthquake magnitudes",
+        "Postulated that the earth core is divided in tw parts: a solid sphere and a liquid layer"
+      ],
+      "es": [
+        "Dirigió las primeras pruebas de magnitud de terremoto",
+        "Postuló que el núcleo de la tierra se dividía en dos partes: una esfera sólida y una capa líquida"
+      ],
+      "ca": [
+        "Va dirigir les primeres proves de magnitud de terratrèmol",
+        "Va postular que el nucli de la terra es divideix en dues parts: una esfera i una capa líquida"
+      ]
+    },
+    "fields": {
+      "en": [
+        "Sismologist"
+      ],
+      "es": [
+        "Sismóloga"
+      ],
+      "ca": [
+        "Sismòloga"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "Danish"
+      ],
+      "es": [
+        "Danesa"
+      ],
+      "ca": [
+        "Danesa"
+      ]
+    },
+    "wikipedia": "Inge_Lehman"
+  },
+  {
+    "name": "Lise Meitner",
+    "pictures": [
+      "lisemeitner",
+      "lisemeitner2"
+    ],
+    "bio": {
+      "en": "Was an Austrian-Swedish physicist who contributed to the discoveries of the element protactinium and nuclear fission.\nShe was part of the team that discovered nuclear fission. Meitner provided the first explanation for nuclear fission of uranium in terms of theoretical physics. His scientific discovery, among other applications, led to reactors for the production of electricity, the nuclear weapons used in World War II and nuclear medicine. Element No. 109, Meitnerium, was named in his honor.\n",
+      "es": "Fue una física austriaca-sueca que contribuyó a los descubrimientos del elemento protoactinio y la fisión nuclear.\nFormó parte del equipo que descubrió la fisión nuclear. Meitner proporcionó la primera explicación de la fisión nuclear del uranio en términos de física teórica. Su hallazgo científico, entre otras aplicaciones, dio lugar a reactores para la producción de electricidad, a las armas nucleares empleadas en la Segunda Guerra Mundial y a la medicina nuclear. El elemento n.º 109, meitnerio, fue nombrado en su honor. \n",
+      "ca": "Va ser una física austríaca-sueca que va contribuir als descobriments de l'element protoactinio i la fissió nuclear.\nVa formar part de l'equip que va descobrir la fissió nuclear. Meitner va proporcionar la primera explicació de la fissió nuclear de l'urani en termes de física teòrica. La seua troballa científica, entre altres aplicacions, va donar lloc a reactors per a la producció d'electricitat, a les armes nuclears empleades en la Segona Guerra Mundial i a la medicina nuclear. L'element núm. 109, meitnerio, va ser nomenat en el seu honor.\n"
+    },
+    "birthYear": "1878",
+    "deathYear": "1968",
+    "awards": {
+      "en": [],
+      "es": [],
+      "ca": []
+    },
+    "achievements": {
+      "en": [],
+      "es": [],
+      "ca": []
+    },
+    "fields": {
+      "en": [
+        "Physicist"
+      ],
+      "es": [
+        "Física"
+      ],
+      "ca": [
+        "Física"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "Austrian"
+      ],
+      "es": [
+        "Austriaca"
+      ],
+      "ca": [
+        "Austríaca"
+      ]
+    },
+    "wikipedia": "Lise_Meitner"
+  },
+  {
+    "name": "Lynn Margulis",
+    "pictures": [
+      "lynnmargulis",
+      "lynnmargulis2"
+    ],
+    "bio": {
+      "en": "She was a prominent American biologist, considered one of the leading figures in the field of biological evolution, regarding the origin of eukaryotic cells. She received the Darwin-Wallace Medal.\nShe stood out for describing an important milestone in evolution, her theory of the appearance of eukaryotic cells as a consequence of the symbiotic incorporation of various prokaryotic cells (serial endosymbiosis). Later, she also postulated the hypothesis according to which symbiogenesis would be the main source of biological novelty and diversity.\n",
+      "es": "Fue una destacada bióloga estadounidense, considerada una de las principales figuras en el campo de la evolución biológica, respecto al origen de las células eucariotas.  Recibió la Medalla Darwin-Wallace.\nDestacó por describir un importante hito en la evolución, su teoría sobre la aparición de las células eucariotas como consecuencia de la incorporación simbiótica de diversas células procariotas (endosimbiosis seriada). Posteriormente, también postuló la hipótesis según la cual la simbiogénesis sería la principal fuente de la novedad y diversidad biológica.\n",
+      "ca": "Va ser una destacada biòloga estatunidenca, considerada una de les principals figures en el camp de l'evolució biològica, respecte a l'origen de les cèl·lules eucariotes. Va rebre la Medalla Darwin-Wallace.\nVa destacar per descriure una important fita en l'evolució, la seua teoria sobre l'aparició de les cèl·lules eucariotes a conseqüència de la incorporació simbiòtica de diverses cèl·lules procariotes (endosimbiosi seriada). Posteriorment, també va postular la hipòtesi segons la qual la simbiogénesis seria la principal font de la novetat i diversitat biològica.\n"
+    },
+    "birthYear": "1938",
+    "deathYear": "2011",
+    "awards": {
+      "en": [
+        "Darwin-Wallace Medal"
+      ],
+      "es": [
+        "Medalla Darwin-Wallace"
+      ],
+      "ca": [
+        "Medalla Darwin-Wallace"
+      ]
+    },
+    "achievements": {
+      "en": [
+        "Discovery of evolution of eukaryitic cells by symbiosis"
+      ],
+      "es": [
+        "Descubrimiento de la evolución de células eucariotas por simbiosis"
+      ],
+      "ca": [
+        "Descobriment de l'evolució de cel·lules eucariotes per simbiosi"
+      ]
+    },
+    "fields": {
+      "en": [
+        "Biologist"
+      ],
+      "es": [
+        "Bióloga"
+      ],
+      "ca": [
+        "Biòloga"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "American",
+        "Norteamericana",
+        "Nord-americana"
+      ]
+    },
+    "wikipedia": "Lynn_Margulis"
+  },
+  {
+    "name": "Maria Sibylla Merian",
+    "pictures": [
+      "mariasibyllamerian"
+    ],
+    "bio": {
+      "en": "She is considered one of the most important initiators of modern entomology, thanks to her detailed observations and descriptions, with her own illustrations, of the metamorphosis of butterflies. Currently the species Catasticta sibyllae, a recently described Panama lepidoptera, bears her name in honor of the contributions of Maria Sibylla Merian to Neotropical entomology.\n",
+      "es": "Es considerada como una de las más importantes iniciadoras de la entomología moderna, gracias a sus detalladas observaciones y descripciones, con ilustraciones propias, de la metamorfosis de las mariposas. Actualmente la especie Catasticta sibyllae, lepidóptera de Panamá recientemente descrita, lleva su nombre en honor a los aportes de Maria Sibylla Merian para la entomología neotropical.\n",
+      "ca": "És considerada com una de les més importants iniciadores de l'entomologia moderna, gràcies a les seues detallades observacions i descripcions, amb il·lustracions pròpies, de la metamorfosi de les papallones. Actualment l'espècie Catasticta sibyllae, lepidòptera de Panamà recentment descrita, porta el seu nom en honor a les aportacions de Maria Sibylla Merian per a l'entomologia neotropical.\n"
+    },
+    "birthYear": "1647",
+    "deathYear": "1717",
+    "awards": {
+      "en": [
+        "Naturalist"
+      ],
+      "es": [
+        "Naturalista"
+      ],
+      "ca": [
+        "Naturalista"
+      ]
+    },
+    "achievements": {
+      "en": [],
+      "es": [],
+      "ca": []
+    },
+    "fields": {
+      "en": [],
+      "es": [],
+      "ca": []
+    },
+    "nationalities": {
+      "en": [
+        "Dutch"
+      ],
+      "es": [
+        "Holandesa"
+      ],
+      "ca": [
+        "Holandesa"
+      ]
+    },
+    "wikipedia": "Maria_Sibylla_Merian"
+  },
+  {
+    "name": "Marie Curie",
+    "pictures": [
+      "Curie1",
+      "Curie2",
+    ],
+    "bio": {
+      "en": "Marie Skłodowska Curie (/ˈkjʊəri/ KEWR-ee;[3] French: [kyʁi]; Polish: [kʲiˈri]), born Maria Salomea Skłodowska (Polish: [ˈmarja salɔˈmɛa skwɔˈdɔfska]; 7 November 1867 – 4 July 1934), was a Polish and naturalized-French physicist and chemist who conducted pioneering research on radioactivity. As the first of the Curie family legacy of five Nobel Prizes, she was the first woman to win a Nobel Prize, the first and the only woman to win the Nobel Prize twice, and the only person to win the Nobel Prize in two scientific fields. She was the first woman to become a professor at the University of Paris in 1906.[4]\n",
+      "ca": "Marie Curie (?·pàg.) (pronunciació en polonès: /ˈmarja salɔˈmɛa skwɔˈdɔfska/) (Varsòvia, 7 de novembre de 1867 – Sancellemoz, 4 de juliol de 1934) va ser una física i química polonesa, pionera en els primers temps de l''estudi de les radiacions.[1][2] Va rebre el Premi Nobel de Física el 1903, juntament amb el seu marit, Pierre Curie, i Henri Becquerel, pels seus descobriments en el camp de la radioactivitat. L'any 1911 va rebre el Premi Nobel de Química per l'aïllament del radi pur.[3] Va ser la primera a emprar el terme radioactivitat.\n",
+      "es": "Maria Salomea Skłodowska-Curie,A​B​ más conocida como Marie CurieC​B​ (Varsovia, 7 de noviembre de 1867-Passy, 4 de julio de 1934), fue una científica polaca nacionalizada francesa. Pionera en el campo de la radiactividad, fue la primera persona en recibir dos premios Nobel en distintas especialidades —Física y Química—D​ y la primera mujer en ocupar el puesto de profesora en la Universidad de París. En 1995 fue sepultada con honores en el Panteón de París por méritos propios.\n"
+    },
+    "birthYear": "1867",
+    "deathYear": "1934",
+    "awards": {
+      "en": [
+        "Nobel Prize in Physics",
+        "Nobel Prize in Chemistry"
+      ],
+      "es": [
+        "Premio Nobel en Física",
+        "Premio Nobel en química"
+      ],
+      "ca": [
+        "Premi Nobel en Física",
+        "Premo Nobel en Química"
+      ]
+    },
+    "achievements": {
+      "en": [
+        "Discovery of Radium",
+        "Discovery of Polonium"
+      ],
+      "es": [
+        "Descubrimiento del Radio",
+        "Descubrimiento del Polonio"
+      ],
+      "ca": [
+        "Descubriment del Radi",
+        "Descubriment del Poloni"
+      ]
+    },
+    "fields": {
+      "en": [
+        "Physicist",
+        "Chemist"
+      ],
+      "es": [
+        "Física",
+        "Química"
+      ],
+      "ca": [
+        "Física",
+        "Química"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "Polish",
+        "French"
+      ],
+      "es": [
+        "Polaca",
+        "Francesa"
+      ],
+      "ca": [
+        "Polaca",
+        "Fracesa"
+      ]
+    },
+    "wikipedia": "Marie_Curie"
+  },
+  {
+    "name": "Mary Anning",
+    "pictures": [
+      "maryanning"
+    ],
+    "bio": {
+      "en": "She was an English fossil collector, dealer, and palaeontologist who became known around the world for finds she made in Jurassic marine fossil beds in the cliffs along the English Channel at Lyme Regis in the county of Dorset in Southwest England. Anning's findings contributed to changes in scientific thinking about prehistoric life and the history of the Earth.\n",
+      "es": "Fue una coleccionista de fósiles, comerciante y paleontóloga inglesa que se hizo conocida en todo el mundo por los hallazgos que hizo en los lechos de fósiles marinos del Jurásico en los acantilados a lo largo del Canal de la Mancha en Lyme Regis en el condado de Dorset en el suroeste de Inglaterra. Los hallazgos de Anning contribuyeron a cambios en el pensamiento científico sobre la vida prehistórica y la historia de la Tierra.\n",
+      "ca": "Va ser una col·leccionista de fòssils, comerciant i paleontòloga anglesa que es va fer coneguda a tot el món per les troballes que va fer en els llits de fòssils marins del Juràsic en els penya-segats al llarg del Canal de la Mànega en Lyme Regis en el comtat de Dorset en el sud-oest d'Anglaterra. Les troballes de Anning van contribuir a canvis en el pensament científic sobre la vida prehistòrica i la història de la Terra.\n"
+    },
+    "birthYear": "1799",
+    "deathYear": "1847",
+    "awards": {
+      "en": [],
+      "es": [],
+      "ca": []
+    },
+    "achievements": {
+      "en": [],
+      "es": [],
+      "ca": []
+    },
+    "fields": {
+      "en": [
+        "Paleontologist"
+      ],
+      "es": [
+        "Paleontóloga"
+      ],
+      "ca": [
+        "Paleontòloga"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "Brittish"
+      ],
+      "es": [
+        "Británica"
+      ],
+      "ca": [
+        "Britànica"
+      ]
+    },
+    "wikipedia": "Mary_Anning"
+  },
+  {
+    "name": "Rosalind Franklin",
+    "pictures": [
+      "rosalindfranklin",
+      "rosalindfranklin2",
+      "rosalindfranklin3"
+    ],
+    "bio": {
+      "en": "Her work with X-ray diffraction images was key in revealing the structure of carbons and graphite, as well as RNA and various viruses, although the greatest significance was his contribution to understanding the structure of DNA, thanks to the image called Photograph 51, which had a profound impact on scientific advances in genetics. Her research on the structure of carbon and viruses was recognized in life.\nHer contributions to the discovery of the structure of DNA were largely recognised posthumously.\n",
+      "ca": "Els seus treballs amb imatges per difracció de raigs X, van ser clau per a revelar l'estructura dels carbons i el grafit, així com de l'ARN i diversos virus, encara que la major transcendència la va tindre la seua aportació per a la comprensió de l'estructura de l'ADN, gràcies a la imatge anomenada Fotografia 51, que va tindre un profund impacte en els avanços científics de la genètica. Les seues investigacions sobre l'estructura del carbó i dels virus van ser reconeguts en vida.\nLes seues contribucions al descobriment de l'estructura de l'ADN van ser reconegudes pòstumament.\n",
+      "es": "Sus trabajos con imágenes por difracción de rayos X, fueron clave para revelar la estructura de los carbones y el grafito,1 así como del ARN y varios virus, aunque la mayor trascendencia la tuvo su aporte para la comprensión de la estructura del ADN, gracias a la imagen llamada Fotografía 51, que tuvo un profundo impacto en los avances científicos de la genética. Sus investigaciones sobre la estructura del carbón y de los virus fueron reconocidos en vida.\\nSus contribuciones al descubrimiento de la estructura del ADN fueron reconocidas póstumamente.\n"
+    },
+    "birthYear": "1920",
+    "deathYear": "1958",
+    "awards": {
+      "en": [
+        "Louisa Gross Horwitz Prize"
+      ],
+      "es": [
+        "Premio Louisa Gross Horwitz"
+      ],
+      "ca": [
+        "Premi Louisa Gross Horwitz"
+      ]
+    },
+    "achievements": {
+      "en": [
+        "Discovery of the structure of DNA"
+      ],
+      "es": [
+        "Descubrimiento de la estructura del ADN"
+      ],
+      "ca": [
+        "Descobriment de l'estructura de l'ADN"
+      ]
+    },
+    "fields": {
+      "en": [
+        "Chemist",
+        "Chrystallographer"
+      ],
+      "es": [
+        "Química",
+        "Cristalógrafa"
+      ],
+      "ca": [
+        "Química",
+        "Cristalógrafa"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "Brittish"
+      ],
+      "es": [
+        "Británica"
+      ],
+      "ca": [
+        "Britànica"
+      ]
+    },
+    "wikipedia": "Rosalind_Franklin"
+  },
+  {
+    "name": "Marie Sophie Germain",
+    "pictures": [
+      "mariesophiegermain"
+    ],
+    "bio": {
+      "en": "She was one of the pioneers of elasticity theory and made important contributions to number theory. One of her most important works was the study of what were later known as Sophie Germain's primes (prime numbers whose double increased by one is also a prime number).\n",
+      "es": "Fue una de las pioneras de la teoría de elasticidad e hizo importantes contribuciones a la teoría de números. Uno de sus trabajos más importantes fue el estudio de los que posteriormente fueron conocidos como números primos de Sophie Germain (números primos cuyo doble incrementado en una unidad es también un número primo).\n",
+      "ca": "Va ser una de les pioneres de la teoria d'elasticitat i va fer importants contribucions a la teoria de números. Un dels seus treballs més importants va ser l'estudi dels quals posteriorment van ser coneguts com a nombres primers de Sophie Germain (nombres primers el doble incrementat dels quals en una unitat és també un nombre primers).\n"
+    },
+    "birthYear": "1776",
+    "deathYear": "1831",
+    "awards": {
+      "en": [],
+      "es": [],
+      "ca": []
+    },
+    "achievements": {
+      "en": [],
+      "es": [],
+      "ca": []
+    },
+    "fields": {
+      "en": [
+        "Mathematician",
+        "Philosopher",
+        "Physicist"
+      ],
+      "es": [
+        "Matemática",
+        "Filósofa",
+        "Física"
+      ],
+      "ca": [
+        "Matemàtica",
+        "Filòsofa",
+        "Física"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "French"
+      ],
+      "es": [
+        "Francesa"
+      ],
+      "ca": [
+        "Francesa"
+      ]
+    },
+    "wikipedia": "Sophie_Germain"
+  }
+]
