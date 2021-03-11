@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A7EAA9C25FA535800D042E1 /* QuizGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7EAA9B25FA535800D042E1 /* QuizGenerator.swift */; };
 		A4E50323795A6145608CA25E /* Pods_Hidden_Women.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705A41B9BC21EE8F556344AD /* Pods_Hidden_Women.framework */; };
 		CB6826DE25FA172200A8190C /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6826DD25FA172200A8190C /* QuizView.swift */; };
 		CB6826E225FA173600A8190C /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6826E125FA173600A8190C /* Quiz.swift */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		458269F315DC784127169E03 /* Pods-Hidden Women.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hidden Women.release.xcconfig"; path = "Target Support Files/Pods-Hidden Women/Pods-Hidden Women.release.xcconfig"; sourceTree = "<group>"; };
+		5A7EAA9B25FA535800D042E1 /* QuizGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizGenerator.swift; sourceTree = "<group>"; };
 		705A41B9BC21EE8F556344AD /* Pods_Hidden_Women.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hidden_Women.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63F52AB8DD47CBA998CF264 /* Pods-Hidden Women.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hidden Women.debug.xcconfig"; path = "Target Support Files/Pods-Hidden Women/Pods-Hidden Women.debug.xcconfig"; sourceTree = "<group>"; };
 		CB6826DD25FA172200A8190C /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				CB6826DD25FA172200A8190C /* QuizView.swift */,
 				CB6826E125FA173600A8190C /* Quiz.swift */,
 				CB6826E425FA236200A8190C /* MultipleQuizView.swift */,
+				5A7EAA9B25FA535800D042E1 /* QuizGenerator.swift */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A7EAA9C25FA535800D042E1 /* QuizGenerator.swift in Sources */,
 				F5A9823825F7722C005EB566 /* SignupView.swift in Sources */,
 				CB6826E525FA236200A8190C /* MultipleQuizView.swift in Sources */,
 				F53AA8BE25FA04890045977A /* SearchBarView.swift in Sources */,
