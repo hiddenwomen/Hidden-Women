@@ -13,6 +13,8 @@
 		CB74700325F7FEF5006795BB /* WomenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74700225F7FEF5006795BB /* WomenView.swift */; };
 		F53AA8B125F8B6D80045977A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F53AA8B325F8B6D80045977A /* Localizable.strings */; };
 		F53AA8BB25F8BD750045977A /* women.json in Resources */ = {isa = PBXBuildFile; fileRef = F53AA8BA25F8BD750045977A /* women.json */; };
+		F53AA8BE25FA04890045977A /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53AA8BD25FA04890045977A /* SearchBarView.swift */; };
+		F53AA8C225FA0EA70045977A /* GuestWarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53AA8C125FA0EA70045977A /* GuestWarningView.swift */; };
 		F58710AD25F7611C00B47462 /* Hidden_WomenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58710AC25F7611C00B47462 /* Hidden_WomenApp.swift */; };
 		F58710AF25F7611C00B47462 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58710AE25F7611C00B47462 /* ContentView.swift */; };
 		F58710B125F7611D00B47462 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F58710B025F7611D00B47462 /* Assets.xcassets */; };
@@ -35,6 +37,8 @@
 		F53AA8B525F8B6FA0045977A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F53AA8B725F8B7A10045977A /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F53AA8BA25F8BD750045977A /* women.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = women.json; sourceTree = "<group>"; };
+		F53AA8BD25FA04890045977A /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		F53AA8C125FA0EA70045977A /* GuestWarningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestWarningView.swift; sourceTree = "<group>"; };
 		F58710A925F7611C00B47462 /* Hidden Women.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hidden Women.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F58710AC25F7611C00B47462 /* Hidden_WomenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hidden_WomenApp.swift; sourceTree = "<group>"; };
 		F58710AE25F7611C00B47462 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,6 +87,7 @@
 				CB746FFC25F7FC62006795BB /* WomanView.swift */,
 				CB746FFF25F7FC91006795BB /* Woman.swift */,
 				CB74700225F7FEF5006795BB /* WomenView.swift */,
+				F53AA8BD25FA04890045977A /* SearchBarView.swift */,
 			);
 			path = Women;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 			children = (
 				F5A9822D25F769C1005EB566 /* LoginView.swift */,
 				F5A9823725F7722C005EB566 /* SignupView.swift */,
+				F53AA8C125FA0EA70045977A /* GuestWarningView.swift */,
 			);
 			path = LogIn;
 			sourceTree = "<group>";
@@ -277,12 +283,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5A9823825F7722C005EB566 /* SignupView.swift in Sources */,
+				F53AA8BE25FA04890045977A /* SearchBarView.swift in Sources */,
 				F5A9822E25F769C1005EB566 /* LoginView.swift in Sources */,
 				CB74700025F7FC91006795BB /* Woman.swift in Sources */,
 				CB74700325F7FEF5006795BB /* WomenView.swift in Sources */,
 				F5A9823C25F77814005EB566 /* MainView.swift in Sources */,
 				F58710AF25F7611C00B47462 /* ContentView.swift in Sources */,
 				F58710AD25F7611C00B47462 /* Hidden_WomenApp.swift in Sources */,
+				F53AA8C225FA0EA70045977A /* GuestWarningView.swift in Sources */,
 				CB746FFD25F7FC62006795BB /* WomanView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

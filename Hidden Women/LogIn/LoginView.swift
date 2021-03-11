@@ -60,6 +60,13 @@ struct LoginView: View {
                             .foregroundColor(Color("Morado"))
                     }
                 }
+                HStack {
+                    Text("... or enter as a")
+                    Button(action: {currentPage = .guest}) {
+                        Text("guest")
+                            .foregroundColor(Color("Morado"))
+                    }
+                }
                 Spacer()
             }
             .alert(isPresented: $showErrorAlert) {
