@@ -39,6 +39,7 @@ struct MainView: View {
                     Text("Profile")
                 }
             }
+            
             MultipleQuizView()
                 .tabItem{
                     VStack{

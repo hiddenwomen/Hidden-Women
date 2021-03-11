@@ -8,8 +8,6 @@
 import SwiftUI
 
 
-var language = Locale.current.languageCode ?? "en"
-
 struct PictureView: View {
     @Binding var picture: String
     
