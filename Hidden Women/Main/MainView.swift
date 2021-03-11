@@ -39,6 +39,13 @@ struct MainView: View {
                     Text("Profile")
                 }
             }
+            MultipleQuizView()
+                .tabItem{
+                    VStack{
+                        Image(systemName: "person.fill.questionmark")
+                        Text("Games")
+                    }
+                }
         }
         .accentColor(Color("Morado"))
     }

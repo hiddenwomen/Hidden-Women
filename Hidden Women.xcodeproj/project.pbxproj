@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A4E50323795A6145608CA25E /* Pods_Hidden_Women.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705A41B9BC21EE8F556344AD /* Pods_Hidden_Women.framework */; };
+		CB6826DE25FA172200A8190C /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6826DD25FA172200A8190C /* QuizView.swift */; };
+		CB6826E225FA173600A8190C /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6826E125FA173600A8190C /* Quiz.swift */; };
+		CB6826E525FA236200A8190C /* MultipleQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6826E425FA236200A8190C /* MultipleQuizView.swift */; };
 		CB746FFD25F7FC62006795BB /* WomanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB746FFC25F7FC62006795BB /* WomanView.swift */; };
 		CB74700025F7FC91006795BB /* Woman.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB746FFF25F7FC91006795BB /* Woman.swift */; };
 		CB74700325F7FEF5006795BB /* WomenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74700225F7FEF5006795BB /* WomenView.swift */; };
@@ -30,6 +33,9 @@
 		458269F315DC784127169E03 /* Pods-Hidden Women.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hidden Women.release.xcconfig"; path = "Target Support Files/Pods-Hidden Women/Pods-Hidden Women.release.xcconfig"; sourceTree = "<group>"; };
 		705A41B9BC21EE8F556344AD /* Pods_Hidden_Women.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hidden_Women.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63F52AB8DD47CBA998CF264 /* Pods-Hidden Women.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hidden Women.debug.xcconfig"; path = "Target Support Files/Pods-Hidden Women/Pods-Hidden Women.debug.xcconfig"; sourceTree = "<group>"; };
+		CB6826DD25FA172200A8190C /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		CB6826E125FA173600A8190C /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		CB6826E425FA236200A8190C /* MultipleQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleQuizView.swift; sourceTree = "<group>"; };
 		CB746FFC25F7FC62006795BB /* WomanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomanView.swift; sourceTree = "<group>"; };
 		CB746FFF25F7FC91006795BB /* Woman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Woman.swift; sourceTree = "<group>"; };
 		CB74700225F7FEF5006795BB /* WomenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomenView.swift; sourceTree = "<group>"; };
@@ -81,6 +87,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		CB6826DB25FA16E800A8190C /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				CB6826DC25FA16F300A8190C /* Quiz */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		CB6826DC25FA16F300A8190C /* Quiz */ = {
+			isa = PBXGroup;
+			children = (
+				CB6826DD25FA172200A8190C /* QuizView.swift */,
+				CB6826E125FA173600A8190C /* Quiz.swift */,
+				CB6826E425FA236200A8190C /* MultipleQuizView.swift */,
+			);
+			path = Quiz;
+			sourceTree = "<group>";
+		};
 		CB746FFB25F7FC48006795BB /* Women */ = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +149,7 @@
 		F58710AB25F7611C00B47462 /* Hidden Women */ = {
 			isa = PBXGroup;
 			children = (
+				CB6826DB25FA16E800A8190C /* Games */,
 				CB746FFB25F7FC48006795BB /* Women */,
 				F5A9823A25F777E5005EB566 /* Main */,
 				F5A9823125F769DB005EB566 /* LogIn */,
@@ -283,7 +308,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5A9823825F7722C005EB566 /* SignupView.swift in Sources */,
+				CB6826E525FA236200A8190C /* MultipleQuizView.swift in Sources */,
 				F53AA8BE25FA04890045977A /* SearchBarView.swift in Sources */,
+				CB6826E225FA173600A8190C /* Quiz.swift in Sources */,
+				CB6826DE25FA172200A8190C /* QuizView.swift in Sources */,
 				F5A9822E25F769C1005EB566 /* LoginView.swift in Sources */,
 				CB74700025F7FC91006795BB /* Woman.swift in Sources */,
 				CB74700325F7FEF5006795BB /* WomenView.swift in Sources */,
