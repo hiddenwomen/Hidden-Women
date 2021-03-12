@@ -30,6 +30,9 @@ struct MainView: View {
                     NavigationLink(destination: MultipleTrueOrFalseView()) {
                         Text("True or False")
                     }
+                    NavigationLink(destination: TimelineView()) {
+                        Text("Timeline")
+                    }
                 }
                 .listStyle(PlainListStyle())
                 .navigationBarHidden(true)
