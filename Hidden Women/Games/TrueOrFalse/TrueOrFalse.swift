@@ -7,8 +7,11 @@
 
 import Foundation
 
-struct TrueOrFalse {
+struct TrueOrFalse: Hashable, Equatable  {
     let picture: String
     let question: String
     let correct: Bool
+    static func ==(left: TrueOrFalse, right: TrueOrFalse) -> Bool{
+        return left.question == right.question && left.correct == right.correct
+    }
 }

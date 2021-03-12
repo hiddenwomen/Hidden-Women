@@ -11,10 +11,7 @@ struct MultipleTrueOrFalseView: View {
     @State var correctAnswers: Int = 0
     @State var shownTrueOrFalse: Int = 0
     
-    let trueOrFalses: [TrueOrFalse] = [
-        TrueOrFalse(picture: "Curie1", question: "blablabal", correct: true),
-        TrueOrFalse(picture: "Curie2", question: "blibliblbi", correct: false)
-    ]
+    let trueOrFalses: [TrueOrFalse] = fullTrueOrFalseGenerator(women: women, numberOfQuestions: 10)
     
     var body: some View {
         Group {
