@@ -9,19 +9,23 @@ import SwiftUI
 
 struct MultipleQuizView: View {
     @State var correctAnswers: Int = 0
-    
-    let quizzes: [Quiz] =  fullQuizGenerator(women: women, count: 5)
     @State var shownQuiz: Int = 0
     
+    let quizzes: [Quiz] =  fullQuizGenerator(women: women, count: 2)
+    
     var body: some View {
-        if shownQuiz == quizzes.count {
-            VStack {
-                Text("Points: \(correctAnswers)")
+        Group {
+            if shownQuiz == quizzes.count {
+                VStack {
+                    Text("Points: \(correctAnswers)")
+                    Image("logo")
+                }
             }
-        } else {
-            VStack {
-                Text("\(shownQuiz+1)/\(quizzes.count)")
-                QuizView(quiz: quizzes[shownQuiz], shownQuiz: $shownQuiz, correctAnswers: $correctAnswers)
+            if shownQuiz != quizzes.count {
+                VStack {
+                    Text("\(shownQuiz+1)/\(quizzes.count)")
+                    QuizView(quiz: quizzes[shownQuiz], shownQuiz: $shownQuiz, correctAnswers: $correctAnswers)
+                }
             }
         }
     }

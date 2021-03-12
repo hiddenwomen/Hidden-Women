@@ -19,11 +19,11 @@
 		F53AA8BB25F8BD750045977A /* women.json in Resources */ = {isa = PBXBuildFile; fileRef = F53AA8BA25F8BD750045977A /* women.json */; };
 		F53AA8BE25FA04890045977A /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53AA8BD25FA04890045977A /* SearchBarView.swift */; };
 		F53AA8C225FA0EA70045977A /* GuestWarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53AA8C125FA0EA70045977A /* GuestWarningView.swift */; };
+		F560939625FAB246000E8560 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F560939525FAB246000E8560 /* GoogleService-Info.plist */; };
 		F58710AD25F7611C00B47462 /* Hidden_WomenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58710AC25F7611C00B47462 /* Hidden_WomenApp.swift */; };
 		F58710AF25F7611C00B47462 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58710AE25F7611C00B47462 /* ContentView.swift */; };
 		F58710B125F7611D00B47462 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F58710B025F7611D00B47462 /* Assets.xcassets */; };
 		F58710B425F7611D00B47462 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F58710B325F7611D00B47462 /* Preview Assets.xcassets */; };
-		F58710BD25F7612D00B47462 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F58710BC25F7612D00B47462 /* GoogleService-Info.plist */; };
 		F58710C025F761F500B47462 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F58710BF25F761F500B47462 /* Podfile */; };
 		F5A9822E25F769C1005EB566 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9822D25F769C1005EB566 /* LoginView.swift */; };
 		F5A9823825F7722C005EB566 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9823725F7722C005EB566 /* SignupView.swift */; };
@@ -47,13 +47,13 @@
 		F53AA8BA25F8BD750045977A /* women.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = women.json; sourceTree = "<group>"; };
 		F53AA8BD25FA04890045977A /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		F53AA8C125FA0EA70045977A /* GuestWarningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestWarningView.swift; sourceTree = "<group>"; };
+		F560939525FAB246000E8560 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F58710A925F7611C00B47462 /* Hidden Women.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hidden Women.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F58710AC25F7611C00B47462 /* Hidden_WomenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hidden_WomenApp.swift; sourceTree = "<group>"; };
 		F58710AE25F7611C00B47462 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F58710B025F7611D00B47462 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F58710B325F7611D00B47462 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F58710B525F7611D00B47462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F58710BC25F7612D00B47462 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F58710BF25F761F500B47462 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		F5A9822D25F769C1005EB566 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F5A9823725F7722C005EB566 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
@@ -130,9 +130,9 @@
 		F58710A025F7611C00B47462 = {
 			isa = PBXGroup;
 			children = (
+				F560939525FAB246000E8560 /* GoogleService-Info.plist */,
 				F53AA8B925F8BD500045977A /* Data */,
 				F53AA8B325F8B6D80045977A /* Localizable.strings */,
-				F58710BC25F7612D00B47462 /* GoogleService-Info.plist */,
 				F58710BF25F761F500B47462 /* Podfile */,
 				F58710AB25F7611C00B47462 /* Hidden Women */,
 				F58710AA25F7611C00B47462 /* Products */,
@@ -257,7 +257,7 @@
 				F58710B125F7611D00B47462 /* Assets.xcassets in Resources */,
 				F58710C025F761F500B47462 /* Podfile in Resources */,
 				F53AA8BB25F8BD750045977A /* women.json in Resources */,
-				F58710BD25F7612D00B47462 /* GoogleService-Info.plist in Resources */,
+				F560939625FAB246000E8560 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

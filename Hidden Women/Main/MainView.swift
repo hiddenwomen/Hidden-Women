@@ -12,16 +12,23 @@ struct MainView: View {
     
     @AppStorage ("userID") var userID = ""
     @Binding var currentPage: Page
-    
+    @State private var selection = 0
+
     var body: some View {
-        TabView{
+        TabView(selection: $selection) {
             WomenView()
                 .tabItem {
-                    VStack {
-                        Image(systemName: "magnifyingglass")
-                        Text("Hidden Women")
-                    }
+                    Image(systemName: "magnifyingglass")
+                    Text("Hidden Women")
                 }
+                .tag(0)
+
+            MultipleQuizView()
+                .tabItem{
+                    Image(systemName: "person.fill.questionmark")
+                    Text("Games")
+                }
+                .tag(1)
 
             VStack {
                 Text(userID)
@@ -34,19 +41,11 @@ struct MainView: View {
                 }
             }
             .tabItem{
-                VStack{
-                    Image(systemName: "person.circle")
-                    Text("Profile")
-                }
+                Image(systemName: "person.circle")
+                Text("Profile")
             }
+            .tag(2)
             
-            MultipleQuizView()
-                .tabItem{
-                    VStack{
-                        Image(systemName: "person.fill.questionmark")
-                        Text("Games")
-                    }
-                }
         }
         .accentColor(Color("Morado"))
     }
