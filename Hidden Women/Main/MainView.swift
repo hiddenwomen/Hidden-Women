@@ -12,7 +12,7 @@ struct MainView: View {
     
     @AppStorage ("userID") var userID = ""
     @Binding var currentPage: Page
-    @State private var selection = 0
+    @State var selection = 0
 
     var body: some View {
         TabView(selection: $selection) {
@@ -22,8 +22,18 @@ struct MainView: View {
                     Text("Hidden Women")
                 }
                 .tag(0)
-
-            MultipleQuizView()
+            NavigationView {
+                List {
+                    NavigationLink(destination: MultipleQuizView()) {
+                        Text("Quiz")
+                    }
+                    NavigationLink(destination: MultipleYesNoView()) {
+                        Text("True or False")
+                    }
+                }
+                .listStyle(PlainListStyle())
+                .navigationBarHidden(true)
+            }
                 .tabItem{
                     Image(systemName: "person.fill.questionmark")
                     Text("Games")

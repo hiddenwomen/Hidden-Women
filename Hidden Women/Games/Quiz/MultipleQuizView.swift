@@ -11,7 +11,7 @@ struct MultipleQuizView: View {
     @State var correctAnswers: Int = 0
     @State var shownQuiz: Int = 0
     
-    let quizzes: [Quiz] =  fullQuizGenerator(women: women, count: 2)
+    let quizzes: [Quiz] =  fullQuizGenerator(women: women, numberOfQuestions: 5)
     
     var body: some View {
         Group {

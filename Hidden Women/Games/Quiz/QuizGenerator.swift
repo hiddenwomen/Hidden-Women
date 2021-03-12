@@ -28,10 +28,12 @@ func answersSelector(correctAnswers: [String], manyAnswers: [String], count: Int
     return QuizAnswers(answers: result, correct: newCorrectPosition)
 }
 
-func birthYearQuizGenerator(woman: Woman, women: [Woman]) -> Quiz {
-    let candidates: [String] = [woman.birthYear]
-    let all: [String] = women.map( { woman in woman.birthYear } )
-    let quizAnswers = answersSelector(correctAnswers: candidates, manyAnswers: all, count: 4)
+func birthYearQuizGenerator(women: [Woman]) -> Quiz {
+    let selected: [Woman] = women.filter{ $0.birthYear != "" }
+    let woman = selected.randomElement()!
+    let all = selected.map( { $0.birthYear } )
+    let candidate: [String] = [woman.birthYear]
+    let quizAnswers = answersSelector(correctAnswers: candidate, manyAnswers: all, count: 4)
 
     return Quiz(
         picture: woman.pictures.randomElement() ?? "",
@@ -41,32 +43,85 @@ func birthYearQuizGenerator(woman: Woman, women: [Woman]) -> Quiz {
     )
 }
 
-func fieldQuizGenerator(woman: Woman, women: [Woman]) -> Quiz {
-    let candidates: [String] = woman.fields.localized
-    let all: [String] = women.flatMap( { woman in woman.fields.localized } )
-    let quizAnswers = answersSelector(correctAnswers: candidates, manyAnswers: all, count: 4)
+func deathYearQuizGenerator(women: [Woman]) -> Quiz {
+    let selected: [Woman] = women.filter{ $0.deathYear != "" }
+    let woman = selected.randomElement()!
+    let all = selected.map( { $0.deathYear } )
+    let candidate: [String] = [woman.deathYear]
+    let quizAnswers = answersSelector(correctAnswers: candidate, manyAnswers: all, count: 4)
 
     return Quiz(
         picture: woman.pictures.randomElement() ?? "",
-        question: String.localizedStringWithFormat(NSLocalizedString("%@ era...", comment: ""), woman.name),
+        question: String.localizedStringWithFormat(NSLocalizedString("When did %@ pass away?", comment: ""), woman.name),
         answers: quizAnswers.answers,
         correctAnswer: quizAnswers.correct
     )
 }
 
-func fullQuizGenerator(women: [Woman], count: Int) -> [Quiz] {
-    var result: [Quiz] = []
-    let selectedWomen = women.shuffled().prefix(count)
+
+func fieldQuizGenerator(women: [Woman]) -> Quiz {
+    let selected: [Woman] = women.filter{ $0.fields.localized.count > 0 }
+    let woman = selected.randomElement()!
+    let all = selected.flatMap( { $0.fields.localized } )
+    let candidates: [String] = woman.fields.localized
+    let quizAnswers = answersSelector(correctAnswers: candidates, manyAnswers: all, count: 4)
     
-    for woman in selectedWomen {
+    return Quiz(
+        picture: woman.pictures.randomElement() ?? "",
+        question: String.localizedStringWithFormat(NSLocalizedString("%@ was a...", comment: ""), woman.name),
+        answers: quizAnswers.answers,
+        correctAnswer: quizAnswers.correct
+    )
+}
+
+func awardsQuizGenerator(women: [Woman]) -> Quiz {
+    let selected: [Woman] = women.filter{ $0.awards.localized.count > 0 }
+    let woman = selected.randomElement()!
+    let all = selected.flatMap( { $0.awards.localized } )
+    let candidates: [String] = woman.awards.localized
+    let quizAnswers = answersSelector(correctAnswers: candidates, manyAnswers: all, count: 4)
+    
+    return Quiz(
+        picture: woman.pictures.randomElement() ?? "",
+        question: String.localizedStringWithFormat(NSLocalizedString("%@ won the...", comment: ""), woman.name),
+        answers: quizAnswers.answers,
+        correctAnswer: quizAnswers.correct
+    )
+}
+
+func achievementsQuizGenerator(women: [Woman]) -> Quiz {
+    let selected: [Woman] = women.filter{ $0.achievements.localized.count > 0 }
+    let woman = selected.randomElement()!
+    let all = selected.flatMap( { $0.achievements.localized } )
+    let candidates: [String] = woman.achievements.localized
+    let quizAnswers = answersSelector(correctAnswers: candidates, manyAnswers: all, count: 4)
+    
+    return Quiz(
+        picture: woman.pictures.randomElement() ?? "",
+        question: String.localizedStringWithFormat(NSLocalizedString("One of %@'s achievements is...", comment: ""), woman.name),
+        answers: quizAnswers.answers,
+        correctAnswer: quizAnswers.correct
+    )
+}
+
+func fullQuizGenerator(women: [Woman], numberOfQuestions: Int) -> [Quiz] {
+    var result: Set<Quiz> = Set()
+    
+    while result.count < numberOfQuestions {
         var quiz: Quiz
-        let quizType = (0..<2).randomElement()
+        let quizType = (0..<5).randomElement()
         if quizType == 0 {
-            quiz = fieldQuizGenerator(woman: woman, women: women)
+            quiz = fieldQuizGenerator(women: women)
+        } else if quizType == 1 {
+            quiz = birthYearQuizGenerator(women: women)
+        } else if quizType == 2 {
+            quiz = deathYearQuizGenerator(women: women)
+        } else if quizType == 3 {
+            quiz = awardsQuizGenerator(women: women)
         } else {
-            quiz = birthYearQuizGenerator(woman: woman, women: women)
+            quiz = achievementsQuizGenerator(women: women)
         }
-        result.append(quiz)
+        result.insert(quiz)
     }
-    return result
+    return Array(result)
 }
