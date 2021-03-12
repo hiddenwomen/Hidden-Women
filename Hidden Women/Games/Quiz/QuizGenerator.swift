@@ -35,7 +35,7 @@ func birthYearQuizGenerator(woman: Woman, women: [Woman]) -> Quiz {
 
     return Quiz(
         picture: woman.pictures.randomElement() ?? "",
-        question: "When was \(woman.name) born?",
+        question: String.localizedStringWithFormat(NSLocalizedString("When was %@ born?", comment: ""), woman.name),
         answers: quizAnswers.answers,
         correctAnswer: quizAnswers.correct
     )
@@ -48,7 +48,7 @@ func fieldQuizGenerator(woman: Woman, women: [Woman]) -> Quiz {
 
     return Quiz(
         picture: woman.pictures.randomElement() ?? "",
-        question: "\(woman.name) was a(n)...",
+        question: String.localizedStringWithFormat(NSLocalizedString("%@ era...", comment: ""), woman.name),
         answers: quizAnswers.answers,
         correctAnswer: quizAnswers.correct
     )

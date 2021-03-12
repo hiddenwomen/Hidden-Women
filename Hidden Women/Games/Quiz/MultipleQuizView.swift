@@ -19,6 +19,9 @@ struct MultipleQuizView: View {
                 VStack {
                     Text("Points: \(correctAnswers)")
                     Image("logo")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 150, height: 150)
                 }
             }
             if shownQuiz != quizzes.count {
