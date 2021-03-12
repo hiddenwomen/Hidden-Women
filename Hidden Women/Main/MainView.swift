@@ -30,7 +30,7 @@ struct MainView: View {
                     NavigationLink(destination: MultipleTrueOrFalseView()) {
                         Text("True or False")
                     }
-                    NavigationLink(destination: TimelineView()) {
+                    NavigationLink(destination: ChronolineView()) {
                         Text("Timeline")
                     }
                 }
