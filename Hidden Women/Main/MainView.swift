@@ -27,7 +27,7 @@ struct MainView: View {
                     NavigationLink(destination: MultipleQuizView()) {
                         Text("Quiz")
                     }
-                    NavigationLink(destination: MultipleYesNoView()) {
+                    NavigationLink(destination: MultipleTrueOrFalseView()) {
                         Text("True or False")
                     }
                 }

@@ -20,9 +20,9 @@
 		F53AA8BE25FA04890045977A /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53AA8BD25FA04890045977A /* SearchBarView.swift */; };
 		F53AA8C225FA0EA70045977A /* GuestWarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53AA8C125FA0EA70045977A /* GuestWarningView.swift */; };
 		F560939625FAB246000E8560 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F560939525FAB246000E8560 /* GoogleService-Info.plist */; };
-		F560939A25FB6CB7000E8560 /* YesNoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F560939925FB6CB7000E8560 /* YesNoView.swift */; };
-		F560939D25FB6CD0000E8560 /* YesNo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F560939C25FB6CD0000E8560 /* YesNo.swift */; };
-		F56093A025FB6F89000E8560 /* MultipleYesNoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F560939F25FB6F89000E8560 /* MultipleYesNoView.swift */; };
+		F560939A25FB6CB7000E8560 /* TrueOrFalseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F560939925FB6CB7000E8560 /* TrueOrFalseView.swift */; };
+		F560939D25FB6CD0000E8560 /* TrueOrFalse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F560939C25FB6CD0000E8560 /* TrueOrFalse.swift */; };
+		F56093A025FB6F89000E8560 /* MultipleTrueOrFalseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F560939F25FB6F89000E8560 /* MultipleTrueOrFalseView.swift */; };
 		F58710AD25F7611C00B47462 /* Hidden_WomenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58710AC25F7611C00B47462 /* Hidden_WomenApp.swift */; };
 		F58710AF25F7611C00B47462 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58710AE25F7611C00B47462 /* ContentView.swift */; };
 		F58710B125F7611D00B47462 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F58710B025F7611D00B47462 /* Assets.xcassets */; };
@@ -51,9 +51,9 @@
 		F53AA8BD25FA04890045977A /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		F53AA8C125FA0EA70045977A /* GuestWarningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestWarningView.swift; sourceTree = "<group>"; };
 		F560939525FAB246000E8560 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		F560939925FB6CB7000E8560 /* YesNoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesNoView.swift; sourceTree = "<group>"; };
-		F560939C25FB6CD0000E8560 /* YesNo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YesNo.swift; sourceTree = "<group>"; };
-		F560939F25FB6F89000E8560 /* MultipleYesNoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleYesNoView.swift; sourceTree = "<group>"; };
+		F560939925FB6CB7000E8560 /* TrueOrFalseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueOrFalseView.swift; sourceTree = "<group>"; };
+		F560939C25FB6CD0000E8560 /* TrueOrFalse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueOrFalse.swift; sourceTree = "<group>"; };
+		F560939F25FB6F89000E8560 /* MultipleTrueOrFalseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleTrueOrFalseView.swift; sourceTree = "<group>"; };
 		F58710A925F7611C00B47462 /* Hidden Women.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hidden Women.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F58710AC25F7611C00B47462 /* Hidden_WomenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hidden_WomenApp.swift; sourceTree = "<group>"; };
 		F58710AE25F7611C00B47462 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 		CB6826DB25FA16E800A8190C /* Games */ = {
 			isa = PBXGroup;
 			children = (
-				F560939825FB6CA0000E8560 /* YesNo */,
+				F560939825FB6CA0000E8560 /* TrueOrFalse */,
 				CB6826DC25FA16F300A8190C /* Quiz */,
 			);
 			path = Games;
@@ -134,14 +134,14 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
-		F560939825FB6CA0000E8560 /* YesNo */ = {
+		F560939825FB6CA0000E8560 /* TrueOrFalse */ = {
 			isa = PBXGroup;
 			children = (
-				F560939925FB6CB7000E8560 /* YesNoView.swift */,
-				F560939C25FB6CD0000E8560 /* YesNo.swift */,
-				F560939F25FB6F89000E8560 /* MultipleYesNoView.swift */,
+				F560939925FB6CB7000E8560 /* TrueOrFalseView.swift */,
+				F560939C25FB6CD0000E8560 /* TrueOrFalse.swift */,
+				F560939F25FB6F89000E8560 /* MultipleTrueOrFalseView.swift */,
 			);
-			path = YesNo;
+			path = TrueOrFalse;
 			sourceTree = "<group>";
 		};
 		F58710A025F7611C00B47462 = {
@@ -328,11 +328,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A7EAA9C25FA535800D042E1 /* QuizGenerator.swift in Sources */,
-				F56093A025FB6F89000E8560 /* MultipleYesNoView.swift in Sources */,
+				F56093A025FB6F89000E8560 /* MultipleTrueOrFalseView.swift in Sources */,
 				F5A9823825F7722C005EB566 /* SignupView.swift in Sources */,
 				CB6826E525FA236200A8190C /* MultipleQuizView.swift in Sources */,
-				F560939A25FB6CB7000E8560 /* YesNoView.swift in Sources */,
-				F560939D25FB6CD0000E8560 /* YesNo.swift in Sources */,
+				F560939A25FB6CB7000E8560 /* TrueOrFalseView.swift in Sources */,
+				F560939D25FB6CD0000E8560 /* TrueOrFalse.swift in Sources */,
 				F53AA8BE25FA04890045977A /* SearchBarView.swift in Sources */,
 				CB6826E225FA173600A8190C /* Quiz.swift in Sources */,
 				CB6826DE25FA172200A8190C /* QuizView.swift in Sources */,
