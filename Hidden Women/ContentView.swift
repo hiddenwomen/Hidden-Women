@@ -10,6 +10,7 @@ import SwiftUI
 enum Page {
     case login
     case signup
+    case resetPassword
     case main
     case guest
 }
@@ -24,11 +25,12 @@ struct ContentView: View {
                 LoginView(currentPage: $currentPage)
             } else if currentPage == .signup {
                 SignupView(currentPage: $currentPage)
+            } else if currentPage == .resetPassword {
+                ResetPasswordView(currentPage: $currentPage)
             } else if currentPage == .guest {
                 GuestWarningView(currentPage: $currentPage)
             } else {
                 MainView(currentPage: $currentPage)
-
             }
         }
         .onAppear {

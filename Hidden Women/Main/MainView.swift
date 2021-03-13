@@ -6,11 +6,12 @@
 //
 
 import SwiftUI
-
+import Firebase
 
 struct MainView: View {
-    
     @AppStorage ("userID") var userID = ""
+    @AppStorage ("userName") var userName = ""
+
     @Binding var currentPage: Page
     @State var selection = 0
 
@@ -31,7 +32,7 @@ struct MainView: View {
                         Text("True or False")
                     }
                     NavigationLink(destination: ChronolineView()) {
-                        Text("Timeline")
+                        Text("Chronoline")
                     }
                 }
                 .listStyle(PlainListStyle())
@@ -44,11 +45,11 @@ struct MainView: View {
                 .tag(1)
 
             VStack {
+                Text(userName)
                 Text(userID)
                 Button(action: {
                     userID = ""
                     currentPage = .login
-                    
                 }) {
                     Text("Sign out")
                 }
@@ -66,6 +67,7 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     @State static var page: Page = .main
+
     static var previews: some View {
         MainView(currentPage: $page)
     }

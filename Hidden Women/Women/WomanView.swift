@@ -37,7 +37,6 @@ struct WomanView: View {
                             .aspectRatio(contentMode: .fit)
                             .frame(width: 150, height: 200)
                             .onTapGesture{
-                                print("Foto: \(picture)")
                                 shownPicture = picture
                                 showPicture = true
                             }

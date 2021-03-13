@@ -10,7 +10,8 @@ import Firebase
 
 struct LoginView: View {
     @AppStorage ("userID") var userID = ""
-    
+    @AppStorage ("userName") var userName = ""
+
     @Binding var currentPage: Page
     
     @State var email = ""
@@ -44,6 +45,11 @@ struct LoginView: View {
                 .background(Color("Hueso"))
                 .cornerRadius(16)
                 .padding(.horizontal, 20)
+                Button(action: {currentPage = .guest}) {
+                    Text("Did you forget your password?")
+                        .foregroundColor(Color("Morado"))
+                        .font(.caption)
+                }
                 Button(action: signin) {
                     Text("Sign in")
                         .fontWeight(.bold)
@@ -86,6 +92,15 @@ struct LoginView: View {
                 showErrorAlert = true
             } else {
                 userID = user?.user.uid ?? ""
+                Firestore.firestore().collection("users").document(userID).getDocument { snapshot, e in
+                    if let snapshot = snapshot, snapshot.exists {
+                        let data = snapshot.data() ?? ["name": "Nadie"]
+                        userName = data["name"] as? String ?? ""
+                        print("Dm:> \(userName)")
+                    } else {
+                        print("Em:> \(String(describing: e))")
+                    }
+                }
                 currentPage = .main
             }
         }

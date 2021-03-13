@@ -29,7 +29,6 @@ struct ChronolineView: View {
         for i in 0..<5 {
             o.append(Objeto(pos: CGPoint(x: UIScreen.width / 2, y: 25 + 125 * CGFloat(i)), number: "\(i)"))
         }
-        print(women)
         return o
     }
     
