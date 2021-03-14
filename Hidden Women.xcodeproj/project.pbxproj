@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A30189A25FC1C4200796585 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5A30189925FC1C4200796585 /* GoogleService-Info.plist */; };
 		5A7EAA9C25FA535800D042E1 /* QuizGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7EAA9B25FA535800D042E1 /* QuizGenerator.swift */; };
 		5AEF0B1F25FC94F1007983CF /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEF0B1E25FC94F1007983CF /* ResetPasswordView.swift */; };
 		A4E50323795A6145608CA25E /* Pods_Hidden_Women.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705A41B9BC21EE8F556344AD /* Pods_Hidden_Women.framework */; };
@@ -19,6 +18,7 @@
 		CB74700325F7FEF5006795BB /* WomenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74700225F7FEF5006795BB /* WomenView.swift */; };
 		CB77369925FB79B000A5E550 /* TrueOrFalseGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB77369825FB79B000A5E550 /* TrueOrFalseGenerator.swift */; };
 		F50B035E25FBE19100D4EABE /* ChronolineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B035D25FBE19100D4EABE /* ChronolineView.swift */; };
+		F50B036425FCA95F00D4EABE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F50B036325FCA95F00D4EABE /* GoogleService-Info.plist */; };
 		F53AA8B125F8B6D80045977A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F53AA8B325F8B6D80045977A /* Localizable.strings */; };
 		F53AA8BB25F8BD750045977A /* women.json in Resources */ = {isa = PBXBuildFile; fileRef = F53AA8BA25F8BD750045977A /* women.json */; };
 		F53AA8BE25FA04890045977A /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53AA8BD25FA04890045977A /* SearchBarView.swift */; };
@@ -38,7 +38,6 @@
 
 /* Begin PBXFileReference section */
 		458269F315DC784127169E03 /* Pods-Hidden Women.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hidden Women.release.xcconfig"; path = "Target Support Files/Pods-Hidden Women/Pods-Hidden Women.release.xcconfig"; sourceTree = "<group>"; };
-		5A30189925FC1C4200796585 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5A7EAA9B25FA535800D042E1 /* QuizGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizGenerator.swift; sourceTree = "<group>"; };
 		5AEF0B1E25FC94F1007983CF /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 		705A41B9BC21EE8F556344AD /* Pods_Hidden_Women.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hidden_Women.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +50,7 @@
 		CB74700225F7FEF5006795BB /* WomenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomenView.swift; sourceTree = "<group>"; };
 		CB77369825FB79B000A5E550 /* TrueOrFalseGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueOrFalseGenerator.swift; sourceTree = "<group>"; };
 		F50B035D25FBE19100D4EABE /* ChronolineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChronolineView.swift; sourceTree = "<group>"; };
+		F50B036325FCA95F00D4EABE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F53AA8B225F8B6D80045977A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F53AA8B525F8B6FA0045977A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F53AA8B725F8B7A10045977A /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -192,7 +192,7 @@
 				F58710AE25F7611C00B47462 /* ContentView.swift */,
 				F58710B025F7611D00B47462 /* Assets.xcassets */,
 				F58710B525F7611D00B47462 /* Info.plist */,
-				5A30189925FC1C4200796585 /* GoogleService-Info.plist */,
+				F50B036325FCA95F00D4EABE /* GoogleService-Info.plist */,
 				F58710B225F7611D00B47462 /* Preview Content */,
 			);
 			path = "Hidden Women";
@@ -291,7 +291,7 @@
 				F58710B125F7611D00B47462 /* Assets.xcassets in Resources */,
 				F58710C025F761F500B47462 /* Podfile in Resources */,
 				F53AA8BB25F8BD750045977A /* women.json in Resources */,
-				5A30189A25FC1C4200796585 /* GoogleService-Info.plist in Resources */,
+				F50B036425FCA95F00D4EABE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

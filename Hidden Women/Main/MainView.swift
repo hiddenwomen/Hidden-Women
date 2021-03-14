@@ -25,7 +25,7 @@ struct MainView: View {
                 .tag(0)
             NavigationView {
                 List {
-                    NavigationLink(destination: MultipleQuizView()) {
+                    NavigationLink(destination: MultipleQuizView(currentMultipleQuizPage: .start)) {
                         Text("Quiz")
                     }
                     NavigationLink(destination: MultipleTrueOrFalseView()) {
@@ -37,6 +37,7 @@ struct MainView: View {
                 }
                 .listStyle(PlainListStyle())
                 .navigationBarHidden(true)
+                .navigationBarTitleDisplayMode(.inline)
             }
                 .tabItem{
                     Image(systemName: "person.fill.questionmark")

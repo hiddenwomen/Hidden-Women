@@ -45,8 +45,8 @@ struct LoginView: View {
                 .background(Color("Hueso"))
                 .cornerRadius(16)
                 .padding(.horizontal, 20)
-                Button(action: {currentPage = .guest}) {
-                    Text("Did you forget your password?")
+                Button(action: {currentPage = .resetPassword}) {
+                    Text("Have you forgotten your password?")
                         .foregroundColor(Color("Morado"))
                         .font(.caption)
                 }
