@@ -1,145 +1,44 @@
 [
   {
-    "name": "Ada Lovelace",
+    "name": "Rachel Carson",
     "pictures": [
-      "Lovelace1",
-      "Lovelace2"
+      "RachelCarson1"
     ],
     "bio": {
-      "en": "Was an English mathematician and writer, chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine. She is believed by some to be the first to recognise that the machine had applications beyond pure calculation, and to have published the first algorithm intended to be carried out by such a machine. As a result, she is often regarded as the first to recognise the full potential of computers and as one of the first computer programmers.",
-      "es": "Fue una matemática y escritora inglesa, principalmente conocida por su trabajo en la computadora mecánica de propósito general propuesta por Charles Babbage, la Máquina Analítica. Algunos creen que fue la primera en reconocer que la máquina tenía aplicaciones más allá del cálculo puro, y publicó el primer algoritmo destinado a ser llevado a cabo por dicha máquina. Como resultado, a menudo se la considera la primera en reconocer todo el potencial de las computadoras y como una de las primeras programadoras de computadoras.",
-      "ca": "Va ser una matemàtica i escriptora anglesa, principalment coneguda pel seu treball en la computadora mecànica de propòsit general proposta per Charles Babbage, la Màquina Analítica. Alguns creuen que va ser la primera a reconéixer que la màquina tenia aplicacions més enllà del càlcul pur, i va publicar el primer algorisme destinat a ser dut a terme per aquesta màquina. Com a resultat, sovint se la considera la primera a reconéixer tot el potencial de les computadores i com una de les primeres programadores de computadores."
+      "en": "She  was an American marine biologist, author, and conservationist whose\n book Silent Spring and other writings are credited with advancing the\n global environmental movement.\n  \n",
+      "ca": "va ser una biòloga marina i ecòloga estatunidenca, els escrits de la  qual van ser precursors del moviment ecologista.\n",
+      "es": "fue una bióloga marina y conservacionista estadounidense que, a través de la publicación de Primavera silenciosa en 1962 y otros escritos,  contribuyó a la puesta en marcha de la moderna conciencia ambiental.\n"
     },
-    "birthYear": "1815",
-    "deathYear": "1852",
-    "awards": {
-      "en": [],
-      "es": [],
-      "ca": []
-    },
-    "fields": {
-      "en": [
-        "Mathematician",
-        "Writer",
-        "Programmer"
-      ],
-      "es": [
-        "Matemática",
-        "Escritora",
-        "Programadora"
-      ],
-      "ca": [
-        "Matemàtica",
-        "Escritora",
-        "Programadora"
-      ]
-    },
-    "achievements": {
-      "en": [
-        "First computer programmer"
-      ],
-      "es": [
-        "Primera persona en programar una computadora"
-      ],
-      "ca": [
-        "Primera persona en programar una computadora"
-      ]
-    },
-    "nationalities": {
-      "en": [
-        "Brittish"
-      ],
-      "es": [
-        "Británica"
-      ],
-      "ca": [
-        "Britànica"
-      ]
-    },
-    "wikipedia": "Ada_Lovelace"
-  },
-  {
-    "name": "Chien-Shiung Wu",
-    "pictures": [
-      "chiengshiungwu",
-      "chiengshiungwu2"
-    ],
-    "bio": {
-      "en": "Was a Chinese-American experimental physicist who made significant contributions in the field of nuclear physics. Wu worked on the Manhattan Project, where she helped develop the process for separating uranium into uranium-235 and uranium-238 isotopes by gaseous diffusion. She is best known for conducting the Wu experiment, which proved that parity is not conserved.\n",
-      "es": "Fue una física experimental china-estadounidense que hizo importantes contribuciones en el campo de la física nuclear. Wu trabajó en el Proyecto Manhattan, donde contribuyó a desarrollar el proceso para separar el uranio metálico en isótopos de uranio-235 y uranio-238 mediante difusión gaseosa. Es conocida por llevar a cabo el Experimento de Wu, que contradecía la ley hipotética de la conservación de la paridad.\n",
-      "ca": "Va ser una física experimental xinesa-estatunidenca que va fer importants contribucions en el camp de la física nuclear. Wu va treballar en el Projecte Manhattan, on va contribuir a desenvolupar el procés per a separar l'urani metàl·lic en isòtops d'urani-235 i urani-238 mitjançant difusió gasosa. És coneguda per dur a terme l'Experiment de Wu, que contradeia la llei hipotètica de la conservació de la paritat.\n"
-    },
-    "birthYear": "1912",
-    "deathYear": "1997",
+    "birthYear": "1907",
+    "deathYear": "1964",
     "awards": {
       "en": [],
       "es": [],
       "ca": []
     },
     "achievements": {
-      "en": [],
-      "es": [],
-      "ca": []
+      "en": [
+        "She contributed advancing the enviormental awareness"
+      ],
+      "es": [
+        "Contribuyó a la puesta en marcha de la conciencia ambiental"
+      ],
+      "ca": [
+        "Va contribuir a la posada en marxa de la consciència ambiental"
+      ]
     },
     "fields": {
       "en": [
-        "Physicist"
+        "Marine biologist",
+        "Environmentalist"
       ],
       "es": [
-        "Física"
+        "Bióloga marina",
+        "Ambientalista"
       ],
       "ca": [
-        "Física"
-      ]
-    },
-    "nationalities": {
-      "en": [
-        "Chinese"
-      ],
-      "es": [
-        "China"
-      ],
-      "ca": [
-        "Xinesa"
-      ]
-    },
-    "wikipedia": "Chien-Shiung_Wu"
-  },
-  {
-    "name": "Grace Murray Hopper",
-    "pictures": [
-      "gracemurrayhopper",
-      "gracemurrayhopper2"
-    ],
-    "bio": {
-      "en": "She was an American computer scientist. One of the first programmers of the Harvard Mark I computer, she was a pioneer of computer programming who invented one of the first linkers. Hopper was the first to devise the theory of machine-independent programming languages, and the FLOW-MATIC programming language she created using this theory was later extended to create COBOL, an early high-level programming language still in use today\n",
-      "es": "Fue una científica de la computación. Una de las primeras programadoras de la computadora Harvard Mark I, fue una pionera de la programación de computadoras que inventó uno de los primeros enlazadores. Hopper fue la primera en idear la teoría de los lenguajes de programación independientes de la máquina, y el lenguaje de programación FLOW-MATIC que creó utilizando esta teoría y se amplió más tarde para crear COBOL, uno de los primeros lenguajes de programación de alto nivel que todavía se utilizan en la actualidad.\n",
-      "ca": "Va ser una científica de la computació. Una de les primeres programadores de la computadora Harvard Mark I, va ser una pionera de la programació de computadores que va inventar un dels primers enlazadores. Hopper va ser la primera a idear la teoria dels llenguatges de programació independents de la màquina, i el llenguatge de programació FLOW-MATIC que va crear utilitzant aquesta teoria i es va ampliar més tard per a crear COBOL, un dels primers llenguatges de programació d'alt nivell que encara s'utilitzen en l'actualitat.\n"
-    },
-    "birthYear": "1906",
-    "deathYear": "1992",
-    "awards": {
-      "en": [],
-      "es": [],
-      "ca": []
-    },
-    "achievements": {
-      "en": [],
-      "es": [],
-      "ca": []
-    },
-    "fields": {
-      "en": [
-        "Mathematician",
-        "Computer Scientist"
-      ],
-      "es": [
-        "Matemática",
-        "Informática"
-      ],
-      "ca": [
-        "Matemàtica",
-        "Informàtica"
+        "Biòloga marina",
+        "Ambientalista"
       ]
     },
     "nationalities": {
@@ -153,496 +52,1704 @@
         "Nord-americana"
       ]
     },
-    "wikipedia": "Grace_Murray_Hopper"
+    "wikipedia": "Rachel_Carson"
   },
   {
-    "name": "Hedy Lamarr",
+    "name": "Edith Clarke",
     "pictures": [
-      "hedylamarr"
+      "EdithClarke1"
     ],
     "bio": {
-      "en": "Hedy Lamarr (/ˈhɛdi/, born Hedwig Eva Maria Kiesler; September or November 9, 1914[a] – January 19, 2000) was an Austrian-born American actress, inventor, and film producer. She appeared in 30 films over a 28-year career and co-invented an early version of frequency-hopping spread spectrum communication for torpedo guidance.\n",
-      "ca": "Hedy Lamarr (Viena, 9 de novembre de 1914 – Altamonte Springs, 19 de gener de 2000) nascuda Hedwig Eva Maria Kiesler, va ser una actriu, productora i inventora estatunidenca.\nDurant la Segona Guerra Mundial i amb 27 anys va registrar, juntament amb George Antheil, la patent d''un sistema secret de transmissions de ràdio que permetia saltar entre 88 freqüències diferents per a guiar per radiofreqüència els torpedes de les forces navals aliades, fent impossible la detecció per l''enemic de l''atac submarí. Lamarr i Antheil van rebre una patent dels EUA per aquesta invenció el 1942: Frequency Hopping Communication System - US patent 2,292,387- serial number 397412.[1]'\n",
-      "es": "Hedwig Eva Maria Kiesler, conocida como Hedy Lamarr (Viena, 9 de noviembre de 1914n 1​ - Casselberry, Florida, 19 de enero de 2000),1​ fue una actriz de cine e inventora austriaca. Fue inventora de la primera versión del espectro ensanchado que permitiría las comunicaciones inalámbricas de larga distancia.2\n"
+      "en": "She was the first woman to be professionally employed as an electrical  engineer in the United States, and the first female professor of  electrical engineering in the country. She was the first woman to  deliver a paper at the American Institute of Electrical Engineers, the  first female engineer whose professional standing was recognized by Tau Beta Pi, and the first woman named as a Fellow of the American Institute of Electrical Engineers. She specialized in electrical power system  analysis and wrote Circuit Analysis of A-C Power Systems\n",
+      "ca": "Va ser la primera dona en obtenir el mestratge d'enginyeria elèctrica i la primera en ser docent d'aquesta matèria a la Universitat de Texas a  Austin. Va especialitzar-se en anàlisi de sistemes elèctrics i va escriure Circuit Analysis of A-C Power Systems.\n",
+      "es": "Fue la primera ingeniera eléctrica estadounidense y la primera profesora de ingeniería eléctrica en la Universidad de Texas en Austin (Estados Unidos). Se especializó en análisis de sistemas de energía eléctrica y  escribió el manual Circuit Analysis of A-C Power Systems.\n"
     },
-    "birthYear": "1914",
-    "deathYear": "2000",
+    "birthYear": "1883",
+    "deathYear": "1959",
     "awards": {
       "en": [
-        "Electronic Frontier Foundation's Pioneer Award"
+        "Society of Women Engineers (SWE) Achievement Award"
+      ],
+      "es": [
+        "Premio al logro de la de SWE"
+      ],
+      "ca": [
+        "Premi a la trajectòria per la SWE"
       ]
     },
     "achievements": {
       "en": [
-        "Inventor of the frequency-hopping spread spectrum"
+        "first female engineer to achieve professional standing in Tau Beta Pi.",
+        "first female Fellow of the American Institute of Electrical Engineers."
       ],
       "es": [
-        "Inventora del frequency-hopping spread spectrum"
+        "primera ingeniera en conseguir un puesto profesional en la sociedad de honor de ingenieros más antigua de Estados Unidos, Tau Beta Pi.",
+        "primera Socia del Instituto Americano de Ingenieros Eléctricos."
       ],
       "ca": [
-        "Inventora del frequency-hopping spread spectrum"
+        "primera enginyera que va ser cooptat com a membre de la confraria d'honor d'enginyers Tau Beta Pi",
+        "primera dona membre de l'Institut americà d'Enginyers Elèctrics"
       ]
     },
     "fields": {
       "en": [
-        "Physicist",
-        "Actress"
+        "Electrical engineering"
       ],
       "es": [
-        "Física",
-        "Actriz"
+        "Ingeniería eléctrica"
       ],
       "ca": [
-        "Física",
-        "Actriu"
+        "Enginyeria elèctrica"
       ]
     },
     "nationalities": {
       "en": [
-        "Austrian"
+        "American"
       ],
       "es": [
-        "Austriaca"
+        "Norteamericana"
       ],
       "ca": [
-        "Austríaca"
-      ]
-    },
-    "wikipedia": "Hedy_Lamarr"
-  },
-  {
-    "name": "Inge Lehman",
-    "pictures": [
-      "ingelehmann"
-    ],
-    "bio": {
-      "en": "She was a Danish seismologist, known for conducting the first tests of earthquake magnitudes and their consequences. He was the first person to postulate that the inner core of the Earth is divided into two parts: a solid inner sphere and a layer of liquid consistency that surrounds the previous one, that is, the discoverer of the discontinuity that separates the outer core from the nucleus. internal, and named after him (Lehmann discontinuity).",
-      "es": "Fue una sismóloga danesa, conocida por realizar las primeras pruebas de magnitudes de sismos y sus consecuencias. Fue la primera persona en postular que el núcleo interno de la Tierra está dividido en dos partes: una esfera interna sólida y una capa de consistencia líquida que envuelve a la anterior, es decir, la descubridora de la discontinuidad que separa el núcleo externo del núcleo interno, y que lleva su nombre en su honor (discontinuidad de Lehmann).",
-      "ca": "Va ser una sismòloga danesa, coneguda per realitzar les primeres proves de magnituds de sismes i les seues conseqüències. Va ser la primera persona a postular que el nucli intern de la Terra està dividit en dues parts: una esfera interna sòlida i una capa de consistència líquida que embolica a l'anterior, és a dir, la descobridora de la discontinuïtat que separa el nucli extern del nucli intern, i que porta el seu nom en el seu honor (discontinuïtat de Lehmann)."
-    },
-    "birthYear": "1888",
-    "deathYear": "1993",
-    "awards": {
-      "en": [],
-      "es": [],
-      "ca": []
-    },
-    "achievements": {
-      "en": [
-        "Conducted first tests of earthquake magnitudes",
-        "Postulated that the earth core is divided in tw parts: a solid sphere and a liquid layer"
-      ],
-      "es": [
-        "Dirigió las primeras pruebas de magnitud de terremoto",
-        "Postuló que el núcleo de la tierra se dividía en dos partes: una esfera sólida y una capa líquida"
-      ],
-      "ca": [
-        "Va dirigir les primeres proves de magnitud de terratrèmol",
-        "Va postular que el nucli de la terra es divideix en dues parts: una esfera i una capa líquida"
-      ]
-    },
-    "fields": {
-      "en": [
-        "Sismologist"
-      ],
-      "es": [
-        "Sismóloga"
-      ],
-      "ca": [
-        "Sismòloga"
-      ]
-    },
-    "nationalities": {
-      "en": [
-        "Danish"
-      ],
-      "es": [
-        "Danesa"
-      ],
-      "ca": [
-        "Danesa"
-      ]
-    },
-    "wikipedia": "Inge_Lehman"
-  },
-  {
-    "name": "Lise Meitner",
-    "pictures": [
-      "lisemeitner",
-      "lisemeitner2"
-    ],
-    "bio": {
-      "en": "Was an Austrian-Swedish physicist who contributed to the discoveries of the element protactinium and nuclear fission.\nShe was part of the team that discovered nuclear fission. Meitner provided the first explanation for nuclear fission of uranium in terms of theoretical physics. His scientific discovery, among other applications, led to reactors for the production of electricity, the nuclear weapons used in World War II and nuclear medicine. Element No. 109, Meitnerium, was named in his honor.\n",
-      "es": "Fue una física austriaca-sueca que contribuyó a los descubrimientos del elemento protoactinio y la fisión nuclear.\nFormó parte del equipo que descubrió la fisión nuclear. Meitner proporcionó la primera explicación de la fisión nuclear del uranio en términos de física teórica. Su hallazgo científico, entre otras aplicaciones, dio lugar a reactores para la producción de electricidad, a las armas nucleares empleadas en la Segunda Guerra Mundial y a la medicina nuclear. El elemento n.º 109, meitnerio, fue nombrado en su honor. \n",
-      "ca": "Va ser una física austríaca-sueca que va contribuir als descobriments de l'element protoactinio i la fissió nuclear.\nVa formar part de l'equip que va descobrir la fissió nuclear. Meitner va proporcionar la primera explicació de la fissió nuclear de l'urani en termes de física teòrica. La seua troballa científica, entre altres aplicacions, va donar lloc a reactors per a la producció d'electricitat, a les armes nuclears empleades en la Segona Guerra Mundial i a la medicina nuclear. L'element núm. 109, meitnerio, va ser nomenat en el seu honor.\n"
-    },
-    "birthYear": "1878",
-    "deathYear": "1968",
-    "awards": {
-      "en": [],
-      "es": [],
-      "ca": []
-    },
-    "achievements": {
-      "en": [],
-      "es": [],
-      "ca": []
-    },
-    "fields": {
-      "en": [
-        "Physicist"
-      ],
-      "es": [
-        "Física"
-      ],
-      "ca": [
-        "Física"
-      ]
-    },
-    "nationalities": {
-      "en": [
-        "Austrian"
-      ],
-      "es": [
-        "Austriaca"
-      ],
-      "ca": [
-        "Austríaca"
-      ]
-    },
-    "wikipedia": "Lise_Meitner"
-  },
-  {
-    "name": "Lynn Margulis",
-    "pictures": [
-      "lynnmargulis",
-      "lynnmargulis2"
-    ],
-    "bio": {
-      "en": "She was a prominent American biologist, considered one of the leading figures in the field of biological evolution, regarding the origin of eukaryotic cells. She received the Darwin-Wallace Medal.\nShe stood out for describing an important milestone in evolution, her theory of the appearance of eukaryotic cells as a consequence of the symbiotic incorporation of various prokaryotic cells (serial endosymbiosis). Later, she also postulated the hypothesis according to which symbiogenesis would be the main source of biological novelty and diversity.\n",
-      "es": "Fue una destacada bióloga estadounidense, considerada una de las principales figuras en el campo de la evolución biológica, respecto al origen de las células eucariotas.  Recibió la Medalla Darwin-Wallace.\nDestacó por describir un importante hito en la evolución, su teoría sobre la aparición de las células eucariotas como consecuencia de la incorporación simbiótica de diversas células procariotas (endosimbiosis seriada). Posteriormente, también postuló la hipótesis según la cual la simbiogénesis sería la principal fuente de la novedad y diversidad biológica.\n",
-      "ca": "Va ser una destacada biòloga estatunidenca, considerada una de les principals figures en el camp de l'evolució biològica, respecte a l'origen de les cèl·lules eucariotes. Va rebre la Medalla Darwin-Wallace.\nVa destacar per descriure una important fita en l'evolució, la seua teoria sobre l'aparició de les cèl·lules eucariotes a conseqüència de la incorporació simbiòtica de diverses cèl·lules procariotes (endosimbiosi seriada). Posteriorment, també va postular la hipòtesi segons la qual la simbiogénesis seria la principal font de la novetat i diversitat biològica.\n"
-    },
-    "birthYear": "1938",
-    "deathYear": "2011",
-    "awards": {
-      "en": [
-        "Darwin-Wallace Medal"
-      ],
-      "es": [
-        "Medalla Darwin-Wallace"
-      ],
-      "ca": [
-        "Medalla Darwin-Wallace"
-      ]
-    },
-    "achievements": {
-      "en": [
-        "Discovery of evolution of eukaryitic cells by symbiosis"
-      ],
-      "es": [
-        "Descubrimiento de la evolución de células eucariotas por simbiosis"
-      ],
-      "ca": [
-        "Descobriment de l'evolució de cel·lules eucariotes per simbiosi"
-      ]
-    },
-    "fields": {
-      "en": [
-        "Biologist"
-      ],
-      "es": [
-        "Bióloga"
-      ],
-      "ca": [
-        "Biòloga"
-      ]
-    },
-    "nationalities": {
-      "en": [
-        "American",
-        "Norteamericana",
         "Nord-americana"
       ]
     },
-    "wikipedia": "Lynn_Margulis"
+    "wikipedia": "Edith_Clarke"
   },
   {
-    "name": "Maria Sibylla Merian",
+    "name": "Barbara McClintock",
     "pictures": [
-      "mariasibyllamerian"
+      "BarbaraMcClintock1",
+      "BarbaraMcClintock2"
     ],
     "bio": {
-      "en": "She is considered one of the most important initiators of modern entomology, thanks to her detailed observations and descriptions, with her own illustrations, of the metamorphosis of butterflies. Currently the species Catasticta sibyllae, a recently described Panama lepidoptera, bears her name in honor of the contributions of Maria Sibylla Merian to Neotropical entomology.\n",
-      "es": "Es considerada como una de las más importantes iniciadoras de la entomología moderna, gracias a sus detalladas observaciones y descripciones, con ilustraciones propias, de la metamorfosis de las mariposas. Actualmente la especie Catasticta sibyllae, lepidóptera de Panamá recientemente descrita, lleva su nombre en honor a los aportes de Maria Sibylla Merian para la entomología neotropical.\n",
-      "ca": "És considerada com una de les més importants iniciadores de l'entomologia moderna, gràcies a les seues detallades observacions i descripcions, amb il·lustracions pròpies, de la metamorfosi de les papallones. Actualment l'espècie Catasticta sibyllae, lepidòptera de Panamà recentment descrita, porta el seu nom en honor a les aportacions de Maria Sibylla Merian per a l'entomologia neotropical.\n"
+      "en": "she was an American scientist and cytogeneticist who was awarded the 1983 Nobel Prize in Physiology or Medicine. McClintock received her PhD in  botany from Cornell University in 1927. There she started her career as  the leader in the development of maize cytogenetics, the focus of her research for the rest of her life. \n",
+      "ca": "fou una botànica, genetista especialitzada en citogenètica. Va estar guardonada amb el Premi Nobel de Medicina i Fisiologia l'any 1983.\n",
+      "es": "fue una científica estadounidense especializada en citogenética que obtuvo el premio Nobel de Medicina o Fisiología en 1983.\n"
     },
-    "birthYear": "1647",
-    "deathYear": "1717",
+    "birthYear": "1902",
+    "deathYear": "1992",
     "awards": {
       "en": [
-        "Naturalist"
+        "Nobel Prize in Physiology or Medicine"
       ],
       "es": [
-        "Naturalista"
+        "premio Nobel de Medicina o Fisiología"
       ],
       "ca": [
-        "Naturalista"
-      ]
-    },
-    "achievements": {
-      "en": [],
-      "es": [],
-      "ca": []
-    },
-    "fields": {
-      "en": [],
-      "es": [],
-      "ca": []
-    },
-    "nationalities": {
-      "en": [
-        "Dutch"
-      ],
-      "es": [
-        "Holandesa"
-      ],
-      "ca": [
-        "Holandesa"
-      ]
-    },
-    "wikipedia": "Maria_Sibylla_Merian"
-  },
-  {
-    "name": "Marie Curie",
-    "pictures": [
-      "Curie1",
-      "Curie2",
-    ],
-    "bio": {
-      "en": "Marie Skłodowska Curie (/ˈkjʊəri/ KEWR-ee;[3] French: [kyʁi]; Polish: [kʲiˈri]), born Maria Salomea Skłodowska (Polish: [ˈmarja salɔˈmɛa skwɔˈdɔfska]; 7 November 1867 – 4 July 1934), was a Polish and naturalized-French physicist and chemist who conducted pioneering research on radioactivity. As the first of the Curie family legacy of five Nobel Prizes, she was the first woman to win a Nobel Prize, the first and the only woman to win the Nobel Prize twice, and the only person to win the Nobel Prize in two scientific fields. She was the first woman to become a professor at the University of Paris in 1906.[4]\n",
-      "ca": "Marie Curie (?·pàg.) (pronunciació en polonès: /ˈmarja salɔˈmɛa skwɔˈdɔfska/) (Varsòvia, 7 de novembre de 1867 – Sancellemoz, 4 de juliol de 1934) va ser una física i química polonesa, pionera en els primers temps de l''estudi de les radiacions.[1][2] Va rebre el Premi Nobel de Física el 1903, juntament amb el seu marit, Pierre Curie, i Henri Becquerel, pels seus descobriments en el camp de la radioactivitat. L'any 1911 va rebre el Premi Nobel de Química per l'aïllament del radi pur.[3] Va ser la primera a emprar el terme radioactivitat.\n",
-      "es": "Maria Salomea Skłodowska-Curie,A​B​ más conocida como Marie CurieC​B​ (Varsovia, 7 de noviembre de 1867-Passy, 4 de julio de 1934), fue una científica polaca nacionalizada francesa. Pionera en el campo de la radiactividad, fue la primera persona en recibir dos premios Nobel en distintas especialidades —Física y Química—D​ y la primera mujer en ocupar el puesto de profesora en la Universidad de París. En 1995 fue sepultada con honores en el Panteón de París por méritos propios.\n"
-    },
-    "birthYear": "1867",
-    "deathYear": "1934",
-    "awards": {
-      "en": [
-        "Nobel Prize in Physics",
-        "Nobel Prize in Chemistry"
-      ],
-      "es": [
-        "Premio Nobel en Física",
-        "Premio Nobel en química"
-      ],
-      "ca": [
-        "Premi Nobel en Física",
-        "Premo Nobel en Química"
+        "Premi Nobel de Medicina i Fisiologia"
       ]
     },
     "achievements": {
       "en": [
-        "Discovery of Radium",
-        "Discovery of Polonium"
+        "discovered transposition and used it to demonstrate that genes are responsible for turning physical characteristics on and off"
       ],
       "es": [
-        "Descubrimiento del Radio",
-        "Descubrimiento del Polonio"
+        "Descubrimiento de elementos reguladores de la expresión génica y de los elementos transponibles"
       ],
       "ca": [
-        "Descubriment del Radi",
-        "Descubriment del Poloni"
+        "Descobriment d'elements reguladors de l'expressió gènica i dels elements transponibles"
       ]
     },
     "fields": {
       "en": [
-        "Physicist",
-        "Chemist"
+        "Cytogenetics"
       ],
       "es": [
-        "Física",
-        "Química"
+        "Citogenética"
       ],
       "ca": [
-        "Física",
-        "Química"
+        "Citogenètica"
       ]
     },
     "nationalities": {
       "en": [
-        "Polish",
-        "French"
+        "American"
       ],
       "es": [
-        "Polaca",
-        "Francesa"
+        "Norteamericana"
       ],
       "ca": [
-        "Polaca",
-        "Fracesa"
+        "Nord-americana"
       ]
     },
-    "wikipedia": "Marie_Curie"
+    "wikipedia": "Barbara_McClintock"
   },
   {
-    "name": "Mary Anning",
+    "name": "Nettie Stevens",
     "pictures": [
-      "maryanning"
+      "NettieStevens1",
+      "NettieStevens2"
     ],
     "bio": {
-      "en": "She was an English fossil collector, dealer, and palaeontologist who became known around the world for finds she made in Jurassic marine fossil beds in the cliffs along the English Channel at Lyme Regis in the county of Dorset in Southwest England. Anning's findings contributed to changes in scientific thinking about prehistoric life and the history of the Earth.\n",
-      "es": "Fue una coleccionista de fósiles, comerciante y paleontóloga inglesa que se hizo conocida en todo el mundo por los hallazgos que hizo en los lechos de fósiles marinos del Jurásico en los acantilados a lo largo del Canal de la Mancha en Lyme Regis en el condado de Dorset en el suroeste de Inglaterra. Los hallazgos de Anning contribuyeron a cambios en el pensamiento científico sobre la vida prehistórica y la historia de la Tierra.\n",
-      "ca": "Va ser una col·leccionista de fòssils, comerciant i paleontòloga anglesa que es va fer coneguda a tot el món per les troballes que va fer en els llits de fòssils marins del Juràsic en els penya-segats al llarg del Canal de la Mànega en Lyme Regis en el comtat de Dorset en el sud-oest d'Anglaterra. Les troballes de Anning van contribuir a canvis en el pensament científic sobre la vida prehistòrica i la història de la Terra.\n"
+      "en": "she was an American geneticist who discovered sex chromosomes. In 1905,  soon after the rediscovery of Mendel's paper on genetics in 1900, she  observed that male mealworms produced two kinds of sperm, one with a  large chromosome and one with a small chromosome. When the sperm with the large chromosome fertilized eggs, they produced female offspring, and when the sperm with the small chromosome fertilized eggs, they  produced male offspring. The pair of sex chromosomes that she  studied later became known as the X and Y chromosomes.\n",
+      "ca": "va ser una avançada genetista nord-americana. Ella i Edmund B. Wilson  van ser els primers investigadors a descriure les bases cromosòmiques del sexe. Els resultats de les seues investigacions van marcar el  naixement i posterior desenvolupament de la genètica moderna.\n",
+      "es": "fue una genetista estadounidense de ascendencia inglesa y sueca. Fue  la primera investigadora en describir las bases cromosómicas que  determinan el sexo. Amplió exitosamente los campos de la embriología y la citogenética.\n"
     },
-    "birthYear": "1799",
-    "deathYear": "1847",
-    "awards": {
-      "en": [],
-      "es": [],
-      "ca": []
-    },
-    "achievements": {
-      "en": [],
-      "es": [],
-      "ca": []
-    },
-    "fields": {
-      "en": [
-        "Paleontologist"
-      ],
-      "es": [
-        "Paleontóloga"
-      ],
-      "ca": [
-        "Paleontòloga"
-      ]
-    },
-    "nationalities": {
-      "en": [
-        "Brittish"
-      ],
-      "es": [
-        "Británica"
-      ],
-      "ca": [
-        "Britànica"
-      ]
-    },
-    "wikipedia": "Mary_Anning"
-  },
-  {
-    "name": "Rosalind Franklin",
-    "pictures": [
-      "rosalindfranklin",
-      "rosalindfranklin2",
-      "rosalindfranklin3"
-    ],
-    "bio": {
-      "en": "Her work with X-ray diffraction images was key in revealing the structure of carbons and graphite, as well as RNA and various viruses, although the greatest significance was his contribution to understanding the structure of DNA, thanks to the image called Photograph 51, which had a profound impact on scientific advances in genetics. Her research on the structure of carbon and viruses was recognized in life.\nHer contributions to the discovery of the structure of DNA were largely recognised posthumously.\n",
-      "ca": "Els seus treballs amb imatges per difracció de raigs X, van ser clau per a revelar l'estructura dels carbons i el grafit, així com de l'ARN i diversos virus, encara que la major transcendència la va tindre la seua aportació per a la comprensió de l'estructura de l'ADN, gràcies a la imatge anomenada Fotografia 51, que va tindre un profund impacte en els avanços científics de la genètica. Les seues investigacions sobre l'estructura del carbó i dels virus van ser reconeguts en vida.\nLes seues contribucions al descobriment de l'estructura de l'ADN van ser reconegudes pòstumament.\n",
-      "es": "Sus trabajos con imágenes por difracción de rayos X, fueron clave para revelar la estructura de los carbones y el grafito,1 así como del ARN y varios virus, aunque la mayor trascendencia la tuvo su aporte para la comprensión de la estructura del ADN, gracias a la imagen llamada Fotografía 51, que tuvo un profundo impacto en los avances científicos de la genética. Sus investigaciones sobre la estructura del carbón y de los virus fueron reconocidos en vida.\\nSus contribuciones al descubrimiento de la estructura del ADN fueron reconocidas póstumamente.\n"
-    },
-    "birthYear": "1920",
-    "deathYear": "1958",
+    "birthYear": "1861",
+    "deathYear": "1912",
     "awards": {
       "en": [
-        "Louisa Gross Horwitz Prize"
+        "Ellen Richards prize"
       ],
       "es": [
-        "Premio Louisa Gross Horwitz"
+        "Premio Ellen Richards"
       ],
       "ca": [
-        "Premi Louisa Gross Horwitz"
+        "Premi Ellen Richards"
       ]
     },
     "achievements": {
       "en": [
-        "Discovery of the structure of DNA"
+        "XY sex-determination system"
       ],
       "es": [
-        "Descubrimiento de la estructura del ADN"
+        "Sistema XY de determinación del sexo"
       ],
       "ca": [
-        "Descobriment de l'estructura de l'ADN"
+        "Sistema XY de determinació del sexe"
       ]
     },
     "fields": {
       "en": [
-        "Chemist",
-        "Chrystallographer"
+        "Genetics"
       ],
       "es": [
-        "Química",
-        "Cristalógrafa"
+        "Genética"
       ],
       "ca": [
-        "Química",
-        "Cristalógrafa"
+        "Genètica"
       ]
     },
     "nationalities": {
       "en": [
-        "Brittish"
+        "American"
       ],
       "es": [
-        "Británica"
+        "Norteamericana"
       ],
       "ca": [
-        "Britànica"
+        "Nord-americana"
       ]
     },
-    "wikipedia": "Rosalind_Franklin"
+    "wikipedia": "Nettie_Stevens"
   },
   {
-    "name": "Marie Sophie Germain",
+    "name": "Gerty Cori",
     "pictures": [
-      "mariesophiegermain"
+      "GertyCori1",
+      "GertyCori2"
     ],
     "bio": {
-      "en": "She was one of the pioneers of elasticity theory and made important contributions to number theory. One of her most important works was the study of what were later known as Sophie Germain's primes (prime numbers whose double increased by one is also a prime number).\n",
-      "es": "Fue una de las pioneras de la teoría de elasticidad e hizo importantes contribuciones a la teoría de números. Uno de sus trabajos más importantes fue el estudio de los que posteriormente fueron conocidos como números primos de Sophie Germain (números primos cuyo doble incrementado en una unidad es también un número primo).\n",
-      "ca": "Va ser una de les pioneres de la teoria d'elasticitat i va fer importants contribucions a la teoria de números. Un dels seus treballs més importants va ser l'estudi dels quals posteriorment van ser coneguts com a nombres primers de Sophie Germain (nombres primers el doble incrementat dels quals en una unitat és també un nombre primers).\n"
+      "en": "She was the third woman to win a Nobel Prize in science, and the first woman to be awarded the Nobel Prize in Physiology or Medicine, for her significant role in the \"discovery of the course of the catalytic  conversion of glycogen\".\n",
+      "ca": "Fou una bioquímica i professora universitària nord-americana, d'origen txecoslovac, la primera dona guardonada amb el Premi Nobel de Medicina i Fisiologia l'any 1947. Cori es convertí així en la tercera dona a  aconseguir aquest guardó i la primera estatunidenca que rep el Nobel  en una disciplina científica.\n",
+      "es": "Fue la tercera mujer en el mundo y primera en Estados Unidos en ganar un  Premio Nobel en Ciencias y la primera mujer a nivel mundial en ser  galardonada con el Premio Nobel de Fisiología o Medicina.\n"
     },
-    "birthYear": "1776",
-    "deathYear": "1831",
+    "birthYear": "1896",
+    "deathYear": "1957",
     "awards": {
-      "en": [],
-      "es": [],
-      "ca": []
+      "en": [
+        "Nobel Prize in Physiology or Medicine"
+      ],
+      "es": [
+        "Premio Nobel de Fisiología o Medicina"
+      ],
+      "ca": [
+        "Premi Nobel de Medicina i Fisiologia"
+      ]
     },
     "achievements": {
-      "en": [],
-      "es": [],
-      "ca": []
+      "en": [
+        "Carbohydrate metabolism; The Cori cycle; Identification of Glucose 1-phosphate"
+      ],
+      "es": [
+        "Ciclo de Cori y metabolismo de glúcidos"
+      ],
+      "ca": [
+        "Cicle de Cori i metabolisme dels glúcids"
+      ]
+    },
+    "fields": {
+      "en": [
+        "Biochemist"
+      ],
+      "es": [
+        "Bioquímica"
+      ],
+      "ca": [
+        "Bioquímica"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "Austrian-Hungarian",
+        "American"
+      ],
+      "es": [
+        "Austrohúngara",
+        "Norteamericana"
+      ],
+      "ca": [
+        "Txecoslovaca",
+        "Nord-americana"
+      ]
+    },
+    "wikipedia": "Gerty_Cori"
+  },
+  {
+    "name": "Emmy Noether",
+    "pictures": [
+      "EmmyNoether1"
+    ],
+    "bio": {
+      "en": "She was a German mathematician who made many important contributions to abstract algebra. She discovered Noether's theorem, which is fundamental in mathematical physics. She invariably  used the name \"Emmy Noether\" in her life and publications. She was described by Pavel  Alexandrov, Albert Einstein, Jean Dieudonné, Hermann Weyl and Norbert Wiener as the most  important woman in the history of mathematics. As one of the leading mathematicians of her  time, she developed some theories of rings, fields, and algebras. In physics, Noether's  theorem explains the connection between symmetry and conservation laws.\n",
+      "ca": "va ser una matemàtica alemanya, d'ascendència jueva, especialista en la teoria d'invariants​ i coneguda per les seves contribucions de fonamental importància en els camps de la física teòrica  i l'àlgebra abstracta. Considerada per David Hilbert, Albert Einstein i altres personatges com la dona més important en la història de la matemàtica, va revolucionar la teoria d'anells, teoria de cossos i la de K-àlgebres. En física, el teorema de Noether explica la connexió fonamental  entre la simetria en física i les lleis de conservació. Malgrat això, se li va negar la possibilitat  d'un lloc digne en la universitat pel fet de ser dona.  \n",
+      "es": "fue una matemática alemana, de ascendencia judía,1​ especialista en la teoría de invariantes y conocida por sus contribuciones de fundamental importancia en los campos de la física teórica y el álgebra abstracta. Considerada por David Hilbert, Albert Einstein y otros  personajes como la mujer más importante en la historia de la matemática, revolucionó la  teoría de anillos, teoría de cuerpos y la de K-álgebras. En física, el teorema de Noether explica la conexión fundamental entre la simetría en física y las leyes de conservación. A pesar de ello, se le negó la posibilidad de un puesto digno en la universidad por el hecho de ser mujer.\n"
+    },
+    "birthYear": "1882",
+    "deathYear": "1935",
+    "awards": {
+      "en": [
+        "Ackermann-Teubner Memorial Award"
+      ],
+      "es": [
+        "Premio conmemorativo Ackermann-Teubner"
+      ],
+      "ca": [
+        "Premi Memorial Ackermann-Teubner"
+      ]
+    },
+    "achievements": {
+      "en": [
+        "Abstract algebra",
+        "Theoretical physics",
+        "Noether's theorem",
+        "Noetherian ring",
+        "Lasker–Noether theorem"
+      ],
+      "es": [
+        "Álgebra abstracta",
+        "Física teórica",
+        "Teorema de noether",
+        "Anillo noetheriano",
+        "Teorema de Lasker-Noether"
+      ],
+      "ca": [
+        "Àlgebra abstracta",
+        "Física teòrica",
+        "Teorema de Noether",
+        "Anell noetherià",
+        "Teorema de Lasker-Noether"
+      ]
     },
     "fields": {
       "en": [
         "Mathematician",
-        "Philosopher",
-        "Physicist"
+        "Physics"
       ],
       "es": [
         "Matemática",
-        "Filósofa",
         "Física"
       ],
       "ca": [
         "Matemàtica",
-        "Filòsofa",
         "Física"
       ]
     },
     "nationalities": {
       "en": [
-        "French"
+        "German"
       ],
       "es": [
-        "Francesa"
+        "Alemana"
       ],
       "ca": [
-        "Francesa"
+        "Alemanya"
       ]
     },
-    "wikipedia": "Sophie_Germain"
+    "wikipedia": "Emmy_Noether"
+  },
+  {
+    "name": "Dorothy Hodgkin",
+    "pictures": [
+      "DorothyHodgkin1",
+      "DorothyHodgkin2"
+    ],
+    "bio": {
+      "en": "she was a Nobel Prize-winning British chemist who advanced the technique of X-ray crystallography to determine the structure of biomolecules, which became an essential  tool in structural biology.\n",
+      "ca": "va ser una química britànica guanyadora del premi Nobel que va avançar la tècnica de  la cristal·lografia de raigs X per determinar l'estructura de les biomolècules, que es va convertir en una eina essencial en biologia estructural.\n",
+      "es": "fue una química británica que desarrolló cristalografía de proteínas, por el cual obtuvo el Premio Nobel de Química en 1964.\n \n"
+    },
+    "birthYear": "1882",
+    "deathYear": "1935",
+    "awards": {
+      "en": [
+        "Nobel Prize in Chemistry",
+        "Royal Medal",
+        "Dalton Medal"
+      ],
+      "es": [
+        "Premio Nobel de Química",
+        "Medalla Real",
+        "Medalla Dalton"
+      ],
+      "ca": [
+        "Premi Nobel de Química",
+        "Medalla Real",
+        "Medalla Dalton"
+      ]
+    },
+    "achievements": {
+      "en": [
+        "Development of protein crystallography",
+        "Determining the structure of insulin"
+      ],
+      "es": [
+        "Desarrollar de la Cristalografía de proteínas",
+        "Determinar la estructura de la Insulina"
+      ],
+      "ca": [
+        "Desenvolupar de la Cristal·lografia de proteïnes",
+        "Determinar l'estructura de la Insulina"
+      ]
+    },
+    "fields": {
+      "en": [
+        "Biochemistry"
+      ],
+      "es": [
+        "Bioquímica"
+      ],
+      "ca": [
+        "Bioquímica"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "British"
+      ],
+      "es": [
+        "Británica"
+      ],
+      "ca": [
+        "Britànica"
+      ]
+    },
+    "wikipedia": "Dorothy_Hodgkin"
+  },
+  {
+    "name": "Hypatia",
+    "pictures": [
+      "Hypatia1",
+      "Hypatia2"
+    ],
+    "bio": {
+      "en": "She was a Hellenistic Neoplatonist philosopher, astronomer, and mathematician, who lived  in Alexandria, Egypt, then part of the Eastern Roman Empire. She was a prominent thinker of the Neoplatonic school in Alexandria where she taught philosophy and astronomy. Although preceded by Pandrosion, another Alexandrine female mathematician, she is the first female mathematician whose life is reasonably well recorded. Hypatia was renowned  in her own lifetime as a great teacher and a wise counselor.\n",
+      "ca": "fou una filòsofa, astrònoma i matemàtica hel·lenística neoplatònica d'Alexandria, a la província romana d'Orient d'Egipte. Fou membre i cap de l'escola neoplatònica  d'Alexandria a començaments del segle v. Seguidora de Plotí, va conrear els estudis lògics i les ciències exactes, i va portar una vida ascètica.\n   \n",
+      "es": "fue una filósofa y maestra neoplatónica griega, natural de Egipto, que destacó  en los campos de las matemáticas y la astronomía,3​ miembro y cabeza de la Escuela neoplatónica de Alejandría a comienzos del siglo V. Seguidora de Plotino, cultivó  los estudios lógicos y las ciencias exactas, llevando una vida ascética. Educó a  una selecta escuela de aristócratas cristianos y paganos que ocuparon altos cargos.\n   \n"
+    },
+    "birthYear": "c.360",
+    "deathYear": "415",
+    "awards": {
+      "en": [],
+      "es": [],
+      "ca": []
+    },
+    "achievements": {
+      "en": [
+        "She was the fist mathematician women",
+        "Invented the hydrometer and improved astrolabs"
+      ],
+      "es": [
+        "Fue la primera mujer matemática",
+        "Inventó el densímetro y mejoró los astrolabios"
+      ],
+      "ca": [
+        "Va ser la primera dona matemàtica",
+        "Va inventar el densímetre i va millorar els astrolabis"
+      ]
+    },
+    "fields": {
+      "en": [
+        "Astronomer",
+        "Mathematician",
+        "Mechanics",
+        "Philosopher"
+      ],
+      "es": [
+        "Astrónoma",
+        "Matemática",
+        "Mecánica",
+        "Filósofa"
+      ],
+      "ca": [
+        "Astrònoma",
+        "Matemàtica",
+        "Mecànica",
+        "Filósofa"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "Egyptian"
+      ],
+      "es": [
+        "Egipcia"
+      ],
+      "ca": [
+        "Egipcia"
+      ]
+    },
+    "wikipedia": "Hypatia"
+  },
+  {
+    "name": "Joan Beauchamp Procter",
+    "pictures": [
+      "JoanProcter1"
+    ],
+    "bio": {
+      "en": "She was a notable British zoologist, internationally recognised  as an outstanding herpetologist. She worked initially at the British Museum  (Natural History) and later for the Zoological Society of London, as the first female Curator of Reptiles at London Zoo. Her short life was afflicted by chronic  ill-health, but she undertook substantial taxonomic work and made significant innovative  contributions to veterinary practice and zoo displays. She also wrote scientific and popular zoological articles, including early accounts of the behaviour of captive Komodo dragons.\n",
+      "ca": "Va ser una destacada zoòloga britànica. Reconeguda internacionalment pels seus treballs com a herpetòloga, disciplina en la qual va destacar. Va treballar inicialment al Museu d'Història  Natural de Londres i després a la Zoological Society of London, i com a primera dona comissària en rèptils del Zoo de Londres . La seva vida va ser curta, condicionada per una mala salut crònica.  No obstant, va realitzar un treball taxonòmic important, i va fer importants contribucions innovadores a la pràctica veterinària i a les exhibicions en els zoològics. També va escriure articles científics  sobre zoologia i de divulgació, incloent uns primers relats sobre el comportament dels Dragons de Komodo en captivitat.\n \n",
+      "es": "Fue una destacada zoóloga británica. Reconocida internacionalmente por sus trabajos de herpetología.  Trabajó inicialmente en el Museo de Historia Natural de Londres y luego en la Zoological Society of London, y como primera mujer comisaria en reptiles del Zoo de Londres. Su vida fue corta, condicionada por una mala  salud crónica. Sin embargo, realizó un trabajo taxonómico importante, e hizo importantes contribuciones innovadoras a la práctica veterinaria y en las exhibiciones en los zoológicos. También escribió artículos científicos sobre  zoología y de divulgación, incluyendo unos primeros relatos sobre el comportamiento de los dragones de Komodo en cautividad.\n"
+    },
+    "birthYear": "1897",
+    "deathYear": "1931",
+    "awards": {
+      "en": [],
+      "es": [],
+      "ca": []
+    },
+    "achievements": {
+      "en": [
+        "Extensive taxonomic work on reptiles and amphibians",
+        "Pioneering work in care and display of zoo animals",
+        "Early research on Komodo dragons in captivity"
+      ],
+      "es": [
+        "Amplio trabajo taxonómico sobre reptiles y anfibios.",
+        "Trabajo pionero en el cuidado y exhibición de animales de zoológico",
+        "Investigación preliminar sobre dragones de Komodo en cautiverio"
+      ],
+      "ca": [
+        "Ampli treball taxonòmic sobre rèptils i amfibis.",
+        "Treball pioner en la cura i exhibició d'animals de zoològic",
+        "Recerca preliminar sobre dracs de Komodo en captivitat"
+      ]
+    },
+    "fields": {
+      "en": [
+        "Herpetology"
+      ],
+      "es": [
+        "Herpetología"
+      ],
+      "ca": [
+        "Herpetologia"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "British"
+      ],
+      "es": [
+        "Británica"
+      ],
+      "ca": [
+        "Britànica"
+      ]
+    },
+    "wikipedia": "Joan_Beauchamp_Procter"
+  },
+  {
+    "name": "Lillian Moller Gilbreth",
+    "pictures": [
+      "LillianMollerGilbreth1",
+      "LillianMollerGilbreth2"
+    ],
+    "bio": {
+      "en": "She was an American psychologist, industrial engineer, consultant, and educator who was an early  pioneer in applying psychology to time-and-motion studies. She was described in the 1940s as \"a genius  in the art of living\". Gilbreth, one of the first female engineers to earn a Ph.D., is considered to be the first industrial/organizational psychologist. She and her husband, Frank Bunker Gilbreth,  were efficiency experts who contributed to the study of industrial engineering, especially in the areas of motion study and human factors.\n",
+      "ca": "Va ser una psicòloga nord-americana, els treballs de la qual es van desenvolupar principalment a l'àrea d'enginyeria industrial. Fou una de les primeres dones enginyeres que realitzà un doctorat, i, possiblement, la primera veritable psicòloga industrial/organitzacional. Ella i el seu espòs, Frank  Búnquer Gilbreth, eren experts d'eficiència que van contribuir a l'estudi d'enginyeria industrial en camps com el de moviment i els factors humans. \n  \n",
+      "es": "Fue una ingeniera y psicóloga estadounidense, cuyos trabajos se desarrollaron principalmente en el área de ingeniería industrial. Fue una de las primeras mujeres ingenieras que obtuvo un  doctorado, y, posiblemente, la primera verdadera psicóloga industrial/organizacional. Ella y su esposo, Frank Bunker Gilbreth, eran expertos en eficiencia y contribuyeron al estudio  de ingeniería industrial en campos como el del movimiento y los factores humanos. \n  \n"
+    },
+    "birthYear": "1878",
+    "deathYear": "1972",
+    "awards": {
+      "en": [
+        "Hoover medal"
+      ],
+      "es": [
+        "Medalla Hoover"
+      ],
+      "ca": [
+        "Medalla Hoover"
+      ]
+    },
+    "achievements": {
+      "en": [
+        "Seminal contributions to human factors engineering and ergonomics"
+      ],
+      "es": [
+        "Contribuciones fundamentales a la ingeniería y la ergonomía de factores humanos"
+      ],
+      "ca": [
+        "Contribucions fonamentals a l'enginyeria i l'ergonomia de factors humans"
+      ]
+    },
+    "fields": {
+      "en": [
+        "Industrial engineer",
+        "Psychologist"
+      ],
+      "es": [
+        "Ingeniera industrial",
+        "Psicóloga"
+      ],
+      "ca": [
+        "Enginyera industrial",
+        "Psicòloga"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "American"
+      ],
+      "es": [
+        "Norteamericana"
+      ],
+      "ca": [
+        "Nord-americana"
+      ]
+    },
+    "wikipedia": "Lillian_Moller_Gilbreth"
+  },
+  {
+    "name": "Alice Ball",
+    "pictures": [
+      "AliceBall1"
+    ],
+    "bio": {
+      "en": "She was an American chemist who developed the \"Ball Method\", the most effective treatment for leprosy during the early 20th century. She was the first woman and first African  American to receive a master's degree from the University of Hawaii, and was also the  university's first female and African American chemistry professor.\n",
+      "ca": "va ser una química nord-americana que va desenvolupar un extracte d'oli injectable que va  ser fins a la dècada de 1940 el tractament més efectiu contra la lepra. Va ser la primera dona nord-americana d'ascendència africana que es va graduar a la Universitat de Hawaii amb un màster.\n",
+      "es": "fue una científica y química estadounidense que desarrolló un extracto de aceite inyectable que fue el único tratamiento más efectivo contra la lepra hasta la aparición de los antibióticos en 1940.Fue la primera mujer norteamericana de ascendencia africana que se graduó en la Universidad de Hawái con un máster.\n"
+    },
+    "birthYear": "1892",
+    "deathYear": "1916",
+    "awards": {
+      "en": [
+        "University of Hawaii Medal of Distinction"
+      ],
+      "ca": [
+        "Medalla de Distinció de la Universitat de Hawaii"
+      ],
+      "es": [
+        "Medalla de Distinción de la Universidad de Hawaii"
+      ]
+    },
+    "achievements": {
+      "en": [
+        "Treatment of leprosy"
+      ],
+      "es": [
+        "Tratamiento de la lepra"
+      ],
+      "ca": [
+        "Tractament de la lepra"
+      ]
+    },
+    "fields": {
+      "en": [
+        "Chemistry"
+      ],
+      "es": [
+        "Química"
+      ],
+      "ca": [
+        "Química"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "American"
+      ],
+      "es": [
+        "Norteamericana"
+      ],
+      "ca": [
+        "Nord-americana"
+      ]
+    },
+    "wikipedia": "Alice_Ball"
+  },
+  {
+    "name": "Maria Goeppert Mayer",
+    "pictures": [
+      "MariaGoeppertMayer1",
+      "MariaGoeppertMayer2"
+    ],
+    "bio": {
+      "en": "She was a German-born American theoretical physicist, and Nobel laureate in Physics for proposing the nuclear shell model of the atomic nucleus. She was the second  woman to win a Nobel Prize in physics, the first being Marie Curie. In 1986, the  Maria Goeppert-Mayer Award for early-career women physicists was established in her honor.\n",
+      "ca": "fou una física nord-americana, d'origen alemany, guardonada amb el Premi Nobel de Física  l'any 1963. Va ser la segona dona a obtenir aquest guardó, seixanta anys després de Marie Curie.\n",
+      "es": "fue una física teórica estadounidense de origen polaco, ganadora del Premio Nobel de Física en  1963 por proponer el modelo de capas nuclear. Fue la segunda mujer galardonada con el Premio Nobel de Física después de Marie Curie.\n"
+    },
+    "birthYear": "1906",
+    "deathYear": "1972",
+    "awards": {
+      "en": [
+        "Nobel Prize in physics"
+      ],
+      "es": [
+        "Premio Nobel de Física"
+      ],
+      "ca": [
+        "Premi Nobel de Física"
+      ]
+    },
+    "achievements": {
+      "en": [
+        "Nuclear shell model"
+      ],
+      "es": [
+        "Modelo de capas nuclear"
+      ],
+      "ca": [
+        "Model de capes nuclear"
+      ]
+    },
+    "fields": {
+      "en": [
+        "Physics"
+      ],
+      "es": [
+        "Física"
+      ],
+      "ca": [
+        "Física"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "German",
+        "American"
+      ],
+      "es": [
+        "Alemana",
+        "Norteamericana"
+      ],
+      "ca": [
+        "Alemanya",
+        "Nord-americana"
+      ]
+    },
+    "wikipedia": "Maria_Goeppert_Mayer"
+  },
+  {
+    "name": "Elizabeth Blackburn",
+    "pictures": [
+      "ElizabethBlackburn1",
+      "ElizabethBlackburn2"
+    ],
+    "bio": {
+      "en": "She is an Australian-American Nobel laureate who is the former President of the Salk Institute  for Biological Studies. Previously she was a biological researcher at the University of California, San Francisco, who studied the telomere, a structure at the end of chromosomes that protects the chromosome. In  1984, Blackburn co-discovered telomerase, the enzyme that replenishes the telomere, with Carol W. Greider. For this work, she was awarded the 2009 Nobel Prize in Physiology or Medicine, sharing it with Greider and Jack W. Szostak,  becoming the first Australian woman Nobel laureate. She also worked in medical ethics.\n",
+      "ca": "És una guanyadora d'un Premi Nobel d'Austràlia que és expresidenta de l'Institut Salk d'Estudis Biològics. Anteriorment va ser investigadora biològica a la Universitat de Califòrnia, San Francisco, on va estudiar el telòmer, una estructura al final dels cromosomes que protegeix el cromosoma.  El 1984, Blackburn va codescobrir la telomerasa, l'enzim que reposa el telòmer, amb Carol W. Greider.  Per aquest treball, va ser guardonada amb el Premi Nobel de Fisiologia o Medicina de 2009, compartint-lo amb Greider i Jack W. Szostak, convertint-se en la primera dona australiana en rebre el Premi Nobel. També va treballar en ètica mèdica.\n \n",
+      "es": "es una bioquímica australiana, descubridora de la telomerasa, una enzima que forma los telómeros durante  la duplicación del ADN. Fue Premio Nobel de Medicina en 2009.\n \n"
+    },
+    "birthYear": "1948",
+    "deathYear": "",
+    "awards": {
+      "en": [
+        "NAS Award in Molecular Biology",
+        "Louisa Gross Horwitz Prize",
+        "Nobel Prize in Physiology or Medicine",
+        "AIC Gold Medal"
+      ],
+      "es": [
+        "Premio NAS en Biología Molecular",
+        "Premio Louisa Gross Horwitz",
+        "Premio Nobel de Fisiología o Medicina",
+        "Medalla de oro AIC"
+      ],
+      "ca": [
+        "Premi NAS en biologia molecular",
+        "Premi Louisa Gross Horwitz",
+        "Premi Nobel de Fisiologia o Medicina",
+        "Medalla d'or AIC"
+      ]
+    },
+    "achievements": {
+      "en": [
+        "Co-discovered telomerase"
+      ],
+      "es": [
+        "Co-descubrió la telomerasa"
+      ],
+      "ca": [
+        "Va co-descobrir la telomerasa"
+      ]
+    },
+    "fields": {
+      "en": [
+        "Molecular biology"
+      ],
+      "es": [
+        "Biología molecular"
+      ],
+      "ca": [
+        "Bilogia molecular"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "Australian",
+        "American"
+      ],
+      "es": [
+        "Australiana",
+        "Norteamericana"
+      ],
+      "ca": [
+        "Australiana",
+        "Nord-americana"
+      ]
+    },
+    "wikipedia": "Elizabeth_Blackburn"
+  },
+  {
+    "name": "May-Britt Moser",
+    "pictures": [
+      "May-BrittMoser1",
+      "May-BrittMoser2"
+    ],
+    "bio": {
+      "en": "She is a Norwegian psychologist and neuroscientist, who is a Professor of Psychology and Neuroscience  at the Norwegian University of Science and Technology (NTNU). She and her then-husband, Edvard Moser, shared  half of the 2014 Nobel Prize in Physiology or Medicine, awarded for work concerning the grid cells in the entorhinal cortex, as well as several additional space-representing cell types in the same circuit that make up the positioning system in the brain. Together with Edvard Moser she established the Moser research environment at NTNU, which they lead. Since 2012 she heads the Centre for Neural Computation.\n",
+      "ca": "És psicòlega i neurocientífica noruega, professora de Psicologia i Neurociència a la Universitat Noruega de Ciència i Tecnologia (NTNU).  Ella i el seu marit, Edvard Moser, van compartir la meitat del Premi Nobel de Fisiologia o  Medicina de 2014, atorgat pel treball relatiu a les cèl·lules de la xarxa en el còrtex entorinal, així com diversos  tipus addicionals de cèl·lules que representen l'espai en el mateix circuit que formen el sistema de posicionament en el cervell. Juntament amb Edvard Moser va establir l'entorn de recerca Moser a NTNU, que ells lideren.  Des de 2012 dirigeix el Centre de Compatibilitat Neural.\n",
+      "es": "Es psicóloga y neurocientífica noruega, profesora de Psicología y Neurociencia en la Universidad Noruega de Ciencia y Tecnología (NTNU). Ella y su marido, Edvard Moser, compartieron la mitad del Premio Nobel de Fisiología o Medicina  de 2014, otorgado por el trabajo relativo a las células de la red en el córtex entorinal, así como varios  tipos adicionales de células que representan el espacio en el mismo circuito que forman el sistema de posicionamiento en el cerebro. Junto con Edvard Moser estableció el en torno a investigación Moser a NTNU, que ellos lideran. Desde 2012 dirige el Centro de Compatibilidad Neural.\n"
+    },
+    "birthYear": "1963",
+    "deathYear": "",
+    "awards": {
+      "en": [
+        "Louis-Jeantet Prize for Medicine",
+        "Nobel Prize in Physiology or Medicine"
+      ],
+      "es": [
+        "Premio Louis-Jeantet de Medicina",
+        "Premio Nobel en Psicología o Medicina"
+      ],
+      "ca": [
+        "Premi Louis-Jeantet de Medicina",
+        "Premi Nobel en Psicologia o Medicina"
+      ]
+    },
+    "achievements": {
+      "en": [
+        "Grid cells"
+      ],
+      "es": [
+        "Células grid"
+      ],
+      "ca": [
+        "Cèl·lules grid"
+      ]
+    },
+    "fields": {
+      "en": [
+        "Neuroscience"
+      ],
+      "es": [
+        "Neurociencia"
+      ],
+      "ca": [
+        "Neurociència"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "Norwegian"
+      ],
+      "es": [
+        "Noruega"
+      ],
+      "ca": [
+        "Noruega"
+      ]
+    },
+    "wikipedia": "May-Britt_Moser"
+  },
+  {
+    "name": "Patricia Bath",
+    "pictures": [
+      "PatriciaBath1"
+    ],
+    "bio": {
+      "en": "She was an American ophthalmologist, inventor, humanitarian, and academic. She was the inventor  of laser cataract surgery. Her invention was called Lazerphaco Probe. She also became the first woman member of the Jules Stein Eye Institute, first woman to lead a post-graduate training program in ophthalmology, and first woman elected to the honorary staff of the UCLA Medical Center. Bath was the first African-American person to serve as a resident in ophthalmology at New York University. She was also the first African-American woman to serve on staff as a surgeon at the UCLA Medical Center. Bath was the first African-American woman doctor  to receive a patent for a medical purpose. The holder of five patents,[2] she also founded the non-profit American  Institute for the Prevention of Blindness in Washington, D.C.\n",
+      "ca": "va ser una oftalmòloga, inventora i acadèmica estatunidenca. Va obrir camí per a les dones i els afroamericans en un  cert nombre d'àrees. Abans de Bath, cap dona no havia format part del personal del Jules Stein Eye Institute, ni havia  dirigit un programa de formació de post-grau en oftalmologia, o havia estat elegit empleat d'honor del UCLA Medical Center (un honor conferit a ella després de la seva jubilació). Abans de Bath, cap persona negra havia treballat com a resident e n oftalmologia a la Universitat de Nova York i cap dona negra mai havia format part del personal com a cirurgià al Centre  Mèdic UCLA. Bath va ser la primera metgessa afroamericana en rebre una patent per a un propòsit mèdic. Va ser titular de  quatre patents en total, i va fundar l'American Institute for the Prevention of Blindness (Institut Americà per a la Prevenció  de la Ceguesa) a Washington, DC.\n",
+      "es": "fue una oftalmóloga, inventora y académica estadounidense. Abrió camino para las mujeres y los afroamericanos en cierto número  de áreas. Antes de Bath, ninguna mujer había formado parte del personal de Jules Stein Eye Institute, ni había dirigido un programa de formación de post-grado en oftalmología, o había sido elegido empleada de honor del UCLA Medical Center (un honor  conferido a ella desprendido de su jubilación). Antes de Bath, ninguna persona negra había trabajado como residente en oftalmología  en la Universidad de Nueva York y ninguna mujer negra nunca había formado parte del personal como cirujano en el Centro Médico UCLA.  Bath fue la primera médica afroamericana al recibir una patente para un propósito médico. Fue titular de cuatro patentes en total, y  fundó el American Institute for the Prevention of Blindness (Instituto Americano para la Prevención de la Ceguera) en Washington, DC. \n"
+    },
+    "birthYear": "1942",
+    "deathYear": "2019",
+    "awards": {
+      "en": [
+        "Tubman's Sheila Award",
+        "Silver Innovation Award from Alliance for Aging research"
+      ],
+      "es": [
+        "Premio Sheila Tubman",
+        "Medalla de plata a la innovación de la investigación \"Alliance for Aging\""
+      ],
+      "ca": [
+        "Premi Sheila Tubman",
+        "Medalla de plata a la innovació de la investigació \"Alliance for Aging\""
+      ]
+    },
+    "achievements": {
+      "en": [
+        "Invention of Laserphaco Probe"
+      ],
+      "es": [
+        "Invención sonda Laserphaco"
+      ],
+      "ca": [
+        "Invenció sonda Laserphaco"
+      ]
+    },
+    "fields": {
+      "en": [
+        "Ophthalmologist"
+      ],
+      "es": [
+        "Oftalmóloga"
+      ],
+      "ca": [
+        "Oftalmòloga"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "American"
+      ],
+      "es": [
+        "Norteamericana"
+      ],
+      "ca": [
+        "Nord-americana"
+      ]
+    },
+    "wikipedia": "Patricia_Bath"
+  },
+  {
+    "name": "Mae Jemison",
+    "pictures": [
+      "MaeJemison1",
+      "MaeJemison2",
+      "MaeJemison3"
+    ],
+    "bio": {
+      "en": "she is an American engineer, physician, and former NASA astronaut. She became the first black woman to travel  into space when she served as a mission specialist aboard the Space Shuttle Endeavour. Jemison joined NASA's  astronaut corps in 1987 and was selected to serve for the STS-47 mission, during which she orbited the Earth  for nearly eight days on September 12–20, 1992.\n",
+      "ca": "és una metgessa americana i astronauta de la NASA. Va ser la primera dona afroamericana que va viatjar a l'espai  quan va anar a orbitar a bord del Transbordador espacial Endeavour el 12 de setembre de 1992.\n",
+      "es": "es una médica americana y astronauta de la NASA. Fue la primera mujer afroamericana que viajó al espacio cuando fue  a orbitar a bordo del Transbordador espacial Endeavour el 12 de septiembre de 1992.\n"
+    },
+    "birthYear": "1956",
+    "deathYear": "",
+    "awards": {
+      "en": [
+        "NASA Space Flight Medal",
+        "Rachel Carson Award",
+        "Elizabeth Blackwell Medal"
+      ],
+      "es": [
+        "Medalla de la NASA de Vuelo espacial",
+        "Rachel Carson Award",
+        "Medalla Elizabeth Blackwell"
+      ],
+      "ca": [
+        "Medalla de la NASA de Vol espacial",
+        "Rachel Carson Award",
+        "Medalla Elizabeth Blackwell"
+      ]
+    },
+    "achievements": {
+      "en": [
+        "First black woman to travel into space"
+      ],
+      "es": [
+        "Primera mujer afroamericana en viajar al espacio"
+      ],
+      "ca": [
+        "Primera dona afroamericana en viatjar al espai"
+      ]
+    },
+    "fields": {
+      "en": [
+        "Astronaut",
+        "Professor"
+      ],
+      "es": [
+        "Astronauta",
+        "Profesora"
+      ],
+      "ca": [
+        "Astronauta",
+        "Professora"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "American"
+      ],
+      "es": [
+        "Norteamericana"
+      ],
+      "ca": [
+        "Nord-americana"
+      ]
+    },
+    "wikipedia": "Mae_Jemison"
+  },
+  {
+    "name": "Rosalyn Sussman Yalow",
+    "pictures": [
+      "RosalynYalow1",
+      "RosalynYalow2"
+    ],
+    "bio": {
+      "en": "was an American medical physicist, and a co-winner of the 1977 Nobel Prize in Physiology or Medicine  (together with Roger Guillemin and Andrew Schally) for development of the radioimmunoassay technique. She  was the second woman (after Gerty Cori), and the first American-born woman, to be awarded the Nobel Prize in Physiology or Medicine.\n",
+      "ca": "va ser una física estatunidenca. Va cursar estudis de física en la Universitat d'Illinois. Dedicada a la investigació d'hormones a l'hospital  de veterans del Bronx (Nova York), va ser guardonada amb el Premi Nobel en Fisiologia i Medicina en 1977, compartit amb el polonés Andrew V. Schally  i el francés Roger Guillemin, pels seus progressos en el terreny de les hormones pèptids del radioimmunoassaig. En 1976 va ser la primera dona a qui  se li va atorgar el Premi Albert Lasker.\n",
+      "es": "fue una física estadounidense. Cursó estudios de física en la Universidad de Illinois. Dedicada a la investigación de hormonas en el  hospital de veteranos del Bronx (Nueva York), fue galardonada con el Premio Nobel en Fisiología y Medicina en 1977, compartido con el  polaco Andrew V. Schally y el francés Roger Guillemin, por sus progresos en el terreno de las hormonas péptidos del radioinmunoensayo. En  1976 fue la primera mujer a quien se le otorgó el Premio Albert Lasker.\n"
+    },
+    "birthYear": "1921",
+    "deathYear": "2011",
+    "awards": {
+      "en": [
+        "Dickson Prize",
+        "AMA Scientific Achievement Award",
+        "Albert Lasker Award for Basic Medical Research",
+        "Nobel Prize in Physiology or Medicine"
+      ],
+      "es": [
+        "Premio Dickson",
+        "Premio al logro científico de la AMA",
+        "Premio Albert Lasker de Investigación Médica Básica",
+        "Premio Nobel de Fisiología o Medicina"
+      ],
+      "ca": [
+        "Premi Dickson",
+        "Premi a l'assoliment científic de l'AMA",
+        "Premi Albert Lasker d'Investigació Mèdica Bàsica",
+        "Premi Nobel de Fisiologia o Medicina"
+      ]
+    },
+    "achievements": {
+      "en": [
+        "Radioimmunoassay"
+      ],
+      "es": [
+        "Radioinmunoensayo"
+      ],
+      "ca": [
+        "Radioimmunoassaig"
+      ]
+    },
+    "fields": {
+      "en": [
+        "Medical physics"
+      ],
+      "es": [
+        "Física médica"
+      ],
+      "ca": [
+        "Física mèdica"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "American"
+      ],
+      "es": [
+        "Norteamericana"
+      ],
+      "ca": [
+        "Nord-americana"
+      ]
+    },
+    "wikipedia": "Rosalyn_Sussman_Yalow"
+  },
+  {
+    "name": "Maryam Mirzakhani",
+    "pictures": [
+      "MaryamMirzakhani1"
+    ],
+    "bio": {
+      "en": "she was an Iranian mathematician and a professor of mathematics at Stanford University. Her research topics  included Teichmüller theory, hyperbolic geometry, ergodic theory, and symplectic geometry. In 2005, as a result of  her research, she was honored in Popular Science's fourth annual \"Brilliant 10\" in which she was acknowledged as one  of the top 10 young minds who have pushed their fields in innovative directions.\n",
+      "ca": "fou una matemàtica iraniana que va viure i va fer recerca als Estats Units.El 2014 va guanyar la prestigiosa Medalla  Fields, la primera dona i la primera persona iraniana a fer-ho. Va treballar en geometria de l'espai i, amb un estil  original, va revolucionar la matemàtica moderna, relacionant geometria i dinàmica.\n",
+      "es": "fue una matemática iraní y profesora de matemáticas en la Universidad de Stanford. En 2014 fue galardonada con la Medalla  Fields, siendo la primera mujer en recibir este premio equivalente al Nobel de las matemáticas.\n"
+    },
+    "birthYear": "1977",
+    "deathYear": "2017",
+    "awards": {
+      "en": [
+        "Blumenthal Award",
+        "Satter Prize",
+        "Clay Research Award",
+        "Fields Medal"
+      ],
+      "es": [
+        "Premio Blumenthal",
+        "Premio Satter",
+        "Premio de investigación Clay",
+        "Medalla Fiels"
+      ],
+      "ca": [
+        "Premi Blumenthal",
+        "Premi Satter",
+        "Premi d'investigació Clay",
+        "Medalla Fiels"
+      ]
+    },
+    "achievements": {
+      "en": [
+        "Riemann surfaces"
+      ],
+      "es": [
+        "Superficies de Riemann"
+      ],
+      "ca": [
+        "Superfícies de Riemann"
+      ]
+    },
+    "fields": {
+      "en": [
+        "Mathematician"
+      ],
+      "es": [
+        "Matemática"
+      ],
+      "ca": [
+        "Matemàtica"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "Iranian",
+        "American"
+      ],
+      "es": [
+        "Iraní",
+        "Norteamericana"
+      ],
+      "ca": [
+        "Iraní",
+        "Nord-americana"
+      ]
+    },
+    "wikipedia": "Maryam_Mirzakhani"
+  },
+  {
+    "name": "Katherine Johnson",
+    "pictures": [
+      "KatherineJohnson1",
+      "KatherineJohnson2",
+      "KatherineJohnson3"
+    ],
+    "bio": {
+      "en": "She was an American mathematician whose calculations of orbital mechanics as a NASA employee were critical to  the success of the first and subsequent U.S. crewed spaceflights. During her 35-year career at NASA and its  predecessor, she earned a reputation for mastering complex manual calculations and helped pioneer the use of  computers to perform the tasks. The space agency noted her \"historical role as one of the first African-American  women to work as a NASA scientist\"\n",
+      "ca": "fou una física, científica espacial i matemàtica estatunidenca que va contribuir a l'aeronàutica dels Estats Units  i als programes espacials amb l'aplicació primerenca de les computadores electròniques digitals a la NASA. Coneguda  per la seva precisió en la navegació astronòmica informatitzada, va calcular la trajectòria per al Projecte Mercury  i el vol de l'Apollo 11 de 1969 a la Lluna.\n",
+      "es": "fue una física, científica espacial y matemática estadounidense, que contribuyó a la aeronáutica de Estados Unidos  y sus programas espaciales. Sus cálculos de la mecánica orbital como empleada de la NASA fueron fundamentales para el  éxito del primer y posteriores vuelos espaciales tripulados de Estados Unidos. Durante su carrera de 35 años en la NASA y  su predecesor, el Comité Asesor Nacional para la Aeronáutica (NACA por sus siglas en inglés), se ganó la reputación de dominar  los cálculos manuales complejos y contribuyó al uso pionero de computadoras para realizar tareas. La agencia espacial destacó  su «papel histórico como una de las primeras mujeres afroamericanas en trabajar como científica de la NASA».\n"
+    },
+    "birthYear": "1918",
+    "deathYear": "2020",
+    "awards": {
+      "en": [
+        "Presidential Medal of Freedom",
+        "Silver Snoopy award",
+        "NASA Group Achievement Award",
+        "Congressional Gold Medal"
+      ],
+      "es": [
+        "Medalla Presidencial de la Libertad",
+        "Premio Silver Snoopy",
+        "Premio al Logro del Grupo de la NASA",
+        "Medalla de oro del Congreso"
+      ],
+      "ca": [
+        "Medalla Presidencial de la Llibertat",
+        "Premi Silver Snoopy",
+        "Premi a l'assoliment del Grup de la NASA",
+        "Medalla d'oro del Congrés"
+      ]
+    },
+    "achievements": {
+      "en": [
+        "Calculating trajectories for NASA missions"
+      ],
+      "es": [
+        "Cálculo trayectorias para las misiones de la NASA"
+      ],
+      "ca": [
+        "Càlcul trajectòries per a les missions de la NASA"
+      ]
+    },
+    "fields": {
+      "en": [
+        "Mathematician"
+      ],
+      "es": [
+        "Matemática"
+      ],
+      "ca": [
+        "Matemàtica"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "American"
+      ],
+      "es": [
+        "Norteamericana"
+      ],
+      "ca": [
+        "Nord-americana"
+      ]
+    },
+    "wikipedia": "Katherine_Johnson"
+  },
+  {
+    "name": "Hertha Marks Ayrton",
+    "pictures": [
+      "HerthaAyrton1"
+    ],
+    "bio": {
+      "en": "She was a British engineer, mathematician, physicist and inventor, and suffragette. Known in adult life as Hertha Ayrton, born Phoebe Sarah Marks, she was awarded the Hughes Medal by the Royal Society for her work  on electric arcs and ripple marks in sand and water.\n",
+      "ca": "fou una matemàtica, física, enginyera i inventora anglesa. Va rebre la Medalla Hughes de la Royal Society pels  seus treballs sobre l'arc elèctric i pels seus estudis sobre el moviment oscil·latori de l'aigua i l'origen i el  creixement de les dunes de les platges.\n",
+      "es": "fue una ingeniera, matemática, física e inventora británica. Fue galardonada con la Medalla Hughes de la Royal Society  por sus estudios del arco eléctrico y la formación de ondas de las dunas y las olas del mar.\n"
+    },
+    "birthYear": "1854",
+    "deathYear": "1923",
+    "awards": {
+      "en": [
+        "Huges Medal"
+      ],
+      "es": [
+        "Medalla Huges"
+      ],
+      "ca": [
+        "Medalla Huges"
+      ]
+    },
+    "achievements": {
+      "en": [
+        "Work with the electric arc, discovery with waves and ripple."
+      ],
+      "es": [
+        "Trabajó con el arco eléctrico, descubriendo ondas y ondulaciones."
+      ],
+      "ca": [
+        "Va treballar amb el arc elèctric, descubrint ondes i ondulacions."
+      ]
+    },
+    "fields": {
+      "en": [
+        "Engineer",
+        "Mathematician",
+        "Physicist",
+        "Inventor"
+      ],
+      "es": [
+        "Ingeniera",
+        "Matemática",
+        "Física",
+        "Inventora"
+      ],
+      "ca": [
+        "Enginyera",
+        "Matemàtica",
+        "Física",
+        "Inventora"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "Brittish"
+      ],
+      "es": [
+        "Británica"
+      ],
+      "ca": [
+        "Britànica"
+      ]
+    },
+    "wikipedia": "Hertha_Ayrton"
+  },
+  {
+    "name": "Brenda Milner",
+    "pictures": [
+      "BrendaMilner1",
+      "BrendaMilner2"
+    ],
+    "bio": {
+      "en": "She is a British-Canadian neuropsychologist who has contributed extensively to the research literature on various topics in the field of  clinical neuropsychology. As of 2010, Milner is a professor in the Department of Neurology and Neurosurgery at McGill University and a professor  of Psychology at the Montreal Neurological Institute. As of 2005, she holds more than 20 degrees and continues to work in her nineties. Her current work  explores the interaction between the brain's left and right hemispheres. Milner has been called the founder of neuropsychology, and has proven to be an  essential key in its development.\n",
+      "ca": "és una neuropsicòloga canadenca que ha contribuït àmpliament a la recerca científica en diversos camps de la neuropsicologia clínica. Milner és professora en el  Department of Neurology and Neurosurgery a la Universitat McGill de Mont-real i professora de Psicologia en el Mont-real Neurological Institute. Ha rebut més de  20 doctorats honoris causa i segueix treballant als seus noranta anys. La seva recerca actual explora la interacció entre els hemisferis esquerre i dret del cervell.  A Milner ha estat considerada com la fundadora de la neuropsicologia, i el seu treball ha estat clau en el desenvolupament d'aquesta disciplina.\n",
+      "es": "es una neuropsicóloga canadiense que ha contribuido ampliamente a la investigación científica en varios campos de la neuropsicología clínica.​ Milner era profesora  en el Department of Neurology and Neurosurgery en la Universidad McGil de Montreal y profesora de Psicología en el Montreal Neurological Institute. Ha recibido más  de 20 doctorados honoris causa y trabajó hasta sus noventa años.4​ Su investigación actual explora la interacción entre los hemisferios izquierdo y derecho del  cerebro. A Milner se la ha considerado como la fundadora de la neuropsicología,y su trabajo ha sido clave en el desarrollo de esta disciplina. \n"
+    },
+    "birthYear": "1918",
+    "deathYear": "",
+    "awards": {
+      "en": [
+        "Gairdner Award",
+        "Companion of the Order of Canada",
+        "Balzan Prize in Cognitive Neuroscience",
+        "Kavli Prize in Neuroscience"
+      ],
+      "es": [
+        "Premio Gairdner",
+        "Miembro de la Orden de Canadá",
+        "Premio Balzan de Neurociencia Cognitiva",
+        "Premio Kavli de Neurociencia"
+      ],
+      "ca": [
+        "Premi Gairdner",
+        "Membre de l'Ordre de Canadá",
+        "Premi Balzan de Neurociència Cognitiva",
+        "Premio Kavli de Neurociència"
+      ]
+    },
+    "achievements": {
+      "en": [
+        "Role of the temporal lobes and other brain regions in learning, memory, and language.",
+        "Discovery of specialized brain networks for memory and cognition."
+      ],
+      "es": [
+        "Papel de los lóbulos temporales y otras regiones del cerebro en el aprendizaje, la memoria y el lenguaje.",
+        "Descubrimiento de las redes cerebrales especializadas en la memoria y cognición"
+      ],
+      "ca": [
+        "Paper dels lòbuls temporals i altres regions del cervell en l'aprenentatge, la memòria i el llenguatge.",
+        "Descobriments de les xarxes cerebrals especialitzades en la memòria i cognició."
+      ]
+    },
+    "fields": {
+      "en": [
+        "Neuropsychology"
+      ],
+      "es": [
+        "Neuropsicología"
+      ],
+      "ca": [
+        "Neuropsicologia"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "Brittish",
+        "Canadian"
+      ],
+      "es": [
+        "Británica",
+        "Canadiense"
+      ],
+      "ca": [
+        "Britànica",
+        "Canadenca"
+      ]
+    },
+    "wikipedia": "Brenda_Milner"
+  },
+  {
+    "name": "Jane Goodall",
+    "pictures": [
+      "JaneGoodall1",
+      "JaneGoodall2"
+    ],
+    "bio": {
+      "en": "She is an English primatologist and anthropologist. Considered to be the world's foremost expert on chimpanzees, Goodall is best known  for her 60-year study of social and family interactions of wild chimpanzees since she first went to Gombe Stream National Park in Tanzania in  1960, where she witnessed human-like behaviours amongst chimpanzees, including armed conflict.\n",
+      "ca": "es una etóloga inglesa y Mensajera de la paz de la ONU. Se la considera la pionera en el estudio de los chimpancés salvajes y es conocida por  su estudio de 60 años de duración sobre las interacciones sociales y familiares de los chimpancés salvajes en el parque nacional Gombe Stream  en Tanzania. Es la fundadora del Instituto Jane Goodall y del programa Roots & Shoots (Raíces y Brotes). Ha hecho una gran labor en materia  de conservación y bienestar animal. Dado que el chimpancé es actualmente la especie genéticamente más cercana al Homo sapiens, sus hallazgos  revolucionaron los conocimientos que se tenían no solo de los chimpancés, sino también del ser humano.\n",
+      "es": "és una etòloga anglesa i Missatgera de la pau de l'ONU. Se li considera la pionera en l'estudi dels ximpanzés salvatges i és coneguda pel seu  estudi de 60 anys de duració sobre les interaccions socials i familiars dels ximpanzés salvatges al parc nacional Gombe Stream a Tanzània. És la fundadora de l'Institut Jane Goodall i del programa Roots & Shoots (Arrels i Brots). Ha fet una gran labor en matèria de conservació i  benestar animal. Atés que el ximpanzé és actualment l'espècie genèticament més pròxima a l'Homo sapiens, les seues troballes van revolucionar  els coneixements que es tenien no sols dels ximpanzés, sinó també de l'ésser humà.\n"
+    },
+    "birthYear": "1934",
+    "deathYear": "",
+    "awards": {
+      "en": [
+        "Kyoto Prize",
+        "Hubbard Medal",
+        "Tyler Prize for Environmental Achievement",
+        "DBE"
+      ],
+      "es": [
+        "Premio Kyoto",
+        "Medalla Hubbard",
+        "Premio Tyler por los logros ambientales",
+        "DBE"
+      ],
+      "ca": [
+        "Premi Kyoto",
+        "Medalla Hubbard",
+        "Premi Tyler per la consecució del medi ambient",
+        "DBE"
+      ]
+    },
+    "achievements": {
+      "en": [
+        "Study of chimpanzees, conservation and animal welfare"
+      ],
+      "es": [
+        "Estudio de chimpancés, conservación y bienestar animal"
+      ],
+      "ca": [
+        "Estudi de ximpanzés, conservació i benestar animal"
+      ]
+    },
+    "fields": {
+      "en": [
+        "Anthropologist",
+        "Primatologist"
+      ],
+      "es": [
+        "Antropóloga",
+        "Primatóloga"
+      ],
+      "ca": [
+        "Antropòloga",
+        "Primatòloga"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "Brittish"
+      ],
+      "es": [
+        "Británica"
+      ],
+      "ca": [
+        "Britànica"
+      ]
+    },
+    "wikipedia": "Jane_Goodall"
+  },
+  {
+    "name": "Maria Reiche",
+    "pictures": [
+      "MariaReiche1",
+      "MariaReiche2"
+    ],
+    "bio": {
+      "en": "was a German-born Peruvian mathematician, archaeologist, and technical translator. She is known for her research into the Nazca Lines, which  she first saw in 1941 together with American historian Paul Kosok. Known as the \"Lady of the Lines\", Reiche made the documentation, preservation  and public dissemination of the Nazca Lines her life's work.\n",
+      "ca": "va ser una matemàtica alemanya i arqueòloga, coneguda per la seva investigació de les línies de Nazca al Perú. Va estudiar matemàtiques, geografia i  llengües a la Universitat Tècnica de Dresden.\n",
+      "es": "fue una arqueóloga y matemática alemana nacionalizada peruana, la mayor estudiosa de las líneas de Nazca, a las que dedicó gran parte de su vida.\n"
+    },
+    "birthYear": "1903",
+    "deathYear": "1998",
+    "awards": {
+      "en": [
+        "Official Cross of the Order of Merit of the Federal Republic of Germany",
+        "Grand Cross of the Order The Sun of Peru"
+      ],
+      "es": [
+        "Cruz de Oficial de la Orden del Mérito de la República Federal de Alemania",
+        "Gran Cruz de la Orden El Sol del Perú",
+        "Orden de las Palmas Magisteriales"
+      ],
+      "ca": [
+        "Creu d'Oficial de l'Orde al Mèrit de la República Federal Alemanya",
+        "Gran Creu de l'Orde El Sol del Perú",
+        "Palmas Magisteriales"
+      ]
+    },
+    "achievements": {
+      "en": [
+        "Study and conservation of Nazca Lines"
+      ],
+      "es": [
+        "Estudio y conservación de las líneas de Nazca"
+      ],
+      "ca": [
+        "Estudi i conservació de les linies de Nazca"
+      ]
+    },
+    "fields": {
+      "en": [
+        "Archaeology"
+      ],
+      "es": [
+        "Arqueología"
+      ],
+      "ca": [
+        "Arqueologia"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "German",
+        "Peruvian"
+      ],
+      "es": [
+        "Alemana",
+        "Peruana"
+      ],
+      "ca": [
+        "Alemanya",
+        "Peruana"
+      ]
+    },
+    "wikipedia": "Maria_Reiche"
+  },
+  {
+    "name": "Marie Tharp",
+    "pictures": [
+      "MarieTharp1"
+    ],
+    "bio": {
+      "en": "She was an American geologist and oceanographic cartographer who, in partnership with Bruce Heezen, created the first scientific map of the  Atlantic Ocean floor. Tharp's work revealed the detailed topography and multi-dimensional geographical landscape of the ocean bottom. Her work  also revealed the presence of a continuous rift valley along the axis of the Mid-Atlantic Ridge, causing a paradigm shift in earth science that  led to acceptance of the theories of plate tectonics and continental drift.\n",
+      "ca": "fou una geòloga, oceanògrafa i cartògrafa americana que, conjuntament amb Bruce Heezen, va crear el primer mapa científic del sòl oceànic sencer. La  feina de Tharp va revelar la presència de la dorsal mesoatlàntica, fet que va causar un canvi de paradigma en les ciències de la Terra que va portar a  l'acceptació de les teories de la tectònica de plaques i de la deriva dels continents.\n",
+      "es": "fue una cartógrafa oceanográfica y geóloga estadounidense quien, junto con Bruce Heezen, creó el primer mapa científico de todo el suelo oceánico. La  obra de Tharp puso de manifiesto la existencia de la dorsal mesoatlántica y revolucionó la comprensión científica de la deriva continental.\n"
+    },
+    "birthYear": "1920",
+    "deathYear": "2006",
+    "awards": {
+      "en": [
+        "National Geographic Society’s Hubbard Medal",
+        "Society of Woman Geographers Outstanding Achievement Award",
+        "Woods Holes Oceanographic Institution’s Mary Sears Woman Pioneer in Oceanography Award",
+        "Lamont–Doherty Earth Observatory Heritage Award"
+      ],
+      "es": [
+        "Medalla Hubbard de la National Geographic Society",
+        "Premio de la Sociedad de Geógrafas Femeninas",
+        "Premio Mary Sears Woman Pioneer de la Institución Oceanográfica de Woods Holes"
+      ],
+      "ca": [
+        "Medalla Hubbard de la National Geographic Society",
+        "Premi de la Societat de Geògrafs Femenins",
+        "Premi Mary Sears Woman Pioneer de la Institució Oceanogràfica de Woods Holes",
+        "Premi Patrimoni de l'Observatori Lamont-Doherty de la Terra"
+      ]
+    },
+    "achievements": {
+      "en": [
+        "Seafloor topography"
+      ],
+      "es": [
+        "Topografia del fondo marino"
+      ],
+      "ca": [
+        "Topografia del fons marí"
+      ]
+    },
+    "fields": {
+      "en": [
+        "Geology",
+        "Oceanography"
+      ],
+      "es": [
+        "Geóloga",
+        "Oceanógrafa"
+      ],
+      "ca": [
+        "Geòloga",
+        "Oceanògrafa"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "American"
+      ],
+      "es": [
+        "Norteamericana"
+      ],
+      "ca": [
+        "Nord-americanca"
+      ]
+    },
+    "wikipedia": "Marie_Tharp"
+  },
+  {
+    "name": "Margarita Salas",
+    "pictures": [
+      "imagen1"
+    ],
+    "bio": {
+      "en": "She was a Spanish scientist, medical researcher, and author in the fields of biochemistry and molecular genetics. Salas' discovery of the  bacterial virus Φ29 DNA polymerase was recognized by the Spanish National Research Council as the highest-grossing patent in Spain. Her  cumulative work, as described by The Local in 2019, \"invented a faster, simpler and more reliable way to replicate trace amounts of DNA  into quantities large enough for full genomic testing.\n",
+      "ca": "Va ser un científica espanyola, investigadora mèdica i autora en els camps de la bioquímica i la genètica molecular. El descobriment de Salas del  virus bacterià Φ29 ADN polimerasa va ser reconeguda pel Consell Nacional d'Investigació espanyol com la patent de més alt consum a Espanya. El seu  treball acumulatiu, tal com va descriure The Local el 2019, \"va inventar una forma més ràpida, més senzilla i més fiable de replicar quantitats d'ADN  en quantitats prou grans per a proves genòmiques completes.\n",
+      "es": "Fue un científica española, investigadora médica y autora en los campos de la bioquímica y la genética molecular. El descubrimiento de Salas del  virus bacteriano Φ29 ADN polimerasa fue reconocida por el Consejo Nacional de Investigación español como la patente de más alto consumo en España. Su  trabajo acumulativo, tal como describió The Local el 2019, \"inventó una forma más rápida, más sencilla y más fiable de replicar cantidades de ADN  en cantidades basta grandes para pruebas genómicas completas.\n"
+    },
+    "birthYear": "1938",
+    "deathYear": "2019",
+    "awards": {
+      "en": [
+        "México de Ciencia y Tecnología Award",
+        "Echegaray Medal",
+        "European Inventor Award"
+      ],
+      "es": [
+        "Premio México de Ciencia y Tecnología",
+        "Medalla Echegaray",
+        "European Inventor Award"
+      ],
+      "ca": [
+        "Premi Mèxic de Ciència i Tecnologia",
+        "Medalla Echegaray",
+        "European Inventor Award"
+      ]
+    },
+    "achievements": {
+      "en": [
+        "First scientific woman ever elected to the Royal Spanish Academy.",
+        "Studies of molecular genetics and discovery of Φ29 DNA polymerase."
+      ],
+      "es": [
+        "Primera mujer científica que ha sido elegida a la Real Academia Española.",
+        "Estudios de genética molecular y descubrimiento de Φ29 ADN polimerasa."
+      ],
+      "ca": [
+        "Primera dona científica que ha estat elegida a la Reial Acadèmia Espanyola.",
+        "Estudis de genètica molecular i descobriment de Φ29 ADN polimerasa."
+      ]
+    },
+    "fields": {
+      "en": [
+        "Biochemistry"
+      ],
+      "es": [
+        "Bioquímica"
+      ],
+      "ca": [
+        "Bioquímica"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "Spanish"
+      ],
+      "es": [
+        "Española"
+      ],
+      "ca": [
+        "Espanyola"
+      ]
+    },
+    "wikipedia": "Margarita_Salas"
+  },
+  {
+    "name": "Nuria Oliver",
+    "pictures": [
+      "NuriaOliver1",
+      "NuriaOliver2"
+    ],
+    "bio": {
+      "en": "She is Chief Scientific Adviser at the Vodafone Institute, Chief Data Scientist at DataPop Alliance, an independent director on the board of directors of  Bankia, and Commissioner of the Presidency of Valencia for AI and COVID-19. Previously, she was Director of Data Science Research at Vodafone, Scientific  Director at Telefónica and researcher at Microsoft Research. She holds a PhD from the Media Lab at MIT, and is an IEEE Fellow, ACM Fellow, a member of  the board of ELLIS, and elected permanent member of the Royal Academy of Engineering of Spain. She is one of the most cited female computer scientists in  Spain, with her research having been cited by more than 17,000 publications. She is well known for her work in computational models of human behavior, human  computer-interaction, mobile computing and big data for social good.\n",
+      "ca": "és una enginyera en telecomunicacions espanyola, doctora pel Mitjana Lab de l'Institut Tecnològic de Massachusetts (MIT). És consellera independent per a Bankia,  assessora científica del Vodafone Institute, Chief Data Scientist en Data-Pop Alliance, IEEE Fellow​, ACM Fellow i acadèmica numerària de la Reial Acadèmia  d'Enginyeria d'Espanya. És una de les dones investigadores en informàtica més citades a Espanya: els seus articles han sigut citats més de 15.000 vegades. És coneguda  pel seu treball en models computacionals de comportament humà, intel·ligència artificial, interacció persona-màquina, informàtica mòbil i \"big data\" per a ben  social.\n",
+      "es": "es una ingeniera en telecomunicaciones española, doctora por el Media Lab del Instituto Tecnológico de Massachusetts (MIT). Es consejera independiente para  Bankia, asesora científica del Vodafone Institute, Chief Data Scientist en Data-Pop Alliance, IEEE Fellow​, ACM Fellow y académica numeraria de la Real Academia  de Ingeniería de España. Es una de las mujeres investigadoras en informática más citadas en España: sus artículos han sido citados más de 15.000 veces. Es conocida  por su trabajo en modelos computacionales de comportamiento humano, inteligencia artificial, interacción persona-máquina, informática móvil y \"big data\" para bien  social.\n"
+    },
+    "birthYear": "1970",
+    "deathYear": "",
+    "awards": {
+      "en": [
+        "IEEE Fellow",
+        "Ángela Ruiz Robles Spanish National Computer Science Award",
+        "Winner of European DatSci & AI 2019 Data Scientist of the Year",
+        "XPrize Challenge on Pandemic Response"
+      ],
+      "es": [
+        "IEEE Fellow",
+        "Ángela Ruiz Robles Premio Nacional Español de Informática",
+        "Ganadora del European DatSci & AI 2019 Data Scientist of the Year",
+        "XPrize Challenge on Pandemic Response"
+      ],
+      "ca": [
+        "IEEE Fellow",
+        "Ángela Ruiz Robles Premi Nacional Espanyol d'Informática",
+        "Guanyadora del European DatSci & AI 2019 Data Scientist of the Year",
+        "XPrize Challenge on Pandemic Response"
+      ]
+    },
+    "achievements": {
+      "en": [],
+      "es": [],
+      "ca": []
+    },
+    "fields": {
+      "en": [
+        "Artificial Intelligence",
+        "Human Behavior Modeling"
+      ],
+      "es": [
+        "Inteligencia artificial",
+        "Modelos comporatamiento humano"
+      ],
+      "ca": [
+        "Inteligencia artificial",
+        "Models comportament humà"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "Spanish"
+      ],
+      "es": [
+        "Española"
+      ],
+      "ca": [
+        "Espanyola"
+      ]
+    },
+    "wikipedia": "Nuria_Oliver"
+  },
+  {
+    "name": "Ángela Ruíz",
+    "pictures": [
+      "imagen1"
+    ],
+    "bio": {
+      "en": "She was a Spanish teacher, writer, pioneer and inventor of the mechanical precursor to the electronic book. In 1949, Ruiz was awarded Spanish  patent 190,698 for the \"Mechanical Encyclopedia\". Ruiz Robles wanted to lighten the weight of the books carried by her students, so she devised  a device consisting of a series of text and illustrations on reels, all under a sheet of magnifying glass with a light for reading in the dark, and was to incorporate spoken descriptions of each topic. Her device was never put into production but a prototype is in display at the National Museum of  Science and Technology in A Coruña.\n",
+      "ca": "Va ser professora, escriptora, pionera i inventora del precursor mecànic del llibre electrònic. El 1949, Ruiz va ser guardonat amb la patent espanyola 190.698 per  l'\"Enciclopèdia Mecànica\". Ruiz Robles volia alleugerir el pes dels llibres que portaven els seus estudiants, per la qual cosa va idear un dispositiu que consistia  en una sèrie de text i il·lustracions en reels, tot sota una lupa de vidre amb llum per llegir en la foscor, i que incorporaria descripcions parlades de cada  tema. El seu dispositiu mai va ser posat en producció, però un prototip està exposat al Museu Nacional de Ciència i Tecnologia de la Corunya.\n",
+      "es": "Fue profesora, escritora, pionera e inventora del precursor mecánico del libro electrónico. El 1949, Ruiz fue galardonado con la patente española 190.698 por  la \"Enciclopedia Mecánica\". Ruiz Robles quería aligerar el peso de los libros que llevaban sus estudiantes, por lo cual ideó un dispositivo que consistía en una  serie de texto e ilustraciones en reels, todo bajo una lupa de vidrio con luz para leer en la oscuridad, y que incorporaría descripciones habladas de cada  tema. Su dispositivo nunca fue puesto en producción, pero un prototipo está expuesto al Museo Nacional de Ciencia y Tecnología de la Coruña.\n"
+    },
+    "birthYear": "1895",
+    "deathYear": "1975",
+    "awards": {
+      "en": [
+        "Orden de Alfonso X el Sabio"
+      ],
+      "es": [
+        "Orden de Alfonso X el Sabio"
+      ],
+      "ca": [
+        "Ordre d'Alfons X el Savi"
+      ]
+    },
+    "achievements": {
+      "en": [
+        "Precursor of the e-book"
+      ],
+      "es": [
+        "Precursora del e-book"
+      ],
+      "ca": [
+        "Precursora del e-book"
+      ]
+    },
+    "fields": {
+      "en": [
+        "Education",
+        "Technology"
+      ],
+      "es": [
+        "Eduacación",
+        "Tecnología"
+      ],
+      "ca": [
+        "Educació",
+        "Tecnologia"
+      ]
+    },
+    "nationalities": {
+      "en": [
+        "Spanish"
+      ],
+      "es": [
+        "Española"
+      ],
+      "ca": [
+        "Espanyola"
+      ]
+    },
+    "wikipedia": "Ángela_Ruiz_Robles"
   }
 ]
