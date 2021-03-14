@@ -45,7 +45,13 @@ struct MultipleQuizView: View {
                 VStack {
                     ProgressView(value: progress)
                     ScrollView {
-                        QuizView(quiz: quizzes[shownQuiz], shownQuiz: $shownQuiz, correctAnswers: $correctAnswers, progress: $progress, numberOfQuizzes: quizzes.count)
+                        QuizView(
+                            quiz: quizzes[shownQuiz],
+                            shownQuiz: $shownQuiz,
+                            correctAnswers: $correctAnswers,
+                            progress: $progress,
+                            numberOfQuizzes: quizzes.count
+                        )
                     }
                 }
             }

@@ -19,6 +19,8 @@
 		CB77369925FB79B000A5E550 /* TrueOrFalseGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB77369825FB79B000A5E550 /* TrueOrFalseGenerator.swift */; };
 		F50B035E25FBE19100D4EABE /* ChronolineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B035D25FBE19100D4EABE /* ChronolineView.swift */; };
 		F50B036425FCA95F00D4EABE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F50B036325FCA95F00D4EABE /* GoogleService-Info.plist */; };
+		F50B036825FE906200D4EABE /* ChronoWomanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B036725FE906200D4EABE /* ChronoWomanView.swift */; };
+		F50B036C25FE94AA00D4EABE /* ChronolineGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B036B25FE94AA00D4EABE /* ChronolineGenerator.swift */; };
 		F53AA8B125F8B6D80045977A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F53AA8B325F8B6D80045977A /* Localizable.strings */; };
 		F53AA8BB25F8BD750045977A /* women.json in Resources */ = {isa = PBXBuildFile; fileRef = F53AA8BA25F8BD750045977A /* women.json */; };
 		F53AA8BE25FA04890045977A /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53AA8BD25FA04890045977A /* SearchBarView.swift */; };
@@ -51,6 +53,8 @@
 		CB77369825FB79B000A5E550 /* TrueOrFalseGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueOrFalseGenerator.swift; sourceTree = "<group>"; };
 		F50B035D25FBE19100D4EABE /* ChronolineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChronolineView.swift; sourceTree = "<group>"; };
 		F50B036325FCA95F00D4EABE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F50B036725FE906200D4EABE /* ChronoWomanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChronoWomanView.swift; path = ../../../../../Documents/ChronoWomanView.swift; sourceTree = "<group>"; };
+		F50B036B25FE94AA00D4EABE /* ChronolineGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChronolineGenerator.swift; path = ../../../../../Documents/ChronolineGenerator.swift; sourceTree = "<group>"; };
 		F53AA8B225F8B6D80045977A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F53AA8B525F8B6FA0045977A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F53AA8B725F8B7A10045977A /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -137,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				F50B035D25FBE19100D4EABE /* ChronolineView.swift */,
+				F50B036725FE906200D4EABE /* ChronoWomanView.swift */,
+				F50B036B25FE94AA00D4EABE /* ChronolineGenerator.swift */,
 			);
 			path = Chronoline;
 			sourceTree = "<group>";
@@ -356,10 +362,12 @@
 				F5A9822E25F769C1005EB566 /* LoginView.swift in Sources */,
 				CB74700025F7FC91006795BB /* Woman.swift in Sources */,
 				5AEF0B1F25FC94F1007983CF /* ResetPasswordView.swift in Sources */,
+				F50B036825FE906200D4EABE /* ChronoWomanView.swift in Sources */,
 				CB74700325F7FEF5006795BB /* WomenView.swift in Sources */,
 				F5A9823C25F77814005EB566 /* MainView.swift in Sources */,
 				F58710AF25F7611C00B47462 /* ContentView.swift in Sources */,
 				F58710AD25F7611C00B47462 /* Hidden_WomenApp.swift in Sources */,
+				F50B036C25FE94AA00D4EABE /* ChronolineGenerator.swift in Sources */,
 				F53AA8C225FA0EA70045977A /* GuestWarningView.swift in Sources */,
 				F50B035E25FBE19100D4EABE /* ChronolineView.swift in Sources */,
 				CB77369925FB79B000A5E550 /* TrueOrFalseGenerator.swift in Sources */,

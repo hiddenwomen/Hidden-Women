@@ -28,7 +28,7 @@ struct MainView: View {
                     NavigationLink(destination: MultipleQuizView(currentMultipleQuizPage: .start)) {
                         Text("Quiz")
                     }
-                    NavigationLink(destination: MultipleTrueOrFalseView()) {
+                    NavigationLink(destination: MultipleTrueOrFalseView(currentMultipleTrueOrFalsePage: .start)) {
                         Text("True or False")
                     }
                     NavigationLink(destination: ChronolineView()) {

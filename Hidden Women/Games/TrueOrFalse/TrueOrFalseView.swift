@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct TrueOrFalseView: View {
+    let trueOrFalse: TrueOrFalse
     @Binding var shownTrueOrFalse: Int
     @Binding var correctAnswers: Int
+    @Binding var progress: Float
+    var numberOfTrueOrFalses: Int
     
-    let trueOrFalse: TrueOrFalse
     
     var body: some View {
         VStack {
@@ -28,6 +30,7 @@ struct TrueOrFalseView: View {
                     if trueOrFalse.correct == false{
                         correctAnswers += 1
                     }
+                    progress += 1.0 / Float(numberOfTrueOrFalses)
                     shownTrueOrFalse += 1
                 }) {
                     ZStack {
@@ -45,6 +48,7 @@ struct TrueOrFalseView: View {
                     if trueOrFalse.correct == true{
                         correctAnswers += 1
                     }
+                    progress += 1.0 / Float(numberOfTrueOrFalses)
                     shownTrueOrFalse += 1
                 }) {
                     ZStack {
@@ -60,6 +64,7 @@ struct TrueOrFalseView: View {
                 Spacer()
             }
             .padding(.top, 40)
+            Spacer()
         }
     }
 }

@@ -13,7 +13,7 @@ extension UIScreen {
 
 struct Objeto: Identifiable {
     var pos: CGPoint
-    var number: String
+    var woman: Woman
     let id = UUID()
 }
 
@@ -23,12 +23,10 @@ struct Objetos {
 
 struct ChronolineView: View {
     @State var objetos: [Objeto] = crea()
+    @State var dragging: Int? = nil
     
     static func crea() -> [Objeto] {
-        var o: [Objeto] = []
-        for i in 0..<5 {
-            o.append(Objeto(pos: CGPoint(x: UIScreen.width / 2, y: 25 + 125 * CGFloat(i)), number: "\(i)"))
-        }
+        let o: [Objeto] = fullChronolineGenerator(women: women, numberOfWomen: 5, height: UIScreen.height, x: UIScreen.width / 2)
         return o
     }
     
@@ -37,7 +35,7 @@ struct ChronolineView: View {
         var y: CGFloat = 25
         for ordenado in ordenados {
             for i in 0..<objetos.count {
-                if i != noTocar && ordenado.number == objetos[i].number {
+                if i != noTocar && ordenado.woman.name == objetos[i].woman.name {
                     objetos[i].pos.y = y
                     break
                 }
@@ -49,22 +47,23 @@ struct ChronolineView: View {
     var body: some View {
         ZStack {
             ForEach(0..<objetos.count) { i in
-                ZStack {
-                    Circle()
-                        .foregroundColor(.blue)
-                        .frame(width: 100, height: 100)
-                    Text(objetos[i].number)
-                }
+                ChronoWomanView(woman: objetos[i].woman)
+                        .frame(width: 200, height: 100)
+                        .shadow(radius: dragging == i ? 10 : 0)
+                    .zIndex(dragging == i ? 1000 : 0)
                 .position(objetos[i].pos)
                 .gesture(
                     DragGesture()
                         .onChanged { drag in
+                            
+                            dragging = i
                             withAnimation(.spring()) {
                                 objetos[i].pos = drag.location
                                 reordena(noTocar: i)
                             }
                         }
                         .onEnded { drag in
+                            dragging = nil
                             withAnimation(.spring()) {
                                 objetos[i].pos = CGPoint(x: UIScreen.width / 2, y: drag.location.y)
                                 reordena(noTocar: nil)
