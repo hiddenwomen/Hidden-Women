@@ -1562,7 +1562,8 @@
   {
     "name": "Margarita Salas",
     "pictures": [
-      "imagen1"
+      "MargaritaSalas1",
+      "MargaritaSalas2"
     ],
     "bio": {
       "en": "She was a Spanish scientist, medical researcher, and author in the fields of biochemistry and molecular genetics. Salas' discovery of the  bacterial virus Φ29 DNA polymerase was recognized by the Spanish National Research Council as the highest-grossing patent in Spain. Her  cumulative work, as described by The Local in 2019, \"invented a faster, simpler and more reliable way to replicate trace amounts of DNA  into quantities large enough for full genomic testing.\n",
@@ -1694,7 +1695,7 @@
   {
     "name": "Ángela Ruíz",
     "pictures": [
-      "imagen1"
+      "AngelaRuizRobles1"
     ],
     "bio": {
       "en": "She was a Spanish teacher, writer, pioneer and inventor of the mechanical precursor to the electronic book. In 1949, Ruiz was awarded Spanish  patent 190,698 for the \"Mechanical Encyclopedia\". Ruiz Robles wanted to lighten the weight of the books carried by her students, so she devised  a device consisting of a series of text and illustrations on reels, all under a sheet of magnifying glass with a light for reading in the dark, and was to incorporate spoken descriptions of each topic. Her device was never put into production but a prototype is in display at the National Museum of  Science and Technology in A Coruña.\n",
@@ -1753,3 +1754,5 @@
     "wikipedia": "Ángela_Ruiz_Robles"
   }
 ]
+
+
