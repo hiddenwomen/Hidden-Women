@@ -21,6 +21,7 @@
 		F50B036425FCA95F00D4EABE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F50B036325FCA95F00D4EABE /* GoogleService-Info.plist */; };
 		F50B037125FEBDBE00D4EABE /* ChronoWomanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B036F25FEBDBD00D4EABE /* ChronoWomanView.swift */; };
 		F50B037225FEBDBE00D4EABE /* ChronolineGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B037025FEBDBE00D4EABE /* ChronolineGenerator.swift */; };
+		F50B037A2601393E00D4EABE /* MultipleChronolineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B03792601393E00D4EABE /* MultipleChronolineView.swift */; };
 		F53AA8B125F8B6D80045977A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F53AA8B325F8B6D80045977A /* Localizable.strings */; };
 		F53AA8BB25F8BD750045977A /* women.json in Resources */ = {isa = PBXBuildFile; fileRef = F53AA8BA25F8BD750045977A /* women.json */; };
 		F53AA8BE25FA04890045977A /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53AA8BD25FA04890045977A /* SearchBarView.swift */; };
@@ -55,6 +56,7 @@
 		F50B036325FCA95F00D4EABE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F50B036F25FEBDBD00D4EABE /* ChronoWomanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChronoWomanView.swift; sourceTree = "<group>"; };
 		F50B037025FEBDBE00D4EABE /* ChronolineGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChronolineGenerator.swift; sourceTree = "<group>"; };
+		F50B03792601393E00D4EABE /* MultipleChronolineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChronolineView.swift; sourceTree = "<group>"; };
 		F53AA8B225F8B6D80045977A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F53AA8B525F8B6FA0045977A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F53AA8B725F8B7A10045977A /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				F50B035D25FBE19100D4EABE /* ChronolineView.swift */,
 				F50B037025FEBDBE00D4EABE /* ChronolineGenerator.swift */,
 				F50B036F25FEBDBD00D4EABE /* ChronoWomanView.swift */,
+				F50B03792601393E00D4EABE /* MultipleChronolineView.swift */,
 			);
 			path = Chronoline;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				F5A9823825F7722C005EB566 /* SignupView.swift in Sources */,
 				CB6826E525FA236200A8190C /* MultipleQuizView.swift in Sources */,
 				F560939A25FB6CB7000E8560 /* TrueOrFalseView.swift in Sources */,
+				F50B037A2601393E00D4EABE /* MultipleChronolineView.swift in Sources */,
 				F560939D25FB6CD0000E8560 /* TrueOrFalse.swift in Sources */,
 				F53AA8BE25FA04890045977A /* SearchBarView.swift in Sources */,
 				CB6826E225FA173600A8190C /* Quiz.swift in Sources */,

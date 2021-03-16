@@ -31,7 +31,7 @@ struct MainView: View {
                     NavigationLink(destination: MultipleTrueOrFalseView(currentMultipleTrueOrFalsePage: .start)) {
                         Text("True or False")
                     }
-                    NavigationLink(destination: ChronolineView()) {
+                    NavigationLink(destination: MultipleChronolineView(currentMultipleChronolinePage: .start)) {
                         Text("Chronoline")
                     }
                 }

@@ -11,61 +11,57 @@ extension UIScreen {
     static let height = UIScreen.main.bounds.size.height
 }
 
-struct Objeto: Identifiable {
+struct Card: Identifiable {
     var pos: CGPoint
     var woman: Woman
     let id = UUID()
 }
 
-struct Objetos {
-    var objetos: [Objeto]
+struct Chronoline {
+    var cards: [Card]
 }
 
 struct ChronolineView: View {
-    @State var objetos: [Objeto] = crea()
+    @State var chronoline: Chronoline 
     @State var dragging: Int? = nil
     
-    static func crea() -> [Objeto] {
-        let o: [Objeto] = fullChronolineGenerator(women: women, numberOfWomen: 5, height: UIScreen.height, x: UIScreen.width / 2)
-        return o
-    }
     
     func reordena(noTocar: Int?) {
-        let ordenados = objetos.sorted(by: {$0.pos.y < $1.pos.y} )
-        var y: CGFloat = 25
+        let ordenados = chronoline.cards.sorted(by: {$0.pos.y < $1.pos.y} )
+        var y: CGFloat = 0.1 * UIScreen.height
         for ordenado in ordenados {
-            for i in 0..<objetos.count {
-                if i != noTocar && ordenado.woman.name == objetos[i].woman.name {
-                    objetos[i].pos.y = y
+            for i in 0..<chronoline.cards.count {
+                if i != noTocar && ordenado.woman.name == chronoline.cards[i].woman.name {
+                    chronoline.cards[i].pos.y = y
                     break
                 }
             }
-            y += 125
+            y += 0.7 * UIScreen.height / CGFloat(chronoline.cards.count)
         }
     }
     
     var body: some View {
         ZStack {
-            ForEach(0..<objetos.count) { i in
-                ChronoWomanView(woman: objetos[i].woman)
+            ForEach(0..<chronoline.cards.count) { i in
+                ChronoWomanView(woman: chronoline.cards[i].woman)
                         .frame(width: 200, height: 100)
                         .shadow(radius: dragging == i ? 10 : 0)
                     .zIndex(dragging == i ? 1000 : 0)
-                .position(objetos[i].pos)
+                    .position(chronoline.cards[i].pos)
                 .gesture(
                     DragGesture()
                         .onChanged { drag in
                             
                             dragging = i
                             withAnimation(.spring()) {
-                                objetos[i].pos = drag.location
+                                chronoline.cards[i].pos = drag.location
                                 reordena(noTocar: i)
                             }
                         }
                         .onEnded { drag in
                             dragging = nil
                             withAnimation(.spring()) {
-                                objetos[i].pos = CGPoint(x: UIScreen.width / 2, y: drag.location.y)
+                                chronoline.cards[i].pos = CGPoint(x: UIScreen.width / 2, y: drag.location.y)
                                 reordena(noTocar: nil)
                             }
                         }
@@ -75,8 +71,8 @@ struct ChronolineView: View {
     }
 }
 
-struct TimelineView_Previews: PreviewProvider {
-    static var previews: some View {
-        ChronolineView()
-    }
-}
+//struct TimelineView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ChronolineView()
+//    }
+//}
