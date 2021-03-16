@@ -50,7 +50,13 @@ struct MultipleChronolineView: View {
             if shownChronoline != chronolines.count {
                 VStack {
                     ProgressView(value: progress)
-                    ChronolineView(chronoline: chronolines[shownChronoline])
+                    ChronolineView(
+                        chronoline: chronolines[shownChronoline],
+                        shownChronoline: $shownChronoline,
+                        progress: $progress,
+                        correctAnswers: $correctAnswers,
+                        numberOfChronolines: chronolines.count
+                    )
                 }
             }
         }

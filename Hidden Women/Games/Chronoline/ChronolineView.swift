@@ -22,8 +22,12 @@ struct Chronoline {
 }
 
 struct ChronolineView: View {
-    @State var chronoline: Chronoline 
+    @State var chronoline: Chronoline
     @State var dragging: Int? = nil
+    @Binding var shownChronoline: Int
+    @Binding var progress: Float
+    @Binding var correctAnswers: Int
+    let numberOfChronolines: Int
     
     
     func reordena(noTocar: Int?) {
@@ -41,31 +45,54 @@ struct ChronolineView: View {
     }
     
     var body: some View {
-        ZStack {
-            ForEach(0..<chronoline.cards.count) { i in
-                ChronoWomanView(woman: chronoline.cards[i].woman)
-                        .frame(width: 200, height: 100)
-                        .shadow(radius: dragging == i ? 10 : 0)
-                    .zIndex(dragging == i ? 1000 : 0)
-                    .position(chronoline.cards[i].pos)
-                .gesture(
-                    DragGesture()
-                        .onChanged { drag in
-                            
-                            dragging = i
-                            withAnimation(.spring()) {
-                                chronoline.cards[i].pos = drag.location
-                                reordena(noTocar: i)
+        VStack {
+            ZStack {
+                ForEach(0..<chronoline.cards.count) { i in
+                    ChronoWomanView(woman: chronoline.cards[i].woman)
+                            .frame(width: 200, height: 100)
+                            .shadow(radius: dragging == i ? 10 : 0)
+                        .zIndex(dragging == i ? 1000 : 0)
+                        .position(chronoline.cards[i].pos)
+                    .gesture(
+                        DragGesture()
+                            .onChanged { drag in
+                                
+                                dragging = i
+                                withAnimation(.spring()) {
+                                    chronoline.cards[i].pos = drag.location
+                                    reordena(noTocar: i)
+                                }
                             }
-                        }
-                        .onEnded { drag in
-                            dragging = nil
-                            withAnimation(.spring()) {
-                                chronoline.cards[i].pos = CGPoint(x: UIScreen.width / 2, y: drag.location.y)
-                                reordena(noTocar: nil)
+                            .onEnded { drag in
+                                dragging = nil
+                                withAnimation(.spring()) {
+                                    chronoline.cards[i].pos = CGPoint(x: UIScreen.width / 2, y: drag.location.y)
+                                    reordena(noTocar: nil)
+                                }
                             }
-                        }
-                )
+                    )
+                }
+            }
+            Button(action: {
+                progress += 1.0 / Float(numberOfChronolines)
+                var isSorted = true
+                for i in 0..<chronoline.cards.count - 1 {
+                    if chronoline.cards[i].woman.birthYear > chronoline.cards[i + 1].woman.birthYear{
+                        isSorted = false
+                    }
+                }
+                if isSorted {
+                    correctAnswers += 1
+                }
+                shownChronoline += 1
+                print(shownChronoline)
+            }) {
+                Text("Submit")
+                    .fontWeight(.bold)
+                    .padding(EdgeInsets(top: 12, leading: 40, bottom: 12, trailing: 40))
+                    .foregroundColor(Color.white)
+                    .background(Color("Morado"))
+                    .cornerRadius(10)
             }
         }
     }
