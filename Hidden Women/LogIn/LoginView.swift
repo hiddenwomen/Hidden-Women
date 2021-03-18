@@ -95,8 +95,8 @@ struct LoginView: View {
                     if let snapshot = snapshot, snapshot.exists {
                         let data = snapshot.data() ?? ["name": ""]
                         profile.name = data["name"] as? String ?? ""
-                        let email = snapshot.data() ?? ["email": ""]
-                        profile.email = email["email"] as? String ?? ""
+                        profile.email = data["email"] as? String ?? ""
+                        profile.favourites = data["favourites"] as? [String] ?? []
                     }
                 }
                 currentPage = .main

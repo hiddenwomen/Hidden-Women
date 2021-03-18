@@ -6,9 +6,12 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct WomenView: View {
     @State var searchText: String = ""
+    @EnvironmentObject var profile: Profile
+    @AppStorage ("userID") var userID = ""
     
     var body: some View {
         NavigationView {
@@ -23,6 +26,29 @@ struct WomenView: View {
                 }) { woman in
                     NavigationLink(destination: WomanView(woman: woman)) {
                         HStack {
+                            Image(systemName: profile.favourites.contains(woman.name) ? "heart.fill" : "heart")
+                                .foregroundColor(Color("Morado"))
+                                .onTapGesture{
+                                    if profile.favourites.contains(woman.name){
+                                        profile.favourites.removeAll{
+                                            $0 == woman.name
+                                        }
+                                    } else {
+                                        if profile.favourites.count < 3{
+                                            profile.favourites.append(woman.name)
+                                        }
+                                        
+                                    }
+                                    Firestore.firestore().collection("users").document(userID).setData(
+                                        ["favourites": profile.favourites]
+                                    ) { error in
+                                        if let error = error {
+                                            print("error!!!")
+                                        } else {
+                                            print("Ha ido bien!")
+                                        }
+                                    }
+                                }
                             Image(woman.pictures[0])
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)

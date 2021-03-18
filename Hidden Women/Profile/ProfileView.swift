@@ -23,6 +23,7 @@ struct ProfileView: View {
             }) {
                 Text("Sign out")
             }
+            
         }
     }
 }
