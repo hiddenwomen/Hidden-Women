@@ -10,8 +10,7 @@ import Firebase
 
 struct LoginView: View {
     @AppStorage ("userID") var userID = ""
-    @AppStorage ("userName") var userName = ""
-
+    @EnvironmentObject var profile: Profile
     @Binding var currentPage: Page
     
     @State var email = ""
@@ -94,11 +93,10 @@ struct LoginView: View {
                 userID = user?.user.uid ?? ""
                 Firestore.firestore().collection("users").document(userID).getDocument { snapshot, e in
                     if let snapshot = snapshot, snapshot.exists {
-                        let data = snapshot.data() ?? ["name": "Nadie"]
-                        userName = data["name"] as? String ?? ""
-                        print("Dm:> \(userName)")
-                    } else {
-                        print("Em:> \(String(describing: e))")
+                        let data = snapshot.data() ?? ["name": ""]
+                        profile.name = data["name"] as? String ?? ""
+                        let email = snapshot.data() ?? ["email": ""]
+                        profile.email = email["email"] as? String ?? ""
                     }
                 }
                 currentPage = .main

@@ -22,6 +22,8 @@
 		F50B037125FEBDBE00D4EABE /* ChronoWomanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B036F25FEBDBD00D4EABE /* ChronoWomanView.swift */; };
 		F50B037225FEBDBE00D4EABE /* ChronolineGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B037025FEBDBE00D4EABE /* ChronolineGenerator.swift */; };
 		F50B037A2601393E00D4EABE /* MultipleChronolineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B03792601393E00D4EABE /* MultipleChronolineView.swift */; };
+		F50B037F2603D8FB00D4EABE /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B037E2603D8FB00D4EABE /* ProfileView.swift */; };
+		F50B03822603D9C200D4EABE /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B03812603D9C200D4EABE /* Profile.swift */; };
 		F53AA8B125F8B6D80045977A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F53AA8B325F8B6D80045977A /* Localizable.strings */; };
 		F53AA8BB25F8BD750045977A /* women.json in Resources */ = {isa = PBXBuildFile; fileRef = F53AA8BA25F8BD750045977A /* women.json */; };
 		F53AA8BE25FA04890045977A /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53AA8BD25FA04890045977A /* SearchBarView.swift */; };
@@ -57,6 +59,8 @@
 		F50B036F25FEBDBD00D4EABE /* ChronoWomanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChronoWomanView.swift; sourceTree = "<group>"; };
 		F50B037025FEBDBE00D4EABE /* ChronolineGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChronolineGenerator.swift; sourceTree = "<group>"; };
 		F50B03792601393E00D4EABE /* MultipleChronolineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChronolineView.swift; sourceTree = "<group>"; };
+		F50B037E2603D8FB00D4EABE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F50B03812603D9C200D4EABE /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		F53AA8B225F8B6D80045977A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F53AA8B525F8B6FA0045977A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F53AA8B725F8B7A10045977A /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -150,6 +154,15 @@
 			path = Chronoline;
 			sourceTree = "<group>";
 		};
+		F50B037D2603D8E300D4EABE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F50B037E2603D8FB00D4EABE /* ProfileView.swift */,
+				F50B03812603D9C200D4EABE /* Profile.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		F53AA8B925F8BD500045977A /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,6 +206,7 @@
 		F58710AB25F7611C00B47462 /* Hidden Women */ = {
 			isa = PBXGroup;
 			children = (
+				F50B037D2603D8E300D4EABE /* Profile */,
 				CB6826DB25FA16E800A8190C /* Games */,
 				CB746FFB25F7FC48006795BB /* Women */,
 				F5A9823A25F777E5005EB566 /* Main */,
@@ -369,6 +383,8 @@
 				CB74700325F7FEF5006795BB /* WomenView.swift in Sources */,
 				F5A9823C25F77814005EB566 /* MainView.swift in Sources */,
 				F58710AF25F7611C00B47462 /* ContentView.swift in Sources */,
+				F50B03822603D9C200D4EABE /* Profile.swift in Sources */,
+				F50B037F2603D8FB00D4EABE /* ProfileView.swift in Sources */,
 				F58710AD25F7611C00B47462 /* Hidden_WomenApp.swift in Sources */,
 				F50B037125FEBDBE00D4EABE /* ChronoWomanView.swift in Sources */,
 				F53AA8C225FA0EA70045977A /* GuestWarningView.swift in Sources */,

@@ -16,6 +16,7 @@ enum Page {
 }
 
 struct ContentView: View {
+    var profile = Profile()
     @AppStorage("userID") var userID = ""
     @State var currentPage: Page = .login
     
@@ -33,6 +34,7 @@ struct ContentView: View {
                 MainView(currentPage: $currentPage)
             }
         }
+        .environmentObject(profile)
         .onAppear {
             if userID == "" {
                 currentPage = .login

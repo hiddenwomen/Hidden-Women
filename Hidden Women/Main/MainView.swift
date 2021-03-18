@@ -10,7 +10,6 @@ import Firebase
 
 struct MainView: View {
     @AppStorage ("userID") var userID = ""
-    @AppStorage ("userName") var userName = ""
 
     @Binding var currentPage: Page
     @State var selection = 0
@@ -44,17 +43,7 @@ struct MainView: View {
                     Text("Games")
                 }
                 .tag(1)
-
-            VStack {
-                Text(userName)
-                Text(userID)
-                Button(action: {
-                    userID = ""
-                    currentPage = .login
-                }) {
-                    Text("Sign out")
-                }
-            }
+            ProfileView(currentPage: $currentPage)
             .tabItem{
                 Image(systemName: "person.circle")
                 Text("Profile")
