@@ -142,10 +142,10 @@
 		F50B035825FBE0F400D4EABE /* Chronoline */ = {
 			isa = PBXGroup;
 			children = (
-				F50B035D25FBE19100D4EABE /* ChronolineView.swift */,
-				F50B037025FEBDBE00D4EABE /* ChronolineGenerator.swift */,
-				F50B036F25FEBDBD00D4EABE /* ChronoWomanView.swift */,
 				F50B03792601393E00D4EABE /* MultipleChronolineView.swift */,
+				F50B035D25FBE19100D4EABE /* ChronolineView.swift */,
+				F50B036F25FEBDBD00D4EABE /* ChronoWomanView.swift */,
+				F50B037025FEBDBE00D4EABE /* ChronolineGenerator.swift */,
 			);
 			path = Chronoline;
 			sourceTree = "<group>";

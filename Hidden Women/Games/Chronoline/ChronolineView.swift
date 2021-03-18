@@ -19,16 +19,32 @@ struct Card: Identifiable {
 
 struct Chronoline {
     var cards: [Card]
+    var sortedYears: [String]
+    
+    init(women: [Woman]) {
+        cards = []
+        for (i, woman) in women.enumerated() {
+            cards.append(
+                Card(
+                    pos: CGPoint(
+                        x: UIScreen.width / 2.0,
+                        y: 0.1 * UIScreen.height + 0.7 * UIScreen.height / CGFloat(women.count) * CGFloat(i)
+                    ),
+                    woman: woman
+                )
+            )
+        }
+        sortedYears = women.map{$0.birthYear}.sorted()
+    }
 }
 
 struct ChronolineView: View {
-    @State var chronoline: Chronoline
-    @State var dragging: Int? = nil
     @Binding var shownChronoline: Int
     @Binding var progress: Float
     @Binding var correctAnswers: Int
     let numberOfChronolines: Int
-    
+    @State var chronoline: Chronoline
+    @State var dragging: Int? = nil
     
     func reordena(noTocar: Int?) {
         let ordenados = chronoline.cards.sorted(by: {$0.pos.y < $1.pos.y} )
@@ -49,28 +65,33 @@ struct ChronolineView: View {
             ZStack {
                 ForEach(0..<chronoline.cards.count) { i in
                     ChronoWomanView(woman: chronoline.cards[i].woman)
-                            .frame(width: 200, height: 100)
-                            .shadow(radius: dragging == i ? 10 : 0)
+                        .frame(width: 200, height: 100)
+                        .shadow(radius: dragging == i ? 10 : 0)
                         .zIndex(dragging == i ? 1000 : 0)
                         .position(chronoline.cards[i].pos)
-                    .gesture(
-                        DragGesture()
-                            .onChanged { drag in
-                                
-                                dragging = i
-                                withAnimation(.spring()) {
-                                    chronoline.cards[i].pos = drag.location
-                                    reordena(noTocar: i)
+                        .gesture(
+                            DragGesture()
+                                .onChanged { drag in
+                                    dragging = i
+                                    withAnimation(.spring()) {
+                                        chronoline.cards[i].pos = drag.location
+                                        reordena(noTocar: i)
+                                    }
                                 }
-                            }
-                            .onEnded { drag in
-                                dragging = nil
-                                withAnimation(.spring()) {
-                                    chronoline.cards[i].pos = CGPoint(x: UIScreen.width / 2, y: drag.location.y)
-                                    reordena(noTocar: nil)
+                                .onEnded { drag in
+                                    dragging = nil
+                                    withAnimation(.spring()) {
+                                        chronoline.cards[i].pos = CGPoint(x: UIScreen.width / 2, y: drag.location.y)
+                                        reordena(noTocar: nil)
+                                    }
                                 }
-                            }
-                    )
+                        )
+                }
+                ForEach(0..<chronoline.sortedYears.count) { i in
+                    Text(chronoline.sortedYears[i])
+                        .position(x: 0.1 * UIScreen.width, y: 0.1 * UIScreen.height + 0.7 * UIScreen.height / CGFloat(chronoline.cards.count) * CGFloat(i))
+                    Text(chronoline.sortedYears[i])
+                        .position(x: 0.9 * UIScreen.width, y: 0.1 * UIScreen.height + 0.7 * UIScreen.height / CGFloat(chronoline.cards.count) * CGFloat(i))
                 }
             }
             Button(action: {
@@ -85,6 +106,7 @@ struct ChronolineView: View {
                     correctAnswers += 1
                 }
                 shownChronoline += 1
+                chronoline = chronolineGenerator(women: women, numberOfWomen: 5)
                 print(shownChronoline)
             }) {
                 Text("Submit")

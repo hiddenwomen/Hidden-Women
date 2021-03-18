@@ -8,23 +8,15 @@
 import Foundation
 import SwiftUI
 
-func fullChronolineGenerator(women: [Woman], numberOfWomen: Int, height: CGFloat, x: CGFloat)-> Chronoline {
+func chronolineGenerator(women: [Woman], numberOfWomen: Int) -> Chronoline {
     var indices: Set<Int> = Set()
-    var objetos: [Card] = []
+    var selectedWomen: [Woman] = []
     
     while indices.count < numberOfWomen {
         indices.insert((0..<women.count).randomElement()!)
     }
-    for (j, i) in indices.enumerated() {
-        objetos.append(Card(pos: CGPoint(x: x, y: 0.1 * height + 0.7 * height / CGFloat(numberOfWomen) * CGFloat(j)), woman: women[i]))
+    for i in indices {
+        selectedWomen.append(women[i])
     }
-    return Chronoline(cards: objetos)
-}
-
-func fullMultipleChronolineGenerator(women: [Woman], numberOfWomen: Int, height: CGFloat, x: CGFloat, numberOfChronolines: Int) -> [Chronoline] {
-    var chronolines: [Chronoline] = []
-    for i in 0..<numberOfChronolines {
-        chronolines.append(fullChronolineGenerator(women: women, numberOfWomen: numberOfWomen, height: height, x: x))
-    }
-    return chronolines
+    return Chronoline(women: selectedWomen)
 }

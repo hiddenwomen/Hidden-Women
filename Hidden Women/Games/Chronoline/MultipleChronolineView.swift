@@ -17,7 +17,8 @@ struct MultipleChronolineView: View {
     @State var correctAnswers: Int = 0
     @State var shownChronoline: Int = 0
     @State var progress: Float = 0.0
-    @State var chronolines: [Chronoline] = []
+    @State var chronoline = chronolineGenerator(women: women, numberOfWomen: 5)
+    let numberOfChronolines = 3
     
     var body: some View {
         switch currentMultipleChronolinePage {
@@ -25,20 +26,13 @@ struct MultipleChronolineView: View {
             VStack {
                 Text("Hola")
                 Button(action: {
-                    chronolines = fullMultipleChronolineGenerator(
-                        women: women,
-                        numberOfWomen: 5,
-                        height: UIScreen.height,
-                        x: UIScreen.width / 2,
-                        numberOfChronolines: 3
-                    )
                     currentMultipleChronolinePage = .question
                 }) {
                     Text("Start")
                 }
             }
         case .question:
-            if shownChronoline == chronolines.count {
+            if shownChronoline == numberOfChronolines {
                 VStack {
                     Text("Points: \(correctAnswers)")
                     Image("logo")
@@ -47,15 +41,15 @@ struct MultipleChronolineView: View {
                         .frame(width: 150, height: 150)
                 }
             }
-            if shownChronoline != chronolines.count {
+            if shownChronoline != numberOfChronolines {
                 VStack {
                     ProgressView(value: progress)
                     ChronolineView(
-                        chronoline: chronolines[shownChronoline],
                         shownChronoline: $shownChronoline,
                         progress: $progress,
                         correctAnswers: $correctAnswers,
-                        numberOfChronolines: chronolines.count
+                        numberOfChronolines: numberOfChronolines,
+                        chronoline: chronoline
                     )
                 }
             }
