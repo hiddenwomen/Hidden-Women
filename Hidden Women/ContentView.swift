@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 enum Page {
     case login
@@ -16,7 +17,7 @@ enum Page {
 }
 
 struct ContentView: View {
-    var profile = Profile()
+    @EnvironmentObject var profile: Profile
     @AppStorage("userID") var userID = ""
     @State var currentPage: Page = .login
     
@@ -34,11 +35,30 @@ struct ContentView: View {
                 MainView(currentPage: $currentPage)
             }
         }
-        .environmentObject(profile)
         .onAppear {
+            print("Entrando")
             if userID == "" {
                 currentPage = .login
             } else {
+                Firestore.firestore().collection("users").document(userID).getDocument { snapshot, e in
+                    if let snapshot = snapshot, snapshot.exists {
+                        let data = snapshot.data() ?? ["name": ""]
+                        profile.name = data["name"] as? String ?? ""
+                        profile.email = data["email"] as? String ?? ""
+                        profile.favourites = data["favourites"] as? [String] ?? []
+                    }
+                    print("\(profile.name)")
+                }
+                let picture = Storage.storage().reference().child("fFM6mMkDLPSBJYOCarId0ofW0pA3/Profile.png")
+                picture.getData(maxSize: 128 * 1024 * 1024) { data, error in
+                    if let error = error {
+                        // Uh-oh, an error occurred!
+                    } else {
+                        // Data for "images/island.jpg" is returned
+                        profile.picture = UIImage(data: data!) ?? UIImage()
+                        print("EXITO!")
+                    }
+                }
                 currentPage = .main
             }
         }

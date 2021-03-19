@@ -99,6 +99,16 @@ struct LoginView: View {
                         profile.favourites = data["favourites"] as? [String] ?? []
                     }
                 }
+                let picture = Storage.storage().reference().child("fFM6mMkDLPSBJYOCarId0ofW0pA3/Profile.png")
+                picture.getData(maxSize: 128 * 1024 * 1024) { data, error in
+                    if let error = error {
+                        // Uh-oh, an error occurred!
+                    } else {
+                        // Data for "images/island.jpg" is returned
+                        profile.picture = UIImage(data: data!) ?? UIImage()
+                        print("EXITO!")
+                    }
+                }
                 currentPage = .main
             }
         }

@@ -6,24 +6,48 @@
 //
 
 import SwiftUI
+import Firebase
+
+enum ProfilePages {
+    case profile
+    case editProfile
+}
 
 struct ProfileView: View {
     @EnvironmentObject var profile: Profile
     @AppStorage ("userID") var userID: String = ""
     @Binding var currentPage: Page
+    @State var profilePage: ProfilePages = .profile
     
     var body: some View {
-        VStack {
-            Text(profile.name)
-            Text(profile.email)
-            Text(userID)
-            Button(action: {
-                userID = ""
-                currentPage = .login
-            }) {
-                Text("Sign out")
+        Group {
+            switch profilePage {
+            case .profile:
+            VStack {
+                Image(uiImage: profile.picture ?? UIImage())
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 200, height: 200)
+                Text(profile.name)
+                Text(profile.email)
+                Text(userID)
+                Button(action: {
+                    profilePage = .editProfile
+                }) {
+                    Text("Edit profile")
+                }
+                Button(action: {
+                    userID = ""
+                    currentPage = .login
+                }) {
+                    Text("Sign out")
+                }
+                
             }
-            
+
+            case .editProfile:
+                EditProfileView(profilePage: $profilePage)
+        }
         }
     }
 }

@@ -13,7 +13,7 @@ var women: [Woman] = []
 
 @main
 struct Hidden_WomenApp: App {
-    
+    var profile: Profile = Profile()
     init() {
         print("Init app")
         if let location = Bundle.main.url(forResource: "women", withExtension: "json") {
@@ -52,6 +52,7 @@ struct Hidden_WomenApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(profile)
         }
     }
 }

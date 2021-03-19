@@ -39,7 +39,7 @@ struct WomenView: View {
                                         }
                                         
                                     }
-                                    Firestore.firestore().collection("users").document(userID).setData(
+                                    Firestore.firestore().collection("users").document(userID).updateData(
                                         ["favourites": profile.favourites]
                                     ) { error in
                                         if let error = error {

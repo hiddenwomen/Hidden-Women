@@ -49,7 +49,6 @@ struct MainView: View {
                 Text("Profile")
             }
             .tag(2)
-            
         }
         .accentColor(Color("Morado"))
     }
