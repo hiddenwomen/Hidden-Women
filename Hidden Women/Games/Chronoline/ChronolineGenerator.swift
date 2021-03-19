@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-func chronolineGenerator(women: [Woman], numberOfWomen: Int) -> Chronoline {
+func chronolineGenerator(women: [Woman], numberOfWomen: Int, x: CGFloat, height: CGFloat) -> Chronoline {
     var indices: Set<Int> = Set()
     var selectedWomen: [Woman] = []
     
@@ -18,5 +18,5 @@ func chronolineGenerator(women: [Woman], numberOfWomen: Int) -> Chronoline {
     for i in indices {
         selectedWomen.append(women[i])
     }
-    return Chronoline(women: selectedWomen)
+    return Chronoline(women: selectedWomen, x: x, height: height)
 }

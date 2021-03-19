@@ -17,19 +17,29 @@ struct MultipleChronolineView: View {
     @State var correctAnswers: Int = 0
     @State var shownChronoline: Int = 0
     @State var progress: Float = 0.0
-    @State var chronoline = chronolineGenerator(women: women, numberOfWomen: 5)
+    @State var chronoline = chronolineGenerator(women: [], numberOfWomen: 0, x: CGFloat(0.0), height: CGFloat(0.0))
     let numberOfChronolines = 3
     
     var body: some View {
         switch currentMultipleChronolinePage {
         case .start:
-            VStack {
-                Text("Hola")
-                Button(action: {
-                    currentMultipleChronolinePage = .question
-                }) {
-                    Text("Start")
+            GeometryReader { geo in
+                HStack {
+                    Spacer()
+                    VStack {
+                        Spacer()
+                        Text("Hola")
+                        Button(action: {
+                            chronoline = chronolineGenerator(women: women, numberOfWomen: 5, x: geo.size.width/2.0, height: geo.size.height)
+                            currentMultipleChronolinePage = .question
+                        }) {
+                            Text("Start")
+                        }
+                        Spacer()
+                    }
+                    Spacer()
                 }
+                
             }
         case .question:
             if shownChronoline == numberOfChronolines {
@@ -56,6 +66,7 @@ struct MultipleChronolineView: View {
         }
     }
 }
+
 
 //struct MultipleChronolineView_Previews: PreviewProvider {
 //    static var previews: some View {

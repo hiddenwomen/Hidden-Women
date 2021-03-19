@@ -21,14 +21,14 @@ struct Chronoline {
     var cards: [Card]
     var sortedYears: [String]
     
-    init(women: [Woman]) {
+    init(women: [Woman], x: CGFloat, height: CGFloat) {
         cards = []
         for (i, woman) in women.enumerated() {
             cards.append(
                 Card(
                     pos: CGPoint(
-                        x: UIScreen.width / 2.0,
-                        y: 0.1 * UIScreen.height + 0.7 * UIScreen.height / CGFloat(women.count) * CGFloat(i)
+                        x: x,
+                        y: 0.1 * height + 0.8 * height / CGFloat(women.count) * CGFloat(i)
                     ),
                     woman: woman
                 )
@@ -46,9 +46,9 @@ struct ChronolineView: View {
     @State var chronoline: Chronoline
     @State var dragging: Int? = nil
     
-    func reordena(noTocar: Int?) {
+    func reordena(noTocar: Int?, height: CGFloat) {
         let ordenados = chronoline.cards.sorted(by: {$0.pos.y < $1.pos.y} )
-        var y: CGFloat = 0.1 * UIScreen.height
+        var y: CGFloat = 0.1 * height
         for ordenado in ordenados {
             for i in 0..<chronoline.cards.count {
                 if i != noTocar && ordenado.woman.name == chronoline.cards[i].woman.name {
@@ -56,65 +56,69 @@ struct ChronolineView: View {
                     break
                 }
             }
-            y += 0.7 * UIScreen.height / CGFloat(chronoline.cards.count)
+            y += 0.8 * height / CGFloat(chronoline.cards.count)
         }
     }
     
     var body: some View {
-        VStack {
-            ZStack {
-                ForEach(0..<chronoline.cards.count) { i in
-                    ChronoWomanView(woman: chronoline.cards[i].woman)
-                        .frame(width: 200, height: 100)
-                        .shadow(radius: dragging == i ? 10 : 0)
-                        .zIndex(dragging == i ? 1000 : 0)
-                        .position(chronoline.cards[i].pos)
-                        .gesture(
-                            DragGesture()
-                                .onChanged { drag in
-                                    dragging = i
-                                    withAnimation(.spring()) {
-                                        chronoline.cards[i].pos = drag.location
-                                        reordena(noTocar: i)
+        GeometryReader { geo in
+            VStack {
+                ZStack {
+                    ForEach(0..<chronoline.cards.count) { i in
+                        ChronoWomanView(woman: chronoline.cards[i].woman)
+                            .frame(width: 200, height: 100)
+                            .shadow(radius: dragging == i ? 10 : 0)
+                            .zIndex(dragging == i ? 1000 : 0)
+                            .position(chronoline.cards[i].pos)
+                            .gesture(
+                                DragGesture()
+                                    .onChanged { drag in
+                                        dragging = i
+                                        withAnimation(.spring()) {
+                                            chronoline.cards[i].pos = drag.location
+                                            reordena(noTocar: i, height: geo.size.height)
+                                        }
                                     }
-                                }
-                                .onEnded { drag in
-                                    dragging = nil
-                                    withAnimation(.spring()) {
-                                        chronoline.cards[i].pos = CGPoint(x: UIScreen.width / 2, y: drag.location.y)
-                                        reordena(noTocar: nil)
+                                    .onEnded { drag in
+                                        dragging = nil
+                                        withAnimation(.spring()) {
+                                            chronoline.cards[i].pos = CGPoint(x: UIScreen.width / 2, y: drag.location.y)
+                                            reordena(noTocar: nil, height: geo.size.height)
+                                        }
                                     }
-                                }
-                        )
-                }
-                ForEach(0..<chronoline.sortedYears.count) { i in
-                    Text(chronoline.sortedYears[i])
-                        .position(x: 0.1 * UIScreen.width, y: 0.1 * UIScreen.height + 0.7 * UIScreen.height / CGFloat(chronoline.cards.count) * CGFloat(i))
-                    Text(chronoline.sortedYears[i])
-                        .position(x: 0.9 * UIScreen.width, y: 0.1 * UIScreen.height + 0.7 * UIScreen.height / CGFloat(chronoline.cards.count) * CGFloat(i))
-                }
-            }
-            Button(action: {
-                progress += 1.0 / Float(numberOfChronolines)
-                var isSorted = true
-                for i in 0..<chronoline.cards.count - 1 {
-                    if chronoline.cards[i].woman.birthYear > chronoline.cards[i + 1].woman.birthYear{
-                        isSorted = false
+                            )
+                    }
+                    ForEach(0..<chronoline.sortedYears.count) { i in
+                        Text(chronoline.sortedYears[i])
+                            .position(x: 0.1 * UIScreen.width, y: 0.1 * geo.size.height + 0.8 * geo.size.height / CGFloat(chronoline.cards.count) * CGFloat(i))
+                        Text(chronoline.sortedYears[i])
+                            .position(x: 0.9 * UIScreen.width, y: 0.1 * geo.size.height + 0.8 * geo.size.height / CGFloat(chronoline.cards.count) * CGFloat(i))
                     }
                 }
-                if isSorted {
-                    correctAnswers += 1
+                Spacer()
+                Button(action: {
+                    progress += 1.0 / Float(numberOfChronolines)
+                    var isSorted = true
+                    for i in 0..<chronoline.cards.count - 1 {
+                        if chronoline.cards[i].woman.birthYear > chronoline.cards[i + 1].woman.birthYear{
+                            isSorted = false
+                        }
+                    }
+                    if isSorted {
+                        correctAnswers += 1
+                    }
+                    shownChronoline += 1
+                    chronoline = chronolineGenerator(women: women, numberOfWomen: 5, x: geo.size.width / 2, height: geo.size.height)
+                    print(shownChronoline)
+                }) {
+                    Text("Submit")
+                        .fontWeight(.bold)
+                        .padding(EdgeInsets(top: 12, leading: 40, bottom: 12, trailing: 40))
+                        .foregroundColor(Color.white)
+                        .background(Color("Morado"))
+                        .cornerRadius(10)
                 }
-                shownChronoline += 1
-                chronoline = chronolineGenerator(women: women, numberOfWomen: 5)
-                print(shownChronoline)
-            }) {
-                Text("Submit")
-                    .fontWeight(.bold)
-                    .padding(EdgeInsets(top: 12, leading: 40, bottom: 12, trailing: 40))
-                    .foregroundColor(Color.white)
-                    .background(Color("Morado"))
-                    .cornerRadius(10)
+                Spacer()
             }
         }
     }
