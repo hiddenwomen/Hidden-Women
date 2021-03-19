@@ -26,6 +26,7 @@
 		F50B03822603D9C200D4EABE /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B03812603D9C200D4EABE /* Profile.swift */; };
 		F50B03852604A42800D4EABE /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B03842604A42800D4EABE /* EditProfileView.swift */; };
 		F50B03882604AC3400D4EABE /* SUImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B03872604AC3400D4EABE /* SUImagePickerView.swift */; };
+		F50B038B2605093300D4EABE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B038A2605093300D4EABE /* Utils.swift */; };
 		F53AA8B125F8B6D80045977A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F53AA8B325F8B6D80045977A /* Localizable.strings */; };
 		F53AA8BB25F8BD750045977A /* women.json in Resources */ = {isa = PBXBuildFile; fileRef = F53AA8BA25F8BD750045977A /* women.json */; };
 		F53AA8BE25FA04890045977A /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53AA8BD25FA04890045977A /* SearchBarView.swift */; };
@@ -65,6 +66,7 @@
 		F50B03812603D9C200D4EABE /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		F50B03842604A42800D4EABE /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		F50B03872604AC3400D4EABE /* SUImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUImagePickerView.swift; sourceTree = "<group>"; };
+		F50B038A2605093300D4EABE /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		F53AA8B225F8B6D80045977A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F53AA8B525F8B6FA0045977A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F53AA8B725F8B7A10045977A /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 				F58710B525F7611D00B47462 /* Info.plist */,
 				F50B036325FCA95F00D4EABE /* GoogleService-Info.plist */,
 				F58710B225F7611D00B47462 /* Preview Content */,
+				F50B038A2605093300D4EABE /* Utils.swift */,
 			);
 			path = "Hidden Women";
 			sourceTree = "<group>";
@@ -376,6 +379,7 @@
 				5A7EAA9C25FA535800D042E1 /* QuizGenerator.swift in Sources */,
 				F56093A025FB6F89000E8560 /* MultipleTrueOrFalseView.swift in Sources */,
 				F5A9823825F7722C005EB566 /* SignupView.swift in Sources */,
+				F50B038B2605093300D4EABE /* Utils.swift in Sources */,
 				CB6826E525FA236200A8190C /* MultipleQuizView.swift in Sources */,
 				F560939A25FB6CB7000E8560 /* TrueOrFalseView.swift in Sources */,
 				F50B037A2601393E00D4EABE /* MultipleChronolineView.swift in Sources */,

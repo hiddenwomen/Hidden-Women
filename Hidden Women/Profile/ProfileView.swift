@@ -38,10 +38,7 @@ struct ProfileView: View {
                         }) {
                             Text("Edit profile")
                                 .fontWeight(.bold)
-                                .padding(EdgeInsets(top: 12, leading: 40, bottom: 12, trailing: 40))
-                                .foregroundColor(Color.white)
-                                .background(Color("Morado"))
-                                .cornerRadius(10)
+                                .importantButtonStyle()
                         }
                         Spacer()
                         
@@ -65,10 +62,7 @@ struct ProfileView: View {
                     }) {
                         Text("Sign up now!")
                             .fontWeight(.bold)
-                            .padding(EdgeInsets(top: 12, leading: 40, bottom: 12, trailing: 40))
-                            .foregroundColor(Color.white)
-                            .background(Color("Morado"))
-                            .cornerRadius(10)
+                            .importantButtonStyle()
                     }
                 }
             }

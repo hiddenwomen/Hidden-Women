@@ -22,9 +22,3 @@ struct Woman: Identifiable, Decodable {
     var id: String { name }
 }
 
-extension Dictionary where Key == String {
-    var localized: Value {
-        let key =  self.keys.contains(language) ? language : "en"
-        return self[key]!
-    }
-}

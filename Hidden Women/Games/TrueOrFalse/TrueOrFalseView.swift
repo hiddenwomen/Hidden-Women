@@ -14,7 +14,6 @@ struct TrueOrFalseView: View {
     @Binding var progress: Float
     var numberOfTrueOrFalses: Int
     
-    
     var body: some View {
         VStack {
             Image(trueOrFalse.picture)
@@ -36,7 +35,7 @@ struct TrueOrFalseView: View {
                     ZStack {
                         Circle()
                             .foregroundColor(Color("Turquesa"))
-                            .frame(width: 100, height: 100)
+                            .frame(width: 160, height: 160)
                         Text("False")
                             .foregroundColor(.white)
                             .fontWeight(.bold)
@@ -54,7 +53,7 @@ struct TrueOrFalseView: View {
                     ZStack {
                         Circle()
                             .foregroundColor(Color("Morado"))
-                            .frame(width: 100, height: 100)
+                            .frame(width: 160, height: 160)
                         Text("True")
                             .foregroundColor(.white)
                             .fontWeight(.bold)

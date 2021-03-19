@@ -28,7 +28,9 @@ struct MultipleChronolineView: View {
                     Spacer()
                     VStack {
                         Spacer()
-                        Text("Hola")
+                        Text("Chronoline")
+                            .font(.largeTitle)
+                        Text("_Chronoline Help_")
                         Button(action: {
                             chronoline = chronolineGenerator(women: women, numberOfWomen: 5, x: geo.size.width/2.0, height: geo.size.height)
                             currentMultipleChronolinePage = .question
@@ -44,6 +46,7 @@ struct MultipleChronolineView: View {
         case .question:
             if shownChronoline == numberOfChronolines {
                 VStack {
+                    //TODO: Score screen
                     Text("Points: \(correctAnswers)")
                     Image("logo")
                         .resizable()
@@ -68,8 +71,9 @@ struct MultipleChronolineView: View {
 }
 
 
-//struct MultipleChronolineView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        MultipleChronolineView()
-//    }
-//}
+struct MultipleChronolineView_Previews: PreviewProvider {
+    static var previews: some View {
+        MultipleChronolineView(currentMultipleChronolinePage: .start)
+    }
+}
+
