@@ -10,6 +10,7 @@ import Firebase
 
 struct SignupView: View {
     @AppStorage ("userID") var userID = ""
+    @EnvironmentObject var profile: Profile
     
     @Binding var currentPage: Page
     
@@ -26,7 +27,7 @@ struct SignupView: View {
                 Image("logo_nombre")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 300, height: 300)
+                    .frame(width: 200, height: 200)
                 HStack {
                     Image(systemName: "envelope")
                     TextField("Email...", text: $email)
@@ -87,6 +88,7 @@ struct SignupView: View {
                 if let error = error {
                     errorMessage = error.localizedDescription
                     showErrorAlert = true
+                    
                 } else {
                     Auth.auth().signIn(withEmail: email, password: password) { user, error in
                         if let error = error {
@@ -94,6 +96,18 @@ struct SignupView: View {
                             showErrorAlert = true
                         } else {
                             userID = user?.user.uid ?? ""
+                            profile.name = email.components(separatedBy: "@")[0]
+                            profile.email = email
+                            profile.picture = UIImage(named: "unknown")
+                            Firestore.firestore().collection("users").document(userID).setData([
+                                                                                                "name": profile.name,
+                                                                                                "email": profile.email,
+                                                                                                "favourites": []
+                            ]) { error in
+                                if let error = error{
+                                    //TODO: Aquí hay un error
+                                }
+                            }
                             currentPage = .main
                         }
                     }

@@ -49,13 +49,13 @@ struct ContentView: View {
                     }
                     print("\(profile.name)")
                 }
-                let picture = Storage.storage().reference().child("fFM6mMkDLPSBJYOCarId0ofW0pA3/Profile.png")
+                let picture = Storage.storage().reference().child("\(userID)/Profile.png")
                 picture.getData(maxSize: 128 * 1024 * 1024) { data, error in
                     if let error = error {
-                        // Uh-oh, an error occurred!
+                        profile.picture = UIImage(named: "unknown")
                     } else {
                         // Data for "images/island.jpg" is returned
-                        profile.picture = UIImage(data: data!) ?? UIImage()
+                        profile.picture = UIImage(data: data!) ?? UIImage(named: "unknown")
                         print("EXITO!")
                     }
                 }

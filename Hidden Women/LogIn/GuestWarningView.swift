@@ -13,7 +13,16 @@ struct GuestWarningView: View {
     
     var body: some View {
         VStack {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            Text("Welcome, guest!")
+                .font(.largeTitle)
+                .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                .foregroundColor(Color("Morado"))
+            Image("logo_nombre")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 200, height: 200)
+            Text("Vas a usar la aplicación como invitada. La funcionalidad de red social no estará activada. Para disfrutar de la aplicación al completo has de registrarte.")
+                .padding()
             Button(action: {
                     userID = ""
                     currentPage = .main
@@ -27,9 +36,9 @@ struct GuestWarningView: View {
             }
             .padding()
             Button(action: {
-                currentPage = .login
+                currentPage = .signup
             }) {
-                Text("Cancel")
+                Text("Sign up now!")
                     .foregroundColor(Color("Morado"))
             }
         }
