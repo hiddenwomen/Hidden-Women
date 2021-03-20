@@ -19,8 +19,12 @@ struct Hidden_WomenApp: App {
         if let location = Bundle.main.url(forResource: "women", withExtension: "json") {
             do {
                 let data = try Data(contentsOf: location)
+                let locale = Locale(identifier: language)
                 do{
-                    women = try JSONDecoder().decode([Woman].self, from: data).sorted(by: {$0.name < $1.name})
+                    women = try JSONDecoder()
+                        .decode([Woman].self, from: data)
+                    //.sorted(by: {$0.name < $1.name})
+                        .sorted(by: {$0.name.compare($1.name, locale: locale) == .orderedAscending})
                 } catch {
                     print("Error in JSON: \(error)")
                 }

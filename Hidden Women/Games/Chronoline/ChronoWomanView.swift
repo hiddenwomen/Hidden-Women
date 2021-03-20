@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ChronoWomanView: View {
     let woman: Woman
+    let width: CGFloat
+    let height: CGFloat
     
     var body: some View {
         ZStack {
@@ -18,10 +20,16 @@ struct ChronoWomanView: View {
                 Image(woman.pictures.randomElement()!)
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 60, height: 80)
-                Text(woman.name)
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
+                    .frame(width: width/3, height: 0.8 * height)
+                VStack (alignment: .leading) {
+                    Text(woman.name)
+                        .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                    Text(woman.fields.localized.joined(separator: ", "))
+                        .font(.caption)
+                }
             }
-            .frame(width: 180, height: 90, alignment: .leading)
+            .frame(width: width, height: height, alignment: .leading)
         }
     }
 }
@@ -30,6 +38,6 @@ struct ChronoWomanView_Previews: PreviewProvider {
     static var woman = women[0]
     
     static var previews: some View {
-        ChronoWomanView(woman: woman)
+        ChronoWomanView(woman: woman, width: 200, height: 100)
     }
 }

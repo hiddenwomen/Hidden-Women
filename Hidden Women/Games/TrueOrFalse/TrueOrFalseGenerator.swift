@@ -16,17 +16,18 @@ func birthYearTrueOrFalseGenerator (women: [Woman]) -> TrueOrFalse {
         return TrueOrFalse(
             picture: questionWoman.pictures.randomElement() ?? "",
             question: String.localizedStringWithFormat(
-                NSLocalizedString("%@ was born in %@.", comment: ""),
-                questionWoman.name,
-                questionWoman.birthYear),
+                NSLocalizedString("%@ was born in: ", comment: ""), questionWoman.name
+            ),
+            answer: questionWoman.birthYear,
             correct: true)
     } else {
         return TrueOrFalse(
             picture: questionWoman.pictures.randomElement() ?? "",
             question: String.localizedStringWithFormat(
-                NSLocalizedString("%@ was born in %@.", comment: ""),
-                questionWoman.name,
-                otherWoman.birthYear),
+                NSLocalizedString("%@ was born in: ", comment: ""),
+                questionWoman.name
+            ),
+            answer: otherWoman.birthYear,
             correct: questionWoman.birthYear == otherWoman.birthYear)
     }
 }
@@ -40,17 +41,17 @@ func deathYearTrueOrFalseGenerator (women: [Woman]) -> TrueOrFalse {
         return TrueOrFalse(
             picture: questionWoman.pictures.randomElement() ?? "",
             question: String.localizedStringWithFormat(
-                NSLocalizedString("%@ passed away in %@.", comment: ""),
-                questionWoman.name,
-                questionWoman.deathYear),
+                NSLocalizedString("%@ passed away in: ", comment: ""),
+                questionWoman.name),
+            answer: questionWoman.deathYear,
             correct: true)
     } else {
         return TrueOrFalse(
             picture: questionWoman.pictures.randomElement() ?? "",
             question: String.localizedStringWithFormat(
-                NSLocalizedString("%@ passed away in %@.", comment: ""),
-                questionWoman.name,
-                otherWoman.deathYear),
+                NSLocalizedString("%@ passed away in: ", comment: ""),
+                questionWoman.name),
+            answer: otherWoman.deathYear,
             correct: questionWoman.deathYear == otherWoman.deathYear)
     }
 }
@@ -64,18 +65,18 @@ func fieldsTrueOrFalseGenerator (women: [Woman]) -> TrueOrFalse {
         return TrueOrFalse(
             picture: questionWoman.pictures.randomElement() ?? "",
             question: String.localizedStringWithFormat(
-                NSLocalizedString("%@ was a %@.", comment: ""),
-                questionWoman.name,
-                questionWoman.fields.localized.randomElement()!),
+                NSLocalizedString("%@ is a: ", comment: ""),
+                questionWoman.name),
+            answer: questionWoman.fields.localized.randomElement()!,
             correct: true)
     } else {
         let answer = otherWoman.fields.localized.randomElement()!
         return TrueOrFalse(
             picture: questionWoman.pictures.randomElement() ?? "",
             question: String.localizedStringWithFormat(
-                NSLocalizedString("%@ was a %@.", comment: ""),
-                questionWoman.name,
-                answer),
+                NSLocalizedString("%@ is a: ", comment: ""),
+                questionWoman.name),
+            answer: answer,
             correct: questionWoman.fields.localized.contains(answer))
     }
 }
@@ -89,18 +90,18 @@ func achievementsTrueOrFalseGenerator (women: [Woman]) -> TrueOrFalse {
         return TrueOrFalse(
             picture: questionWoman.pictures.randomElement() ?? "",
             question: String.localizedStringWithFormat(
-                NSLocalizedString("One of %@'s achievements is: %@.", comment: ""),
-                questionWoman.name,
-                questionWoman.achievements.localized.randomElement()!),
+                NSLocalizedString("One of %@'s achievements is: ", comment: ""),
+                questionWoman.name),
+            answer: questionWoman.achievements.localized.randomElement()!,
             correct: true)
     } else {
         let answer = otherWoman.achievements.localized.randomElement()!
         return TrueOrFalse(
             picture: questionWoman.pictures.randomElement() ?? "",
             question: String.localizedStringWithFormat(
-                NSLocalizedString("One of %@'s achievements is: %@.", comment: ""),
-                questionWoman.name,
-                answer),
+                NSLocalizedString("One of %@'s achievements is: ", comment: ""),
+                questionWoman.name),
+            answer: answer,
             correct: questionWoman.achievements.localized.contains(answer))
     }
 }
@@ -114,18 +115,18 @@ func awardsTrueOrFalseGenerator (women: [Woman]) -> TrueOrFalse {
         return TrueOrFalse(
             picture: questionWoman.pictures.randomElement() ?? "",
             question: String.localizedStringWithFormat(
-                NSLocalizedString("%@ was awarded with the %@.", comment: ""),
-                questionWoman.name,
-                questionWoman.awards.localized.randomElement()!),
+                NSLocalizedString("%@ was awarded with the: ", comment: ""),
+                questionWoman.name),
+            answer: questionWoman.awards.localized.randomElement()!,
             correct: true)
     } else {
         let answer = otherWoman.awards.localized.randomElement()!
         return TrueOrFalse(
             picture: questionWoman.pictures.randomElement() ?? "",
             question: String.localizedStringWithFormat(
-                NSLocalizedString("%@ was awarded with the %@.", comment: ""),
-                questionWoman.name,
-                answer),
+                NSLocalizedString("%@ was awarded with the: ", comment: ""),
+                questionWoman.name),
+            answer: answer,
             correct: questionWoman.awards.localized.contains(answer))
     }
 }

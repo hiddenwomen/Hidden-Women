@@ -22,6 +22,8 @@ struct TrueOrFalseView: View {
                 .frame(width: 150, height: 200)
                 .padding(.vertical)
             Text(trueOrFalse.question)
+            Text(trueOrFalse.answer)
+                .fontWeight(.bold)
             
             HStack {
                 Spacer()

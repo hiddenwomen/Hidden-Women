@@ -52,7 +52,9 @@ struct WomanView: View {
                 }
                 Text(woman.awards.localized.joined(separator: ", "))
                 Text(woman.bio.localized)
-                Link("Wikipedia", destination: URL(string: "https://\(language).wikipedia.org/wiki/\(woman.wikipedia)")!)
+                Link("Wikipedia",
+                     destination: URL(string: "https://\(language).wikipedia.org/wiki/\(woman.wikipedia)")!
+                )
                 
             }
             

@@ -7,12 +7,12 @@
 */
 "_Chronoline Help_" = "Ajuda de cronolínea";
 "_Warning Guest_" = "Vas a usar l'aplicació como convidada. La funcionalitat de xarxa social no estarà activada. Per a gaudir de l'aplicació al complet has de registrar-te.";
-"%@ was a..." = "%@ era...";
-"%@ was born in %@." = "%@ va néixer en %@.";
-"%@ passed away in %@." = "%@ va morir en %@.";
-"%@ was a %@." = "%@ va ser una %@.";
-"One of %@'s achievements is: %@." = "Un dels assoliments de %@ és: %@.";
-"%@ was awarded with the %@." = "%@ va ser guardonada amb %@.";
+"%@ is a: " = "%@ és: ";
+"%@ was born in: " = "%@ va néixer en: ";
+"%@ passed away in: " = "%@ va morir en: ";
+"%@ was a: " = "%@ era una: ";
+"One of %@'s achievements is: " = "Un dels assoliments de %@ és: ";
+"%@ was awarded with the: " = "%@ va ser guardonada amb: ";
 "Camera" = "Càmera";
 "Cancel" = "Cancel·la";
 "Choose mode" = "Tria el mode";

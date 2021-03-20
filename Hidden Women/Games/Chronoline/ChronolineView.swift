@@ -65,31 +65,38 @@ struct ChronolineView: View {
             VStack {
                 ZStack {
                     ForEach(0..<chronoline.cards.count) { i in
-                        ChronoWomanView(woman: chronoline.cards[i].woman)
-                            .frame(width: 200, height: 100) //TODO: Tamaño tarjeta en función de geo
-                            .shadow(radius: dragging == i ? 10 : 0)
-                            .zIndex(dragging == i ? 1000 : 0)
-                            .position(chronoline.cards[i].pos)
-                            .gesture(
-                                DragGesture()
-                                    .onChanged { drag in
-                                        dragging = i
-                                        withAnimation(.spring()) {
-                                            chronoline.cards[i].pos = drag.location
-                                            sortCards(dontMoveThis: i, height: geo.size.height)
-                                        }
+                        ChronoWomanView(
+                            woman: chronoline.cards[i].woman,
+                            width: 0.6 * geo.size.width,
+                            height: geo.size.height / 5 - 40
+                        )
+                        .frame(
+                            width: 0.6 * geo.size.width,
+                            height: geo.size.height / 5 - 40
+                        )
+                        .shadow(radius: dragging == i ? 10 : 0)
+                        .zIndex(dragging == i ? 1000 : 0)
+                        .position(chronoline.cards[i].pos)
+                        .gesture(
+                            DragGesture()
+                                .onChanged { drag in
+                                    dragging = i
+                                    withAnimation(.spring()) {
+                                        chronoline.cards[i].pos = drag.location
+                                        sortCards(dontMoveThis: i, height: geo.size.height)
                                     }
-                                    .onEnded { drag in
-                                        dragging = nil
-                                        withAnimation(.spring()) {
-                                            chronoline.cards[i].pos = CGPoint(
-                                                x: geo.size.width / 2,
-                                                y: drag.location.y
-                                            )
-                                            sortCards(dontMoveThis: nil, height: geo.size.height)
-                                        }
+                                }
+                                .onEnded { drag in
+                                    dragging = nil
+                                    withAnimation(.spring()) {
+                                        chronoline.cards[i].pos = CGPoint(
+                                            x: geo.size.width / 2,
+                                            y: drag.location.y
+                                        )
+                                        sortCards(dontMoveThis: nil, height: geo.size.height)
                                     }
-                            )
+                                }
+                        )
                     }
                     ForEach(0..<chronoline.sortedYears.count) { i in
                         Text(chronoline.sortedYears[i])
