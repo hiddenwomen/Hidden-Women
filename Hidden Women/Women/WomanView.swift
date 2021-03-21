@@ -34,7 +34,7 @@ struct WomanView: View {
             Text(woman.name)
                 .font(.title)
                 .fontWeight(.bold)
-            Text("\(woman.birthYear) - \(woman.deathYear)")
+            Text("\(woman.birthYear.localized) - \(woman.deathYear.localized)")
             Text(woman.nationalities.localized.joined(separator: ", "))
             GeometryReader {geo in
                 ScrollView(.horizontal) {

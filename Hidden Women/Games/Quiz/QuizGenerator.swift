@@ -29,10 +29,10 @@ func answersSelector(correctAnswers: [String], manyAnswers: [String], count: Int
 }
 
 func birthYearQuizGenerator(women: [Woman]) -> Quiz {
-    let selected: [Woman] = women.filter{ $0.birthYear != "" }
+    let selected: [Woman] = women.filter{ $0.birthYear.localized != "" }
     let woman = selected.randomElement()!
-    let all = selected.map( { $0.birthYear } )
-    let candidate: [String] = [woman.birthYear]
+    let all = selected.map( { $0.birthYear.localized } )
+    let candidate: [String] = [woman.birthYear.localized]
     let quizAnswers = answersSelector(correctAnswers: candidate, manyAnswers: all, count: 4)
 
     return Quiz(
@@ -44,10 +44,10 @@ func birthYearQuizGenerator(women: [Woman]) -> Quiz {
 }
 
 func deathYearQuizGenerator(women: [Woman]) -> Quiz {
-    let selected: [Woman] = women.filter{ $0.deathYear != "" }
+    let selected: [Woman] = women.filter{ $0.deathYear.localized != "" }
     let woman = selected.randomElement()!
-    let all = selected.map( { $0.deathYear } )
-    let candidate: [String] = [woman.deathYear]
+    let all = selected.map( { $0.deathYear.localized } )
+    let candidate: [String] = [woman.deathYear.localized]
     let quizAnswers = answersSelector(correctAnswers: candidate, manyAnswers: all, count: 4)
 
     return Quiz(

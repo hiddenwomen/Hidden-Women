@@ -11,8 +11,8 @@ struct Woman: Identifiable, Decodable {
     let name: String
     let pictures: [String]
     let bio: [String: String]
-    let birthYear: String
-    let deathYear: String
+    let birthYear: [String: String]
+    let deathYear: [String: String]
     let awards: [String: [String]]
     let fields: [String: [String]]
     let achievements: [String: [String]]
@@ -20,5 +20,11 @@ struct Woman: Identifiable, Decodable {
     let wikipedia: String
     
     var id: String { name }
+    var birthYearAsInt: Int {
+        let nums = (birthYear["en"] ?? "").filter({"0123456789".contains($0)})
+        return Int(nums) ?? 0
+        //TODO: when bC., the number is negative
+    }
 }
+
 

@@ -34,7 +34,7 @@ struct Chronoline {
                 )
             )
         }
-        sortedYears = women.map{$0.birthYear}.sorted()
+        sortedYears = women.sorted(by: {$0.birthYearAsInt < $1.birthYearAsInt }).map{$0.birthYear.localized}
     }
 }
 
@@ -115,8 +115,7 @@ struct ChronolineView: View {
                     progress += 1.0 / Float(numberOfChronolines)
                     var isSorted = true
                     for i in 0..<chronoline.cards.count - 1 {
-                        //TODO: Define a woman birthYear comparison function
-                        if chronoline.cards[i].woman.birthYear > chronoline.cards[i + 1].woman.birthYear{
+                        if chronoline.cards[i].woman.birthYearAsInt > chronoline.cards[i + 1].woman.birthYearAsInt {
                             isSorted = false
                         }
                     }

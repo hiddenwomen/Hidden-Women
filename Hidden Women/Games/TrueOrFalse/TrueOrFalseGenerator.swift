@@ -8,10 +8,10 @@
 import Foundation
 
 func birthYearTrueOrFalseGenerator (women: [Woman]) -> TrueOrFalse {
-    let selectedWomen = women.filter{$0.birthYear != ""}.shuffled()
+    let selectedWomen = women.filter{$0.birthYear.localized != ""}.shuffled()
     let questionWoman = selectedWomen[0]
     let otherWoman = selectedWomen[1]
-    let answer = (0...1).randomElement() == 0 ? questionWoman.birthYear : otherWoman.birthYear
+    let answer = (0...1).randomElement() == 0 ? questionWoman.birthYear.localized : otherWoman.birthYear.localized
     
     return TrueOrFalse(
         picture: questionWoman.pictures.randomElement() ?? "",
@@ -19,15 +19,15 @@ func birthYearTrueOrFalseGenerator (women: [Woman]) -> TrueOrFalse {
             NSLocalizedString("%@ was born in: ", comment: ""), questionWoman.name
         ),
         answer: answer,
-        correct: questionWoman.birthYear == answer
+        correct: questionWoman.birthYear.localized == answer
     )
 }
 
 func deathYearTrueOrFalseGenerator (women: [Woman]) -> TrueOrFalse {
-    let selectedWomen = women.filter{$0.deathYear != ""}.shuffled()
+    let selectedWomen = women.filter{$0.deathYear.localized != ""}.shuffled()
     let questionWoman = selectedWomen[0]
     let otherWoman = selectedWomen[1]
-    let answer = (0...1).randomElement() == 0 ? questionWoman.deathYear : otherWoman.deathYear
+    let answer = (0...1).randomElement() == 0 ? questionWoman.deathYear.localized : otherWoman.deathYear.localized
 
     return TrueOrFalse(
         picture: questionWoman.pictures.randomElement() ?? "",
