@@ -36,7 +36,6 @@ struct ContentView: View {
             }
         }
         .onAppear {
-            print("Entrando")
             if userID == "" {
                 currentPage = .login
             } else {
@@ -47,16 +46,13 @@ struct ContentView: View {
                         profile.email = data["email"] as? String ?? ""
                         profile.favourites = data["favourites"] as? [String] ?? []
                     }
-                    print("\(profile.name)")
                 }
                 let picture = Storage.storage().reference().child("\(userID)/Profile.png")
                 picture.getData(maxSize: 128 * 1024 * 1024) { data, error in
-                    if let error = error {
+                    if error != nil {
                         profile.picture = UIImage(named: "unknown")
                     } else {
-                        // Data for "images/island.jpg" is returned
                         profile.picture = UIImage(data: data!) ?? UIImage(named: "unknown")
-                        print("EXITO!")
                     }
                 }
                 currentPage = .main

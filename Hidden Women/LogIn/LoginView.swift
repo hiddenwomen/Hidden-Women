@@ -101,12 +101,10 @@ struct LoginView: View {
                 }
                 let picture = Storage.storage().reference().child("\(userID)/Profile.png")
                 picture.getData(maxSize: 128 * 1024 * 1024) { data, error in
-                    if let error = error {
+                    if let _ = error {
                         profile.picture = UIImage(named: "unknown")
                     } else {
-                        // Data for "images/island.jpg" is returned
                         profile.picture = UIImage(data: data!) ?? UIImage(named: "unknown")
-                        print("EXITO!")
                     }
                 }
                 currentPage = .main

@@ -12,6 +12,8 @@ struct WomenView: View {
     @State var searchText: String = ""
     @EnvironmentObject var profile: Profile
     @AppStorage ("userID") var userID = ""
+    @State var showError = false
+    @State var errorMessage = ""
     
     var body: some View {
         NavigationView {
@@ -44,9 +46,8 @@ struct WomenView: View {
                                             ["favourites": profile.favourites]
                                         ) { error in
                                             if let error = error {
-                                                print("error!!!")
-                                            } else {
-                                                print("Ha ido bien!")
+                                                errorMessage = error.localizedDescription
+                                                showError = true
                                             }
                                         }
                                     }
@@ -69,6 +70,13 @@ struct WomenView: View {
                 }
                 .listStyle(PlainListStyle())
                 .navigationBarHidden(true)
+            }
+            .alert(isPresented: $showError) {
+                Alert(
+                    title: Text("Error setting favorites"),
+                    message: Text(errorMessage),
+                    dismissButton: .default(Text("OK"))
+                )
             }
         }
     }

@@ -69,15 +69,6 @@ struct QuizView_Previews: PreviewProvider {
     @State static var progress: Float = 0.0
     
     static var previews: some View {
-        QuizView(quiz: Quiz(
-                    picture: "Curie1",
-                    question: "What award was given to Madame Curie?",
-                    answers: [
-                        "Chemistry Nobel Prize",
-                        "Gran Prix",
-                        "1, 2, 3",
-                        "Bonoloto"
-                    ],
-                    correctAnswer: 0), shownQuiz: $shownQuiz, correctAnswers: $correctAnswers, progress: $progress, numberOfQuizzes: 1)
+        QuizView(quiz: awardsQuizGenerator(women: women), shownQuiz: $shownQuiz, correctAnswers: $correctAnswers, progress: $progress, numberOfQuizzes: 1)
     }
 }

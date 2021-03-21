@@ -105,7 +105,8 @@ struct SignupView: View {
                                                                                                 "favourites": []
                             ]) { error in
                                 if let error = error{
-                                    //TODO: Aquí hay un error
+                                    errorMessage = error.localizedDescription
+                                    showErrorAlert = true
                                 }
                             }
                             currentPage = .main
@@ -116,7 +117,6 @@ struct SignupView: View {
         } else {
             errorMessage = "Passwords do not match"
             showErrorAlert = true
-            
         }
     }
 }

@@ -15,7 +15,6 @@ var women: [Woman] = []
 struct Hidden_WomenApp: App {
     var profile: Profile = Profile()
     init() {
-        print("Init app")
         if let location = Bundle.main.url(forResource: "women", withExtension: "json") {
             do {
                 let data = try Data(contentsOf: location)
@@ -23,7 +22,6 @@ struct Hidden_WomenApp: App {
                 do{
                     women = try JSONDecoder()
                         .decode([Woman].self, from: data)
-                    //.sorted(by: {$0.name < $1.name})
                         .sorted(by: {$0.name.compare($1.name, locale: locale) == .orderedAscending})
                 } catch {
                     print("Error in JSON: \(error)")
