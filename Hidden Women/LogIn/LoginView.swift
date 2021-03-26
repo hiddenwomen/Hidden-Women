@@ -52,10 +52,7 @@ struct LoginView: View {
                 Button(action: signin) {
                     Text("Sign in")
                         .fontWeight(.bold)
-                        .padding(EdgeInsets(top: 12, leading: 40, bottom: 12, trailing: 40))
-                        .foregroundColor(Color.white)
-                        .background(Color("Morado"))
-                        .cornerRadius(10)
+                        .importantButtonStyle()
                 }
                 .padding()
                 HStack {
@@ -91,22 +88,7 @@ struct LoginView: View {
                 showErrorAlert = true
             } else {
                 userID = user?.user.uid ?? ""
-                Firestore.firestore().collection("users").document(userID).getDocument { snapshot, e in
-                    if let snapshot = snapshot, snapshot.exists {
-                        let data = snapshot.data() ?? ["name": ""]
-                        profile.name = data["name"] as? String ?? ""
-                        profile.email = data["email"] as? String ?? ""
-                        profile.favourites = data["favourites"] as? [String] ?? []
-                    }
-                }
-                let picture = Storage.storage().reference().child("\(userID)/Profile.png")
-                picture.getData(maxSize: 128 * 1024 * 1024) { data, error in
-                    if let _ = error {
-                        profile.picture = UIImage(named: "unknown")
-                    } else {
-                        profile.picture = UIImage(data: data!) ?? UIImage(named: "unknown")
-                    }
-                }
+                loadProfile(userID: userID, profile: profile, andFriends: true)
                 currentPage = .main
             }
         }

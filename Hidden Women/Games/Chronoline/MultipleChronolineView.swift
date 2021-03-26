@@ -13,6 +13,7 @@ enum MultipleChronolinePages {
 }
 
 struct MultipleChronolineView: View {
+    @EnvironmentObject var profile: Profile
     @State var currentMultipleChronolinePage: MultipleChronolinePages
     @State var correctAnswers: Int = 0
     @State var shownChronoline: Int = 0
@@ -52,6 +53,11 @@ struct MultipleChronolineView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 150, height: 150)
+                }
+                .onAppear{
+                    let gameResult = GameResult(gameType: "Chrono", points: correctAnswers)
+                    profile.gameResults.append(gameResult)
+                    print("\(profile.gameResults)")
                 }
             }
             if shownChronoline != numberOfChronolines {

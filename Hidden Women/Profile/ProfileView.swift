@@ -40,6 +40,10 @@ struct ProfileView: View {
                                 .fontWeight(.bold)
                                 .importantButtonStyle()
                         }
+                        List(profile.friends){ friend in
+                            Text("\(friend.email)")
+                        }
+                        
                         Spacer()
                         
                         Button(action: {
