@@ -13,7 +13,9 @@ var women: [Woman] = []
 
 @main
 struct Hidden_WomenApp: App {
+    @AppStorage("userID") var userID: String = ""
     var profile: Profile = Profile()
+    
     init() {
         if let location = Bundle.main.url(forResource: "women", withExtension: "json") {
             do {
@@ -37,6 +39,12 @@ struct Hidden_WomenApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(profile)
+                .onAppear {
+                    if userID != "" {
+                        loadProfile(userID: userID, profile: profile, andFriends: true)
+                    }
+                    print("\(Int(Date().timeIntervalSince1970))")
+                }
         }
     }
 }

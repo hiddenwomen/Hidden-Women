@@ -9,6 +9,8 @@ import Foundation
 import SwiftUI
 import Firebase
 
+let oneWeek = 7 * 24 * 60 * 60
+
 class Profile: ObservableObject, Identifiable {
     @Published var name: String
     @Published var email: String
@@ -17,7 +19,11 @@ class Profile: ObservableObject, Identifiable {
     @Published var friendIDs: [String] = []
     @Published var friends: [Profile] = []
     @Published var gameResults: [GameResult] = []
- 
+    var points: Int {
+        let limit = Int(Date().timeIntervalSince1970) - oneWeek
+        print("LIMITE \(limit) ::: \(gameResults)")
+        return gameResults.filter{$0.date > limit}.map{$0.points}.reduce(0, +)
+    }
     var id: UUID = UUID()
     
     init(name: String = "", email: String = "") {
@@ -26,9 +32,11 @@ class Profile: ObservableObject, Identifiable {
     }
 }
 
-struct GameResult {
+struct GameResult: Identifiable {
+    let date: Int
     let gameType: String
     let points: Int
+    let id: UUID = UUID()
 }
 
 func loadProfile(userID: String, profile: Profile, andFriends: Bool = false) {
@@ -39,7 +47,17 @@ func loadProfile(userID: String, profile: Profile, andFriends: Bool = false) {
             profile.email = data["email"] as? String ?? ""
             profile.favourites = data["favourites"] as? [String] ?? []
             profile.friendIDs = data["friends"] as? [String] ?? []
+            let results = data["gameResults"] as? [[String : Any]] ?? []
+            for result in results {
+                let gameResult = GameResult(
+                    date: result["date"] as? Int ?? 0,
+                    gameType: result["gameType"] as? String ?? "Error",
+                    points: result["points"] as? Int ?? 0
+                )
+                profile.gameResults.append(gameResult)
+            }
             print("He cargado \(profile.email)")
+            print("He cargado los puntos \(profile.gameResults)")
             if andFriends {
                 for friendID in profile.friendIDs {
                     let friendProfile = Profile()
@@ -59,6 +77,14 @@ func loadProfile(userID: String, profile: Profile, andFriends: Bool = false) {
     }
 }
 
-func updateGameResults(profile: Profile) {
-    
+func updateGameResults(profile: Profile, userID: String) {
+    var d: [[String: Any]] = []
+    for result in profile.gameResults {
+        d.append([
+            "date": result.date,
+            "gameType": result.gameType,
+            "points": result.points
+        ])
+    }
+    Firestore.firestore().collection("users").document(userID).updateData(["gameResults": d])
 }

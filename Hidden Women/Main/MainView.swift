@@ -10,10 +10,10 @@ import Firebase
 
 struct MainView: View {
     @AppStorage ("userID") var userID = ""
-
+    
     @Binding var currentPage: Page
     @State var selection = 0
-
+    
     var body: some View {
         TabView(selection: $selection) {
             WomenView()
@@ -22,33 +22,86 @@ struct MainView: View {
                     Text("Hidden Women")
                 }
                 .tag(0)
+            
+            
             NavigationView {
-                List {
+                VStack {
                     NavigationLink(destination: MultipleQuizView(currentMultipleQuizPage: .start)) {
-                        Text("Quiz")
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(Color("Hueso"))
+                            HStack {
+                                Image("QuizPicture")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .rotationEffect(Angle(degrees: 15))
+                                    .frame(width: 125, height: 125)
+                                    .shadow(radius: 10)
+                                Text("Quiz")
+                                    .font(.largeTitle)
+                            }
+                        }
+                        .padding()
                     }
                     NavigationLink(destination: MultipleTrueOrFalseView(currentMultipleTrueOrFalsePage: .start)) {
-                        Text("True or False")
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(Color("Hueso"))
+                            HStack {
+                                Image("TrueOrFalsePicture")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .rotationEffect(Angle(degrees: 15))
+                                    .frame(width: 125, height: 125)
+                                    .shadow(radius: 10)
+                                Text("True or False")
+                                    .font(.largeTitle)
+                            }
+                        }
+                        .padding()
                     }
                     NavigationLink(destination: MultipleChronolineView(currentMultipleChronolinePage: .start)) {
-                        Text("Chronoline")
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(Color("Hueso"))
+                            HStack {
+                                Image("ChronoPicture")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .rotationEffect(Angle(degrees: 15))
+                                    .frame(width: 125, height: 125)
+                                    .shadow(radius: 10)
+                                Text("Chronoline")
+                                    .font(.largeTitle)
+                            }
+                        }
+                        .padding()
                     }
                 }
                 .listStyle(PlainListStyle())
                 .navigationBarHidden(true)
                 .navigationBarTitleDisplayMode(.inline)
             }
-                .tabItem{
-                    Image(systemName: "person.fill.questionmark")
-                    Text("Games")
-                }
-                .tag(1)
-            ProfileView(currentPage: $currentPage)
             .tabItem{
-                Image(systemName: "person.circle")
-                Text("Profile")
+                Image(systemName: "person.fill.questionmark")
+                Text("Games")
             }
-            .tag(2)
+            .tag(1)
+            
+            SocialView(currentPage: $currentPage)
+                .tabItem {
+                    Image(systemName: "person.3.fill")
+                    Text("Friends")
+                }
+                .tag(2)
+            
+            
+            ProfileView(currentPage: $currentPage)
+                .tabItem{
+                    Image(systemName: "person.circle")
+                    Text("Profile")
+                }
+                .tag(3)
         }
         .accentColor(Color("Morado"))
     }
@@ -56,7 +109,7 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     @State static var page: Page = .main
-
+    
     static var previews: some View {
         MainView(currentPage: $page)
     }

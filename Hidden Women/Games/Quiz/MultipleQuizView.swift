@@ -13,10 +13,13 @@ enum MultipleQuizPages {
 }
 
 struct MultipleQuizView: View {
+    @EnvironmentObject var profile: Profile
+    @AppStorage ("userID") var userID: String = ""
     @State var currentMultipleQuizPage: MultipleQuizPages
     @State var correctAnswers: Int = 0
     @State var shownQuiz: Int = 0
     @State var progress: Float = 0.0
+    @State var scoreUpdated: Bool = false
     
     @State var quizzes: [Quiz] =  []
     
@@ -28,6 +31,7 @@ struct MultipleQuizView: View {
                 Button(action: {
                     quizzes = fullQuizGenerator(women: women, numberOfQuestions: 5)
                     currentMultipleQuizPage = .question
+                    scoreUpdated = false
                 }) {
                     Text("Start")
                 }
@@ -40,6 +44,14 @@ struct MultipleQuizView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 150, height: 150)
+                }
+                .onAppear{
+                    if !scoreUpdated {
+                        let gameResult = GameResult(date: Int(Date().timeIntervalSince1970), gameType: "Quiz", points: correctAnswers)
+                        profile.gameResults.append(gameResult)
+                        updateGameResults(profile: profile, userID: userID)
+                        scoreUpdated = true
+                    }
                 }
             } else {
                 VStack {

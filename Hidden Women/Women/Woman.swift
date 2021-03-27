@@ -22,8 +22,11 @@ struct Woman: Identifiable, Decodable {
     var id: String { name }
     var birthYearAsInt: Int {
         let nums = (birthYear["en"] ?? "").filter({"0123456789".contains($0)})
-        return Int(nums) ?? 0
-        //TODO: when bC., the number is negative
+        var number = Int(nums) ?? 0
+        if (birthYear["en"] ?? "").contains("b") {
+           number = -number
+        }
+        return number
     }
 }
 

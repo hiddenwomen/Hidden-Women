@@ -14,12 +14,15 @@ enum MultipleChronolinePages {
 
 struct MultipleChronolineView: View {
     @EnvironmentObject var profile: Profile
+    @AppStorage ("userID") var userID: String = ""
     @State var currentMultipleChronolinePage: MultipleChronolinePages
     @State var correctAnswers: Int = 0
     @State var shownChronoline: Int = 0
     @State var progress: Float = 0.0
     @State var chronoline = chronolineGenerator(women: [], numberOfWomen: 0, x: CGFloat(0.0), height: CGFloat(0.0))
     let numberOfChronolines = 3
+    @State var scoreUpdated: Bool = false
+
     
     var body: some View {
         switch currentMultipleChronolinePage {
@@ -35,6 +38,10 @@ struct MultipleChronolineView: View {
                         Button(action: {
                             chronoline = chronolineGenerator(women: women, numberOfWomen: 5, x: geo.size.width/2.0, height: geo.size.height)
                             currentMultipleChronolinePage = .question
+                            scoreUpdated = false
+                            for w in chronoline.cards {
+                                print("\(w.woman.name) : \(w.woman.birthYear)")
+                            }
                         }) {
                             Text("Start")
                         }
@@ -55,9 +62,12 @@ struct MultipleChronolineView: View {
                         .frame(width: 150, height: 150)
                 }
                 .onAppear{
-                    let gameResult = GameResult(gameType: "Chrono", points: correctAnswers)
-                    profile.gameResults.append(gameResult)
-                    print("\(profile.gameResults)")
+                    if !scoreUpdated {
+                        let gameResult = GameResult(date: Int(Date().timeIntervalSince1970), gameType: "Chrono", points: correctAnswers)
+                        profile.gameResults.append(gameResult)
+                        updateGameResults(profile: profile, userID: userID)
+                        scoreUpdated = true
+                    }
                 }
             }
             if shownChronoline != numberOfChronolines {

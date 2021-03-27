@@ -114,8 +114,9 @@ struct ChronolineView: View {
                 Button(action: {
                     progress += 1.0 / Float(numberOfChronolines)
                     var isSorted = true
-                    for i in 0..<chronoline.cards.count - 1 {
-                        if chronoline.cards[i].woman.birthYearAsInt > chronoline.cards[i + 1].woman.birthYearAsInt {
+                    let sortedCards = chronoline.cards.sorted(by: {$0.pos.y < $1.pos.y})
+                    for i in 0..<sortedCards.count - 1 {
+                        if sortedCards[i].woman.birthYearAsInt > sortedCards[i + 1].woman.birthYearAsInt {
                             isSorted = false
                         }
                     }

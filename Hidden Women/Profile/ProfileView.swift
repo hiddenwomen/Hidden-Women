@@ -13,15 +13,32 @@ enum ProfilePages {
     case editProfile
 }
 
+//enum ProfileTabs {
+//    case first
+//}
+
 struct ProfileView: View {
     @EnvironmentObject var profile: Profile
     @AppStorage ("userID") var userID: String = ""
     @Binding var currentPage: Page
     @State var profilePage: ProfilePages = .profile
+    //@State var selectedUpperTab: ProfileTabs = .first
     
     var body: some View {
-        Group {
-            if userID != "" {
+        if userID != "" {
+            VStack {
+//                HStack {
+//                    Spacer()
+//                    VStack {
+//                        Image(systemName: selectedUpperTab == .first ? "person.fill" : "person")
+//                            .foregroundColor(selectedUpperTab == .first ? Color.accentColor : Color.gray)
+//                        Text("First tab")
+//                    }
+//                    .onTapGesture {
+//                        //self.selectedTab = .FirstTab
+//                    }
+//                    Spacer()
+//                }
                 switch profilePage {
                 case .profile:
                     VStack {
@@ -40,10 +57,10 @@ struct ProfileView: View {
                                 .fontWeight(.bold)
                                 .importantButtonStyle()
                         }
-                        List(profile.friends){ friend in
-                            Text("\(friend.email)")
+                        List(profile.gameResults) { result in
+                            Text("\(result.gameType): \(result.points)")
                         }
-                        
+                        Text("Total: \(profile.points)")
                         Spacer()
                         
                         Button(action: {
@@ -54,25 +71,25 @@ struct ProfileView: View {
                         }
                         
                     }
-                    
                 case .editProfile:
                     EditProfileView(profilePage: $profilePage)
                 }
-            } else {
-                VStack {
-                    Text("You are a guest.")
-                    Button(action: {
-                        currentPage = .signup
-                    }) {
-                        Text("Sign up now!")
-                            .fontWeight(.bold)
-                            .importantButtonStyle()
-                    }
+            }
+        } else {
+            VStack {
+                Text("You are a guest.")
+                Button(action: {
+                    currentPage = .signup
+                }) {
+                    Text("Sign up now!")
+                        .fontWeight(.bold)
+                        .importantButtonStyle()
                 }
             }
         }
     }
 }
+
 
 struct ProfileView_Previews: PreviewProvider {
     static var profile: Profile = Profile(name: "Marie Curie", email: "curie@cientifica.com")

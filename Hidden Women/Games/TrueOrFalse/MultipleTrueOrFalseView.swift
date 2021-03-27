@@ -13,11 +13,14 @@ enum MultipleTrueOrFalsePages {
 }
 
 struct MultipleTrueOrFalseView: View {
+    @EnvironmentObject var profile: Profile
+    @AppStorage ("userID") var userID: String = ""
     @State var currentMultipleTrueOrFalsePage: MultipleTrueOrFalsePages
     @State var correctAnswers: Int = 0
     @State var shownTrueOrFalse: Int = 0
     @State var progress: Float = 0.0
     @State var trueOrFalses: [TrueOrFalse] = []
+    @State var scoreUpdated: Bool = false
     
     var body: some View {
         switch currentMultipleTrueOrFalsePage {
@@ -27,6 +30,7 @@ struct MultipleTrueOrFalseView: View {
                 Button(action: {
                     trueOrFalses = fullTrueOrFalseGenerator(women: women, numberOfQuestions: 5)
                     currentMultipleTrueOrFalsePage = .question
+                    scoreUpdated = false
                 }) {
                     Text("Start")
                 }
@@ -39,6 +43,14 @@ struct MultipleTrueOrFalseView: View {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 150, height: 150)
+                }
+                .onAppear{
+                    if !scoreUpdated {
+                        let gameResult = GameResult(date: Int(Date().timeIntervalSince1970), gameType: "TrueOrFalse", points: correctAnswers)
+                        profile.gameResults.append(gameResult)
+                        updateGameResults(profile: profile, userID: userID)
+                        scoreUpdated = true
+                    }
                 }
             }
             if shownTrueOrFalse != trueOrFalses.count {
