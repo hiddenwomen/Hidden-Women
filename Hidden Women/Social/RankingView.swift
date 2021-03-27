@@ -13,11 +13,28 @@ struct RankingView: View {
     
     var body: some View {
         List(Array(rankedPeople.enumerated()), id: \.0) { (i, person) in
+            ZStack (alignment: .leading){
+                Rectangle()
+                    .foregroundColor(person.email == profile.email ? Color("Hueso") : .white)
                 HStack {
                     Text("\(i + 1)")
                         .font(.largeTitle)
-                        .foregroundColor(Color("Turquesa"))
-                    Text("\(person.name): \(person.points)")
+                        .foregroundColor(person.email == profile.email ? Color("Morado") : Color("Turquesa"))
+                        .padding()
+                    Image(uiImage: person.picture ?? UIImage())
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 70)
+                        .clipShape(Circle())
+                    VStack (alignment: .leading){
+                        Text("\(person.name)")
+                            .font(.title)
+                            .fontWeight(person.email == profile.email ? .bold : .regular)
+                            .foregroundColor(person.email == profile.email ? Color("Morado") : .black)
+                        Text("Points: \(person.points)")
+                        
+                    }
+                }
             }
         }
         .onAppear {

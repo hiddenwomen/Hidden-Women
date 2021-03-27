@@ -37,12 +37,23 @@ struct SocialView: View {
                         }
                         .padding()
                     }
-                    NavigationLink(destination: Text("Meet new friends")) {
+                    NavigationLink(destination: Text("Make new friends")) {
                         ZStack {
                             RoundedRectangle(cornerRadius: 10)
                                 .fill(Color("Hueso"))
                             HStack {
-                                Text("Meet new friends")
+                                Text("Make new friends")
+                                    .font(.largeTitle)
+                            }
+                        }
+                        .padding()
+                    }
+                    NavigationLink(destination: Text("Find people like me")) {
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(Color("Hueso"))
+                            HStack {
+                                Text("Find people like me")
                                     .font(.largeTitle)
                             }
                         }

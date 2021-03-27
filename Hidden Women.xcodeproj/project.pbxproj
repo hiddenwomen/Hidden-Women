@@ -13,6 +13,8 @@
 		CB6826DE25FA172200A8190C /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6826DD25FA172200A8190C /* QuizView.swift */; };
 		CB6826E225FA173600A8190C /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6826E125FA173600A8190C /* Quiz.swift */; };
 		CB6826E525FA236200A8190C /* MultipleQuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6826E425FA236200A8190C /* MultipleQuizView.swift */; };
+		CB6A1039260F4CEE0052D58E /* MakeNewFriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6A1038260F4CEE0052D58E /* MakeNewFriendsView.swift */; };
+		CB6A103C260F4E520052D58E /* FindPeopleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6A103B260F4E520052D58E /* FindPeopleView.swift */; };
 		CB746FFD25F7FC62006795BB /* WomanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB746FFC25F7FC62006795BB /* WomanView.swift */; };
 		CB74700025F7FC91006795BB /* Woman.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB746FFF25F7FC91006795BB /* Woman.swift */; };
 		CB74700325F7FEF5006795BB /* WomenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74700225F7FEF5006795BB /* WomenView.swift */; };
@@ -56,6 +58,8 @@
 		CB6826DD25FA172200A8190C /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		CB6826E125FA173600A8190C /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		CB6826E425FA236200A8190C /* MultipleQuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleQuizView.swift; sourceTree = "<group>"; };
+		CB6A1038260F4CEE0052D58E /* MakeNewFriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeNewFriendsView.swift; sourceTree = "<group>"; };
+		CB6A103B260F4E520052D58E /* FindPeopleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPeopleView.swift; sourceTree = "<group>"; };
 		CB746FFC25F7FC62006795BB /* WomanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomanView.swift; sourceTree = "<group>"; };
 		CB746FFF25F7FC91006795BB /* Woman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Woman.swift; sourceTree = "<group>"; };
 		CB74700225F7FEF5006795BB /* WomenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomenView.swift; sourceTree = "<group>"; };
@@ -202,6 +206,8 @@
 				F56A7C9C260F241A003C0A20 /* SocialView.swift */,
 				F56A7C9F260F438F003C0A20 /* MyFriendsView.swift */,
 				F56A7CA2260F4424003C0A20 /* RankingView.swift */,
+				CB6A1038260F4CEE0052D58E /* MakeNewFriendsView.swift */,
+				CB6A103B260F4E520052D58E /* FindPeopleView.swift */,
 			);
 			path = Social;
 			sourceTree = "<group>";
@@ -394,6 +400,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F56A7C9D260F241A003C0A20 /* SocialView.swift in Sources */,
+				CB6A1039260F4CEE0052D58E /* MakeNewFriendsView.swift in Sources */,
 				5A7EAA9C25FA535800D042E1 /* QuizGenerator.swift in Sources */,
 				F56093A025FB6F89000E8560 /* MultipleTrueOrFalseView.swift in Sources */,
 				F5A9823825F7722C005EB566 /* SignupView.swift in Sources */,
@@ -412,6 +419,7 @@
 				F50B03882604AC3400D4EABE /* SUImagePickerView.swift in Sources */,
 				F5A9823C25F77814005EB566 /* MainView.swift in Sources */,
 				F58710AF25F7611C00B47462 /* ContentView.swift in Sources */,
+				CB6A103C260F4E520052D58E /* FindPeopleView.swift in Sources */,
 				F50B03822603D9C200D4EABE /* Profile.swift in Sources */,
 				F50B037F2603D8FB00D4EABE /* ProfileView.swift in Sources */,
 				F58710AD25F7611C00B47462 /* Hidden_WomenApp.swift in Sources */,
