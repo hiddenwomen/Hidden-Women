@@ -133,9 +133,6 @@ struct SocialView: View {
             .listStyle(PlainListStyle())
             .navigationBarHidden(true)
             .navigationBarTitleDisplayMode(.inline)
-            .onAppear {
-                loadProfile(userID: userID, profile: profile)
-            }
         }
         
     }
