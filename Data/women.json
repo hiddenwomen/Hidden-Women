@@ -60,7 +60,9 @@
                 "Britànica"
             ]
         },
-        "wikipedia": { "en": "Ada_Lovelace" }
+        "wikipedia": {
+            "en": "Ada_Lovelace"
+        }
     },
     {
         "name": "Alice Ball",
@@ -122,7 +124,9 @@
                 "Nord-americana"
             ]
         },
-        "wikipedia": { "en": "Alice_Ball" }
+        "wikipedia": {
+            "en": "Alice_Ball"
+        }
     },
     {
         "name": "Barbara McClintock",
@@ -185,7 +189,9 @@
                 "Nord-americana"
             ]
         },
-        "wikipedia": { "en": "Barbara_McClintock" }
+        "wikipedia": {
+            "en": "Barbara_McClintock"
+        }
     },
     {
         "name": "Brenda Milner",
@@ -263,7 +269,9 @@
                 "Canadenca"
             ]
         },
-        "wikipedia": { "en": "Brenda_Milner" }
+        "wikipedia": {
+            "en": "Brenda_Milner"
+        }
     },
     {
         "name": "Caroline Herschel",
@@ -420,7 +428,9 @@
                 "Estadounidenca"
             ]
         },
-        "wikipedia": { "en": "Chien-Shiung_Wu" }
+        "wikipedia": {
+            "en": "Chien-Shiung_Wu"
+        }
     },
     {
         "name": "Dorothy Hodgkin",
@@ -501,7 +511,9 @@
                 "Britànica"
             ]
         },
-        "wikipedia": { "en": "Dorothy_Hodgkin" }
+        "wikipedia": {
+            "en": "Dorothy_Hodgkin"
+        }
     },
     {
         "name": "Edith Clarke",
@@ -569,7 +581,70 @@
                 "Nord-americana"
             ]
         },
-        "wikipedia": { "en": "Edith_Clarke" }
+        "wikipedia": {
+            "en": "Edith_Clarke"
+        }
+    },
+    {
+        "name": "Elisa Leonida Zamfirescu",
+        "pictures": [
+            "ElisaLeonidaZamfirescu1"
+        ],
+        "bio": {
+            "en": "She was a Romanian engineer who was one of the first women to obtain a degree in engineering. She was born in the Romanian town of Galați but qualified in  Berlin. During World War I she managed a hospital in Romania.\n",
+            "ca": "Va ser una enginyera romanesa, una de les primeres dones a obtenir el graduat en enginyeria. Va nàixer al poble romanés de Galati, encara que va estudiar a  Berlín. Durant la Primera Guerra Mundial va dirigir un hospital a Romania.\n",
+            "es": "Fue una ingeniera rumana, una de las primeras mujeres en obtener el graduado de ingenieria. Nació en el pueblo de Rumania, Galati, aunque estudió en Berlín. Durante la Primera Guerra Mundial dirigió un hosptital de Rumania.\n"
+        },
+        "birthYear": {
+            "en": "1887"
+        },
+        "deathYear": {
+            "en": "1973"
+        },
+        "awards": {
+            "en": [],
+            "es": [],
+            "ca": []
+        },
+        "achievements": {
+            "en": [
+                "She was was one of the first women to obtain a degree in engineering",
+                "First woman member of A.G.I.R. (General Association of Romanian Engineers)"
+            ],
+            "es": [
+                "Fue una de las primeras mujeres en obtener el graduado de ingenieria",
+                "Primera mujer miembro de la A.G.I.R (Asociación General de Ingenieros Rumanos)"
+            ],
+            "ca": [
+                "Va ser una de les primeres dones a obtenir el graduat en enginyeria",
+                "Primera dona membre de la A.G.I.R (Asociació General d'Enginyers Romanesos)"
+            ]
+        },
+        "fields": {
+            "en": [
+                "Engineering"
+            ],
+            "es": [
+                "Ingeniería"
+            ],
+            "ca": [
+                "Enginyeria"
+            ]
+        },
+        "nationalities": {
+            "en": [
+                "Romanian"
+            ],
+            "es": [
+                "Rumana"
+            ],
+            "ca": [
+                "Romanesa"
+            ]
+        },
+        "wikipedia": {
+            "en": "Elisa_Leonida_Zamfirescu"
+        }
     },
     {
         "name": "Elizabeth Blackburn",
@@ -668,7 +743,71 @@
                 "Nord-americana"
             ]
         },
-        "wikipedia": { "en": "Elizabeth_Blackburn" }
+        "wikipedia": {
+            "en": "Elizabeth_Blackburn"
+        }
+    },
+    {
+        "name": "Elizabeth Langdon Williams",
+        "pictures": [
+            "imagen1"
+        ],
+        "bio": {
+            "en": "Elizabeth Langdon Williams was an American human computer and astronomer whose work helped lead to the discovery of Pluto, or Planet X. Percival Lowell hypothesized that a proposed Planet X affected the orbits of the known planets Neptune and Uranus. Williams' role in the Planet X project was that of head human computer, performing mathematical calculations on where Lowell should search for an unknown object and its size based on the differences in the orbits of Neptune and Uranus. Her calculations led to predictions for the location of the unknown planet.\n",
+            "es": "Elizabeth Langdon Williams fue una calculadora humana y astrónoma estadounidense cuyo trabajo ayudó a conducir al descubrimiento de Plutón, o Planeta X. Percival Lowell planteó la hipótesis de que un supuesto Planeta X afectaba las órbitas de los planetas conocidos Neptuno y Urano. El papel de Williams en el proyecto Planet X fue el de jefa de la computadora humana, realizando cálculos matemáticos sobre dónde debía buscar Lowell un objeto desconocido y su tamaño basándose en las diferencias en las órbitas de Neptuno y Urano Sus cálculos permitieron predecir la ubicación del planeta desconocido.\n",
+            "ca": "Elizabeth Langdon Williams va ser una calculadora humana i astrònoma estatunidenca el treball de la qual va ajudar a conduir al descobriment de Plutó, o Planeta X. Percival Lowell va plantejar la hipòtesi que un supòsit Planeta X afectava les òrbites dels planetes coneguts Neptú i Urà. El paper de Williams en el projecte Planet X va ser el de cap de la computadora humana, realitzant càlculs matemàtics sobre on havia de buscar Lowell un objecte desconegut i la seua grandària basant-se en les diferències en les òrbites de Neptú i Urà Els seus càlculs van permetre predir la ubicació del planeta desconegut.\n"
+        },
+        "birthYear": {
+            "en": "1879"
+        },
+        "deathYear": {
+            "en": "1981"
+        },
+        "awards": {
+            "en": []
+        },
+        "achievements": {
+            "en": [
+                "She made the calculations that predicted the existence of Pluto"
+            ],
+            "es": [
+                "Hizo los cálculos que predijeron la existencia de Plutón"
+            ],
+            "ca": [
+                "Va fer els càlculs que van predir l'existència de Plutó"
+            ]
+        },
+        "fields": {
+            "en": [
+                "Mathematician",
+                "Astronomer",
+                "Physicist"
+            ],
+            "es": [
+                "Matemática",
+                "Astrónoma",
+                "Física"
+            ],
+            "ca": [
+                "Matemàtica",
+                "Astrònoma",
+                "Física"
+            ]
+        },
+        "nationalities": {
+            "en": [
+                "American"
+            ],
+            "es": [
+                "Norteamericana"
+            ],
+            "ca": [
+                "Nord-americana"
+            ]
+        },
+        "wikipedia": {
+            "en": "Elizabeth_Langdon_Williams"
+        }
     },
     {
         "name": "Emmy Noether",
@@ -745,7 +884,9 @@
                 "Alemanya"
             ]
         },
-        "wikipedia": { "en": "Emmy_Noether" }
+        "wikipedia": {
+            "en": "Emmy_Noether"
+        }
     },
     {
         "name": "Gerty Cori",
@@ -820,7 +961,9 @@
                 "Nord-americana"
             ]
         },
-        "wikipedia": { "en": "Gerty_Cori" }
+        "wikipedia": {
+            "en": "Gerty_Cori"
+        }
     },
     {
         "name": "Grace Murray Hopper",
@@ -886,7 +1029,6 @@
             "ca": [
                 "Creadora del llenguatge de programació COBOL",
                 "Desarrolladora de standards per a la prova de sistemes informàtics i components, especialment llenguatges de programació"
-                
             ]
         },
         "fields": {
@@ -914,7 +1056,9 @@
                 "Nord-americana"
             ]
         },
-        "wikipedia": { "en": "Grace_Murray_Hopper" }
+        "wikipedia": {
+            "en": "Grace_Murray_Hopper"
+        }
     },
     {
         "name": "Hedy Lamarr",
@@ -977,7 +1121,67 @@
                 "Nord-americana"
             ]
         },
-        "wikipedia": { "en": "Hedy_Lamarr" }
+        "wikipedia": {
+            "en": "Hedy_Lamarr"
+        }
+    },
+    {
+        "name": "Henrietta Swan Leavitt",
+        "pictures": [
+            "imagen1"
+        ],
+        "bio": {
+            "en": "was an American astronomer. A graduate of Radcliffe College, she worked at the Harvard College Observatory as a \"computer\", tasked with examining  photographic plates in order to measure and catalog the brightness of stars. This work led her to discover the relation between the luminosity and  the period of Cepheid variables. Leavitt's discovery provided astronomers with the first \"standard candle\" with which to measure the distance to faraway galaxies.\n",
+            "ca": "Va ser una astrònoma estatunidenca. Va treballar a l'Observatori Harvard College com a \"ordinador\", encarregada d'examinar les plaques fotogràfiques per tal  de mesurar i catalogar la brillantor de les estrelles.  Aquest treball la va portar a descobrir la relació entre la lluminositat i el període de les variables  cefeides. El descobriment de Leavitt va proporcionar als astrònoms la primera \"espelma estàndard\" amb la qual mesurar la distància a les galàxies llunyanes.\n",
+            "es": "Fue una astrónoma estadounidense. Trabajó al Observatorio Harvard College como \"ordenador\", encargada de examinar las placas fotográficas para  mesurar y catalogar la brillantez de las estrellas. Este trabajo la llevó a descubrir la relación entre la luminosidad y el periodo de las variables  cefeides. El descubrimiento de Leavitt proporcionó a los astrónomos la primera \"vela estándar\" con la cual mesurar la distancia a las galaxias lejanas.\n"
+        },
+        "birthYear": {
+            "en": "1868"
+        },
+        "deathYear": {
+            "en": "1921"
+        },
+        "awards": {
+            "en": [],
+            "es": [],
+            "ca": []
+        },
+        "achievements": {
+            "en": [
+                "Leavitt's law, the period-luminosity relationship for Cepheid variables."
+            ],
+            "es": [
+                "Ley de Leavitt, la relacions entre luminosidad y periodo para las variables cefeidas."
+            ],
+            "ca": [
+                "La llei de Leavitt, la relació entre lluminositat i període per a les variables cefeides."
+            ]
+        },
+        "fields": {
+            "en": [
+                "Astronomy"
+            ],
+            "es": [
+                "Astronomía"
+            ],
+            "ca": [
+                "Astronomia"
+            ]
+        },
+        "nationalities": {
+            "en": [
+                "American"
+            ],
+            "es": [
+                "Norteamericana"
+            ],
+            "ca": [
+                "Nord-americana"
+            ]
+        },
+        "wikipedia": {
+            "en": "Henrietta_Swan_Leavitt"
+        }
     },
     {
         "name": "Hertha Ayrton",
@@ -1048,7 +1252,96 @@
                 "Britànica"
             ]
         },
-        "wikipedia": { "en": "Hertha_Ayrton" }
+        "wikipedia": {
+            "en": "Hertha_Ayrton"
+        }
+    },
+    {
+        "name": "Hildegard von Bingen",
+        "pictures": [
+            "imagen1"
+        ],
+        "bio": {
+            "en": "Hildegard of Bingen was one of the most influential and multifaceted personalities of the late Middle Ages. She is considered to be the mother of natural history. She composed Gregorian music and wrote approximately seventy-seven songs, and an opera, her musical repertoire one of the most extensive of all medieval authors. She was the first female composer of sacred music. She invented la lingua ignota, one of the first artificial languages in history. She is considered a proto-feminist for her vision and practical attitude to the role of women in society. She proclaimed equal dignity between men and women. Hildegarda preached in feminine and with feminine symbolism. She had knowledge of physics, the active principles of medicinal plants, anatomy, physiology and psychology. He developed medicinal methods to cure more than two hundred known diseases. She introduced hops into brewing, which allowed the beer to not spoil so easily\n",
+            "es": "Hildegarda de Bingen ue una de las personalidades más influyentes y polifacéticas de la Baja Edad Media. Es considerada como la madre de la historia natural. Compuso música gregoriana y escribió setenta y siete canciones aproximadamente, y una ópera, su repertorio musical es uno de los más extensos de todos los autores medievales. Fue la primera mujer compositora de música sacra. Inventó la lingua ignota, una de las primeras lenguas artificiales de la historia. Es considerada protofeminista por su visión y actitud práctica del papel de la mujer en la sociedad. Proclamaba la igual dignidad entre hombres y mujeres. Hildegarda predicaba en femenino y con simbología femenina. Tenía conocimientos de física, de los principios activos de las plantas medicinales, anatomía, fisiología y psicología. Desarrolló métodos medicinales para curar más de doscientas enfermedades conocidas. Introdujo el lúpulo en la elaboración de la cerveza, lo que permitió que la cerveza no se estropeara con tanta facilidad.\n",
+            "ca": "Hildegarda de Bingen a ser una de les personalitats més influents i polifacètiques de la Baixa Edat mitjana. És considerada com la mare de la història natural Va compondre música gregoriana i va escriure setanta-set cançons aproximadament, i una òpera, el seu repertori musical és un dels més extensos de tots els autors medievals. Va ser la primera dona compositora de música sacra Va inventar la lingua ignota, una de les primeres llengües artificials de la història. És considerada protofeminista per la seva visió i actitud pràctica del paper de la dona en la societat.. Proclamava la igual dignitat entre homes i dones. Hildegarda predicava una teologia en femení i amb simbologia femenina. Tenia coneixements de física, dels principis actius de plantes medicinals, anatomia, fisiologia i psicologia. Va desenvolupar uns mètodes medicinals per a curar més de dues-centes malalties conegudes. Va introduir el llúpol en l'elaboració de la cervesa, la qual cosa va permetre que la cervesa no es desbaratara amb tanta facilitat.\n"
+        },
+        "birthYear": {
+            "en": "1098"
+        },
+        "deathYear": {
+            "en": "1179"
+        },
+        "awards": {
+            "en": [
+                "Beatified (1326)",
+                "Canonized (2012)"
+            ],
+            "es": [
+                "Beatificada (1326)",
+                "Canonizada (2012)"
+            ],
+            "ca": [
+                "Beatificada (1326)",
+                "Canonizada (2012)"
+            ]
+        },
+        "achievements": {
+            "en": [
+                "One the first feminists",
+                "Introduced hops into beer brewing"
+            ],
+            "es": [
+                "Una de las primeras feministas",
+                "Introdujo el lúpulo en la elaboración de la cerveza"
+            ],
+            "ca": [
+                "Una de les primeres femnistes",
+                "Va introduir el llúpol en l'elaboració de la cervesa"
+            ]
+        },
+        "fields": {
+            "en": [
+                "Music composer",
+                "Writer",
+                "Philosopher",
+                "Scientist",
+                "Naturalist",
+                "Physician"
+            ],
+            "es": [
+                "Compositora",
+                "Escritora",
+                "Filósofa",
+                "Científica",
+                "Naturalista",
+                "Médica"
+            ],
+            "ca": [
+                "Compositora",
+                "Escriptora",
+                "Filòsofa",
+                "Científica",
+                "Naturalista",
+                "Mèdica"
+            ]
+        },
+        "nationalities": {
+            "en": [
+                "German"
+            ],
+            "es": [
+                "Alemana"
+            ],
+            "ca": [
+                "Alemanya"
+            ]
+        },
+        "wikipedia": {
+            "en": "Hildegard_of_Bingen",
+            "ca": "Hildegarda_de_Bingen",
+            "es": "Hildegarda_de_Bingen"
+        }
     },
     {
         "name": "Hypatia",
@@ -1181,7 +1474,9 @@
                 "Danesa"
             ]
         },
-        "wikipedia": { "en": "Inge_Lehman" }
+        "wikipedia": {
+            "en": "Inge_Lehman"
+        }
     },
     {
         "name": "Jane Goodall",
@@ -1256,7 +1551,9 @@
                 "Britànica"
             ]
         },
-        "wikipedia": { "en": "Jane_Goodall" }
+        "wikipedia": {
+            "en": "Jane_Goodall"
+        }
     },
     {
         "name": "Joan Beauchamp Procter",
@@ -1318,7 +1615,73 @@
                 "Britànica"
             ]
         },
-        "wikipedia": { "en": "Joan_Beauchamp_Procter" }
+        "wikipedia": {
+            "en": "Joan_Beauchamp_Procter"
+        }
+    },
+    {
+        "name": "Julia Morgan",
+        "pictures": [
+            "imagen1"
+        ],
+        "bio": {
+            "en": "She was an American architect and engineer. She designed more than 700 buildings in California during a long and prolific career. She is best known  for her work on Hearst Castle in San Simeon, California. Morgan was the first woman to be admitted to the architecture program at l'École nationale  supérieure des Beaux-Arts in Paris and the first woman architect licensed in California. She designed many edifices for institutions serving women  and girls, including a number of YWCAs and buildings for Mills College.\n",
+            "ca": "Va ser una arquitecta, la primera dona admesa a l'Escola de Belles Arts de París i en 1902 es va convertir en la primera dona titulada en arquitectura al món. També va ser la primera arquitecta de Califòrnia. La seva obra va ser prolífica, en 50 anys de carrera va dissenyar més de 700  edificis, esglésies, hospitals, museus, hotels, edificis comercials, centres comunitaris, escoles, edificis universitaris, clubs, un zoo privat, diversos  edificis de la YMCA i nombroses residències privades.\n",
+            "es": "Fue una arquitecta estadounidense. Fue la primera mujer admitida en la Escuela de Bellas Artes de París y en 1902 se tituló en arquitectura. Fue la  primera arquitecta de California.1​ Su obra fue prolífica, en 50 años de carrera diseñó más de 700 edificios, iglesias, hospitales, museos, hoteles, edificios  comerciales, centros comunitarios, escuelas, edificios universitarios, clubes, un zoo privado, varios edificios de la YWCA y numerosas residencias privadas. \n"
+        },
+        "birthYear": {
+            "en": "1872"
+        },
+        "deathYear": {
+            "en": "1957"
+        },
+        "awards": {
+            "en": [
+                "AIA Gold Medal"
+            ],
+            "es": [
+                "Medalla de oro de la AIA"
+            ],
+            "ca": [
+                "Medalla d'or de l'AIA"
+            ]
+        },
+        "achievements": {
+            "en": [
+                "First woman to be admitted to the architecture program at l'École nationale supérieure des Beaux-Arts in Paris."
+            ],
+            "es": [
+                "Primera mujer admitida en la Escuela de Bellas Artes de París y graduada en arquitectura."
+            ],
+            "ca": [
+                "Primera dona admesa a l'Escola de Belles Arts de París i graduada en arquitectura."
+            ]
+        },
+        "fields": {
+            "en": [
+                "Architect"
+            ],
+            "es": [
+                "Arquitecta"
+            ],
+            "ca": [
+                "Arquitecta"
+            ]
+        },
+        "nationalities": {
+            "en": [
+                "American"
+            ],
+            "es": [
+                "Norteamericana"
+            ],
+            "ca": [
+                "Nord-americana"
+            ]
+        },
+        "wikipedia": {
+            "en": "Julia_Morgan"
+        }
     },
     {
         "name": "Katherine Johnson",
@@ -1391,7 +1754,9 @@
                 "Nord-americana"
             ]
         },
-        "wikipedia": { "en": "Katherine_Johnson" }
+        "wikipedia": {
+            "en": "Katherine_Johnson"
+        }
     },
     {
         "name": "Lillian Moller Gilbreth",
@@ -1457,7 +1822,9 @@
                 "Nord-americana"
             ]
         },
-        "wikipedia": { "en": "Lillian_Moller_Gilbreth" }
+        "wikipedia": {
+            "en": "Lillian_Moller_Gilbreth"
+        }
     },
     {
         "name": "Lise Meitner",
@@ -1508,7 +1875,9 @@
                 "Austríaca"
             ]
         },
-        "wikipedia": { "en": "Lise_Meitner" }
+        "wikipedia": {
+            "en": "Lise_Meitner"
+        }
     },
     {
         "name": "Lynn Margulis",
@@ -1567,7 +1936,9 @@
                 "Nord-americana"
             ]
         },
-        "wikipedia": { "en": "Lynn_Margulis" }
+        "wikipedia": {
+            "en": "Lynn_Margulis"
+        }
     },
     {
         "name": "Mae Jemison",
@@ -1640,7 +2011,81 @@
                 "Nord-americana"
             ]
         },
-        "wikipedia": { "en": "Mae_Jemison" }
+        "wikipedia": {
+            "en": "Mae_Jemison"
+        }
+    },
+    {
+        "name": "Margaret Hamilton",
+        "pictures": [
+            "imagen1"
+        ],
+        "bio": {
+            "en": "She is an American computer scientist, systems engineer, and business owner. She was director of the Software Engineering Division of the MIT  Instrumentation Laboratory, which developed on-board flight software for NASA's Apollo program. She later founded two software companies—Higher  Order Software in 1976 and Hamilton Technologies in 1986, both in Cambridge, Massachusetts. Hamilton has published more than 130 papers, proceedings  and reports about sixty projects and six major programs. She is one of the people credited with coining the term \"software engineering\".\n",
+            "ca": "És una científica computacional i matemàtica. Va ser directora de la Divisió d'Enginyeria de Programari del Laboratori d'Instrumentació del MIT, on  va desenvolupar programari de navegació \"on-board\" per al Programa Espacial Apol·lo. El 1986, es va convertir en la fundadora i CEO de Hamilton  Technologies, Inc. a Cambridge, Massachusetts. La companyia es va desenvolupar al voltant del Llenguatge Universal de Sistemes basada en el seu paradigma  de \"Desenvolupament Abans del Fet\" (DBTF, de l'anglès Development Before the Fact) per a sistemes de disseny de programari.\n",
+            "es": "Es una científica computacional, matemática e ingeniera de Software. Fue directora de la División de Ingeniería de Software del Laboratorio de Instrumentación  del MIT,​ donde con su equipo desarrolló el software de navegación \"on-board\" para el Programa Espacial Apolo. En 1986, se convirtió en la fundadora y CEO de  Hamilton Technologies, Inc. en Cambridge, Massachusetts. La compañía se desarrolló alrededor del lenguaje universal de sistemas basada en su paradigma  de \"desarrollo antes del hecho\" (DBTF, del inglés Development Before the Fact) para sistemas de diseño de software.\n"
+        },
+        "birthYear": {
+            "en": "1936"
+        },
+        "deathYear": {
+            "en": ""
+        },
+        "awards": {
+            "en": [
+                "Presidential Medal of Freedom",
+                "The Washington Award",
+                "NASA Exceptional Space Act Award"
+            ],
+            "es": [
+                "Medalla Presidencial de la Libertad",
+                "The Washington Award",
+                "NASA Exceptional Space Act Award"
+            ],
+            "ca": [
+                "Medalla Presidencial de la Llibertad",
+                "The Washington Award",
+                "NASA Exceptional Space Act Award"
+            ]
+        },
+        "achievements": {
+            "en": [
+                "She developed on-board flight software for NASA's Apollo program"
+            ],
+            "es": [
+                "Desarrollo programa de vuelo a bordo, para el Programa Espacial Apolo"
+            ],
+            "ca": [
+                "Desenvolupament programa vol a bord, per al Programa Espacial Apol·lo"
+            ]
+        },
+        "fields": {
+            "en": [
+                "Computational Science"
+            ],
+            "es": [
+                "Ciencia Computacional"
+            ],
+            "ca": [
+                "Ciència Computacional"
+            ]
+        },
+        "nationalities": {
+            "en": [
+                "American"
+            ],
+            "es": [
+                "Norteamericana"
+            ],
+            "ca": [
+                "Nord-americana"
+            ]
+        },
+        "wikipedia": {
+            "en": "Margaret_Hamilton_(software_engineer)",
+            "es": "Margaret_Hamilton_(científica)",
+            "ca": "Margaret_Hamilton"
+        }
     },
     {
         "name": "Margarita Salas",
@@ -1712,7 +2157,79 @@
                 "Espanyola"
             ]
         },
-        "wikipedia": { "en": "Margarita_Salas" }
+        "wikipedia": {
+            "en": "Margarita_Salas"
+        }
+    },
+    {
+        "name": "Marguerite Perey",
+        "pictures": [
+            "imagen1"
+        ],
+        "bio": {
+            "en": "Marguerite Catherine Perey was a famous French physicist to discover in 1939 the element called francium, the last remaining natural element to complete Dmitri Mendeleev's table of 92 elements. Before, there were several failed attempts to isolate it, since it was suspected of its existence by coherence of the periodic table, she is also known to be the first woman to enter the French Academy of Sciences. She focused her career on researching the physical, chemical and biological properties of different radioactive substances, both natural and man-made.\n",
+            "es": "Marguerite Catherine Perey fue una física francesa célebre por descubrir en 1939 el elemento llamado francio, último elemento natural que quedaba para completar la tabla de Dmitri Mendeléiev de 92 elementos. Antes, hubo varios intentos fallados de aislarlo, puesto que se sospechaba de su existencia por coherencia de la tabla periódica, También es conocida por ser la primera mujer en ingresar en la Academia Francesa de las Ciencias. Enfocó su carrera en la investigación de las propiedades físicas, químicas y biológicas de diferentes sustancias radiactivas, tanto naturales como artificiales\n",
+            "ca": "Marguerite Catherine Perey fou una física francesa cèlebre per descobrir l'any 1939 l'element anomenat franci, últim element natural que quedava per completar la taula de Dmitri Mendeléiev de 92 elements. Abans, hi va haver diversos intents fallits d'aïllar-lo, ja que es sospitava de la seva existència per coherència de la taula periòdica, També es coneguda per ser la primera dona a ingressar en l'Acadèmia Francesa de les Ciències.  Enfocà la seva carrera en la recerca de les propietats físiques, químiques i biològiques de diferents substàncies radioactives, tant naturals com artificials\n"
+        },
+        "birthYear": {
+            "en": "1909"
+        },
+        "deathYear": {
+            "en": "1975"
+        },
+        "awards": {
+            "en": [
+                "International Inventors Hall of Fame (posthumously, 2011)"
+            ],
+            "es": [
+                "International Inventors Hall of Fame (póstumamente, 2011)"
+            ],
+            "ca": [
+                "International Inventors Hall of Fame (pòstumament, 2011)"
+            ]
+        },
+        "achievements": {
+            "en": [
+                "Discoverer of Francium"
+            ],
+            "es": [
+                "Descubridora del Francio"
+            ],
+            "ca": [
+                "Descobridora del Franci"
+            ]
+        },
+        "fields": {
+            "en": [
+                "Physicist",
+                "Chemist",
+                "Radiochemist"
+            ],
+            "es": [
+                "Física",
+                "Química",
+                "Radioquímica"
+            ],
+            "ca": [
+                "Física",
+                "Química",
+                "Radioquímica"
+            ]
+        },
+        "nationalities": {
+            "en": [
+                "French"
+            ],
+            "es": [
+                "Francesa"
+            ],
+            "ca": [
+                "Francesa"
+            ]
+        },
+        "wikipedia": {
+            "en": "Marguerite_Perey"
+        }
     },
     {
         "name": "Maria Goeppert Mayer",
@@ -1778,7 +2295,9 @@
                 "Nord-americana"
             ]
         },
-        "wikipedia": { "en": "Maria_Goeppert_Mayer" }
+        "wikipedia": {
+            "en": "Maria_Goeppert_Mayer"
+        }
     },
     {
         "name": "Maria Reiche",
@@ -1849,7 +2368,9 @@
                 "Peruana"
             ]
         },
-        "wikipedia": { "en": "Maria_Reiche" }
+        "wikipedia": {
+            "en": "Maria_Reiche"
+        }
     },
     {
         "name": "Maria Sibylla Merian",
@@ -1900,7 +2421,95 @@
                 "Alemana"
             ]
         },
-        "wikipedia": { "en": "Maria_Sibylla_Merian" }
+        "wikipedia": {
+            "en": "Maria_Sibylla_Merian"
+        }
+    },
+    {
+        "name": "Marie Curie",
+        "pictures": [
+            "MarieCurie1",
+            "MarieCurie2"
+        ],
+        "bio": {
+            "en": "She was a Polish and naturalized-French physicist and chemist who conducted pioneering research on radioactivity. As the first of the Curie family legacy  of five Nobel Prizes, she was the first woman to win a Nobel Prize, the first and the only woman to win the Nobel Prize twice, and the only person to  win the Nobel Prize in two scientific fields. She was the first woman to become a professor at the University of Paris in 1906.\n",
+            "ca": "va ser una física i química polonesa, pionera en els primers temps de l'estudi de les radiacions. Va rebre el Premi Nobel de Física el 1903, juntament  amb el seu marit, Pierre Curie, i Henri Becquerel, pels seus descobriments en el camp de la radioactivitat. L'any 1911 va rebre el Premi Nobel de Química per  l'aïllament del radi pur. Va ser la primera a emprar el terme radioactivitat.\n",
+            "es": "fue una científica polaca nacionalizada francesa. Pionera en el campo de la radiactividad, fue la primera persona en recibir dos premios Nobel en distintas  especialidades —Física y Química— y la primera mujer en ocupar el puesto de profesora en la Universidad de París. En 1995 fue sepultada con honores en el  Panteón de París por méritos propios.\n"
+        },
+        "birthYear": {
+            "en": "1867"
+        },
+        "deathYear": {
+            "en": "1934"
+        },
+        "awards": {
+            "en": [
+                "Nobel Prize in Physics",
+                "Nobel Prize in Chemistry",
+                "Albert Medal",
+                "Willard Gibbs Award"
+            ],
+            "es": [
+                "Premio Nobel en Física",
+                "Premio Nobel en Química",
+                "Medalla Albert",
+                "Premio Willard Gibbs"
+            ],
+            "ca": [
+                "Premi Nobel en Física",
+                "Premi Nobel en Química",
+                "Medalla Albert",
+                "Premi Willard Gibbs"
+            ]
+        },
+        "achievements": {
+            "en": [
+                "First women to win a Nobel Prize.",
+                "First person to win the Nobel Prize in two different scientific fields.",
+                "Reseach on radioactivity"
+            ],
+            "es": [
+                "Primera mujer en ganar un Premio Nobel.",
+                "Primera persona en recibir dos Premios Nobel en diferentes especialidades.",
+                "Estudi de radiaciones"
+            ],
+            "ca": [
+                "Primera dona en guanyar un Premi Nobel",
+                "Primera persona en guanyar dos premis Nobel en diferents especialitats.",
+                "Recerca en la radiactivitat"
+            ]
+        },
+        "fields": {
+            "en": [
+                "Physics",
+                "Chemistry"
+            ],
+            "es": [
+                "Física",
+                "Química"
+            ],
+            "ca": [
+                "Física",
+                "Química"
+            ]
+        },
+        "nationalities": {
+            "en": [
+                "Polish",
+                "French"
+            ],
+            "es": [
+                "Polaca",
+                "Francesa"
+            ],
+            "ca": [
+                "Polonesa",
+                "Francesa"
+            ]
+        },
+        "wikipedia": {
+            "en": "Marie_Curie"
+        }
     },
     {
         "name": "Marie Sophie Germain",
@@ -1957,7 +2566,9 @@
                 "Francesa"
             ]
         },
-        "wikipedia": { "en": "Sophie_Germain" }
+        "wikipedia": {
+            "en": "Sophie_Germain"
+        }
     },
     {
         "name": "Marie Tharp",
@@ -2030,7 +2641,191 @@
                 "Nord-americanca"
             ]
         },
-        "wikipedia": { "en": "Marie_Tharp" }
+        "wikipedia": {
+            "en": "Marie_Tharp"
+        }
+    },
+    {
+        "name": "Marie-Anne Paulze Lavoisier",
+        "pictures": [
+            "imagen1"
+        ],
+        "bio": {
+            "en": "was a French chemist and noblewoman. Madame Lavoisier was the wife of the chemist and nobleman Antoine Lavoisier, and acted as his laboratory companion  and contributed to his work. She played a pivotal role in the translation of several scientific works, and was instrumental to the standardization of the  scientific method.\n",
+            "ca": "Era una química i noble francesa. Madame Lavoisier era l'esposa del químic i noble Antoine Lavoisier, va actuar com a  companya de laboratori,    i va contribuir a la seva feina.  Va jugar un paper fonamental en la traducció de diverses obres científiques, i va ser fonamental per a l'estandardització del   mètode científic.\n",
+            "es": "Fue una química y noble francesa. Madame Lavoisier era la esposa del químico y noble Antoine Lavoisier, actuó como compañera de laboratorio y contribuyó en su  trabajo. Jugó un papel relevante en la traducción de diversas obras científicas, además de ser fundamental para la estandarlización del método cientíco.\n"
+        },
+        "birthYear": {
+            "en": "1758"
+        },
+        "deathYear": {
+            "en": "1836"
+        },
+        "awards": {
+            "en": [],
+            "es": [],
+            "ca": []
+        },
+        "achievements": {
+            "en": [
+                "Book \"Lavoisier's Elementary Treatise on Chemistry\", established chemistry basis."
+            ],
+            "es": [
+                "Libro \"Memorias de Química\", sienta las bases de la química moderna."
+            ],
+            "ca": [
+                "Llibre \"Memòries de Química\", estableix les bases de la química moderna."
+            ]
+        },
+        "fields": {
+            "en": [
+                "Chemestry"
+            ],
+            "es": [
+                "Química"
+            ],
+            "ca": [
+                "Química"
+            ]
+        },
+        "nationalities": {
+            "en": [
+                "French"
+            ],
+            "es": [
+                "Francesa"
+            ],
+            "ca": [
+                "Francesa"
+            ]
+        },
+        "wikipedia": {
+            "en": "Marie-Anne_Paulze_Lavoisier"
+        }
+    },
+    {
+        "name": "Marion Cameron Gray",
+        "pictures": [
+            "imagen1"
+        ],
+        "bio": {
+            "en": "Marion Cameron Gray was a Scottish mathematician who discovered a graph with 54 vertices and 81 edges while working at American Telephone & Telegraph. The graph is commonly known as the Gray graph. She discovered an unusual cubic semi-symmetric graph with 54 vertices, representing the 27 points and 27 lines in a 3 × 3 × 3 three-dimensional grid, with an edge for each pair of a point and a line that meet each other. Here, \"cubic\" means that each vertex is the endpoint of three edges, and \"semi-symmetric\" means that every two edges are symmetric to each other but the same is not true for the vertices. This graph is the smallest possible cubic semi-symmetric graph. Thinking it was a theoretical discovery without practical application Gray did not publish her findings. This graph is fundamental in network theory. As well as her own research articles Gray compiled many reviews of publications on mathematical physics and served on the US Government-related committee which produced the Handbook of Mathematical Functions.\n",
+            "ca": "Marion Cameron Gray va ser una matemàtica escocesa que va descobrir el graf de 54 vèrtexs i 81 arestes mentre treballava en American Telephone & Telegraph. Aquest graf es coneix comunament com el graf de Gray. Va descobrir un inusual graf semi-simètric cúbic, un graf amb 54 vèrtexs, que representa els 27 punts i 27 línies en una quadrícula tridimensional de 3 × 3 × 3, amb una vora per a cada parell d'un punts i una línia que els uneix entre si. Ací, \"cúbic\" significa que cada vèrtex és el punt final de tres vores, i \"semi-simètric\" significa que cada dues vores són simètrics entre si, però el mateix no és cert per als vèrtexs. Aquest graf és el graf semi-simètric cúbic més xicoteta possible. Pensant que era un descobriment teòric sense aplicació pràctica, Gray no va publicar les seues troballes. Aquest graf és fonamental en teoria de xarxes. A més dels seus propis articles d'investigació, Gray va compilar moltes revisions de publicacions sobre física matemàtica i va formar part del comité relacionat amb el govern dels EUA que va elaborar el Manual de funcions matemàtiques\n",
+            "es": "FueMarion Cameron Gray fue una matemática escocesa que descubrió el grafo de 54 vértices y 81 aristas mientras trabajaba en American Telephone & Telegraph. Este grafo se conoce comúnmente como el grafo de Gray. Descubrió un inusual grafo semi-simétrico cúbico, un grafo con 54 vértices, que representa los 27 puntos y 27 líneas en una cuadrícula tridimensional de 3 × 3 × 3, con un borde para cada par de un puntos y una línea que los une entre sí. Aquí, \"cúbico\" significa que cada vértice es el punto final de tres bordes, y \"semi-simétrico\" significa que cada dos bordes son simétricos entre sí, pero lo mismo no es cierto para los vértices. Este grafo es el grafo semi-simétrico cúbico más pequeña posible. Pensando que era un descubrimiento teórico sin aplicación práctica, Gray no publicó sus hallazgos. Este grafo es fundamental en teoría de redes. Además de sus propios artículos de investigación, Gray compiló muchas revisiones de publicaciones sobre física matemática y formó parte del comité relacionado con el gobierno de EE. UU. que elaboró el Manual de funciones matemáticas\n"
+        },
+        "birthYear": {
+            "en": "1902"
+        },
+        "deathYear": {
+            "en": "1979"
+        },
+        "awards": {
+            "en": [],
+            "es": [],
+            "ca": []
+        },
+        "achievements": {
+            "en": [
+                "Discorerer of the Gray Graph, a fundamental result in network theory"
+            ],
+            "es": [
+                "Descubridora del Grafo de Gray, un resultado fundamental de la teoría de redes"
+            ],
+            "ca": [
+                "Descobridora del Graf de Gray, un resultat fonamental de la teoria de xarxes"
+            ]
+        },
+        "fields": {
+            "en": [
+                "Mathematician"
+            ],
+            "es": [
+                "Matemática"
+            ],
+            "ca": [
+                "Matemàtica"
+            ]
+        },
+        "nationalities": {
+            "en": [
+                "Scottish"
+            ],
+            "es": [
+                "Escocesa"
+            ],
+            "ca": [
+                "Escocesa"
+            ]
+        },
+        "wikipedia": {
+            "en": "Marion_Cameron_Gray"
+        }
+    },
+    {
+        "name": "Mary Anderson",
+        "pictures": [
+            "imagen1"
+        ],
+        "bio": {
+            "en": "Mary Elizabeth Anderson is considered the inventor of the windshield wiper blade. In November 1903 she was granted her first patent for a windshield cleaning device controlled from inside the vehicle. Her device consisted of a lever, installed inside the vehicle, that controlled a rubber blade on the outside of the windshield.\n",
+            "es": "Mary Elizabeth Anderson es considerada inventora de l'eixugaparabrisa. Al novembre de 1903 se li va concedir la seua primera patent per a un dispositiu de neteja de parabrisa controlat des de l'interior del vehicle. El dispositiu que va idear consistia en una palanca, instal·lada a l'interior del vehicle, que controlava una làmina de goma resistent en la part exterior del parabrisa.\n",
+            "ca": "Mary Elizabeth Anderson és considerada inventora del limpiaparabrisas. En noviembre de 1903 se le concedió su primera patente para un dispositivo de limpieza de parabrisas controlado desde el interior del vehículo. El dispositivo que ideó consistía en una palanca, instalada en el interior del vehículo, que controlaba una lámina de goma resistente en la parte exterior del parabrisas.\n"
+        },
+        "birthYear": {
+            "en": "1866"
+        },
+        "deathYear": {
+            "en": "1953"
+        },
+        "awards": {
+            "en": [
+                "International Inventors Hall of Fame (posthumously, 2011)"
+            ],
+            "es": [
+                "International Inventors Hall of Fame (póstumamente, 2011)"
+            ],
+            "ca": [
+                "International Inventors Hall of Fame (pòstumament, 2011)"
+            ]
+        },
+        "achievements": {
+            "en": [
+                "Inventor of the windshield wiper blade"
+            ],
+            "es": [
+                "Inventora del limpiaparabrisas"
+            ],
+            "ca": [
+                "Inventora del eixugaparabrisa"
+            ]
+        },
+        "fields": {
+            "en": [
+                "Inventor"
+            ],
+            "es": [
+                "Inventora"
+            ],
+            "ca": [
+                "Inventora"
+            ]
+        },
+        "nationalities": {
+            "en": [
+                "American"
+            ],
+            "es": [
+                "Norteamericana"
+            ],
+            "ca": [
+                "Nord-americana"
+            ]
+        },
+        "wikipedia": {
+            "en": "Mary_Anderson_(inventor)",
+            "es": "Mary_Anderson_(inventora)",
+            "ca": "Mary_Anderson"
+        }
     },
     {
         "name": "Mary Anning",
@@ -2080,7 +2875,82 @@
                 "Britànica"
             ]
         },
-        "wikipedia": { "en": "Mary_Anning" }
+        "wikipedia": {
+            "en": "Mary_Anning"
+        }
+    },
+    {
+        "name": "Mary Leakey",
+        "pictures": [
+            "imagen1"
+        ],
+        "bio": {
+            "en": "She was a British paleoanthropologist who discovered the first fossilised Proconsul skull, an extinct ape which is now believed to be ancestral to  humans. She also discovered the robust Zinjanthropus skull at Olduvai Gorge in Tanzania, eastern Africa. For much of her career she worked with her  husband, Louis Leakey, at Olduvai Gorge, where they uncovered fossils of ancient hominines and the earliest hominins, as well as the stone tools produced  by the latter group. Mary Leakey developed a system for classifying the stone tools found at Olduvai. She discovered the Laetoli footprints, and at the  Laetoli site she discovered hominin fossils that were more than 3.75 million years old.\n",
+            "ca": "Va ser una paleoantropòlega britànica que va descobrir el primer crani fossilitzat de Proconsul, un simi extint que actualment es creu que és ancestral  als humans.  També va descobrir el sòlid crani de Zinjanthropus a la gorja d'Olduvai a Tanzània, Àfrica oriental.  Durant gran part de la seva carrera  va treballar amb el seu marit, Louis Leakey, a Olduvai Gorge, on van descobrir fòssils d'hominines antigues i les primeres hominines, així com les eines  de pedra produïdes per aquest últim grup.  Mary Leakey va desenvolupar un sistema per classificar les eines de pedra trobades a Olduvai.  Va descobrir les  petjades de Laetoli, i al jaciment Laetoli va descobrir fòssils d'hominina que tenien més de 3,75 milions d'anys.\n",
+            "es": "Fue una paleoantropóloga británica que descubrió el primer cráneo fosilizado de Proconsul, un simio extinto que actualmente se cree que es ancestral a los  humanos. También descubrió el sólido cráneo de Zinjanthropus a la garganta de Olduvai en Tanzania, África oriental. Durante gran parte de su carrera trabajó  con su marido, Louis Leakey, a Olduvai Gorge, donde descubrieron fósiles de hominines antiguas y las primeras hominines, así como las herramientas de piedra  producidas por este último grupo. Mary Leakey desarrolló un sistema para clasificar las herramientas de piedra encontradas a Olduvai. Descubrió las huellas  de Laetoli, y al yacimiento Laetoli descubrió fósiles de hominina que tenían más de 3,75 millones de años.\n"
+        },
+        "birthYear": {
+            "en": "1913"
+        },
+        "deathYear": {
+            "en": "1996"
+        },
+        "awards": {
+            "en": [
+                "Fellow of the British Academy",
+                "Hubbard Medal",
+                "Prestwich Medal",
+                "Elizabeth Blakwell Award"
+            ],
+            "es": [
+                "Fellow of the British Academy",
+                "Medalla Hubbard",
+                "Medalla Prestwich",
+                "Premio Elizabeth Blakwell"
+            ],
+            "ca": [
+                "Fellow of the British Academy",
+                "Medalla Hubbard",
+                "Medalla Prestwich",
+                "Premi Elizabeth Blakwell"
+            ]
+        },
+        "achievements": {
+            "en": [
+                "Discovery Zinjanthropus fossil and Laetoli footprints"
+            ],
+            "es": [
+                "Descubrimiento fósil Zinjanthropus y huellas de Laetoli"
+            ],
+            "ca": [
+                "Descobriment fòssil Zinjanthropus i empremtes de Laetoli"
+            ]
+        },
+        "fields": {
+            "en": [
+                "Paleoanthropology"
+            ],
+            "es": [
+                "Paleantropología"
+            ],
+            "ca": [
+                "Paleantropologia"
+            ]
+        },
+        "nationalities": {
+            "en": [
+                "British"
+            ],
+            "es": [
+                "Británica"
+            ],
+            "ca": [
+                "Britànica"
+            ]
+        },
+        "wikipedia": {
+            "en": "Mary_Leakey"
+        }
     },
     {
         "name": "Maryam Mirzakhani",
@@ -2154,7 +3024,9 @@
                 "Nord-americana"
             ]
         },
-        "wikipedia": { "en": "Maryam_Mirzakhani" }
+        "wikipedia": {
+            "en": "Maryam_Mirzakhani"
+        }
     },
     {
         "name": "May-Britt Moser",
@@ -2220,7 +3092,9 @@
                 "Noruega"
             ]
         },
-        "wikipedia": { "en": "May-Britt_Moser" }
+        "wikipedia": {
+            "en": "May-Britt_Moser"
+        }
     },
     {
         "name": "Nettie Stevens",
@@ -2283,7 +3157,9 @@
                 "Nord-americana"
             ]
         },
-        "wikipedia": { "en": "Nettie_Stevens" }
+        "wikipedia": {
+            "en": "Nettie_Stevens"
+        }
     },
     {
         "name": "Nuria Oliver",
@@ -2355,7 +3231,9 @@
                 "Espanyola"
             ]
         },
-        "wikipedia": { "en": "Nuria_Oliver" }
+        "wikipedia": {
+            "en": "Nuria_Oliver"
+        }
     },
     {
         "name": "Patricia Bath",
@@ -2420,7 +3298,9 @@
                 "Nord-americana"
             ]
         },
-        "wikipedia": { "en": "Patricia_Bath" }
+        "wikipedia": {
+            "en": "Patricia_Bath"
+        }
     },
     {
         "name": "Rachel Carson",
@@ -2479,7 +3359,9 @@
                 "Nord-americana"
             ]
         },
-        "wikipedia": { "en": "Rachel_Carson" }
+        "wikipedia": {
+            "en": "Rachel_Carson"
+        }
     },
     {
         "name": "Rita Levi-Montalcini",
@@ -2542,7 +3424,9 @@
                 "Italiana"
             ]
         },
-        "wikipedia": { "en": "Rita_Levi-Montalcini" }
+        "wikipedia": {
+            "en": "Rita_Levi-Montalcini"
+        }
     },
     {
         "name": "Rosalind Franklin",
@@ -2608,7 +3492,9 @@
                 "Britànica"
             ]
         },
-        "wikipedia": { "en": "Rosalind_Franklin" }
+        "wikipedia": {
+            "en": "Rosalind_Franklin"
+        }
     },
     {
         "name": "Rosalyn Sussman Yalow",
@@ -2680,7 +3566,9 @@
                 "Nord-americana"
             ]
         },
-        "wikipedia": { "en": "Rosalyn_Sussman_Yalow" }
+        "wikipedia": {
+            "en": "Rosalyn_Sussman_Yalow"
+        }
     },
     {
         "name": "Stephanie Kwolek",
@@ -2746,7 +3634,142 @@
                 "estadounidense"
             ]
         },
-        "wikipedia": { "en": "Stephanie_Kwolek" }
+        "wikipedia": {
+            "en": "Stephanie_Kwolek"
+        }
+    },
+    {
+        "name": "Sylvia Earle",
+        "pictures": [
+            "SylviaEarle1",
+            "SylviaEarle2"
+        ],
+        "bio": {
+            "en": "She is an American marine biologist, explorer, author, and lecturer. She has been a National Geographic explorer-in-residence since 1998. Earle was the first  female chief scientist of the U.S. National Oceanic and Atmospheric Administration, and was named by Time Magazine as its first Hero for the Planet in  1998. She is also part of the group Ocean Elders, which is dedicated to protecting the ocean and its wildlife.\n",
+            "ca": "És biòloga marina, exploradora, autora i professora. Ha estat exploradora resident de National Geographic des de 1998. Earle va ser la primera científica cap de l'Administració Oceànica i Atmosfèrica Nacional dels Estats Units, i va ser nomenada per la revista Time com la seua primera heroïna per al planeta, l'any 1998. També forma part del grup Ocean Elders, que està dedicat a protegir l'oceà i la seva vida silvestre.\n",
+            "es": "Es bióloga marina, exploradora, autora y profesora. Ha sido exploradora residente de National Geographic desde 1998. Earle fue la primera científica directora de la Administración Oceánica y Atmosférica Nacional de los Estados Unidos, y fue nombrada por la revista Time como la suya primera heroína para el planeta, en 1998. También forma parte del grupo Ocean Elders, que está dedicado a proteger el océano y su vida silvestre.\n"
+        },
+        "birthYear": {
+            "en": "1935"
+        },
+        "deathYear": {
+            "en": ""
+        },
+        "awards": {
+            "en": [
+                "TED Prize",
+                "National Women's Hall of Fame",
+                "Princess of Asturias Awards"
+            ],
+            "es": [
+                "Premio TED",
+                "National Women's Hall of Fame",
+                "Premio pricesa de Asturias"
+            ],
+            "ca": [
+                "Premi TED",
+                "National Women's Hall of Fame",
+                "Premi princessa d'Asturies"
+            ]
+        },
+        "achievements": {
+            "en": [
+                "First female chief scientist of the U.S. National Oceanic and Atmospheric Administration"
+            ],
+            "es": [
+                "Primera mujer directora del U.S. National Oceanic and Atmospheric Administration."
+            ],
+            "ca": [
+                "Primera dona directora del U.S. National Oceanic and Atmospheric Administration"
+            ]
+        },
+        "fields": {
+            "en": [
+                "Oceanographer"
+            ],
+            "es": [
+                "Oceanógrafa"
+            ],
+            "ca": [
+                "Oceanògrafa"
+            ]
+        },
+        "nationalities": {
+            "en": [
+                "American"
+            ],
+            "es": [
+                "Norteamericana"
+            ],
+            "ca": [
+                "Nord-americana"
+            ]
+        },
+        "wikipedia": {
+            "en": "Sylvia_Earle"
+        }
+    },
+    {
+        "name": "Valerie Thomas",
+        "pictures": [
+            "ValerieThomas1",
+            "ValerieThomas2"
+        ],
+        "bio": {
+            "en": "She is an American scientist and inventor. She invented the illusion transmitter, for which she received a patent in 1980. She was responsible for developing  the digital media formats image processing systems used in the early years of the Landsat program.\n",
+            "ca": "és una científica americana i inventora. Va inventar el \"Illusion Transmitter\", pel qual va rebre una patent l'any 1980. Valerie també va assistir a una  escola femenina, on no la van animar a seguir cap curs de matemàtiques o ciències.\n",
+            "es": "es una científica e inventora estadounidense. Inventó el transmisor de ilusión, por el que recibió una patente en 1980.1​ Fue responsable del desarrollo de los  sistemas de procesamiento de imágenes de formatos de medios digitales utilizados en los primeros años del programa Landsat.\n"
+        },
+        "birthYear": {
+            "en": "1943"
+        },
+        "deathYear": {
+            "en": ""
+        },
+        "awards": {
+            "en": [],
+            "es": [],
+            "ca": []
+        },
+        "achievements": {
+            "en": [
+                "Inventor of the Illusion Transmitter"
+            ],
+            "es": [
+                "Inventora del \"Illusion Transmitter\""
+            ],
+            "ca": [
+                "Inventora del \"Illusion Transmitter\""
+            ]
+        },
+        "fields": {
+            "en": [
+                "Inventor",
+                "Physics"
+            ],
+            "es": [
+                "Inventora",
+                "Física"
+            ],
+            "ca": [
+                "Inventora",
+                "Física"
+            ]
+        },
+        "nationalities": {
+            "en": [
+                "American"
+            ],
+            "es": [
+                "Norteamericana"
+            ],
+            "ca": [
+                "Nord-americana"
+            ]
+        },
+        "wikipedia": {
+            "en": "Valerie_Thomas"
+        }
     },
     {
         "name": "Virginia Apgar",
@@ -2813,7 +3836,88 @@
                 "Estadounidenca"
             ]
         },
-        "wikipedia": { "en": "Virginia_Apgar" }
+        "wikipedia": {
+            "en": "Virginia_Apgar"
+        }
+    },
+    {
+        "name": "Zaha Hadid",
+        "pictures": [
+            "imagen1"
+        ],
+        "bio": {
+            "en": "was a British Iraqi architect, artist and designer, recognised as a major figure in architecture of the late 20th and early 21st centuries. Born in  Baghdad, Iraq, Hadid studied mathematics as an undergraduate and then enrolled at the Architectural Association School of Architecture in 1972. In search  of an alternative system to traditional architectural drawing, and influenced by Suprematism and the Russian avant-garde, Hadid adopted painting as a design  tool and abstraction as an investigative principle to \"reinvestigate the aborted and untested experiments of Modernism [...] to unveil new fields of building.\n",
+            "ca": "Va ser arquitecta, artista i dissenyadora iraquiana britànica, reconeguda com una figura important en l'arquitectura de finals del segle XX i principis del XXI. Nascuda a   Bagdad, Iraq, Hadid va estudiar matemàtiques com a estudiant i després es va matricular a l'Escola d'Arquitectura de l'Associació Arquitectònica el 1972. A la cerca   d'un sistema alternatiu al dibuix arquitectònic tradicional, i influenciada pel suprematisme i l'avantguarda russa, Hadid va adoptar la pintura com a disseny.   L'eina i l'abstracció com a principi d'investigació per \"reinvertir els experiments avortats i no provats del modernisme  [...] per revelar nous camps de construcció.\n",
+            "es": "Fue arquitecta, artista y diseñadora iraquí británica, reconocida como una figura importante en la arquitectura de finales del siglo XX y principios del XXI. Nacida en Bagdad, Irak, Hadid estudió matemáticas como estudiante y después se matriculó en la Escuela de Arquitectura de la Asociación Arquitectónica el 1972. En la busca  de un sistema alternativo al dibujo arquitectónico tradicional, e influenciada por el suprematismo y la vanguardia rusa, Hadid adoptó la pintura como diseño. La  herramienta y la abstracción como principio de investigación para \"reinvertir los experimentos abortados y no probados del modernismo [...]para revelar nuevos campos  de construcción.\n"
+        },
+        "birthYear": {
+            "en": "1950"
+        },
+        "deathYear": {
+            "en": "2016"
+        },
+        "awards": {
+            "en": [
+                "Pritzker Architecture Prize",
+                "Stirling Prize",
+                "Praemium Imperiale",
+                "Mies van der Rohe",
+                "Royal Gold Medal from the Royal Institute of British Architects"
+            ],
+            "es": [
+                "Premio Pritzker Architecture",
+                "Premio Stirling",
+                "Praemium Imperiale",
+                "Mies van der Rohe",
+                "Real Medalla de oro del Royal Institute of British Architects"
+            ],
+            "ca": [
+                "Premi Pritzker Architecture",
+                "Premi Stirling",
+                "Praemium Imperiale",
+                "Mies van der Rohe",
+                "Reial Medalla d'or del Royal Institute of British Architects"
+            ]
+        },
+        "achievements": {
+            "en": [
+                "First woman to receive the Pritzker Architecture Prize."
+            ],
+            "es": [
+                "Primera mujer en ganar el premio Pritzker Architecture."
+            ],
+            "ca": [
+                "Primera dona en guanyar el premi Pritzker Architecture."
+            ]
+        },
+        "fields": {
+            "en": [
+                "Architect"
+            ],
+            "es": [
+                "Arquitecta"
+            ],
+            "ca": [
+                "Arquitecta"
+            ]
+        },
+        "nationalities": {
+            "en": [
+                "British",
+                "Iraqi"
+            ],
+            "es": [
+                "Británica",
+                "Iraquí"
+            ],
+            "ca": [
+                "Britànica",
+                "Iraquí"
+            ]
+        },
+        "wikipedia": {
+            "en": "Zaha_Hadid"
+        }
     },
     {
         "name": "Ángela Ruíz",
@@ -2883,702 +3987,5 @@
             "es": "Ángela_Ruiz_Robles",
             "ca": "Ángela_Ruiz_Robles"
         }
-    },
-    
-  {
-    "name": "Marie Curie",
-    "pictures": [
-      "MarieCurie1",
-      "MarieCurie2"
-    ],
-    "bio": {
-      "en": "She was a Polish and naturalized-French physicist and chemist who conducted pioneering research on radioactivity. As the first of the Curie family legacy  of five Nobel Prizes, she was the first woman to win a Nobel Prize, the first and the only woman to win the Nobel Prize twice, and the only person to  win the Nobel Prize in two scientific fields. She was the first woman to become a professor at the University of Paris in 1906.\n",
-      "ca": "va ser una física i química polonesa, pionera en els primers temps de l'estudi de les radiacions. Va rebre el Premi Nobel de Física el 1903, juntament  amb el seu marit, Pierre Curie, i Henri Becquerel, pels seus descobriments en el camp de la radioactivitat. L'any 1911 va rebre el Premi Nobel de Química per  l'aïllament del radi pur. Va ser la primera a emprar el terme radioactivitat.\n",
-      "es": "fue una científica polaca nacionalizada francesa. Pionera en el campo de la radiactividad, fue la primera persona en recibir dos premios Nobel en distintas  especialidades —Física y Química— y la primera mujer en ocupar el puesto de profesora en la Universidad de París. En 1995 fue sepultada con honores en el  Panteón de París por méritos propios.\n"
-    },
-    "birthYear": {
-      "en": "1867"
-    },
-    "deathYear": {
-      "en": "1934"
-    },
-    "awards": {
-      "en": [
-        "Nobel Prize in Physics",
-        "Nobel Prize in Chemistry",
-        "Albert Medal",
-        "Willard Gibbs Award"
-      ],
-      "es": [
-        "Premio Nobel en Física",
-        "Premio Nobel en Química",
-        "Medalla Albert",
-        "Premio Willard Gibbs"
-      ],
-      "ca": [
-        "Premi Nobel en Física",
-        "Premi Nobel en Química",
-        "Medalla Albert",
-        "Premi Willard Gibbs"
-      ]
-    },
-    "achievements": {
-      "en": [
-        "First women to win a Nobel Prize.",
-        "First person to win the Nobel Prize in two different scientific fields.",
-        "Reseach on radioactivity"
-      ],
-      "es": [
-        "Primera mujer en ganar un Premio Nobel.",
-        "Primera persona en recibir dos Premios Nobel en diferentes especialidades.",
-        "Estudi de radiaciones"
-      ],
-      "ca": [
-        "Primera dona en guanyar un Premi Nobel",
-        "Primera persona en guanyar dos premis Nobel en diferents especialitats.",
-        "Recerca en la radiactivitat"
-      ]
-    },
-    "fields": {
-      "en": [
-        "Physics",
-        "Chemistry"
-      ],
-      "es": [
-        "Física",
-        "Química"
-      ],
-      "ca": [
-        "Física",
-        "Química"
-      ]
-    },
-    "nationalities": {
-      "en": [
-        "Polish",
-        "French"
-      ],
-      "es": [
-        "Polaca",
-        "Francesa"
-      ],
-      "ca": [
-        "Polonesa",
-        "Francesa"
-      ]
-    },
-    "wikipedia": {
-      "en": "Marie_Curie"
-    }
-  },
-  {
-    "name": "Margaret Hamilton",
-    "pictures": [
-      "imagen1"
-    ],
-    "bio": {
-      "en": "She is an American computer scientist, systems engineer, and business owner. She was director of the Software Engineering Division of the MIT  Instrumentation Laboratory, which developed on-board flight software for NASA's Apollo program. She later founded two software companies—Higher  Order Software in 1976 and Hamilton Technologies in 1986, both in Cambridge, Massachusetts. Hamilton has published more than 130 papers, proceedings  and reports about sixty projects and six major programs. She is one of the people credited with coining the term \"software engineering\".\n",
-      "ca": "És una científica computacional i matemàtica. Va ser directora de la Divisió d'Enginyeria de Programari del Laboratori d'Instrumentació del MIT, on  va desenvolupar programari de navegació \"on-board\" per al Programa Espacial Apol·lo. El 1986, es va convertir en la fundadora i CEO de Hamilton  Technologies, Inc. a Cambridge, Massachusetts. La companyia es va desenvolupar al voltant del Llenguatge Universal de Sistemes basada en el seu paradigma  de \"Desenvolupament Abans del Fet\" (DBTF, de l'anglès Development Before the Fact) per a sistemes de disseny de programari.\n",
-      "es": "Es una científica computacional, matemática e ingeniera de Software. Fue directora de la División de Ingeniería de Software del Laboratorio de Instrumentación  del MIT,​ donde con su equipo desarrolló el software de navegación \"on-board\" para el Programa Espacial Apolo. En 1986, se convirtió en la fundadora y CEO de  Hamilton Technologies, Inc. en Cambridge, Massachusetts. La compañía se desarrolló alrededor del lenguaje universal de sistemas basada en su paradigma  de \"desarrollo antes del hecho\" (DBTF, del inglés Development Before the Fact) para sistemas de diseño de software.\n"
-    },
-    "birthYear": {
-      "en": "1936"
-    },
-    "deathYear": {
-      "en": ""
-    },
-    "awards": {
-      "en": [
-        "Presidential Medal of Freedom",
-        "The Washington Award",
-        "NASA Exceptional Space Act Award"
-      ],
-      "es": [
-        "Medalla Presidencial de la Libertad",
-        "The Washington Award",
-        "NASA Exceptional Space Act Award"
-      ],
-      "ca": [
-        "Medalla Presidencial de la Llibertad",
-        "The Washington Award",
-        "NASA Exceptional Space Act Award"
-      ]
-    },
-    "achievements": {
-      "en": [
-        "She developed on-board flight software for NASA's Apollo program"
-      ],
-      "es": [
-        "Desarrollo programa de vuelo a bordo, para el Programa Espacial Apolo"
-      ],
-      "ca": [
-        "Desenvolupament programa vol a bord, per al Programa Espacial Apol·lo"
-      ]
-    },
-    "fields": {
-      "en": [
-        "Computational Science"
-      ],
-      "es": [
-        "Ciencia Computacional"
-      ],
-      "ca": [
-        "Ciència Computacional"
-      ]
-    },
-    "nationalities": {
-      "en": [
-        "American"
-      ],
-      "es": [
-        "Norteamericana"
-      ],
-      "ca": [
-        "Nord-americana"
-      ]
-    },
-    "wikipedia": {
-      "en": "Margaret_Hamilton_(software_engineer)",
-      "es": "Margaret_Hamilton_(científica)",
-      "ca": "Margaret_Hamilton"
-    }
-  },
-    {
-      "name": "Elisa Leonida Zamfirescu",
-      "pictures": [
-        "imagen1"
-      ],
-      "bio": {
-        "en": "She was a Romanian engineer who was one of the first women to obtain a degree in engineering. She was born in the Romanian town of Galați but qualified in  Berlin. During World War I she managed a hospital in Romania.\n",
-        "ca": "Va ser una enginyera romanesa, una de les primeres dones a obtenir el graduat en enginyeria. Va nàixer al poble romanés de Galati, encara que va estudiar a  Berlín. Durant la Primera Guerra Mundial va dirigir un hospital a Romania.\n",
-        "es": "Fue una ingeniera rumana, una de las primeras mujeres en obtener el graduado de ingenieria. Nació en el pueblo de Rumania, Galati, aunque estudió en Berlín. Durante la Primera Guerra Mundial dirigió un hosptital de Rumania.\n"
-      },
-      "birthYear": {
-        "en": "1887"
-      },
-      "deathYear": {
-        "en": "1973"
-      },
-      "awards": {
-        "en": [
-        ],
-        "es": [
-        ],
-        "ca": [
-        ]
-      },
-      "achievements": {
-        "en": [
-          "She was was one of the first women to obtain a degree in engineering",
-          "First woman member of A.G.I.R. (General Association of Romanian Engineers)"
-        ],
-        "es": [
-          "Fue una de las primeras mujeres en obtener el graduado de ingenieria",
-          "Primera mujer miembro de la A.G.I.R (Asociación General de Ingenieros Rumanos)"
-        ],
-        "ca": [
-          "Va ser una de les primeres dones a obtenir el graduat en enginyeria",
-          "Primera dona membre de la A.G.I.R (Asociació General d'Enginyers Romanesos)"
-        ]
-      },
-      "fields": {
-        "en": [
-          "Engineering"
-        ],
-        "es": [
-          "Ingeniería"
-        ],
-        "ca": [
-          "Enginyeria"
-        ]
-      },
-      "nationalities": {
-        "en": [
-          "Romanian"
-        ],
-        "es": [
-          "Rumana"
-        ],
-        "ca": [
-          "Romanesa"
-        ]
-      },
-      "wikipedia": {
-          "en": "Elisa_Leonida_Zamfirescu"
-          }
-    },
-    {
-      "name": "Henrietta Swan Leavitt",
-      "pictures": [
-        "imagen1"
-      ],
-      "bio": {
-        "en": "was an American astronomer. A graduate of Radcliffe College, she worked at the Harvard College Observatory as a \"computer\", tasked with examining  photographic plates in order to measure and catalog the brightness of stars. This work led her to discover the relation between the luminosity and  the period of Cepheid variables. Leavitt's discovery provided astronomers with the first \"standard candle\" with which to measure the distance to faraway galaxies.\n",
-        "ca": "Va ser una astrònoma estatunidenca. Va treballar a l'Observatori Harvard College com a \"ordinador\", encarregada d'examinar les plaques fotogràfiques per tal  de mesurar i catalogar la brillantor de les estrelles.  Aquest treball la va portar a descobrir la relació entre la lluminositat i el període de les variables  cefeides. El descobriment de Leavitt va proporcionar als astrònoms la primera \"espelma estàndard\" amb la qual mesurar la distància a les galàxies llunyanes.\n",
-        "es": "Fue una astrónoma estadounidense. Trabajó al Observatorio Harvard College como \"ordenador\", encargada de examinar las placas fotográficas para  mesurar y catalogar la brillantez de las estrellas. Este trabajo la llevó a descubrir la relación entre la luminosidad y el periodo de las variables  cefeides. El descubrimiento de Leavitt proporcionó a los astrónomos la primera \"vela estándar\" con la cual mesurar la distancia a las galaxias lejanas.\n"
-      },
-      "birthYear": {
-        "en": "1868"
-      },
-      "deathYear": {
-        "en": "1921"
-      },
-      "awards": {
-        "en": [
-        ],
-        "es": [
-        ],
-        "ca": [
-        ]
-      },
-      "achievements": {
-        "en": [
-          "Leavitt's law, the period-luminosity relationship for Cepheid variables."
-        ],
-        "es": [
-          "Ley de Leavitt, la relacions entre luminosidad y periodo para las variables cefeidas."
-        ],
-        "ca": [
-          "La llei de Leavitt, la relació entre lluminositat i període per a les variables cefeides."
-        ]
-      },
-      "fields": {
-        "en": [
-          "Astronomy"
-        ],
-        "es": [
-          "Astronomía"
-        ],
-        "ca": [
-          "Astronomia"
-        ]
-      },
-      "nationalities": {
-        "en": [
-          "American"
-        ],
-        "es": [
-          "Norteamericana"
-        ],
-        "ca": [
-          "Nord-americana"
-        ]
-      },
-      "wikipedia": {
-        "en": "Henrietta_Swan_Leavitt"
-      }
-    },
-    {
-      "name": "Julia Morgan",
-      "pictures": [
-        "imagen1"
-      ],
-      "bio": {
-        "en": "She was an American architect and engineer. She designed more than 700 buildings in California during a long and prolific career. She is best known  for her work on Hearst Castle in San Simeon, California. Morgan was the first woman to be admitted to the architecture program at l'École nationale  supérieure des Beaux-Arts in Paris and the first woman architect licensed in California. She designed many edifices for institutions serving women  and girls, including a number of YWCAs and buildings for Mills College.\n",
-        "ca": "Va ser una arquitecta, la primera dona admesa a l'Escola de Belles Arts de París i en 1902 es va convertir en la primera dona titulada en arquitectura al món. També va ser la primera arquitecta de Califòrnia. La seva obra va ser prolífica, en 50 anys de carrera va dissenyar més de 700  edificis, esglésies, hospitals, museus, hotels, edificis comercials, centres comunitaris, escoles, edificis universitaris, clubs, un zoo privat, diversos  edificis de la YMCA i nombroses residències privades.\n",
-        "es": "Fue una arquitecta estadounidense. Fue la primera mujer admitida en la Escuela de Bellas Artes de París y en 1902 se tituló en arquitectura. Fue la  primera arquitecta de California.1​ Su obra fue prolífica, en 50 años de carrera diseñó más de 700 edificios, iglesias, hospitales, museos, hoteles, edificios  comerciales, centros comunitarios, escuelas, edificios universitarios, clubes, un zoo privado, varios edificios de la YWCA y numerosas residencias privadas. \n"
-      },
-      "birthYear": {
-        "en": "1872"
-      },
-      "deathYear": {
-        "en": "1957"
-      },
-      "awards": {
-        "en": [
-          "AIA Gold Medal"
-        ],
-        "es": [
-          "Medalla de oro de la AIA"
-        ],
-        "ca": [
-          "Medalla d'or de l'AIA"
-        ]
-      },
-      "achievements": {
-        "en": [
-          "First woman to be admitted to the architecture program at l'École nationale supérieure des Beaux-Arts in Paris."
-        ],
-        "es": [
-          "Primera mujer admitida en la Escuela de Bellas Artes de París y graduada en arquitectura."
-        ],
-        "ca": [
-          "Primera dona admesa a l'Escola de Belles Arts de París i graduada en arquitectura."
-        ]
-      },
-      "fields": {
-        "en": [
-          "Architect"
-        ],
-        "es": [
-          "Arquitecta"
-        ],
-        "ca": [
-          "Arquitecta"
-        ]
-      },
-      "nationalities": {
-        "en": [
-          "American"
-        ],
-        "es": [
-          "Norteamericana"
-        ],
-        "ca": [
-          "Nord-americana"
-        ]
-      },
-      "wikipedia": {
-          "en": "Julia_Morgan"
-          }
-    },
-    {
-      "name": "Marie-Anne Paulze Lavoisier",
-      "pictures": [
-        "imagen1"
-      ],
-      "bio": {
-        "en": "was a French chemist and noblewoman. Madame Lavoisier was the wife of the chemist and nobleman Antoine Lavoisier, and acted as his laboratory companion  and contributed to his work. She played a pivotal role in the translation of several scientific works, and was instrumental to the standardization of the  scientific method.\n",
-        "ca": "Era una química i noble francesa. Madame Lavoisier era l'esposa del químic i noble Antoine Lavoisier, va actuar com a  companya de laboratori,    i va contribuir a la seva feina.  Va jugar un paper fonamental en la traducció de diverses obres científiques, i va ser fonamental per a l'estandardització del   mètode científic.\n",
-        "es": "Fue una química y noble francesa. Madame Lavoisier era la esposa del químico y noble Antoine Lavoisier, actuó como compañera de laboratorio y contribuyó en su  trabajo. Jugó un papel relevante en la traducción de diversas obras científicas, además de ser fundamental para la estandarlización del método cientíco.\n"
-      },
-      "birthYear": {
-        "en": "1758"
-      },
-      "deathYear": {
-        "en": "1836"
-      },
-      "awards": {
-        "en": [
-        ],
-        "es": [
-        ],
-        "ca": [
-        ]
-      },
-      "achievements": {
-        "en": [
-          "Book \"Lavoisier's Elementary Treatise on Chemistry\", established chemistry basis."
-        ],
-        "es": [
-          "Libro \"Memorias de Química\", sienta las bases de la química moderna."
-        ],
-        "ca": [
-          "Llibre \"Memòries de Química\", estableix les bases de la química moderna."
-        ]
-      },
-      "fields": {
-        "en": [
-          "Chemestry"
-        ],
-        "es": [
-          "Química"
-        ],
-        "ca": [
-          "Química"
-        ]
-      },
-      "nationalities": {
-        "en": [
-          "French"
-        ],
-        "es": [
-          "Francesa"
-        ],
-        "ca": [
-          "Francesa"
-        ]
-      },
-      "wikipedia": {
-        "en": "Marie-Anne_Paulze_Lavoisier"
-      }
-    },
-    {
-      "name": "Mary Leakey",
-      "pictures": [
-        "imagen1"
-      ],
-      "bio": {
-        "en": "She was a British paleoanthropologist who discovered the first fossilised Proconsul skull, an extinct ape which is now believed to be ancestral to  humans. She also discovered the robust Zinjanthropus skull at Olduvai Gorge in Tanzania, eastern Africa. For much of her career she worked with her  husband, Louis Leakey, at Olduvai Gorge, where they uncovered fossils of ancient hominines and the earliest hominins, as well as the stone tools produced  by the latter group. Mary Leakey developed a system for classifying the stone tools found at Olduvai. She discovered the Laetoli footprints, and at the  Laetoli site she discovered hominin fossils that were more than 3.75 million years old.\n",
-        "ca": "Va ser una paleoantropòlega britànica que va descobrir el primer crani fossilitzat de Proconsul, un simi extint que actualment es creu que és ancestral  als humans.  També va descobrir el sòlid crani de Zinjanthropus a la gorja d'Olduvai a Tanzània, Àfrica oriental.  Durant gran part de la seva carrera  va treballar amb el seu marit, Louis Leakey, a Olduvai Gorge, on van descobrir fòssils d'hominines antigues i les primeres hominines, així com les eines  de pedra produïdes per aquest últim grup.  Mary Leakey va desenvolupar un sistema per classificar les eines de pedra trobades a Olduvai.  Va descobrir les  petjades de Laetoli, i al jaciment Laetoli va descobrir fòssils d'hominina que tenien més de 3,75 milions d'anys.\n",
-        "es": "Fue una paleoantropóloga británica que descubrió el primer cráneo fosilizado de Proconsul, un simio extinto que actualmente se cree que es ancestral a los  humanos. También descubrió el sólido cráneo de Zinjanthropus a la garganta de Olduvai en Tanzania, África oriental. Durante gran parte de su carrera trabajó  con su marido, Louis Leakey, a Olduvai Gorge, donde descubrieron fósiles de hominines antiguas y las primeras hominines, así como las herramientas de piedra  producidas por este último grupo. Mary Leakey desarrolló un sistema para clasificar las herramientas de piedra encontradas a Olduvai. Descubrió las huellas  de Laetoli, y al yacimiento Laetoli descubrió fósiles de hominina que tenían más de 3,75 millones de años.\n"
-      },
-      "birthYear": {
-        "en": "1913"
-      },
-      "deathYear": {
-        "en": "1996"
-      },
-      "awards": {
-        "en": [
-          "Fellow of the British Academy",
-          "Hubbard Medal",
-          "Prestwich Medal",
-          "Elizabeth Blakwell Award"
-        ],
-        "es": [
-          "Fellow of the British Academy",
-          "Medalla Hubbard",
-          "Medalla Prestwich",
-          "Premio Elizabeth Blakwell"
-        ],
-        "ca": [
-          "Fellow of the British Academy",
-          "Medalla Hubbard",
-          "Medalla Prestwich",
-          "Premi Elizabeth Blakwell"
-        ]
-      },
-      "achievements": {
-        "en": [
-          "Discovery Zinjanthropus fossil and Laetoli footprints"
-        ],
-        "es": [
-          "Descubrimiento fósil Zinjanthropus y huellas de Laetoli"
-        ],
-        "ca": [
-          "Descobriment fòssil Zinjanthropus i empremtes de Laetoli"
-        ]
-      },
-      "fields": {
-        "en": [
-          "Paleoanthropology"
-        ],
-        "es": [
-          "Paleantropología"
-        ],
-        "ca": [
-          "Paleantropologia"
-        ]
-      },
-      "nationalities": {
-        "en": [
-          "British"
-        ],
-        "es": [
-          "Británica"
-        ],
-        "ca": [
-          "Britànica"
-        ]
-      },
-      "wikipedia": {
-        "en": "Mary_Leakey"
-      }
-    },
-    {
-      "name": "Sylvia Earle",
-      "pictures": [
-        "SylviaEarle1",
-        "SylviaEarle2"
-      ],
-      "bio": {
-        "en": "She is an American marine biologist, explorer, author, and lecturer. She has been a National Geographic explorer-in-residence since 1998. Earle was the first  female chief scientist of the U.S. National Oceanic and Atmospheric Administration, and was named by Time Magazine as its first Hero for the Planet in  1998. She is also part of the group Ocean Elders, which is dedicated to protecting the ocean and its wildlife.\n",
-        "ca": "És biòloga marina, exploradora, autora i professora. Ha estat exploradora resident de National Geographic des de 1998. Earle va ser la primera científica cap de l'Administració Oceànica i Atmosfèrica Nacional dels Estats Units, i va ser nomenada per la revista Time com la seua primera heroïna per al planeta, l'any 1998. També forma part del grup Ocean Elders, que està dedicat a protegir l'oceà i la seva vida silvestre.\n",
-        "es": "Es bióloga marina, exploradora, autora y profesora. Ha sido exploradora residente de National Geographic desde 1998. Earle fue la primera científica directora de la Administración Oceánica y Atmosférica Nacional de los Estados Unidos, y fue nombrada por la revista Time como la suya primera heroína para el planeta, en 1998. También forma parte del grupo Ocean Elders, que está dedicado a proteger el océano y su vida silvestre.\n"
-      },
-      "birthYear": {
-        "en": "1935"
-      },
-      "deathYear": {
-        "en": ""
-      },
-      "awards": {
-        "en": [
-          "TED Prize",
-          "National Women's Hall of Fame",
-          "Princess of Asturias Awards"
-        ],
-        "es": [
-          "Premio TED",
-          "National Women's Hall of Fame",
-          "Premio pricesa de Asturias"
-        ],
-        "ca": [
-          "Premi TED",
-          "National Women's Hall of Fame",
-          "Premi princessa d'Asturies"
-        ]
-      },
-      "achievements": {
-        "en": [
-          "First female chief scientist of the U.S. National Oceanic and Atmospheric Administration"
-        ],
-        "es": [
-          "Primera mujer directora del U.S. National Oceanic and Atmospheric Administration."
-        ],
-        "ca": [
-          "Primera dona directora del U.S. National Oceanic and Atmospheric Administration"
-        ]
-      },
-      "fields": {
-        "en": [
-          "Oceanography"
-        ],
-        "es": [
-          "Oceanografía"
-        ],
-        "ca": [
-          "Oceanografia"
-        ]
-      },
-      "nationalities": {
-        "en": [
-          "American"
-        ],
-        "es": [
-          "Norteamericana"
-        ],
-        "ca": [
-          "Nord-americana"
-        ]
-      },
-      "wikipedia": {
-        "en": "Sylvia_Earle"
-      }
-    },
-    {
-      "name": "Valerie Thomas",
-      "pictures": [
-        "ValerieThomas1",
-        "ValerieThomas2"
-      ],
-      "bio": {
-        "en": "She is an American scientist and inventor. She invented the illusion transmitter, for which she received a patent in 1980. She was responsible for developing  the digital media formats image processing systems used in the early years of the Landsat program.\n",
-        "ca": "és una científica americana i inventora. Va inventar el \"Illusion Transmitter\", pel qual va rebre una patent l'any 1980. Valerie també va assistir a una  escola femenina, on no la van animar a seguir cap curs de matemàtiques o ciències.\n",
-        "es": "es una científica e inventora estadounidense. Inventó el transmisor de ilusión, por el que recibió una patente en 1980.1​ Fue responsable del desarrollo de los  sistemas de procesamiento de imágenes de formatos de medios digitales utilizados en los primeros años del programa Landsat.\n"
-      },
-      "birthYear": {
-        "en": "1943"
-      },
-      "deathYear": {
-        "en": ""
-      },
-      "awards": {
-        "en": [
-        ],
-        "es": [
-        ],
-        "ca": [
-        ]
-      },
-      "achievements": {
-        "en": [
-          "Inventor of the Illusion Transmitter"
-        ],
-        "es": [
-          "Inventora del \"Illusion Transmitter\""
-        ],
-        "ca": [
-          "Inventora del \"Illusion Transmitter\""
-        ]
-      },
-      "fields": {
-        "en": [
-          "Inventor",
-          "Physics"
-        ],
-        "es": [
-          "Inventora",
-          "Física"
-        ],
-        "ca": [
-          "Inventora",
-          "Física"
-        ]
-      },
-      "nationalities": {
-        "en": [
-          "American"
-        ],
-        "es": [
-          "Norteamericana"
-        ],
-        "ca": [
-          "Nord-americana"
-        ]
-      },
-      "wikipedia": {
-        "en": "Valerie_Thomas"
-      }
-    },
-    {
-      "name": "Zaha Hadid",
-      "pictures": [
-        "imagen1"
-      ],
-      "bio": {
-        "en": "was a British Iraqi architect, artist and designer, recognised as a major figure in architecture of the late 20th and early 21st centuries. Born in  Baghdad, Iraq, Hadid studied mathematics as an undergraduate and then enrolled at the Architectural Association School of Architecture in 1972. In search  of an alternative system to traditional architectural drawing, and influenced by Suprematism and the Russian avant-garde, Hadid adopted painting as a design  tool and abstraction as an investigative principle to \"reinvestigate the aborted and untested experiments of Modernism [...] to unveil new fields of building.\n",
-        "ca": "Va ser arquitecta, artista i dissenyadora iraquiana britànica, reconeguda com una figura important en l'arquitectura de finals del segle XX i principis del XXI. Nascuda a   Bagdad, Iraq, Hadid va estudiar matemàtiques com a estudiant i després es va matricular a l'Escola d'Arquitectura de l'Associació Arquitectònica el 1972. A la cerca   d'un sistema alternatiu al dibuix arquitectònic tradicional, i influenciada pel suprematisme i l'avantguarda russa, Hadid va adoptar la pintura com a disseny.   L'eina i l'abstracció com a principi d'investigació per \"reinvertir els experiments avortats i no provats del modernisme  [...] per revelar nous camps de construcció.\n",
-        "es": "Fue arquitecta, artista y diseñadora iraquí británica, reconocida como una figura importante en la arquitectura de finales del siglo XX y principios del XXI. Nacida en Bagdad, Irak, Hadid estudió matemáticas como estudiante y después se matriculó en la Escuela de Arquitectura de la Asociación Arquitectónica el 1972. En la busca  de un sistema alternativo al dibujo arquitectónico tradicional, e influenciada por el suprematismo y la vanguardia rusa, Hadid adoptó la pintura como diseño. La  herramienta y la abstracción como principio de investigación para \"reinvertir los experimentos abortados y no probados del modernismo [...]para revelar nuevos campos  de construcción.\n"
-      },
-      "birthYear": {
-        "en": "1950"
-      },
-      "deathYear": {
-        "en": "2016"
-      },
-      "awards": {
-        "en": [
-          "Pritzker Architecture Prize",
-          "Stirling Prize",
-          "Praemium Imperiale",
-          "Mies van der Rohe",
-          "Royal Gold Medal from the Royal Institute of British Architects"
-        ],
-        "es": [
-          "Premio Pritzker Architecture",
-          "Premio Stirling",
-          "Praemium Imperiale",
-          "Mies van der Rohe",
-          "Real Medalla de oro del Royal Institute of British Architects"
-        ],
-        "ca": [
-          "Premi Pritzker Architecture",
-          "Premi Stirling",
-          "Praemium Imperiale",
-          "Mies van der Rohe",
-          "Reial Medalla d'or del Royal Institute of British Architects"
-        ]
-      },
-      "achievements": {
-        "en": [
-          "First woman to receive the Pritzker Architecture Prize."
-        ],
-        "es": [
-          "Primera mujer en ganar el premio Pritzker Architecture."
-        ],
-        "ca": [
-          "Primera dona en guanyar el premi Pritzker Architecture."
-        ]
-      },
-      "fields": {
-        "en": [
-          "Architect"
-        ],
-        "es": [
-          "Arquitecta"
-        ],
-        "ca": [
-          "Arquitecta"
-        ]
-      },
-      "nationalities": {
-        "en": [
-          "British",
-          "Iraqi"
-        ],
-        "es": [
-          "Británica",
-          "Iraquí"
-        ],
-        "ca": [
-          "Britànica",
-          "Iraquí"
-        ]
-      },
-      "wikipedia": {
-        "en": "Zaha_Hadid"
-      }
     }
 ]

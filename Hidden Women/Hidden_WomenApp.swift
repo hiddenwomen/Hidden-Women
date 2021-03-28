@@ -15,6 +15,7 @@ var women: [Woman] = []
 struct Hidden_WomenApp: App {
     @AppStorage("userID") var userID: String = ""
     var profile: Profile = Profile()
+    //var listener: ListenerRegistration
     
     init() {
         if let location = Bundle.main.url(forResource: "women", withExtension: "json") {
@@ -42,6 +43,16 @@ struct Hidden_WomenApp: App {
                 .onAppear {
                     if userID != "" {
                         loadProfile(userID: userID, profile: profile, andFriends: true)
+                        let listener = Firestore.firestore()
+                            .collection("users")
+                            .document(userID)
+                            .addSnapshotListener { documentSnapshot, error in
+                                guard let document = documentSnapshot else {
+                                    print("Error fetching document: \(error!)")
+                                    return
+                                }
+                                loadProfile(userID: userID, profile: profile, andFriends: true)
+                            }
                     }
                     print("\(Int(Date().timeIntervalSince1970))")
                 }

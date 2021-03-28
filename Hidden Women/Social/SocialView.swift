@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SocialView: View {
     @EnvironmentObject var profile: Profile
+    @AppStorage ("userID") var userID: String = ""
     @Binding var currentPage: Page
     
     var body: some View {
@@ -101,6 +102,9 @@ struct SocialView: View {
             .listStyle(PlainListStyle())
             .navigationBarHidden(true)
             .navigationBarTitleDisplayMode(.inline)
+            .onAppear {
+                loadProfile(userID: userID, profile: profile)
+            }
         }
         
     }
