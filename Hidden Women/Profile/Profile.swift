@@ -19,6 +19,7 @@ class Profile: ObservableObject, Identifiable {
     @Published var friendIDs: [String] = []
     @Published var friends: [Profile] = []
     @Published var gameResults: [GameResult] = []
+    @Published var friendRequests: [String] = []
     var points: Int {
         let limit = Int(Date().timeIntervalSince1970) - oneWeek
         print("LIMITE \(limit) ::: \(gameResults)")
@@ -47,6 +48,7 @@ func loadProfile(userID: String, profile: Profile, andFriends: Bool = false) {
             profile.email = data["email"] as? String ?? ""
             profile.favourites = data["favourites"] as? [String] ?? []
             profile.friendIDs = data["friends"] as? [String] ?? []
+            profile.friendRequests = data["friendRequests"] as? [String] ?? []
             let results = data["gameResults"] as? [[String : Any]] ?? []
             for result in results {
                 let gameResult = GameResult(

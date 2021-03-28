@@ -98,17 +98,36 @@ struct SignupView: View {
                             userID = user?.user.uid ?? ""
                             profile.name = email.components(separatedBy: "@")[0]
                             profile.email = email
+                            profile.favourites = []
+                            profile.gameResults = []
+                            profile.friendRequests = []
                             profile.picture = UIImage(named: "unknown")
-                            Firestore.firestore().collection("users").document(userID).setData([
-                                                                                                "name": profile.name,
-                                                                                                "email": profile.email,
-                                                                                                "favourites": []
-                            ]) { error in
-                                if let error = error{
-                                    errorMessage = error.localizedDescription
-                                    showErrorAlert = true
+                            Firestore.firestore()
+                                .collection("users")
+                                .document(userID)
+                                .setData([
+                                    "name": profile.name,
+                                    "email": profile.email,
+                                    "favourites":profile.favourites,
+                                    "gameResults": profile.gameResults,
+                                    "friendRequests": profile.friendRequests
+                                ]) { error in
+                                    if let error = error{
+                                        errorMessage = error.localizedDescription
+                                        showErrorAlert = true
+                                    }
                                 }
-                            }
+                            Firestore.firestore()
+                                .collection("emails")
+                                .document(profile.email.lowercased())
+                                .setData([
+                                    "userId": userID
+                                ]) { error in
+                                    if let error = error{
+                                        errorMessage = error.localizedDescription
+                                        showErrorAlert = true
+                                    }
+                                }
                             currentPage = .main
                         }
                     }

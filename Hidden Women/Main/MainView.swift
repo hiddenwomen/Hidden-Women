@@ -83,7 +83,7 @@ struct MainView: View {
                 .navigationBarTitleDisplayMode(.inline)
             }
             .tabItem{
-                Image(systemName: "person.fill.questionmark")
+                Image(systemName: "gamecontroller.fill")
                 Text("Games")
             }
             .tag(1)
