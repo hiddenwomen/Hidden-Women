@@ -68,11 +68,15 @@ struct WomanView: View {
                 .fontWeight(.bold)
             Divider()
             ScrollView {
-                DisclosureGroup(
+                DisclosureGroup (
                     isExpanded: $showAchievements,
                     content: {
                         ForEach(woman.achievements.localized, id:\.self) { achievement in
-                            Text(achievement)
+                            HStack (alignment: .firstTextBaseline) {
+                                Image(systemName: "play")
+                                Text(achievement)
+                                Spacer()
+                            }
                         }
                     },
                     label: {
@@ -91,7 +95,11 @@ struct WomanView: View {
                         isExpanded: $showAwards,
                         content: {
                             ForEach(woman.awards.localized, id:\.self) { award in
-                                Text(award)
+                                HStack (alignment: .firstTextBaseline) {
+                                    Image(systemName: "play")
+                                    Text(award)
+                                    Spacer()
+                                }
                             }
                         },
                         label: {
@@ -111,7 +119,7 @@ struct WomanView: View {
                 HStack {
                     Text("To know more, go to")
                     Link("Wikipedia",
-                         destination: URL(string: "https://\(language).wikipedia.org/wiki/\(woman.wikipedia)")!
+                         destination: URL(string: "https://\(language).wikipedia.org/wiki/\(woman.wikipedia.localized)")!
                     )
                 }
             }

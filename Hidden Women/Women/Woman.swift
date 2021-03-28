@@ -17,7 +17,7 @@ struct Woman: Identifiable, Decodable {
     let fields: [String: [String]]
     let achievements: [String: [String]]
     let nationalities: [String: [String]]
-    let wikipedia: String
+    let wikipedia: [String: String]
     
     var id: String { name }
     var birthYearAsInt: Int {
