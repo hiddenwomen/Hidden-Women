@@ -28,24 +28,6 @@ struct TrueOrFalseView: View {
             HStack {
                 Spacer()
                 Button(action: {
-                    if trueOrFalse.correct == false{
-                        correctAnswers += 1
-                    }
-                    progress += 1.0 / Float(numberOfTrueOrFalses)
-                    shownTrueOrFalse += 1
-                }) {
-                    ZStack {
-                        Circle()
-                            .foregroundColor(Color("Turquesa"))
-                            .frame(width: 160, height: 160)
-                        Text("False")
-                            .foregroundColor(.white)
-                            .fontWeight(.bold)
-                            .font(.largeTitle)
-                    }
-                }
-                Spacer()
-                Button(action: {
                     if trueOrFalse.correct == true{
                         correctAnswers += 1
                     }
@@ -57,6 +39,24 @@ struct TrueOrFalseView: View {
                             .foregroundColor(Color("Morado"))
                             .frame(width: 160, height: 160)
                         Text("True")
+                            .foregroundColor(.white)
+                            .fontWeight(.bold)
+                            .font(.largeTitle)
+                    }
+                }
+                Spacer()
+                Button(action: {
+                    if trueOrFalse.correct == false{
+                        correctAnswers += 1
+                    }
+                    progress += 1.0 / Float(numberOfTrueOrFalses)
+                    shownTrueOrFalse += 1
+                }) {
+                    ZStack {
+                        Circle()
+                            .foregroundColor(Color("Turquesa"))
+                            .frame(width: 160, height: 160)
+                        Text("False")
                             .foregroundColor(.white)
                             .fontWeight(.bold)
                             .font(.largeTitle)

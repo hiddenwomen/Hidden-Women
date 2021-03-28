@@ -1,5 +1,5 @@
 //
-//  ProcessFriendRequests.swift
+//  FriendRequestsView.swift
 //  Hidden Women
 //
 //  Created by Claudia Marzal Polop on 28/3/21.
@@ -8,7 +8,7 @@
 import SwiftUI
 import Firebase
 
-struct ProcessFriendRequests: View {
+struct FriendRequestsView: View {
     @AppStorage("userID") var userID: String = ""
     @EnvironmentObject var profile: Profile
     
@@ -88,6 +88,6 @@ struct ProcessFriendRequests: View {
 
 struct ProcessFriendRequests_Previews: PreviewProvider {
     static var previews: some View {
-        ProcessFriendRequests()
+        FriendRequestsView()
     }
 }

@@ -15,61 +15,105 @@ struct SocialView: View {
     var body: some View {
         NavigationView {
             VStack {
-                NavigationLink(destination: MyFriendsView()) {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 10)
-                            .fill(Color("Hueso"))
-                        HStack {
-                            Image(systemName: "person.2.fill")
-                                .font(.system(size: 32, weight: .bold))
-                            Text("My friends")
-                                .font(.largeTitle)
-                        }
-                    }
-                    .padding()
-                }
                 NavigationLink(destination: RankingView()) {
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
                             .fill(Color("Hueso"))
                         HStack {
-                            VStack {
-                                HStack {
-                                    Image(systemName: "crown.fill")
-                                        .font(.system(size: 32, weight: .bold))
+                            Spacer()
+
+                        }
+                        HStack {
+                            Image(systemName: "rosette")
+                                .font(.system(size: 52, weight: .bold))
+                                .opacity(0.4)
+                                .padding(.leading, 10)
+                            VStack (alignment: .leading) {
                                     Text("Ranking")
                                         .font(.largeTitle)
-                                }
                                 Text("Check how your friends are doing with the games")
-                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(.gray)
+                                    .multilineTextAlignment(.leading)
                             }
+                            Spacer()
                         }
                     }
                     .padding()
                 }
-                NavigationLink(destination: MakeNewFriendsView()) {
+                NavigationLink(destination: MyFriendsView()) {
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
                             .fill(Color("Hueso"))
                         HStack {
-                            Image(systemName: "person.fill.badge.plus")
-                                .font(.system(size: 32, weight: .bold))
-                            Text("Send a friend request")
-                                .font(.largeTitle)
+                            VStack (alignment: .leading) {
+                                HStack {
+                                    Image(systemName: "person.2.fill")
+                                        .font(.system(size: 32, weight: .bold))
+                                        .padding(.leading, 10)
+                                    Text("My friends")
+                                        .font(.largeTitle)
+                                }
+                            }
+                            Spacer()
+                            
                         }
                     }
                     .padding()
                 }
                 
-                NavigationLink(destination: ProcessFriendRequests()) {
+                
+                NavigationLink(destination: MakeNewFriendsView()) {
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
                             .fill(Color("Hueso"))
                         HStack {
-                            VStack {
+                            VStack (alignment: .leading) {
+                                HStack {
+                                    Image(systemName: "person.fill.badge.plus")
+                                        .font(.system(size: 32, weight: .bold))
+                                        .padding(.leading, 10)
+                                    Text("Send a friend request")
+                                        .font(.largeTitle)
+                                }
+                            }
+                            Spacer()
+                        }
+                    }
+                    .padding()
+                }
+                
+                
+                
+                NavigationLink(destination: Text("Find people like me")) {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 10)
+                            .fill(Color("Hueso"))
+                        HStack {
+                            VStack (alignment: .leading) {
+                                HStack {
+                                    Image(systemName: "plus.magnifyingglass")
+                                        .font(.system(size: 32, weight: .bold))
+                                        .padding(.leading, 10)
+                                    Text("Find people like me")
+                                        .font(.largeTitle)
+                                }
+                            }
+                            Spacer()
+                        }
+                    }
+                    .padding()
+                }
+                
+                NavigationLink(destination: FriendRequestsView()) {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 10)
+                            .fill(Color("Hueso"))
+                        HStack {
+                            VStack (alignment: .leading) {
                                 HStack {
                                     Image(systemName: profile.friendRequests.count > 0 ? "envelope.badge" : "envelope")
                                         .font(.system(size: 32, weight: .bold))
+                                        .padding(.leading, 10)
                                     Text("Friend requests")
                                         .font(.largeTitle)
                                 }
@@ -79,25 +123,12 @@ struct SocialView: View {
                                     Text("You have \(profile.friendRequests.count) friend request\(profile.friendRequests.count == 1 ? "" : "s")")
                                 }
                             }
+                            Spacer()
                         }
                     }
                     .padding()
                 }
-                
-                
-                NavigationLink(destination: Text("Find people like me")) {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 10)
-                            .fill(Color("Hueso"))
-                        HStack {
-                            Image(systemName: "plus.magnifyingglass")
-                                .font(.system(size: 32, weight: .bold))
-                            Text("Find people like me")
-                                .font(.largeTitle)
-                        }
-                    }
-                    .padding()
-                }
+                .disabled(profile.friendRequests.count == 0)
             }
             .listStyle(PlainListStyle())
             .navigationBarHidden(true)

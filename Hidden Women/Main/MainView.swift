@@ -30,15 +30,20 @@ struct MainView: View {
                         ZStack {
                             RoundedRectangle(cornerRadius: 10)
                                 .fill(Color("Hueso"))
-                            HStack {
-                                Image("QuizPicture")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .rotationEffect(Angle(degrees: 15))
-                                    .frame(width: 125, height: 125)
-                                    .shadow(radius: 10)
-                                Text("Quiz")
-                                    .font(.largeTitle)
+                            VStack(alignment: .leading) {
+                                HStack {
+                                    Image(systemName: "square.fill.text.grid.1x2")
+                                        .font(.system(size: 64))
+                                    //                                Image("QuizPicture")
+                                    //                                    .resizable()
+                                    //                                    .scaledToFit()
+                                    //                                    .rotationEffect(Angle(degrees: 15))
+                                    //                                    .frame(width: 125, height: 125)
+                                    //                                    .shadow(radius: 10)
+                                    Text("Quiz")
+                                        .font(.largeTitle)
+                                    Spacer()
+                                }
                             }
                         }
                         .padding()
@@ -47,15 +52,20 @@ struct MainView: View {
                         ZStack {
                             RoundedRectangle(cornerRadius: 10)
                                 .fill(Color("Hueso"))
-                            HStack {
-                                Image("TrueOrFalsePicture")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .rotationEffect(Angle(degrees: 15))
-                                    .frame(width: 125, height: 125)
-                                    .shadow(radius: 10)
-                                Text("True or False")
-                                    .font(.largeTitle)
+                            VStack(alignment: .leading) {
+                                HStack {
+                                    Image(systemName: "square.fill.and.line.vertical.and.square")
+                                        .font(.system(size: 64))
+                                    //                                Image("TrueOrFalsePicture")
+                                    //                                    .resizable()
+                                    //                                    .scaledToFit()
+                                    //                                    .rotationEffect(Angle(degrees: 15))
+                                    //                                    .frame(width: 125, height: 125)
+                                    //                                    .shadow(radius: 10)
+                                    Text("True or False")
+                                        .font(.largeTitle)
+                                    Spacer()
+                                }
                             }
                         }
                         .padding()
@@ -64,15 +74,20 @@ struct MainView: View {
                         ZStack {
                             RoundedRectangle(cornerRadius: 10)
                                 .fill(Color("Hueso"))
-                            HStack {
-                                Image("ChronoPicture")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .rotationEffect(Angle(degrees: 15))
-                                    .frame(width: 125, height: 125)
-                                    .shadow(radius: 10)
-                                Text("Chronoline")
-                                    .font(.largeTitle)
+                            VStack(alignment: .leading) {
+                                HStack {
+                                    Image(systemName: "arrow.up.arrow.down.square.fill")
+                                        .font(.system(size: 64))
+                                    //                                Image("ChronoPicture")
+                                    //                                    .resizable()
+                                    //                                    .scaledToFit()
+                                    //                                    .rotationEffect(Angle(degrees: 15))
+                                    //                                    .frame(width: 125, height: 125)
+                                    //                                    .shadow(radius: 10)
+                                    Text("Chronoline")
+                                        .font(.largeTitle)
+                                    Spacer()
+                                }
                             }
                         }
                         .padding()
