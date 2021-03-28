@@ -119,7 +119,7 @@ struct WomanView: View {
                 HStack {
                     Text("To know more, go to")
                     Link("Wikipedia",
-                         destination: URL(string: "https://\(language).wikipedia.org/wiki/\(woman.wikipedia.localized)")!
+                         destination: URL(string: "https://\(language).wikipedia.org/wiki/\(woman.wikipedia.localized)".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "")!
                     )
                 }
             }

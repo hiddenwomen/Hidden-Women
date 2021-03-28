@@ -6,9 +6,9 @@
             "AdaLovelace2"
         ],
         "bio": {
-            "en": "Ada Lovelace was an English mathematician and writer, chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine. She is believed by some to be the first to recognise that the machine had applications beyond pure calculation, and to have published the first algorithm intended to be carried out by such a machine. As a result, she is often regarded as the first to recognise the full potential of computers and as one of the first computer programmers.\n",
-            "es": "Ada Lovelace fue una matemática y escritora inglesa, principalmente conocida por su trabajo en la computadora mecánica de propósito general propuesta por Charles Babbage, la Máquina Analítica. Algunos creen que fue la primera en reconocer que la máquina tenía aplicaciones más allá del cálculo puro, y publicó el primer algoritmo destinado a ser llevado a cabo por dicha máquina. Como resultado, a menudo se la considera la primera en reconocer todo el potencial de las computadoras y como una de las primeras programadoras de computadoras.\n",
-            "ca": "Ada Lovelace va ser una matemàtica i escriptora anglesa, principalment coneguda pel seu treball en la computadora mecànica de propòsit general proposta per Charles Babbage, la Màquina Analítica. Alguns creuen que va ser la primera a reconéixer que la màquina tenia aplicacions més enllà del càlcul pur, i va publicar el primer algorisme destinat a ser dut a terme per aquesta màquina. Com a resultat, sovint se la considera la primera a reconéixer tot el potencial de les computadores i com una de les primeres programadores de computadores."
+            "en": "Augusta Ada King, Countess of Lovelace (Ada Lovelace) was an English mathematician and writer, chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine. She is believed by some to be the first to recognise that the machine had applications beyond pure calculation, and to have published the first algorithm intended to be carried out by such a machine. As a result, she is often regarded as the first to recognise the full potential of computers and as one of the first computer programmers.",
+            "es": "Augusta Ada King, Condesa de Lovelace (Ada Lovelace) fue una matemática y escritora inglesa, principalmente conocida por su trabajo en la computadora mecánica de propósito general propuesta por Charles Babbage, la Máquina Analítica. Algunos creen que fue la primera en reconocer que la máquina tenía aplicaciones más allá del cálculo puro, y publicó el primer algoritmo destinado a ser llevado a cabo por dicha máquina. Como resultado, a menudo se la considera la primera en reconocer todo el potencial de las computadoras y como una de las primeras programadoras de computadoras.",
+            "ca": "Augusta Ada King, Comtessa de Lovelace (Ada Lovelace) va ser una matemàtica i escriptora anglesa, principalment coneguda pel seu treball en la computadora mecànica de propòsit general proposta per Charles Babbage, la Màquina Analítica. Alguns creuen que va ser la primera a reconéixer que la màquina tenia aplicacions més enllà del càlcul pur, i va publicar el primer algorisme destinat a ser dut a terme per aquesta màquina. Com a resultat, sovint se la considera la primera a reconéixer tot el potencial de les computadores i com una de les primeres programadores de computadores."
         },
         "birthYear": {
             "en": "1815"
@@ -24,15 +24,18 @@
         "fields": {
             "en": [
                 "Mathematician",
-                "Programmer"
+                "Programmer",
+                "Writer"
             ],
             "es": [
                 "Matemática",
-                "Programadora"
+                "Programadora",
+                "Escritora"
             ],
             "ca": [
                 "Matemàtica",
-                "Programadora"
+                "Programadora",
+                "Escriptora"
             ]
         },
         "achievements": {
@@ -77,13 +80,13 @@
         },
         "awards": {
             "en": [
-                "University of Hawaii Medal of Distinction"
+                "University of Hawaii Medal of Distinction (posthumously, 2007)"
             ],
             "ca": [
-                "Medalla de Distinció de la Universitat de Hawaii"
+                "Medalla de Distinció de la Universitat de Hawaii (póstuma, 2007)"
             ],
             "es": [
-                "Medalla de Distinción de la Universidad de Hawaii"
+                "Medalla de Distinción de la Universidad de Hawaii (pòstuma, 2007)"
             ]
         },
         "achievements": {
@@ -128,9 +131,9 @@
             "BarbaraMcClintock2"
         ],
         "bio": {
-            "en": "Barbara McClintock was an American scientist and cytogeneticist who was awarded the 1983 Nobel Prize in Physiology or Medicine. McClintock received her PhD in  botany from Cornell University in 1927. There she started her career as  the leader in the development of maize cytogenetics, the focus of her research for the rest of her life.",
-            "ca": "Barbara McClintock fou una botànica, genetista especialitzada en citogenètica. Va estar guardonada amb el Premi Nobel de Medicina i Fisiologia l'any 1983. McClintock va rebre el doctorat en botànica per la Universitat de Cornell en 1927. Allí va començar la seua carrera com a líder en el desenvolupament de la citogenètica de la dacsa, que va ser el focus de la seua recerca la resta de la seua vida.",
-            "es": "Barbara McClintock fue una científica estadounidense especializada en citogenética que obtuvo el premio Nobel de Medicina o Fisiología en 1983. McClintock recibió el doctorado por la Universidad de Cornell en 1927. Allí empezó su carrera como líder en el desarrollo de la citogenética del maíz, que fue el foco de su investigación el resto de su vida."
+            "en": "Barbara McClintock was an American scientist and cytogeneticist who was awarded the 1983 Nobel Prize in Physiology or Medicine. McClintock received her PhD in  botany from Cornell University in 1927. There she started her career as  the leader in the development of maize cytogenetics, the focus of her research for the rest of her life. She demonstrated that genes ara responsible for turning physical characteristics on and off.",
+            "ca": "Barbara McClintock fou una botànica, genetista especialitzada en citogenètica. Va estar guardonada amb el Premi Nobel de Medicina i Fisiologia l'any 1983. McClintock va rebre el doctorat en botànica per la Universitat de Cornell en 1927. Allí va començar la seua carrera com a líder en el desenvolupament de la citogenètica de la dacsa, que va ser el focus de la seua recerca la resta de la seua vida. Demostró que los genes son responsables de activar y desactivar características físicas.",
+            "es": "Barbara McClintock fue una científica estadounidense especializada en citogenética que obtuvo el premio Nobel de Medicina o Fisiología en 1983. McClintock recibió el doctorado por la Universidad de Cornell en 1927. Allí empezó su carrera como líder en el desarrollo de la citogenética del maíz, que fue el foco de su investigación el resto de su vida. Va demostrar que els gens eren responsables d'activar i desactivar característiques físiques."
         },
         "birthYear": {
             "en": "1902"
@@ -140,13 +143,13 @@
         },
         "awards": {
             "en": [
-                "Nobel Prize in Physiology or Medicine"
+                "Nobel Prize in Physiology or Medicine (1983)"
             ],
             "es": [
-                "Premio Nobel de Medicina o Fisiología"
+                "Premio Nobel de Medicina o Fisiología (1983)"
             ],
             "ca": [
-                "Premi Nobel de Medicina i Fisiologia"
+                "Premi Nobel de Medicina i Fisiologia (1983)"
             ]
         },
         "achievements": {
@@ -162,13 +165,13 @@
         },
         "fields": {
             "en": [
-                "Geneticist"
+                "Cytogeneticist"
             ],
             "es": [
-                "Genetista"
+                "Citogenetista"
             ],
             "ca": [
-                "Genetista"
+                "Citogenetista"
             ]
         },
         "nationalities": {
@@ -191,9 +194,9 @@
             "BrendaMilner2"
         ],
         "bio": {
-            "en": "Brenda Milner is a British-Canadian neuropsychologist who has contributed extensively to the research literature on various topics in the field of  clinical neuropsychology. As of 2010, Milner is a professor in the Department of Neurology and Neurosurgery at McGill University and a professor  of Psychology at the Montreal Neurological Institute. As of 2005, she holds more than 20 degrees and continues to work in her nineties. Her current work  explores the interaction between the brain's left and right hemispheres. Milner has been called the founder of neuropsychology, and has proven to be an  essential key in its development.",
-            "ca": "Brenda Milner és una neuropsicòloga canadenca que ha contribuït àmpliament a la recerca científica en diversos camps de la neuropsicologia clínica. Milner és professora en el  Department of Neurology and Neurosurgery a la Universitat McGill de Mont-real i professora de Psicologia en el Mont-real Neurological Institute. Ha rebut més de  20 doctorats honoris causa i segueix treballant als seus noranta anys. La seva recerca actual explora la interacció entre els hemisferis esquerre i dret del cervell.  A Milner ha estat considerada com la fundadora de la neuropsicologia, i el seu treball ha estat clau en el desenvolupament d'aquesta disciplina.",
-            "es": "Brenda Milner es una neuropsicóloga canadiense que ha contribuido ampliamente a la investigación científica en varios campos de la neuropsicología clínica.​ Milner era profesora  en el Department of Neurology and Neurosurgery en la Universidad McGil de Montreal y profesora de Psicología en el Montreal Neurological Institute. Ha recibido más  de 20 doctorados honoris causa y trabajó hasta sus noventa años.4​ Su investigación actual explora la interacción entre los hemisferios izquierdo y derecho del  cerebro. A Milner se la ha considerado como la fundadora de la neuropsicología,y su trabajo ha sido clave en el desarrollo de esta disciplina."
+            "en": "Brenda Milner is a British-Canadian neuropsychologist who has contributed extensively to the research literature on various topics in the field of  clinical neuropsychology. As of 2018, Milner turned 100 and still was a professor in the Department of Neurology and Neurosurgery at McGill University and a professor  of Psychology at the Montreal Neurological Institute. She holds more than 20 degrees and continues to work. Her current work  explores the interaction between the brain's left and right hemispheres. Milner has been called the founder of neuropsychology, and has proven to be an  essential key in its development.",
+            "ca": "Brenda Milner és una neuropsicòloga canadenca que ha contribuït àmpliament a la recerca científica en diversos camps de la neuropsicologia clínica. Milner és professora en el  Department of Neurology and Neurosurgery a la Universitat McGill de Mont-real i professora de Psicologia en el Mont-real Neurological Institute. Ha rebut més de  20 doctorats honoris causa i segueix treballant als seus cent anys. La seva recerca actual explora la interacció entre els hemisferis esquerre i dret del cervell.  A Milner ha estat considerada com la fundadora de la neuropsicologia, i el seu treball ha estat clau en el desenvolupament d'aquesta disciplina.",
+            "es": "Brenda Milner es una neuropsicóloga canadiense que ha contribuido ampliamente a la investigación científica en varios campos de la neuropsicología clínica.​ Milner era profesora  en el Department of Neurology and Neurosurgery en la Universidad McGil de Montreal y profesora de Psicología en el Montreal Neurological Institute. Ha recibido más  de 20 doctorados honoris causa y sigue trabajando con más de cien años.​ Su investigación actual explora la interacción entre los hemisferios izquierdo y derecho del  cerebro. A Milner se la ha considerado como la fundadora de la neuropsicología,y su trabajo ha sido clave en el desarrollo de esta disciplina."
         },
         "birthYear": {
             "en": "1918"
@@ -203,22 +206,22 @@
         },
         "awards": {
             "en": [
-                "Gairdner Award",
-                "Companion of the Order of Canada",
-                "Balzan Prize in Cognitive Neuroscience",
-                "Kavli Prize in Neuroscience"
+                "Gairdner Award (2005)",
+                "Companion of the Order of Canada (2004)",
+                "Balzan Prize in Cognitive Neuroscience (2009)",
+                "Kavli Prize in Neuroscience (2014)"
             ],
             "es": [
-                "Premio Gairdner",
-                "Miembro de la Orden de Canadá",
-                "Premio Balzan de Neurociencia Cognitiva",
-                "Premio Kavli de Neurociencia"
+                "Premio Gairdner (2005)",
+                "Miembro de la Orden de Canadá (2004)",
+                "Premio Balzan de Neurociencia Cognitiva (2009)",
+                "Premio Kavli de Neurociencia (2014)"
             ],
             "ca": [
-                "Premi Gairdner",
-                "Membre de l'Ordre de Canadá",
-                "Premi Balzan de Neurociència Cognitiva",
-                "Premio Kavli de Neurociència"
+                "Premi Gairdner (2005)",
+                "Membre de l'Ordre de Canadá (2004)",
+                "Premi Balzan de Neurociència Cognitiva (2009)",
+                "Premio Kavli de Neurociència (2014)"
             ]
         },
         "achievements": {
@@ -281,22 +284,37 @@
         },
         "awards": {
             "en": [
-                "Wolf Prize in Physics",
-                "National Medal of Science"
+                "Comstock Prize in Physics (1964)",
+                "Bonner Prize (1975)",
+                "National Medal of Science (1975)",
+                "Wolf Prize in Physics (1978)"
             ],
             "es": [
-                "Premio Wolf en Física",
-                "Medalla Nacional de Ciencias"
+                "Premio Comstock en Física (1964)",
+                "Premio Bonner (1975)",
+                "Medalla Nacional de Ciencias (1975)",
+                "Premio Wolf en Física (1978)"
             ],
             "ca": [
-                "Premi Wolf en Física",
-                "Medalla Nacional de la Ciència"
+                "Premi Comstock en Física (1964)",
+                "Premi Bonner (1975)",
+                "Medalla Nacional en Ciència (1975)",
+                "Premi Wolf en Física (1978)"
             ]
         },
         "achievements": {
-            "en": ["Discovery of parity violation in particle physics"],
-            "es": ["Descubrimiento de la violación de la paridad en física de partículas"],
-            "ca": ["Descobriment de la violació de la paritat en física de partícules"]
+            "en": [
+                "First to establish Quantum Entanglement using photons",
+                "Discovery of parity violation in particle physics"
+            ],
+            "es": [
+                "Primera en establecer el Entrelazamiento Cuántico usando fotones",
+                "Descubrimiento de la violación de la paridad en física de partículas"
+            ],
+            "ca": [
+                "Primera en establir l'Enredament Quàntic mitjançant fotons",
+                "Descobriment de la violació de la paritat en física de partícules"
+            ]
         },
         "fields": {
             "en": [
@@ -332,9 +350,9 @@
             "DorothyHodgkin2"
         ],
         "bio": {
-            "en": "Dorothy Hodgkin was a Nobel Prize-winning British chemist who advanced the technique of X-ray crystallography to determine the structure of biomolecules, which became an essential  tool in structural biology.",
-            "ca": "Dorothy Hodgkin va ser una química britànica guanyadora del premi Nobel que va avançar la tècnica de  la cristal·lografia de raigs X per determinar l'estructura de les biomolècules, que es va convertir en una eina essencial en biologia estructural.",
-            "es": "Dorothy Hodgkin fue una química británica que desarrolló cristalografía de proteínas, por el cual obtuvo el Premio Nobel de Química en 1964."
+            "en": "Dorothy Mary Crowfoot Hodgkin was a Nobel Prize-winning British chemist who advanced the technique of X-ray crystallography to determine the structure of biomolecules, which became an essential  tool in structural biology.",
+            "ca": "Dorothy Mary Crowfoot Hodgkin va ser una química britànica guanyadora del premi Nobel que va avançar la tècnica de  la cristal·lografia de raigs X per determinar l'estructura de les biomolècules, que es va convertir en una eina essencial en biologia estructural.",
+            "es": "Dorothy Mary Crowfoot Hodgkin fue una química británica que desarrolló cristalografía de proteínas, por el cual obtuvo el Premio Nobel de Química en 1964."
         },
         "birthYear": {
             "en": "1882"
@@ -344,19 +362,28 @@
         },
         "awards": {
             "en": [
-                "Nobel Prize in Chemistry",
-                "Royal Medal",
-                "Dalton Medal"
+                "Royal Medal (1956)",
+                "Nobel Prize in Chemistry (1964)",
+                "Order of Merit (1965)",
+                "EMBO Member (1976)",
+                "Dalton Medal (1981)",
+                "Lomonosov Gold Medal (1982)"
             ],
             "es": [
-                "Premio Nobel de Química",
-                "Medalla Real",
-                "Medalla Dalton"
+                "Medalla Real (1956)",
+                "Premio Nobel en Química (1964)",
+                "Orden del Mérito (1965)",
+                "Miembro de EMBO (1976)",
+                "Dalton Medal (1981)",
+                "Medalla de Oro Lomonosov (1982)"
             ],
             "ca": [
-                "Premi Nobel de Química",
-                "Medalla Real",
-                "Medalla Dalton"
+                "Medalla Reial (1956)",
+                "Premi Nobel en Química (1964)",
+                "Ordre del Mèrit (1965)",
+                "Membre d'EMBO (1976)",
+                "Medalla Dalton (1981)",
+                "Medalla d'Or Lomonosov (1982)"
             ]
         },
         "achievements": {
@@ -415,27 +442,30 @@
         },
         "awards": {
             "en": [
-                "Society of Women Engineers (SWE) Achievement Award"
+                "Society of Women Engineers Achievement Award (1954)",
+                "National Invertors Hall of Fame (posthumously, 2015)"
             ],
             "es": [
-                "Premio al logro de la de SWE"
+                "Premio al logro de la de Society of Women Engineers (1954)",
+                "National Invertors Hall of Fame (póstumo, 2015)"
             ],
             "ca": [
-                "Premi a la trajectòria per la SWE"
+                "Premi a la trajectòria per la Society of Women Engineers (1954)",
+                "National Invertors Hall of Fame (pòstum, 2015)"
             ]
         },
         "achievements": {
             "en": [
-                "first female engineer to achieve professional standing in Tau Beta Pi.",
-                "first female Fellow of the American Institute of Electrical Engineers."
+                "First female engineer to achieve professional standing in Tau Beta Pi.",
+                "First female Fellow of the American Institute of Electrical Engineers."
             ],
             "es": [
-                "primera ingeniera en conseguir un puesto profesional en la sociedad de honor de ingenieros más antigua de Estados Unidos, Tau Beta Pi.",
-                "primera Socia del Instituto Americano de Ingenieros Eléctricos."
+                "Primera ingeniera en conseguir un puesto profesional en la sociedad de honor de ingenieros más antigua de Estados Unidos, Tau Beta Pi.",
+                "Primera Socia del Instituto Americano de Ingenieros Eléctricos."
             ],
             "ca": [
-                "primera enginyera que va ser cooptat com a membre de la confraria d'honor d'enginyers Tau Beta Pi",
-                "primera dona membre de l'Institut americà d'Enginyers Elèctrics"
+                "Primera enginyera que va ser cooptat com a membre de la confraria d'honor d'enginyers Tau Beta Pi, societat honorífica d'enginyeria més antiga d'Estats Units",
+                "Primera dona membre de l'Institut americà d'Enginyers Elèctrics"
             ]
         },
         "fields": {
@@ -481,22 +511,45 @@
         },
         "awards": {
             "en": [
-                "NAS Award in Molecular Biology",
-                "Louisa Gross Horwitz Prize",
-                "Nobel Prize in Physiology or Medicine",
-                "AIC Gold Medal"
-            ],
+                "NAS Award in Molecular Biology (1990)",
+                "Australia Prize (1998)",
+                "Harvey Prize (1999)",
+                "Dickson Prize (2000)",
+                "Heineken Prize (2004)",
+                "ASCB Public Service Award (2004)",
+                "Lasker Award (2006)",
+                "Meyenburg Prize (2006)",
+                "Louisa Gross Horwitz Prize (2007)",
+                "L'Oréal-UNESCO Award for Women in Science (2008)",
+                "Nobel Prize in Physiology or Medicine (2009)",
+                "AIC Gold Medal (2012)"            ],
             "es": [
-                "Premio NAS en Biología Molecular",
-                "Premio Louisa Gross Horwitz",
-                "Premio Nobel de Fisiología o Medicina",
-                "Medalla de oro AIC"
+                "Premio NAS en Biología Molecular (1990)",
+                "Premio Australia (1998)",
+                "Premio Harvey (1999)",
+                "Premio Dickson (2000)",
+                "Premio Heineken (2004)",
+                "Premio al Servicio Público ASCB (2004)",
+                "Premio Lasker (2006)",
+                "Prmeio Meyenburg (2006)",
+                "Premio Louisa Gross Horwitz (2007)",
+                "Premio L'Oréal-UNESCO para Mujeres en la Ciencia (2008)",
+                "Premio Nobel en Fisiología o Medicina (2009)",
+                "Medalla de Oro AIC (2012)"
             ],
             "ca": [
-                "Premi NAS en biologia molecular",
-                "Premi Louisa Gross Horwitz",
-                "Premi Nobel de Fisiologia o Medicina",
-                "Medalla d'or AIC"
+                "Premi NAS en Biologia Molecular (1990)",
+                "Premi Austràlia (1998)",
+                "Premi Harvey (1999)",
+                "Premi Dickson (2000)",
+                "Premi Heineken (2004)",
+                "Premi al Servei Públic ASCB (2004)",
+                "Premi Lasker (2006)",
+                "Premi Meyenburg (2006)",
+                "Premi Louisa Gross Horwitz (2007)",
+                "Premi L'Oréal-UNESCO per a Dones en la Ciència (2008)",
+                "Premi Nobel en Fisiologia o Medicina (2009)",
+                "Medalla d'Or AIC (2012)"
             ]
         },
         "achievements": {
@@ -543,9 +596,9 @@
             "EmmyNoether1"
         ],
         "bio": {
-            "en": "Emmy Noether was a German mathematician who made many important contributions to abstract algebra. She discovered Noether's theorem, which is fundamental in mathematical physics. She invariably  used the name \"Emmy Noether\" in her life and publications. She was described by Pavel  Alexandrov, Albert Einstein, Jean Dieudonné, Hermann Weyl and Norbert Wiener as the most  important woman in the history of mathematics. As one of the leading mathematicians of her  time, she developed some theories of rings, fields, and algebras. In physics, Noether's  theorem explains the connection between symmetry and conservation laws.",
-            "ca": "Emmy Noether va ser una matemàtica alemanya, d'ascendència jueva, especialista en la teoria d'invariants​ i coneguda per les seves contribucions de fonamental importància en els camps de la física teòrica  i l'àlgebra abstracta. Considerada per David Hilbert, Albert Einstein i altres personatges com la dona més important en la història de la matemàtica, va revolucionar la teoria d'anells, teoria de cossos i la de K-àlgebres. En física, el teorema de Noether explica la connexió fonamental  entre la simetria en física i les lleis de conservació. Malgrat això, se li va negar la possibilitat  d'un lloc digne en la universitat pel fet de ser dona.",
-            "es": "Emmy Noether fue una matemática alemana, de ascendencia judía, especialista en la teoría de invariantes y conocida por sus contribuciones de fundamental importancia en los campos de la física teórica y el álgebra abstracta. Considerada por David Hilbert, Albert Einstein y otros  personajes como la mujer más importante en la historia de la matemática, revolucionó la  teoría de anillos, teoría de cuerpos y la de K-álgebras. En física, el teorema de Noether explica la conexión fundamental entre la simetría en física y las leyes de conservación. A pesar de ello, se le negó la posibilidad de un puesto digno en la universidad por el hecho de ser mujer."
+            "en": "Amalie Emmy Noether was a German mathematician who made many important contributions to abstract algebra. She discovered Noether's theorem, which is fundamental in mathematical physics. She invariably  used the name \"Emmy Noether\" in her life and publications. She was described by Pavel  Alexandrov, Albert Einstein, Jean Dieudonné, Hermann Weyl and Norbert Wiener as the most  important woman in the history of mathematics. As one of the leading mathematicians of her  time, she developed some theories of rings, fields, and algebras. In physics, Noether's  theorem explains the connection between symmetry and conservation laws.",
+            "ca": "Amalie Emmy Noether va ser una matemàtica alemanya, d'ascendència jueva, especialista en la teoria d'invariants​ i coneguda per les seves contribucions de fonamental importància en els camps de la física teòrica  i l'àlgebra abstracta. Considerada per David Hilbert, Albert Einstein i altres personatges com la dona més important en la història de la matemàtica, va revolucionar la teoria d'anells, teoria de cossos i la de K-àlgebres. En física, el teorema de Noether explica la connexió fonamental  entre la simetria en física i les lleis de conservació. Malgrat això, se li va negar la possibilitat  d'un lloc digne en la universitat pel fet de ser dona.",
+            "es": "Amalie Emmy Noether fue una matemática alemana, de ascendencia judía, especialista en la teoría de invariantes y conocida por sus contribuciones de fundamental importancia en los campos de la física teórica y el álgebra abstracta. Considerada por David Hilbert, Albert Einstein y otros  personajes como la mujer más importante en la historia de la matemática, revolucionó la  teoría de anillos, teoría de cuerpos y la de K-álgebras. En física, el teorema de Noether explica la conexión fundamental entre la simetría en física y las leyes de conservación. A pesar de ello, se le negó la posibilidad de un puesto digno en la universidad por el hecho de ser mujer."
         },
         "birthYear": {
             "en": "1882"
@@ -555,32 +608,32 @@
         },
         "awards": {
             "en": [
-                "Ackermann-Teubner Memorial Award"
+                "Ackermann-Teubner Memorial Award (1932)"
             ],
             "es": [
-                "Premio conmemorativo Ackermann-Teubner"
+                "Premio conmemorativo Ackermann-Teubner (1932)"
             ],
             "ca": [
-                "Premi Memorial Ackermann-Teubner"
+                "Premi Memorial Ackermann-Teubner (1932)"
             ]
         },
         "achievements": {
             "en": [
-                "Abstract algebra",
+                "Contributions to abstract algebra",
                 "Theoretical physics",
                 "Noether's theorem",
                 "Noetherian ring",
                 "Lasker–Noether theorem"
             ],
             "es": [
-                "Álgebra abstracta",
+                "Contribuciones al álgebra abstracta",
                 "Física teórica",
                 "Teorema de noether",
                 "Anillo noetheriano",
                 "Teorema de Lasker-Noether"
             ],
             "ca": [
-                "Àlgebra abstracta",
+                "Contribucions a l'àlgebra abstracta",
                 "Física teòrica",
                 "Teorema de Noether",
                 "Anell noetherià",
@@ -621,9 +674,9 @@
             "GertyCori2"
         ],
         "bio": {
-            "en": "Gerty Cori was the third woman to win a Nobel Prize in science, and the first woman to be awarded the Nobel Prize in Physiology or Medicine, for her significant role in the discovery of the course of the catalytic  conversion of glycogen.",
-            "ca": "Gerty Cori fou una bioquímica i professora universitària nord-americana, d'origen txecoslovac, la primera dona guardonada amb el Premi Nobel de Medicina i Fisiologia l'any 1947. Cori es convertí així en la tercera dona a  aconseguir aquest guardó i la primera estatunidenca que rep el Nobel  en una disciplina científica.",
-            "es": "Gerty Cori fue la tercera mujer en el mundo y primera en Estados Unidos en ganar un  Premio Nobel en Ciencias y la primera mujer a nivel mundial en ser  galardonada con el Premio Nobel de Fisiología o Medicina."
+            "en": "Gerty Theresa Cori was the third woman to win a Nobel Prize in science, and the first woman to be awarded the Nobel Prize in Physiology or Medicine, for her significant role in the discovery of the course of the catalytic  conversion of glycogen.",
+            "ca": "Gerty Theresa Cori fou una bioquímica i professora universitària nord-americana, d'origen txecoslovac, la primera dona guardonada amb el Premi Nobel de Medicina i Fisiologia l'any 1947. Cori es convertí així en la tercera dona a  aconseguir aquest guardó i la primera estatunidenca que rep el Nobel  en una disciplina científica.",
+            "es": "Gerty Theresa Cori fue la tercera mujer en el mundo y primera en Estados Unidos en ganar un  Premio Nobel en Ciencias y la primera mujer a nivel mundial en ser  galardonada con el Premio Nobel de Fisiología o Medicina."
         },
         "birthYear": {
             "en": "1896"
@@ -633,13 +686,16 @@
         },
         "awards": {
             "en": [
-                "Nobel Prize in Physiology or Medicine"
+                "Nobel Prize in Physiology or Medicine (1947)",
+                "Garvan–Olin Medal (1948)"
             ],
             "es": [
-                "Premio Nobel de Fisiología o Medicina"
+                "Premio Nobel de Fisiología o Medicina (1947)",
+                "Medalla Garvan–Olin (1948)"
             ],
             "ca": [
-                "Premi Nobel de Medicina i Fisiologia"
+                "Premi Nobel de Medicina i Fisiologia(1947)",
+                "Medalla Garvan–Olin (1948)"
             ]
         },
         "achievements": {
@@ -693,9 +749,9 @@
             "GraceMurrayHopper2"
         ],
         "bio": {
-            "en": "She was an American computer scientist. One of the first programmers of the Harvard Mark I computer, she was a pioneer of computer programming who invented one of the first linkers. Hopper was the first to devise the theory of machine-independent programming languages, and the FLOW-MATIC programming language she created using this theory was later extended to create COBOL, an early high-level programming language still in use today\n",
-            "es": "Fue una científica de la computación. Una de las primeras programadoras de la computadora Harvard Mark I, fue una pionera de la programación de computadoras que inventó uno de los primeros enlazadores. Hopper fue la primera en idear la teoría de los lenguajes de programación independientes de la máquina, y el lenguaje de programación FLOW-MATIC que creó utilizando esta teoría y se amplió más tarde para crear COBOL, uno de los primeros lenguajes de programación de alto nivel que todavía se utilizan en la actualidad.\n",
-            "ca": "Va ser una científica de la computació. Una de les primeres programadores de la computadora Harvard Mark I, va ser una pionera de la programació de computadores que va inventar un dels primers enlazadores. Hopper va ser la primera a idear la teoria dels llenguatges de programació independents de la màquina, i el llenguatge de programació FLOW-MATIC que va crear utilitzant aquesta teoria i es va ampliar més tard per a crear COBOL, un dels primers llenguatges de programació d'alt nivell que encara s'utilitzen en l'actualitat.\n"
+            "en": "Grace Brewster Murray Hopper was an American computer scientist. One of the first programmers of the Harvard Mark I computer, she was a pioneer of computer programming who invented one of the first linkers. Hopper was the first to devise the theory of machine-independent programming languages, and the FLOW-MATIC programming language she created using this theory was later extended to create COBOL, an early high-level programming language still in use today\n",
+            "es": "Grace Brewster Murray Hopper fue una científica de la computación. Una de las primeras programadoras de la computadora Harvard Mark I, fue una pionera de la programación de computadoras que inventó uno de los primeros enlazadores. Hopper fue la primera en idear la teoría de los lenguajes de programación independientes de la máquina, y el lenguaje de programación FLOW-MATIC que creó utilizando esta teoría y se amplió más tarde para crear COBOL, uno de los primeros lenguajes de programación de alto nivel que todavía se utilizan en la actualidad.\n",
+            "ca": "Grace Brewster Murray Hopper va ser una científica de la computació. Una de les primeres programadores de la computadora Harvard Mark I, va ser una pionera de la programació de computadores que va inventar un dels primers enlazadores. Hopper va ser la primera a idear la teoria dels llenguatges de programació independents de la màquina, i el llenguatge de programació FLOW-MATIC que va crear utilitzant aquesta teoria i es va ampliar més tard per a crear COBOL, un dels primers llenguatges de programació d'alt nivell que encara s'utilitzen en l'actualitat.\n"
         },
         "birthYear": {
             "en": "1906"
@@ -704,14 +760,54 @@
             "en": "1992"
         },
         "awards": {
-            "en": [],
-            "es": [],
-            "ca": []
+            "en": [
+                "American Campaign Medal (1944)",
+                "World War II Victory Medal (1945)",
+                "U.S. Naval Reserve Medal (1953)",
+                "National Defense Service Medal (1953, 1966)",
+                "Armed Forces Reserve Medal with two Hourglass Devices (1963, 1973, 1983)",
+                "Legion of Merit (1967)",
+                "Meritorious Service Medal (1980)",
+                "Defense Distinguished Service Medal (1986)",
+                "Presidential Medal of Freedom (posthumous, 2016)"
+            ],
+            "es": [
+                "Medalla de Campaña Americana (1944)",
+                "Medalla de la Victoria de la Segunda Guerra Mundial (1945)",
+                "Medalla de la Reserva Naval EE.UU. (1953)",
+                "Medalla del Servicio a la Defensa Nacional (1953, 1966)",
+                "Medalla de la Reserva de la Fuerzas Armadas con dos relojes (1963, 1973, 1983)",
+                "Legión del Mérito (1967)",
+                "Medalla al Servicio Meritorio (1980)",
+                "Medalla al Servicio Distinguido en Defensa (1986)",
+                "Medalla Presidencial de la Libertad (póstuma, 2016)"
+            ],
+            "ca": [
+                "Medalla de Campanya Americana (1944)",
+                "Medalla de la Victòria de la Segona Guerra Mundial (1945)",
+                "Medalla de la Reserva Naval d'Estats Units (1953)",
+                "Medalla del Servei a la Defensa Nacional (1953, 1966)",
+                "Medalla de la Reserva de la Forces Armades amb dos relotges (1963, 1973, 1983)",
+                "Legió del Mèrit (1967)",
+                "Medalla al Servei Meritori (1980)",
+                "Medalla al Servei Distingit en Defensa (1986)",
+                "Medalla Presidencial de la Llibertat (pòstuma, 2016)"
+            ]
         },
         "achievements": {
-            "en": [],
-            "es": [],
-            "ca": []
+            "en": [
+                "Creator of the COBOL programming language",
+                "Developer of standards for testing computer systems and components, most significantly programming languages"
+            ],
+            "es": [
+                "Creadora del lenguaje de programación COBOL",
+                "Desarrolladora de estándares para la prueba de sistemas informáticos y componentes, especialmente lenguajes de programación"
+            ],
+            "ca": [
+                "Creadora del llenguatge de programació COBOL",
+                "Desarrolladora de standards per a la prova de sistemes informàtics i components, especialment llenguatges de programació"
+
+            ]
         },
         "fields": {
             "en": [
@@ -747,9 +843,9 @@
             "HedyLamarr2"
         ],
         "bio": {
-            "en": "Was an actress, inventor, and film producer and co-invented an early version of frequency-hopping spread spectrum communication for torpedo guidance. At the beginning of World War II, Lamarr and composer George Antheil developed a radio guidance system using frequency-hopping spread spectrum technology for Allied torpedoes, intended to defeat the threat of jamming by the Axis powers. Although the US Navy did not adopt Lamarr and Antheil's invention until 1957, various spread-spectrum techniques are incorporated into Bluetooth technology and are similar to methods used in legacy versions of Wi-Fi.\n",
-            "ca": "Va ser actriu, inventora i productora de cinema i va co-inventar una versió primerenca de la comunicació d'espectre eixamplat de salt de freqüència per a l'orientació de torpedes. Al començament de la Segona Guerra Mundial, Lamarr i el compositor George Antheil van desenvolupar un sistema de guia radioelèctric utilitzant tecnologia d'espectre eixamplat de salt de freqüència per a torpedes aliats, destinat a derrotar l'amenaça d'interferències per part de les potències de l'Eix. Encara que l'Armada dels Estats Units no va adoptar la invenció de Lamarr i Antheil fins a 1957, diverses tècniques d'espectre eixamplat s'incorporen a la tecnologia Bluetooth i són similars als mètodes utilitzats en versions heretades de Wi-Fi.\n",
-            "es": "Fue actriz, inventora y productora de cine y co-inventó una versión temprana de la comunicación de espectro ensanchado de salto de frecuencia para la orientación de torpedos. Al comienzo de la Segunda Guerra Mundial, Lamarr y el compositor George Antheil desarrollaron un sistema de guía radioeléctrico utilizando tecnología de espectro ensanchado de salto de frecuencia para torpedos aliados, destinado a derrotar la amenaza de interferencias por parte de las potencias del Eje. Aunque la Armada de los Estados Unidos no adoptó la invención de Lamarr y Antheil hasta 1957, varias técnicas de espectro ensanchado se incorporan a la tecnología Bluetooth y son similares a los métodos utilizados en versiones heredadas de Wi-Fi.\n"
+            "en": "Hedwig Eva Maria Kiesler (Hedy Lamarr) was an actress, inventor, and film producer and co-invented an early version of frequency-hopping spread spectrum communication for torpedo guidance. At the beginning of World War II, Lamarr and composer George Antheil developed a radio guidance system using frequency-hopping spread spectrum technology for Allied torpedoes, intended to defeat the threat of jamming by the Axis powers. Although the US Navy did not adopt Lamarr and Antheil's invention until 1957, various spread-spectrum techniques are incorporated into Bluetooth technology and are similar to methods used in legacy versions of Wi-Fi.\n",
+            "ca": "Hedwig Eva Maria Kiesler (Hedy Lamarr) va ser actriu, inventora i productora de cinema i va co-inventar una versió primerenca de la comunicació d'espectre eixamplat de salt de freqüència per a l'orientació de torpedes. Al començament de la Segona Guerra Mundial, Lamarr i el compositor George Antheil van desenvolupar un sistema de guia radioelèctric utilitzant tecnologia d'espectre eixamplat de salt de freqüència per a torpedes aliats, destinat a derrotar l'amenaça d'interferències per part de les potències de l'Eix. Encara que l'Armada dels Estats Units no va adoptar la invenció de Lamarr i Antheil fins a 1957, diverses tècniques d'espectre eixamplat s'incorporen a la tecnologia Bluetooth i són similars als mètodes utilitzats en versions heretades de Wi-Fi.\n",
+            "es": "Hedwig Eva Maria Kiesler (Hedy Lamarr) fue actriz, inventora y productora de cine y co-inventó una versión temprana de la comunicación de espectro ensanchado de salto de frecuencia para la orientación de torpedos. Al comienzo de la Segunda Guerra Mundial, Lamarr y el compositor George Antheil desarrollaron un sistema de guía radioeléctrico utilizando tecnología de espectro ensanchado de salto de frecuencia para torpedos aliados, destinado a derrotar la amenaza de interferencias por parte de las potencias del Eje. Aunque la Armada de los Estados Unidos no adoptó la invención de Lamarr y Antheil hasta 1957, varias técnicas de espectro ensanchado se incorporan a la tecnología Bluetooth y son similares a los métodos utilizados en versiones heredadas de Wi-Fi.\n"
         },
         "birthYear": {
             "en": "1914"
@@ -759,7 +855,7 @@
         },
         "awards": {
             "en": [
-                "Electronic Frontier Foundation's Pioneer Award"
+                "Electronic Frontier Foundation's Pioneer Award (1997)"
             ]
         },
         "achievements": {
@@ -804,14 +900,14 @@
         "wikipedia": { "en": "Hedy_Lamarr" }
     },
     {
-        "name": "Hertha Marks Ayrton",
+        "name": "Hertha Ayrton",
         "pictures": [
             "HerthaAyrton1"
         ],
         "bio": {
-            "en": "Hertha Marks Ayrton was a British engineer, mathematician, physicist and inventor, and suffragette. Known in adult life as Hertha Ayrton, born Phoebe Sarah Marks, she was awarded the Hughes Medal by the Royal Society for her work  on electric arcs and ripple marks in sand and water.",
-            "ca": "Hertha Marks Ayrton fou una matemàtica, física, enginyera i inventora anglesa. Va rebre la Medalla Hughes de la Royal Society pels  seus treballs sobre l'arc elèctric i pels seus estudis sobre el moviment oscil·latori de l'aigua i l'origen i el  creixement de les dunes de les platges.",
-            "es": "Hertha Marks Ayrton fue una ingeniera, matemática, física e inventora británica. Fue galardonada con la Medalla Hughes de la Royal Society  por sus estudios del arco eléctrico y la formación de ondas de las dunas y las olas del mar."
+            "en": "Phoebe Sarah Hertha Ayrton (born Phoebe Sarah Marks) was a British engineer, mathematician, physicist and inventor, and suffragette. Known in adult life as Hertha Ayrton, born Phoebe Sarah Marks, she was awarded the Hughes Medal by the Royal Society for her work  on electric arcs and ripple marks in sand and water.",
+            "ca": "Phoebe Sarah Hertha Ayrton (nascuda Phoebe Sarah Marks) fou una matemàtica, física, enginyera i inventora anglesa. Va rebre la Medalla Hughes de la Royal Society pels  seus treballs sobre l'arc elèctric i pels seus estudis sobre el moviment oscil·latori de l'aigua i l'origen i el  creixement de les dunes de les platges.",
+            "es": "Phoebe Sarah Hertha Ayrton (nacida Phoebe Sarah Marks) fue una ingeniera, matemática, física e inventora británica. Fue galardonada con la Medalla Hughes de la Royal Society  por sus estudios del arco eléctrico y la formación de ondas de las dunas y las olas del mar."
         },
         "birthYear": {
             "en": "1854"
@@ -821,13 +917,13 @@
         },
         "awards": {
             "en": [
-                "Huges Medal"
+                "Huges Medal (1906)"
             ],
             "es": [
-                "Medalla Huges"
+                "Medalla Huges (1906)"
             ],
             "ca": [
-                "Medalla Huges"
+                "Medalla Huges (1906)"
             ]
         },
         "achievements": {
@@ -941,7 +1037,11 @@
                 "Egipcia"
             ]
         },
-        "wikipedia": { "en": "Hypatia" }
+        "wikipedia": {
+            "en": "Hypatia",
+            "es": "Hipatia",
+            "ca": "Hipàcia"
+        }
     },
     {
         "name": "Inge Lehman",
@@ -2754,7 +2854,7 @@
                 "Technologist"
             ],
             "es": [
-                "Eduacadora",
+                "Educadora",
                 "Tecnóloga"
             ],
             "ca": [
@@ -2775,7 +2875,8 @@
         },
         "wikipedia": {
             "en": "Angela_Ruiz_Robles",
-            "es": "Ángela_Ruiz_Robles"
+            "es": "Ángela_Ruiz_Robles",
+            "ca": "Ángela_Ruiz_Robles"
         }
     }
 ]
