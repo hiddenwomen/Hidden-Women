@@ -13,6 +13,7 @@
 "%@ was a: " = "%@ era una: ";
 "One of %@'s achievements is: " = "Un dels assoliments de %@ és: ";
 "%@ was awarded with the: " = "%@ va ser guardonada amb: ";
+"Honors and awards" = "Premis i reconeixements";
 "Camera" = "Càmera";
 "Cancel" = "Cancel·la";
 "Choose mode" = "Tria el mode";
@@ -23,6 +24,7 @@
 "False" = "Fals";
 "Games" = "Jocs";
 "Hidden Women" = "Dones Ocultes";
+"Main achievements" = "Principals assoliments";
 "Password..." = "Contrasenya...";
 "Photo Library" = "Llibreria de fotos";
 "Please choose your preferred mode to set your profile image" = "Per favor, tria com carregar la imatge de perfil";

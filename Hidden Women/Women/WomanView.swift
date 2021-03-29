@@ -103,7 +103,7 @@ struct WomanView: View {
                             }
                         },
                         label: {
-                            Text("Awards")
+                            Text("Honors and awards")
                                 .fontWeight(.bold)
                                 .onTapGesture {
                                     withAnimation(.default) {
