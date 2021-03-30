@@ -31,43 +31,50 @@ struct WomanView: View {
     
     var body: some View {
         VStack(alignment: .center) {
-            Text(woman.name)
-                .font(.title)
-                .fontWeight(.bold)
-            Text("\(woman.birthYear.localized) - \(woman.deathYear.localized)")
-            Text(woman.nationalities.localized.joined(separator: ", "))
-            GeometryReader {geo in
-                ScrollView(.horizontal) {
-                    HStack(spacing: 10) {
-                        Rectangle()
-                            .frame(
-                                width: (geo.size.width-150-20)/2,
-                                height: 0
-                            )
-                        ForEach(woman.pictures, id: \.self) { picture in
-                            Image(picture)
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 150, height: 200)
-                                .onTapGesture {
-                                    shownPicture = picture
-                                    shownName = woman.name
-                                    showPicture = true
+            VStack {
+                Text(woman.name)
+                    .font(.title)
+                    .fontWeight(.bold)
+                Text("\(woman.birthYear.localized) - \(woman.deathYear.localized)")
+                Text(woman.nationalities.localized.joined(separator: ", "))
+                Text(woman.fields.localized.joined(separator: ", "))
+                    .fontWeight(.bold)
+                GeometryReader {geo in
+                    VStack {
+                        ScrollView(.horizontal) {
+                            HStack(spacing: 10) {
+                                Rectangle()
+                                    .fill(Color.white)
+                                    .frame(
+                                        width: (geo.size.width-150-20)/2,
+                                        height: 200 * screenHeight/896
+                                    )
+                                ForEach(woman.pictures, id: \.self) { picture in
+                                    Image(picture)
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(height: 200 * screenHeight/896)
+                                        .onTapGesture {
+                                            shownPicture = picture
+                                            shownName = woman.name
+                                            showPicture = true
+                                        }
                                 }
+                                Rectangle()
+                                    .fill(Color.white)
+                                    .frame(
+                                        width: (geo.size.width-150-20)/2,
+                                        height: 200 * screenHeight/896
+                                    )
+                            }
                         }
-                        Rectangle()
-                            .frame(
-                                width: (geo.size.width-150-20)/2,
-                                height: 0
-                            )
                     }
                 }
             }
-            .frame(maxHeight: 210)
-            Text(woman.fields.localized.joined(separator: ", "))
-                .fontWeight(.bold)
-            Divider()
+
+
             ScrollView {
+                Divider()
                 DisclosureGroup (
                     isExpanded: $showAchievements,
                     content: {

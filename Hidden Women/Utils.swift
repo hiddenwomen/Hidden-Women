@@ -8,6 +8,11 @@
 import Foundation
 import SwiftUI
 
+// Screen Size
+let screenSize: CGRect = UIScreen.main.bounds
+let screenWidth = screenSize.width
+let screenHeight = screenSize.height
+
 // Localized access to dictionaries with language keys
 extension Dictionary where Key == String {
     var localized: Value {
