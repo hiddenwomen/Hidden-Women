@@ -97,7 +97,7 @@ struct TrueOrFalseView: View {
 
 //struct TrueOrFalseView_Previews: PreviewProvider {
 //    static let trueOrFalse = TrueOrFalse(picture: "Curie1", question: "hola", correct: true)
-//    
+//
 //    static var previews: some View {
 //        TrueOrFalseView(trueOrFalse: trueOrFalse)
 //    }
