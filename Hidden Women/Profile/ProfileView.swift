@@ -46,10 +46,11 @@ struct ProfileView: View {
                         Image(uiImage: profile.picture ?? UIImage())
                             .resizable()
                             .scaledToFit()
-                            .frame(width: 200, height: 200)
+                            .clipShape(Circle())
+                            .frame(width: 300, height: 250)
                         Text(profile.name)
+                            .fontWeight(.bold)
                         Text(profile.email)
-                        Text(userID)
                         Button(action: {
                             profilePage = .editProfile
                         }) {
@@ -57,10 +58,14 @@ struct ProfileView: View {
                                 .fontWeight(.bold)
                                 .importantButtonStyle()
                         }
-                        List(profile.gameResults) { result in
-                            Text("\(result.gameType): \(result.points)")
-                        }
-                        Text("Total: \(profile.points)")
+                        .padding()
+                        //List(profile.gameResults) { result in
+                        //    Text("\(result.gameType): \(result.points)")
+                        //}
+                        Text("POINTS: \(profile.points)")
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .foregroundColor(Color("Turquesa"))
                         Spacer()
                         
                         Button(action: {
@@ -69,6 +74,7 @@ struct ProfileView: View {
                         }) {
                             Text("Sign out")
                         }
+                        .padding()
                         
                     }
                 case .editProfile:

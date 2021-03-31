@@ -28,6 +28,7 @@ struct EditProfileView: View {
             Image(uiImage: editedProfile.picture ?? UIImage())
                 .resizable()
                 .scaledToFit()
+                .clipShape(Circle())
                 .frame(width: 200, height: 200)
                 .onTapGesture {
                     showActionScheet = true

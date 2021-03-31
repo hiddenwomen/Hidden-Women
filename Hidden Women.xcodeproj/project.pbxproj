@@ -71,7 +71,7 @@
 		F50B036F25FEBDBD00D4EABE /* ChronoWomanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChronoWomanView.swift; sourceTree = "<group>"; };
 		F50B037025FEBDBE00D4EABE /* ChronolineGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChronolineGenerator.swift; sourceTree = "<group>"; };
 		F50B03792601393E00D4EABE /* MultipleChronolineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChronolineView.swift; sourceTree = "<group>"; };
-		F50B037E2603D8FB00D4EABE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F50B037E2603D8FB00D4EABE /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
 		F50B03812603D9C200D4EABE /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		F50B03842604A42800D4EABE /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		F50B03872604AC3400D4EABE /* SUImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUImagePickerView.swift; sourceTree = "<group>"; };
