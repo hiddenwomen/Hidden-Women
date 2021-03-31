@@ -47,7 +47,7 @@ struct ProfileView: View {
                             .resizable()
                             .scaledToFit()
                             .clipShape(Circle())
-                            .frame(width: 300, height: 250)
+                            .frame(width: 300, height: 300)
                         Text(profile.name)
                             .fontWeight(.bold)
                         Text(profile.email)

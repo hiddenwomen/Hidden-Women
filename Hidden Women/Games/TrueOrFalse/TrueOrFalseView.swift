@@ -13,6 +13,8 @@ struct TrueOrFalseView: View {
     @Binding var correctAnswers: Int
     @Binding var progress: Float
     var numberOfTrueOrFalses: Int
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    @State var timeLeft: Int = 10
     
     var body: some View {
         VStack {
@@ -33,6 +35,8 @@ struct TrueOrFalseView: View {
                     }
                     progress += 1.0 / Float(numberOfTrueOrFalses)
                     shownTrueOrFalse += 1
+                    timer.upstream.connect().cancel()
+                    timeLeft = 10
                 }) {
                     ZStack {
                         Circle()
@@ -51,6 +55,8 @@ struct TrueOrFalseView: View {
                     }
                     progress += 1.0 / Float(numberOfTrueOrFalses)
                     shownTrueOrFalse += 1
+                    timer.upstream.connect().cancel()
+                    timeLeft = 10
                 }) {
                     ZStack {
                         Circle()
@@ -65,7 +71,26 @@ struct TrueOrFalseView: View {
                 Spacer()
             }
             .padding(.top, 40)
+            ZStack {
+                Circle()
+                    .stroke(Color.gray.opacity(0.2), style: StrokeStyle(lineWidth: 10, lineCap: .round))
+                Circle()
+                    .trim(from: 0, to: CGFloat(timeLeft) / 10.0)
+                    .stroke(Color("Morado"), style: StrokeStyle(lineWidth: 10, lineCap: .round))
+                    .rotationEffect(.degrees(-90))
+                    .animation(.easeInOut)
+            }
+            .frame(width: 100, height: 100)
             Spacer()
+        }
+        .onReceive(timer) { _ in
+            timeLeft -= 1
+            if timeLeft == 0 {
+                timer.upstream.connect().cancel()
+                progress += 1.0 / Float(numberOfTrueOrFalses)
+                shownTrueOrFalse += 1
+                timeLeft = 10
+            }
         }
     }
 }

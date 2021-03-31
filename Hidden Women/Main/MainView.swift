@@ -102,14 +102,14 @@ struct MainView: View {
                 Text("Games")
             }
             .tag(1)
-            
+            if userID != "" {
             SocialView(currentPage: $currentPage)
                 .tabItem {
                     Image(systemName: "person.3.fill")
                     Text("Friends")
                 }
                 .tag(2)
-            
+            }
             
             ProfileView(currentPage: $currentPage)
                 .tabItem{

@@ -50,11 +50,14 @@ struct MakeNewFriendsView: View {
                     .collection("emails")
                     .document(newEmail.lowercased())
                     .getDocument { document, error in
-                        if let document = document {
+                        if let document = document  {
                             notValidEmail = !document.exists
                             if document.exists {
                                 let data = document.data() ?? ["userId": ""]
                                 possibleFriendUserId = data["userId"] as? String ?? ""
+                                if profile.friendIDs.contains(possibleFriendUserId) {
+                                    notValidEmail = true
+                                }
                             }
                         }
                     }
