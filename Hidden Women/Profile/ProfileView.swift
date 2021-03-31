@@ -58,7 +58,7 @@ struct ProfileView: View {
                                 .fontWeight(.bold)
                                 .importantButtonStyle()
                         }
-                        .padding()
+                        .padding() 
                         //List(profile.gameResults) { result in
                         //    Text("\(result.gameType): \(result.points)")
                         //}
