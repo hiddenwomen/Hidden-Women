@@ -1,4 +1,4 @@
-/* 
+/*
   Localizable.strings
   Hidden Women
 
@@ -26,10 +26,10 @@
 "Hidden Women" = "Dones Ocultes";
 "Main achievements" = "Principals assoliments";
 "Password..." = "Contrasenya...";
-"Photo Library" = "Llibreria de fotos";
+"Photo Library" = "Galeria de fotografies";
 "Please choose your preferred mode to set your profile image" = "Per favor, tria com carregar la imatge de perfil";
 "Profile" = "Perfil";
-"Quiz" = "Opcions";
+"Quiz" = "Qüestionari";
 "Sign in error" = "Error d'inici de sessió";
 "Sign in" = "Inicia sessió";
 "Sign out" = "Tancar la sessió";
@@ -43,16 +43,31 @@
 "User name..." = "Nom d'usuària...";
 "You are a guest."  = "Eres una convidada.";
 "When was %@ born?" = "Quan va néixer %@?";
-"Points" = "Punts";
-"POINTS: " = "PUNTS: ";
+"Find people like me" = "Trobar gent com jo";
+"Check how your friends are doing with the games" = "Comprova com els va als teus amics en els jocs";
+"Ranking" = "Rànquing";
+"My friends" = "Els meus amics";
+"Send friend request" = "Enviar sol·licitud d'amistat";
+"Send a friend request" = "Enviar una sol·licitud d'amistat";
+"Friend requests" = "Sol·licituds d'amistat";
+"You have no friend requests." = "No tens sol·licituds d'amistad";
+"You have 1 friend request" = "Tens 1 sol·licitud d'amistat";
+"You have %@ friend requests" = "Tens %@ sol·licituds d'amistad";
 "Friends" = "Amigues";
+"Points: %@" = "Punts: %@";
+"Friend requests..." = "Sol·licituts d'amistat";
+"Accept" = "Acceptar";
+"Reject" = "Rebutjar";
+"Error saving picture" = "Error en desar la imatge";
+"Error saving profile data" = "Error en desar les dades del perfil";
+"To know more, go to" = "Per saber més, ves a";
+"Swipe down to hide." = "Llisca cap avall per amagar aquesta pantalla";
+"Error setting favorites" = "Error en establir les favorites";
+"Have you forgotten your password?" = "Has oblidat la teua contrasenya?";
+"... or enter as a" = "... o entra com a";
+"guest" = "invitada";
+"Repeat password..." = "Repeteix la contrasenya...";
+"Passwords do not match" = "Les contrasenyes con coincideixen";
+"Welcome, guest!" = "Benvinguda, invitada!";
 "Save" = "Guardar";
-"Send a friend request" = "Envia una petició d'amistad";
-"Send friend request" = "Envia petició d'amistad";
-"Friend requests" = "Peticions d'amistats";
-"Find people like me" = "Trobar a gent com jo";
-"My friends" = "Les meues amigues";
-"Check how your friends are doing with the games" = "Comprova com ho estan fent les teues amigues amb els jocs";
-
-
-
+"Continue" = "Continuar";

@@ -48,6 +48,7 @@
 		F5A9822E25F769C1005EB566 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9822D25F769C1005EB566 /* LoginView.swift */; };
 		F5A9823825F7722C005EB566 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9823725F7722C005EB566 /* SignupView.swift */; };
 		F5A9823C25F77814005EB566 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9823B25F77814005EB566 /* MainView.swift */; };
+		F5BE06D32614EB16009CD289 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5BE06D22614EB16009CD289 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +99,7 @@
 		F5A9822D25F769C1005EB566 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F5A9823725F7722C005EB566 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		F5A9823B25F77814005EB566 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F5BE06D22614EB16009CD289 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +241,7 @@
 		F58710AB25F7611C00B47462 /* Hidden Women */ = {
 			isa = PBXGroup;
 			children = (
+				F5BE06D22614EB16009CD289 /* GoogleService-Info.plist */,
 				F56A7C9B260F23EA003C0A20 /* Social */,
 				F50B037D2603D8E300D4EABE /* Profile */,
 				CB6826DB25FA16E800A8190C /* Games */,
@@ -350,6 +353,7 @@
 				F58710C025F761F500B47462 /* Podfile in Resources */,
 				F53AA8BB25F8BD750045977A /* women.json in Resources */,
 				F50B036425FCA95F00D4EABE /* GoogleService-Info.plist in Resources */,
+				F5BE06D32614EB16009CD289 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

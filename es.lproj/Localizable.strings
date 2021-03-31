@@ -1,4 +1,4 @@
-/* 
+/*
   Localizable.strings
   Hidden Women
 
@@ -26,10 +26,10 @@
 "Hidden Women" = "Mujeres Ocultas";
 "Main achievements" = "Logros principales";
 "Password..." = "Contraseña...";
-"Photo Library" = "Biblioteca de fotos";
-"Please choose your preferred mode to set your profile image" = "Por favor, cómo cargar la imagen de perfil";
+"Photo Library" = "Galería de fotos";
+"Please choose your preferred mode to set your profile image" = "Por favor, escoge cómo cargar la foto de perfil";
 "Profile" = "Perfil";
-"Quiz" = "Opciones";
+"Quiz" = "Cuestionario";
 "Sign in error" = "Error de inicio de sesión";
 "Sign in" = "Inicia sesión";
 "Sign out" = "Cerrar sesión";
@@ -43,14 +43,31 @@
 "User name..." = "Nombre de usuaria...";
 "You are a guest."  = "Eres una invitada.";
 "When was %@ born?" = "¿Cuándo nació %@?";
-"Points" = "Puntos";
-"POINTS" = "PUNTOS";
-"Friends" = "Amigas";
-"Save" = "Guardar";
-"Send a friend request" = "Enviar una petición de amistad";
-"Send friend request" = "Enviar petición de amistad";
-"Friend requests" = "Peticiones de amistades";
 "Find people like me" = "Encontrar a gente como yo";
-"My friends" = "Mis amigas";
-"Check how your friends are doing with the games" = "Comprueba cómo lo están haviando tus amigas con los juegos";
-
+"Check how your friends are doing with the games" = "Comprueba cómo les va a tus amigos en los juegos";
+"Ranking" = "Ranking";
+"My friends" = "Mis amigos";
+"Send friend request" = "Enviar solicitud de amistad";
+"Send a friend request" = "Enviar una solicitud de amistad";
+"Friend requests" = "Solicitudes de amistad";
+"You have no friend requests." = "No tienes solicitudes de amistad.";
+"You have 1 friend request" = "Tienes 1 solicitud de amistad";
+"You have %@ friend requests" = "Tienes %@ solicitudes de amistad";
+"Friends" = "Amigas";
+"Points: %@" = "Puntos: %@";
+"Friend requests..." = "Solicitudes de amistad...";
+"Accept" = "Aceptar";
+"Reject" = "Rechazar";
+"Error saving picture" = "Error al guardar la foto";
+"Error saving profile data" = "Error al guardar los datos del perfil";
+"To know more, go to" = "Para saber más, ve a";
+"Swipe down to hide." = "Desliza hacia abajo para ocultar.";
+"Error setting favorites" = "Error al configurar las favoritas";
+"Have you forgotten your password?" = "¿Has olvidado tu contraseña?";
+"... or enter as a" = "... o entra como";
+"guest" = "invitada";
+"Repeat password..." = "Repite tu contraseña...";
+"Passwords do not match" = "Las contraseñas no coinciden";
+"Welcome, guest!" = "¡Bienvenida, invitada!";
+"Save" = "Guardar";
+"Continue" = "Continuar";
