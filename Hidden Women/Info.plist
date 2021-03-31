@@ -34,7 +34,7 @@
 		<key>UIImageRespectsSafeAreaInsets</key>
 		<true/>
 		<key>UIImageName</key>
-		<string>logo_nombre</string>
+		<string>logo_splash</string>
 	</dict>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>

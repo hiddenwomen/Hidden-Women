@@ -1,14 +1,13 @@
-[
-    {
+[{
         "name": "Ada Lovelace",
         "pictures": [
             "AdaLovelace1",
             "AdaLovelace2"
         ],
         "bio": {
-            "en": "Augusta Ada King, Countess of Lovelace (Ada Lovelace) was an English mathematician and writer, chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine. She is believed by some to be the first to recognise that the machine had applications beyond pure calculation, and to have published the first algorithm intended to be carried out by such a machine. As a result, she is often regarded as the first to recognise the full potential of computers and as one of the first computer programmers.",
-            "es": "Augusta Ada King, Condesa de Lovelace (Ada Lovelace) fue una matemática y escritora inglesa, principalmente conocida por su trabajo en la computadora mecánica de propósito general propuesta por Charles Babbage, la Máquina Analítica. Algunos creen que fue la primera en reconocer que la máquina tenía aplicaciones más allá del cálculo puro, y publicó el primer algoritmo destinado a ser llevado a cabo por dicha máquina. Como resultado, a menudo se la considera la primera en reconocer todo el potencial de las computadoras y como una de las primeras programadoras de computadoras.",
-            "ca": "Augusta Ada King, Comtessa de Lovelace (Ada Lovelace) va ser una matemàtica i escriptora anglesa, principalment coneguda pel seu treball en la computadora mecànica de propòsit general proposta per Charles Babbage, la Màquina Analítica. Alguns creuen que va ser la primera a reconéixer que la màquina tenia aplicacions més enllà del càlcul pur, i va publicar el primer algorisme destinat a ser dut a terme per aquesta màquina. Com a resultat, sovint se la considera la primera a reconéixer tot el potencial de les computadores i com una de les primeres programadores de computadores."
+            "en": "Augusta Ada King, Countess of Lovelace (Ada Lovelace) was an English mathematician and writer, chiefly known for her work on Charles Babbage's proposed mechanical general-purpose computer, the Analytical Engine. She recognised that the machine had applications beyond pure calculation, and published the first algorithm intended to be carried out by such a machine. As a result, she is often regarded as the first to recognise the full potential of computers and as the first computer programmers.",
+            "es": "Augusta Ada King, Condesa de Lovelace (Ada Lovelace) fue una matemática y escritora inglesa, principalmente conocida por su trabajo en la computadora mecánica de propósito general propuesta por Charles Babbage, la Máquina Analítica. Fue la primera en reconocer que la máquina tenía aplicaciones más allá del cálculo puro, y publicó el primer algoritmo destinado a ser llevado a cabo por dicha máquina. Como resultado, se la considera la primera en reconocer todo el potencial de las computadoras y la primera persona en programar computadoras.",
+            "ca": "Augusta Ada King, Comtessa de Lovelace (Ada Lovelace) va ser una matemàtica i escriptora anglesa, principalment coneguda pel seu treball en la computadora mecànica de propòsit general proposta per Charles Babbage, la Màquina Analítica. Va ser la primera a reconéixer que la màquina tenia aplicacions més enllà del càlcul pur, i va publicar el primer algorisme destinat a ser dut a terme per aquesta màquina. Com a resultat, se la considera la primera a reconéixer tot el potencial de les computadores i la primera persona en programar computadores."
         },
         "birthYear": {
             "en": "1815"
@@ -17,9 +16,15 @@
             "en": "1852"
         },
         "awards": {
-            "en": [],
-            "es": [],
-            "ca": []
+            "en": [
+                "The Ada programming language was named after her"
+            ],
+            "es": [
+                "El lenguaje de programación Ada toma su nombre de ella"
+            ],
+            "ca": [
+                "El llenguatge de programació Ada pren el seu nom d'ella"
+            ]
         },
         "fields": {
             "en": [
@@ -70,9 +75,9 @@
             "AliceBall1"
         ],
         "bio": {
-            "en": "Alice Ball was an American chemist who developed the \"Ball Method\", the most effective treatment for leprosy during the early 20th century. She was the first woman and first African  American to receive a master's degree from the University of Hawaii, and was also the  university's first female and African American chemistry professor.",
-            "ca": "Alice Ball va ser una química nord-americana que va desenvolupar un extracte d'oli injectable que va  ser fins a la dècada de 1940 el tractament més efectiu contra la lepra. Va ser la primera dona nord-americana d'ascendència africana que es va graduar a la Universitat de Hawaii amb un màster.",
-            "es": "Alice Ball fue una científica y química estadounidense que desarrolló un extracto de aceite inyectable que fue el único tratamiento más efectivo contra la lepra hasta la aparición de los antibióticos en 1940.Fue la primera mujer norteamericana de ascendencia africana que se graduó en la Universidad de Hawái con un máster."
+            "en": "Alice Ball was an American chemist who developed the \"Ball Method\", the most effective treatment for leprosy during the early 20th century. She is the first woman and first African  American to receive a master's degree from the University of Hawaii, and she is also the  university's first female and African American chemistry professor.",
+            "ca": "Alice Ball va ser una química nord-americana que va desenvolupar un extracte d'oli injectable que, fins a la dècada de 1940, va ser el tractament més efectiu contra la lepra. És la primera dona nord-americana d'ascendència africana que es va graduar a la Universitat de Hawaii amb un màster i la primera dona profesora universitària afroamericana de química.",
+            "es": "Alice Ball fue una científica y química estadounidense que desarrolló un extracto de aceite inyectable que fue el único tratamiento más efectivo contra la lepra hasta la aparición de los antibióticos en 1940. Es la primera mujer norteamericana de ascendencia africana graduada por la Universidad de Hawái con un máster y la primera mujer afroamericana en ejercer de profesora universitaria de química."
         },
         "birthYear": {
             "en": "1892"
@@ -135,9 +140,9 @@
             "BarbaraMcClintock2"
         ],
         "bio": {
-            "en": "Barbara McClintock was an American scientist and cytogeneticist who was awarded the 1983 Nobel Prize in Physiology or Medicine. McClintock received her PhD in  botany from Cornell University in 1927. There she started her career as  the leader in the development of maize cytogenetics, the focus of her research for the rest of her life. She demonstrated that genes ara responsible for turning physical characteristics on and off.",
-            "ca": "Barbara McClintock fou una botànica, genetista especialitzada en citogenètica. Va estar guardonada amb el Premi Nobel de Medicina i Fisiologia l'any 1983. McClintock va rebre el doctorat en botànica per la Universitat de Cornell en 1927. Allí va començar la seua carrera com a líder en el desenvolupament de la citogenètica de la dacsa, que va ser el focus de la seua recerca la resta de la seua vida. Demostró que los genes son responsables de activar y desactivar características físicas.",
-            "es": "Barbara McClintock fue una científica estadounidense especializada en citogenética que obtuvo el premio Nobel de Medicina o Fisiología en 1983. McClintock recibió el doctorado por la Universidad de Cornell en 1927. Allí empezó su carrera como líder en el desarrollo de la citogenética del maíz, que fue el foco de su investigación el resto de su vida. Va demostrar que els gens eren responsables d'activar i desactivar característiques físiques."
+            "en": "Barbara McClintock was an American scientist and cytogeneticist who was awarded the 1983 Nobel Prize in Physiology or Medicine. McClintock received her PhD in botany from Cornell University in 1927. There she started her career as  the leader in the development of maize cytogenetics, the focus of her research for the rest of her life. She demonstrated that genes ara responsible for turning physical characteristics on and off.",
+            "ca": "Barbara McClintock fou una botànica, genetista especialitzada en citogenètica. Va estar guardonada amb el Premi Nobel de Medicina i Fisiologia l'any 1983. McClintock va rebre el doctorat en botànica per la Universitat de Cornell en 1927. Allí va començar la seua carrera com a líder en el desenvolupament de la citogenètica de la dacsa, que va ser el focus de la seua recerca la resta de la seua vida. Va demostrar que els gens eren responsables d'activar i desactivar característiques físiques.",
+            "es": "Barbara McClintock fue una científica estadounidense especializada en citogenética que obtuvo el premio Nobel de Medicina o Fisiología en 1983. McClintock recibió el doctorado por la Universidad de Cornell en 1927. Allí empezó su carrera como líder en el desarrollo de la citogenética del maíz, que fue el foco de su investigación el resto de su vida. Demostró que los genes son responsables de activar y desactivar características físicas."
         },
         "birthYear": {
             "en": "1902"
@@ -200,9 +205,9 @@
             "BrendaMilner2"
         ],
         "bio": {
-            "en": "Brenda Milner is a British-Canadian neuropsychologist who has contributed extensively to the research literature on various topics in the field of  clinical neuropsychology. As of 2018, Milner turned 100 and still was a professor in the Department of Neurology and Neurosurgery at McGill University and a professor  of Psychology at the Montreal Neurological Institute. She holds more than 20 degrees and continues to work. Her current work  explores the interaction between the brain's left and right hemispheres. Milner has been called the founder of neuropsychology, and has proven to be an  essential key in its development.",
-            "ca": "Brenda Milner és una neuropsicòloga canadenca que ha contribuït àmpliament a la recerca científica en diversos camps de la neuropsicologia clínica. Milner és professora en el  Department of Neurology and Neurosurgery a la Universitat McGill de Mont-real i professora de Psicologia en el Mont-real Neurological Institute. Ha rebut més de  20 doctorats honoris causa i segueix treballant als seus cent anys. La seva recerca actual explora la interacció entre els hemisferis esquerre i dret del cervell.  A Milner ha estat considerada com la fundadora de la neuropsicologia, i el seu treball ha estat clau en el desenvolupament d'aquesta disciplina.",
-            "es": "Brenda Milner es una neuropsicóloga canadiense que ha contribuido ampliamente a la investigación científica en varios campos de la neuropsicología clínica.​ Milner era profesora  en el Department of Neurology and Neurosurgery en la Universidad McGil de Montreal y profesora de Psicología en el Montreal Neurological Institute. Ha recibido más  de 20 doctorados honoris causa y sigue trabajando con más de cien años.​ Su investigación actual explora la interacción entre los hemisferios izquierdo y derecho del  cerebro. A Milner se la ha considerado como la fundadora de la neuropsicología,y su trabajo ha sido clave en el desarrollo de esta disciplina."
+            "en": "Brenda Milner is a British-Canadian neuropsychologist who has contributed extensively to the research literature on various topics in the field of  clinical neuropsychology. As of 2018, Milner turned 100 and still was a professor in the Department of Neurology and Neurosurgery at McGill University and a professor  of Psychology at the Montreal Neurological Institute. She holds more than twenty degrees and continues to work. Her current work  explores the interaction between the brain's left and right hemispheres. Milner has been called the founder of neuropsychology, and has proven to be an  essential key in its development.",
+            "ca": "Brenda Milner és una neuropsicòloga canadenca que ha contribuït àmpliament a la recerca científica en diversos camps de la neuropsicologia clínica. Milner és professora en el  Department of Neurology and Neurosurgery a la Universitat McGill de Mont-real i professora de Psicologia en el Mont-real Neurological Institute. Ha rebut més de  vint doctorats honoris causa i segueix treballant als seus cent anys. La seva recerca actual explora la interacció entre els hemisferis esquerre i dret del cervell.  A Milner ha estat considerada com la fundadora de la neuropsicologia, i el seu treball ha estat clau en el desenvolupament d'aquesta disciplina.",
+            "es": "Brenda Milner es una neuropsicóloga canadiense que ha contribuido ampliamente a la investigación científica en varios campos de la neuropsicología clínica.​ Milner era profesora  en el Department of Neurology and Neurosurgery en la Universidad McGil de Montreal y profesora de Psicología en el Montreal Neurological Institute. Ha recibido más de veinte doctorados honoris causa y sigue trabajando con más de cien años.​ Su investigación actual explora la interacción entre los hemisferios izquierdo y derecho del  cerebro. A Milner se la ha considerado como la fundadora de la neuropsicología,y su trabajo ha sido clave en el desarrollo de esta disciplina."
         },
         "birthYear": {
             "en": "1918"
@@ -232,15 +237,15 @@
         },
         "achievements": {
             "en": [
-                "Role of the temporal lobes and other brain regions in learning, memory, and language.",
+                "Discovery of the role of the temporal lobes and other brain regions in learning, memory, and language.",
                 "Discovery of specialized brain networks for memory and cognition."
             ],
             "es": [
-                "Papel de los lóbulos temporales y otras regiones del cerebro en el aprendizaje, la memoria y el lenguaje.",
+                "Descubrimiento del papel de los lóbulos temporales y otras regiones del cerebro en el aprendizaje, la memoria y el lenguaje.",
                 "Descubrimiento de las redes cerebrales especializadas en la memoria y cognición"
             ],
             "ca": [
-                "Paper dels lòbuls temporals i altres regions del cervell en l'aprenentatge, la memòria i el llenguatge.",
+                "Descobriment del paper dels lòbuls temporals i altres regions del cervell en l'aprenentatge, la memòria i el llenguatge.",
                 "Descobriments de les xarxes cerebrals especialitzades en la memòria i cognició."
             ]
         },
@@ -602,9 +607,15 @@
             "en": "1973"
         },
         "awards": {
-            "en": [],
-            "es": [],
-            "ca": []
+            "en": [
+                "A street in Bucharest is named after her"
+            ],
+            "es": [
+                "Una calle de Bucarest lleva su nombre"
+            ],
+            "ca": [
+                "Un carrer de Bucarest porta el seu nom"
+            ]
         },
         "achievements": {
             "en": [
@@ -838,22 +849,22 @@
         },
         "achievements": {
             "en": [
-                "Contributions to abstract algebra",
-                "Theoretical physics",
+                "Contributions to abstract Algebra",
+                "Contributions to Theoretical Physics",
                 "Noether's theorem",
-                "Noetherian ring",
+                "Discoverer of the Noetherian ring",
                 "Lasker–Noether theorem"
             ],
             "es": [
                 "Contribuciones al álgebra abstracta",
-                "Física teórica",
+                "Contribuciones a la Física teórica",
                 "Teorema de noether",
                 "Anillo noetheriano",
                 "Teorema de Lasker-Noether"
             ],
             "ca": [
-                "Contribucions a l'àlgebra abstracta",
-                "Física teòrica",
+                "Contribucions a l'Àlgebra Abstracta",
+                "Contribuciones a la Física Teòrica",
                 "Teorema de Noether",
                 "Anell noetherià",
                 "Teorema de Lasker-Noether"
@@ -1142,9 +1153,21 @@
             "en": "1921"
         },
         "awards": {
-            "en": [],
-            "es": [],
-            "ca": []
+            "en": [
+                "The asteroid 5383 Leavitt is named in her honor",
+                "The crater Leavitt on the Moon is named in her honor",
+                "One of the ASA-SN telescopes, located in the McDonald Observatory, is named in her honor"
+            ],
+            "es": [
+                "El asteroide 5383 Leavitt lleva ese nombre en su honor",
+                "El crater Leavitt en la Luna lleva ese nombre en su honor",
+                "Uno de los telescopios ASA-SN, en el Observatorio McDonald, lleva su nombre"
+            ],
+            "ca": [
+                "L'asteroid 5383 Leavitt porta eixe nom en el seu honor",
+                "El cràter Leavitt en la Lluna porta eixe nom en el seu honor",
+                "Un dels telescopis ASA-SN, en l'Observatori McDonald, porta el seu nom"
+            ]
         },
         "achievements": {
             "en": [
@@ -1434,9 +1457,15 @@
             "en": "1993"
         },
         "awards": {
-            "en": [],
-            "es": [],
-            "ca": []
+            "en": [
+                "William Bowie Medal (1971)"
+            ],
+            "es": [
+                "Medalla William Bowie (1971)"
+            ],
+            "ca": [
+                "Medalla William Bowie (1971)"
+            ]
         },
         "achievements": {
             "en": [
@@ -1497,22 +1526,22 @@
         },
         "awards": {
             "en": [
-                "Kyoto Prize",
-                "Hubbard Medal",
-                "Tyler Prize for Environmental Achievement",
-                "DBE"
+                "Kyoto Prize (1990)",
+                "Hubbard Medal (1995)",
+                "Tyler Prize for Environmental Achievement (1997)",
+                "Dame Commander of the Most Excellent Order of the British Empire (2004)"
             ],
             "es": [
-                "Premio Kyoto",
-                "Medalla Hubbard",
-                "Premio Tyler por los logros ambientales",
-                "DBE"
+                "Premio Kyoto (1990)",
+                "Medalla Hubbard (1995)",
+                "Premio Tyler por los logros ambientales (1997)",
+                "Comandante de la Excelentísima Orden del Imperio Británico (2004)"
             ],
             "ca": [
-                "Premi Kyoto",
-                "Medalla Hubbard",
-                "Premi Tyler per la consecució del medi ambient",
-                "DBE"
+                "Premi Kyoto (1990)",
+                "Medalla Hubbard (1995)",
+                "Premi Tyler per la consecució del medi ambient (1997)",
+                "Comandant de l'Excel·lentísima Orde de l'Imperi Britànic (2004)"
             ]
         },
         "achievements": {
@@ -1572,9 +1601,15 @@
             "en": "1931"
         },
         "awards": {
-            "en": [],
-            "es": [],
-            "ca": []
+            "en": [
+                "Honorary Doctor of Science, University of Chicago (1931)"
+            ],
+            "es": [
+                "Doctorado Honoris Causa por la Universidad de Chicago (1931)"
+            ],
+            "ca": [
+                "Doctorat Honoris Causa per la Universitat de Chicago (1931)"
+            ]
         },
         "achievements": {
             "en": [
@@ -1637,13 +1672,13 @@
         },
         "awards": {
             "en": [
-                "AIA Gold Medal"
+                "AIA Gold Medal (posthumous, 2014)"
             ],
             "es": [
-                "Medalla de oro de la AIA"
+                "Medalla de oro de la AIA (póstuma, 2014)"
             ],
             "ca": [
-                "Medalla d'or de l'AIA"
+                "Medalla d'or de l'AIA (pòstuma, 2014)"
             ]
         },
         "achievements": {
@@ -1703,22 +1738,22 @@
         },
         "awards": {
             "en": [
-                "Presidential Medal of Freedom",
-                "Silver Snoopy award",
-                "NASA Group Achievement Award",
-                "Congressional Gold Medal"
+                "Presidential Medal of Freedom (2015)",
+                "Silver Snoopy award (2016)",
+                "NASA Group Achievement Award (2016)",
+                "Congressional Gold Medal (2019)"
             ],
             "es": [
-                "Medalla Presidencial de la Libertad",
-                "Premio Silver Snoopy",
-                "Premio al Logro del Grupo de la NASA",
-                "Medalla de oro del Congreso"
+                "Medalla Presidencial de la Libertad (2015)",
+                "Premio Silver Snoopy (2016)",
+                "Premio al Logro del Grupo de la NASA (2016)",
+                "Medalla de oro del Congreso (2019)"
             ],
             "ca": [
-                "Medalla Presidencial de la Llibertat",
-                "Premi Silver Snoopy",
-                "Premi a l'assoliment del Grup de la NASA",
-                "Medalla d'oro del Congrés"
+                "Medalla Presidencial de la Llibertat (2015)",
+                "Premi Silver Snoopy (2016)",
+                "Premi a l'assoliment del Grup de la NASA (2016)",
+                "Medalla d'oro del Congrés (2019)"
             ]
         },
         "achievements": {
@@ -1777,13 +1812,16 @@
         },
         "awards": {
             "en": [
-                "Hoover medal"
+                "Elected for the National Academy of Engineering (1965)",
+                "Hoover medal (1966)"
             ],
             "es": [
-                "Medalla Hoover"
+                "Elegida para la National Academy of Engineering (1965)",
+                "Medalla Hoover (1966)"
             ],
             "ca": [
-                "Medalla Hoover"
+                "Elegida per a la National Academy of Engineering (1965)",
+                "Medalla Hoover (1966)"
             ]
         },
         "achievements": {
@@ -1844,14 +1882,44 @@
             "en": "1968"
         },
         "awards": {
-            "en": [],
-            "es": [],
-            "ca": []
+            "en": [
+                "Lieben Prize (1925)",
+                "Max Planck Medal (1949)",
+                "Otto Hahn Prize (1955)",
+                "ForMemRS (1955)",
+                "Wilhelm Exner Medal (1960)",
+                "Enrico Fermi Award (1966)"
+            ],
+            "es": [
+                "Premio Lieben (1925)",
+                "Medalla Max Planck (1949)",
+                "Premio Otto Hahn (1955)",
+                "ForMemRS (1955)",
+                "Medalla Wilhelm Exner (1960)",
+                "Premio Enrico Fermi (1966)"
+            ],
+            "ca": [
+                "Premi Lieben (1925)",
+                "Medalla Max Planck (1949)",
+                "Premi Otto Hahn (1955)",
+                "ForMemRS (1955)",
+                "Medalla Wilhelm Exner (1960)",
+                "Premi Enrico Fermi (1966)"
+            ]
         },
         "achievements": {
-            "en": [],
-            "es": [],
-            "ca": []
+            "en": [
+                "Discoverer of Protactinium",
+                "Discoverer of nuclear fission"
+            ],
+            "es": [
+                "Descubridora del Protactinio",
+                "Descubridora de la fisión nuclear"
+            ],
+            "ca": [
+                "Descobridora del Protactini",
+                "Descobridora de la fissió nuclear"
+            ]
         },
         "fields": {
             "en": [
@@ -1886,9 +1954,9 @@
             "LynnMargulis2"
         ],
         "bio": {
-            "en": "She was a prominent American biologist, considered one of the leading figures in the field of biological evolution, regarding the origin of eukaryotic cells. She received the Darwin-Wallace Medal.\nShe stood out for describing an important milestone in evolution, her theory of the appearance of eukaryotic cells as a consequence of the symbiotic incorporation of various prokaryotic cells (serial endosymbiosis). Later, she also postulated the hypothesis according to which symbiogenesis would be the main source of biological novelty and diversity.\n",
-            "es": "Fue una destacada bióloga estadounidense, considerada una de las principales figuras en el campo de la evolución biológica, respecto al origen de las células eucariotas.  Recibió la Medalla Darwin-Wallace.\nDestacó por describir un importante hito en la evolución, su teoría sobre la aparición de las células eucariotas como consecuencia de la incorporación simbiótica de diversas células procariotas (endosimbiosis seriada). Posteriormente, también postuló la hipótesis según la cual la simbiogénesis sería la principal fuente de la novedad y diversidad biológica.\n",
-            "ca": "Va ser una destacada biòloga estatunidenca, considerada una de les principals figures en el camp de l'evolució biològica, respecte a l'origen de les cèl·lules eucariotes. Va rebre la Medalla Darwin-Wallace.\nVa destacar per descriure una important fita en l'evolució, la seua teoria sobre l'aparició de les cèl·lules eucariotes a conseqüència de la incorporació simbiòtica de diverses cèl·lules procariotes (endosimbiosi seriada). Posteriorment, també va postular la hipòtesi segons la qual la simbiogénesis seria la principal font de la novetat i diversitat biològica.\n"
+            "en": "Lynn Margulis was a prominent American biologist, considered one of the leading figures in the field of biological evolution, regarding the origin of eukaryotic cells. She received the Darwin-Wallace Medal.\nShe stood out for describing an important milestone in evolution, her theory of the appearance of eukaryotic cells as a consequence of the symbiotic incorporation of various prokaryotic cells (serial endosymbiosis). Later, she also postulated the hypothesis according to which symbiogenesis would be the main source of biological novelty and diversity.",
+            "es": "Lynn Margulis fue una destacada bióloga estadounidense, considerada una de las principales figuras en el campo de la evolución biológica, respecto al origen de las células eucariotas.  Recibió la Medalla Darwin-Wallace.\nDestacó por describir un importante hito en la evolución, su teoría sobre la aparición de las células eucariotas como consecuencia de la incorporación simbiótica de diversas células procariotas (endosimbiosis seriada). Posteriormente, también postuló la hipótesis según la cual la simbiogénesis sería la principal fuente de la novedad y diversidad biológica.",
+            "ca": "Lynn Margulis va ser una destacada biòloga estatunidenca, considerada una de les principals figures en el camp de l'evolució biològica, respecte a l'origen de les cèl·lules eucariotes. Va rebre la Medalla Darwin-Wallace.\nVa destacar per descriure una important fita en l'evolució, la seua teoria sobre l'aparició de les cèl·lules eucariotes a conseqüència de la incorporació simbiòtica de diverses cèl·lules procariotes (endosimbiosi seriada). Posteriorment, també va postular la hipòtesi segons la qual la simbiogénesis seria la principal font de la novetat i diversitat biològica."
         },
         "birthYear": {
             "en": "1938"
@@ -1898,13 +1966,19 @@
         },
         "awards": {
             "en": [
-                "Darwin-Wallace Medal"
+                "National Medal of Science (1999)",
+                "William Procter Prize for Scientific Achievement (1999)",
+                "Darwin-Wallace Medal (2008)"
             ],
             "es": [
-                "Medalla Darwin-Wallace"
+                "Medalla Nacional de la Ciencia (1999)",
+                "Premio William Procter por el Logro Científico (1999)",
+                "Medalla Darwin-Wallace (2008)"
             ],
             "ca": [
-                "Medalla Darwin-Wallace"
+                "Medalla Nacional de la Ciència (1999)",
+                "Premi William Procter ler l'Assoliment Científic (1999)",
+                "Medalla Darwin-Wallace (2008)"
             ]
         },
         "achievements": {
@@ -1960,19 +2034,19 @@
         },
         "awards": {
             "en": [
-                "NASA Space Flight Medal",
-                "Rachel Carson Award",
-                "Elizabeth Blackwell Medal"
+                "NASA Space Flight Medal (2004)",
+                "Rachel Carson Award (2005)",
+                "Elizabeth Blackwell Medal (2015)"
             ],
             "es": [
-                "Medalla de la NASA de Vuelo espacial",
-                "Rachel Carson Award",
-                "Medalla Elizabeth Blackwell"
+                "Medalla de la NASA de Vuelo Espacial (2004)",
+                "Rachel Carson Award (2005)",
+                "Medalla Elizabeth Blackwell (2015)"
             ],
             "ca": [
-                "Medalla de la NASA de Vol espacial",
-                "Rachel Carson Award",
-                "Medalla Elizabeth Blackwell"
+                "Medalla de la NASA de Vol espacial (2004)",
+                "Rachel Carson Award (2005)",
+                "Medalla Elizabeth Blackwell (2015)"
             ]
         },
         "achievements": {
@@ -1989,14 +2063,20 @@
         "fields": {
             "en": [
                 "Astronaut",
+                "Physician",
+                "Engineer",
                 "Professor"
             ],
             "es": [
                 "Astronauta",
+                "Médica",
+                "Ingeniera",
                 "Profesora"
             ],
             "ca": [
                 "Astronauta",
+                "Mèdica",
+                "Enginyera",
                 "Professora"
             ]
         },
@@ -2021,9 +2101,9 @@
             "imagen1"
         ],
         "bio": {
-            "en": "She is an American computer scientist, systems engineer, and business owner. She was director of the Software Engineering Division of the MIT  Instrumentation Laboratory, which developed on-board flight software for NASA's Apollo program. She later founded two software companies—Higher  Order Software in 1976 and Hamilton Technologies in 1986, both in Cambridge, Massachusetts. Hamilton has published more than 130 papers, proceedings  and reports about sixty projects and six major programs. She is one of the people credited with coining the term \"software engineering\".\n",
-            "ca": "És una científica computacional i matemàtica. Va ser directora de la Divisió d'Enginyeria de Programari del Laboratori d'Instrumentació del MIT, on  va desenvolupar programari de navegació \"on-board\" per al Programa Espacial Apol·lo. El 1986, es va convertir en la fundadora i CEO de Hamilton  Technologies, Inc. a Cambridge, Massachusetts. La companyia es va desenvolupar al voltant del Llenguatge Universal de Sistemes basada en el seu paradigma  de \"Desenvolupament Abans del Fet\" (DBTF, de l'anglès Development Before the Fact) per a sistemes de disseny de programari.\n",
-            "es": "Es una científica computacional, matemática e ingeniera de Software. Fue directora de la División de Ingeniería de Software del Laboratorio de Instrumentación  del MIT,​ donde con su equipo desarrolló el software de navegación \"on-board\" para el Programa Espacial Apolo. En 1986, se convirtió en la fundadora y CEO de  Hamilton Technologies, Inc. en Cambridge, Massachusetts. La compañía se desarrolló alrededor del lenguaje universal de sistemas basada en su paradigma  de \"desarrollo antes del hecho\" (DBTF, del inglés Development Before the Fact) para sistemas de diseño de software.\n"
+            "en": "Margaret Hamilton is an American computer scientist, systems engineer, and business owner. She was director of the Software Engineering Division of the MIT  Instrumentation Laboratory, which developed on-board flight software for NASA's Apollo program. She later founded two software companies—Higher  Order Software in 1976 and Hamilton Technologies in 1986, both in Cambridge, Massachusetts. Hamilton has published more than 130 papers, proceedings  and reports about sixty projects and six major programs. She is one of the people credited with coining the term \"software engineering\".\n",
+            "ca": "Margaret Hamilton és informàtica i matemàtica. Va ser directora de la Divisió d'Enginyeria de Programari del Laboratori d'Instrumentació del MIT, on  va desenvolupar programari de navegació \"on-board\" per al Programa Espacial Apol·lo. El 1986, es va convertir en la fundadora i CEO de Hamilton  Technologies, Inc. a Cambridge, Massachusetts. La companyia es va desenvolupar al voltant del Llenguatge Universal de Sistemes basada en el seu paradigma  de \"Desenvolupament Abans del Fet\" (DBTF, de l'anglès Development Before the Fact) per a sistemes de disseny de programari.\n",
+            "es": "Margaret Hamilton es informática, matemática e ingeniera de Software. Fue directora de la División de Ingeniería de Software del Laboratorio de Instrumentación  del MIT,​ donde con su equipo desarrolló el software de navegación \"on-board\" para el Programa Espacial Apolo. En 1986, se convirtió en la fundadora y CEO de  Hamilton Technologies, Inc. en Cambridge, Massachusetts. La compañía se desarrolló alrededor del lenguaje universal de sistemas basada en su paradigma  de \"desarrollo antes del hecho\" (DBTF, del inglés Development Before the Fact) para sistemas de diseño de software.\n"
         },
         "birthYear": {
             "en": "1936"
@@ -2033,19 +2113,22 @@
         },
         "awards": {
             "en": [
-                "Presidential Medal of Freedom",
-                "The Washington Award",
-                "NASA Exceptional Space Act Award"
+                "Augusta Ada Lovelace Award (1986)",
+                "NASA Exceptional Space Act Award (2003)",
+                "Presidential Medal of Freedom (2016)",
+                "The Washington Award (2019)"
             ],
             "es": [
-                "Medalla Presidencial de la Libertad",
-                "The Washington Award",
-                "NASA Exceptional Space Act Award"
+                "Premio Augusta Ada Lovelace (1986)",
+                "NASA Exceptional Space Act Award (2003)",
+                "Medalla Presidencial de la Libertad (2016)",
+                "The Washington Award (2019)"
             ],
             "ca": [
-                "Medalla Presidencial de la Llibertad",
-                "The Washington Award",
-                "NASA Exceptional Space Act Award"
+                "Premi Augusta Ada Lovelace (1986)",
+                "Medalla Presidencial de la Llibertad (2016)",
+                "The Washington Award (2019)",
+                "NASA Exceptional Space Act Award (2003)"
             ]
         },
         "achievements": {
@@ -2094,9 +2177,9 @@
             "MargaritaSalas2"
         ],
         "bio": {
-            "en": "Margarita Salas was a Spanish scientist, medical researcher, and author in the fields of biochemistry and molecular genetics. Salas' discovery of the  bacterial virus Φ29 DNA polymerase was recognized by the Spanish National Research Council as the highest-grossing patent in Spain. Her  cumulative work, as described by The Local in 2019, \"invented a faster, simpler and more reliable way to replicate trace amounts of DNA  into quantities large enough for full genomic testing.",
-            "ca": "Margarita Salas va ser un científica espanyola, investigadora mèdica i autora en els camps de la bioquímica i la genètica molecular. El descobriment de Salas del  virus bacterià Φ29 ADN polimerasa va ser reconeguda pel Consell Nacional d'Investigació espanyol com la patent de més alt consum a Espanya. El seu  treball acumulatiu, tal com va descriure The Local el 2019, \"va inventar una forma més ràpida, més senzilla i més fiable de replicar quantitats d'ADN  en quantitats prou grans per a proves genòmiques completes.",
-            "es": "Margarita Salas fue un científica española, investigadora médica y autora en los campos de la bioquímica y la genética molecular. El descubrimiento de Salas del  virus bacteriano Φ29 ADN polimerasa fue reconocida por el Consejo Nacional de Investigación español como la patente de más alto consumo en España. Su  trabajo acumulativo, tal como describió The Local el 2019, \"inventó una forma más rápida, más sencilla y más fiable de replicar cantidades de ADN  en cantidades basta grandes para pruebas genómicas completas."
+            "en": "Margarita Salas Falgueras was a Spanish scientist, medical researcher, and author in the fields of biochemistry and molecular genetics. Salas' discovery of the  bacterial virus Φ29 DNA polymerase was recognized by the Spanish National Research Council as the highest-grossing patent in Spain. Her  cumulative work, as described by The Local in 2019, \"invented a faster, simpler and more reliable way to replicate trace amounts of DNA  into quantities large enough for full genomic testing.",
+            "ca": "Margarita Salas Falgueras va ser un científica espanyola, investigadora mèdica i autora en els camps de la bioquímica i la genètica molecular. El descobriment de Salas del  virus bacterià Φ29 ADN polimerasa va ser reconeguda pel Consell Nacional d'Investigació espanyol com la patent de més alt consum a Espanya. El seu  treball acumulatiu, tal com va descriure The Local el 2019, \"va inventar una forma més ràpida, més senzilla i més fiable de replicar quantitats d'ADN  en quantitats prou grans per a proves genòmiques completes.",
+            "es": "Margarita Salas Falgueras fue un científica española, investigadora médica y autora en los campos de la bioquímica y la genética molecular. El descubrimiento de Salas del  virus bacteriano Φ29 ADN polimerasa fue reconocida por el Consejo Nacional de Investigación español como la patente de más alto consumo en España. Su  trabajo acumulativo, tal como describió The Local el 2019, \"inventó una forma más rápida, más sencilla y más fiable de replicar cantidades de ADN  en cantidades basta grandes para pruebas genómicas completas."
         },
         "birthYear": {
             "en": "1938"
@@ -2106,19 +2189,19 @@
         },
         "awards": {
             "en": [
-                "México de Ciencia y Tecnología Award",
-                "Echegaray Medal",
-                "European Inventor Award"
+                "México de Ciencia y Tecnología Award (1998)",
+                "Echegaray Medal (2016)",
+                "European Inventor Award (2019)"
             ],
             "es": [
-                "Premio México de Ciencia y Tecnología",
-                "Medalla Echegaray",
-                "European Inventor Award"
+                "Premio México de Ciencia y Tecnología (1998)",
+                "Medalla Echegaray (2016)",
+                "European Inventor Award (2019)"
             ],
             "ca": [
-                "Premi Mèxic de Ciència i Tecnologia",
-                "Medalla Echegaray",
-                "European Inventor Award"
+                "Premi Mèxic de Ciència i Tecnologia (1998)",
+                "Medalla Echegaray (2016)",
+                "European Inventor Award (2019)"
             ]
         },
         "achievements": {
@@ -2250,13 +2333,13 @@
         },
         "awards": {
             "en": [
-                "Nobel Prize in physics"
+                "Nobel Prize in Physics (1963)"
             ],
             "es": [
-                "Premio Nobel de Física"
+                "Premio Nobel de Física (1963)"
             ],
             "ca": [
-                "Premi Nobel de Física"
+                "Premi Nobel de Física (1963)"
             ]
         },
         "achievements": {
@@ -2319,17 +2402,18 @@
         "awards": {
             "en": [
                 "Official Cross of the Order of Merit of the Federal Republic of Germany",
-                "Grand Cross of the Order The Sun of Peru"
+                "Grand Cross of the Order The Sun of Peru (1992)",
+                "Order of the Palmas Magisteriales (1992)"
             ],
             "es": [
                 "Cruz de Oficial de la Orden del Mérito de la República Federal de Alemania",
-                "Gran Cruz de la Orden El Sol del Perú",
-                "Orden de las Palmas Magisteriales"
+                "Gran Cruz de la Orden El Sol del Perú (1992)",
+                "Orden de las Palmas Magisteriales (1992)"
             ],
             "ca": [
                 "Creu d'Oficial de l'Orde al Mèrit de la República Federal Alemanya",
-                "Gran Creu de l'Orde El Sol del Perú",
-                "Palmas Magisteriales"
+                "Gran Creu de l'Orde El Sol del Perú (1992)",
+                "Orde de les Palmes Magisterials (1992)"
             ]
         },
         "achievements": {
@@ -2379,9 +2463,9 @@
             "MariaSibyllaMerian2"
         ],
         "bio": {
-            "en": "She is considered one of the most important initiators of modern entomology, thanks to her detailed observations and descriptions, with her own illustrations, of the metamorphosis of butterflies. Currently the species Catasticta sibyllae, a recently described Panama lepidoptera, bears her name in honor of the contributions of Maria Sibylla Merian to Neotropical entomology.\n",
-            "es": "Es considerada como una de las más importantes iniciadoras de la entomología moderna, gracias a sus detalladas observaciones y descripciones, con ilustraciones propias, de la metamorfosis de las mariposas. Actualmente la especie Catasticta sibyllae, lepidóptera de Panamá recientemente descrita, lleva su nombre en honor a los aportes de Maria Sibylla Merian para la entomología neotropical.\n",
-            "ca": "És considerada com una de les més importants iniciadores de l'entomologia moderna, gràcies a les seues detallades observacions i descripcions, amb il·lustracions pròpies, de la metamorfosi de les papallones. Actualment l'espècie Catasticta sibyllae, lepidòptera de Panamà recentment descrita, porta el seu nom en honor a les aportacions de Maria Sibylla Merian per a l'entomologia neotropical.\n"
+            "en": "Maria Sibylla Merian is considered one of the most important initiators of modern entomology, thanks to her detailed observations and descriptions, with her own illustrations, of the metamorphosis of butterflies. Currently the species Catasticta sibyllae, a recently described Panama lepidoptera, bears her name in honor of the contributions of Maria Sibylla Merian to Neotropical entomology.\n",
+            "es": "Maria Sibylla Merian es considerada como una de las más importantes iniciadoras de la entomología moderna, gracias a sus detalladas observaciones y descripciones, con ilustraciones propias, de la metamorfosis de las mariposas. Actualmente la especie Catasticta sibyllae, lepidóptera de Panamá recientemente descrita, lleva su nombre en honor a los aportes de Maria Sibylla Merian para la entomología neotropical.\n",
+            "ca": "Maria Sibylla Merian és considerada com una de les més importants iniciadores de l'entomologia moderna, gràcies a les seues detallades observacions i descripcions, amb il·lustracions pròpies, de la metamorfosi de les papallones. Actualment l'espècie Catasticta sibyllae, lepidòptera de Panamà recentment descrita, porta el seu nom en honor a les aportacions de Maria Sibylla Merian per a l'entomologia neotropical.\n"
         },
         "birthYear": {
             "en": "1647"
@@ -2390,14 +2474,26 @@
             "en": "1717"
         },
         "awards": {
-            "en": [],
-            "es": [],
-            "ca": []
+            "en": [
+                "Her portrait appeared in the 500 Deutsche Mark note"
+            ],
+            "es": [
+                "Su retrato aparecía en los billetes de 500 marcos alemanes"
+            ],
+            "ca": [
+                "El seu retrat apareixia en els billets de 500 marcs alemanys"
+            ]
         },
         "achievements": {
-            "en": [],
-            "es": [],
-            "ca": []
+            "en": [
+                "Contributions to the field of entomology"
+            ],
+            "es": [
+                "Contribuciones a la entomología"
+            ],
+            "ca": [
+                "Contribucions a l'entomologia"
+            ]
         },
         "fields": {
             "en": [
@@ -2444,27 +2540,27 @@
         },
         "awards": {
             "en": [
-                "Nobel Prize in Physics",
-                "Nobel Prize in Chemistry",
-                "Albert Medal",
-                "Willard Gibbs Award"
+                "Nobel Prize in Physics (1903)",
+                "Albert Medal (1910)",
+                "Nobel Prize in Chemistry (1911)",
+                "Willard Gibbs Award (1921)"
             ],
             "es": [
-                "Premio Nobel en Física",
-                "Premio Nobel en Química",
-                "Medalla Albert",
-                "Premio Willard Gibbs"
+                "Premio Nobel en Física (1903)",
+                "Medalla Albert (1910)",
+                "Premio Nobel en Química (1911)",
+                "Premio Willard Gibbs (1921)"
             ],
             "ca": [
-                "Premi Nobel en Física",
-                "Premi Nobel en Química",
-                "Medalla Albert",
-                "Premi Willard Gibbs"
+                "Premi Nobel en Física (1903)",
+                "Medalla Albert (1910)",
+                "Premi Nobel en Química (1911)",
+                "Premi Willard Gibbs (1921)"
             ]
         },
         "achievements": {
             "en": [
-                "First women to win a Nobel Prize.",
+                "First woman to win a Nobel Prize.",
                 "First person to win the Nobel Prize in two different scientific fields.",
                 "Reseach on radioactivity"
             ],
@@ -2528,15 +2624,34 @@
         "deathYear": {
             "en": "1831"
         },
-        "awards": {
-            "en": [],
-            "es": [],
-            "ca": []
-        },
         "achievements": {
-            "en": [],
-            "es": [],
-            "ca": []
+            "en": [
+                "Contributions to elasticity (physics)",
+                "Contributions to number theory"
+            ],
+            "es": [
+                "Contribuciones a la elasticidad (física)",
+                "Contribuciones a la teoría de números"
+            ],
+            "ca": [
+                "Contribucions a l'elasticitat (física)",
+                "Contribucions a la teoria de números"
+            ]
+        },
+        "awards": {
+            "en": [
+                "In 2020 a micro-satellite was launched named in her honor",
+                "Primes p such that 2p+1 ara also primes are named after her"
+            ],
+            "es": [
+                "En 2020 se lanzó un microsatélite con su nombre",
+                "Los primos p tales que 2p+1 son primos llevan su nombre"
+            ],
+            "ca": [
+                "En 2020 es va llençar un microsatèl·lit amb el seu nom",
+                "Els números primers p tals que 2p+1 són primers porten el seu nom"
+
+            ]
         },
         "fields": {
             "en": [
@@ -2588,21 +2703,22 @@
         },
         "awards": {
             "en": [
-                "National Geographic Society’s Hubbard Medal",
-                "Society of Woman Geographers Outstanding Achievement Award",
-                "Woods Holes Oceanographic Institution’s Mary Sears Woman Pioneer in Oceanography Award",
-                "Lamont–Doherty Earth Observatory Heritage Award"
+                "National Geographic Society’s Hubbard Medal (1978)",
+                "Society of Woman Geographers Outstanding Achievement Award (1996)",
+                "Woods Holes Oceanographic Institution’s Mary Sears Woman Pioneer in Oceanography Award (1999)",
+                "Lamont–Doherty Earth Observatory Heritage Award (2001)"
             ],
             "es": [
-                "Medalla Hubbard de la National Geographic Society",
-                "Premio de la Sociedad de Geógrafas Femeninas",
-                "Premio Mary Sears Woman Pioneer de la Institución Oceanográfica de Woods Holes"
+                "Medalla Hubbard de la National Geographic Society (1978)",
+                "Premio de la Sociedad de Geógrafas Femeninas al Logro Destacado (1996)",
+                "Premio Mary Sears Woman Pioneer de la Institución Oceanográfica de Woods Holes (1999)",
+                "Premio Patrimonio del Observatorio de la Tierra Lamont-Doherty (2001)"
             ],
             "ca": [
-                "Medalla Hubbard de la National Geographic Society",
-                "Premi de la Societat de Geògrafs Femenins",
-                "Premi Mary Sears Woman Pioneer de la Institució Oceanogràfica de Woods Holes",
-                "Premi Patrimoni de l'Observatori Lamont-Doherty de la Terra"
+                "Medalla Hubbard de la National Geographic Society (1978)",
+                "Premi de la Societat de Geògrafs Femenins a l'Assoliment Destacat (1996)",
+                "Premi Mary Sears Woman Pioneer de la Institució Oceanogràfica de Woods Holes (1999)",
+                "Premi Patrimoni de l'Observatori de la Terra Lamont-Doherty (2001)"
             ]
         },
         "achievements": {
@@ -2652,9 +2768,9 @@
             "Marie-AnnePaulzeLavoisier2"
         ],
         "bio": {
-            "en": "was a French chemist and noblewoman. Madame Lavoisier was the wife of the chemist and nobleman Antoine Lavoisier, and acted as his laboratory companion  and contributed to his work. She played a pivotal role in the translation of several scientific works, and was instrumental to the standardization of the  scientific method.\n",
-            "ca": "Era una química i noble francesa. Madame Lavoisier era l'esposa del químic i noble Antoine Lavoisier, va actuar com a  companya de laboratori,    i va contribuir a la seva feina.  Va jugar un paper fonamental en la traducció de diverses obres científiques, i va ser fonamental per a l'estandardització del   mètode científic.\n",
-            "es": "Fue una química y noble francesa. Madame Lavoisier era la esposa del químico y noble Antoine Lavoisier, actuó como compañera de laboratorio y contribuyó en su  trabajo. Jugó un papel relevante en la traducción de diversas obras científicas, además de ser fundamental para la estandarlización del método cientíco.\n"
+            "en": "Marie-Anne Paulze Lavoisier was a French chemist and noblewoman. Madame Lavoisier was the wife of the chemist and nobleman Antoine Lavoisier, and acted as his laboratory companion  and contributed to his work. She played a pivotal role in the translation of several scientific works, and was instrumental to the standardization of the  scientific method.\n",
+            "ca": "Marie-Anne Paulze Lavoisier era una química i noble francesa. Madame Lavoisier era l'esposa del químic i noble Antoine Lavoisier, va actuar com a  companya de laboratori,    i va contribuir a la seva feina.  Va jugar un paper fonamental en la traducció de diverses obres científiques, i va ser fonamental per a l'estandardització del   mètode científic.\n",
+            "es": "Marie-Anne Paulze Lavoisier fue una química y noble francesa. Madame Lavoisier era la esposa del químico y noble Antoine Lavoisier, actuó como compañera de laboratorio y contribuyó en su  trabajo. Jugó un papel relevante en la traducción de diversas obras científicas, además de ser fundamental para la estandarlización del método cientíco.\n"
         },
         "birthYear": {
             "en": "1758"
@@ -2680,7 +2796,7 @@
         },
         "fields": {
             "en": [
-                "Chemestry"
+                "Chemist"
             ],
             "es": [
                 "Química"
@@ -2721,9 +2837,11 @@
             "en": "1979"
         },
         "awards": {
-            "en": [],
-            "es": [],
-            "ca": []
+            "en": ["She was included in the National Library of Scotland's display \"Celebrating Scottish women of science\""],
+            "es": ["Fue incluida en la exhibición \"Celebrando las mujeres científicas escocesas\" de la Biblioteca Nacional de Escocia"],
+            "ca": [
+                "Va ser inclosa en l'exhibició \"Celebrant les dones científiques escoceses\" de la Biblioteca Nacional d'Escòcia"
+            ]
         },
         "achievements": {
             "en": [
@@ -2844,15 +2962,27 @@
         "deathYear": {
             "en": "1847"
         },
-        "awards": {
-            "en": [],
-            "es": [],
-            "ca": []
-        },
         "achievements": {
-            "en": [],
-            "es": [],
-            "ca": []
+            "en": [
+                "Discoverer of the Ichthyosaur and the Plesiosaurus"
+            ],
+            "es": [
+                "Descubridora del Ictiosaurio y el Plesiosauro"
+            ],
+            "ca": [
+                "Descobridora de l'Ictiosauri y el Plesiosauri"
+            ]
+        },
+        "awards": {
+            "en": [
+                "Added to the Natural History Museum as one of the gallery characters (2005)"
+            ],
+            "es": [
+                "Incluida en la lista de personajes de la galería del Natural History Museum (2005)"
+            ],
+            "ca": [
+                "Inclosa en la llista de personatges de la galeria del Natural History Museum (2005)"
+            ]
         },
         "fields": {
             "en": [
@@ -2886,9 +3016,9 @@
             "imagen1"
         ],
         "bio": {
-            "en": "She was a British paleoanthropologist who discovered the first fossilised Proconsul skull, an extinct ape which is now believed to be ancestral to  humans. She also discovered the robust Zinjanthropus skull at Olduvai Gorge in Tanzania, eastern Africa. For much of her career she worked with her  husband, Louis Leakey, at Olduvai Gorge, where they uncovered fossils of ancient hominines and the earliest hominins, as well as the stone tools produced  by the latter group. Mary Leakey developed a system for classifying the stone tools found at Olduvai. She discovered the Laetoli footprints, and at the  Laetoli site she discovered hominin fossils that were more than 3.75 million years old.\n",
-            "ca": "Va ser una paleoantropòlega britànica que va descobrir el primer crani fossilitzat de Proconsul, un simi extint que actualment es creu que és ancestral  als humans.  També va descobrir el sòlid crani de Zinjanthropus a la gorja d'Olduvai a Tanzània, Àfrica oriental.  Durant gran part de la seva carrera  va treballar amb el seu marit, Louis Leakey, a Olduvai Gorge, on van descobrir fòssils d'hominines antigues i les primeres hominines, així com les eines  de pedra produïdes per aquest últim grup.  Mary Leakey va desenvolupar un sistema per classificar les eines de pedra trobades a Olduvai.  Va descobrir les  petjades de Laetoli, i al jaciment Laetoli va descobrir fòssils d'hominina que tenien més de 3,75 milions d'anys.\n",
-            "es": "Fue una paleoantropóloga británica que descubrió el primer cráneo fosilizado de Proconsul, un simio extinto que actualmente se cree que es ancestral a los  humanos. También descubrió el sólido cráneo de Zinjanthropus a la garganta de Olduvai en Tanzania, África oriental. Durante gran parte de su carrera trabajó  con su marido, Louis Leakey, a Olduvai Gorge, donde descubrieron fósiles de hominines antiguas y las primeras hominines, así como las herramientas de piedra  producidas por este último grupo. Mary Leakey desarrolló un sistema para clasificar las herramientas de piedra encontradas a Olduvai. Descubrió las huellas  de Laetoli, y al yacimiento Laetoli descubrió fósiles de hominina que tenían más de 3,75 millones de años.\n"
+            "en": "Mary Douglas Leakey was a British paleoanthropologist who discovered the first fossilised Proconsul skull, an extinct ape which is now believed to be ancestral to  humans. She also discovered the robust Zinjanthropus skull at Olduvai Gorge in Tanzania, eastern Africa. For much of her career she worked with her  husband, Louis Leakey, at Olduvai Gorge, where they uncovered fossils of ancient hominines and the earliest hominins, as well as the stone tools produced  by the latter group. Mary Leakey developed a system for classifying the stone tools found at Olduvai. She discovered the Laetoli footprints, and at the  Laetoli site she discovered hominin fossils that were more than 3.75 million years old.\n",
+            "ca": "Mary Douglas Leakey va ser una paleoantropòlega britànica que va descobrir el primer crani fossilitzat de Proconsul, un simi extint que actualment es creu que és ancestral  als humans.  També va descobrir el sòlid crani de Zinjanthropus a la gorja d'Olduvai a Tanzània, Àfrica oriental.  Durant gran part de la seva carrera  va treballar amb el seu marit, Louis Leakey, a Olduvai Gorge, on van descobrir fòssils d'hominines antigues i les primeres hominines, així com les eines  de pedra produïdes per aquest últim grup.  Mary Leakey va desenvolupar un sistema per classificar les eines de pedra trobades a Olduvai.  Va descobrir les  petjades de Laetoli, i al jaciment Laetoli va descobrir fòssils d'hominina que tenien més de 3,75 milions d'anys.\n",
+            "es": "Mary Douglas Leakey fue una paleoantropóloga británica que descubrió el primer cráneo fosilizado de Proconsul, un simio extinto que actualmente se cree que es ancestral a los  humanos. También descubrió el sólido cráneo de Zinjanthropus a la garganta de Olduvai en Tanzania, África oriental. Durante gran parte de su carrera trabajó  con su marido, Louis Leakey, a Olduvai Gorge, donde descubrieron fósiles de hominines antiguas y las primeras hominines, así como las herramientas de piedra  producidas por este último grupo. Mary Leakey desarrolló un sistema para clasificar las herramientas de piedra encontradas a Olduvai. Descubrió las huellas  de Laetoli, y al yacimiento Laetoli descubrió fósiles de hominina que tenían más de 3,75 millones de años.\n"
         },
         "birthYear": {
             "en": "1913"
@@ -2898,22 +3028,22 @@
         },
         "awards": {
             "en": [
-                "Fellow of the British Academy",
-                "Hubbard Medal",
-                "Prestwich Medal",
-                "Elizabeth Blakwell Award"
+                "Hubbard Medal (1962)",
+                "Prestwich Medal (1969)",
+                "Fellow of the British Academy (1973)",
+                "Elizabeth Blakwell Award (1980)"
             ],
             "es": [
-                "Fellow of the British Academy",
-                "Medalla Hubbard",
-                "Medalla Prestwich",
-                "Premio Elizabeth Blakwell"
+                "Medalla Hubbard (1962)",
+                "Medalla Prestwich (1969)",
+                "Miembro de la Academia Británica (1973)",
+                "Premio Elizabeth Blakwell (1980)"
             ],
             "ca": [
-                "Fellow of the British Academy",
-                "Medalla Hubbard",
-                "Medalla Prestwich",
-                "Premi Elizabeth Blakwell"
+                "Medalla Hubbard (1962)",
+                "Medalla Prestwich (1969)",
+                "Membre de l'Acadèmia Britànica (1973)",
+                "Premi Elizabeth Blakwell (1980)"
             ]
         },
         "achievements": {
@@ -2971,22 +3101,22 @@
         },
         "awards": {
             "en": [
-                "Blumenthal Award",
-                "Satter Prize",
-                "Clay Research Award",
-                "Fields Medal"
+                "Blumenthal Award (2009)",
+                "Satter Prize (2013)",
+                "Clay Research Award (2014)",
+                "Fields Medal (2014)"
             ],
             "es": [
-                "Premio Blumenthal",
-                "Premio Satter",
-                "Premio de investigación Clay",
-                "Medalla Fiels"
+                "Premio Blumenthal (2009)",
+                "Premio Satter (2013)",
+                "Premio de investigación Clay (2014)",
+                "Medalla Fields (2014)"
             ],
             "ca": [
-                "Premi Blumenthal",
-                "Premi Satter",
-                "Premi d'investigació Clay",
-                "Medalla Fiels"
+                "Premi Blumenthal (2009)",
+                "Premi Satter (2013)",
+                "Premi d'investigació Clay (2014)",
+                "Medalla Fields (2014)"
             ]
         },
         "achievements": {
@@ -3048,16 +3178,16 @@
         },
         "awards": {
             "en": [
-                "Louis-Jeantet Prize for Medicine",
-                "Nobel Prize in Physiology or Medicine"
+                "Louis-Jeantet Prize for Medicine (2011)",
+                "Nobel Prize in Physiology or Medicine (2014)"
             ],
             "es": [
-                "Premio Louis-Jeantet de Medicina",
-                "Premio Nobel en Fisiología o Medicina"
+                "Premio Louis-Jeantet de Medicina (2011)",
+                "Premio Nobel en Fisiología o Medicina (2014)"
             ],
             "ca": [
-                "Premi Louis-Jeantet de Medicina",
-                "Premi Nobel en Fisiologia o Medicina"
+                "Premi Louis-Jeantet de Medicina (2011)",
+                "Premi Nobel en Fisiologia o Medicina (2014)"
             ]
         },
         "achievements": {
@@ -3104,9 +3234,9 @@
             "NettieStevens2"
         ],
         "bio": {
-            "en": "Nettie Stevens was an American geneticist who discovered sex chromosomes. In 1905,  soon after the rediscovery of Mendel's paper on genetics in 1900, she  observed that male mealworms produced two kinds of sperm, one with a  large chromosome and one with a small chromosome. When the sperm with the large chromosome fertilized eggs, they produced female offspring, and when the sperm with the small chromosome fertilized eggs, they  produced male offspring. The pair of sex chromosomes that she  studied later became known as the X and Y chromosomes.",
-            "ca": "Nettie Stevens va ser una avançada genetista nord-americana. Ella i Edmund B. Wilson  van ser els primers investigadors a descriure les bases cromosòmiques del sexe. Els resultats de les seues investigacions van marcar el  naixement i posterior desenvolupament de la genètica moderna.",
-            "es": "Nettie Stevens fue una genetista estadounidense de ascendencia inglesa y sueca. Fue  la primera investigadora en describir las bases cromosómicas que  determinan el sexo. Amplió exitosamente los campos de la embriología y la citogenética."
+            "en": "Nettie Maria Stevens was an American geneticist who discovered sex chromosomes. In 1905,  soon after the rediscovery of Mendel's paper on genetics in 1900, she  observed that male mealworms produced two kinds of sperm, one with a  large chromosome and one with a small chromosome. When the sperm with the large chromosome fertilized eggs, they produced female offspring, and when the sperm with the small chromosome fertilized eggs, they  produced male offspring. The pair of sex chromosomes that she  studied later became known as the X and Y chromosomes.",
+            "ca": "Nettie Maria Stevens va ser una avançada genetista nord-americana. Ella i Edmund B. Wilson  van ser els primers investigadors a descriure les bases cromosòmiques del sexe. Els resultats de les seues investigacions van marcar el  naixement i posterior desenvolupament de la genètica moderna.",
+            "es": "Nettie Maria Stevens fue una genetista estadounidense de ascendencia inglesa y sueca. Fue  la primera investigadora en describir las bases cromosómicas que  determinan el sexo. Amplió exitosamente los campos de la embriología y la citogenética."
         },
         "birthYear": {
             "en": "1861"
@@ -3116,13 +3246,13 @@
         },
         "awards": {
             "en": [
-                "Ellen Richards prize"
+                "Ellen Richards prize (1905)"
             ],
             "es": [
-                "Premio Ellen Richards"
+                "Premio Ellen Richards (1905)"
             ],
             "ca": [
-                "Premi Ellen Richards"
+                "Premi Ellen Richards (1905)"
             ]
         },
         "achievements": {
@@ -3181,22 +3311,22 @@
         },
         "awards": {
             "en": [
-                "IEEE Fellow",
-                "Ángela Ruiz Robles Spanish National Computer Science Award",
-                "Winner of European DatSci & AI 2019 Data Scientist of the Year",
-                "XPrize Challenge on Pandemic Response"
+                "IEEE Fellow (2017)",
+                "Ángela Ruiz Robles Spanish National Computer Science Award (2016)",
+                "Winner of European DatSci & AI 2019 Data Scientist of the Year (2019)",
+                "XPrize Challenge on Pandemic Response (2021)"
             ],
             "es": [
-                "IEEE Fellow",
-                "Ángela Ruiz Robles Premio Nacional Español de Informática",
-                "Ganadora del European DatSci & AI 2019 Data Scientist of the Year",
-                "XPrize Challenge on Pandemic Response"
+                "IEEE Fellow (2017)",
+                "Ángela Ruiz Robles Premio Nacional Español de Informática (2016)",
+                "Ganadora del European DatSci & AI 2019 Data Scientist of the Year (2019)",
+                "XPrize Challenge on Pandemic Response (2021)"
             ],
             "ca": [
-                "IEEE Fellow",
-                "Ángela Ruiz Robles Premi Nacional Espanyol d'Informática",
-                "Guanyadora del European DatSci & AI 2019 Data Scientist of the Year",
-                "XPrize Challenge on Pandemic Response"
+                "IEEE Fellow (2017)",
+                "Ángela Ruiz Robles Premi Nacional Espanyol d'Informática (2016)",
+                "Guanyadora del European DatSci & AI 2019 Data Scientist of the Year (2019)",
+                "XPrize Challenge on Pandemic Response (2021)"
             ]
         },
         "achievements": {
@@ -3242,9 +3372,9 @@
             "PatriciaBath1"
         ],
         "bio": {
-            "en": "Patricia Bath was an American ophthalmologist, inventor, humanitarian, and academic. She was the inventor  of laser cataract surgery. Her invention was called Lazerphaco Probe. She also became the first woman member of the Jules Stein Eye Institute, first woman to lead a post-graduate training program in ophthalmology, and first woman elected to the honorary staff of the UCLA Medical Center. Bath was the first African-American person to serve as a resident in ophthalmology at New York University. She was also the first African-American woman to serve on staff as a surgeon at the UCLA Medical Center. Bath was the first African-American woman doctor  to receive a patent for a medical purpose. The holder of five patents,[2] she also founded the non-profit American  Institute for the Prevention of Blindness in Washington, D.C.",
-            "ca": "Patricia Bath va ser una oftalmòloga, inventora i acadèmica estatunidenca. Va obrir camí per a les dones i els afroamericans en un  cert nombre d'àrees. Abans de Bath, cap dona no havia format part del personal del Jules Stein Eye Institute, ni havia  dirigit un programa de formació de post-grau en oftalmologia, o havia estat elegit empleat d'honor del UCLA Medical Center (un honor conferit a ella després de la seva jubilació). Abans de Bath, cap persona negra havia treballat com a resident e n oftalmologia a la Universitat de Nova York i cap dona negra mai havia format part del personal com a cirurgià al Centre  Mèdic UCLA. Bath va ser la primera metgessa afroamericana en rebre una patent per a un propòsit mèdic. Va ser titular de  quatre patents en total, i va fundar l'American Institute for the Prevention of Blindness (Institut Americà per a la Prevenció  de la Ceguesa) a Washington, DC.",
-            "es": "Patricia Bath fue una oftalmóloga, inventora y académica estadounidense. Abrió camino para las mujeres y los afroamericanos en cierto número  de áreas. Antes de Bath, ninguna mujer había formado parte del personal de Jules Stein Eye Institute, ni había dirigido un programa de formación de post-grado en oftalmología, o había sido elegido empleada de honor del UCLA Medical Center (un honor  conferido a ella desprendido de su jubilación). Antes de Bath, ninguna persona negra había trabajado como residente en oftalmología  en la Universidad de Nueva York y ninguna mujer negra nunca había formado parte del personal como cirujano en el Centro Médico UCLA.  Bath fue la primera médica afroamericana al recibir una patente para un propósito médico. Fue titular de cuatro patentes en total, y  fundó el American Institute for the Prevention of Blindness (Instituto Americano para la Prevención de la Ceguera) en Washington, DC."
+            "en": "Patricia Era Bath was an American ophthalmologist, inventor, humanitarian, and academic. She was the inventor  of laser cataract surgery. Her invention was called Lazerphaco Probe. She also became the first woman member of the Jules Stein Eye Institute, first woman to lead a post-graduate training program in ophthalmology, and first woman elected to the honorary staff of the UCLA Medical Center. Bath was the first African-American person to serve as a resident in ophthalmology at New York University. She was also the first African-American woman to serve on staff as a surgeon at the UCLA Medical Center. Bath was the first African-American woman doctor  to receive a patent for a medical purpose. The holder of five patents,[2] she also founded the non-profit American  Institute for the Prevention of Blindness in Washington, D.C.",
+            "ca": "Patricia Era Bath va ser una oftalmòloga, inventora i acadèmica estatunidenca. Va obrir camí per a les dones i els afroamericans en un  cert nombre d'àrees. Abans de Bath, cap dona no havia format part del personal del Jules Stein Eye Institute, ni havia  dirigit un programa de formació de post-grau en oftalmologia, o havia estat elegit empleat d'honor del UCLA Medical Center (un honor conferit a ella després de la seva jubilació). Abans de Bath, cap persona negra havia treballat com a resident e n oftalmologia a la Universitat de Nova York i cap dona negra mai havia format part del personal com a cirurgià al Centre  Mèdic UCLA. Bath va ser la primera metgessa afroamericana en rebre una patent per a un propòsit mèdic. Va ser titular de  quatre patents en total, i va fundar l'American Institute for the Prevention of Blindness (Institut Americà per a la Prevenció  de la Ceguesa) a Washington, DC.",
+            "es": "Patricia Era Bath fue una oftalmóloga, inventora y académica estadounidense. Abrió camino para las mujeres y los afroamericanos en cierto número  de áreas. Antes de Bath, ninguna mujer había formado parte del personal de Jules Stein Eye Institute, ni había dirigido un programa de formación de post-grado en oftalmología, o había sido elegido empleada de honor del UCLA Medical Center (un honor  conferido a ella desprendido de su jubilación). Antes de Bath, ninguna persona negra había trabajado como residente en oftalmología  en la Universidad de Nueva York y ninguna mujer negra nunca había formado parte del personal como cirujano en el Centro Médico UCLA.  Bath fue la primera médica afroamericana al recibir una patente para un propósito médico. Fue titular de cuatro patentes en total, y  fundó el American Institute for the Prevention of Blindness (Instituto Americano para la Prevención de la Ceguera) en Washington, DC."
         },
         "birthYear": {
             "en": "1942"
@@ -3254,27 +3384,27 @@
         },
         "awards": {
             "en": [
-                "Tubman's Sheila Award",
-                "Silver Innovation Award from Alliance for Aging research"
+                "Tubman's Sheila Award (2006)",
+                "Silver Innovation Award from Alliance for Aging research (2018)"
             ],
             "es": [
-                "Premio Sheila Tubman",
-                "Medalla de plata a la innovación de la investigación \"Alliance for Aging\""
+                "Premio Sheila Tubman (2006)",
+                "Medalla de plata a la innovación de la investigación \"Alliance for Aging\" (2018)"
             ],
             "ca": [
-                "Premi Sheila Tubman",
-                "Medalla de plata a la innovació de la investigació \"Alliance for Aging\""
+                "Premi Sheila Tubman (2006)",
+                "Medalla de plata a la innovació de la investigació \"Alliance for Aging\" (2018)"
             ]
         },
         "achievements": {
             "en": [
-                "Invention of Laserphaco Probe"
+                "Invention of Laserphaco Probe, a medical device that improves on the use of lasers to remove cataracts"
             ],
             "es": [
-                "Invención sonda Laserphaco"
+                "Invención sonda Laserphaco, un dispositivo médico que mejora el uso del láser para eliminar cataratas"
             ],
             "ca": [
-                "Invenció sonda Laserphaco"
+                "Invenció sonda Laserphaco, un dispositiu mèdic que millora l'ús del làser per a eliminar catarates"
             ]
         },
         "fields": {
@@ -3309,9 +3439,9 @@
             "RachelCarson1"
         ],
         "bio": {
-            "en": "Rachel Carson was an American marine biologist, author, and conservationist whose book Silent Spring and other writings are credited with advancing the global environmental movement.",
-            "ca": "Rachel Carson va ser una biòloga marina i ecòloga estatunidenca, els escrits de la  qual van ser precursors del moviment ecologista.",
-            "es": "Rachel Carson fue una bióloga marina y conservacionista estadounidense que, a través de la publicación de Primavera silenciosa en 1962 y otros escritos,  contribuyó a la puesta en marcha de la moderna conciencia ambiental."
+            "en": "Rachel Louise Carson was an American marine biologist, author, and conservationist whose book Silent Spring and other writings are credited with advancing the global environmental movement.",
+            "ca": "Rachel Louise Carson va ser una biòloga marina i ecòloga estatunidenca, els escrits de la  qual van ser precursors del moviment ecologista.",
+            "es": "Rachel Louise Carson fue una bióloga marina y conservacionista estadounidense que, a través de la publicación de Primavera silenciosa en 1962 y otros escritos,  contribuyó a la puesta en marcha de la moderna conciencia ambiental."
         },
         "birthYear": {
             "en": "1907"
@@ -3320,9 +3450,15 @@
             "en": "1964"
         },
         "awards": {
-            "en": [],
-            "es": [],
-            "ca": []
+            "en": [
+                "Presidential Medal of Freedom (posthumous, 1980)"
+            ],
+            "es": [
+                "Medalla Presidencial de la Libertad (póstuma, 1980)"
+            ],
+            "ca": [
+                "Medalla Presidencial de la Llibertat (pòstuma, 1980)"
+            ]
         },
         "achievements": {
             "en": [
@@ -3383,18 +3519,36 @@
         },
         "awards": {
             "en": [
-                "Nobel Prize in Physiology or Medicine"
+                "EMBO Membership (1974)",
+                "Louisa Gross Horwitz Prize (1983)",
+                "Lasker Award (1986)",
+                "Nobel Prize in Physiology or Medicine (1986)",
+                "National Medal of Science (1987)",
+                "Fellow of the Royal Society (1995)",
+                "Honorary degree in biotechnology at University of Milano-Bicocca (2008)"
             ],
             "es": [
-                "Premio Nobel de Fisiología o Medicina"
+                "Membresía del EMBO (1974)",
+                "Premio Louisa Gross Horwitz (1983)",
+                "Premio Lasker (1986)",
+                "Premio Nobel de Fisiología o Medicina (1986)",
+                "Medalla Nacional de la Ciencia (1987)",
+                "Miembro de la Royal Society (1995)",
+                "Grado honorífico en biotecnología en la Universidad de Milán-Bicocca (2008)"
             ],
             "ca": [
-                "Premi Nobel de Fisiologia o Medicina"
+                "Membre de l'EMBO (1974)",
+                "Premi Louisa Gross Horwitz (1983)",
+                "Premi Lasker (1986)",
+                "Premi Nobel de Fisiologia o Medicina (1986)",
+                "Medalla Nacional de la Ciència (1987)",
+                "Membre de la Royal Society (1995)",
+                "Grau honorari en biotecnologia en la Universitat de Milà-Bicocca (2008)"
             ]
         },
         "achievements": {
             "en": [
-                "He discovered the first known growth factor in the nervous system."
+                "She discovered the first known growth factor in the nervous system."
             ],
             "es": [
                 "Descubrió el primer factor de crecimiento conocido en el sistema nervioso."
@@ -3436,9 +3590,9 @@
             "RosalindFranklin2"
         ],
         "bio": {
-            "en": "Her work with X-ray diffraction images was key in revealing the structure of carbons and graphite, as well as RNA and various viruses, although the greatest significance was his contribution to understanding the structure of DNA, thanks to the image called Photograph 51, which had a profound impact on scientific advances in genetics. Her research on the structure of carbon and viruses was recognized in life.\nHer contributions to the discovery of the structure of DNA were largely recognised posthumously.\n",
-            "ca": "Els seus treballs amb imatges per difracció de raigs X, van ser clau per a revelar l'estructura dels carbons i el grafit, així com de l'ARN i diversos virus, encara que la major transcendència la va tindre la seua aportació per a la comprensió de l'estructura de l'ADN, gràcies a la imatge anomenada Fotografia 51, que va tindre un profund impacte en els avanços científics de la genètica. Les seues investigacions sobre l'estructura del carbó i dels virus van ser reconeguts en vida.\nLes seues contribucions al descobriment de l'estructura de l'ADN van ser reconegudes pòstumament.      \n",
-            "es": "Sus trabajos con imágenes por difracción de rayos X, fueron clave para revelar la estructura de los carbones y el grafito,1 así como del ARN y varios virus, aunque la mayor trascendencia la tuvo su aporte para la comprensión de la estructura del ADN, gracias a la imagen llamada Fotografía 51, que tuvo un profundo impacto en los avances científicos de la genética. Sus investigaciones sobre la estructura del carbón y de los virus fueron reconocidos en vida.\\nSus contribuciones al descubrimiento de la estructura del ADN fueron reconocidas póstumamente.\n"
+            "en": "The work of Rosalind Elsie Franklin with X-ray diffraction images was key in revealing the structure of carbons and graphite, as well as RNA and various viruses, although the greatest significance was his contribution to understanding the structure of DNA, thanks to the image called Photograph 51, which had a profound impact on scientific advances in genetics. Her research on the structure of carbon and viruses was recognized in life.\nHer contributions to the discovery of the structure of DNA were largely recognised posthumously.\n",
+            "ca": "Els treballs de Rosalind Elsie Franklin amb imatges per difracció de raigs X, van ser clau per a revelar l'estructura dels carbons i el grafit, així com de l'ARN i diversos virus, encara que la major transcendència la va tindre la seua aportació per a la comprensió de l'estructura de l'ADN, gràcies a la imatge anomenada Fotografia 51, que va tindre un profund impacte en els avanços científics de la genètica. Les seues investigacions sobre l'estructura del carbó i dels virus van ser reconeguts en vida.\nLes seues contribucions al descobriment de l'estructura de l'ADN van ser reconegudes pòstumament.      \n",
+            "es": "Los trabajos de Rosalind Elsie Franklin con imágenes por difracción de rayos X, fueron clave para revelar la estructura de los carbones y el grafito,1 así como del ARN y varios virus, aunque la mayor trascendencia la tuvo su aporte para la comprensión de la estructura del ADN, gracias a la imagen llamada Fotografía 51, que tuvo un profundo impacto en los avances científicos de la genética. Sus investigaciones sobre la estructura del carbón y de los virus fueron reconocidos en vida.\\nSus contribuciones al descubrimiento de la estructura del ADN fueron reconocidas póstumamente.\n"
         },
         "birthYear": {
             "en": "1920"
@@ -3448,13 +3602,13 @@
         },
         "awards": {
             "en": [
-                "Louisa Gross Horwitz Prize"
+                "Louisa Gross Horwitz Prize (posthumous, 2008)"
             ],
             "es": [
-                "Premio Louisa Gross Horwitz"
+                "Premio Louisa Gross Horwitz (póstumo, 2008)"
             ],
             "ca": [
-                "Premi Louisa Gross Horwitz"
+                "Premi Louisa Gross Horwitz (pòstum, 2008)"
             ]
         },
         "achievements": {
@@ -3516,22 +3670,22 @@
         },
         "awards": {
             "en": [
-                "Dickson Prize",
-                "AMA Scientific Achievement Award",
-                "Albert Lasker Award for Basic Medical Research",
-                "Nobel Prize in Physiology or Medicine"
+                "Dickson Prize (1972)",
+                "AMA Scientific Achievement Award (1975)",
+                "Albert Lasker Award for Basic Medical Research (1976)",
+                "Nobel Prize in Physiology or Medicine (1977)"
             ],
             "es": [
-                "Premio Dickson",
-                "Premio al logro científico de la AMA",
-                "Premio Albert Lasker de Investigación Médica Básica",
-                "Premio Nobel de Fisiología o Medicina"
+                "Premio Dickson (1972)",
+                "Premio al logro científico de la AMA (1975)",
+                "Premio Albert Lasker de Investigación Médica Básica (1976)",
+                "Premio Nobel de Fisiología o Medicina (1977)"
             ],
             "ca": [
-                "Premi Dickson",
-                "Premi a l'assoliment científic de l'AMA",
-                "Premi Albert Lasker d'Investigació Mèdica Bàsica",
-                "Premi Nobel de Fisiologia o Medicina"
+                "Premi Dickson (1972)",
+                "Premi a l'assoliment científic de l'AMA (1975)",
+                "Premi Albert Lasker d'Investigació Mèdica Bàsica (1976)",
+                "Premi Nobel de Fisiologia o Medicina (1977)"
             ]
         },
         "achievements": {
@@ -3578,9 +3732,9 @@
             "StephanieKwolek2"
         ],
         "bio": {
-            "en": "She discovered the first of a family of synthetic fibers of exceptional strength and stiffness: poly-paraphenylene terephthalamide, known as Kevlar®, a high-strength yellow fiber, which can be up to five times stronger than steel and is currently used in the manufacture of bullet-proof vests. Received its patent in 1971\n",
-            "ca": "Va descobrir la primera d'una família de fibres sintètiques d'excepcional resistència i rigidesa poliparafenileno tereftalamida conegut com Kevlar®, una fibra d'alta resistència de color groc, que pot ser fins a cinc vegades més resistent que l'acer i que en l'actualitat és utilitzada en l'elaboració d’armilles antibales\n",
-            "es": "Descubrió la primera de una familia de fibras sintéticas de excepcional resistencia y rigidez poliparafenileno tereftalamida conocido como Kevlar®, una fibra de alta resistencia de color amarillo, que puede ser hasta cinco veces más resistente que el acero y que en la actualidad es utilizada en la elaboración de chalecos antibalas\n"
+            "en": "Stephanie Louise Kwolek discovered the first of a family of synthetic fibers of exceptional strength and stiffness: poly-paraphenylene terephthalamide, known as Kevlar®, a high-strength yellow fiber, which can be up to five times stronger than steel and is currently used in the manufacture of bullet-proof vests. Received its patent in 1971\n",
+            "ca": "Stephanie Louise Kwolek va descobrir la primera d'una família de fibres sintètiques d'excepcional resistència i rigidesa poliparafenileno tereftalamida conegut com Kevlar®, una fibra d'alta resistència de color groc, que pot ser fins a cinc vegades més resistent que l'acer i que en l'actualitat és utilitzada en l'elaboració d’armilles antibales\n",
+            "es": "Stephanie Louise Kwolek descubrió la primera de una familia de fibras sintéticas de excepcional resistencia y rigidez poliparafenileno tereftalamida conocido como Kevlar®, una fibra de alta resistencia de color amarillo, que puede ser hasta cinco veces más resistente que el acero y que en la actualidad es utilizada en la elaboración de chalecos antibalas\n"
         },
         "birthYear": {
             "en": "1923"
@@ -3591,15 +3745,15 @@
         "awards": {
             "en": [
                 "American Innovator Award",
-                "National Medal of Technology"
+                "National Medal of Technology (1996)"
             ],
             "es": [
                 "American Innovator Award",
-                "National Medal of Technology"
+                "National Medal of Technology (1996)"
             ],
             "ca": [
                 "American Innovator Award",
-                "National Medal of Technology"
+                "National Medal of Technology (1996)"
             ]
         },
         "achievements": {
@@ -3646,9 +3800,9 @@
             "SylviaEarle2"
         ],
         "bio": {
-            "en": "She is an American marine biologist, explorer, author, and lecturer. She has been a National Geographic explorer-in-residence since 1998. Earle was the first  female chief scientist of the U.S. National Oceanic and Atmospheric Administration, and was named by Time Magazine as its first Hero for the Planet in  1998. She is also part of the group Ocean Elders, which is dedicated to protecting the ocean and its wildlife.\n",
-            "ca": "És biòloga marina, exploradora, autora i professora. Ha estat exploradora resident de National Geographic des de 1998. Earle va ser la primera científica cap de l'Administració Oceànica i Atmosfèrica Nacional dels Estats Units, i va ser nomenada per la revista Time com la seua primera heroïna per al planeta, l'any 1998. També forma part del grup Ocean Elders, que està dedicat a protegir l'oceà i la seva vida silvestre.\n",
-            "es": "Es bióloga marina, exploradora, autora y profesora. Ha sido exploradora residente de National Geographic desde 1998. Earle fue la primera científica directora de la Administración Oceánica y Atmosférica Nacional de los Estados Unidos, y fue nombrada por la revista Time como la suya primera heroína para el planeta, en 1998. También forma parte del grupo Ocean Elders, que está dedicado a proteger el océano y su vida silvestre.\n"
+            "en": "Sylvia Alice Earle is an American marine biologist, explorer, author, and lecturer. She has been a National Geographic explorer-in-residence since 1998. Earle was the first  female chief scientist of the U.S. National Oceanic and Atmospheric Administration, and was named by Time Magazine as its first Hero for the Planet in  1998. She is also part of the group Ocean Elders, which is dedicated to protecting the ocean and its wildlife.\n",
+            "ca": "Sylvia Alice Earle és biòloga marina, exploradora, autora i professora. Ha estat exploradora resident de National Geographic des de 1998. Earle va ser la primera científica cap de l'Administració Oceànica i Atmosfèrica Nacional dels Estats Units, i va ser nomenada per la revista Time com la seua primera heroïna per al planeta, l'any 1998. També forma part del grup Ocean Elders, que està dedicat a protegir l'oceà i la seva vida silvestre.\n",
+            "es": "Sylvia Alice Earle es bióloga marina, exploradora, autora y profesora. Ha sido exploradora residente de National Geographic desde 1998. Earle fue la primera científica directora de la Administración Oceánica y Atmosférica Nacional de los Estados Unidos, y fue nombrada por la revista Time como la suya primera heroína para el planeta, en 1998. También forma parte del grupo Ocean Elders, que está dedicado a proteger el océano y su vida silvestre.\n"
         },
         "birthYear": {
             "en": "1935"
@@ -3658,19 +3812,19 @@
         },
         "awards": {
             "en": [
-                "TED Prize",
-                "National Women's Hall of Fame",
-                "Princess of Asturias Awards"
+                "TED Prize (2009)",
+                "National Women's Hall of Fame (2018)",
+                "Princess of Asturias Awards (2018)"
             ],
             "es": [
-                "Premio TED",
-                "National Women's Hall of Fame",
-                "Premio pricesa de Asturias"
+                "Premio TED (2009)",
+                "National Women's Hall of Fame (2018)",
+                "Premio pricesa de Asturias (2018)"
             ],
             "ca": [
-                "Premi TED",
-                "National Women's Hall of Fame",
-                "Premi princessa d'Asturies"
+                "Premi TED (2009)",
+                "National Women's Hall of Fame (2018)",
+                "Premi princessa d'Asturies (2018)"
             ]
         },
         "achievements": {
@@ -3717,9 +3871,9 @@
             "ValerieThomas2"
         ],
         "bio": {
-            "en": "She is an American scientist and inventor. She invented the illusion transmitter, for which she received a patent in 1980. She was responsible for developing  the digital media formats image processing systems used in the early years of the Landsat program.\n",
-            "ca": "és una científica americana i inventora. Va inventar el \"Illusion Transmitter\", pel qual va rebre una patent l'any 1980. Valerie també va assistir a una  escola femenina, on no la van animar a seguir cap curs de matemàtiques o ciències.\n",
-            "es": "es una científica e inventora estadounidense. Inventó el transmisor de ilusión, por el que recibió una patente en 1980.1​ Fue responsable del desarrollo de los  sistemas de procesamiento de imágenes de formatos de medios digitales utilizados en los primeros años del programa Landsat.\n"
+            "en": "Valerie L. Thomas is an American scientist and inventor. She invented the illusion transmitter, for which she received a patent in 1980. She was responsible for developing  the digital media formats image processing systems used in the early years of the Landsat program.\n",
+            "ca": "Valerie L. Thomas és una científica americana i inventora. Va inventar el \"Illusion Transmitter\", pel qual va rebre una patent l'any 1980. Valerie també va assistir a una  escola femenina, on no la van animar a seguir cap curs de matemàtiques o ciències.\n",
+            "es": "Valerie L. Thomas es una científica e inventora estadounidense. Inventó el transmisor de ilusión, por el que recibió una patente en 1980.1​ Fue responsable del desarrollo de los  sistemas de procesamiento de imágenes de formatos de medios digitales utilizados en los primeros años del programa Landsat.\n"
         },
         "birthYear": {
             "en": "1943"
@@ -3728,9 +3882,15 @@
             "en": ""
         },
         "awards": {
-            "en": [],
-            "es": [],
-            "ca": []
+            "en": [
+                "Goddard Space Flight Center Award of Merit"
+            ],
+            "es": [
+                "Premio al Mérito del Centro de Vuelo Espacial Goddard"
+            ],
+            "ca": [
+                "Premi al Mèrit del Centre de Vol Espacial Goddard"
+            ]
         },
         "achievements": {
             "en": [
@@ -3780,9 +3940,9 @@
             "VirginiaApgar3"
         ],
         "bio": {
-            "en": "She was an American doctor who specialized in anesthesia applied to obstetrics and pediatrics. Known as the inventor of the Apgar Score, a way to quickly assess the health of a newborn child immediately after birth in order to combat infant mortality. She was a leader in the fields of anesthesiology and teratology, and introduced obstetrical considerations to the established field of neonatology\n",
-            "ca": "Va ser una metgessa estatunidenca que es va especialitzar en anestèsia aplicada a l'obstetrícia i pediatria. És coneguda per haver ideat el test d'Apgar, una prova per avaluar de manera senzilla i ràpida la salut dels nounats immediatament després del part i prevenir així la mortalitat neonatal. Fou líder en el camp de l'anestesiologia i la teratologia, i va introduir consideracions obstètriques al camp de la neonatologia\n",
-            "es": "Fue una médica estadounidense que se especializó en anestesia aplicada a la obstetricia y pediatría. Es conocida por haber ideado el test de Apgar, una prueba para evaluar de manera sencilla y rápida la salud de los neonatos inmediatamente después del parto y prevenir así la mortalidad neonatal. Fue líder en el campo de la anestesiología y la teratología, e introdujo consideraciones obstétricas en el campo de la neonatología\n"
+            "en": "Virginia Apgar was an American doctor who specialized in anesthesia applied to obstetrics and pediatrics. Known as the inventor of the Apgar Score, a way to quickly assess the health of a newborn child immediately after birth in order to combat infant mortality. She was a leader in the fields of anesthesiology and teratology, and introduced obstetrical considerations to the established field of neonatology\n",
+            "ca": "Virginia Apgar va ser una metgessa estatunidenca que es va especialitzar en anestèsia aplicada a l'obstetrícia i pediatria. És coneguda per haver ideat el test d'Apgar, una prova per avaluar de manera senzilla i ràpida la salut dels nounats immediatament després del part i prevenir així la mortalitat neonatal. Fou líder en el camp de l'anestesiologia i la teratologia, i va introduir consideracions obstètriques al camp de la neonatologia\n",
+            "es": "Virginia Apgar fue una médica estadounidense que se especializó en anestesia aplicada a la obstetricia y pediatría. Es conocida por haber ideado el test de Apgar, una prueba para evaluar de manera sencilla y rápida la salud de los neonatos inmediatamente después del parto y prevenir así la mortalidad neonatal. Fue líder en el campo de la anestesiología y la teratología, e introdujo consideraciones obstétricas en el campo de la neonatología\n"
         },
         "birthYear": {
             "en": "1909"
@@ -3792,16 +3952,16 @@
         },
         "awards": {
             "en": [
-                "Elizabeth Blackwell Award, from the American Women's Medical Association",
-                "Ralph M. Waters Award, American Society of Anesthesiologists"
+                "Elizabeth Blackwell Award, from the American Women's Medical Association (1966)",
+                "Ralph M. Waters Award, American Society of Anesthesiologists (1966)"
             ],
             "es": [
-                "Premio Elizabeth Blackwell de la Asociación Médica de las Mujeres de Norteamérica",
-                "Premio Ralph M. Waters de la Sociedad Norteamericana de Anestesiólogos"
+                "Premio Elizabeth Blackwell de la Asociación Médica de las Mujeres de Norteamérica (1966)",
+                "Premio Ralph M. Waters de la Sociedad Norteamericana de Anestesiólogos (1966)"
             ],
             "ca": [
-                "Premi Elizabeth Blackwell, de l'Associació Mèdica Americana de Dones",
-                "Premi Ralph M. Waters, Societat Americana d'Anestesiòlegs"
+                "Premi Elizabeth Blackwell, de l'Associació Mèdica Americana de Dones (1966)",
+                "Premi Ralph M. Waters, Societat Americana d'Anestesiòlegs (1966)"
             ]
         },
         "achievements": {
@@ -3847,9 +4007,9 @@
             "ZahaHadid1"
         ],
         "bio": {
-            "en": "was a British Iraqi architect, artist and designer, recognised as a major figure in architecture of the late 20th and early 21st centuries. Born in  Baghdad, Iraq, Hadid studied mathematics as an undergraduate and then enrolled at the Architectural Association School of Architecture in 1972. In search  of an alternative system to traditional architectural drawing, and influenced by Suprematism and the Russian avant-garde, Hadid adopted painting as a design  tool and abstraction as an investigative principle to \"reinvestigate the aborted and untested experiments of Modernism [...] to unveil new fields of building.\n",
-            "ca": "Va ser arquitecta, artista i dissenyadora iraquiana britànica, reconeguda com una figura important en l'arquitectura de finals del segle XX i principis del XXI. Nascuda a   Bagdad, Iraq, Hadid va estudiar matemàtiques com a estudiant i després es va matricular a l'Escola d'Arquitectura de l'Associació Arquitectònica el 1972. A la cerca   d'un sistema alternatiu al dibuix arquitectònic tradicional, i influenciada pel suprematisme i l'avantguarda russa, Hadid va adoptar la pintura com a disseny.   L'eina i l'abstracció com a principi d'investigació per \"reinvertir els experiments avortats i no provats del modernisme  [...] per revelar nous camps de construcció.\n",
-            "es": "Fue arquitecta, artista y diseñadora iraquí británica, reconocida como una figura importante en la arquitectura de finales del siglo XX y principios del XXI. Nacida en Bagdad, Irak, Hadid estudió matemáticas como estudiante y después se matriculó en la Escuela de Arquitectura de la Asociación Arquitectónica el 1972. En la busca  de un sistema alternativo al dibujo arquitectónico tradicional, e influenciada por el suprematismo y la vanguardia rusa, Hadid adoptó la pintura como diseño. La  herramienta y la abstracción como principio de investigación para \"reinvertir los experimentos abortados y no probados del modernismo [...]para revelar nuevos campos  de construcción.\n"
+            "en": "Zaha Mohammad Hadid was a British Iraqi architect, artist and designer, recognised as a major figure in architecture of the late 20th and early 21st centuries. Born in  Baghdad, Iraq, Hadid studied mathematics as an undergraduate and then enrolled at the Architectural Association School of Architecture in 1972. In search  of an alternative system to traditional architectural drawing, and influenced by Suprematism and the Russian avant-garde, Hadid adopted painting as a design  tool and abstraction as an investigative principle to \"reinvestigate the aborted and untested experiments of Modernism [...] to unveil new fields of building.\n",
+            "ca": "Zaha Mohammad Hadid va ser arquitecta, artista i dissenyadora iraquiana britànica, reconeguda com una figura important en l'arquitectura de finals del segle XX i principis del XXI. Nascuda a   Bagdad, Iraq, Hadid va estudiar matemàtiques com a estudiant i després es va matricular a l'Escola d'Arquitectura de l'Associació Arquitectònica el 1972. A la cerca   d'un sistema alternatiu al dibuix arquitectònic tradicional, i influenciada pel suprematisme i l'avantguarda russa, Hadid va adoptar la pintura com a disseny.   L'eina i l'abstracció com a principi d'investigació per \"reinvertir els experiments avortats i no provats del modernisme  [...] per revelar nous camps de construcció.\n",
+            "es": "Zaha Mohammad Hadid fue arquitecta, artista y diseñadora iraquí británica, reconocida como una figura importante en la arquitectura de finales del siglo XX y principios del XXI. Nacida en Bagdad, Irak, Hadid estudió matemáticas como estudiante y después se matriculó en la Escuela de Arquitectura de la Asociación Arquitectónica el 1972. En la busca  de un sistema alternativo al dibujo arquitectónico tradicional, e influenciada por el suprematismo y la vanguardia rusa, Hadid adoptó la pintura como diseño. La  herramienta y la abstracción como principio de investigación para \"reinvertir los experimentos abortados y no probados del modernismo [...]para revelar nuevos campos  de construcción.\n"
         },
         "birthYear": {
             "en": "1950"
@@ -3859,25 +4019,25 @@
         },
         "awards": {
             "en": [
-                "Pritzker Architecture Prize",
-                "Stirling Prize",
-                "Praemium Imperiale",
-                "Mies van der Rohe",
-                "Royal Gold Medal from the Royal Institute of British Architects"
+                "Mies van der Rohe Award (2003)",
+                "Pritzker Architecture Prize (2004)",
+                "Praemium Imperiale (2009)",
+                "Stirling Prize (2010, 2011)",
+                "Royal Gold Medal from the Royal Institute of British Architects (2016)"
             ],
             "es": [
-                "Premio Pritzker Architecture",
-                "Premio Stirling",
-                "Praemium Imperiale",
-                "Mies van der Rohe",
-                "Real Medalla de oro del Royal Institute of British Architects"
+                "Premio Mies van der Rohe (2003)",
+                "Premio de Arquitectura Pritzker (2004)",
+                "Praemium Imperiale (2009)",
+                "Premio Stirling (2010, 2011)",
+                "Medala Real de Oro del Royal Institute of British Architects (2016)"
             ],
             "ca": [
-                "Premi Pritzker Architecture",
-                "Premi Stirling",
-                "Praemium Imperiale",
-                "Mies van der Rohe",
-                "Reial Medalla d'or del Royal Institute of British Architects"
+                "Premi Mies van der Rohe (2003)",
+                "Premi de Arquitectura Pritzker (2004)",
+                "Praemium Imperiale (2009)",
+                "Premi Stirling (2010, 2011)",
+                "Medala Real d'Or del Royal Institute of British Architects (2016)"
             ]
         },
         "achievements": {
@@ -3926,9 +4086,9 @@
             "AngelaRuizRobles1"
         ],
         "bio": {
-            "en": "Ángela Ruíz was a Spanish teacher, writer, pioneer and inventor of the mechanical precursor to the electronic book. In 1949, Ruiz was awarded Spanish  patent 190,698 for the \"Mechanical Encyclopedia\". Ruiz Robles wanted to lighten the weight of the books carried by her students, so she devised  a device consisting of a series of text and illustrations on reels, all under a sheet of magnifying glass with a light for reading in the dark, and was to incorporate spoken descriptions of each topic. Her device was never put into production but a prototype is in display at the National Museum of  Science and Technology in A Coruña.",
-            "ca": "Ángela Ruíz va ser professora, escriptora, pionera i inventora del precursor mecànic del llibre electrònic. El 1949, Ruiz va ser guardonat amb la patent espanyola 190.698 per  l'\"Enciclopèdia Mecànica\". Ruiz Robles volia alleugerir el pes dels llibres que portaven els seus estudiants, per la qual cosa va idear un dispositiu que consistia  en una sèrie de text i il·lustracions en reels, tot sota una lupa de vidre amb llum per llegir en la foscor, i que incorporaria descripcions parlades de cada  tema. El seu dispositiu mai va ser posat en producció, però un prototip està exposat al Museu Nacional de Ciència i Tecnologia de la Corunya.",
-            "es": "Ángela Ruíz fue profesora, escritora, pionera e inventora del precursor mecánico del libro electrónico. El 1949, Ruiz fue galardonado con la patente española 190.698 por  la \"Enciclopedia Mecánica\". Ruiz Robles quería aligerar el peso de los libros que llevaban sus estudiantes, por lo cual ideó un dispositivo que consistía en una  serie de texto e ilustraciones en reels, todo bajo una lupa de vidrio con luz para leer en la oscuridad, y que incorporaría descripciones habladas de cada  tema. Su dispositivo nunca fue puesto en producción, pero un prototipo está expuesto al Museo Nacional de Ciencia y Tecnología de la Coruña."
+            "en": "Ángela Ruíz Robles was a Spanish teacher, writer, pioneer and inventor of the mechanical precursor to the electronic book. In 1949, Ruiz was awarded Spanish  patent 190,698 for the \"Mechanical Encyclopedia\". Ruiz Robles wanted to lighten the weight of the books carried by her students, so she devised  a device consisting of a series of text and illustrations on reels, all under a sheet of magnifying glass with a light for reading in the dark, and was to incorporate spoken descriptions of each topic. Her device was never put into production but a prototype is in display at the National Museum of  Science and Technology in A Coruña.",
+            "ca": "Ángela Ruíz Robles va ser professora, escriptora, pionera i inventora del precursor mecànic del llibre electrònic. El 1949, Ruiz va ser guardonat amb la patent espanyola 190.698 per  l'\"Enciclopèdia Mecànica\". Ruiz Robles volia alleugerir el pes dels llibres que portaven els seus estudiants, per la qual cosa va idear un dispositiu que consistia  en una sèrie de text i il·lustracions en reels, tot sota una lupa de vidre amb llum per llegir en la foscor, i que incorporaria descripcions parlades de cada  tema. El seu dispositiu mai va ser posat en producció, però un prototip està exposat al Museu Nacional de Ciència i Tecnologia de la Corunya.",
+            "es": "Ángela Ruíz Robles fue profesora, escritora, pionera e inventora del precursor mecánico del libro electrónico. El 1949, Ruiz fue galardonado con la patente española 190.698 por  la \"Enciclopedia Mecánica\". Ruiz Robles quería aligerar el peso de los libros que llevaban sus estudiantes, por lo cual ideó un dispositivo que consistía en una  serie de texto e ilustraciones en reels, todo bajo una lupa de vidrio con luz para leer en la oscuridad, y que incorporaría descripciones habladas de cada  tema. Su dispositivo nunca fue puesto en producción, pero un prototipo está expuesto al Museo Nacional de Ciencia y Tecnología de la Coruña."
         },
         "birthYear": {
             "en": "1895"
@@ -3938,13 +4098,13 @@
         },
         "awards": {
             "en": [
-                "Orden de Alfonso X el Sabio"
+                "Orden de Alfonso X el Sabio (1947)"
             ],
             "es": [
-                "Orden de Alfonso X el Sabio"
+                "Orden de Alfonso X el Sabio (1947)"
             ],
             "ca": [
-                "Ordre d'Alfons X el Savi"
+                "Ordre d'Alfons X el Savi (1947)"
             ]
         },
         "achievements": {
