@@ -123,10 +123,14 @@ struct SocialView: View {
                                             .font(.largeTitle)
                                         if profile.friendRequests.count == 0 { //TODO: Actualizar la lista de peticiones al entrar en la pantalla.
                                             Text("You have no friend requests.")
+                                        } else if profile.friendRequests.count == 1 {
+                                            Text("You have 1 friend request")
                                         } else {
-                                            Text("You have \(profile.friendRequests.count) friend request\(profile.friendRequests.count == 1 ? "" : "s")")
-                                        }
-                                    }
+                                            Text(
+                                                String.localizedStringWithFormat(NSLocalizedString("You have %@ friend requests", comment: ""), profile.friendRequests.count)
+                                            )
+                                            
+                                        }                                    }
                                 }
                             }
                             Spacer()

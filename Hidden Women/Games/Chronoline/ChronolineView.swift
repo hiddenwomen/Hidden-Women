@@ -45,6 +45,9 @@ struct ChronolineView: View {
     let numberOfChronolines: Int
     @State var chronoline: Chronoline
     @State var dragging: Int? = nil
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    @Binding var timeLeft: Int
+    @Binding var showTimer: Bool
     
     func sortCards(dontMoveThis: Int?, height: CGFloat) {
         let sorted = chronoline.cards.sorted(by: {$0.pos.y < $1.pos.y} )
@@ -107,29 +110,25 @@ struct ChronolineView: View {
                         Text(chronoline.sortedYears[i])
                             .position(x: 0.9 * geo.size.width,
                                       y: chronolineBase * geo.size.height +
-                                          chronolineScreenPercentage * geo.size.height / CGFloat(chronoline.cards.count) * CGFloat(i))
+                                        chronolineScreenPercentage * geo.size.height / CGFloat(chronoline.cards.count) * CGFloat(i))
                     }
                 }
                 Spacer()
+                
                 Button(action: {
                     progress += 1.0 / Float(numberOfChronolines)
-                    var isSorted = true
-                    let sortedCards = chronoline.cards.sorted(by: {$0.pos.y < $1.pos.y})
-                    for i in 0..<sortedCards.count - 1 {
-                        if sortedCards[i].woman.birthYearAsInt > sortedCards[i + 1].woman.birthYearAsInt {
-                            isSorted = false
-                        }
-                    }
-                    if isSorted {
-                        correctAnswers += 1
-                    }
                     shownChronoline += 1
-                    chronoline = chronolineGenerator(
-                        women: women,
-                        numberOfWomen: 5,
-                        x: geo.size.width / 2,
-                        height: geo.size.height
-                    )
+                    scoreIfSorted()
+                    if shownChronoline < numberOfChronolines {
+                        chronoline = chronolineGenerator(
+                            women: women,
+                            numberOfWomen: 5,
+                            x: geo.size.width / 2,
+                            height: geo.size.height
+                        )
+                        timeLeft = chronolineTotalTime
+                    }
+                    showTimer = false
                 }) {
                     Text("Submit")
                         .fontWeight(.bold)
@@ -137,10 +136,45 @@ struct ChronolineView: View {
                 .importantButtonStyle()
                 Spacer()
             }
+            .onReceive(timer) { _ in
+                timeLeft -= 1
+                if timeLeft < 0 {
+                    timer.upstream.connect().cancel()
+                    progress += 1.0 / Float(numberOfChronolines)
+                    showTimer = false
+                    shownChronoline += 1
+                    timeLeft = chronolineTotalTime
+                    scoreIfSorted()
+                    shownChronoline += 1
+                    if shownChronoline < numberOfChronolines {
+                        chronoline = chronolineGenerator(
+                            women: women,
+                            numberOfWomen: 5,
+                            x: geo.size.width / 2,
+                            height: geo.size.height
+                        )
+                        timeLeft = trueOrFalseTotalTime
+                    }
+                    showTimer = false
+                }
+            }
         }
     }
-}
+    
+    func scoreIfSorted() {
+        var isSorted = true
+        let sortedCards = chronoline.cards.sorted(by: {$0.pos.y < $1.pos.y})
+        for i in 0..<sortedCards.count - 1 {
+            if sortedCards[i].woman.birthYearAsInt > sortedCards[i + 1].woman.birthYearAsInt {
+                isSorted = false
+            }
+        }
+        if isSorted {
+            correctAnswers += 1
+        }
 
+    }
+}
 //struct TimelineView_Previews: PreviewProvider {
 //    static var previews: some View {
 //        ChronolineView()

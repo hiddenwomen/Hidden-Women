@@ -23,7 +23,9 @@ struct MyFriendsView: View {
                     VStack(alignment: .leading) {
                         Text("\(friend.email)")
                             .fontWeight(.bold)
-                        Text("Points: \(friend.points)")
+                        Text(
+                            String.localizedStringWithFormat(NSLocalizedString("Points: %@", comment: ""), friend.points)
+                        )
                     }
                 }
             }

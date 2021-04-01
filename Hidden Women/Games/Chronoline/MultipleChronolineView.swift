@@ -12,6 +12,8 @@ enum MultipleChronolinePages {
     case question
 }
 
+let chronolineTotalTime = 3
+
 struct MultipleChronolineView: View {
     @EnvironmentObject var profile: Profile
     @AppStorage ("userID") var userID: String = ""
@@ -22,65 +24,95 @@ struct MultipleChronolineView: View {
     @State var chronoline = chronolineGenerator(women: [], numberOfWomen: 0, x: CGFloat(0.0), height: CGFloat(0.0))
     let numberOfChronolines = 3
     @State var scoreUpdated: Bool = false
-
+    @State var showTimer: Bool = true
+    @State var timeLeft: Int = trueOrFalseTotalTime
     
     var body: some View {
-        switch currentMultipleChronolinePage {
-        case .start:
-            GeometryReader { geo in
-                HStack {
-                    Spacer()
-                    VStack {
+        Group {
+            switch currentMultipleChronolinePage {
+            case .start:
+                GeometryReader { geo in
+                    HStack {
                         Spacer()
-                        Text("Chronoline")
-                            .font(.largeTitle)
-                        Text("_Chronoline Help_")
-                        Button(action: {
-                            chronoline = chronolineGenerator(women: women, numberOfWomen: 5, x: geo.size.width/2.0, height: geo.size.height)
-                            currentMultipleChronolinePage = .question
-                            scoreUpdated = false
-                            for w in chronoline.cards {
-                                print("\(w.woman.name) : \(w.woman.birthYear)")
+                        VStack {
+                            Spacer()
+                            Text("Chronoline")
+                                .font(.largeTitle)
+                            Text("_Chronoline Help_")
+                            Button(action: {
+                                chronoline = chronolineGenerator(women: women, numberOfWomen: 5, x: geo.size.width/2.0, height: geo.size.height)
+                                currentMultipleChronolinePage = .question
+                                scoreUpdated = false
+                                for w in chronoline.cards {
+                                    print("\(w.woman.name) : \(w.woman.birthYear)")
+                                }
+                            }) {
+                                Text("Start")
                             }
-                        }) {
-                            Text("Start")
+                            Spacer()
                         }
                         Spacer()
                     }
-                    Spacer()
+                    
                 }
-                
-            }
-        case .question:
-            if shownChronoline == numberOfChronolines {
-                VStack {
-                    //TODO: Score screen
-                    Text("Points: \(correctAnswers)")
-                    Image("logo")
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 150, height: 150)
-                }
-                .onAppear{
-                    if !scoreUpdated {
-                        let gameResult = GameResult(date: Int(Date().timeIntervalSince1970), gameType: "Chrono", points: correctAnswers)
-                        profile.gameResults.append(gameResult)
-                        updateGameResults(profile: profile, userID: userID)
-                        scoreUpdated = true
+            case .question:
+                if shownChronoline < numberOfChronolines {
+                    VStack {
+                        ProgressView(value: progress)
+                            .animation(.default)
+                        ChronolineView(
+                            shownChronoline: $shownChronoline,
+                            progress: $progress,
+                            correctAnswers: $correctAnswers,
+                            numberOfChronolines: numberOfChronolines,
+                            chronoline: chronoline,
+                            timeLeft: $timeLeft,
+                            showTimer: $showTimer
+                        )
+                    }
+                } else {
+                    VStack {
+                        //TODO: Score screen
+                        Text(
+                            String.localizedStringWithFormat(NSLocalizedString("Points: %@", comment: ""), String(correctAnswers))
+                        )
+                        Image("logo")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 150, height: 150)
+                    }
+                    .onAppear{
+                        if !scoreUpdated {
+                            let gameResult = GameResult(date: Int(Date().timeIntervalSince1970), gameType: "Chrono", points: correctAnswers)
+                            if userID != "" {
+                                profile.gameResults.append(gameResult)
+                                updateGameResults(profile: profile, userID: userID)
+                            }
+                            scoreUpdated = true
+                        }
                     }
                 }
             }
-            if shownChronoline != numberOfChronolines {
-                VStack {
-                    ProgressView(value: progress)
-                    ChronolineView(
-                        shownChronoline: $shownChronoline,
-                        progress: $progress,
-                        correctAnswers: $correctAnswers,
-                        numberOfChronolines: numberOfChronolines,
-                        chronoline: chronoline
-                    )
-                }
+        }
+        .navigationBarItems(trailing:
+                                Group {
+                                    if showTimer && currentMultipleChronolinePage == .question {
+                                        ZStack {
+                                            Circle()
+                                                .stroke(Color.gray.opacity(0.2), style: StrokeStyle(lineWidth: 3, lineCap: .round))
+                                            Circle()
+                                                .trim(from: 0, to: CGFloat(timeLeft) / CGFloat(trueOrFalseTotalTime))
+                                                .stroke(Color("Morado"), style: StrokeStyle(lineWidth: 3, lineCap: .round))
+                                                .rotationEffect(.degrees(-90))
+                                                .animation(.easeInOut)
+                                        }
+                                        .frame(width:30, height: 30)
+                                    }
+                                }
+        )
+        .onChange(of: shownChronoline) { newShownChronoline in
+            if newShownChronoline < numberOfChronolines {
+                showTimer = true
             }
         }
     }

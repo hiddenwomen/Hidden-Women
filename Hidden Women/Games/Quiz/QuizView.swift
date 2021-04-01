@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+let quizTotalTime = 3
+
 struct QuizView: View {
     let quiz: Quiz
     @State var chosenAnswer: Int? = nil
@@ -14,6 +16,9 @@ struct QuizView: View {
     @Binding var correctAnswers: Int
     @Binding var progress: Float
     var numberOfQuizzes: Int
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    @Binding var timeLeft: Int
+    @Binding var showTimer: Bool
     
     var body: some View {
             VStack {
@@ -44,7 +49,10 @@ struct QuizView: View {
                             correctAnswers = correctAnswers + 1
                         }
                         progress += 1.0 / Float(numberOfQuizzes)
+                        print("puntos : \(correctAnswers)")
                         shownQuiz = shownQuiz + 1
+                        timeLeft = quizTotalTime
+                        showTimer = false
                         chosenAnswer = nil
                         
                     }){
@@ -55,20 +63,29 @@ struct QuizView: View {
                             .background(Color("Morado"))
                             .cornerRadius(10)
                     }
-                    
                 }
-                Spacer()
+            }
+            .onReceive(timer) { _ in
+                timeLeft -= 1
+                if timeLeft < 0 {
+                    chosenAnswer = nil
+                    timer.upstream.connect().cancel()
+                    progress += 1.0 / Float(numberOfQuizzes)
+                    showTimer = false
+                    shownQuiz += 1
+                    timeLeft = quizTotalTime
+                }
             }
         }
     }
 
 
-struct QuizView_Previews: PreviewProvider {
-    @State static var shownQuiz: Int = 0
-    @State static var correctAnswers: Int = 0
-    @State static var progress: Float = 0.0
-    
-    static var previews: some View {
-        QuizView(quiz: awardsQuizGenerator(women: women), shownQuiz: $shownQuiz, correctAnswers: $correctAnswers, progress: $progress, numberOfQuizzes: 1)
-    }
-}
+//struct QuizView_Previews: PreviewProvider {
+//    @State static var shownQuiz: Int = 0
+//    @State static var correctAnswers: Int = 0
+//    @State static var progress: Float = 0.0
+//
+//    static var previews: some View {
+//        QuizView(quiz: awardsQuizGenerator(women: women), shownQuiz: $shownQuiz, correctAnswers: $correctAnswers, progress: $progress, numberOfQuizzes: 1)
+//    }
+//}

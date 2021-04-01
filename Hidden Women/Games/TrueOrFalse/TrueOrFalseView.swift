@@ -14,8 +14,9 @@ struct TrueOrFalseView: View {
     @Binding var progress: Float
     var numberOfTrueOrFalses: Int
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    @State var timeLeft: Int = 10
-    
+    @Binding var timeLeft: Int
+    @Binding var showTimer: Bool
+
     var body: some View {
         VStack {
             Image(trueOrFalse.picture)
@@ -30,13 +31,14 @@ struct TrueOrFalseView: View {
             HStack {
                 Spacer()
                 Button(action: {
-                    if trueOrFalse.correct == true{
+                    if trueOrFalse.correct == true {
                         correctAnswers += 1
                     }
                     progress += 1.0 / Float(numberOfTrueOrFalses)
-                    shownTrueOrFalse += 1
                     timer.upstream.connect().cancel()
-                    timeLeft = 10
+                    timeLeft = trueOrFalseTotalTime
+                    showTimer = false
+                    shownTrueOrFalse += 1
                 }) {
                     ZStack {
                         Circle()
@@ -54,9 +56,10 @@ struct TrueOrFalseView: View {
                         correctAnswers += 1
                     }
                     progress += 1.0 / Float(numberOfTrueOrFalses)
-                    shownTrueOrFalse += 1
                     timer.upstream.connect().cancel()
-                    timeLeft = 10
+                    timeLeft = trueOrFalseTotalTime
+                    showTimer = false
+                    shownTrueOrFalse += 1
                 }) {
                     ZStack {
                         Circle()
@@ -71,25 +74,16 @@ struct TrueOrFalseView: View {
                 Spacer()
             }
             .padding(.top, 40)
-            ZStack {
-                Circle()
-                    .stroke(Color.gray.opacity(0.2), style: StrokeStyle(lineWidth: 10, lineCap: .round))
-                Circle()
-                    .trim(from: 0, to: CGFloat(timeLeft) / 10.0)
-                    .stroke(Color("Morado"), style: StrokeStyle(lineWidth: 10, lineCap: .round))
-                    .rotationEffect(.degrees(-90))
-                    .animation(.easeInOut)
-            }
-            .frame(width: 100, height: 100)
             Spacer()
         }
         .onReceive(timer) { _ in
             timeLeft -= 1
-            if timeLeft == 0 {
-                timer.upstream.connect().cancel()
+            if timeLeft < 0 {
                 progress += 1.0 / Float(numberOfTrueOrFalses)
+                timeLeft = trueOrFalseTotalTime
+                timer.upstream.connect().cancel()
+                showTimer = false
                 shownTrueOrFalse += 1
-                timeLeft = 10
             }
         }
     }

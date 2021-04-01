@@ -16,7 +16,7 @@ func birthYearTrueOrFalseGenerator (women: [Woman]) -> TrueOrFalse {
     return TrueOrFalse(
         picture: questionWoman.pictures.randomElement() ?? "",
         question: String.localizedStringWithFormat(
-            NSLocalizedString("%@ was born in: ", comment: ""), questionWoman.name
+            NSLocalizedString("%@ was born in ", comment: ""), questionWoman.name
         ),
         answer: answer,
         correct: questionWoman.birthYear.localized == answer
@@ -32,7 +32,7 @@ func deathYearTrueOrFalseGenerator (women: [Woman]) -> TrueOrFalse {
     return TrueOrFalse(
         picture: questionWoman.pictures.randomElement() ?? "",
         question: String.localizedStringWithFormat(
-            NSLocalizedString("%@ passed away in: ", comment: ""),
+            NSLocalizedString("%@ passed away in ", comment: ""),
             questionWoman.name),
         answer: answer,
         correct: questionWoman.deathYear == otherWoman.deathYear
@@ -48,7 +48,7 @@ func fieldsTrueOrFalseGenerator (women: [Woman]) -> TrueOrFalse {
     return TrueOrFalse(
         picture: questionWoman.pictures.randomElement() ?? "",
         question: String.localizedStringWithFormat(
-            NSLocalizedString("%@ is a: ", comment: ""),
+            NSLocalizedString("%@ is a ", comment: ""),
             questionWoman.name),
         answer: answer,
         correct: questionWoman.fields.localized.contains(answer)

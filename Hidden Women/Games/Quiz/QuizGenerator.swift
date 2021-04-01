@@ -68,7 +68,7 @@ func fieldQuizGenerator(women: [Woman]) -> Quiz {
     
     return Quiz(
         picture: woman.pictures.randomElement() ?? "",
-        question: String.localizedStringWithFormat(NSLocalizedString("%@ was a...", comment: ""), woman.name),
+        question: String.localizedStringWithFormat(NSLocalizedString("%@ is a...", comment: ""), woman.name),
         answers: quizAnswers.answers,
         correctAnswer: quizAnswers.correct
     )
@@ -83,7 +83,7 @@ func awardsQuizGenerator(women: [Woman]) -> Quiz {
     
     return Quiz(
         picture: woman.pictures.randomElement() ?? "",
-        question: String.localizedStringWithFormat(NSLocalizedString("%@ won the...", comment: ""), woman.name),
+        question: String.localizedStringWithFormat(NSLocalizedString("%@ was awarded with...", comment: ""), woman.name),
         answers: quizAnswers.answers,
         correctAnswer: quizAnswers.correct
     )
