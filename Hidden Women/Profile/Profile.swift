@@ -27,9 +27,11 @@ class Profile: ObservableObject, Identifiable {
     }
     var id: UUID = UUID()
     
-    init(name: String = "", email: String = "") {
+    init(name: String = "", email: String = "", favourites: [String] = [], gameResults: [GameResult] = []) {
         self.name = name
         self.email = email
+        self.favourites = favourites
+        self.gameResults = gameResults
     }
     
     func show() {

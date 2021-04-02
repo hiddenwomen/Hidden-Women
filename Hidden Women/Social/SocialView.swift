@@ -30,7 +30,7 @@ struct SocialView: View {
                                 .padding(.leading, 10)
                             VStack (alignment: .leading) {
                                 Text("Ranking")
-                                    .font(.largeTitle)
+                                    .font(.title)
                                 Text("Check how your friends are doing with the games")
                                     .foregroundColor(.gray)
                                     .multilineTextAlignment(.leading)
@@ -52,7 +52,7 @@ struct SocialView: View {
                                         .opacity(0.4)
                                         .padding(.leading, 10)
                                     Text("My friends")
-                                        .font(.largeTitle)
+                                        .font(.title)
                                 }
                             }
                             Spacer()
@@ -75,7 +75,7 @@ struct SocialView: View {
                                         .opacity(0.4)
                                         .padding(.leading, 10)
                                     Text("Send a friend request")
-                                        .font(.largeTitle)
+                                        .font(.title)
                                 }
                             }
                             Spacer()
@@ -86,7 +86,7 @@ struct SocialView: View {
                 
                 
                 
-                NavigationLink(destination: Text("Find people like me")) {
+                NavigationLink(destination: FindPeopleView()) {
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
                             .fill(Color("Hueso"))
@@ -98,7 +98,7 @@ struct SocialView: View {
                                         .opacity(0.4)
                                         .padding(.leading, 10)
                                     Text("Find people like me")
-                                        .font(.largeTitle)
+                                        .font(.title)
                                 }
                             }
                             Spacer()
@@ -120,7 +120,7 @@ struct SocialView: View {
                                         .padding(.leading, 10)
                                     VStack (alignment: .leading) {
                                         Text("Friend requests")
-                                            .font(.largeTitle)
+                                            .font(.title)
                                         if profile.friendRequests.count == 0 { //TODO: Actualizar la lista de peticiones al entrar en la pantalla.
                                             Text("You have no friend requests.")
                                         } else if profile.friendRequests.count == 1 {
