@@ -19,6 +19,7 @@ struct QuizView: View {
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @Binding var timeLeft: Int
     @Binding var showTimer: Bool
+    @Binding var mistakes: [QuizMistake]
     
     var body: some View {
             VStack {
@@ -47,6 +48,12 @@ struct QuizView: View {
                     Button(action: {
                         if chosenAnswer == quiz.correctAnswer {
                             correctAnswers = correctAnswers + 1
+                        } else {
+                            mistakes.append(
+                                QuizMistake(question: quiz.question,
+                                            correctAnswer: quiz.answers[quiz.correctAnswer],
+                                            incorrectAnswer: quiz.answers[chosenAnswer!])
+                            )
                         }
                         progress += 1.0 / Float(numberOfQuizzes)
                         print("puntos : \(correctAnswers)")
@@ -74,6 +81,12 @@ struct QuizView: View {
                     showTimer = false
                     shownQuiz += 1
                     timeLeft = quizTotalTime
+                    mistakes.append(
+                        QuizMistake(question: quiz.question,
+                                    correctAnswer: quiz.answers[quiz.correctAnswer],
+                                    incorrectAnswer: "You ran out of time"
+                    )
+                    )
                 }
             }
         }

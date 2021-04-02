@@ -12,6 +12,13 @@ enum MultipleQuizPages {
     case question
 }
 
+struct QuizMistake: Identifiable {
+    let question: String
+    let correctAnswer: String
+    let incorrectAnswer: String?
+    let id = UUID()
+}
+
 struct MultipleQuizView: View {
     @EnvironmentObject var profile: Profile
     @AppStorage ("userID") var userID: String = ""
@@ -22,6 +29,7 @@ struct MultipleQuizView: View {
     @State var scoreUpdated: Bool = false
     @State var showTimer: Bool = true
     @State var timeLeft: Int = trueOrFalseTotalTime
+    @State var mistakes: [QuizMistake] = []
     
     @State var quizzes: [Quiz] =  []
     
@@ -46,13 +54,53 @@ struct MultipleQuizView: View {
             case .question :
                 if shownQuiz == quizzes.count {
                     VStack {
-                        Text(
-                            String.localizedStringWithFormat(NSLocalizedString("Points: %@", comment: ""), String(correctAnswers))
-                        )
-                        Image("logo")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 150, height: 150)
+                        ZStack {
+                            Circle()
+                                .foregroundColor(Color("Turquesa"))
+                                .frame(width: 125, height: 125)
+                            VStack{
+                                Text("\(correctAnswers)")
+                                    .foregroundColor(.white)
+                                    .fontWeight(.bold)
+                                    .font(.largeTitle)
+                                if correctAnswers == 1{
+                                Text("point")
+                                    .foregroundColor(.white)
+                                    .font(.subheadline)
+                                } else {
+                                    Text("points")
+                                        .foregroundColor(.white)
+                                        .font(.subheadline)
+                                }
+                            }
+                        }
+                        .padding()
+                        Text("Things you should learn:")
+                            .font(.title)
+                        ScrollView {
+                            VStack (alignment: .leading){
+                                ForEach (mistakes) { mistake in
+                                    HStack (alignment: .firstTextBaseline){
+                                        Image(systemName: "play")
+                                        VStack (alignment: .leading){
+                                            Text("\(mistake.question)")
+                                            //if mistake.isCorrect{
+                                            //    Text("True")
+                                            //        .fontWeight(.bold)
+                                            //        .background(Color("Morado"))
+                                            //        .foregroundColor(.white)
+                                            //} else {
+                                            //    Text("False")
+                                            //        .fontWeight(.bold)
+                                            //        .background(Color("Turquesa"))
+                                            //        .foregroundColor(.white)
+                                            //}
+                                        }
+                                    }
+                                }
+                            }
+                            .padding()
+                        }
                     }
                     .onAppear{
                         if !scoreUpdated {
@@ -77,7 +125,8 @@ struct MultipleQuizView: View {
                                 progress: $progress,
                                 numberOfQuizzes: quizzes.count,
                                 timeLeft: $timeLeft,
-                                showTimer: $showTimer
+                                showTimer: $showTimer,
+                                mistakes: $mistakes
                             )
                         }
                     }
