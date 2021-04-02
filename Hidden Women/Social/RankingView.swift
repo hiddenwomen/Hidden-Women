@@ -32,7 +32,7 @@ struct RankingView: View {
                             .fontWeight(person.email == profile.email ? .bold : .regular)
                             .foregroundColor(person.email == profile.email ? Color("Morado") : .black)
                         Text(
-                            String.localizedStringWithFormat(NSLocalizedString("Points: %@", comment: ""), person.points)
+                            String.localizedStringWithFormat(NSLocalizedString("Points: %@", comment: ""), String(person.points))
                         )
                     }
                 }

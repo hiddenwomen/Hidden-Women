@@ -32,6 +32,7 @@
 		F50B038B2605093300D4EABE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B038A2605093300D4EABE /* Utils.swift */; };
 		F52C5DCD2615DEE300399F46 /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52C5DCC2615DEE300399F46 /* GamesView.swift */; };
 		F52C5DEC261643F200399F46 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F52C5DEB261643F200399F46 /* GoogleService-Info.plist */; };
+		F52C5DEF261738D700399F46 /* FriendProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52C5DEE261738D700399F46 /* FriendProfileView.swift */; };
 		F53AA8B125F8B6D80045977A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F53AA8B325F8B6D80045977A /* Localizable.strings */; };
 		F53AA8BB25F8BD750045977A /* women.json in Resources */ = {isa = PBXBuildFile; fileRef = F53AA8BA25F8BD750045977A /* women.json */; };
 		F53AA8BE25FA04890045977A /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53AA8BD25FA04890045977A /* SearchBarView.swift */; };
@@ -80,6 +81,7 @@
 		F50B038A2605093300D4EABE /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		F52C5DCC2615DEE300399F46 /* GamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
 		F52C5DEB261643F200399F46 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F52C5DEE261738D700399F46 /* FriendProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendProfileView.swift; sourceTree = "<group>"; };
 		F53AA8B225F8B6D80045977A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F53AA8B525F8B6FA0045977A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F53AA8B725F8B7A10045977A /* ca */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ca; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 				CB6A1038260F4CEE0052D58E /* MakeNewFriendsView.swift */,
 				CB6A103B260F4E520052D58E /* FindPeopleView.swift */,
 				F504D8812610A46D00AB1D08 /* FriendRequestsView.swift */,
+				F52C5DEE261738D700399F46 /* FriendProfileView.swift */,
 			);
 			path = Social;
 			sourceTree = "<group>";
@@ -411,6 +414,7 @@
 			files = (
 				F56A7C9D260F241A003C0A20 /* SocialView.swift in Sources */,
 				CB6A1039260F4CEE0052D58E /* MakeNewFriendsView.swift in Sources */,
+				F52C5DEF261738D700399F46 /* FriendProfileView.swift in Sources */,
 				F52C5DCD2615DEE300399F46 /* GamesView.swift in Sources */,
 				5A7EAA9C25FA535800D042E1 /* QuizGenerator.swift in Sources */,
 				F56093A025FB6F89000E8560 /* MultipleTrueOrFalseView.swift in Sources */,

@@ -14,6 +14,13 @@ enum MultipleChronolinePages {
 
 let chronolineTotalTime = 3
 
+struct ChronolineMistake: Identifiable {
+    let chronolineNumber: Int
+    let sortedWomenList: [Woman]
+    let mistakenWomenList: [Woman]
+    let id = UUID()
+}
+
 struct MultipleChronolineView: View {
     @EnvironmentObject var profile: Profile
     @AppStorage ("userID") var userID: String = ""
@@ -26,6 +33,7 @@ struct MultipleChronolineView: View {
     @State var scoreUpdated: Bool = false
     @State var showTimer: Bool = true
     @State var timeLeft: Int = trueOrFalseTotalTime
+    @State var mistakes: [ChronolineMistake] = []
     
     var body: some View {
         Group {
@@ -67,34 +75,82 @@ struct MultipleChronolineView: View {
                             numberOfChronolines: numberOfChronolines,
                             chronoline: chronoline,
                             timeLeft: $timeLeft,
-                            showTimer: $showTimer
+                            showTimer: $showTimer,
+                            mistakes: $mistakes
                         )
                     }
                 } else {
                     VStack {
-                        //TODO: Score screen
-                        Text(
-                            String.localizedStringWithFormat(NSLocalizedString("Points: %@", comment: ""), String(correctAnswers))
-                        )
-                        Image("logo")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 150, height: 150)
-                    }
-                    .onAppear{
-                        if !scoreUpdated {
-                            let gameResult = GameResult(date: Int(Date().timeIntervalSince1970), gameType: "Chrono", points: correctAnswers)
-                            if userID != "" {
-                                profile.gameResults.append(gameResult)
-                                updateGameResults(profile: profile, userID: userID)
+                        ZStack {
+                            Circle()
+                                .foregroundColor(Color("Turquesa"))
+                                .frame(width: 125, height: 125)
+                            VStack{
+                                Text("\(correctAnswers)")
+                                    .foregroundColor(.white)
+                                    .fontWeight(.bold)
+                                    .font(.largeTitle)
+                                if correctAnswers == 1{
+                                    Text("point")
+                                        .foregroundColor(.white)
+                                        .font(.subheadline)
+                                } else {
+                                    Text("points")
+                                        .foregroundColor(.white)
+                                        .font(.subheadline)
+                                }
                             }
-                            scoreUpdated = true
+                        }
+                        .padding()
+                        Text("Things you should learn:")
+                            .font(.title)
+                        ScrollView {
+                            VStack (alignment: .leading){
+                                ForEach (mistakes) { mistake in
+                                    VStack(alignment: .leading) {
+                                        HStack {
+                                            Image(systemName: "play")
+                                            Text("Chronoline").bold() + Text(" \(mistake.chronolineNumber)").bold()
+                                        }
+                                        Text("Left: your answer. Right: correct answer.")
+                                        ForEach(0..<mistake.mistakenWomenList.count) { i in
+                                            HStack {
+                                                Image(mistake.mistakenWomenList[i].pictures[0])
+                                                    .resizable()
+                                                    .scaledToFit()
+                                                    .frame(width: 50)
+                                                    .padding(.trailing, 10)
+                                                Image(mistake.sortedWomenList[i].pictures[0])
+                                                    .resizable()
+                                                    .scaledToFit()
+                                                    .frame(width: 50)
+                                                VStack(alignment: .leading) {
+                                                    Text(mistake.sortedWomenList[i].name)
+                                                        .fontWeight(.bold)
+                                                    Text(mistake.sortedWomenList[i].birthYear.localized)
+                                                }
+                                                Spacer()
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .padding()
+                            .onAppear{
+                                if !scoreUpdated {
+                                    let gameResult = GameResult(date: Int(Date().timeIntervalSince1970), gameType: "Chrono", points: correctAnswers)
+                                    if userID != "" {
+                                        profile.gameResults.append(gameResult)
+                                        updateGameResults(profile: profile, userID: userID)
+                                    }
+                                    scoreUpdated = true
+                                }
+                            }
                         }
                     }
                 }
             }
-        }
-        .navigationBarItems(trailing:
+        }.navigationBarItems(trailing:
                                 Group {
                                     if showTimer && currentMultipleChronolinePage == .question {
                                         ZStack {

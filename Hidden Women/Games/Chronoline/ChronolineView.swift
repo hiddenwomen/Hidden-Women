@@ -48,6 +48,8 @@ struct ChronolineView: View {
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @Binding var timeLeft: Int
     @Binding var showTimer: Bool
+    @Binding var mistakes: [ChronolineMistake]
+    
     
     func sortCards(dontMoveThis: Int?, height: CGFloat) {
         let sorted = chronoline.cards.sorted(by: {$0.pos.y < $1.pos.y} )
@@ -171,6 +173,15 @@ struct ChronolineView: View {
         }
         if isSorted {
             correctAnswers += 1
+        } else {
+            var mistakenWomenList: [Woman] = []
+            for card in sortedCards {
+                mistakenWomenList.append(card.woman)
+            }
+            let sortedWomenList: [Woman] = mistakenWomenList.sorted(by: {$0.birthYearAsInt < $1.birthYearAsInt})
+            mistakes.append(
+                ChronolineMistake(chronolineNumber: shownChronoline, sortedWomenList: sortedWomenList, mistakenWomenList: mistakenWomenList)
+            )
         }
 
     }

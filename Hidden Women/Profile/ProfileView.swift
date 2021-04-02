@@ -68,9 +68,15 @@ struct ProfileView: View {
                                     .foregroundColor(.white)
                                     .fontWeight(.bold)
                                     .font(.largeTitle)
-                                Text("Points")
-                                    .foregroundColor(.white)
-                                    .font(.subheadline)
+                                if profile.points != 1 {
+                                    Text("points")
+                                        .foregroundColor(.white)
+                                        .font(.subheadline)
+                                } else {
+                                    Text("point")
+                                        .foregroundColor(.white)
+                                        .font(.subheadline)
+                                }
                             }
                         }
                         .padding()

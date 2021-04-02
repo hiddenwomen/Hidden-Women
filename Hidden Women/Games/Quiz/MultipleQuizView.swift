@@ -84,17 +84,25 @@ struct MultipleQuizView: View {
                                         Image(systemName: "play")
                                         VStack (alignment: .leading){
                                             Text("\(mistake.question)")
-                                            //if mistake.isCorrect{
-                                            //    Text("True")
-                                            //        .fontWeight(.bold)
-                                            //        .background(Color("Morado"))
-                                            //        .foregroundColor(.white)
-                                            //} else {
-                                            //    Text("False")
-                                            //        .fontWeight(.bold)
-                                            //        .background(Color("Turquesa"))
-                                            //        .foregroundColor(.white)
-                                            //}
+                                                .fontWeight(.bold)
+                                            HStack(alignment: .firstTextBaseline) {
+                                                Image(systemName: "circlebadge.fill")
+                                                    .foregroundColor(Color("Turquesa"))
+                                                if mistake.incorrectAnswer == "You ran out of time" {
+                                                    Text("You ran out of time")
+                                                } else {
+                                                    Text(
+                                                        String.localizedStringWithFormat(NSLocalizedString("You chose: %@", comment: ""), mistake.incorrectAnswer!)
+                                                    )
+                                                }
+                                            }
+                                            HStack(alignment: .firstTextBaseline) {
+                                                Image(systemName: "circlebadge.fill")
+                                                    .foregroundColor(Color("Morado"))
+                                                Text(
+                                                    String.localizedStringWithFormat(NSLocalizedString("The correct answer was: %@", comment: ""), mistake.correctAnswer)
+                                                )
+                                            }
                                         }
                                     }
                                 }

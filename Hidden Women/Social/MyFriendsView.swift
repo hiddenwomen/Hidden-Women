@@ -13,7 +13,10 @@ struct MyFriendsView: View {
     var body: some View {
         VStack {
             Text("Friends")
+                .font(.largeTitle)
+                .padding()
             List(profile.friends){ friend in
+                NavigationLink(destination: FriendProfileView(friendProfile: friend)) {
                 HStack {
                     Image(uiImage: friend.picture ?? UIImage())
                         .resizable()
@@ -21,11 +24,12 @@ struct MyFriendsView: View {
                         .clipShape(Circle())
                         .frame(width: 75, height: 75)
                     VStack(alignment: .leading) {
-                        Text("\(friend.email)")
+                        Text("\(friend.name)")
                             .fontWeight(.bold)
-                        Text(
-                            String.localizedStringWithFormat(NSLocalizedString("Points: %@", comment: ""), friend.points)
-                        )
+//                        Text(
+//                            String.localizedStringWithFormat(NSLocalizedString("Points: %@", comment: ""), String(friend.points))
+//                        )
+                    }
                     }
                 }
             }
