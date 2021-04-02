@@ -55,6 +55,7 @@
 "You have %@ friend requests" = "Tens %@ sol·licituds d'amistad";
 "Friends" = "Amigues";
 "Points: %@" = "Punts: %@";
+"Points" = "Punts";
 "Friend requests..." = "Sol·licituts d'amistat";
 "Accept" = "Acceptar";
 "Reject" = "Rebutjar";

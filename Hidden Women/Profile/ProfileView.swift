@@ -27,22 +27,21 @@ struct ProfileView: View {
     var body: some View {
         if userID != "" {
             VStack {
-//                HStack {
-//                    Spacer()
-//                    VStack {
-//                        Image(systemName: selectedUpperTab == .first ? "person.fill" : "person")
-//                            .foregroundColor(selectedUpperTab == .first ? Color.accentColor : Color.gray)
-//                        Text("First tab")
-//                    }
-//                    .onTapGesture {
-//                        //self.selectedTab = .FirstTab
-//                    }
-//                    Spacer()
-//                }
+                //                HStack {
+                //                    Spacer()
+                //                    VStack {
+                //                        Image(systemName: selectedUpperTab == .first ? "person.fill" : "person")
+                //                            .foregroundColor(selectedUpperTab == .first ? Color.accentColor : Color.gray)
+                //                        Text("First tab")
+                //                    }
+                //                    .onTapGesture {
+                //                        //self.selectedTab = .FirstTab
+                //                    }
+                //                    Spacer()
+                //                }
                 switch profilePage {
                 case .profile:
                     VStack {
-                        Spacer()
                         Image(uiImage: profile.picture ?? UIImage())
                             .resizable()
                             .scaledToFit()
@@ -58,14 +57,23 @@ struct ProfileView: View {
                                 .fontWeight(.bold)
                                 .importantButtonStyle()
                         }
-                        .padding() 
-                        //List(profile.gameResults) { result in
-                        //    Text("\(result.gameType): \(result.points)")
-                        //}
-                        Text("POINTS: \(profile.points)")
-                            .font(.title)
-                            .fontWeight(.bold)
-                            .foregroundColor(Color("Turquesa"))
+                        .padding()
+                        Spacer()
+                        ZStack {
+                            Circle()
+                                .foregroundColor(Color("Turquesa"))
+                                .frame(width: 125, height: 125)
+                            VStack{
+                                Text("\(profile.points)")
+                                    .foregroundColor(.white)
+                                    .fontWeight(.bold)
+                                    .font(.largeTitle)
+                                Text("Points")
+                                    .foregroundColor(.white)
+                                    .font(.subheadline)
+                            }
+                        }
+                        .padding()
                         Spacer()
                         
                         Button(action: {

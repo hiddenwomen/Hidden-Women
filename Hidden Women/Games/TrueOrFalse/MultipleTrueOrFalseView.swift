@@ -13,6 +13,13 @@ enum MultipleTrueOrFalsePages {
 }
 let trueOrFalseTotalTime = 3
 
+struct TrueOrFalseMistake: Identifiable {
+    let question: String
+    let answer: String
+    let isCorrect: Bool
+    let id = UUID()
+}
+
 struct MultipleTrueOrFalseView: View {
     @EnvironmentObject var profile: Profile
     @AppStorage ("userID") var userID: String = ""
@@ -24,6 +31,7 @@ struct MultipleTrueOrFalseView: View {
     @State var scoreUpdated: Bool = false
     @State var showTimer: Bool = true
     @State var timeLeft: Int = trueOrFalseTotalTime
+    @State var mistakes: [TrueOrFalseMistake] = []
     
     var body: some View {
         Group {
@@ -46,14 +54,53 @@ struct MultipleTrueOrFalseView: View {
             case .question:
                 if shownTrueOrFalse == trueOrFalses.count {
                     VStack {
-                        Text(
-                            String.localizedStringWithFormat(
-                                NSLocalizedString("Points: %@", comment: ""), String(correctAnswers))
-                        )
-                        Image("logo")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 150, height: 150)
+                        ZStack {
+                            Circle()
+                                .foregroundColor(Color("Turquesa"))
+                                .frame(width: 125, height: 125)
+                            VStack{
+                                Text("\(correctAnswers)")
+                                    .foregroundColor(.white)
+                                    .fontWeight(.bold)
+                                    .font(.largeTitle)
+                                if correctAnswers == 1{
+                                Text("point")
+                                    .foregroundColor(.white)
+                                    .font(.subheadline)
+                                } else {
+                                    Text("points")
+                                        .foregroundColor(.white)
+                                        .font(.subheadline)
+                                }
+                            }
+                        }
+                        .padding()
+                        Text("Things you should learn:")
+                            .font(.title)
+                        ScrollView {
+                            VStack (alignment: .leading){
+                                ForEach (mistakes) { mistake in
+                                    HStack (alignment: .firstTextBaseline){
+                                        Image(systemName: "play")
+                                        VStack (alignment: .leading){
+                                            Text("\(mistake.question) \(mistake.answer)")
+                                            if mistake.isCorrect{
+                                                Text("True")
+                                                    .fontWeight(.bold)
+                                                    .background(Color("Morado"))
+                                                    .foregroundColor(.white)
+                                            } else {
+                                                Text("False")
+                                                    .fontWeight(.bold)
+                                                    .background(Color("Turquesa"))
+                                                    .foregroundColor(.white)
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            .padding()
+                        }
                     }
                     .onAppear{
                         if !scoreUpdated {
@@ -77,7 +124,8 @@ struct MultipleTrueOrFalseView: View {
                             progress: $progress,
                             numberOfTrueOrFalses: trueOrFalses.count,
                             timeLeft: $timeLeft,
-                            showTimer: $showTimer
+                            showTimer: $showTimer,
+                            mistakes: $mistakes
                         )
                     }
                 }

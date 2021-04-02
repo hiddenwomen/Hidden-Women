@@ -16,6 +16,7 @@ struct TrueOrFalseView: View {
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     @Binding var timeLeft: Int
     @Binding var showTimer: Bool
+    @Binding var mistakes: [TrueOrFalseMistake]
 
     var body: some View {
         VStack {
@@ -33,6 +34,9 @@ struct TrueOrFalseView: View {
                 Button(action: {
                     if trueOrFalse.correct == true {
                         correctAnswers += 1
+                    } else {
+                        mistakes.append(TrueOrFalseMistake(question: trueOrFalse.question, answer: trueOrFalse.answer, isCorrect: trueOrFalse.correct))
+
                     }
                     progress += 1.0 / Float(numberOfTrueOrFalses)
                     timer.upstream.connect().cancel()
@@ -54,6 +58,8 @@ struct TrueOrFalseView: View {
                 Button(action: {
                     if trueOrFalse.correct == false{
                         correctAnswers += 1
+                    } else {
+                        mistakes.append(TrueOrFalseMistake(question: trueOrFalse.question, answer: trueOrFalse.answer, isCorrect: trueOrFalse.correct))
                     }
                     progress += 1.0 / Float(numberOfTrueOrFalses)
                     timer.upstream.connect().cancel()
@@ -84,6 +90,7 @@ struct TrueOrFalseView: View {
                 timer.upstream.connect().cancel()
                 showTimer = false
                 shownTrueOrFalse += 1
+                mistakes.append(TrueOrFalseMistake(question: trueOrFalse.question, answer: trueOrFalse.answer, isCorrect: trueOrFalse.correct))
             }
         }
     }
