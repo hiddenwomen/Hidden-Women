@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Firebase
 
 struct FriendRequestsView: View {
     @AppStorage("userID") var userID: String = ""
@@ -26,33 +25,14 @@ struct FriendRequestsView: View {
                             .fontWeight(.bold)
                         HStack {
                             Button(action:  {
-                                Firestore.firestore()
-                                    .collection("emails")
-                                    .document(friendRequest.lowercased())
-                                    .getDocument { document, error in
-                                        if let document = document {
-                                            let data = document.data() ?? ["userId": ""]
-                                            let friendUserId = data["userId"] as? String ?? ""
-                                            print("FRIEND \(friendRequest) USERID \(friendUserId)")
-                                            if friendUserId != "" {
-                                                profile.friendRequests = profile.friendRequests.filter{$0 != friendRequest}
-                                                Firestore.firestore()
-                                                    .collection("users")
-                                                    .document(userID)
-                                                    .updateData([
-                                                        "friendRequests": FieldValue.arrayRemove([friendRequest]),
-                                                        "friends": FieldValue.arrayUnion([friendUserId])
-                                                    ])
-                                                Firestore.firestore()
-                                                    .collection("users")
-                                                    .document(friendUserId)
-                                                    .updateData([
-                                                        "friends": FieldValue.arrayUnion([userID])
-                                                    ])
-                                            }
-                                        }
+                                getProfile(forEmail: friendRequest, onError: { error in }) { document in
+                                    let data = document.data() ?? ["userId": ""]
+                                    let friendUserId = data["userId"] as? String ?? ""
+                                    if friendUserId != "" {
+                                        profile.friendRequests = profile.friendRequests.filter{$0 != friendRequest}
+                                        updateFriendRequestForAcceptance(userID: userID, friendRequest: friendRequest, friendUserId: friendUserId)
                                     }
-                                
+                                }
                             }) {
                                 HStack {
                                     Image(systemName: "person.fill.checkmark")
@@ -63,12 +43,7 @@ struct FriendRequestsView: View {
                             .importantButtonStyle()
                             Button(action:  {
                                 profile.friendRequests = profile.friendRequests.filter{$0 != friendRequest}
-                                Firestore.firestore()
-                                    .collection("users")
-                                    .document(userID)
-                                    .updateData([
-                                        "friendRequests": FieldValue.arrayRemove([friendRequest])
-                                    ])
+                                updateProfileToRemoveFriendRequest(userID: userID, friendRequest: friendRequest)
                             }) {
                                 HStack {
                                     Image(systemName: "person.fill.xmark")

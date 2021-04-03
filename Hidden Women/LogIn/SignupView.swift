@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Firebase
 
 struct SignupView: View {
     @AppStorage ("userID") var userID = ""
@@ -58,7 +57,24 @@ struct SignupView: View {
                 .cornerRadius(16)
                 .padding(.horizontal, 20)
                 
-                Button(action: signup) {
+                Button(action: {
+                    if password == repeatedPassword {
+                        signUp(
+                            withEmail: email,
+                            password: password,
+                            profile: profile,
+                            onError: { error in
+                                errorMessage = error.localizedDescription
+                                showErrorAlert = true
+                            }) { authResult in
+                                userID = authResult.user.uid
+                                currentPage = .main
+                        }
+                    } else {
+                        errorMessage = "Passwords do not match"
+                        showErrorAlert = true
+                    }
+                }) {
                     Text("Sign up")
                         .fontWeight(.bold)
                         .padding(EdgeInsets(top: 12, leading: 40, bottom: 12, trailing: 40))
@@ -66,9 +82,12 @@ struct SignupView: View {
                         .background(Color("Morado"))
                         .cornerRadius(10)
                 }
-                Button(action: {currentPage = .login}) {
-                    Text("Cancel")
-                        .foregroundColor(Color("Morado"))
+                HStack {
+                    Text("Already have an account?")
+                    Button(action: {currentPage = .login}) {
+                        Text("Sign in")
+                            .foregroundColor(Color("Morado"))
+                    }
                 }
                 .alert(isPresented: $showErrorAlert) {
                     Alert(
@@ -82,62 +101,6 @@ struct SignupView: View {
         }
     }
     
-    func signup () {
-        if password == repeatedPassword {
-            Auth.auth().createUser(withEmail: email, password: password) { user, error in
-                if let error = error {
-                    errorMessage = error.localizedDescription
-                    showErrorAlert = true
-                    
-                } else {
-                    Auth.auth().signIn(withEmail: email, password: password) { user, error in
-                        if let error = error {
-                            errorMessage = error.localizedDescription
-                            showErrorAlert = true
-                        } else {
-                            userID = user?.user.uid ?? ""
-                            profile.name = email.components(separatedBy: "@")[0]
-                            profile.email = email
-                            profile.favourites = []
-                            profile.gameResults = []
-                            profile.friendRequests = []
-                            profile.picture = UIImage(named: "unknown")
-                            Firestore.firestore()
-                                .collection("users")
-                                .document(userID)
-                                .setData([
-                                    "name": profile.name,
-                                    "email": profile.email,
-                                    "favourites":profile.favourites,
-                                    "gameResults": profile.gameResults,
-                                    "friendRequests": profile.friendRequests
-                                ]) { error in
-                                    if let error = error{
-                                        errorMessage = error.localizedDescription
-                                        showErrorAlert = true
-                                    }
-                                }
-                            Firestore.firestore()
-                                .collection("emails")
-                                .document(profile.email.lowercased())
-                                .setData([
-                                    "userId": userID
-                                ]) { error in
-                                    if let error = error{
-                                        errorMessage = error.localizedDescription
-                                        showErrorAlert = true
-                                    }
-                                }
-                            currentPage = .main
-                        }
-                    }
-                }
-            }
-        } else {
-            errorMessage = "Passwords do not match"
-            showErrorAlert = true
-        }
-    }
 }
 struct SignupView_Previews: PreviewProvider {
     @State static var page: Page = .signup

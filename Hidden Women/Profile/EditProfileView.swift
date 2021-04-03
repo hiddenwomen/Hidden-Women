@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Firebase
 
 struct EditProfileView: View {
     @EnvironmentObject var profile: Profile
@@ -50,27 +49,17 @@ struct EditProfileView: View {
             .cornerRadius(16)
             .padding(.horizontal, 20)
             Button(action: {
+                
                 profile.name = editedProfile.name
-                profile.picture = editedProfile.picture?.scalePreservingAspectRatio(targetSize: CGSize(width: 200.0, height: 200.0))
-                let pictureData = profile.picture?.pngData() ?? Data()
-                let metadata = StorageMetadata()
-                metadata.contentType = "image/png"
-                Storage.storage().reference().child("\(userID)/Profile.png").putData(pictureData, metadata: metadata) { metadata, error in
-                    if let error = error {
-                        errorTitle = "Error saving picture"
-                        errorMessage = "\(error.localizedDescription)"
-                        showError = true
-                    }
+                updateProfilePicture(userID: userID, profile: profile, picture: editedProfile.picture) { error in
+                    errorTitle = "Error saving picture"
+                    errorMessage = "\(error.localizedDescription)"
+                    showError = true
                 }
-                Firestore.firestore()
-                    .collection("users")
-                    .document(userID)
-                    .updateData(["name": editedProfile.name]) { error in
-                    if let error = error {
-                        errorTitle = "Error saving profile data"
-                        errorMessage = "\(error.localizedDescription)"
-                        showError = true
-                    }
+                updateProfileName(userID: userID, name: editedProfile.name) { error in
+                    errorTitle = "Error saving profile data"
+                    errorMessage = "\(error.localizedDescription)"
+                    showError = true
                 }
                 profilePage = .profile
             }) {

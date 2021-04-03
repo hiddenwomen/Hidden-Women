@@ -15,7 +15,6 @@ var women: [Woman] = []
 struct Hidden_WomenApp: App {
     @AppStorage("userID") var userID: String = ""
     var profile: Profile = Profile()
-    //var listener: ListenerRegistration
     
     init() {
         if let location = Bundle.main.url(forResource: "women", withExtension: "json") {

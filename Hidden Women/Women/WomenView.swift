@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Firebase
 
 struct WomenView: View {
     @State var searchText: String = ""
@@ -42,13 +41,9 @@ struct WomenView: View {
                                             }
                                             
                                         }
-                                        Firestore.firestore().collection("users").document(userID).updateData(
-                                            ["favourites": profile.favourites]
-                                        ) { error in
-                                            if let error = error {
-                                                errorMessage = error.localizedDescription
-                                                showError = true
-                                            }
+                                        updateFavourites(userID: userID, profile: profile) { error in
+                                            errorMessage = error.localizedDescription
+                                            showError = true
                                         }
                                     }
                             }

@@ -6,39 +6,21 @@
 //
 
 import SwiftUI
-import Firebase
 
 enum ProfilePages {
     case profile
     case editProfile
 }
 
-//enum ProfileTabs {
-//    case first
-//}
-
 struct ProfileView: View {
     @EnvironmentObject var profile: Profile
     @AppStorage ("userID") var userID: String = ""
     @Binding var currentPage: Page
     @State var profilePage: ProfilePages = .profile
-    //@State var selectedUpperTab: ProfileTabs = .first
     
     var body: some View {
         if userID != "" {
             VStack {
-                //                HStack {
-                //                    Spacer()
-                //                    VStack {
-                //                        Image(systemName: selectedUpperTab == .first ? "person.fill" : "person")
-                //                            .foregroundColor(selectedUpperTab == .first ? Color.accentColor : Color.gray)
-                //                        Text("First tab")
-                //                    }
-                //                    .onTapGesture {
-                //                        //self.selectedTab = .FirstTab
-                //                    }
-                //                    Spacer()
-                //                }
                 switch profilePage {
                 case .profile:
                     VStack {

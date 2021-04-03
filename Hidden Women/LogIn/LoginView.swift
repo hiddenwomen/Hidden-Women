@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import Firebase
 
 struct LoginView: View {
     @AppStorage ("userID") var userID = ""
@@ -49,7 +48,19 @@ struct LoginView: View {
                         .foregroundColor(Color("Morado"))
                         .font(.caption)
                 }
-                Button(action: signin) {
+                Button(action: {
+                    signin(
+                        withEmail: email,
+                        password: password,
+                        onError: { error in
+                            errorMessage = error.localizedDescription
+                            showErrorAlert = true
+                        }) { authResult in
+                            userID = authResult.user.uid
+                            loadProfile(userID: userID, profile: profile, andFriends: true)
+                            currentPage = .main
+                        }
+                }) {
                     Text("Sign in")
                         .fontWeight(.bold)
                         .importantButtonStyle()
@@ -81,18 +92,7 @@ struct LoginView: View {
         }
     }
     
-    func signin() {
-        Auth.auth().signIn(withEmail: email, password: password) { user, error in
-            if let error = error {
-                errorMessage = error.localizedDescription
-                showErrorAlert = true
-            } else {
-                userID = user?.user.uid ?? ""
-                loadProfile(userID: userID, profile: profile, andFriends: true)
-                currentPage = .main
-            }
-        }
-    }
+
 }
 
 struct LoginView_Previews: PreviewProvider {

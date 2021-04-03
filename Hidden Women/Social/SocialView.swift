@@ -85,7 +85,6 @@ struct SocialView: View {
                 }
                 
                 
-                
                 NavigationLink(destination: FindPeopleView()) {
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
@@ -97,8 +96,15 @@ struct SocialView: View {
                                         .font(.system(size: 52, weight: .bold))
                                         .opacity(0.4)
                                         .padding(.leading, 10)
-                                    Text("Find people like me")
-                                        .font(.title)
+                                    VStack (alignment: .leading) {
+                                        Text("Find people like me")
+                                            .font(.title)
+                                        if profile.favourites.count == 0 { //TODO: Actualizar la lista de peticiones al entrar en la pantalla.
+                                            Text("You have to select some Hidden Women as favourites to find people like you.")
+                                        } else {
+                                            Text("Find people with similar favourite Hidden Women")
+                                        }
+                                    }
                                 }
                             }
                             Spacer()
@@ -106,6 +112,7 @@ struct SocialView: View {
                     }
                     .padding()
                 }
+                .disabled(profile.favourites.count == 0)
                 
                 NavigationLink(destination: FriendRequestsView()) {
                     ZStack {
