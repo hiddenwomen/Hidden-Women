@@ -48,6 +48,7 @@
 		F58710B125F7611D00B47462 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F58710B025F7611D00B47462 /* Assets.xcassets */; };
 		F58710B425F7611D00B47462 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F58710B325F7611D00B47462 /* Preview Assets.xcassets */; };
 		F58710C025F761F500B47462 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F58710BF25F761F500B47462 /* Podfile */; };
+		F58D437C261A356500260758 /* PairThemUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D437B261A356500260758 /* PairThemUpView.swift */; };
 		F5A9822E25F769C1005EB566 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9822D25F769C1005EB566 /* LoginView.swift */; };
 		F5A9823825F7722C005EB566 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9823725F7722C005EB566 /* SignupView.swift */; };
 		F5A9823C25F77814005EB566 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9823B25F77814005EB566 /* MainView.swift */; };
@@ -101,6 +102,7 @@
 		F58710B325F7611D00B47462 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F58710B525F7611D00B47462 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F58710BF25F761F500B47462 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F58D437B261A356500260758 /* PairThemUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairThemUpView.swift; sourceTree = "<group>"; };
 		F5A9822D25F769C1005EB566 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F5A9823725F7722C005EB566 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		F5A9823B25F77814005EB566 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				F52C5DCC2615DEE300399F46 /* GamesView.swift */,
+				F58D437A261A355100260758 /* PairThemUp */,
 				F50B035825FBE0F400D4EABE /* Chronoline */,
 				F560939825FB6CA0000E8560 /* TrueOrFalse */,
 				CB6826DC25FA16F300A8190C /* Quiz */,
@@ -271,6 +274,14 @@
 				F58710B325F7611D00B47462 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F58D437A261A355100260758 /* PairThemUp */ = {
+			isa = PBXGroup;
+			children = (
+				F58D437B261A356500260758 /* PairThemUpView.swift */,
+			);
+			path = PairThemUp;
 			sourceTree = "<group>";
 		};
 		F5A9823125F769DB005EB566 /* LogIn */ = {
@@ -427,6 +438,7 @@
 				F53AA8BE25FA04890045977A /* SearchBarView.swift in Sources */,
 				CB6826E225FA173600A8190C /* Quiz.swift in Sources */,
 				CB6826DE25FA172200A8190C /* QuizView.swift in Sources */,
+				F58D437C261A356500260758 /* PairThemUpView.swift in Sources */,
 				F5A9822E25F769C1005EB566 /* LoginView.swift in Sources */,
 				CB74700025F7FC91006795BB /* Woman.swift in Sources */,
 				5AEF0B1F25FC94F1007983CF /* ResetPasswordView.swift in Sources */,
