@@ -9,6 +9,8 @@ import SwiftUI
 
 struct FriendProfileView: View {
     let friendProfile: Profile
+    let friendRequestButton: Bool
+    @EnvironmentObject var profile: Profile
     
     var body: some View {
         ScrollView{
@@ -17,7 +19,7 @@ struct FriendProfileView: View {
                     .resizable()
                     .scaledToFit()
                     .clipShape(Circle())
-                    .frame(width: 300, height: 300)
+                    .frame(width: 200, height: 200)
                 Text(friendProfile.name)
                     .fontWeight(.bold)
                 Text(friendProfile.email)
@@ -39,6 +41,21 @@ struct FriendProfileView: View {
                                 .foregroundColor(.white)
                                 .font(.subheadline)
                         }
+                    }
+                }
+                if friendRequestButton {
+                    Button(action: {
+                        var friendUserId = ""
+                        getUserId(forEmail: friendProfile.email, onError: {error in}) { snapshot in
+                            friendUserId = snapshot["userId"] as? String ?? ""
+                            if friendUserId != "" {
+                                sendFriendRequest(destinationId: friendUserId, withMyProfile: profile, onError: {error in})
+                            }
+                        }
+                    }) {
+                        Text("Send friend request")
+                            .fontWeight(.bold)
+                            .importantButtonStyle()
                     }
                 }
                 VStack (alignment: .leading){

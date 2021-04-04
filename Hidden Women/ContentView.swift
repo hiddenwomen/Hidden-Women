@@ -39,22 +39,7 @@ struct ContentView: View {
             if userID == "" {
                 currentPage = .login
             } else {
-                Firestore.firestore().collection("users").document(userID).getDocument { snapshot, e in
-                    if let snapshot = snapshot, snapshot.exists {
-                        let data = snapshot.data() ?? ["name": ""]
-                        profile.name = data["name"] as? String ?? ""
-                        profile.email = data["email"] as? String ?? ""
-                        profile.favourites = data["favourites"] as? [String] ?? []
-                    }
-                }
-                let picture = Storage.storage().reference().child("\(userID)/Profile.png")
-                picture.getData(maxSize: 128 * 1024 * 1024) { data, error in
-                    if error != nil {
-                        profile.picture = UIImage(named: "unknown")
-                    } else {
-                        profile.picture = UIImage(data: data!) ?? UIImage(named: "unknown")
-                    }
-                }
+                loadProfile(userID: userID, profile: profile, andFriends: true)
                 currentPage = .main
             }
         }

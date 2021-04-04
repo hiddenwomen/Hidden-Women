@@ -49,7 +49,6 @@ struct EditProfileView: View {
             .cornerRadius(16)
             .padding(.horizontal, 20)
             Button(action: {
-                
                 profile.name = editedProfile.name
                 updateProfilePicture(userID: userID, profile: profile, picture: editedProfile.picture) { error in
                     errorTitle = "Error saving picture"

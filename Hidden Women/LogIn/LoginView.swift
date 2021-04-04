@@ -49,7 +49,7 @@ struct LoginView: View {
                         .font(.caption)
                 }
                 Button(action: {
-                    signin(
+                    signIn(
                         withEmail: email,
                         password: password,
                         onError: { error in

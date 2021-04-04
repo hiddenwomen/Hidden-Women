@@ -42,16 +42,7 @@ struct Hidden_WomenApp: App {
                 .onAppear {
                     if userID != "" {
                         loadProfile(userID: userID, profile: profile, andFriends: true)
-                        let listener = Firestore.firestore()
-                            .collection("users")
-                            .document(userID)
-                            .addSnapshotListener { documentSnapshot, error in
-                                guard let document = documentSnapshot else {
-                                    print("Error fetching document: \(error!)")
-                                    return
-                                }
-                                loadProfile(userID: userID, profile: profile, andFriends: true)
-                            }
+                        let listener = listenToAndUpdateProfile(userID: userID, profile: profile)
                     }
                     print("\(Int(Date().timeIntervalSince1970))")
                 }

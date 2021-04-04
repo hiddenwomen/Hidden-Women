@@ -9,6 +9,7 @@ import SwiftUI
 import Firebase
 
 struct ResetPasswordView: View {
+    @EnvironmentObject var profile: Profile
     @Binding var currentPage: Page
     @State var showAlert: Bool = false
     @State var showError: Bool = false
@@ -19,17 +20,18 @@ struct ResetPasswordView: View {
             Text("If you tap on the 'Reset Password' button, your password will be reset.")
                 .multilineTextAlignment(.center)
             Text("We will send you an email to")
-            Text("YOUR EMAIL")
+            Text(profile.email)
             Text("with instructions on how to reset your password.")
             Button(action: {
-                Auth.auth().sendPasswordReset(withEmail: "EMAIL") { error in
-                    if let error = error {
+                resetPassword(
+                    withEmail: profile.email,
+                    onError: { error in
                         errorMessage = error.localizedDescription
                         showError = true
-                    } else {
+                    },
+                    onCompletion: {
                         showAlert = true
-                    }
-                }
+                    })
                 currentPage = .login
             }) {
                 Text("Reset password")

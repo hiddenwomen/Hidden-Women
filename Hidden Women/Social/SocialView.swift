@@ -31,7 +31,7 @@ struct SocialView: View {
                             VStack (alignment: .leading) {
                                 Text("Ranking")
                                     .font(.title)
-                                Text("Check how your friends are doing with the games")
+                                Text("Check how your friends have been doing with the games in the last 7 days")
                                     .foregroundColor(.gray)
                                     .multilineTextAlignment(.leading)
                             }
@@ -134,7 +134,7 @@ struct SocialView: View {
                                             Text("You have 1 friend request")
                                         } else {
                                             Text(
-                                                String.localizedStringWithFormat(NSLocalizedString("You have %@ friend requests", comment: ""), profile.friendRequests.count)
+                                                String.localizedStringWithFormat(NSLocalizedString("You have %@ friend requests", comment: ""), String(profile.friendRequests.count))
                                             )
                                             
                                         }                                    }

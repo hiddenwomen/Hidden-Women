@@ -29,7 +29,7 @@ struct MakeNewFriendsView: View {
             
             Button(action: {
                 if possibleFriendUserId != "" { //TODO: Solo añadir si no es un amigo ya
-                    sendFriendRequest(destinationId: possibleFriendUserId, profile: profile) { error in } // TODO: Tratamiento del error
+                    sendFriendRequest(destinationId: possibleFriendUserId, withMyProfile: profile) { error in } // TODO: Tratamiento del error
                 }
             } ){
                 Text("Send friend request")

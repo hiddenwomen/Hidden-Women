@@ -147,7 +147,6 @@ struct ChronolineView: View {
                     shownChronoline += 1
                     timeLeft = chronolineTotalTime
                     scoreIfSorted()
-                    shownChronoline += 1
                     if shownChronoline < numberOfChronolines {
                         chronoline = chronolineGenerator(
                             women: women,

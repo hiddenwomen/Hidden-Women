@@ -24,18 +24,18 @@ struct MainView: View {
             
             
             GamesView()
-            .tabItem {
-                Image(systemName: "gamecontroller.fill")
-                Text("Games")
-            }
-            .tag(1)
-            if userID != "" {
-            SocialView(currentPage: $currentPage)
                 .tabItem {
-                    Image(systemName: "person.3.fill")
-                    Text("Friends")
+                    Image(systemName: "gamecontroller.fill")
+                    Text("Games")
                 }
-                .tag(2)
+                .tag(1)
+            if userID != "" {
+                SocialView(currentPage: $currentPage)
+                    .tabItem {
+                        Image(systemName: "person.3.fill")
+                        Text("Friends")
+                    }
+                    .tag(2)
             }
             
             ProfileView(currentPage: $currentPage)

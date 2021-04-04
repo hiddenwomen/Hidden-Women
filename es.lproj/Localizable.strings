@@ -75,3 +75,13 @@
 "You have %@ friend requests" = "Tienes %@ solicitudes de amistad";
 "You have 1 friend request" = "Tienes 1 solicitud de amistad";
 "You have no friend requests." = "No tienes solicitudes de amistad.";
+"You have to select some Hidden Women as favourites to find people like you." = "Tienes que seleccionar Mujeres Ocultas favoritas para encontrar a gente como tú";
+"Find people with similar favourite Hidden Women" = "Encuentra a gente con las mismas mujeres ocultas favoritas";
+"points" = "puntos";
+"point" = "punto";
+"Favourite hidden women:" = "Mujeres ocultas favoritas"; // lo vamos a poner con mayusculas o minisculas??
+"Left: your answer. Right: correct answer." = "Izquierda: tu respuesta. Derecha: respuesta correcta";
+"Things you should learn:" = "Cosas que deberías aprender:";
+"You ran out of time" = "Te has quedado sin tiempo";
+"You chose: %@" = "Elegiste: %@";
+"The correct answer was: %@" = "La respuesta correcta era: %@";

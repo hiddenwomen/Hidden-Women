@@ -14,16 +14,18 @@ struct FindPeopleView: View {
     
     var body: some View {
         VStack {
-            ForEach (foundFriends, id: \.self.email) { friend in
-                NavigationLink(destination: FriendProfileView(friendProfile: friend)){
-                    HStack {
-                        Image(uiImage: friend.picture ?? UIImage())
-                            .resizable()
-                            .scaledToFit()
-                            .clipShape(Circle())
-                            .frame(width: 100)
-                        Text("\(friend.name)")
-                        Spacer()
+            List {
+                ForEach (foundFriends, id: \.self.email) { friend in
+                    NavigationLink(destination: FriendProfileView(friendProfile: friend, friendRequestButton: true)){
+                        HStack {
+                            Image(uiImage: friend.picture ?? UIImage())
+                                .resizable()
+                                .scaledToFit()
+                                .clipShape(Circle())
+                                .frame(width: 100)
+                            Text("\(friend.name)")
+                            Spacer()
+                        }
                     }
                 }
             }
@@ -42,7 +44,7 @@ struct FindPeopleView: View {
                         name: data["name"] as? String ?? "error",
                         email: data["email"] as? String ?? "error",
                         favourites: data["favourites"] as? [String] ?? [],
-                        pictureFileName: data["pictureFileName"] as? String ?? "Profile.png",
+                        pictureFileName: data["pictureFileName"] as? String ?? "",
                         gameResults: []
                     )
                     let results = data["gameResults"] as? [[String : Any]] ?? []
@@ -55,7 +57,7 @@ struct FindPeopleView: View {
                         )
                         possibleFriendProfile.gameResults.append(gameResult)
                     }
-
+                    
                     if possibleFriendID != userID && !profile.friendIDs.contains(possibleFriendID) {
                         buffer[possibleFriendID] = possibleFriendProfile
                     }
