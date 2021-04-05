@@ -76,36 +76,11 @@ struct WomenView: View {
                 }
             }
             if showBanner {
-                VStack {
-                    HStack {
-                        VStack(alignment: .leading, spacing: 2) {
-                            Text("Only three favourites")
-                                .bold()
-                            Text("You can only select three Hiden Women as your favourites.")
-                                .font(Font.system(size: 15))
-                        }
-                        Spacer()
-                    }
-                    .foregroundColor(Color.white)
-                    .padding(12)
-                    .background(Color("Morado"))
-                    .cornerRadius(8)
-                    Spacer()
-                }
-                .padding()
-                .animation(.easeInOut)
-                .transition(AnyTransition.move(edge: .top).combined(with: .opacity))
-                .onTapGesture {
-                    withAnimation {
-                        showBanner = false
-                    }
-                }
-                .onAppear {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
-                        withAnimation {
-                            showBanner = false
-                        }
-                    }
+                BannerView(
+                    title: "Only three favourites",
+                    text: "You can only select three Hidden Women as your favourites."
+                ) {
+                    showBanner = false
                 }
             }
         }

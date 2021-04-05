@@ -51,8 +51,13 @@ struct SocialView: View {
                                         .font(.system(size: 52, weight: .bold))
                                         .opacity(0.4)
                                         .padding(.leading, 10)
-                                    Text("My friends")
-                                        .font(.title)
+                                    VStack(alignment: .leading) {
+                                        Text("My friends")
+                                            .font(.title)
+                                        Text("Check on your friends")
+                                            .foregroundColor(.gray)
+                                            .multilineTextAlignment(.leading)
+                                    }
                                 }
                             }
                             Spacer()
@@ -74,8 +79,13 @@ struct SocialView: View {
                                         .font(.system(size: 52, weight: .bold))
                                         .opacity(0.4)
                                         .padding(.leading, 10)
-                                    Text("Send a friend request")
-                                        .font(.title)
+                                    VStack(alignment: .leading) {
+                                        Text("Send a friend request")
+                                            .font(.title)
+                                        Text("Ask somebody to be your friend")
+                                            .foregroundColor(.gray)
+                                            .multilineTextAlignment(.leading)
+                                    }
                                 }
                             }
                             Spacer()
@@ -99,10 +109,12 @@ struct SocialView: View {
                                     VStack (alignment: .leading) {
                                         Text("Find people like me")
                                             .font(.title)
-                                        if profile.favourites.count == 0 { //TODO: Actualizar la lista de peticiones al entrar en la pantalla.
+                                        if profile.favourites.count == 0 {
                                             Text("You have to select some Hidden Women as favourites to find people like you.")
                                         } else {
                                             Text("Find people with similar favourite Hidden Women")
+                                                .foregroundColor(.gray)
+                                                .multilineTextAlignment(.leading)
                                         }
                                     }
                                 }
@@ -130,14 +142,20 @@ struct SocialView: View {
                                             .font(.title)
                                         if profile.friendRequests.count == 0 { //TODO: Actualizar la lista de peticiones al entrar en la pantalla.
                                             Text("You have no friend requests.")
+                                                .foregroundColor(.gray)
+                                                .multilineTextAlignment(.leading)
                                         } else if profile.friendRequests.count == 1 {
                                             Text("You have 1 friend request")
+                                                .foregroundColor(.gray)
+                                                .multilineTextAlignment(.leading)
                                         } else {
                                             Text(
                                                 String.localizedStringWithFormat(NSLocalizedString("You have %@ friend requests", comment: ""), String(profile.friendRequests.count))
                                             )
-                                            
-                                        }                                    }
+                                            .foregroundColor(.gray)
+                                            .multilineTextAlignment(.leading)
+                                        }
+                                    }
                                 }
                             }
                             Spacer()

@@ -44,10 +44,10 @@ extension View {
 //from: https://stackoverflow.com/questions/25471114/how-to-validate-an-e-mail-address-in-swift
 extension String {
     func isValidEmail() -> Bool {
-            // here, `try!` will always succeed because the pattern is valid
-            let regex = try! NSRegularExpression(pattern: "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$", options: .caseInsensitive)
-            return regex.firstMatch(in: self, options: [], range: NSRange(location: 0, length: count)) != nil
-        }
+        // here, `try!` will always succeed because the pattern is valid
+        let regex = try! NSRegularExpression(pattern: "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$", options: .caseInsensitive)
+        return regex.firstMatch(in: self, options: [], range: NSRange(location: 0, length: count)) != nil
+    }
 }
 
 // from: https://www.advancedswift.com/resize-uiimage-no-stretching-swift/
@@ -63,12 +63,12 @@ extension UIImage {
             width: size.width * scaleFactor,
             height: size.height * scaleFactor
         )
-
+        
         // Draw and return the resized UIImage
         let renderer = UIGraphicsImageRenderer(
             size: scaledImageSize
         )
-
+        
         let scaledImage = renderer.image { _ in
             self.draw(in: CGRect(
                 origin: .zero,
@@ -82,4 +82,44 @@ extension UIImage {
 extension UIScreen {
     static let width = UIScreen.main.bounds.size.width
     static let height = UIScreen.main.bounds.size.height
+}
+
+struct BannerView: View {
+    let title: String
+    let text: String
+    let closeBanner: () -> Void
+    
+    var body: some View {
+        VStack {
+            HStack {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text(title)
+                        .bold()
+                    Text(text)
+                        .font(Font.system(size: 15))
+                }
+                Spacer()
+            }
+            .foregroundColor(Color.white)
+            .padding(12)
+            .background(Color("Morado"))
+            .cornerRadius(8)
+            Spacer()
+        }
+        .padding()
+        .animation(.easeInOut)
+        .transition(AnyTransition.move(edge: .top).combined(with: .opacity))
+        .onTapGesture {
+            withAnimation {
+                closeBanner()
+            }
+        }
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
+                withAnimation {
+                    closeBanner()
+                }
+            }
+        }
+    }
 }

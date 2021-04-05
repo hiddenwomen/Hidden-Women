@@ -56,36 +56,11 @@ struct MakeNewFriendsView: View {
                 }
             }
             if showBanner {
-                VStack {
-                    HStack {
-                        VStack(alignment: .leading, spacing: 2) {
-                            Text("Friend request sent")
-                                .bold()
-                            Text("The user can accept of reject your request.")
-                                .font(Font.system(size: 15))
-                        }
-                        Spacer()
-                    }
-                    .foregroundColor(Color.white)
-                    .padding(12)
-                    .background(Color("Morado"))
-                    .cornerRadius(8)
-                    Spacer()
-                }
-                .padding()
-                .animation(.easeInOut)
-                .transition(AnyTransition.move(edge: .top).combined(with: .opacity))
-                .onTapGesture {
-                    withAnimation {
-                        showBanner = false
-                    }
-                }
-                .onAppear {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 4) {
-                        withAnimation {
-                            showBanner = false
-                        }
-                    }
+                BannerView(
+                    title: "Friend request sent",
+                    text: "The user can accept of reject your request."
+                ) {
+                    showBanner = false
                 }
             }
         }

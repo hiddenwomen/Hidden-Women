@@ -9,45 +9,59 @@ import SwiftUI
 import Firebase
 
 struct ResetPasswordView: View {
-    @EnvironmentObject var profile: Profile
     @Binding var currentPage: Page
-    @State var showAlert: Bool = false
+    @State var showBanner: Bool = false
     @State var showError: Bool = false
     @State var errorMessage: String = ""
-
+    @State var emailForReset: String = ""
+    
+    
     var body: some View {
+        ZStack {
         VStack {
-            Text("If you tap on the 'Reset Password' button, your password will be reset.")
-                .multilineTextAlignment(.center)
-            Text("We will send you an email to")
-            Text(profile.email)
+            Text("Reset password")
+                .font(.largeTitle)
+            Image("logo_nombre")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 300, height: 300)
+            Text("If you tap on the 'Reset Password' button, your password will be reset. We will send an email to")
+                .multilineTextAlignment(.leading)
+                .padding()
+            HStack {
+                Image(systemName: "envelope")
+                TextField("Email...", text: $emailForReset)
+            }
+            .frame(height: 60)
+            .padding(.horizontal, 20)
+            .background(Color("Hueso"))
+            .cornerRadius(16)
+            .padding(.horizontal, 20)
             Text("with instructions on how to reset your password.")
             Button(action: {
                 resetPassword(
-                    withEmail: profile.email,
+                    withEmail: emailForReset,
                     onError: { error in
                         errorMessage = error.localizedDescription
                         showError = true
                     },
                     onCompletion: {
-                        showAlert = true
+                        showBanner = true
                     })
-                currentPage = .login
             }) {
                 Text("Reset password")
+                    .fontWeight(.bold)
+                    .importantButtonStyle()
             }
+            .padding()
             Button(action: {
                 currentPage = .login
             }) {
                 Text("Cancel")
+                    .foregroundColor(Color("Morado"))
             }
-        }
-        .alert(isPresented: $showAlert) {
-            Alert(
-                title: Text("Email sent"),
-                message: Text("Check you email and follow the instructions to reset your password."),
-                dismissButton: .default(Text("OK"))
-            )
+            .padding()
+            Spacer()
         }
         .alert(isPresented: $showError) {
             Alert(
@@ -56,11 +70,19 @@ struct ResetPasswordView: View {
                 dismissButton: .default(Text("OK"))
             )
         }
+            if showBanner {
+                BannerView(title: "Email sent", text: "An email has been sent with instructions on how to reset your password") {
+                    showBanner = false
+                    currentPage = .login
+                }
+            }
+        }
     }
 }
 
 struct ResetPasswordView_Previews: PreviewProvider {
     @State static var currentPage: Page = .resetPassword
+    
     static var previews: some View {
         ResetPasswordView(currentPage: $currentPage)
     }
