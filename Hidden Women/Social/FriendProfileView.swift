@@ -63,11 +63,11 @@ struct FriendProfileView: View {
                         .font(.title)
                     ForEach(friendProfile.favourites, id: \.self) { favourite in
                         HStack {
-                            Image(women.filter({ $0.name == favourite }).map{$0.pictures[0]}.first ?? "")
+                            Image(women.filter({ $0.name["en"] == favourite }).map{$0.pictures[0]}.first ?? "")
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: 75)
-                            Text(favourite)
+                            Text(women.filter{ $0.name["en"] == favourite }.map{$0.name.localized}.first ?? "")
                         }
                     }
                 }

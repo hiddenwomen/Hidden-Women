@@ -32,25 +32,25 @@ struct MultiplePairThemUpView: View {
         Group {
             switch currentMultiplePairThemUpPage {
             case .start:
-                    HStack {
+                HStack {
+                    Spacer()
+                    VStack {
                         Spacer()
-                        VStack {
-                            Spacer()
-                            Text("PairThemUp")
-                                .font(.largeTitle)
-                            Text("_PairThemUp Help_")
-                            Button(action: {
-                                //chronoline = chronolineGenerator(women: women, numberOfWomen: 5, x: geo.size.width/2.0, height: geo.size.height)
-                                currentMultiplePairThemUpPage = .question
-                                scoreUpdated = false
-                            }) {
-                                Text("Start")
-                            }
-                            Spacer()
+                        Text("PairThemUp")
+                            .font(.largeTitle)
+                        Text("_PairThemUp Help_")
+                        Button(action: {
+                            //chronoline = chronolineGenerator(women: women, numberOfWomen: 5, x: geo.size.width/2.0, height: geo.size.height)
+                            currentMultiplePairThemUpPage = .question
+                            scoreUpdated = false
+                        }) {
+                            Text("Start")
                         }
                         Spacer()
                     }
-                    
+                    Spacer()
+                }
+                
             case .question:
                 if shownPairThemUp < numberOfPairThemUp {
                     VStack {
@@ -96,29 +96,33 @@ struct MultiplePairThemUpView: View {
                         ScrollView {
                             VStack (alignment: .leading){
                                 ForEach(0..<mistakes.count) { m in
-                                    VStack(alignment: .leading) {
-                                        HStack {
-                                            Image(systemName: "play")
-                                            Text("Pair them up").bold() + Text(" \(m+1)").bold()
-                                        }
-                                        ForEach(0..<mistakes[m].count) { i in
-                                            HStack {
-                                                Image(mistakes[m][i].picture)
-                                                    .resizable()
-                                                    .scaledToFit()
-                                                    .frame(width: 50)
-                                                    .clipShape(Circle())
-                                                    .padding(.trailing, 10)
-                                                VStack {
-                                                    Text(
-                                                        String.localizedStringWithFormat(NSLocalizedString("Your answer: %@", comment: ""), mistakes[m][i].incorrectAnswer)
-                                                        )
-                                                    Text(
-                                                        String.localizedStringWithFormat(NSLocalizedString("Correct answer: %@", comment: ""), mistakes[m][i].correctAnswer)
-                                                        )
+                                    Group {
+                                        if mistakes[m].count > 0 {
+                                            VStack(alignment: .leading) {
+                                                HStack {
+                                                    Image(systemName: "play")
+                                                    Text("Pair them up").bold() + Text(" \(m+1)").bold()
                                                 }
-
-                                                Spacer()
+                                                ForEach(0..<mistakes[m].count) { i in
+                                                    HStack {
+                                                        Image(mistakes[m][i].picture)
+                                                            .resizable()
+                                                            .scaledToFit()
+                                                            .frame(width: 50)
+                                                            .clipShape(Circle())
+                                                            .padding(.trailing, 10)
+                                                        VStack(alignment: .leading) {
+                                                            Text(
+                                                                String.localizedStringWithFormat(NSLocalizedString("Your answer: %@", comment: ""), mistakes[m][i].incorrectAnswer)
+                                                            )
+                                                            Text(
+                                                                String.localizedStringWithFormat(NSLocalizedString("Correct answer: %@", comment: ""), mistakes[m][i].correctAnswer)
+                                                            )
+                                                        }
+                                                        
+                                                        Spacer()
+                                                    }
+                                                }
                                             }
                                         }
                                     }

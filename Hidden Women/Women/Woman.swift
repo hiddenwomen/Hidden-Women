@@ -8,7 +8,7 @@
 import Foundation
 
 struct Woman: Identifiable, Decodable {
-    let name: String
+    let name: [String: String]
     let pictures: [String]
     let bio: [String: String]
     let birthYear: [String: String]
@@ -19,7 +19,7 @@ struct Woman: Identifiable, Decodable {
     let nationalities: [String: [String]]
     let wikipedia: [String: String]
     
-    var id: String { name }
+    var id: String { name["en"]! }
     var birthYearAsInt: Int {
         let nums = (birthYear["en"] ?? "").filter({"0123456789".contains($0)})
         var number = Int(nums) ?? 0
@@ -27,6 +27,14 @@ struct Woman: Identifiable, Decodable {
            number = -number
         }
         return number
+    }
+    
+    var wikipediaUrl: String {
+        if self.wikipedia.keys.contains(language) {
+            return "https://\(language).wikipedia.org/wiki/\(self.wikipedia.localized)".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
+        } else {
+            return "https://en.wikipedia.org/wiki/\(self.wikipedia["en"] ?? "")".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
+        }
     }
 }
 

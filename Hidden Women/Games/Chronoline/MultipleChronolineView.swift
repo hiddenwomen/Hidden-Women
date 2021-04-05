@@ -51,9 +51,6 @@ struct MultipleChronolineView: View {
                                 chronoline = chronolineGenerator(women: women, numberOfWomen: 5, x: geo.size.width/2.0, height: geo.size.height)
                                 currentMultipleChronolinePage = .question
                                 scoreUpdated = false
-                                for w in chronoline.cards {
-                                    print("\(w.woman.name) : \(w.woman.birthYear)")
-                                }
                             }) {
                                 Text("Start")
                             }
@@ -125,7 +122,7 @@ struct MultipleChronolineView: View {
                                                     .scaledToFit()
                                                     .frame(width: 50)
                                                 VStack(alignment: .leading) {
-                                                    Text(mistake.sortedWomenList[i].name)
+                                                    Text(mistake.sortedWomenList[i].name.localized)
                                                         .fontWeight(.bold)
                                                     Text(mistake.sortedWomenList[i].birthYear.localized)
                                                 }

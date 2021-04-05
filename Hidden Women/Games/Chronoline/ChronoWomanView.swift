@@ -23,7 +23,7 @@ struct ChronoWomanView: View {
                     .clipShape(RoundedRectangle(cornerRadius: 8))
                     .frame(width: width/3, height: 0.8 * height)
                 VStack (alignment: .leading) {
-                    Text(woman.name)
+                    Text(woman.name.localized)
                         .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     Text(woman.fields.localized.joined(separator: ", "))
                         .font(.caption)

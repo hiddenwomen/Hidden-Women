@@ -22,24 +22,22 @@ struct WomenView: View {
                     if searchText == "" {
                         return true
                     } else {
-                        return woman.name.lowercased().contains(searchText.lowercased())
+                        return woman.name.localized.lowercased().contains(searchText.lowercased())
                     }
                 }) { woman in
                     NavigationLink(destination: WomanView(woman: woman)) {
                         HStack {
                             if userID != "" {
-                                Image(systemName: profile.favourites.contains(woman.name) ? "heart.fill" : "heart")
+                                Image(systemName: profile.favourites.contains(woman.name["en"] ?? "") ? "heart.fill" : "heart")
                                     .foregroundColor(Color("Morado"))
                                     .onTapGesture{
-                                        if profile.favourites.contains(woman.name){
-                                            profile.favourites.removeAll{
-                                                $0 == woman.name
-                                            }
+                                        if profile.favourites.contains(woman.name["en"] ?? ""){
+                                            profile.favourites.removeAll{ $0 == woman.name["en"] }
                                         } else {
-                                            if profile.favourites.count < 3{
-                                                profile.favourites.append(woman.name)
+                                            if profile.favourites.count < 3 {
+                                                profile.favourites.append(woman.name["en"] ?? "")
                                             }
-                                            
+                                            //TODO: Presentar actionSheet o similar
                                         }
                                         updateFavourites(userID: userID, profile: profile) { error in
                                             errorMessage = error.localizedDescription
@@ -54,7 +52,7 @@ struct WomenView: View {
                                 .clipShape(RoundedRectangle(cornerRadius: 8))
                                 .shadow(radius: 3, x: 3, y: 3)
                             VStack (alignment: .leading){
-                                Text(woman.name)
+                                Text(woman.name.localized)
                                 Text(woman.fields.localized.joined(separator: ", "))
                                     .font(.caption)
                                     .foregroundColor(.gray)

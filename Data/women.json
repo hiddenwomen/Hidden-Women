@@ -1,5 +1,8 @@
-[{
-        "name": "Ada Lovelace",
+[
+    {
+        "name": {
+            "en": "Ada Lovelace"
+        },
         "pictures": [
             "AdaLovelace1",
             "AdaLovelace2"
@@ -66,11 +69,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Ada_Lovelace"
+            "en": "Ada_Lovelace",
+            "es": "Ada_Lovelace",
+            "ca": "Ada_Lovelace"
         }
     },
     {
-        "name": "Alice Ball",
+        "name": {
+            "en": "Alice Ball"
+        },
         "pictures": [
             "AliceBall1"
         ],
@@ -130,11 +137,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Alice_Ball"
+            "en": "Alice_Ball",
+            "es": "Alice_Ball",
+            "ca": "Alice_Ball"
         }
     },
     {
-        "name": "Barbara McClintock",
+        "name": {
+            "en": "Barbara McClintock"
+        },
         "pictures": [
             "BarbaraMcClintock1",
             "BarbaraMcClintock2"
@@ -195,11 +206,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Barbara_McClintock"
+            "en": "Barbara_McClintock",
+            "es": "Barbara_McClintock",
+            "ca": "Barbara_McClintock"
         }
     },
     {
-        "name": "Brenda Milner",
+        "name": {
+            "en": "Brenda Milner"
+        },
         "pictures": [
             "BrendaMilner1",
             "BrendaMilner2"
@@ -275,11 +290,16 @@
             ]
         },
         "wikipedia": {
-            "en": "Brenda_Milner"
+            "en": "Brenda_Milner",
+            "es": "Brenda_Milner",
+            "ca": "Brenda_Milner"
         }
     },
     {
-        "name": "Caroline Herschel",
+        "name": {
+            "en": "Caroline Herschel",
+            "es": "Carolina Herschel"
+        },
         "pictures": [
             "CarolineHerschel1",
             "CarolineHerschel2"
@@ -358,7 +378,9 @@
         }
     },
     {
-        "name": "Chien-Shiung Wu",
+        "name": {
+            "en": "Chien-Shiung Wu"
+        },
         "pictures": [
             "Chien-ShiungWu1",
             "Chien-ShiungWu2"
@@ -434,11 +456,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Chien-Shiung_Wu"
+            "en": "Chien-Shiung_Wu",
+            "es": "Chien-Shiung_Wu",
+            "ca": "Chien-Shiung_Wu"
         }
     },
     {
-        "name": "Dorothy Hodgkin",
+        "name": {
+            "en": "Dorothy Hodgkin"
+        },
         "pictures": [
             "DorothyHodgkin1",
             "DorothyHodgkin2"
@@ -517,11 +543,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Dorothy_Hodgkin"
+            "en": "Dorothy_Hodgkin",
+            "es": "Dorothy_Hodgkin",
+            "ca": "Dorothy_Hodgkin"
         }
     },
     {
-        "name": "Edith Clarke",
+        "name": {
+            "en": "Edith Clarke"
+        },
         "pictures": [
             "EdithClarke1"
         ],
@@ -587,11 +617,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Edith_Clarke"
+            "en": "Edith_Clarke",
+            "es": "Edith_Clarke",
+            "ca": "Edith_Clarke"
         }
     },
     {
-        "name": "Elisa Leonida Zamfirescu",
+        "name": {
+            "en": "Elisa Leonida Zamfirescu"
+        },
         "pictures": [
             "ElisaLeonidaZamfirescu1"
         ],
@@ -654,11 +688,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Elisa_Leonida_Zamfirescu"
+            "en": "Elisa_Leonida_Zamfirescu",
+            "es": "Elisa_Leonida_Zamfirescu",
+            "ca": "Elisa_Leonida_Zamfirescu"
         }
     },
     {
-        "name": "Elizabeth Blackburn",
+        "name": {
+            "en": "Elizabeth Blackburn"
+        },
         "pictures": [
             "ElizabethBlackburn1",
             "ElizabethBlackburn2"
@@ -755,11 +793,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Elizabeth_Blackburn"
+            "en": "Elizabeth_Blackburn",
+            "es": "Elizabeth_Blackburn",
+            "ca": "Elizabeth_Blackburn"
         }
     },
     {
-        "name": "Elizabeth Langdon Williams",
+        "name": {
+            "en": "Elizabeth Langdon Williams"
+        },
         "pictures": [
             "ElizabethLangdonWilliams1",
             "ElizabethLangdonWilliams2"
@@ -818,11 +860,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Elizabeth_Langdon_Williams"
+            "en": "Elizabeth_Langdon_Williams",
+            "es": "Elizabeth_Langdon_Williams",
+            "ca": "Elizabeth_Langdon_Williams"
         }
     },
     {
-        "name": "Emmy Noether",
+        "name": {
+            "en": "Emmy Noether"
+        },
         "pictures": [
             "EmmyNoether1"
         ],
@@ -897,11 +943,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Emmy_Noether"
+            "en": "Emmy_Noether",
+            "es": "Emmy_Noether",
+            "ca": "Emmy_Noether"
         }
     },
     {
-        "name": "Gerty Cori",
+        "name": {
+            "en": "Gerty Cori"
+        },
         "pictures": [
             "GertyCori1",
             "GertyCori2"
@@ -974,11 +1024,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Gerty_Cori"
+            "en": "Gerty_Cori",
+            "es": "Gerty_Cori",
+            "ca": "Gerty_Cori"
         }
     },
     {
-        "name": "Grace Murray Hopper",
+        "name": {
+            "en": "Grace Murray Hopper"
+        },
         "pictures": [
             "GraceMurrayHopper1",
             "GraceMurrayHopper2"
@@ -1069,11 +1123,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Grace_Murray_Hopper"
+            "en": "Grace_Murray_Hopper",
+            "es": "Grace_Murray_Hopper",
+            "ca": "Grace_Murray_Hopper"
         }
     },
     {
-        "name": "Hedy Lamarr",
+        "name": {
+            "en": "Hedy Lamarr"
+        },
         "pictures": [
             "HedyLamarr1",
             "HedyLamarr2"
@@ -1134,11 +1192,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Hedy_Lamarr"
+            "en": "Hedy_Lamarr",
+            "es": "Hedy_Lamarr",
+            "ca": "Hedy_Lamarr"
         }
     },
     {
-        "name": "Henrietta Swan Leavitt",
+        "name": {
+            "en": "Henrietta Swan Leavitt"
+        },
         "pictures": [
             "HenriettaSwanLeavitt1",
             "HenriettaSwanLeavitt2"
@@ -1205,11 +1267,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Henrietta_Swan_Leavitt"
+            "en": "Henrietta_Swan_Leavitt",
+            "es": "Henrietta_Swan_Leavitt",
+            "ca": "Henrietta_Swan_Leavitt"
         }
     },
     {
-        "name": "Hertha Ayrton",
+        "name": {
+            "en": "Hertha Ayrton"
+        },
         "pictures": [
             "HerthaAyrton1"
         ],
@@ -1278,11 +1344,17 @@
             ]
         },
         "wikipedia": {
-            "en": "Hertha_Ayrton"
+            "en": "Hertha_Ayrton",
+            "es": "Hertha_Ayrton",
+            "ca": "Hertha_Ayrton"
         }
     },
     {
-        "name": "Hildegard von Bingen",
+        "name": {
+            "en": "Hildegard von Bingen",
+            "es": "Hildegarda de Bingen",
+            "ca": "Hildegarda de Bingen"
+        },
         "pictures": [
             "HildegardVonBingen1",
             "HildegardVonBingen2"
@@ -1370,7 +1442,11 @@
         }
     },
     {
-        "name": "Hypatia",
+        "name": {
+            "en": "Hypatia",
+            "es": "Hipatia",
+            "ca": "Hipàcia"
+        },
         "pictures": [
             "Hypatia1",
             "Hypatia2"
@@ -1443,7 +1519,9 @@
         }
     },
     {
-        "name": "Inge Lehman",
+        "name": {
+            "en": "Inge Lehman"
+        },
         "pictures": [
             "IngeLehmann1",
             "IngeLehmann2"
@@ -1507,11 +1585,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Inge_Lehman"
+            "en": "Inge_Lehman",
+            "es": "Inge_Lehman",
+            "ca": "Inge_Lehman"
         }
     },
     {
-        "name": "Jane Goodall",
+        "name": {
+            "en": "Jane Goodall"
+        },
         "pictures": [
             "JaneGoodall1",
             "JaneGoodall2"
@@ -1584,11 +1666,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Jane_Goodall"
+            "en": "Jane_Goodall",
+            "es": "Jane_Goodall",
+            "ca": "Jane_Goodall"
         }
     },
     {
-        "name": "Joan Beauchamp Procter",
+        "name": {
+            "en": "Joan Beauchamp Procter"
+        },
         "pictures": [
             "JoanProcter1"
         ],
@@ -1654,11 +1740,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Joan_Beauchamp_Procter"
+            "en": "Joan_Beauchamp_Procter",
+            "es": "Joan_Beauchamp_Procter",
+            "ca": "Joan_Beauchamp_Procter"
         }
     },
     {
-        "name": "Julia Morgan",
+        "name": {
+            "en": "Julia Morgan"
+        },
         "pictures": [
             "JuliaMorgan1"
         ],
@@ -1718,11 +1808,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Julia_Morgan"
+            "en": "Julia_Morgan",
+            "es": "Julia_Morgan",
+            "ca": "Julia_Morgan"
         }
     },
     {
-        "name": "Katherine Johnson",
+        "name": {
+            "en": "Katherine Johnson"
+        },
         "pictures": [
             "KatherineJohnson1",
             "KatherineJohnson2",
@@ -1793,11 +1887,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Katherine_Johnson"
+            "en": "Katherine_Johnson",
+            "es": "Katherine_Johnson",
+            "ca": "Katherine_Johnson"
         }
     },
     {
-        "name": "Lillian Moller Gilbreth",
+        "name": {
+            "en": "Lillian Moller Gilbreth"
+        },
         "pictures": [
             "LillianMollerGilbreth1",
             "LillianMollerGilbreth2"
@@ -1864,11 +1962,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Lillian_Moller_Gilbreth"
+            "en": "Lillian_Moller_Gilbreth",
+            "es": "Lillian_Moller_Gilbreth",
+            "ca": "Lillian_Moller_Gilbreth"
         }
     },
     {
-        "name": "Lise Meitner",
+        "name": {
+            "en": "Lise Meitner"
+        },
         "pictures": [
             "LiseMeitner1",
             "LiseMeitner2"
@@ -1947,11 +2049,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Lise_Meitner"
+            "en": "Lise_Meitner",
+            "es": "Lise_Meitner",
+            "ca": "Lise_Meitner"
         }
     },
     {
-        "name": "Lynn Margulis",
+        "name": {
+            "en": "Lynn Margulis"
+        },
         "pictures": [
             "LynnMargulis1",
             "LynnMargulis2"
@@ -2014,11 +2120,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Lynn_Margulis"
+            "en": "Lynn_Margulis",
+            "es": "Lynn_Margulis",
+            "ca": "Lynn_Margulis"
         }
     },
     {
-        "name": "Mae Jemison",
+        "name": {
+            "en": "Mae Jemison"
+        },
         "pictures": [
             "MaeJemison1",
             "MaeJemison2",
@@ -2095,11 +2205,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Mae_Jemison"
+            "en": "Mae_Jemison",
+            "es": "Mae_Jemison",
+            "ca": "Mae_Jemison"
         }
     },
     {
-        "name": "Margaret Hamilton",
+        "name": {
+            "en": "Margaret Hamilton"
+        },
         "pictures": [
             "MargaretHamilton1",
             "MargaretHamilton2",
@@ -2177,7 +2291,9 @@
         }
     },
     {
-        "name": "Margarita Salas",
+        "name": {
+            "en": "Margarita Salas"
+        },
         "pictures": [
             "MargaritaSalas1",
             "MargaritaSalas2"
@@ -2247,11 +2363,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Margarita_Salas"
+            "en": "Margarita_Salas",
+            "es": "Margarita_Salas",
+            "ca": "Margarita_Salas"
         }
     },
     {
-        "name": "Marguerite Perey",
+        "name": {
+            "en": "Marguerite Perey"
+        },
         "pictures": [
             "MargueritePerey1"
         ],
@@ -2317,11 +2437,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Marguerite_Perey"
+            "en": "Marguerite_Perey",
+            "es": "Marguerite_Perey",
+            "ca": "Marguerite_Perey"
         }
     },
     {
-        "name": "Maria Goeppert Mayer",
+        "name": {
+            "en": "Maria Goeppert Mayer"
+        },
         "pictures": [
             "MariaGoeppertMayer1",
             "MariaGoeppertMayer2"
@@ -2385,11 +2509,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Maria_Goeppert_Mayer"
+            "en": "Maria_Goeppert_Mayer",
+            "es": "Maria_Goeppert_Mayer",
+            "ca": "Maria_Goeppert_Mayer"
         }
     },
     {
-        "name": "Maria Reiche",
+        "name": {
+            "en": "Maria Reiche"
+        },
         "pictures": [
             "MariaReiche1",
             "MariaReiche2"
@@ -2459,11 +2587,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Maria_Reiche"
+            "en": "Maria_Reiche",
+            "es": "Maria_Reiche",
+            "ca": "Maria_Reiche"
         }
     },
     {
-        "name": "Maria Sibylla Merian",
+        "name": {
+            "en": "Maria Sibylla Merian"
+        },
         "pictures": [
             "MariaSibyllaMerian1",
             "MariaSibyllaMerian2"
@@ -2524,11 +2656,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Maria_Sibylla_Merian"
+            "en": "Maria_Sibylla_Merian",
+            "es": "Maria_Sibylla_Merian",
+            "ca": "Maria_Sibylla_Merian"
         }
     },
     {
-        "name": "Marie Curie",
+        "name": {
+            "en": "Marie Curie"
+        },
         "pictures": [
             "MarieCurie1",
             "MarieCurie2"
@@ -2610,11 +2746,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Marie_Curie"
+            "en": "Marie_Curie",
+            "es": "Marie_Curie",
+            "ca": "Marie_Curie"
         }
     },
     {
-        "name": "Marie Sophie Germain",
+        "name": {
+            "en": "Marie Sophie Germain"
+        },
         "pictures": [
             "MarieSophieGermain1",
             "MarieSophieGermain2"
@@ -2656,7 +2796,6 @@
             "ca": [
                 "En 2020 es va llençar un microsatèl·lit amb el seu nom",
                 "Els números primers p tals que 2p+1 són primers porten el seu nom"
-
             ]
         },
         "fields": {
@@ -2688,11 +2827,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Sophie_Germain"
+            "en": "Sophie_Germain",
+            "es": "Sophie_Germain",
+            "ca": "Sophie_Germain"
         }
     },
     {
-        "name": "Marie Tharp",
+        "name": {
+            "en": "Marie Tharp"
+        },
         "pictures": [
             "MarieTharp1"
         ],
@@ -2764,11 +2907,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Marie_Tharp"
+            "en": "Marie_Tharp",
+            "es": "Marie_Tharp",
+            "ca": "Marie_Tharp"
         }
     },
     {
-        "name": "Marie-Anne Paulze Lavoisier",
+        "name": {
+            "en": "Marie-Anne Paulze Lavoisier"
+        },
         "pictures": [
             "Marie-AnnePaulzeLavoisier1",
             "Marie-AnnePaulzeLavoisier2"
@@ -2823,11 +2970,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Marie-Anne_Paulze_Lavoisier"
+            "en": "Marie-Anne_Paulze_Lavoisier",
+            "es": "Marie-Anne_Paulze_Lavoisier",
+            "ca": "Marie-Anne_Paulze_Lavoisier"
         }
     },
     {
-        "name": "Marion Cameron Gray",
+        "name": {
+            "en": "Marion Cameron Gray"
+        },
         "pictures": [
             "imagen1"
         ],
@@ -2843,8 +2994,12 @@
             "en": "1979"
         },
         "awards": {
-            "en": ["She was included in the National Library of Scotland's display \"Celebrating Scottish women of science\""],
-            "es": ["Fue incluida en la exhibición \"Celebrando las mujeres científicas escocesas\" de la Biblioteca Nacional de Escocia"],
+            "en": [
+                "She was included in the National Library of Scotland's display \"Celebrating Scottish women of science\""
+            ],
+            "es": [
+                "Fue incluida en la exhibición \"Celebrando las mujeres científicas escocesas\" de la Biblioteca Nacional de Escocia"
+            ],
             "ca": [
                 "Va ser inclosa en l'exhibició \"Celebrant les dones científiques escoceses\" de la Biblioteca Nacional d'Escòcia"
             ]
@@ -2883,11 +3038,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Marion_Cameron_Gray"
+            "en": "Marion_Cameron_Gray",
+            "es": "Marion_Cameron_Gray",
+            "ca": "Marion_Cameron_Gray"
         }
     },
     {
-        "name": "Mary Anderson",
+        "name": {
+            "en": "Mary Anderson"
+        },
         "pictures": [
             "MaryAnderson1"
         ],
@@ -2953,7 +3112,9 @@
         }
     },
     {
-        "name": "Mary Anning",
+        "name": {
+            "en": "Mary Anning"
+        },
         "pictures": [
             "MaryAnning1"
         ],
@@ -3013,11 +3174,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Mary_Anning"
+            "en": "Mary_Anning",
+            "es": "Mary_Anning",
+            "ca": "Mary_Anning"
         }
     },
     {
-        "name": "Mary Leakey",
+        "name": {
+            "en": "Mary Leakey"
+        },
         "pictures": [
             "MaryLeakey1"
         ],
@@ -3086,11 +3251,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Mary_Leakey"
+            "en": "Mary_Leakey",
+            "es": "Mary_Leakey",
+            "ca": "Mary_Leakey"
         }
     },
     {
-        "name": "Maryam Mirzakhani",
+        "name": {
+            "en": "Maryam Mirzakhani"
+        },
         "pictures": [
             "MaryamMirzakhani1"
         ],
@@ -3162,11 +3331,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Maryam_Mirzakhani"
+            "en": "Maryam_Mirzakhani",
+            "es": "Maryam_Mirzakhani",
+            "ca": "Maryam_Mirzakhani"
         }
     },
     {
-        "name": "May-Britt Moser",
+        "name": {
+            "en": "May-Britt Moser"
+        },
         "pictures": [
             "May-BrittMoser1",
             "May-BrittMoser2"
@@ -3230,11 +3403,15 @@
             ]
         },
         "wikipedia": {
-            "en": "May-Britt_Moser"
+            "en": "May-Britt_Moser",
+            "es": "May-Britt_Moser",
+            "ca": "May-Britt_Moser"
         }
     },
     {
-        "name": "Nettie Stevens",
+        "name": {
+            "en": "Nettie Stevens"
+        },
         "pictures": [
             "NettieStevens1",
             "NettieStevens2"
@@ -3295,11 +3472,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Nettie_Stevens"
+            "en": "Nettie_Stevens",
+            "es": "Nettie_Stevens",
+            "ca": "Nettie_Stevens"
         }
     },
     {
-        "name": "Nuria Oliver",
+        "name": {
+            "en": "Nuria Oliver"
+        },
         "pictures": [
             "NuriaOliver1",
             "NuriaOliver2"
@@ -3369,11 +3550,14 @@
             ]
         },
         "wikipedia": {
-            "en": "Nuria_Oliver"
+            "en": "Nuria_Oliver",
+            "es": "Nuria_Oliver"
         }
     },
     {
-        "name": "Patricia Bath",
+        "name": {
+            "en": "Patricia Bath"
+        },
         "pictures": [
             "PatriciaBath1"
         ],
@@ -3436,11 +3620,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Patricia_Bath"
+            "en": "Patricia_Bath",
+            "es": "Patricia_Bath",
+            "ca": "Patricia_Bath"
         }
     },
     {
-        "name": "Rachel Carson",
+        "name": {
+            "en": "Rachel Carson"
+        },
         "pictures": [
             "RachelCarson1"
         ],
@@ -3503,11 +3691,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Rachel_Carson"
+            "en": "Rachel_Carson",
+            "es": "Rachel_Carson",
+            "ca": "Rachel_Carson"
         }
     },
     {
-        "name": "Rita Levi-Montalcini",
+        "name": {
+            "en": "Rita Levi-Montalcini"
+        },
         "pictures": [
             "RitaLeviMontalcini1",
             "RitaLeviMontalcini2"
@@ -3586,11 +3778,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Rita_Levi-Montalcini"
+            "en": "Rita_Levi-Montalcini",
+            "es": "Rita_Levi-Montalcini",
+            "ca": "Rita_Levi-Montalcini"
         }
     },
     {
-        "name": "Rosalind Franklin",
+        "name": {
+            "en": "Rosalind Franklin"
+        },
         "pictures": [
             "RosalindFranklin1",
             "RosalindFranklin2"
@@ -3654,11 +3850,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Rosalind_Franklin"
+            "en": "Rosalind_Franklin",
+            "es": "Rosalind_Franklin",
+            "ca": "Rosalind_Franklin"
         }
     },
     {
-        "name": "Rosalyn Sussman Yalow",
+        "name": {
+            "en": "Rosalyn Sussman Yalow"
+        },
         "pictures": [
             "RosalynYalow1",
             "RosalynYalow2"
@@ -3728,11 +3928,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Rosalyn_Sussman_Yalow"
+            "en": "Rosalyn_Sussman_Yalow",
+            "es": "Rosalyn_Sussman_Yalow",
+            "ca": "Rosalyn_Sussman_Yalow"
         }
     },
     {
-        "name": "Stephanie Kwolek",
+        "name": {
+            "en": "Stephanie Kwolek"
+        },
         "pictures": [
             "StephanieKwolek1",
             "StephanieKwolek2"
@@ -3796,11 +4000,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Stephanie_Kwolek"
+            "en": "Stephanie_Kwolek",
+            "es": "Stephanie_Kwolek",
+            "ca": "Stephanie_Kwolek"
         }
     },
     {
-        "name": "Sylvia Earle",
+        "name": {
+            "en": "Sylvia Earle"
+        },
         "pictures": [
             "SylviaEarle1",
             "SylviaEarle2"
@@ -3867,11 +4075,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Sylvia_Earle"
+            "en": "Sylvia_Earle",
+            "es": "Sylvia_Earle",
+            "ca": "Sylvia_Earle"
         }
     },
     {
-        "name": "Valerie Thomas",
+        "name": {
+            "en": "Valerie Thomas"
+        },
         "pictures": [
             "ValerieThomas1",
             "ValerieThomas2"
@@ -3935,11 +4147,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Valerie_Thomas"
+            "en": "Valerie_Thomas",
+            "es": "Valerie_Thomas",
+            "ca": "Valerie_Thomas"
         }
     },
     {
-        "name": "Virginia Apgar",
+        "name": {
+            "en": "Virginia Apgar"
+        },
         "pictures": [
             "VirginiaApgar1",
             "VirginiaApgar2",
@@ -4004,11 +4220,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Virginia_Apgar"
+            "en": "Virginia_Apgar",
+            "es": "Virginia_Apgar",
+            "ca": "Virginia_Apgar"
         }
     },
     {
-        "name": "Zaha Hadid",
+        "name": {
+            "en": "Zaha Hadid"
+        },
         "pictures": [
             "ZahaHadid1"
         ],
@@ -4083,11 +4303,15 @@
             ]
         },
         "wikipedia": {
-            "en": "Zaha_Hadid"
+            "en": "Zaha_Hadid",
+            "es": "Zaha_Hadid",
+            "ca": "Zaha_Hadid"
         }
     },
     {
-        "name": "Ángela Ruíz",
+        "name": {
+            "en": "Ángela Ruíz"
+        },
         "pictures": [
             "AngelaRuizRobles1"
         ],

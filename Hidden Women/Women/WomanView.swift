@@ -32,7 +32,7 @@ struct WomanView: View {
     var body: some View {
         VStack(alignment: .center) {
             VStack {
-                Text(woman.name)
+                Text(woman.name.localized)
                     .font(.title)
                     .fontWeight(.bold)
                 Text("\(woman.birthYear.localized) - \(woman.deathYear.localized)")
@@ -56,7 +56,7 @@ struct WomanView: View {
                                         .frame(height: 200 * screenHeight/896)
                                         .onTapGesture {
                                             shownPicture = picture
-                                            shownName = woman.name
+                                            shownName = woman.name.localized
                                             showPicture = true
                                         }
                                 }
@@ -126,7 +126,7 @@ struct WomanView: View {
                 HStack {
                     Text("To know more, go to")
                     Link("Wikipedia",
-                         destination: URL(string: "https://\(language).wikipedia.org/wiki/\(woman.wikipedia.localized)".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "")!
+                         destination: URL(string: woman.wikipediaUrl)!
                     )
                 }
             }
@@ -146,7 +146,7 @@ struct WomanView: View {
 struct WomanView_Previews: PreviewProvider {
     static var previews: some View {
         //WomanView(woman: women.first(where: {$0.name=="Mae Jemison"})!)
-        WomanView(woman: women.first(where: {$0.name=="Rosalyn Sussman Yalow"})!)
+        WomanView(woman: women.first(where: {$0.name.localized == "Rosalyn Sussman Yalow"})!)
         //WomanView(woman: women.first(where: {$0.name=="Alice Ball"})!)
     }
 }

@@ -24,7 +24,7 @@ struct Hidden_WomenApp: App {
                 do{
                     women = try JSONDecoder()
                         .decode([Woman].self, from: data)
-                        .sorted(by: {$0.name.compare($1.name, locale: locale) == .orderedAscending})
+                        .sorted(by: {$0.name.localized.compare($1.name.localized, locale: locale) == .orderedAscending})
                 } catch {
                     print("Error in JSON: \(error)")
                 }

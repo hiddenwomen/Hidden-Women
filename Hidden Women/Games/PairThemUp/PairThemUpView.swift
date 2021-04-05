@@ -51,8 +51,8 @@ struct PairThemUpGame {
 
 func pairThemUpGenerator(numberOfWomen: Int, women: [Woman], xName: CGFloat, xPicture: CGFloat, firstY: CGFloat, lastY: CGFloat) -> PairThemUpGame {
     let women = women.filter{$0.pictures[0] != "imagen1"}.shuffled()[0..<min(numberOfWomen, women.count)]
-    let names = women.map{$0.name}.shuffled()
-    let pictures = women.map{($0.name, $0.pictures.randomElement() ?? "")}
+    let names = women.map{$0.name.localized}.shuffled()
+    let pictures = women.map{($0.name.localized, $0.pictures.randomElement() ?? "")}
     var womanNames: [WomanName] = []
     var womanPictures: [WomanPicture] = []
     let incY = (lastY - firstY) / CGFloat(women.count)
@@ -158,6 +158,7 @@ struct PairThemUpView: View {
             }
             if activateSubmit{
                 Button(action: {
+                    mistakes.append(checkResults())
                     progress += 1.0 / CGFloat(numberOfPairThemUp)
                     shownPairThemUp += 1
                     if shownPairThemUp < numberOfPairThemUp {
@@ -171,7 +172,6 @@ struct PairThemUpView: View {
                         timeLeft = pairThemUpTotalTime
                     }
                     showTimer = false
-                    mistakes.append(checkResults())
                     print("\(correctAnswers) \(mistakes)")
                 }) {
                     Text("Submit")
@@ -183,6 +183,7 @@ struct PairThemUpView: View {
         .onReceive(timer) { _ in
             timeLeft -= 1
             if timeLeft < 0 {
+                mistakes.append(checkResults())
                 timer.upstream.connect().cancel()
                 progress += 1.0 / CGFloat(numberOfPairThemUp)
                 showTimer = false
@@ -198,7 +199,6 @@ struct PairThemUpView: View {
                     )
                     timeLeft = pairThemUpTotalTime
                 }
-                mistakes.append(checkResults())
                 showTimer = false
             }
         }
