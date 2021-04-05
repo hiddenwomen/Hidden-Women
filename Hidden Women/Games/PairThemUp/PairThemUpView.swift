@@ -7,6 +7,14 @@
 
 import SwiftUI
 
+struct PairThemUpMistake: Identifiable {
+    let picture: String
+    let correctAnswer: String
+    let incorrectAnswer: String
+    let pairThemUpNumber: Int
+    let id = UUID()
+}
+
 struct WomanPicture {
     let picture: String
     var startPosition: CGPoint
@@ -56,8 +64,17 @@ func pairThemUpGenerator(numberOfWomen: Int, women: [Woman], xName: CGFloat, xPi
 }
 
 struct PairThemUpView: View {
-    @State var pairThemUpGame: PairThemUpGame
+    @Binding var pairThemUpGame: PairThemUpGame
     @State var activateSubmit: Bool = false
+    @Binding var shownPairThemUp: Int
+    @Binding var progress: CGFloat
+    @Binding var timeLeft: Int
+    @Binding var showTimer: Bool
+    @Binding var mistakes: [[PairThemUpMistake]]
+    @Binding var correctAnswers: Int
+    let numberOfPairThemUp: Int
+    let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
+    let numberOfWomen: Int = 5
     
     var body: some View {
         VStack {
@@ -77,7 +94,6 @@ struct PairThemUpView: View {
                             .multilineTextAlignment(.trailing)
                             .frame(maxWidth: geo.size.width / 4 - 10)
                             .position(x: pairThemUpGame.womanNames[i].position.x - geo.size.width / 4 - 10, y: pairThemUpGame.womanNames[i].position.y)
-                            .zIndex(1000)
                     }
                     ForEach(0..<pairThemUpGame.womanPictures.count) { i in
                         Image(pairThemUpGame.womanPictures[i].picture)
@@ -140,23 +156,77 @@ struct PairThemUpView: View {
                     }
                 }
             }
-            Button(action: {
-                
-            }) {
-                Text("Submit")
-                    .fontWeight(.bold)
+            if activateSubmit{
+                Button(action: {
+                    progress += 1.0 / CGFloat(numberOfPairThemUp)
+                    shownPairThemUp += 1
+                    if shownPairThemUp < numberOfPairThemUp {
+                        pairThemUpGame = pairThemUpGenerator(
+                            numberOfWomen: numberOfWomen,
+                            women: women,
+                            xName: UIScreen.width - 70,
+                            xPicture: 70, firstY: 70,
+                            lastY: UIScreen.height - 200
+                        )
+                        timeLeft = pairThemUpTotalTime
+                    }
+                    showTimer = false
+                    mistakes.append(checkResults())
+                    print("\(correctAnswers) \(mistakes)")
+                }) {
+                    Text("Submit")
+                        .fontWeight(.bold)
+                }
+                .importantButtonStyle()
             }
-            .importantButtonStyle()
-            .disabled(!activateSubmit)
+        }
+        .onReceive(timer) { _ in
+            timeLeft -= 1
+            if timeLeft < 0 {
+                timer.upstream.connect().cancel()
+                progress += 1.0 / CGFloat(numberOfPairThemUp)
+                showTimer = false
+                shownPairThemUp += 1
+                timeLeft = pairThemUpTotalTime
+                if shownPairThemUp < numberOfPairThemUp {
+                    pairThemUpGame = pairThemUpGenerator(
+                        numberOfWomen: numberOfWomen,
+                        women: women,
+                        xName: UIScreen.width - 70,
+                        xPicture: 70, firstY: 70,
+                        lastY: UIScreen.height - 200
+                    )
+                    timeLeft = pairThemUpTotalTime
+                }
+                mistakes.append(checkResults())
+                showTimer = false
+            }
         }
     }
-}
-
-struct PairThemUpView_Previews: PreviewProvider {
-    @State static var pairThemUp: PairThemUpGame = pairThemUpGenerator(numberOfWomen: 5, women: women, xName: UIScreen.width - 70, xPicture: 70, firstY: 70, lastY: UIScreen.height - 200)
-
     
-    static var previews: some View {
-        PairThemUpView(pairThemUpGame: pairThemUp)
+    func checkResults() -> [PairThemUpMistake] {
+        var buffer: [PairThemUpMistake] = []
+        for picture in pairThemUpGame.womanPictures {
+            if picture.coveringWomanName == picture.correctName {
+                correctAnswers += 1
+            } else {
+                buffer.append(PairThemUpMistake(
+                                    picture: picture.picture,
+                                    correctAnswer: picture.correctName,
+                                    incorrectAnswer: picture.coveringWomanName ?? "You ran out of time",
+                                    pairThemUpNumber: shownPairThemUp
+                ))
+            }
+        }
+        return buffer
     }
 }
+
+//struct PairThemUpView_Previews: PreviewProvider {
+//    @State static var pairThemUp: PairThemUpGame = //pairThemUpGenerator(numberOfWomen: 5, women: women, xName: //UIScreen.width - 70, xPicture: 70, firstY: 70, lastY: //UIScreen.height - 200)
+//
+//
+//    static var previews: some View {
+//        PairThemUpView(pairThemUpGame: pairThemUp)
+//    }
+//}

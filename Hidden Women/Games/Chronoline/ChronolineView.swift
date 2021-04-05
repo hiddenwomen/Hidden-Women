@@ -154,7 +154,7 @@ struct ChronolineView: View {
                             x: geo.size.width / 2,
                             height: geo.size.height
                         )
-                        timeLeft = trueOrFalseTotalTime
+                        timeLeft = chronolineTotalTime
                     }
                     showTimer = false
                 }

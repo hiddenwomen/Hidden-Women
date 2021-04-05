@@ -78,14 +78,7 @@ struct GamesView: View {
                     .padding()
                 }
                 NavigationLink(
-                    destination: PairThemUpView(pairThemUpGame: pairThemUpGenerator(
-                                                    numberOfWomen: 5,
-                                                    women: women,
-                                                    xName: UIScreen.width - 70,
-                                                    xPicture: 70,
-                                                    firstY: 70,
-                                                    lastY: UIScreen.height - 200
-                    ))) {
+                    destination: MultiplePairThemUpView(currentMultiplePairThemUpPage: .start)) {
                     ZStack {
                         RoundedRectangle(cornerRadius: 10)
                             .fill(Color("Hueso"))

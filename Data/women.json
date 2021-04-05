@@ -761,7 +761,8 @@
     {
         "name": "Elizabeth Langdon Williams",
         "pictures": [
-            "imagen1"
+            "ElizabethLangdonWilliams1",
+            "ElizabethLangdonWilliams2"
         ],
         "bio": {
             "en": "Elizabeth Langdon Williams was an American human computer and astronomer whose work helped lead to the discovery of Pluto, or Planet X. Percival Lowell hypothesized that a proposed Planet X affected the orbits of the known planets Neptune and Uranus. Williams' role in the Planet X project was that of head human computer, performing mathematical calculations on where Lowell should search for an unknown object and its size based on the differences in the orbits of Neptune and Uranus. Her calculations led to predictions for the location of the unknown planet.\n",
@@ -1139,7 +1140,8 @@
     {
         "name": "Henrietta Swan Leavitt",
         "pictures": [
-            "imagen1"
+            "HenriettaSwanLeavitt1",
+            "HenriettaSwanLeavitt2"
         ],
         "bio": {
             "en": "was an American astronomer. A graduate of Radcliffe College, she worked at the Harvard College Observatory as a \"computer\", tasked with examining  photographic plates in order to measure and catalog the brightness of stars. This work led her to discover the relation between the luminosity and  the period of Cepheid variables. Leavitt's discovery provided astronomers with the first \"standard candle\" with which to measure the distance to faraway galaxies.\n",
@@ -1282,7 +1284,8 @@
     {
         "name": "Hildegard von Bingen",
         "pictures": [
-            "imagen1"
+            "HildegardVonBingen1",
+            "HildegardVonBingen2"
         ],
         "bio": {
             "en": "Hildegard of Bingen was one of the most influential and multifaceted personalities of the late Middle Ages. She is considered to be the mother of natural history. She composed Gregorian music and wrote approximately seventy-seven songs, and an opera, her musical repertoire one of the most extensive of all medieval authors. She was the first female composer of sacred music. She invented la lingua ignota, one of the first artificial languages in history. She is considered a proto-feminist for her vision and practical attitude to the role of women in society. She proclaimed equal dignity between men and women. Hildegarda preached in feminine and with feminine symbolism. She had knowledge of physics, the active principles of medicinal plants, anatomy, physiology and psychology. He developed medicinal methods to cure more than two hundred known diseases. She introduced hops into brewing, which allowed the beer to not spoil so easily\n",
@@ -2098,7 +2101,10 @@
     {
         "name": "Margaret Hamilton",
         "pictures": [
-            "imagen1"
+            "MargaretHamilton1",
+            "MargaretHamilton2",
+            "MargaretHamilton3",
+            "MargaretHamilton4"
         ],
         "bio": {
             "en": "Margaret Hamilton is an American computer scientist, systems engineer, and business owner. She was director of the Software Engineering Division of the MIT  Instrumentation Laboratory, which developed on-board flight software for NASA's Apollo program. She later founded two software companies—Higher  Order Software in 1976 and Hamilton Technologies in 1986, both in Cambridge, Massachusetts. Hamilton has published more than 130 papers, proceedings  and reports about sixty projects and six major programs. She is one of the people credited with coining the term \"software engineering\".\n",
@@ -2247,7 +2253,7 @@
     {
         "name": "Marguerite Perey",
         "pictures": [
-            "imagen1"
+            "MargueritePerey1"
         ],
         "bio": {
             "en": "Marguerite Catherine Perey was a famous French physicist to discover in 1939 the element called francium, the last remaining natural element to complete Dmitri Mendeleev's table of 92 elements. Before, there were several failed attempts to isolate it, since it was suspected of its existence by coherence of the periodic table, she is also known to be the first woman to enter the French Academy of Sciences. She focused her career on researching the physical, chemical and biological properties of different radioactive substances, both natural and man-made.\n",
@@ -2883,7 +2889,7 @@
     {
         "name": "Mary Anderson",
         "pictures": [
-            "imagen1"
+            "MaryAnderson1"
         ],
         "bio": {
             "en": "Mary Elizabeth Anderson is considered the inventor of the windshield wiper blade. In November 1903 she was granted her first patent for a windshield cleaning device controlled from inside the vehicle. Her device consisted of a lever, installed inside the vehicle, that controlled a rubber blade on the outside of the windshield.\n",

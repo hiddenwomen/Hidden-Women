@@ -1,59 +1,48 @@
 //
-//  MultipleChronolineView.swift
+//  MultiplePairThemUpView.swift
 //  Hidden Women
 //
-//  Created by Claudia Marzal Polop on 16/3/21.
+//  Created by Mireia Belinchón Castillo on 5/4/21.
 //
 
 import SwiftUI
 
-enum MultipleChronolinePages {
+enum MultiplePairThemUpPages {
     case start
     case question
 }
 
-let chronolineTotalTime = 3
+let pairThemUpTotalTime = 20
 
-struct ChronolineMistake: Identifiable {
-    let chronolineNumber: Int
-    let sortedWomenList: [Woman]
-    let mistakenWomenList: [Woman]
-    let id = UUID()
-}
-
-struct MultipleChronolineView: View {
+struct MultiplePairThemUpView: View {
     @EnvironmentObject var profile: Profile
     @AppStorage ("userID") var userID: String = ""
-    @State var currentMultipleChronolinePage: MultipleChronolinePages
+    @State var currentMultiplePairThemUpPage: MultiplePairThemUpPages
     @State var correctAnswers: Int = 0
-    @State var shownChronoline: Int = 0
-    @State var progress: Float = 0.0
-    @State var chronoline = chronolineGenerator(women: [], numberOfWomen: 0, x: CGFloat(0.0), height: CGFloat(0.0))
-    let numberOfChronolines = 3
+    @State var shownPairThemUp: Int = 0
+    @State var progress: CGFloat = 0.0
+    @State var pairThemUp = pairThemUpGenerator(numberOfWomen: 5, women: women, xName: UIScreen.width - 70, xPicture: 70, firstY: 70, lastY: UIScreen.height - 200)
+    let numberOfPairThemUp = 3
     @State var scoreUpdated: Bool = false
     @State var showTimer: Bool = true
     @State var timeLeft: Int = trueOrFalseTotalTime
-    @State var mistakes: [ChronolineMistake] = []
+    @State var mistakes: [[PairThemUpMistake]] = []
     
     var body: some View {
         Group {
-            switch currentMultipleChronolinePage {
+            switch currentMultiplePairThemUpPage {
             case .start:
-                GeometryReader { geo in
                     HStack {
                         Spacer()
                         VStack {
                             Spacer()
-                            Text("Chronoline")
+                            Text("PairThemUp")
                                 .font(.largeTitle)
-                            Text("_Chronoline Help_")
+                            Text("_PairThemUp Help_")
                             Button(action: {
-                                chronoline = chronolineGenerator(women: women, numberOfWomen: 5, x: geo.size.width/2.0, height: geo.size.height)
-                                currentMultipleChronolinePage = .question
+                                //chronoline = chronolineGenerator(women: women, numberOfWomen: 5, x: geo.size.width/2.0, height: geo.size.height)
+                                currentMultiplePairThemUpPage = .question
                                 scoreUpdated = false
-                                for w in chronoline.cards {
-                                    print("\(w.woman.name) : \(w.woman.birthYear)")
-                                }
                             }) {
                                 Text("Start")
                             }
@@ -62,21 +51,21 @@ struct MultipleChronolineView: View {
                         Spacer()
                     }
                     
-                }
             case .question:
-                if shownChronoline < numberOfChronolines {
+                if shownPairThemUp < numberOfPairThemUp {
                     VStack {
                         ProgressView(value: progress)
                             .animation(.default)
-                        ChronolineView(
-                            shownChronoline: $shownChronoline,
+                        PairThemUpView(
+                            pairThemUpGame: $pairThemUp,
+                            activateSubmit: false,
+                            shownPairThemUp: $shownPairThemUp,
                             progress: $progress,
-                            correctAnswers: $correctAnswers,
-                            numberOfChronolines: numberOfChronolines,
-                            chronoline: chronoline,
                             timeLeft: $timeLeft,
                             showTimer: $showTimer,
-                            mistakes: $mistakes
+                            mistakes: $mistakes,
+                            correctAnswers: $correctAnswers,
+                            numberOfPairThemUp: numberOfPairThemUp
                         )
                     }
                 } else {
@@ -106,29 +95,29 @@ struct MultipleChronolineView: View {
                             .font(.title)
                         ScrollView {
                             VStack (alignment: .leading){
-                                ForEach (mistakes) { mistake in
+                                ForEach(0..<mistakes.count) { m in
                                     VStack(alignment: .leading) {
                                         HStack {
                                             Image(systemName: "play")
-                                            Text("Chronoline").bold() + Text(" \(mistake.chronolineNumber)").bold()
+                                            Text("Pair them up").bold() + Text(" \(m+1)").bold()
                                         }
-                                        Text("Left: your answer. Right: correct answer.")
-                                        ForEach(0..<mistake.mistakenWomenList.count) { i in
+                                        ForEach(0..<mistakes[m].count) { i in
                                             HStack {
-                                                Image(mistake.mistakenWomenList[i].pictures[0])
+                                                Image(mistakes[m][i].picture)
                                                     .resizable()
                                                     .scaledToFit()
                                                     .frame(width: 50)
+                                                    .clipShape(Circle())
                                                     .padding(.trailing, 10)
-                                                Image(mistake.sortedWomenList[i].pictures[0])
-                                                    .resizable()
-                                                    .scaledToFit()
-                                                    .frame(width: 50)
-                                                VStack(alignment: .leading) {
-                                                    Text(mistake.sortedWomenList[i].name)
-                                                        .fontWeight(.bold)
-                                                    Text(mistake.sortedWomenList[i].birthYear.localized)
+                                                VStack {
+                                                    Text(
+                                                        String.localizedStringWithFormat(NSLocalizedString("Your answer: %@", comment: ""), mistakes[m][i].incorrectAnswer)
+                                                        )
+                                                    Text(
+                                                        String.localizedStringWithFormat(NSLocalizedString("Correct answer: %@", comment: ""), mistakes[m][i].correctAnswer)
+                                                        )
                                                 }
+
                                                 Spacer()
                                             }
                                         }
@@ -138,7 +127,7 @@ struct MultipleChronolineView: View {
                             .padding()
                             .onAppear{
                                 if !scoreUpdated {
-                                    let gameResult = GameResult(date: Int(Date().timeIntervalSince1970), gameType: "Chrono", points: correctAnswers)
+                                    let gameResult = GameResult(date: Int(Date().timeIntervalSince1970), gameType: "PairThemUp", points: correctAnswers)
                                     if userID != "" {
                                         profile.gameResults.append(gameResult)
                                         updateGameResults(profile: profile, userID: userID)
@@ -152,12 +141,12 @@ struct MultipleChronolineView: View {
             }
         }.navigationBarItems(trailing:
                                 Group {
-                                    if showTimer && currentMultipleChronolinePage == .question {
+                                    if showTimer && currentMultiplePairThemUpPage == .question {
                                         ZStack {
                                             Circle()
                                                 .stroke(Color.gray.opacity(0.2), style: StrokeStyle(lineWidth: 3, lineCap: .round))
                                             Circle()
-                                                .trim(from: 0, to: CGFloat(timeLeft) / CGFloat(chronolineTotalTime))
+                                                .trim(from: 0, to: CGFloat(timeLeft) / CGFloat(pairThemUpTotalTime))
                                                 .stroke(Color("Morado"), style: StrokeStyle(lineWidth: 3, lineCap: .round))
                                                 .rotationEffect(.degrees(-90))
                                                 .animation(.easeInOut)
@@ -166,18 +155,16 @@ struct MultipleChronolineView: View {
                                     }
                                 }
         )
-        .onChange(of: shownChronoline) { newShownChronoline in
-            if newShownChronoline < numberOfChronolines {
+        .onChange(of: shownPairThemUp) { newShownPairThemUp in
+            if newShownPairThemUp < numberOfPairThemUp {
                 showTimer = true
             }
         }
     }
 }
 
-
-struct MultipleChronolineView_Previews: PreviewProvider {
-    static var previews: some View {
-        MultipleChronolineView(currentMultipleChronolinePage: .start)
-    }
-}
-
+//struct MultiplePairThemUpView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MultiplePairThemUpView()
+//    }
+//}
