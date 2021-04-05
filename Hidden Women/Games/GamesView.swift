@@ -77,6 +77,30 @@ struct GamesView: View {
                     }
                     .padding()
                 }
+                NavigationLink(
+                    destination: PairThemUpView(pairThemUpGame: pairThemUpGenerator(
+                                                    numberOfWomen: 5,
+                                                    women: women,
+                                                    xName: UIScreen.width - 70,
+                                                    xPicture: 70,
+                                                    firstY: 70,
+                                                    lastY: UIScreen.height - 200
+                    ))) {
+                    ZStack {
+                        RoundedRectangle(cornerRadius: 10)
+                            .fill(Color("Hueso"))
+                        VStack(alignment: .leading) {
+                            HStack {
+                                Image(systemName: "circlebadge.2.fill")
+                                    .font(.system(size: 64))
+                                Text("Pair them up")
+                                    .font(.largeTitle)
+                                Spacer()
+                            }
+                        }
+                    }
+                    .padding()
+                }
             }
             .listStyle(PlainListStyle())
             .navigationBarHidden(true)

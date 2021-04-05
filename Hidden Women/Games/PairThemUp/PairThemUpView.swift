@@ -8,16 +8,18 @@
 import SwiftUI
 
 struct WomanPicture {
-    let pictureName: String
+    let picture: String
     var startPosition: CGPoint
     var position: CGPoint = CGPoint(x: 0, y: 0)
     var zIndex: Double = 1
     var coveringWomanName: String? = nil
+    var correctName: String
     
-    init(pictureName: String, x: CGFloat, y: CGFloat) {
-        self.pictureName = pictureName
+    init(pictureName: String, x: CGFloat, y: CGFloat, womanName: String) {
+        self.picture = pictureName
         self.startPosition = CGPoint(x: x, y: y)
         self.position = CGPoint(x: x, y: y)
+        self.correctName = womanName
     }
     
     func squaredDistanceTo(womanName: WomanName)-> CGFloat {
@@ -34,9 +36,27 @@ struct WomanName {
     var isCovered: Bool = false
 }
 
+struct PairThemUpGame {
+    var womanNames: [WomanName]
+    var womanPictures: [WomanPicture]
+}
+
+func pairThemUpGenerator(numberOfWomen: Int, women: [Woman], xName: CGFloat, xPicture: CGFloat, firstY: CGFloat, lastY: CGFloat) -> PairThemUpGame {
+    let women = women.filter{$0.pictures[0] != "imagen1"}.shuffled()[0..<min(numberOfWomen, women.count)]
+    let names = women.map{$0.name}.shuffled()
+    let pictures = women.map{($0.name, $0.pictures.randomElement() ?? "")}
+    var womanNames: [WomanName] = []
+    var womanPictures: [WomanPicture] = []
+    let incY = (lastY - firstY) / CGFloat(women.count)
+    for i in 0..<names.count {
+        womanNames.append(WomanName(name: names[i], position: CGPoint(x: xName, y: firstY + CGFloat(i) * incY)))
+        womanPictures.append(WomanPicture(pictureName: pictures[i].1, x: xPicture, y: firstY + CGFloat(i) * incY, womanName: pictures[i].0))
+    }
+    return PairThemUpGame(womanNames: womanNames, womanPictures: womanPictures)
+}
+
 struct PairThemUpView: View {
-    @State var womanPicture: [WomanPicture]
-    @State var womanName: [WomanName]
+    @State var pairThemUpGame: PairThemUpGame
     @State var activateSubmit: Bool = false
     
     var body: some View {
@@ -45,47 +65,51 @@ struct PairThemUpView: View {
                 ZStack {
                     Rectangle()
                         .foregroundColor(Color("Hueso"))
-                    ForEach(0..<womanName.count) { i in
+                    ForEach(0..<pairThemUpGame.womanNames.count) { i in
                         Circle()
                             .strokeBorder(Color("Morado"), lineWidth: 3)
-                            .background(Circle().foregroundColor(womanName[i].backgroundColor))
+                            .background(Circle().foregroundColor(pairThemUpGame.womanNames[i].backgroundColor))
                             .frame(width: geo.size.width / 4 + 10)
-                            .position(womanName[i].position)
-                        Text(womanName[i].name)
-                            .position(womanName[i].position)
+                            .position(pairThemUpGame.womanNames[i].position)
+                        Text(pairThemUpGame.womanNames[i].name)
+                            .bold()
+                            .foregroundColor(Color("Morado"))
+                            .multilineTextAlignment(.trailing)
+                            .frame(maxWidth: geo.size.width / 4 - 10)
+                            .position(x: pairThemUpGame.womanNames[i].position.x - geo.size.width / 4 - 10, y: pairThemUpGame.womanNames[i].position.y)
                             .zIndex(1000)
                     }
-                    ForEach(0..<womanPicture.count) { i in
-                        Image(womanPicture[i].pictureName)
+                    ForEach(0..<pairThemUpGame.womanPictures.count) { i in
+                        Image(pairThemUpGame.womanPictures[i].picture)
                             .resizable()
                             .scaledToFit()
                             .frame(width: geo.size.width / 4)
                             .clipShape(Circle())
-                            .position(x: womanPicture[i].position.x, y: womanPicture[i].position.y)
-                            .zIndex(womanPicture[i].zIndex)
+                            .position(x: pairThemUpGame.womanPictures[i].position.x, y: pairThemUpGame.womanPictures[i].position.y)
+                            .zIndex(pairThemUpGame.womanPictures[i].zIndex)
                             .gesture(
                                 DragGesture()
                                     .onChanged { drag in
                                         activateSubmit = false
                                         withAnimation(.default) {
-                                            womanPicture[i].zIndex = womanPicture.map{$0.zIndex}.max()! + 0.0001
-                                            if let name = womanPicture[i].coveringWomanName {
-                                                for j in 0..<womanName.count {
-                                                    if womanName[j].name == name {
-                                                        womanName[j].isCovered = false
+                                            pairThemUpGame.womanPictures[i].zIndex = pairThemUpGame.womanPictures.map{$0.zIndex}.max()! + 0.0001
+                                            if let name = pairThemUpGame.womanPictures[i].coveringWomanName {
+                                                for j in 0..<pairThemUpGame.womanNames.count {
+                                                    if pairThemUpGame.womanNames[j].name == name {
+                                                        pairThemUpGame.womanNames[j].isCovered = false
                                                         break
                                                     }
                                                 }
                                             }
-                                            womanPicture[i].coveringWomanName = nil
-                                            womanPicture[i].position = drag.location
-                                            for j in 0..<womanName.count {
-                                                if !womanName[j].isCovered {
-                                                    if womanPicture[i].squaredDistanceTo(womanName: womanName[j]) < 2500{
-                                                        womanName[j].backgroundColor = Color("Turquesa")
+                                            pairThemUpGame.womanPictures[i].coveringWomanName = nil
+                                            pairThemUpGame.womanPictures[i].position = drag.location
+                                            for j in 0..<pairThemUpGame.womanNames.count {
+                                                if !pairThemUpGame.womanNames[j].isCovered {
+                                                    if pairThemUpGame.womanPictures[i].squaredDistanceTo(womanName: pairThemUpGame.womanNames[j]) < 2500{
+                                                        pairThemUpGame.womanNames[j].backgroundColor = Color("Turquesa")
                                                         break
                                                     } else {
-                                                        womanName[j].backgroundColor = Color.white
+                                                        pairThemUpGame.womanNames[j].backgroundColor = Color.white
                                                     }
                                                 }
                                             }
@@ -94,22 +118,22 @@ struct PairThemUpView: View {
                                     .onEnded { drag in
                                         withAnimation(.default) {
                                             var isCloseToAnyName: Bool = false
-                                            for j in 0..<womanName.count {
-                                                if !womanName[j].isCovered {
-                                                    if womanPicture[i].squaredDistanceTo(womanName: womanName[j]) < 2500{
-                                                        womanPicture[i].position = womanName[j].position
-                                                        womanName[j].backgroundColor = Color.white
+                                            for j in 0..<pairThemUpGame.womanNames.count {
+                                                if !pairThemUpGame.womanNames[j].isCovered {
+                                                    if pairThemUpGame.womanPictures[i].squaredDistanceTo(womanName: pairThemUpGame.womanNames[j]) < 2500{
+                                                        pairThemUpGame.womanPictures[i].position = pairThemUpGame.womanNames[j].position
+                                                        pairThemUpGame.womanNames[j].backgroundColor = Color.white
                                                         isCloseToAnyName = true
-                                                        womanName[j].isCovered = true
-                                                        womanPicture[i].coveringWomanName = womanName[j].name
+                                                        pairThemUpGame.womanNames[j].isCovered = true
+                                                        pairThemUpGame.womanPictures[i].coveringWomanName = pairThemUpGame.womanNames[j].name
                                                         break
                                                     }
                                                 }
                                             }
                                             if !isCloseToAnyName {
-                                                womanPicture[i].position = womanPicture[i].startPosition
+                                                pairThemUpGame.womanPictures[i].position = pairThemUpGame.womanPictures[i].startPosition
                                             }
-                                            activateSubmit = womanPicture.allSatisfy({$0.coveringWomanName != nil})
+                                            activateSubmit = pairThemUpGame.womanPictures.allSatisfy({$0.coveringWomanName != nil})
                                         }
                                     }
                             )
@@ -129,16 +153,10 @@ struct PairThemUpView: View {
 }
 
 struct PairThemUpView_Previews: PreviewProvider {
-    @State static var wp: [WomanPicture] = [
-        WomanPicture(pictureName: "MarieCurie1", x:100, y:100),
-        WomanPicture(pictureName: "MaeJemison1", x:100, y:300)
-    ]
-    static var wn: [WomanName] = [
-        WomanName(name: "Marie Curie", position: CGPoint(x: 300, y: 300)),
-        WomanName(name: "Mae Jemison", position: CGPoint(x: 300, y: 500)),
-    ]
+    @State static var pairThemUp: PairThemUpGame = pairThemUpGenerator(numberOfWomen: 5, women: women, xName: UIScreen.width - 70, xPicture: 70, firstY: 70, lastY: UIScreen.height - 200)
+
     
     static var previews: some View {
-        PairThemUpView(womanPicture: wp, womanName: wn)
+        PairThemUpView(pairThemUpGame: pairThemUp)
     }
 }
