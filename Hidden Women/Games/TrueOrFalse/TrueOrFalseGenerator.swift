@@ -16,7 +16,7 @@ func birthYearTrueOrFalseGenerator (women: [Woman]) -> TrueOrFalse {
     return TrueOrFalse(
         picture: questionWoman.pictures.randomElement() ?? "",
         question: String.localizedStringWithFormat(
-            NSLocalizedString("%@ was born in ", comment: ""), questionWoman.name
+            NSLocalizedString("%@ was born in ", comment: ""), questionWoman.name.localized
         ),
         answer: answer,
         correct: questionWoman.birthYear.localized == answer
@@ -33,7 +33,7 @@ func deathYearTrueOrFalseGenerator (women: [Woman]) -> TrueOrFalse {
         picture: questionWoman.pictures.randomElement() ?? "",
         question: String.localizedStringWithFormat(
             NSLocalizedString("%@ passed away in ", comment: ""),
-            questionWoman.name),
+            questionWoman.name.localized),
         answer: answer,
         correct: questionWoman.deathYear == otherWoman.deathYear
     )
@@ -49,7 +49,7 @@ func fieldsTrueOrFalseGenerator (women: [Woman]) -> TrueOrFalse {
         picture: questionWoman.pictures.randomElement() ?? "",
         question: String.localizedStringWithFormat(
             NSLocalizedString("%@ is a ", comment: ""),
-            questionWoman.name),
+            questionWoman.name.localized),
         answer: answer,
         correct: questionWoman.fields.localized.contains(answer)
     )
@@ -65,7 +65,7 @@ func achievementsTrueOrFalseGenerator (women: [Woman]) -> TrueOrFalse {
         picture: questionWoman.pictures.randomElement() ?? "",
         question: String.localizedStringWithFormat(
             NSLocalizedString("One of %@'s achievements is: ", comment: ""),
-            questionWoman.name),
+            questionWoman.name.localized),
         answer: answer,
         correct: questionWoman.achievements.localized.contains(answer)
     )
@@ -81,7 +81,7 @@ func awardsTrueOrFalseGenerator (women: [Woman]) -> TrueOrFalse {
         picture: questionWoman.pictures.randomElement() ?? "",
         question: String.localizedStringWithFormat(
             NSLocalizedString("%@ was awarded with the: ", comment: ""),
-            questionWoman.name),
+            questionWoman.name.localized),
         answer: answer,
         correct: questionWoman.awards.localized.contains(answer))
 }

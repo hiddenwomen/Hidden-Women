@@ -37,7 +37,7 @@ func birthYearQuizGenerator(women: [Woman]) -> Quiz {
 
     return Quiz(
         picture: woman.pictures.randomElement() ?? "",
-        question: String.localizedStringWithFormat(NSLocalizedString("When was %@ born?", comment: ""), woman.name),
+        question: String.localizedStringWithFormat(NSLocalizedString("When was %@ born?", comment: ""), woman.name.localized),
         answers: quizAnswers.answers,
         correctAnswer: quizAnswers.correct
     )
@@ -52,7 +52,7 @@ func deathYearQuizGenerator(women: [Woman]) -> Quiz {
 
     return Quiz(
         picture: woman.pictures.randomElement() ?? "",
-        question: String.localizedStringWithFormat(NSLocalizedString("When did %@ pass away?", comment: ""), woman.name),
+        question: String.localizedStringWithFormat(NSLocalizedString("When did %@ pass away?", comment: ""), woman.name.localized),
         answers: quizAnswers.answers,
         correctAnswer: quizAnswers.correct
     )
@@ -68,7 +68,7 @@ func fieldQuizGenerator(women: [Woman]) -> Quiz {
     
     return Quiz(
         picture: woman.pictures.randomElement() ?? "",
-        question: String.localizedStringWithFormat(NSLocalizedString("%@ is a...", comment: ""), woman.name),
+        question: String.localizedStringWithFormat(NSLocalizedString("%@ is a...", comment: ""), woman.name.localized),
         answers: quizAnswers.answers,
         correctAnswer: quizAnswers.correct
     )
@@ -83,7 +83,7 @@ func awardsQuizGenerator(women: [Woman]) -> Quiz {
     
     return Quiz(
         picture: woman.pictures.randomElement() ?? "",
-        question: String.localizedStringWithFormat(NSLocalizedString("%@ was awarded with...", comment: ""), woman.name),
+        question: String.localizedStringWithFormat(NSLocalizedString("%@ was awarded with...", comment: ""), woman.name.localized),
         answers: quizAnswers.answers,
         correctAnswer: quizAnswers.correct
     )
@@ -98,7 +98,7 @@ func achievementsQuizGenerator(women: [Woman]) -> Quiz {
     
     return Quiz(
         picture: woman.pictures.randomElement() ?? "",
-        question: String.localizedStringWithFormat(NSLocalizedString("One of %@'s achievements is...", comment: ""), woman.name),
+        question: String.localizedStringWithFormat(NSLocalizedString("One of %@'s achievements is...", comment: ""), woman.name.localized),
         answers: quizAnswers.answers,
         correctAnswer: quizAnswers.correct
     )
