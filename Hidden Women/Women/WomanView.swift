@@ -87,15 +87,18 @@ struct WomanView: View {
                         }
                     },
                     label: {
-                        Text("Main achievements")
-                            .fontWeight(.bold)
-                            .onTapGesture {
-                                withAnimation(.default) {
-                                    showAchievements.toggle()
-                                }
-                            }
+                        HStack {
+                            Text("Main achievements")
+                                .fontWeight(.bold)
+                        }
+
                     }
                 )
+                .onTapGesture {
+                    withAnimation(.default) {
+                        showAchievements.toggle()
+                    }
+                }
                 .padding(.horizontal)
                 if woman.awards.localized.count > 0 {
                     DisclosureGroup(

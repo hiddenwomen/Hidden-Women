@@ -41,7 +41,6 @@ class Profile: ObservableObject, Identifiable {
     @Published var friends: [Profile] = []
     @Published var gameResults: [GameResult] = []
     @Published var friendRequests: [String] = []
-    @Published var chat: [Message] = []
     
     var points: Int {
         let limit = Int(Date().timeIntervalSince1970) - oneWeek
@@ -57,11 +56,7 @@ class Profile: ObservableObject, Identifiable {
         self.pictureFileName = pictureFileName
         self.gameResults = gameResults
     }
-    
-    func chatWith(friendId: String) -> [Message] {
-        return chat.filter{ ($0.from == userId && $0.to == friendId) || ($0.from == friendId && $0.to == userId)}.sorted(by: {$0.time < $1.time})
-    }
-    
+        
     func show() {
         print("DEBUG: Name:           \(self.name)")
         print("DEBUG: Email:          \(self.email)")
@@ -316,6 +311,111 @@ func listenToAndUpdateProfile(userID: String, profile: Profile) -> ListenerRegis
         }
 }
 
+
+struct ChatMessage {
+    let author: String
+    let text: String
+    let time: Int
+    
+    func toDict() -> [String: String] {
+        return [
+            "author": author,
+            "text": text,
+            "time": String(time)
+        ]
+    }
+}
+
+class Chat: ObservableObject {
+    @Published var lastAccess: [String: Int]
+    @Published var messages: [ChatMessage]
+    
+    init(lastAccess: [String: Int], messages: [ChatMessage]) {
+        self.lastAccess = lastAccess
+        self.messages = messages
+    }
+}
+
+func loadChatFromDocument(aId: String, bId: String, document: DocumentSnapshot, chat: Chat) {
+    let data = document.data() ?? [aId: 0, bId: 0, "messages": []]
+    chat.lastAccess[aId] = data[aId] as? Int ?? 0
+    chat.lastAccess[bId] = data[bId] as? Int ?? 0
+    chat.messages = []
+    
+    let dataMessages = data["messages"] as? [[String: String]] ?? []
+    for message in dataMessages {
+        let author = message["author"] ?? ""
+        let text = message["text"] ?? ""
+        let time = Int(message["time"] ?? "") ?? 0
+        chat.messages.append(ChatMessage(author: author, text: text, time: time))
+    }
+}
+
+func loadChat(aId: String, bId: String, chat: Chat, onError: @escaping (Error) -> Void) {
+    let key = aId < bId ? "\(aId)::\(bId)" : "\(bId)::\(aId)"
+    Firestore.firestore()
+        .collection("chats")
+        .document(key)
+        .getDocument { documentSnapshot, error in
+            if let error = error {
+                onError(error)
+            } else if let documentSnapshot = documentSnapshot {
+                loadChatFromDocument(aId: aId, bId: bId, document: documentSnapshot, chat: chat)
+            }
+        }
+}
+
+func listenToChat(aId: String, bId: String, chat: Chat, onChange: @escaping () -> Void) -> ListenerRegistration {
+    let key = aId < bId ? "\(aId)::\(bId)" : "\(bId)::\(aId)"
+    return Firestore.firestore()
+        .collection("chats")
+        .document(key)
+        .addSnapshotListener { document, error in
+            if let error = error {
+                print("Error fetching document: \(error)")
+                return
+            } else if let document = document {
+                print("ESCUCHANDO CHATS")
+                loadChatFromDocument(aId: aId, bId: bId, document: document, chat: chat)
+                onChange()
+            }
+        }
+}
+
+
+func sendChatMessage(aId: String, bId: String, message: ChatMessage, onError: @escaping (Error) -> Void) {
+    let key = aId < bId ? "\(aId)::\(bId)" : "\(bId)::\(aId)"
+    let reference  =  Firestore.firestore().collection("chats").document(key)
+    reference.getDocument() { documentSnapshot, error in
+        if let error = error {
+            onError(error)
+        } else if let documentSnapshot = documentSnapshot {
+            if documentSnapshot.exists {
+                reference
+                .updateData([
+                    "messages": FieldValue.arrayUnion([message.toDict()])
+                ]) { error in
+                    if let error = error {
+                        onError(error)
+                    }
+                }
+            } else {
+                reference.setData([
+                    "lastAcces" : [
+                        aId: 0,
+                        bId: 0
+                    ],
+                    "messages": [
+                        message.toDict()
+                    ]
+                ])
+            }
+        }
+    }
+
+}
+
+
 func loadProfileFromDocument(userID: String, profile: Profile, document: DocumentSnapshot) {
     let data = document.data() ?? ["name": ""]
     profile.userId = data["userId"] as? String ?? ""
@@ -323,15 +423,7 @@ func loadProfileFromDocument(userID: String, profile: Profile, document: Documen
     profile.email = data["email"] as? String ?? ""
     profile.favourites = data["favourites"] as? [String] ?? []
     let msgs = data["chat"] as? [[String: String]] ?? []
-    profile.chat = []
-    for msg in msgs {
-        profile.chat.append(Message(from: msg["from"] ?? "",
-                                    to: msg["to"] ?? "",
-                                    text: msg["text"] ?? "",
-                                    time: Int(msg["time"] ?? "0") ?? 0,
-                                    read: Bool(msg["read"] ?? "false") ?? false
-        ))
-    }
+
     let oldPictureFileName = profile.pictureFileName
     profile.pictureFileName = data["pictureFileName"] as? String ?? ""
     if oldPictureFileName != profile.pictureFileName {
@@ -381,28 +473,3 @@ func loadProfile(userID: String, profile: Profile, andFriends: Bool = false) {
         }
 }
 
-
-func sendChatMessage(message: Message, onError: @escaping (Error) -> Void) {
-    Firestore.firestore()
-        .collection("users")
-        .document(message.from)
-        .updateData([
-            "chat": FieldValue.arrayUnion([message.toDict()])
-        ]) {
-        error in
-        if let error = error {
-            onError(error)
-        }
-    }
-    Firestore.firestore()
-        .collection("users")
-        .document(message.to)
-        .updateData([
-            "chat": FieldValue.arrayUnion([message.toDict()])
-        ]) {
-        error in
-        if let error = error {
-            onError(error)
-        }
-    }
-}

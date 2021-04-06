@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 // --- from: https://prafullkumar77.medium.com/swiftui-creating-a-chat-bubble-like-imessage-using-path-and-shape-67cf23ccbf62
 struct ChatBubble<Content>: View where Content: View {
@@ -128,59 +129,38 @@ func configuredDateFormatter() -> DateFormatter {
 }
 
 struct ChatView: View {
-    @EnvironmentObject var profile: Profile
+    // @EnvironmentObject var profile: Profile
     @AppStorage ("userID") var userID: String = ""
     let friendId: String
     @State var currentMessage = ""
     let dateFormatter: DateFormatter = configuredDateFormatter()
     @State private var scrollTarget: Int = 0
-
+    @StateObject var chat: Chat = Chat(lastAccess: [:], messages: [])
+    @State var listener: ListenerRegistration? = nil
+    
     var body: some View {
         VStack {
             ScrollView {
                 ScrollViewReader { scrollReader in
                     VStack {
-                        ForEach(profile.chatWith(friendId: friendId)) { message in
+                        ForEach(0..<chat.messages.count, id: \.self) { i in
                             VStack {
                                 ChatBubble(
-                                    direction: message.from == userID ? .right : .left,
-                                    topInfo: dateFormatter.string(from: Date(timeIntervalSince1970: Double(message.time)))
+                                    direction: chat.messages[i].author == userID ? .right : .left,
+                                    topInfo: dateFormatter.string(from: Date(timeIntervalSince1970: Double(chat.messages[i].time)))
                                 ) {
-                                    Text(message.text)
+                                    Text(chat.messages[i].text)
                                         .padding(.all, 20)
-                                        .foregroundColor(message.from == userID ? Color.white : Color.black)
-                                        .background(message.from == userID ? Color("Morado") : Color("Turquesa"))
+                                        .foregroundColor(chat.messages[i].author == userID ? Color.white : Color.black)
+                                        .background(chat.messages[i].author == userID ? Color("Morado") : Color("Turquesa"))
                                 }
-                                .id(message.time)
                             }
                         }
                     }
                     .onChange(of: scrollTarget) { target in
-                        withAnimation {
                             scrollReader.scrollTo(target, anchor: .bottomTrailing)
-                        }
                     }
                 }
-            }
-            Spacer()
-            HStack {
-                Spacer()
-                Button(action: {
-                    if let message = profile.chatWith(friendId: friendId).first {
-                        scrollTarget = message.time
-                    }
-                }) {
-                    Image(systemName: "arrow.up")
-                }
-                Spacer()
-                Button(action: {
-                    if let message = profile.chatWith(friendId: friendId).last {
-                        scrollTarget = message.time
-                    }
-                }) {
-                    Image(systemName: "arrow.down")
-                }
-                Spacer()
             }
             HStack {
                 TextField("Type here...", text: $currentMessage)
@@ -193,17 +173,32 @@ struct ChatView: View {
                     .font(.system(size: 48))
                     .foregroundColor(Color("Morado"))
                     .onTapGesture {
-                        sendChatMessage(
-                            message: Message(
-                                from: userID,
-                                to: friendId,
-                                text: currentMessage,
-                                time: Int(Date().timeIntervalSince1970),
-                                read: false
-                            ),
-                            onError: {error in }) //TODO: Error
+                        if currentMessage != "" {
+                            scrollTarget -= 2
+                            sendChatMessage(
+                                aId: userID,
+                                bId: friendId,
+                                message: ChatMessage(
+                                    author: userID,
+                                    text: currentMessage,
+                                    time: Int(Date().timeIntervalSince1970)
+                                ),
+                                onError: {error in })
+                            currentMessage = ""
+                        }
                     }
             }
+        }
+        .onAppear {
+            print("ENTRO")
+            listener = listenToChat(aId: userID, bId: friendId, chat: chat) {
+                scrollTarget = chat.messages.count - 1
+            } // TODO:
+        }
+        .onDisappear {
+            print("SALGO")
+            listener?.remove()
+            listener = nil
         }
     }
 }
