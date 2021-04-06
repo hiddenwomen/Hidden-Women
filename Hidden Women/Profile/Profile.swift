@@ -11,7 +11,27 @@ import Firebase
 
 let oneWeek = 7 * 24 * 60 * 60
 
+struct Message: Identifiable {
+    let from: String
+    let to: String
+    let text: String
+    let time: Int
+    let read: Bool
+    let id = UUID()
+    
+    func toDict() -> [String: String] {
+        return [
+            "from": self.from,
+            "to": self.to,
+            "text": self.text,
+            "time": String(self.time),
+            "read": String(self.read)
+        ]
+    }
+}
+
 class Profile: ObservableObject, Identifiable {
+    @Published var userId: String
     @Published var name: String
     @Published var email: String
     @Published var favourites: [String] = []
@@ -21,6 +41,7 @@ class Profile: ObservableObject, Identifiable {
     @Published var friends: [Profile] = []
     @Published var gameResults: [GameResult] = []
     @Published var friendRequests: [String] = []
+    @Published var chat: [Message] = []
     
     var points: Int {
         let limit = Int(Date().timeIntervalSince1970) - oneWeek
@@ -28,12 +49,17 @@ class Profile: ObservableObject, Identifiable {
     }
     var id: UUID = UUID()
     
-    init(name: String = "", email: String = "", favourites: [String] = [], pictureFileName: String = "", gameResults: [GameResult] = []) {
+    init(userId: String = "", name: String = "", email: String = "", favourites: [String] = [], pictureFileName: String = "", gameResults: [GameResult] = []) {
+        self.userId = userId
         self.name = name
         self.email = email
         self.favourites = favourites
         self.pictureFileName = pictureFileName
         self.gameResults = gameResults
+    }
+    
+    func chatWith(friendId: String) -> [Message] {
+        return chat.filter{ ($0.from == userId && $0.to == friendId) || ($0.from == friendId && $0.to == userId)}.sorted(by: {$0.time < $1.time})
     }
     
     func show() {
@@ -283,22 +309,31 @@ func listenToAndUpdateProfile(userID: String, profile: Profile) -> ListenerRegis
             if let error = error {
                 print("Error fetching document: \(error)")
                 return
-            } else if let document = document {
-                loadProfileFromDocument(userID: userID, profile: profile, document: document)
-                loadProfile(userID: userID, profile: profile, andFriends: true)
+            } else if let _ = document {
+                loadProfile(userID: userID, profile: profile, andFriends: true) // TODO: Repensar carga de amigos: loadFriendsProfiles
+                //loadProfileFromDocument(userID: userID, profile: profile, document: document)
             }
         }
 }
 
 func loadProfileFromDocument(userID: String, profile: Profile, document: DocumentSnapshot) {
-    print("!!!DEBUG: cargando perfil de documento \(userID)")
     let data = document.data() ?? ["name": ""]
+    profile.userId = data["userId"] as? String ?? ""
     profile.name = data["name"] as? String ?? ""
     profile.email = data["email"] as? String ?? ""
     profile.favourites = data["favourites"] as? [String] ?? []
+    let msgs = data["chat"] as? [[String: String]] ?? []
+    profile.chat = []
+    for msg in msgs {
+        profile.chat.append(Message(from: msg["from"] ?? "",
+                                    to: msg["to"] ?? "",
+                                    text: msg["text"] ?? "",
+                                    time: Int(msg["time"] ?? "0") ?? 0,
+                                    read: Bool(msg["read"] ?? "false") ?? false
+        ))
+    }
     let oldPictureFileName = profile.pictureFileName
     profile.pictureFileName = data["pictureFileName"] as? String ?? ""
-    print("DEBUG: EL VIEJO \(oldPictureFileName) Y EL NUEVO \(profile.pictureFileName) PARA \(profile.name)")
     if oldPictureFileName != profile.pictureFileName {
         let picture = Storage.storage()
             .reference()
@@ -344,4 +379,30 @@ func loadProfile(userID: String, profile: Profile, andFriends: Bool = false) {
                 profile.show()
             }
         }
+}
+
+
+func sendChatMessage(message: Message, onError: @escaping (Error) -> Void) {
+    Firestore.firestore()
+        .collection("users")
+        .document(message.from)
+        .updateData([
+            "chat": FieldValue.arrayUnion([message.toDict()])
+        ]) {
+        error in
+        if let error = error {
+            onError(error)
+        }
+    }
+    Firestore.firestore()
+        .collection("users")
+        .document(message.to)
+        .updateData([
+            "chat": FieldValue.arrayUnion([message.toDict()])
+        ]) {
+        error in
+        if let error = error {
+            onError(error)
+        }
+    }
 }

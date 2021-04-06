@@ -94,7 +94,7 @@ struct ProfileView: View {
 
 
 struct ProfileView_Previews: PreviewProvider {
-    static var profile: Profile = Profile(name: "Marie Curie", email: "curie@cientifica.com")
+    static var profile: Profile = Profile(userId: "uuuuu", name: "Marie Curie", email: "curie@cientifica.com")
     @State static var currentPage: Page = .main
     static var previews: some View {
         ProfileView(currentPage: $currentPage)
