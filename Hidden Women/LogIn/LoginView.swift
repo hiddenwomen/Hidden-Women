@@ -10,6 +10,7 @@ import SwiftUI
 struct LoginView: View {
     @AppStorage ("userID") var userID = ""
     @EnvironmentObject var profile: Profile
+    @EnvironmentObject var rankingUpdater: RankingUpdater
     @Binding var currentPage: Page
     
     @State var email = ""
@@ -57,7 +58,10 @@ struct LoginView: View {
                             showErrorAlert = true
                         }) { authResult in
                             userID = authResult.user.uid
-                            loadProfile(userID: userID, profile: profile, andFriends: true)
+                            profile.removeListeners()
+                            print("--- desde BOTÓN Sign in")
+                            loadProfile(userID: userID, profile: profile, rankingUpdater: rankingUpdater, andFriends: true)
+                            mainListener = listenToAndUpdateProfile(userID: userID, profile: profile, rankingUpdater: rankingUpdater)
                             currentPage = .main
                         }
                 }) {

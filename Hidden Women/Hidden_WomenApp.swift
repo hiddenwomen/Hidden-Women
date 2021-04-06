@@ -10,11 +10,21 @@ import Firebase
 
 var language = Locale.current.languageCode ?? "en"
 var women: [Woman] = []
+var mainListener: ListenerRegistration? = nil
+
+class RankingUpdater: ObservableObject {
+    @Published var counter: Int = 0
+    
+    func change() {
+        counter += 1
+    }
+}
 
 @main
 struct Hidden_WomenApp: App {
     @AppStorage("userID") var userID: String = ""
     var profile: Profile = Profile()
+    var rankingUpdater = RankingUpdater()
     
     init() {
         if let location = Bundle.main.url(forResource: "women", withExtension: "json") {
@@ -39,12 +49,15 @@ struct Hidden_WomenApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(profile)
+                .environmentObject(rankingUpdater)
                 .onAppear {
+                    print("EMPIEZA EL ESPECTACULO")
                     if userID != "" {
-                        loadProfile(userID: userID, profile: profile, andFriends: true)
-                        let listener = listenToAndUpdateProfile(userID: userID, profile: profile)
+                        print("--- Carga del profile")
+                        //loadProfile(userID: userID, profile: profile, andFriends: true)
+                        mainListener = listenToAndUpdateProfile(userID: userID, profile: profile, rankingUpdater: rankingUpdater, andFriends: true)
+                        print("Y escuchador conectado")
                     }
-                    print("\(Int(Date().timeIntervalSince1970))")
                 }
         }
     }

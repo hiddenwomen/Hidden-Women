@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct FriendProfileView: View {
-    let friendProfile: Profile
-    let friendRequestButton: Bool
+    @ObservedObject var friendProfile: Profile
+    let showFriendRequestButton: Bool
     @EnvironmentObject var profile: Profile
     @State var showBanner: Bool = false
     
@@ -17,8 +17,10 @@ struct FriendProfileView: View {
         ZStack {
             ScrollView{
                 VStack {
-                    NavigationLink(destination: ChatView(friendId: friendProfile.userId)) {
+                    if !showFriendRequestButton {
+                        NavigationLink(destination: ChatView(friendId: friendProfile.userId)) {
                             Text("Send a message")
+                        }
                     }
                     Image(uiImage: friendProfile.picture ?? UIImage())
                         .resizable()
@@ -48,7 +50,7 @@ struct FriendProfileView: View {
                             }
                         }
                     }
-                    if friendRequestButton {
+                    if showFriendRequestButton {
                         Button(action: {
                             var friendUserId = ""
                             getUserId(forEmail: friendProfile.email, onError: {error in}) { snapshot in

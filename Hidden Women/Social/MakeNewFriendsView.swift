@@ -48,7 +48,7 @@ struct MakeNewFriendsView: View {
                         if document.exists {
                             let data = document.data() ?? ["userId": ""]
                             possibleFriendUserId = data["userId"] as? String ?? ""
-                            if profile.friendIDs.contains(possibleFriendUserId) || profile.email == newEmail {
+                            if profile.friends.map({$0.userId}).contains(possibleFriendUserId) || profile.email == newEmail {
                                 notValidEmail = true
                             }
                         }

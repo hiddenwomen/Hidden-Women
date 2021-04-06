@@ -16,13 +16,13 @@ struct FindPeopleView: View {
         VStack {
             List {
                 ForEach (foundFriends, id: \.self.email) { friend in
-                    NavigationLink(destination: FriendProfileView(friendProfile: friend, friendRequestButton: true)){
+                    NavigationLink(destination: FriendProfileView(friendProfile: friend, showFriendRequestButton: true)){
                         HStack {
                             Image(uiImage: friend.picture ?? UIImage())
                                 .resizable()
                                 .scaledToFit()
                                 .clipShape(Circle())
-                                .frame(width: 100)
+                                .frame(width: 100, height: 100)
                             Text("\(friend.name)")
                             Spacer()
                         }
@@ -31,10 +31,10 @@ struct FindPeopleView: View {
             }
         }
         .onAppear{
-            getPeopleWithSimilarInterests(favourites: profile.favourites,
-                                          onError: {error in
-                                            print("DEBUG: LISTA VACIA!!!")
-                                          }
+            profile.getPeopleWithSimilarInterests(
+                onError: { error in
+                    print("DEBUG: LISTA VACIA!!!")
+                }
             ) { snapshot in
                 var buffer: [String: Profile] = [:]
                 for document in snapshot.documents {
@@ -58,7 +58,7 @@ struct FindPeopleView: View {
                         possibleFriendProfile.gameResults.append(gameResult)
                     }
                     
-                    if possibleFriendID != userID && !profile.friendIDs.contains(possibleFriendID) {
+                    if possibleFriendID != userID && !profile.friends.map({$0.userId}).contains(possibleFriendID) {
                         buffer[possibleFriendID] = possibleFriendProfile
                     }
                 }
@@ -66,7 +66,7 @@ struct FindPeopleView: View {
                 for selectedPossibleFriendID in buffer.keys.shuffled()[0..<min(buffer.count, 10)] {
                     let selectedPossibleFriendProfile = buffer[selectedPossibleFriendID]!
                     foundFriends.append(selectedPossibleFriendProfile)
-                    getProfilePicture(userID: selectedPossibleFriendID, profile: selectedPossibleFriendProfile) {
+                    selectedPossibleFriendProfile.getPicture {
                         foundFriends[0] = foundFriends[0] // TODO: Cochinada
                     }
                 }

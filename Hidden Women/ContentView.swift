@@ -39,7 +39,8 @@ struct ContentView: View {
             if userID == "" {
                 currentPage = .login
             } else {
-                loadProfile(userID: userID, profile: profile, andFriends: true)
+                print("--- desde ContenView")
+                // loadProfile(userID: userID, profile: profile, andFriends: true)
                 currentPage = .main
             }
         }

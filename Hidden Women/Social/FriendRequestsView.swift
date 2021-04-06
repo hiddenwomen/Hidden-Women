@@ -10,6 +10,7 @@ import SwiftUI
 struct FriendRequestsView: View {
     @AppStorage("userID") var userID: String = ""
     @EnvironmentObject var profile: Profile
+    @EnvironmentObject var rankingUpdater: RankingUpdater
     
     var body: some View {
         HStack {
@@ -25,12 +26,11 @@ struct FriendRequestsView: View {
                             .fontWeight(.bold)
                         HStack {
                             Button(action:  {
-                                getProfile(forEmail: friendRequest, onError: { error in }) { document in
+                                getUserId(forEmail: friendRequest, onError: { error in }) { document in
                                     let data = document.data() ?? ["userId": ""]
                                     let friendUserId = data["userId"] as? String ?? ""
                                     if friendUserId != "" {
-                                        profile.friendRequests = profile.friendRequests.filter{$0 != friendRequest}
-                                        updateFriendRequestForAcceptance(userID: userID, friendRequest: friendRequest, friendUserId: friendUserId)
+                                        profile.acceptFriendRequest(friendRequest: friendRequest, friendUserId: friendUserId, rankingUpdater: rankingUpdater)
                                     }
                                 }
                             }) {
@@ -42,8 +42,7 @@ struct FriendRequestsView: View {
                             }
                             .importantButtonStyle()
                             Button(action:  {
-                                profile.friendRequests = profile.friendRequests.filter{$0 != friendRequest}
-                                updateProfileToRemoveFriendRequest(userID: userID, friendRequest: friendRequest)
+                                profile.rejectFriendRequest(friendRequest: friendRequest)
                             }) {
                                 HStack {
                                     Image(systemName: "person.fill.xmark")

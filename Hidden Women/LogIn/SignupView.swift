@@ -10,6 +10,7 @@ import SwiftUI
 struct SignupView: View {
     @AppStorage ("userID") var userID = ""
     @EnvironmentObject var profile: Profile
+    @EnvironmentObject var rankingUpdater: RankingUpdater
     
     @Binding var currentPage: Page
     
@@ -67,8 +68,10 @@ struct SignupView: View {
                                 errorMessage = error.localizedDescription
                                 showErrorAlert = true
                             }) { authResult in
-                                userID = authResult.user.uid
-                                currentPage = .main
+                            userID = authResult.user.uid
+                            profile.removeListeners()
+                            mainListener = listenToAndUpdateProfile(userID: userID, profile: profile, rankingUpdater: rankingUpdater)
+                            currentPage = .main
                         }
                     } else {
                         errorMessage = "Passwords do not match"

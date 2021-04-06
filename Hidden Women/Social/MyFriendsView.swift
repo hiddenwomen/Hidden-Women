@@ -15,17 +15,19 @@ struct MyFriendsView: View {
             Text("Friends")
                 .font(.largeTitle)
                 .padding()
-            List(profile.friends) { friend in
-                NavigationLink(destination: FriendProfileView(friendProfile: friend, friendRequestButton: false)) {
-                    HStack {
-                        Image(uiImage: friend.picture ?? UIImage())
-                            .resizable()
-                            .scaledToFit()
-                            .clipShape(Circle())
-                            .frame(width: 75, height: 75)
-                        VStack(alignment: .leading) {
-                            Text("\(friend.name)")
-                                .fontWeight(.bold)
+            List {
+                ForEach(profile.friends, id:\.self.userId) { friend in
+                    NavigationLink(destination: FriendProfileView(friendProfile: friend, showFriendRequestButton: false)) {
+                        HStack {
+                            Image(uiImage: friend.picture ?? UIImage())
+                                .resizable()
+                                .scaledToFill()
+                                .clipShape(Circle())
+                                .frame(width: 75, height: 75)
+                            VStack(alignment: .leading) {
+                                Text("\(friend.name)")
+                                    .fontWeight(.bold)
+                            }
                         }
                     }
                 }

@@ -115,8 +115,9 @@ struct MultipleQuizView: View {
                             let gameResult = GameResult(date: Int(Date().timeIntervalSince1970), gameType: "Quiz", points: correctAnswers)
                             print("puntos : \(correctAnswers)")
                             if userID != "" {
-                                profile.gameResults.append(gameResult)
-                                updateGameResults(profile: profile, userID: userID)
+                                profile.updateGameResults(withNewGameResult: gameResult) { error in
+                                    //TODO: Error
+                                }
                             }
                             scoreUpdated = true
                         }

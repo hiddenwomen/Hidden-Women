@@ -42,7 +42,7 @@ struct WomenView: View {
                                                     showBanner = true
                                                 }
                                             }
-                                            updateFavourites(userID: userID, profile: profile) { error in
+                                            profile.updateFavourites() { error in
                                                 errorMessage = error.localizedDescription
                                                 showError = true
                                             }

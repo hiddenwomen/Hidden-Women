@@ -133,8 +133,9 @@ struct MultiplePairThemUpView: View {
                                 if !scoreUpdated {
                                     let gameResult = GameResult(date: Int(Date().timeIntervalSince1970), gameType: "PairThemUp", points: correctAnswers)
                                     if userID != "" {
-                                        profile.gameResults.append(gameResult)
-                                        updateGameResults(profile: profile, userID: userID)
+                                        profile.updateGameResults(withNewGameResult: gameResult) { error in
+                                            //TODO: Error
+                                        }
                                     }
                                     scoreUpdated = true
                                 }

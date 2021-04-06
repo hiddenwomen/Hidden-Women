@@ -49,14 +49,13 @@ struct EditProfileView: View {
             .cornerRadius(16)
             .padding(.horizontal, 20)
             Button(action: {
-                profile.name = editedProfile.name
-                updateProfilePicture(userID: userID, profile: profile, picture: editedProfile.picture) { error in
-                    errorTitle = "Error saving picture"
+                profile.updateName(name: editedProfile.name) { error in
+                    errorTitle = "Error saving profile data"
                     errorMessage = "\(error.localizedDescription)"
                     showError = true
                 }
-                updateProfileName(userID: userID, name: editedProfile.name) { error in
-                    errorTitle = "Error saving profile data"
+                profile.updatePicture(newPicture: editedProfile.picture) { error in
+                    errorTitle = "Error saving picture"
                     errorMessage = "\(error.localizedDescription)"
                     showError = true
                 }
