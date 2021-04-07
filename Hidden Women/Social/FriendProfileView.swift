@@ -93,7 +93,7 @@ struct FriendProfileView: View {
                                 .padding()
                             },
                             label: {
-                                Text("Favourite hidden women:")
+                                Text("Favourite Hidden Women:")
                                     .font(.title)
                                     .onTapGesture {
                                         favouriteHiddenWomen.toggle()

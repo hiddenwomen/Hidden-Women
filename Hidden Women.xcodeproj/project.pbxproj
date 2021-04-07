@@ -20,6 +20,7 @@
 		CB74700325F7FEF5006795BB /* WomenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB74700225F7FEF5006795BB /* WomenView.swift */; };
 		CB77369925FB79B000A5E550 /* TrueOrFalseGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB77369825FB79B000A5E550 /* TrueOrFalseGenerator.swift */; };
 		CBBA01C6261B0EC600CD9B3A /* MultiplePairThemUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBA01C5261B0EC600CD9B3A /* MultiplePairThemUpView.swift */; };
+		CBF698A4261DB42A00776FF7 /* AboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF698A3261DB42A00776FF7 /* AboutUsView.swift */; };
 		F504D8822610A46D00AB1D08 /* FriendRequestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F504D8812610A46D00AB1D08 /* FriendRequestsView.swift */; };
 		F50B035E25FBE19100D4EABE /* ChronolineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B035D25FBE19100D4EABE /* ChronolineView.swift */; };
 		F50B036425FCA95F00D4EABE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F50B036325FCA95F00D4EABE /* GoogleService-Info.plist */; };
@@ -72,6 +73,7 @@
 		CB74700225F7FEF5006795BB /* WomenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WomenView.swift; sourceTree = "<group>"; };
 		CB77369825FB79B000A5E550 /* TrueOrFalseGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrueOrFalseGenerator.swift; sourceTree = "<group>"; };
 		CBBA01C5261B0EC600CD9B3A /* MultiplePairThemUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplePairThemUpView.swift; sourceTree = "<group>"; };
+		CBF698A3261DB42A00776FF7 /* AboutUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsView.swift; sourceTree = "<group>"; };
 		F504D8812610A46D00AB1D08 /* FriendRequestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestsView.swift; sourceTree = "<group>"; };
 		F50B035D25FBE19100D4EABE /* ChronolineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChronolineView.swift; sourceTree = "<group>"; };
 		F50B036325FCA95F00D4EABE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -175,6 +177,14 @@
 			path = Women;
 			sourceTree = "<group>";
 		};
+		CBF698A2261DB40A00776FF7 /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				CBF698A3261DB42A00776FF7 /* AboutUsView.swift */,
+			);
+			path = AboutUs;
+			sourceTree = "<group>";
+		};
 		F50B035825FBE0F400D4EABE /* Chronoline */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,6 +265,7 @@
 		F58710AB25F7611C00B47462 /* Hidden Women */ = {
 			isa = PBXGroup;
 			children = (
+				CBF698A2261DB40A00776FF7 /* AboutUs */,
 				F52C5DEB261643F200399F46 /* GoogleService-Info.plist */,
 				F56A7C9B260F23EA003C0A20 /* Social */,
 				F50B037D2603D8E300D4EABE /* Profile */,
@@ -455,6 +466,7 @@
 				F58710AF25F7611C00B47462 /* ContentView.swift in Sources */,
 				CBBA01C6261B0EC600CD9B3A /* MultiplePairThemUpView.swift in Sources */,
 				CB6A103C260F4E520052D58E /* FindPeopleView.swift in Sources */,
+				CBF698A4261DB42A00776FF7 /* AboutUsView.swift in Sources */,
 				F50B03822603D9C200D4EABE /* Profile.swift in Sources */,
 				F50B037F2603D8FB00D4EABE /* ProfileView.swift in Sources */,
 				F58710AD25F7611C00B47462 /* Hidden_WomenApp.swift in Sources */,

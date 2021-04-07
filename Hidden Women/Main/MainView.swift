@@ -44,6 +44,12 @@ struct MainView: View {
                     Text("Profile")
                 }
                 .tag(3)
+            AboutUsView()
+                .tabItem{
+                    Image(systemName: "info.circle")
+                    Text("About us")
+                }
+                .tag(4)
         }
         .accentColor(Color("Morado"))
     }

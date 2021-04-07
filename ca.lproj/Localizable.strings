@@ -5,7 +5,6 @@
   Created by Claudia Marzal Polop on 10/3/21.
   
 */
-"_Chronoline Help_" = "Ajuda de cronolínea";
 "_Warning Guest_" = "Vas a usar l'aplicació como convidada. La funcionalitat de xarxa social no estarà activada. Per a gaudir de l'aplicació al complet has de registrar-te.";
 "... or enter as a" = "... o entra com a";
 "%@ is a: " = "%@ és: ";
@@ -16,7 +15,6 @@
 "Accept" = "Acceptar";
 "Camera" = "Càmera";
 "Cancel" = "Cancel·la";
-"Check how your friends are doing with the games" = "Comprova com els va als teus amics en els jocs";
 "Choose mode" = "Tria el mode";
 "Chronoline" = "Cronolínia";
 "Continue" = "Continuar";
@@ -28,7 +26,6 @@
 "Error setting favorites" = "Error en establir les favorites";
 "False" = "Fals";
 "Find people like me" = "Trobar gent com jo";
-"Friend requests..." = "Sol·licituts d'amistat";
 "Friend requests" = "Sol·licituds d'amistat";
 "Friends" = "Amigues";
 "Games" = "Jocs";
@@ -41,7 +38,7 @@
 "One of %@'s achievements is: " = "Un dels assoliments de %@ és: ";
 "Password..." = "Contrasenya...";
 "Passwords do not match" = "Les contrasenyes con coincideixen";
-"Photo Library" = "Galeria de fotografies";
+"Photo Library" = "Galeria de fotos";
 "Please choose your preferred mode to set your profile image" = "Per favor, tria com carregar la imatge de perfil";
 "Points: %@" = "Punts: %@";
 "Points" = "Punts";
@@ -72,12 +69,32 @@
 "You have %@ friend requests" = "Tens %@ sol·licituds d'amistad";
 "You have 1 friend request" = "Tens 1 sol·licitud d'amistat";
 "You have no friend requests." = "No tens sol·licituds d'amistad";
-"Find people with some of your favourite Hidden Women" = "Troba gent amb les mateixes dones ocultes favorites";
+"Find people with some of your favourite Hidden Women" = "Troba gent amb les mateixes Dones Ocultes favorites";
 "points" = "punts";
 "point" = "punt";
-"Favourite hidden women:" = "Dones ocultes favorites"; // lo vamos a poner con mayusculas o minisculas??
-"Left: your answer. Right: correct answer." = "Izquierda: tu respuesta. Derecha: respuesta correcta";
-"Things you should learn:" = "Cosas que deberías aprender:";
-"You ran out of time" = "Te has quedado sin tiempo";
-"You chose: %@" = "Elegiste: %@";
-"The correct answer was: %@" = "La respuesta correcta era: %@";
+"Favourite Hidden Women:" = "Dones Ocultes favorites"; // lo vamos a poner con mayusculas o minisculas??
+"Left: your answer. Right: correct answer." = "Esquerra: la teua resposta. Dreta: la resposta correcta";
+"Things you should learn:" = "Coses que pots aprendre:";
+"You ran out of time" = "T'has quedat sense temps";
+"You chose: %@" = "Vas escollir: %@";
+"The correct answer was: %@" = "La resposta correcta era: %@";
+"_PairThemUp Help_" = "En aquest joc has de relacionar les fotos de les Dones Ocultes amb els seus respectius noms. Per cada parella correcta rebràs un punt. Bona sort!";
+"_Chronoline Help_" = "En aquest joc has d'ordenar un llistat de Dones Ocultes pel seu any de neixement. Per cada dona en la posició correcta rebràs un punt. Bona sort!";
+"_TrueOrFalse Help_" = "En aquest joc has de distingir si una afirmació sobre una Dona Oculta és veritable o falsa. Per cada resposta correcta rebràs un punt. Bona sort!";
+"_Quiz Help_" = "En aquest joc has escollir la resposta correcta entre quatre opcions a una pregunta sobre una Dona Oculta. Per cada resposta correcta rebràs un punt. Bona sort!";
+
+"Friend request sent" = "Sol·licitud d'amistad enviada";
+"The user can accept of reject your request." = "L'usuari pot acceptar o rebutjar la teua sol·licitud.";
+"Chat" = "Xat";
+"About us" = "Sobre nosaltres";
+"We are GIRLS4STEM, a team from Castellón, Spain, and we want to promote women visibility." = "Som GIRLS4STEM, un equip de Castelló, i volem promoure la visibilitaat de les dones.";
+"We want to thank Technovation Girls for empowering young girls like us." = "Volem agrair a Technovation Girls per empoderar a xiques joves com nosaltres.";
+"We would also like to thank these institutions for their support:" = "També volem agrair el suport d'aquestes institucions:";
+"Check how your friends have been doing with the games in the last 7 days" = "Comprova com els ha anat als teus amics en el jocs durant els útims 7 dies";
+"Check on your friends" = "Mira com els va als teus amics";
+"Ask somebody to be your friend" = "Demana a algú que siga el teu amic";
+"You have to select some Hidden Women as favourites to find people like you." = "Has de seleccionar alguna Dona Oculta com a favorita per a trobar gent com tu.";
+"You have new messages" = "Tens nous missatges";
+"Refresh" = "Refresca";
+"Friend requests..." = "Sol·licituts d'amistat...";
+"Type here..." = "Escriu ací...";

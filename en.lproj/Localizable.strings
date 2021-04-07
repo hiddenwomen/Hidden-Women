@@ -5,10 +5,13 @@
   Created by Claudia Marzal Polop on 10/3/21.
   
 */
-"_Chronoline Help_" = "Chronoline Help";
-"_Warning Guest_" = "Vas a usar la aplicación como invitado. La funcionalidad de red social no estará activada. Para disfrutar de la aplicación al completo has de registrarte.";
+"_Chronoline Help_" = "In this game you have to sort a list of Hidden Women by their birth year. Each woman in the right position will give you a point. Good luck!";
+"_Warning Guest_" = "You are going to use the app as a guest. The social functionality will not be available. To enjoy the app at its fullest you have to sign up.";
 "%@ was a..." = "%@ was a...";
 "Hidden Women" = "Hidden Women";
 "Profile" = "Profile";
 "Sign out" = "Sign out";
 "When was %@ born?" = "When was %@ born?";
+"_PairThemUp Help_" = "In this game you have to match Hidden Women's pictures with their respective names. Each correct match will give you a point. Good luck!";
+"_TrueOrFalse Help_" = "In this game you have to tell if a statement about a Hidden Woman is true or false. Each correct answer will give a point. Good luck!";
+"_Quiz Help_" = "In this game you have to choose the correct answer among four options to a question about a Hidden Woman. Each correct answer will give you a point. Good luck!";

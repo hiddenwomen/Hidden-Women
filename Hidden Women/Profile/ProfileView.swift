@@ -20,62 +20,64 @@ struct ProfileView: View {
     
     var body: some View {
         if userID != "" {
-            VStack {
-                switch profilePage {
-                case .profile:
-                    VStack {
-                        Image(uiImage: profile.picture ?? UIImage())
-                            .resizable()
-                            .scaledToFit()
-                            .clipShape(Circle())
-                            .frame(width: 300, height: 300)
-                        Text(profile.name)
-                            .fontWeight(.bold)
-                        Text(profile.email)
-                        Button(action: {
-                            profilePage = .editProfile
-                        }) {
-                            Text("Edit profile")
+            ScrollView {
+                VStack {
+                    switch profilePage {
+                    case .profile:
+                        VStack {
+                            Image(uiImage: profile.picture ?? UIImage())
+                                .resizable()
+                                .scaledToFit()
+                                .clipShape(Circle())
+                                .frame(width: 300, height: 300)
+                            Text(profile.name)
                                 .fontWeight(.bold)
-                                .importantButtonStyle()
-                        }
-                        .padding()
-                        Spacer()
-                        ZStack {
-                            Circle()
-                                .foregroundColor(Color("Turquesa"))
-                                .frame(width: 125, height: 125)
-                            VStack{
-                                Text("\(profile.points)")
-                                    .foregroundColor(.white)
+                            Text(profile.email)
+                            Button(action: {
+                                profilePage = .editProfile
+                            }) {
+                                Text("Edit profile")
                                     .fontWeight(.bold)
-                                    .font(.largeTitle)
-                                if profile.points != 1 {
-                                    Text("points")
+                                    .importantButtonStyle()
+                            }
+                            .padding()
+                            Spacer()
+                            ZStack {
+                                Circle()
+                                    .foregroundColor(Color("Turquesa"))
+                                    .frame(width: 125, height: 125)
+                                VStack{
+                                    Text("\(profile.points)")
                                         .foregroundColor(.white)
-                                        .font(.subheadline)
-                                } else {
-                                    Text("point")
-                                        .foregroundColor(.white)
-                                        .font(.subheadline)
+                                        .fontWeight(.bold)
+                                        .font(.largeTitle)
+                                    if profile.points != 1 {
+                                        Text("points")
+                                            .foregroundColor(.white)
+                                            .font(.subheadline)
+                                    } else {
+                                        Text("point")
+                                            .foregroundColor(.white)
+                                            .font(.subheadline)
+                                    }
                                 }
                             }
+                            .padding()
+                            Spacer()
+                            
+                            Button(action: {
+                                userID = ""
+                                currentPage = .login
+                                profile.removeListeners()
+                            }) {
+                                Text("Sign out")
+                            }
+                            .padding()
+                            
                         }
-                        .padding()
-                        Spacer()
-                        
-                        Button(action: {
-                            userID = ""
-                            currentPage = .login
-                            profile.removeListeners()
-                        }) {
-                            Text("Sign out")
-                        }
-                        .padding()
-                        
+                    case .editProfile:
+                        EditProfileView(profilePage: $profilePage)
                     }
-                case .editProfile:
-                    EditProfileView(profilePage: $profilePage)
                 }
             }
         } else {
