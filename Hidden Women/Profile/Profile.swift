@@ -432,6 +432,20 @@ func loadChatFromDocument(aId: String, bId: String, document: DocumentSnapshot, 
     }
 }
 
+func setLastAccesToChat(aId: String, bId: String, toId: String, onError: @escaping (Error) -> Void) {
+    let key: String = aId < bId ? "\(aId)::\(bId)" : "\(bId)::\(aId)"
+    let now: Int = Int(Date().timeIntervalSince1970)
+    let data: [String: Int] = [ toId: now ]
+    Firestore.firestore()
+        .collection("chats")
+        .document(key)
+        .updateData(data) { error in
+            if let error = error {
+                onError(error)
+            }
+        }
+}
+
 func loadChat(aId: String, bId: String, chat: Chat, onError: @escaping (Error) -> Void) {
     let key = aId < bId ? "\(aId)::\(bId)" : "\(bId)::\(aId)"
     Firestore.firestore()

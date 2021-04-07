@@ -196,6 +196,7 @@ struct ChatView: View {
             } // TODO:
         }
         .onDisappear {
+            
             print("SALGO")
             listener?.remove()
             listener = nil
