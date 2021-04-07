@@ -169,7 +169,7 @@ struct PairThemUpView: View {
                             xPicture: 70, firstY: 70,
                             lastY: UIScreen.height - 200
                         )
-                        timeLeft = pairThemUpTotalTime
+                        timeLeft = pairThemUpConfig.availableTime
                     }
                     showTimer = false
                     print("\(correctAnswers) \(mistakes)")
@@ -188,7 +188,7 @@ struct PairThemUpView: View {
                 progress += 1.0 / CGFloat(numberOfPairThemUp)
                 showTimer = false
                 shownPairThemUp += 1
-                timeLeft = pairThemUpTotalTime
+                timeLeft = pairThemUpConfig.availableTime
                 if shownPairThemUp < numberOfPairThemUp {
                     pairThemUpGame = pairThemUpGenerator(
                         numberOfWomen: numberOfWomen,
@@ -197,7 +197,7 @@ struct PairThemUpView: View {
                         xPicture: 70, firstY: 70,
                         lastY: UIScreen.height - 200
                     )
-                    timeLeft = pairThemUpTotalTime
+                    timeLeft = pairThemUpConfig.availableTime
                 }
                 showTimer = false
             }

@@ -12,7 +12,17 @@ enum MultiplePairThemUpPages {
     case question
 }
 
-let pairThemUpTotalTime = 20
+struct PairThemUpConfig {
+    let games: Int
+    let numberOfWomen: Int
+    let availableTime: Int
+}
+
+let pairThemUpConfig = PairThemUpConfig(
+    games: 3,
+    numberOfWomen: 5,
+    availableTime: 20
+)
 
 struct MultiplePairThemUpView: View {
     @EnvironmentObject var profile: Profile
@@ -21,16 +31,24 @@ struct MultiplePairThemUpView: View {
     @State var correctAnswers: Int = 0
     @State var shownPairThemUp: Int = 0
     @State var progress: CGFloat = 0.0
-    @State var pairThemUp = pairThemUpGenerator(numberOfWomen: 5, women: women, xName: UIScreen.width - 70, xPicture: 70, firstY: 70, lastY: UIScreen.height - 200)
-    let numberOfPairThemUp = 3
+    @State var pairThemUp = pairThemUpGenerator(
+        numberOfWomen: pairThemUpConfig.numberOfWomen,
+        women: women,
+        xName: UIScreen.width - 70,
+        xPicture: 70,
+        firstY: 70,
+        lastY: UIScreen.height - 200
+    )
     @State var scoreUpdated: Bool = false
     @State var showTimer: Bool = true
-    @State var timeLeft: Int = trueOrFalseTotalTime
+    @State var timeLeft: Int = pairThemUpConfig.availableTime
     @State var mistakes: [[PairThemUpMistake]] = []
-    
+    let numberOfPairThemUp = pairThemUpConfig.games
+
     var body: some View {
         Group {
             switch currentMultiplePairThemUpPage {
+            
             case .start:
                 HStack {
                     Spacer()
@@ -38,21 +56,23 @@ struct MultiplePairThemUpView: View {
                         Spacer()
                         Text("Pair them up")
                             .font(.largeTitle)
+                            .padding()
                         Text("_PairThemUp Help_")
                         Button(action: {
-                            //chronoline = chronolineGenerator(women: women, numberOfWomen: 5, x: geo.size.width/2.0, height: geo.size.height)
                             currentMultiplePairThemUpPage = .question
                             scoreUpdated = false
                         }) {
                             Text("Start")
+                                .bold()
                         }
+                        .importantButtonStyle()
                         Spacer()
                     }
                     Spacer()
                 }
-                
+
             case .question:
-                if shownPairThemUp < numberOfPairThemUp {
+                if shownPairThemUp < pairThemUpConfig.games {
                     VStack {
                         ProgressView(value: progress)
                             .animation(.default)
@@ -65,7 +85,7 @@ struct MultiplePairThemUpView: View {
                             showTimer: $showTimer,
                             mistakes: $mistakes,
                             correctAnswers: $correctAnswers,
-                            numberOfPairThemUp: numberOfPairThemUp
+                            numberOfPairThemUp: pairThemUpConfig.games
                         )
                     }
                 } else {
@@ -113,13 +133,12 @@ struct MultiplePairThemUpView: View {
                                                             .padding(.trailing, 10)
                                                         VStack(alignment: .leading) {
                                                             Text(
-                                                                String.localizedStringWithFormat(NSLocalizedString("Your answer: %@", comment: ""), mistakes[m][i].incorrectAnswer)
+                                                                String.localizedStringWithFormat(NSLocalizedString("Your answer: %@", comment: ""), NSLocalizedString(mistakes[m][i].incorrectAnswer, comment: ""))
                                                             )
                                                             Text(
                                                                 String.localizedStringWithFormat(NSLocalizedString("Correct answer: %@", comment: ""), mistakes[m][i].correctAnswer)
                                                             )
                                                         }
-                                                        
                                                         Spacer()
                                                     }
                                                 }
@@ -131,7 +150,11 @@ struct MultiplePairThemUpView: View {
                             .padding()
                             .onAppear{
                                 if !scoreUpdated {
-                                    let gameResult = GameResult(date: Int(Date().timeIntervalSince1970), gameType: "PairThemUp", points: correctAnswers)
+                                    let gameResult = GameResult(
+                                        date: Int(Date().timeIntervalSince1970),
+                                        gameType: "PairThemUp",
+                                        points: correctAnswers
+                                    )
                                     if userID != "" {
                                         profile.updateGameResults(withNewGameResult: gameResult) { error in
                                             //TODO: Error
@@ -151,7 +174,7 @@ struct MultiplePairThemUpView: View {
                                             Circle()
                                                 .stroke(Color.gray.opacity(0.2), style: StrokeStyle(lineWidth: 3, lineCap: .round))
                                             Circle()
-                                                .trim(from: 0, to: CGFloat(timeLeft) / CGFloat(pairThemUpTotalTime))
+                                                .trim(from: 0, to: CGFloat(timeLeft) / CGFloat(pairThemUpConfig.availableTime))
                                                 .stroke(Color("Morado"), style: StrokeStyle(lineWidth: 3, lineCap: .round))
                                                 .rotationEffect(.degrees(-90))
                                                 .animation(.easeInOut)
@@ -161,7 +184,7 @@ struct MultiplePairThemUpView: View {
                                 }
         )
         .onChange(of: shownPairThemUp) { newShownPairThemUp in
-            if newShownPairThemUp < numberOfPairThemUp {
+            if newShownPairThemUp < pairThemUpConfig.games {
                 showTimer = true
             }
         }

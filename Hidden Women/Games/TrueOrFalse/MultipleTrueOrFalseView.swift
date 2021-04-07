@@ -41,6 +41,7 @@ struct MultipleTrueOrFalseView: View {
                     Spacer()
                     Text("True or false")
                         .font(.largeTitle)
+                        .padding()
                     Text("_TrueOrFalse Help_")
                     Button(action: {
                         trueOrFalses = fullTrueOrFalseGenerator(women: women, numberOfQuestions: 5)
@@ -48,7 +49,9 @@ struct MultipleTrueOrFalseView: View {
                         scoreUpdated = false
                     }) {
                         Text("Start")
+                            .bold()
                     }
+                    .importantButtonStyle()
                     Spacer()
                 }
             case .question:

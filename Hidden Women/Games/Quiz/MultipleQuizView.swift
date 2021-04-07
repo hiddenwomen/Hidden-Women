@@ -41,6 +41,7 @@ struct MultipleQuizView: View {
                     Spacer()
                     Text("Quiz")
                         .font(.largeTitle)
+                        .padding()
                     Text("_Quiz Help_")
                     Button(action: {
                         quizzes = fullQuizGenerator(women: women, numberOfQuestions: 5)
@@ -48,7 +49,10 @@ struct MultipleQuizView: View {
                         scoreUpdated = false
                     }) {
                         Text("Start")
+                            .bold()
                     }
+                    .importantButtonStyle()
+                    .padding()
                     Spacer()
                 }
             case .question :

@@ -46,6 +46,7 @@ struct MultipleChronolineView: View {
                             Spacer()
                             Text("Chronoline")
                                 .font(.largeTitle)
+                                .padding()
                             Text("_Chronoline Help_")
                             Button(action: {
                                 chronoline = chronolineGenerator(women: women, numberOfWomen: 5, x: geo.size.width/2.0, height: geo.size.height)
@@ -53,7 +54,9 @@ struct MultipleChronolineView: View {
                                 scoreUpdated = false
                             }) {
                                 Text("Start")
+                                    .bold()
                             }
+                            .importantButtonStyle()
                             Spacer()
                         }
                         Spacer()
