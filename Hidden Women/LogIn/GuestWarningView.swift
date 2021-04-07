@@ -21,7 +21,7 @@ struct GuestWarningView: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: 200, height: 200)
-            Text("Vas a usar la aplicación como invitada. La funcionalidad de red social no estará activada. Para disfrutar de la aplicación al completo has de registrarte.")
+            Text("_Warning Guest_")
                 .padding()
             Button(action: {
                     userID = ""

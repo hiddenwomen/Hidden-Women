@@ -275,7 +275,6 @@
 				F5A9823125F769DB005EB566 /* LogIn */,
 				F58710AC25F7611C00B47462 /* Hidden_WomenApp.swift */,
 				F58710AE25F7611C00B47462 /* ContentView.swift */,
-				F58710B025F7611D00B47462 /* Assets.xcassets */,
 				F58710B525F7611D00B47462 /* Info.plist */,
 				F50B036325FCA95F00D4EABE /* GoogleService-Info.plist */,
 				F58710B225F7611D00B47462 /* Preview Content */,
@@ -308,6 +307,7 @@
 				F5A9823725F7722C005EB566 /* SignupView.swift */,
 				F53AA8C125FA0EA70045977A /* GuestWarningView.swift */,
 				5AEF0B1E25FC94F1007983CF /* ResetPasswordView.swift */,
+				F58710B025F7611D00B47462 /* Assets.xcassets */,
 			);
 			path = LogIn;
 			sourceTree = "<group>";

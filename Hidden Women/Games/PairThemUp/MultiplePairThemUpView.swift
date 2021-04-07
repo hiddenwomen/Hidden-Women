@@ -36,7 +36,7 @@ struct MultiplePairThemUpView: View {
                     Spacer()
                     VStack {
                         Spacer()
-                        Text("PairThemUp")
+                        Text("Pair them up")
                             .font(.largeTitle)
                         Text("_PairThemUp Help_")
                         Button(action: {

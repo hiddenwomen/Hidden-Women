@@ -2979,7 +2979,7 @@
             "en": "Marion Cameron Gray"
         },
         "pictures": [
-            "imagen1"
+            "MarionGray1"
         ],
         "bio": {
             "en": "Marion Cameron Gray was a Scottish mathematician who discovered a graph with 54 vertices and 81 edges while working at American Telephone & Telegraph. The graph is commonly known as the Gray graph. She discovered an unusual cubic semi-symmetric graph with 54 vertices, representing the 27 points and 27 lines in a 3 × 3 × 3 three-dimensional grid, with an edge for each pair of a point and a line that meet each other. Here, \"cubic\" means that each vertex is the endpoint of three edges, and \"semi-symmetric\" means that every two edges are symmetric to each other but the same is not true for the vertices. This graph is the smallest possible cubic semi-symmetric graph. Thinking it was a theoretical discovery without practical application Gray did not publish her findings. This graph is fundamental in network theory. As well as her own research articles Gray compiled many reviews of publications on mathematical physics and served on the US Government-related committee which produced the Handbook of Mathematical Functions.\n",

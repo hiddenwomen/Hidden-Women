@@ -5,13 +5,7 @@
   Created by Claudia Marzal Polop on 10/3/21.
   
 */
-"_Warning Guest_" = "Vas a usar l'aplicació como convidada. La funcionalitat de xarxa social no estarà activada. Per a gaudir de l'aplicació al complet has de registrar-te.";
 "... or enter as a" = "... o entra com a";
-"%@ is a: " = "%@ és: ";
-"%@ passed away in: " = "%@ va morir en: ";
-"%@ was a: " = "%@ era una: ";
-"%@ was awarded with the: " = "%@ va ser guardonada amb: ";
-"%@ was born in: " = "%@ va néixer en: ";
 "Accept" = "Acceptar";
 "Camera" = "Càmera";
 "Cancel" = "Cancel·la";
@@ -63,7 +57,7 @@
 "True or False" = "Veritable o fals";
 "True" = "Veritable";
 "User name..." = "Nom d'usuària...";
-"Welcome, guest!" = "Benvinguda, invitada!";
+"Welcome, guest!" = "Benvinguda, convidada!";
 "When was %@ born?" = "Quan va néixer %@?";
 "You are a guest."  = "Eres una convidada.";
 "You have %@ friend requests" = "Tens %@ sol·licituds d'amistad";
@@ -81,7 +75,8 @@
 "_PairThemUp Help_" = "En aquest joc has de relacionar les fotos de les Dones Ocultes amb els seus respectius noms. Per cada parella correcta rebràs un punt. Bona sort!";
 "_Chronoline Help_" = "En aquest joc has d'ordenar un llistat de Dones Ocultes pel seu any de neixement. Per cada dona en la posició correcta rebràs un punt. Bona sort!";
 "_TrueOrFalse Help_" = "En aquest joc has de distingir si una afirmació sobre una Dona Oculta és veritable o falsa. Per cada resposta correcta rebràs un punt. Bona sort!";
-"_Quiz Help_" = "En aquest joc has escollir la resposta correcta entre quatre opcions a una pregunta sobre una Dona Oculta. Per cada resposta correcta rebràs un punt. Bona sort!";
+"_Quiz Help_" = "En aquest joc has d'escollir la resposta correcta entre quatre opcions a una pregunta sobre una Dona Oculta. Per cada resposta correcta rebràs un punt. Bona sort!";
+
 
 "Friend request sent" = "Sol·licitud d'amistad enviada";
 "The user can accept of reject your request." = "L'usuari pot acceptar o rebutjar la teua sol·licitud.";
@@ -98,3 +93,25 @@
 "Refresh" = "Refresca";
 "Friend requests..." = "Sol·licituts d'amistat...";
 "Type here..." = "Escriu ací...";
+"Pair them up"  = "Emparella'ls";
+"Your answer: %@" = "La teua resposta: %@";
+"Correct answer: %@" = "La resposta correcta: %@";
+"When did %@ pass away?" = "Quan va faltar %@?";
+"%@ is a..." = "%@ és una...";
+"One of %@'s achievements is..." = "Un dels assoliments de %@ és...";
+"Only three favourites" = "Només tres favorites";
+"You can only select three Hidden Women as your favourites." = "Només pots seleccionar tres Dones Ocultes com a favorites.";
+"%@ is a " = "%@ és ";
+"%@ passed away in " = "%@ va morir en ";
+"%@ was a " = "%@ era una";
+"%@ was awarded with the " = "%@ va ser guardonada amb ";
+"%@ was born in " = "%@ va néixer en ";
+"Sign up error" = "Error al registrar-se";
+"Passwords do not match" = "Les contrasenyes no coincideixen";
+"Already have an account?" = "Ja tens un compte?";
+"_Warning Guest_" = "Vas a usar l'aplicació com a convidada. La funcionalitat de xarxa social no estarà activada. Per a gaudir de l'aplicació al complet has de registrar-te.";
+"Reset password" = "Restableix la contrasenya";
+"If you tap on the 'Reset Password' button, your password will be reset. We will send an email to" = "Si polses el botó 'Restableix la contrasenya', la contrasenya es restablirà. Enviarem un correu a";
+"with instructions on how to reset your password." = "amb instruccions sobre com restablir la contrasenya.";
+"Email sent" = "Correu electrònic enviat";
+"An email has been sent with instructions on how to reset your password" = "S'ha enviat un correu electrònic amb instruccions sobre com restablir la contrasenya";
