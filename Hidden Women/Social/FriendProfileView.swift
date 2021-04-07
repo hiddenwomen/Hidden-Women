@@ -12,16 +12,13 @@ struct FriendProfileView: View {
     let showFriendRequestButton: Bool
     @EnvironmentObject var profile: Profile
     @State var showBanner: Bool = false
+    @State var favouriteHiddenWomen: Bool = false
+    @Binding var notifications: [String]
     
     var body: some View {
         ZStack {
             ScrollView{
                 VStack {
-                    if !showFriendRequestButton {
-                        NavigationLink(destination: ChatView(friendId: friendProfile.userId)) {
-                            Text("Send a message")
-                        }
-                    }
                     Image(uiImage: friendProfile.picture ?? UIImage())
                         .resizable()
                         .scaledToFit()
@@ -66,20 +63,43 @@ struct FriendProfileView: View {
                                 .importantButtonStyle()
                         }
                     }
-                    if friendProfile.favourites.count > 0 {
-                        VStack (alignment: .leading){
-                            Text("Favourite hidden women:")
-                                .font(.title)
-                            ForEach(friendProfile.favourites, id: \.self) { favourite in
-                                HStack {
-                                    Image(women.filter({ $0.name["en"] == favourite }).map{$0.pictures[0]}.first ?? "")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 75)
-                                    Text(women.filter{ $0.name["en"] == favourite }.map{$0.name.localized}.first ?? "")
-                                }
+                    if !showFriendRequestButton {
+                        NavigationLink(destination: ChatView(friendId: friendProfile.userId, notifications: $notifications)) {
+                            HStack {
+                                Image(systemName: "bubble.left.and.bubble.right.fill")
+                                Text("Chat")
                             }
+                            .font(.title)
+                            .importantButtonStyle()
+                            .padding()
                         }
+                    }
+                    if friendProfile.favourites.count > 0 {
+                        DisclosureGroup (
+                            isExpanded: $favouriteHiddenWomen,
+                            content: {
+                                VStack (alignment: .leading){
+                                    ForEach(friendProfile.favourites, id: \.self) { favourite in
+                                        HStack {
+                                            Image(women.filter({ $0.name["en"] == favourite }).map{$0.pictures[0]}.first ?? "")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .frame(width: 75)
+                                                .clipShape(RoundedRectangle(cornerRadius: 8))
+                                            Text(women.filter{ $0.name["en"] == favourite }.map{$0.name.localized}.first ?? "")
+                                        }
+                                    }
+                                }
+                                .padding()
+                            },
+                            label: {
+                                Text("Favourite hidden women:")
+                                    .font(.title)
+                                    .onTapGesture {
+                                        favouriteHiddenWomen.toggle()
+                                    }
+                            }
+                        )
                         .padding()
                     }
                 }

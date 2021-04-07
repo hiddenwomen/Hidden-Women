@@ -137,6 +137,7 @@ struct ChatView: View {
     @State private var scrollTarget: Int = 0
     @StateObject var chat: Chat = Chat(lastAccess: [:], messages: [])
     @State var listener: ListenerRegistration? = nil
+    @Binding var notifications: [String]
     
     var body: some View {
         VStack {
@@ -158,7 +159,7 @@ struct ChatView: View {
                         }
                     }
                     .onChange(of: scrollTarget) { target in
-                            scrollReader.scrollTo(target, anchor: .bottomTrailing)
+                        scrollReader.scrollTo(target, anchor: .bottomTrailing)
                     }
                 }
             }
@@ -193,10 +194,13 @@ struct ChatView: View {
             print("ENTRO")
             listener = listenToChat(aId: userID, bId: friendId, chat: chat) {
                 scrollTarget = chat.messages.count - 1
-            } // TODO:
+            }
+            if notifications.contains(friendId) {
+                notifications.removeAll(where: {$0 == friendId})
+            }
         }
         .onDisappear {
-            
+            setLastAccesToChat(aId: userID, bId: friendId, toId: userID, onError: {error in}) // TODO:
             print("SALGO")
             listener?.remove()
             listener = nil

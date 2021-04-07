@@ -11,12 +11,13 @@ struct FindPeopleView: View {
     @EnvironmentObject var profile: Profile
     @AppStorage("userID") var userID: String = ""
     @State var foundFriends: [Profile] = []
+    @State var dummy: [String] = []
     
     var body: some View {
         VStack {
             List {
                 ForEach (foundFriends, id: \.self.email) { friend in
-                    NavigationLink(destination: FriendProfileView(friendProfile: friend, showFriendRequestButton: true)){
+                    NavigationLink(destination: FriendProfileView(friendProfile: friend, showFriendRequestButton: true, notifications: $dummy)){
                         HStack {
                             Image(uiImage: friend.picture ?? UIImage())
                                 .resizable()

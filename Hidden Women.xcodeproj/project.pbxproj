@@ -208,8 +208,8 @@
 		F560939825FB6CA0000E8560 /* TrueOrFalse */ = {
 			isa = PBXGroup;
 			children = (
-				F560939925FB6CB7000E8560 /* TrueOrFalseView.swift */,
 				F560939C25FB6CD0000E8560 /* TrueOrFalse.swift */,
+				F560939925FB6CB7000E8560 /* TrueOrFalseView.swift */,
 				F560939F25FB6F89000E8560 /* MultipleTrueOrFalseView.swift */,
 				CB77369825FB79B000A5E550 /* TrueOrFalseGenerator.swift */,
 			);

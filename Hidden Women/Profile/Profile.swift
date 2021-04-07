@@ -79,7 +79,7 @@ class Profile: ObservableObject, Identifiable {
         self.name = data["name"] as? String ?? ""
         self.email = data["email"] as? String ?? ""
         self.favourites = data["favourites"] as? [String] ?? []
-
+        
         let oldPictureFileName = self.pictureFileName
         self.pictureFileName = data["pictureFileName"] as? String ?? ""
         if oldPictureFileName != self.pictureFileName {
@@ -123,8 +123,8 @@ class Profile: ObservableObject, Identifiable {
             rankingUpdater.change()
         }
     }
-
-        
+    
+    
     func updateGameResults(withNewGameResult: GameResult, onError: @escaping (Error) -> Void) {
         gameResults.append(withNewGameResult)
         print("!!! Grabo por updateGameResults")
@@ -151,9 +151,9 @@ class Profile: ObservableObject, Identifiable {
                 onCompletion()
             }
         }
-
+        
     }
-
+    
     func updatePicture(newPicture: UIImage?, onError: @escaping (Error) -> Void) {
         picture = newPicture?.scalePreservingAspectRatio(targetSize: CGSize(width: 200.0, height: 200.0))
         let pictureData = picture?.jpegData(compressionQuality: 0.9) ?? Data()
@@ -482,7 +482,7 @@ func listenToChat(aId: String, bId: String, chat: Chat, onChange: @escaping () -
 func sendChatMessage(aId: String, bId: String, message: ChatMessage, onError: @escaping (Error) -> Void) {
     let key = aId < bId ? "\(aId)::\(bId)" : "\(bId)::\(aId)"
     print("!!! Grabo chat \(key)")
-
+    
     let reference  =  Firestore.firestore().collection("chats").document(key)
     reference.getDocument() { documentSnapshot, error in
         if let error = error {
@@ -491,28 +491,29 @@ func sendChatMessage(aId: String, bId: String, message: ChatMessage, onError: @e
             if documentSnapshot.exists {
                 print("!!! Grabo por sendChatMessage (1)")
                 reference
-                .updateData([
-                    "messages": FieldValue.arrayUnion([message.toDict()])
-                ]) { error in
-                    if let error = error {
-                        onError(error)
+                    .updateData([
+                        "messages": FieldValue.arrayUnion([message.toDict()])
+                    ]) { error in
+                        if let error = error {
+                            onError(error)
+                        }
                     }
-                }
             } else {
                 print("!!! Grabo por sendChatMessage (2)")
                 reference.setData([
-                    "lastAcces" : [
-                        aId: 0,
-                        bId: 0
-                    ],
+                    aId: 0,
+                    bId: 0,
                     "messages": [
                         message.toDict()
+                    ],
+                    "participants": [
+                        aId, bId
                     ]
                 ])
             }
         }
     }
-
+    
 }
 
 
@@ -527,4 +528,34 @@ func loadProfile(userID: String, profile: Profile, rankingUpdater: RankingUpdate
             }
         }
 }
+
+func getChatNotifications(profile: Profile, notificationFrom: @escaping (String)-> Void) {
+    Firestore.firestore()
+        .collection("chats")
+        .whereField(
+            "participants",
+            arrayContains: profile.userId
+        )
+        .getDocuments { querySnapshot, error in
+            if let error = error {
+            } else if let querySnapshot = querySnapshot {
+                for document in querySnapshot.documents {
+                    let data = document.data()
+                    let dataMessages = data["messages"] as? [[String: String]] ?? []
+                    if !dataMessages.isEmpty {
+                        let lastMessageTime = Int(dataMessages.last!["time"] ?? "") ?? 0
+                        let lastAccess = data[profile.userId] as? Int ?? 0
+                        if lastAccess < lastMessageTime {
+                            let participants = data["participants"] as? [String] ?? []
+                            let friendId = participants.filter{$0 != profile.userId}.first ?? ""
+                            if friendId != "" {
+                                notificationFrom(friendId)
+                            }
+                        }
+                    }
+                    }
+
+                }
+            }
+    }
 
