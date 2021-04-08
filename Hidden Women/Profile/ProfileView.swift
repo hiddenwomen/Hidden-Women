@@ -68,7 +68,8 @@ struct ProfileView: View {
                             Button(action: {
                                 userID = ""
                                 currentPage = .login
-                                profile.removeListeners()
+                                profile.clear()
+                                // profile.removeListeners()
                             }) {
                                 Text("Sign out")
                             }

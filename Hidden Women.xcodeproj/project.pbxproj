@@ -52,6 +52,9 @@
 		F58710C025F761F500B47462 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = F58710BF25F761F500B47462 /* Podfile */; };
 		F58D437C261A356500260758 /* PairThemUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D437B261A356500260758 /* PairThemUpView.swift */; };
 		F58D4381261B8BAF00260758 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D4380261B8BAF00260758 /* ChatView.swift */; };
+		F58D4385261F571F00260758 /* GameResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D4384261F571F00260758 /* GameResult.swift */; };
+		F58D4388261F589E00260758 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D4387261F589E00260758 /* Chat.swift */; };
+		F58D438C261F615C00260758 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D438B261F615B00260758 /* ChatMessage.swift */; };
 		F5A9822E25F769C1005EB566 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9822D25F769C1005EB566 /* LoginView.swift */; };
 		F5A9823825F7722C005EB566 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9823725F7722C005EB566 /* SignupView.swift */; };
 		F5A9823C25F77814005EB566 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9823B25F77814005EB566 /* MainView.swift */; };
@@ -109,6 +112,9 @@
 		F58710BF25F761F500B47462 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F58D437B261A356500260758 /* PairThemUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairThemUpView.swift; sourceTree = "<group>"; };
 		F58D4380261B8BAF00260758 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		F58D4384261F571F00260758 /* GameResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResult.swift; sourceTree = "<group>"; };
+		F58D4387261F589E00260758 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		F58D438B261F615B00260758 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		F5A9822D25F769C1005EB566 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F5A9823725F7722C005EB566 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		F5A9823B25F77814005EB566 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -147,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				F52C5DCC2615DEE300399F46 /* GamesView.swift */,
+				F58D4384261F571F00260758 /* GameResult.swift */,
 				F58D437A261A355100260758 /* PairThemUp */,
 				F50B035825FBE0F400D4EABE /* Chronoline */,
 				F560939825FB6CA0000E8560 /* TrueOrFalse */,
@@ -237,6 +244,8 @@
 				F504D8812610A46D00AB1D08 /* FriendRequestsView.swift */,
 				F52C5DEE261738D700399F46 /* FriendProfileView.swift */,
 				F58D4380261B8BAF00260758 /* ChatView.swift */,
+				F58D4387261F589E00260758 /* Chat.swift */,
+				F58D438B261F615B00260758 /* ChatMessage.swift */,
 			);
 			path = Social;
 			sourceTree = "<group>";
@@ -467,16 +476,19 @@
 				CBBA01C6261B0EC600CD9B3A /* MultiplePairThemUpView.swift in Sources */,
 				CB6A103C260F4E520052D58E /* FindPeopleView.swift in Sources */,
 				CBF698A4261DB42A00776FF7 /* AboutUsView.swift in Sources */,
+				F58D4388261F589E00260758 /* Chat.swift in Sources */,
 				F50B03822603D9C200D4EABE /* Profile.swift in Sources */,
 				F50B037F2603D8FB00D4EABE /* ProfileView.swift in Sources */,
 				F58710AD25F7611C00B47462 /* Hidden_WomenApp.swift in Sources */,
 				F56A7CA0260F438F003C0A20 /* MyFriendsView.swift in Sources */,
 				F56A7CA3260F4424003C0A20 /* RankingView.swift in Sources */,
 				F50B037125FEBDBE00D4EABE /* ChronoWomanView.swift in Sources */,
+				F58D4385261F571F00260758 /* GameResult.swift in Sources */,
 				F53AA8C225FA0EA70045977A /* GuestWarningView.swift in Sources */,
 				F50B037225FEBDBE00D4EABE /* ChronolineGenerator.swift in Sources */,
 				F504D8822610A46D00AB1D08 /* FriendRequestsView.swift in Sources */,
 				F50B035E25FBE19100D4EABE /* ChronolineView.swift in Sources */,
+				F58D438C261F615C00260758 /* ChatMessage.swift in Sources */,
 				CB77369925FB79B000A5E550 /* TrueOrFalseGenerator.swift in Sources */,
 				F50B03852604A42800D4EABE /* EditProfileView.swift in Sources */,
 				CB746FFD25F7FC62006795BB /* WomanView.swift in Sources */,

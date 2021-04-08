@@ -10,7 +10,6 @@ import Firebase
 
 var language = Locale.current.languageCode ?? "en"
 var women: [Woman] = []
-var mainListener: ListenerRegistration? = nil
 
 class RankingUpdater: ObservableObject {
     @Published var counter: Int = 0
@@ -23,7 +22,7 @@ class RankingUpdater: ObservableObject {
 @main
 struct Hidden_WomenApp: App {
     @AppStorage("userID") var userID: String = ""
-    var profile: Profile = Profile()
+    var profile: Profile = Profile(userId: "")
     var rankingUpdater = RankingUpdater()
     
     init() {
@@ -54,8 +53,9 @@ struct Hidden_WomenApp: App {
                     print("EMPIEZA EL ESPECTACULO")
                     if userID != "" {
                         print("--- Carga del profile")
-                        //loadProfile(userID: userID, profile: profile, andFriends: true)
-                        mainListener = listenToAndUpdateProfile(userID: userID, profile: profile, rankingUpdater: rankingUpdater, andFriends: true)
+                        profile.userId = userID
+                        profile.load(rankingUpdater: rankingUpdater)
+                        profile.listen(rankingUpdater: rankingUpdater, andFriends: true)
                         print("Y escuchador conectado")
                     }
                 }

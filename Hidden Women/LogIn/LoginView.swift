@@ -34,7 +34,7 @@ struct LoginView: View {
                 .background(Color("Hueso"))
                 .cornerRadius(16)
                 .padding(.horizontal, 20)
-
+                
                 HStack {
                     Image(systemName: "lock")
                     SecureField("Password...", text: $password)
@@ -57,13 +57,15 @@ struct LoginView: View {
                             errorMessage = error.localizedDescription
                             showErrorAlert = true
                         }) { authResult in
-                            userID = authResult.user.uid
-                            profile.removeListeners()
-                            print("--- desde BOTÓN Sign in")
-                            loadProfile(userID: userID, profile: profile, rankingUpdater: rankingUpdater, andFriends: true)
-                            mainListener = listenToAndUpdateProfile(userID: userID, profile: profile, rankingUpdater: rankingUpdater)
-                            currentPage = .main
-                        }
+                        profile.clear()
+                        userID = authResult.user.uid
+                        profile.userId = userID
+                        // profile.removeFriendListeners()
+                        print("--- desde BOTÓN Sign in")
+                        profile.load(rankingUpdater: rankingUpdater, andFriends: true)
+                        profile.listen(rankingUpdater: rankingUpdater)
+                        currentPage = .main
+                    }
                 }) {
                     Text("Sign in")
                         .fontWeight(.bold)
@@ -96,7 +98,7 @@ struct LoginView: View {
         }
     }
     
-
+    
 }
 
 struct LoginView_Previews: PreviewProvider {

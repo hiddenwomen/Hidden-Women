@@ -68,9 +68,11 @@ struct SignupView: View {
                                 errorMessage = error.localizedDescription
                                 showErrorAlert = true
                             }) { authResult in
+                            profile.clear()
                             userID = authResult.user.uid
-                            profile.removeListeners()
-                            mainListener = listenToAndUpdateProfile(userID: userID, profile: profile, rankingUpdater: rankingUpdater)
+                            profile.userId = userID
+                            //profile.removeFriendListeners()
+                            profile.listen(rankingUpdater: rankingUpdater)
                             currentPage = .main
                         }
                     } else {

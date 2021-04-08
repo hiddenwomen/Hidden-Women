@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let quizTotalTime = 3
+let quizTotalTime = 15
 
 struct QuizView: View {
     let quiz: Quiz

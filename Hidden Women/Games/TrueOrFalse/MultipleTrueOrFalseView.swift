@@ -11,7 +11,7 @@ enum MultipleTrueOrFalsePages {
     case start
     case question
 }
-let trueOrFalseTotalTime = 3
+let trueOrFalseTotalTime = 10
 
 struct TrueOrFalseMistake: Identifiable {
     let question: String

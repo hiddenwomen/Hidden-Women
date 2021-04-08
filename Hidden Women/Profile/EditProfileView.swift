@@ -11,7 +11,7 @@ struct EditProfileView: View {
     @EnvironmentObject var profile: Profile
     @AppStorage ("userID") var userID: String = ""
 
-    @State var editedProfile: Profile = Profile()
+    @State var editedProfile: Profile = Profile(userId: "")
     @Binding var profilePage: ProfilePages
 
     @State var showImagePicker = false
@@ -109,7 +109,7 @@ struct EditProfileView: View {
 }
 
 struct EditProfileView_Previews: PreviewProvider {
-    static var editedProfile: Profile = Profile()
+    static var editedProfile: Profile = Profile(userId: "")
     @State static var profilePage: ProfilePages = .editProfile
     
     

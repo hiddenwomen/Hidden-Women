@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct FriendProfileView: View {
+    @AppStorage("userID") var userID: String = ""
     @ObservedObject var friendProfile: Profile
     let showFriendRequestButton: Bool
     @EnvironmentObject var profile: Profile
@@ -64,7 +65,11 @@ struct FriendProfileView: View {
                         }
                     }
                     if !showFriendRequestButton {
-                        NavigationLink(destination: ChatView(friendId: friendProfile.userId, notifications: $notifications)) {
+                        NavigationLink(destination: ChatView(
+                                        friendId: friendProfile.userId,
+                                        chat: Chat(aId: userID, bId: friendProfile.userId),
+                                        notifications: $notifications)
+                        ) {
                             HStack {
                                 Image(systemName: "bubble.left.and.bubble.right.fill")
                                 Text("Chat")

@@ -40,18 +40,18 @@ struct MyFriendsView: View {
                 }
             }
             Button(action: {
-                getChatNotifications(profile: profile) { friendId in
+                profile.getChatNotifications(notificationFrom: { friendId in
                     notifications.append(friendId)
-                }
+                })
             }) {
                 Image(systemName: "arrow.clockwise")
                 Text("Refresh")
             }
         }
         .onAppear {
-            getChatNotifications(profile: profile) { friendId in
+            profile.getChatNotifications(notificationFrom: { friendId in
                 notifications.append(friendId)
-            }
+            })
         }
     }
 }

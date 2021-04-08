@@ -129,16 +129,17 @@ func configuredDateFormatter() -> DateFormatter {
 }
 
 struct ChatView: View {
-    // @EnvironmentObject var profile: Profile
-    @AppStorage ("userID") var userID: String = ""
     let friendId: String
+    @StateObject var chat: Chat
+    
+    @AppStorage ("userID") var userID: String = ""
     @State var currentMessage = ""
-    let dateFormatter: DateFormatter = configuredDateFormatter()
     @State private var scrollTarget: Int = 0
-    @StateObject var chat: Chat = Chat(lastAccess: [:], messages: [])
     @State var listener: ListenerRegistration? = nil
     @Binding var notifications: [String]
-    
+
+    let dateFormatter: DateFormatter = configuredDateFormatter()
+
     var body: some View {
         VStack {
             ScrollView {
@@ -176,9 +177,7 @@ struct ChatView: View {
                     .onTapGesture {
                         if currentMessage != "" {
                             scrollTarget -= 2
-                            sendChatMessage(
-                                aId: userID,
-                                bId: friendId,
+                            chat.send(
                                 message: ChatMessage(
                                     author: userID,
                                     text: currentMessage,
@@ -192,7 +191,7 @@ struct ChatView: View {
         }
         .onAppear {
             print("ENTRO")
-            listener = listenToChat(aId: userID, bId: friendId, chat: chat) {
+            listener = chat.listen() {
                 scrollTarget = chat.messages.count - 1
             }
             if notifications.contains(friendId) {
@@ -200,10 +199,10 @@ struct ChatView: View {
             }
         }
         .onDisappear {
-            setLastAccesToChat(aId: userID, bId: friendId, toId: userID, onError: {error in}) // TODO:
-            print("SALGO")
             listener?.remove()
             listener = nil
+            chat.setLastAcces(toId: userID, onError: {error in}) // TODO:
+            print("SALGO")
         }
     }
 }

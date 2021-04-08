@@ -188,6 +188,6 @@ struct SocialView_Previews: PreviewProvider {
     
     static var previews: some View {
         SocialView(currentPage: $currentPage)
-            .environmentObject(Profile())
+            .environmentObject(Profile(userId: ""))
     }
 }

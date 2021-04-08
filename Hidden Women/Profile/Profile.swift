@@ -11,41 +11,6 @@ import Firebase
 
 let oneWeek = 7 * 24 * 60 * 60
 
-struct Message: Identifiable {
-    let from: String
-    let to: String
-    let text: String
-    let time: Int
-    let read: Bool
-    let id = UUID()
-    
-    func toDict() -> [String: String] {
-        return [
-            "from": self.from,
-            "to": self.to,
-            "text": self.text,
-            "time": String(self.time),
-            "read": String(self.read)
-        ]
-    }
-}
-
-struct GameResult: Identifiable {
-    let date: Int
-    let gameType: String
-    let points: Int
-    let id: UUID = UUID()
-    
-    func toDict() -> [String: Any] {
-        return [
-            "date": date,
-            "gameType": gameType,
-            "points": points
-        ]
-    }
-}
-
-
 class Profile: ObservableObject, Identifiable {
     @Published var userId: String
     @Published var name: String
@@ -56,15 +21,15 @@ class Profile: ObservableObject, Identifiable {
     @Published var friends: [Profile] = []
     @Published var gameResults: [GameResult] = []
     @Published var friendRequests: [String] = []
-    var friendListeners: [String: ListenerRegistration] = [:]
-    
+    var mainListener: ListenerRegistration? = nil
+
     var points: Int {
         let limit = Int(Date().timeIntervalSince1970) - oneWeek
-        return gameResults.filter{$0.date > limit}.map{$0.points}.reduce(0, +)
+        return gameResults.points(limit: limit)
     }
     var id: UUID = UUID()
     
-    init(userId: String = "", name: String = "", email: String = "", favourites: [String] = [], pictureFileName: String = "", gameResults: [GameResult] = []) {
+    init(userId: String, name: String = "", email: String = "", favourites: [String] = [], pictureFileName: String = "", gameResults: [GameResult] = []) {
         self.userId = userId
         self.name = name
         self.email = email
@@ -73,20 +38,59 @@ class Profile: ObservableObject, Identifiable {
         self.gameResults = gameResults
     }
     
+    func clear() {
+        userId = ""
+        name = ""
+        email = ""
+        favourites = []
+        picture = UIImage(named: "unknown")
+        pictureFileName = ""
+        for friend in friends {
+            friend.clear()
+        }
+        friends = []
+        gameResults = []
+        friendRequests = []
+        
+        if mainListener != nil {
+            mainListener?.remove()
+            mainListener = nil
+        }
+    }
+    
+    func toDict() -> [String: Any] {
+        return [
+            "userId": userId,
+            "name": name,
+            "email": email,
+            "favourites": favourites,
+            "pictureFileName": pictureFileName,
+            "friends": friends.map{$0.userId},
+            "gameResults": gameResults.map{$0.toDict()},
+            "friendRequests": friendRequests
+        ]
+    }
+    
     func from(document: DocumentSnapshot, rankingUpdater: RankingUpdater, andFriends: Bool = false) {
+        let oldPictureFileName = self.pictureFileName
+        let oldResultsCount = self.gameResults.count
+
         let data = document.data() ?? ["name": ""]
+
         self.userId = data["userId"] as? String ?? ""
         self.name = data["name"] as? String ?? ""
         self.email = data["email"] as? String ?? ""
         self.favourites = data["favourites"] as? [String] ?? []
-        
-        let oldPictureFileName = self.pictureFileName
         self.pictureFileName = data["pictureFileName"] as? String ?? ""
+        self.gameResults = (data["gameResults"] as? [[String: Any]] ?? []).map {GameResult.fromDict(dict: $0)}
+        self.friendRequests = data["friendRequests"] as? [String] ?? []
+        self.friends = []
+
         if oldPictureFileName != self.pictureFileName {
             let picture = Storage.storage()
                 .reference()
                 .child("\(userId)/\(pictureFileName)")
-            picture.getData(maxSize: 128 * 1024 * 1024) { data, error in
+            picture.getData(maxSize: 128 * 1024 * 1024) { data, error in // TODO: tamaño a constante
                 if let _ = error {
                     self.picture = UIImage(named: "unknown")
                 } else {
@@ -96,29 +100,15 @@ class Profile: ObservableObject, Identifiable {
         }
         
         if andFriends {
-            let listOfFriends = data["friends"] as? [String] ?? []
-            for friendUserId in listOfFriends {
-                if !self.friends.map({$0.userId}).contains(friendUserId) {
-                    let friendProfile = Profile()
-                    print("--- desde from")
-                    loadProfile(userID: friendUserId, profile: friendProfile, rankingUpdater: rankingUpdater, andFriends: false)
-                    self.friends.append(friendProfile)
-                    self.friendListeners[friendUserId] = listenToAndUpdateProfile(userID: friendUserId, profile: friendProfile, rankingUpdater: rankingUpdater)
-                }
-            }
+            let listOfFriends: Set<String> = Set(data["friends"] as? [String] ?? [])
+            self.friends = Array(listOfFriends.map { friendID in
+                let friendProfile = Profile(userId: friendID)
+                friendProfile.load(rankingUpdater: rankingUpdater, andFriends: false)
+                friendProfile.listen(rankingUpdater: rankingUpdater)
+                return friendProfile
+            })
         }
-        self.friendRequests = data["friendRequests"] as? [String] ?? []
-        let oldResultsCount = self.gameResults.count
-        let results = data["gameResults"] as? [[String : Any]] ?? []
-        var theGameResults: [GameResult] = []
-        for result in results {
-            theGameResults.append(GameResult(
-                date: result["date"] as? Int ?? 0,
-                gameType: result["gameType"] as? String ?? "Error",
-                points: result["points"] as? Int ?? 0
-            ))
-        }
-        self.gameResults = theGameResults
+
         if oldResultsCount != self.gameResults.count {
             rankingUpdater.change()
         }
@@ -211,10 +201,10 @@ class Profile: ObservableObject, Identifiable {
             .updateData([
                 "friends": FieldValue.arrayUnion([userId])
             ])
-        let friendProfile = Profile()
         print("--- desde acceptFriendRequest")
-        loadProfile(userID: friendUserId, profile: friendProfile, rankingUpdater: rankingUpdater)
-        friendListeners[friendUserId] = listenToAndUpdateProfile(userID: friendUserId, profile: friendProfile, rankingUpdater: rankingUpdater)
+        let friendProfile = Profile(userId: friendUserId)
+        friendProfile.load(rankingUpdater: rankingUpdater)
+        friendProfile.listen(rankingUpdater: rankingUpdater)
         self.friends.append(friendProfile)
     }
     
@@ -257,18 +247,75 @@ class Profile: ObservableObject, Identifiable {
         }
     }
     
-    func removeListeners() {
-        if mainListener != nil {
-            mainListener?.remove()
-            mainListener = nil
-            print("*** Desconecto el listener principal")
-        }
-        for listener in friendListeners.values {
-            listener.remove()
-            print("*** Desconecto el listener de una amiga")
-        }
-        friendListeners = [:]
+//    func removeFriendListeners() {
+//        if mainListener != nil {
+//            mainListener?.remove()
+//            mainListener = nil
+//            print("*** Desconecto el listener principal")
+//        }
+//        for listener in friendListeners.values {
+//            listener.remove()
+//            print("*** Desconecto el listener de una amiga")
+//        }
+//        friendListeners = [:]
+//    }
+//
+    func load(rankingUpdater: RankingUpdater, andFriends: Bool = false) {
+        print("!!! loadProfile \(userId)")
+        Firestore.firestore()
+            .collection("users")
+            .document(userId)
+            .getDocument { document, error in
+                if let document = document, document.exists {
+                    self.from(document: document, rankingUpdater: rankingUpdater, andFriends: andFriends)
+                }
+            }
     }
+
+    func listen(rankingUpdater: RankingUpdater, andFriends: Bool = false) {
+        print("!!! Fijo un escuchador para \(userId)")
+        mainListener = Firestore.firestore()
+            .collection("users")
+            .document(userId)
+            .addSnapshotListener { document, error in
+                if let error = error {
+                    print("Error fetching document: \(error)")
+                    return
+                } else if let _ = document {
+                    print("--- desde listenToAndUpdateProfile")
+                    self.load(rankingUpdater: rankingUpdater, andFriends: andFriends) // TODO: Repensar carga de amigos: loadFriendsProfiles
+                }
+            }
+    }
+
+    func getChatNotifications(notificationFrom: @escaping (String)-> Void) {
+        Firestore.firestore()
+            .collection("chats")
+            .whereField("participants", arrayContains: self.userId)
+            .getDocuments { querySnapshot, error in
+                if let error = error {
+                    // TODO: Tratamiento de error
+                } else if let querySnapshot = querySnapshot {
+                    for document in querySnapshot.documents {
+                        let data = document.data()
+                        let dataMessages = data["messages"] as? [[String: String]] ?? []
+                        if !dataMessages.isEmpty {
+                            let lastMessageTime = Int(dataMessages.last!["time"] ?? "") ?? 0
+                            let lastAccess = data[self.userId] as? Int ?? 0
+                            if lastAccess < lastMessageTime {
+                                let participants = data["participants"] as? [String] ?? []
+                                let friendId = participants.filter{$0 != self.userId}.first ?? ""
+                                if friendId != "" {
+                                    notificationFrom(friendId)
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+    }
+
 }
 
 
@@ -325,26 +372,16 @@ func signUp(withEmail: String, password: String, profile: Profile, onError: @esc
                 if let error = error {
                     onError(error)
                 } else if let authResult = authResult {
+                    profile.clear()
                     let userID = authResult.user.uid
                     profile.name = withEmail.components(separatedBy: "@")[0]
+                    profile.userId = userID
                     profile.email = withEmail
-                    profile.favourites = []
-                    profile.gameResults = []
-                    profile.friendRequests = []
-                    profile.pictureFileName = ""
-                    profile.picture = UIImage(named: "unknown")
                     print("!!! Grabo datos por signIn tras creación de usuario")
                     Firestore.firestore()
                         .collection("users")
                         .document(userID)
-                        .setData([
-                            "name": profile.name,
-                            "email": profile.email,
-                            "favourites": profile.favourites,
-                            "pictureFileName": profile.pictureFileName,
-                            "gameResults": profile.gameResults,
-                            "friendRequests": profile.friendRequests
-                        ]) { error in
+                        .setData(profile.toDict()) { error in
                             if let error = error{
                                 onError(error)
                             }
@@ -352,9 +389,7 @@ func signUp(withEmail: String, password: String, profile: Profile, onError: @esc
                     Firestore.firestore()
                         .collection("emails")
                         .document(profile.email.lowercased())
-                        .setData([
-                            "userId": userID
-                        ]) { error in
+                        .setData(["userId": userID]) { error in
                             if let error = error{
                                 onError(error)
                             }
@@ -376,186 +411,5 @@ func resetPassword(withEmail: String, onError: @escaping (Error) -> Void, onComp
     }
 }
 
-func listenToAndUpdateProfile(userID: String, profile: Profile, rankingUpdater: RankingUpdater, andFriends: Bool = false) -> ListenerRegistration {
-    print("!!! Fijo un escuchador para \(userID)")
-    return Firestore.firestore()
-        .collection("users")
-        .document(userID)
-        .addSnapshotListener { document, error in
-            if let error = error {
-                print("Error fetching document: \(error)")
-                return
-            } else if let _ = document {
-                print("--- desde listenToAndUpdateProfile")
-                loadProfile(userID: userID, profile: profile, rankingUpdater: rankingUpdater, andFriends: andFriends) // TODO: Repensar carga de amigos: loadFriendsProfiles
-            }
-        }
-}
 
-
-struct ChatMessage {
-    let author: String
-    let text: String
-    let time: Int
-    
-    func toDict() -> [String: String] {
-        return [
-            "author": author,
-            "text": text,
-            "time": String(time)
-        ]
-    }
-}
-
-class Chat: ObservableObject {
-    @Published var lastAccess: [String: Int]
-    @Published var messages: [ChatMessage]
-    
-    init(lastAccess: [String: Int], messages: [ChatMessage]) {
-        self.lastAccess = lastAccess
-        self.messages = messages
-    }
-}
-
-func loadChatFromDocument(aId: String, bId: String, document: DocumentSnapshot, chat: Chat) {
-    let data = document.data() ?? [aId: 0, bId: 0, "messages": []]
-    chat.lastAccess[aId] = data[aId] as? Int ?? 0
-    chat.lastAccess[bId] = data[bId] as? Int ?? 0
-    chat.messages = []
-    
-    let dataMessages = data["messages"] as? [[String: String]] ?? []
-    for message in dataMessages {
-        let author = message["author"] ?? ""
-        let text = message["text"] ?? ""
-        let time = Int(message["time"] ?? "") ?? 0
-        chat.messages.append(ChatMessage(author: author, text: text, time: time))
-    }
-}
-
-func setLastAccesToChat(aId: String, bId: String, toId: String, onError: @escaping (Error) -> Void) {
-    let key: String = aId < bId ? "\(aId)::\(bId)" : "\(bId)::\(aId)"
-    let now: Int = Int(Date().timeIntervalSince1970)
-    let data: [String: Int] = [ toId: now ]
-    Firestore.firestore()
-        .collection("chats")
-        .document(key)
-        .updateData(data) { error in
-            if let error = error {
-                onError(error)
-            }
-        }
-}
-
-func loadChat(aId: String, bId: String, chat: Chat, onError: @escaping (Error) -> Void) {
-    let key = aId < bId ? "\(aId)::\(bId)" : "\(bId)::\(aId)"
-    Firestore.firestore()
-        .collection("chats")
-        .document(key)
-        .getDocument { documentSnapshot, error in
-            if let error = error {
-                onError(error)
-            } else if let documentSnapshot = documentSnapshot {
-                loadChatFromDocument(aId: aId, bId: bId, document: documentSnapshot, chat: chat)
-            }
-        }
-}
-
-func listenToChat(aId: String, bId: String, chat: Chat, onChange: @escaping () -> Void) -> ListenerRegistration {
-    let key = aId < bId ? "\(aId)::\(bId)" : "\(bId)::\(aId)"
-    print("!!! Fijo un escuchador para chat \(key)")
-    return Firestore.firestore()
-        .collection("chats")
-        .document(key)
-        .addSnapshotListener { document, error in
-            if let error = error {
-                print("Error fetching document: \(error)")
-                return
-            } else if let document = document {
-                print("ESCUCHANDO CHATS")
-                loadChatFromDocument(aId: aId, bId: bId, document: document, chat: chat)
-                onChange()
-            }
-        }
-}
-
-
-func sendChatMessage(aId: String, bId: String, message: ChatMessage, onError: @escaping (Error) -> Void) {
-    let key = aId < bId ? "\(aId)::\(bId)" : "\(bId)::\(aId)"
-    print("!!! Grabo chat \(key)")
-    
-    let reference  =  Firestore.firestore().collection("chats").document(key)
-    reference.getDocument() { documentSnapshot, error in
-        if let error = error {
-            onError(error)
-        } else if let documentSnapshot = documentSnapshot {
-            if documentSnapshot.exists {
-                print("!!! Grabo por sendChatMessage (1)")
-                reference
-                    .updateData([
-                        "messages": FieldValue.arrayUnion([message.toDict()])
-                    ]) { error in
-                        if let error = error {
-                            onError(error)
-                        }
-                    }
-            } else {
-                print("!!! Grabo por sendChatMessage (2)")
-                reference.setData([
-                    aId: 0,
-                    bId: 0,
-                    "messages": [
-                        message.toDict()
-                    ],
-                    "participants": [
-                        aId, bId
-                    ]
-                ])
-            }
-        }
-    }
-    
-}
-
-
-func loadProfile(userID: String, profile: Profile, rankingUpdater: RankingUpdater, andFriends: Bool = false) {
-    print("!!! loadProfile \(userID)")
-    Firestore.firestore()
-        .collection("users")
-        .document(userID)
-        .getDocument { document, error in
-            if let document = document, document.exists {
-                profile.from(document: document, rankingUpdater: rankingUpdater, andFriends: andFriends)
-            }
-        }
-}
-
-func getChatNotifications(profile: Profile, notificationFrom: @escaping (String)-> Void) {
-    Firestore.firestore()
-        .collection("chats")
-        .whereField(
-            "participants",
-            arrayContains: profile.userId
-        )
-        .getDocuments { querySnapshot, error in
-            if let error = error {
-            } else if let querySnapshot = querySnapshot {
-                for document in querySnapshot.documents {
-                    let data = document.data()
-                    let dataMessages = data["messages"] as? [[String: String]] ?? []
-                    if !dataMessages.isEmpty {
-                        let lastMessageTime = Int(dataMessages.last!["time"] ?? "") ?? 0
-                        let lastAccess = data[profile.userId] as? Int ?? 0
-                        if lastAccess < lastMessageTime {
-                            let participants = data["participants"] as? [String] ?? []
-                            let friendId = participants.filter{$0 != profile.userId}.first ?? ""
-                            if friendId != "" {
-                                notificationFrom(friendId)
-                            }
-                        }
-                    }
-                    }
-
-                }
-            }
-    }
 

@@ -36,12 +36,13 @@ struct FindPeopleView: View {
                 onError: { error in
                     print("DEBUG: LISTA VACIA!!!")
                 }
-            ) { snapshot in
+            ) { snapshot in // TODO: Esto de aquí tiene pinta de ser muy mejorable
                 var buffer: [String: Profile] = [:]
                 for document in snapshot.documents {
                     let possibleFriendID = document.documentID
                     let data = document.data()
                     let possibleFriendProfile = Profile(
+                        userId: data["userId"] as? String ?? "",
                         name: data["name"] as? String ?? "error",
                         email: data["email"] as? String ?? "error",
                         favourites: data["favourites"] as? [String] ?? [],
