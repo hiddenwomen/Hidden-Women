@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct FriendRequestsView: View {
-    @AppStorage("userID") var userID: String = ""
     @EnvironmentObject var profile: Profile
     @EnvironmentObject var rankingUpdater: RankingUpdater
     

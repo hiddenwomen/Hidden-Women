@@ -9,7 +9,6 @@ import SwiftUI
 
 struct EditProfileView: View {
     @EnvironmentObject var profile: Profile
-    @AppStorage ("userID") var userID: String = ""
 
     @State var editedProfile: Profile = Profile(userId: "")
     @Binding var profilePage: ProfilePages

@@ -8,10 +8,9 @@
 import SwiftUI
 
 struct FriendProfileView: View {
-    @AppStorage("userID") var userID: String = ""
+    @EnvironmentObject var profile: Profile
     @ObservedObject var friendProfile: Profile
     let showFriendRequestButton: Bool
-    @EnvironmentObject var profile: Profile
     @State var showBanner: Bool = false
     @State var favouriteHiddenWomen: Bool = false
     @Binding var notifications: [String]
@@ -67,7 +66,7 @@ struct FriendProfileView: View {
                     if !showFriendRequestButton {
                         NavigationLink(destination: ChatView(
                                         friendId: friendProfile.userId,
-                                        chat: Chat(aId: userID, bId: friendProfile.userId),
+                                        chat: Chat(aId: profile.userId, bId: friendProfile.userId),
                                         notifications: $notifications)
                         ) {
                             HStack {

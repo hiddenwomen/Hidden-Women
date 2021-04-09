@@ -1,61 +1,61 @@
 //
-//  MultipleTrueOrFalseView.swift
+//  MultipleQuizView.swift
 //  Hidden Women
 //
-//  Created by Claudia Marzal Polop on 12/3/21.
+//  Created by Mireia Belinchón Castillo on 11/3/21.
 //
 
 import SwiftUI
 
-enum MultipleTrueOrFalsePages {
+enum MultipleQuizPages {
     case start
     case question
 }
-let trueOrFalseTotalTime = 10
 
-struct TrueOrFalseMistake: Identifiable {
+struct QuizMistake: Identifiable {
     let question: String
-    let answer: String
-    let isCorrect: Bool
+    let correctAnswer: String
+    let incorrectAnswer: String?
     let id = UUID()
 }
 
-struct MultipleTrueOrFalseView: View {
+struct MultipleQuizView: View {
     @EnvironmentObject var profile: Profile
-    @AppStorage ("userID") var userID: String = ""
-    @State var currentMultipleTrueOrFalsePage: MultipleTrueOrFalsePages
+    @State var currentMultipleQuizPage: MultipleQuizPages
     @State var correctAnswers: Int = 0
-    @State var shownTrueOrFalse: Int = 0
+    @State var shownQuiz: Int = 0
     @State var progress: Float = 0.0
-    @State var trueOrFalses: [TrueOrFalse] = []
     @State var scoreUpdated: Bool = false
     @State var showTimer: Bool = true
     @State var timeLeft: Int = trueOrFalseTotalTime
-    @State var mistakes: [TrueOrFalseMistake] = []
+    @State var mistakes: [QuizMistake] = []
+    
+    @State var quizzes: [Quiz] =  []
     
     var body: some View {
         Group {
-            switch currentMultipleTrueOrFalsePage {
-            case .start:
+            switch currentMultipleQuizPage {
+            case .start :
                 VStack {
                     Spacer()
-                    Text("True or false")
+                    Text("Quiz")
                         .font(.largeTitle)
                         .padding()
-                    Text("_TrueOrFalse Help_")
+                    Text("_Quiz Help_")
                     Button(action: {
-                        trueOrFalses = fullTrueOrFalseGenerator(women: women, numberOfQuestions: 5)
-                        currentMultipleTrueOrFalsePage = .question
+                        quizzes = fullQuizGenerator(women: women, numberOfQuestions: 5)
+                        currentMultipleQuizPage = .question
                         scoreUpdated = false
                     }) {
                         Text("Start")
                             .bold()
                     }
                     .importantButtonStyle()
+                    .padding()
                     Spacer()
                 }
-            case .question:
-                if shownTrueOrFalse == trueOrFalses.count {
+            case .question :
+                if shownQuiz == quizzes.count {
                     VStack {
                         ZStack {
                             Circle()
@@ -86,17 +86,25 @@ struct MultipleTrueOrFalseView: View {
                                     HStack (alignment: .firstTextBaseline){
                                         Image(systemName: "play")
                                         VStack (alignment: .leading){
-                                            Text("\(mistake.question) \(mistake.answer)")
-                                            if mistake.isCorrect{
-                                                Text("True")
-                                                    .fontWeight(.bold)
-                                                    .background(Color("Morado"))
-                                                    .foregroundColor(.white)
-                                            } else {
-                                                Text("False")
-                                                    .fontWeight(.bold)
-                                                    .background(Color("Turquesa"))
-                                                    .foregroundColor(.white)
+                                            Text("\(mistake.question)")
+                                                .fontWeight(.bold)
+                                            HStack(alignment: .firstTextBaseline) {
+                                                Image(systemName: "circlebadge.fill")
+                                                    .foregroundColor(Color("Turquesa"))
+                                                if mistake.incorrectAnswer == "You ran out of time" {
+                                                    Text("You ran out of time")
+                                                } else {
+                                                    Text(
+                                                        String.localizedStringWithFormat(NSLocalizedString("You chose: %@", comment: ""), mistake.incorrectAnswer!)
+                                                    )
+                                                }
+                                            }
+                                            HStack(alignment: .firstTextBaseline) {
+                                                Image(systemName: "circlebadge.fill")
+                                                    .foregroundColor(Color("Morado"))
+                                                Text(
+                                                    String.localizedStringWithFormat(NSLocalizedString("The correct answer was: %@", comment: ""), mistake.correctAnswer)
+                                                )
                                             }
                                         }
                                     }
@@ -107,8 +115,12 @@ struct MultipleTrueOrFalseView: View {
                     }
                     .onAppear{
                         if !scoreUpdated {
-                            let gameResult = GameResult(date: Int(Date().timeIntervalSince1970), gameType: "TrueOrFalse", points: correctAnswers)
-                            if userID != "" {
+                            if !profile.isGuest {
+                                let gameResult = GameResult(
+                                    date: Int(Date().timeIntervalSince1970),
+                                    gameType: "Quiz",
+                                    points: correctAnswers
+                                )
                                 profile.updateGameResults(withNewGameResult: gameResult) { error in
                                     //TODO: Error
                                 }
@@ -116,28 +128,29 @@ struct MultipleTrueOrFalseView: View {
                             scoreUpdated = true
                         }
                     }
-                }
-                if shownTrueOrFalse != trueOrFalses.count {
+                } else {
                     VStack {
                         ProgressView(value: progress)
                             .animation(.default)
-                        TrueOrFalseView(
-                            trueOrFalse: trueOrFalses[shownTrueOrFalse],
-                            shownTrueOrFalse: $shownTrueOrFalse,
-                            correctAnswers: $correctAnswers,
-                            progress: $progress,
-                            numberOfTrueOrFalses: trueOrFalses.count,
-                            timeLeft: $timeLeft,
-                            showTimer: $showTimer,
-                            mistakes: $mistakes
-                        )
+                        ScrollView {
+                            QuizView(
+                                quiz: quizzes[shownQuiz],
+                                shownQuiz: $shownQuiz,
+                                correctAnswers: $correctAnswers,
+                                progress: $progress,
+                                numberOfQuizzes: quizzes.count,
+                                timeLeft: $timeLeft,
+                                showTimer: $showTimer,
+                                mistakes: $mistakes
+                            )
+                        }
                     }
                 }
             }
         }
         .navigationBarItems(trailing:
                                 Group {
-                                    if showTimer && currentMultipleTrueOrFalsePage == .question {
+                                    if showTimer && currentMultipleQuizPage == .question {
                                         ZStack {
                                             Circle()
                                                 .stroke(Color.gray.opacity(0.2), style: StrokeStyle(lineWidth: 3, lineCap: .round))
@@ -151,18 +164,16 @@ struct MultipleTrueOrFalseView: View {
                                     }
                                 }
         )
-        .onChange(of: shownTrueOrFalse) { newShownTrueOrFalse in
-            if newShownTrueOrFalse < trueOrFalses.count {
+        .onChange(of: shownQuiz) { newShownQuiz in
+            if newShownQuiz < quizzes.count {
                 showTimer = true
             }
         }
-        
     }
 }
 
-
-//struct MultipleTrueOrFalseView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        MultipleTrueOrFalseView()
-//    }
-//}
+struct MultipleQuizView_Previews: PreviewProvider {
+    static var previews: some View {
+        MultipleQuizView(currentMultipleQuizPage: .start)
+    }
+}

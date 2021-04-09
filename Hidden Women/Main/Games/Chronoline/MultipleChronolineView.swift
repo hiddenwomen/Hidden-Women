@@ -23,7 +23,6 @@ struct ChronolineMistake: Identifiable {
 
 struct MultipleChronolineView: View {
     @EnvironmentObject var profile: Profile
-    @AppStorage ("userID") var userID: String = ""
     @State var currentMultipleChronolinePage: MultipleChronolinePages
     @State var correctAnswers: Int = 0
     @State var shownChronoline: Int = 0
@@ -138,8 +137,12 @@ struct MultipleChronolineView: View {
                             .padding()
                             .onAppear{
                                 if !scoreUpdated {
-                                    let gameResult = GameResult(date: Int(Date().timeIntervalSince1970), gameType: "Chrono", points: correctAnswers)
-                                    if userID != "" {
+                                    if !profile.isGuest {
+                                        let gameResult = GameResult(
+                                            date: Int(Date().timeIntervalSince1970),
+                                            gameType: "Chrono",
+                                            points: correctAnswers
+                                        )
                                         profile.updateGameResults(withNewGameResult: gameResult) { error in
                                             //TODO: Error
                                         }

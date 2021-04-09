@@ -60,7 +60,6 @@ struct LoginView: View {
                         profile.clear()
                         userID = authResult.user.uid
                         profile.userId = userID
-                        // profile.removeFriendListeners()
                         print("--- desde BOTÓN Sign in")
                         profile.load(rankingUpdater: rankingUpdater, andFriends: true)
                         profile.listen(rankingUpdater: rankingUpdater)

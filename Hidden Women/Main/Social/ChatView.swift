@@ -129,10 +129,10 @@ func configuredDateFormatter() -> DateFormatter {
 }
 
 struct ChatView: View {
+    @EnvironmentObject var profile: Profile
     let friendId: String
     @StateObject var chat: Chat
     
-    @AppStorage ("userID") var userID: String = ""
     @State var currentMessage = ""
     @State private var scrollTarget: Int = 0
     @State var listener: ListenerRegistration? = nil
@@ -148,13 +148,13 @@ struct ChatView: View {
                         ForEach(0..<chat.messages.count, id: \.self) { i in
                             VStack {
                                 ChatBubble(
-                                    direction: chat.messages[i].author == userID ? .right : .left,
+                                    direction: chat.messages[i].author == profile.userId ? .right : .left,
                                     topInfo: dateFormatter.string(from: Date(timeIntervalSince1970: Double(chat.messages[i].time)))
                                 ) {
                                     Text(chat.messages[i].text)
                                         .padding(.all, 20)
-                                        .foregroundColor(chat.messages[i].author == userID ? Color.white : Color.black)
-                                        .background(chat.messages[i].author == userID ? Color("Morado") : Color("Turquesa"))
+                                        .foregroundColor(chat.messages[i].author == profile.userId ? Color.white : Color.black)
+                                        .background(chat.messages[i].author == profile.userId ? Color("Morado") : Color("Turquesa"))
                                 }
                             }
                         }
@@ -179,7 +179,7 @@ struct ChatView: View {
                             scrollTarget -= 2
                             chat.send(
                                 message: ChatMessage(
-                                    author: userID,
+                                    author: profile.userId,
                                     text: currentMessage,
                                     time: Int(Date().timeIntervalSince1970)
                                 ),
@@ -201,7 +201,7 @@ struct ChatView: View {
         .onDisappear {
             listener?.remove()
             listener = nil
-            chat.setLastAcces(toId: userID, onError: {error in}) // TODO:
+            chat.setLastAcces(toId: profile.userId, onError: {error in}) // TODO:
             print("SALGO")
         }
     }

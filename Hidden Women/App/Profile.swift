@@ -27,6 +27,11 @@ class Profile: ObservableObject, Identifiable {
         let limit = Int(Date().timeIntervalSince1970) - oneWeek
         return gameResults.points(limit: limit)
     }
+    
+    var isGuest: Bool {
+        return userId == ""
+    }
+    
     var id: UUID = UUID()
     
     init(userId: String, name: String = "", email: String = "", favourites: [String] = [], pictureFileName: String = "", gameResults: [GameResult] = []) {
@@ -82,7 +87,7 @@ class Profile: ObservableObject, Identifiable {
         self.email = data["email"] as? String ?? ""
         self.favourites = data["favourites"] as? [String] ?? []
         self.pictureFileName = data["pictureFileName"] as? String ?? ""
-        self.gameResults = (data["gameResults"] as? [[String: Any]] ?? []).map {GameResult.fromDict(dict: $0)}
+        self.gameResults = (data["gameResults"] as? [[String: Any]] ?? []).map {GameResult.from(dict: $0)}
         self.friendRequests = data["friendRequests"] as? [String] ?? []
         self.friends = []
 

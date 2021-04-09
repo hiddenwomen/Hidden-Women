@@ -26,7 +26,6 @@ let pairThemUpConfig = PairThemUpConfig(
 
 struct MultiplePairThemUpView: View {
     @EnvironmentObject var profile: Profile
-    @AppStorage ("userID") var userID: String = ""
     @State var currentMultiplePairThemUpPage: MultiplePairThemUpPages
     @State var correctAnswers: Int = 0
     @State var shownPairThemUp: Int = 0
@@ -150,12 +149,12 @@ struct MultiplePairThemUpView: View {
                             .padding()
                             .onAppear{
                                 if !scoreUpdated {
-                                    let gameResult = GameResult(
-                                        date: Int(Date().timeIntervalSince1970),
-                                        gameType: "PairThemUp",
-                                        points: correctAnswers
-                                    )
-                                    if userID != "" {
+                                    if !profile.isGuest {
+                                        let gameResult = GameResult(
+                                            date: Int(Date().timeIntervalSince1970),
+                                            gameType: "PairThemUp",
+                                            points: correctAnswers
+                                        )
                                         profile.updateGameResults(withNewGameResult: gameResult) { error in
                                             //TODO: Error
                                         }

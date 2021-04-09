@@ -9,7 +9,6 @@ import SwiftUI
 
 struct FindPeopleView: View {
     @EnvironmentObject var profile: Profile
-    @AppStorage("userID") var userID: String = ""
     @State var foundFriends: [Profile] = []
     @State var dummy: [String] = []
     
@@ -40,27 +39,9 @@ struct FindPeopleView: View {
                 var buffer: [String: Profile] = [:]
                 for document in snapshot.documents {
                     let possibleFriendID = document.documentID
-                    let data = document.data()
-                    let possibleFriendProfile = Profile(
-                        userId: data["userId"] as? String ?? "",
-                        name: data["name"] as? String ?? "error",
-                        email: data["email"] as? String ?? "error",
-                        favourites: data["favourites"] as? [String] ?? [],
-                        pictureFileName: data["pictureFileName"] as? String ?? "",
-                        gameResults: []
-                    )
-                    let results = data["gameResults"] as? [[String : Any]] ?? []
-                    possibleFriendProfile.gameResults = []
-                    for result in results {
-                        let gameResult = GameResult(
-                            date: result["date"] as? Int ?? 0,
-                            gameType: result["gameType"] as? String ?? "Error",
-                            points: result["points"] as? Int ?? 0
-                        )
-                        possibleFriendProfile.gameResults.append(gameResult)
-                    }
-                    
-                    if possibleFriendID != userID && !profile.friends.map({$0.userId}).contains(possibleFriendID) {
+                    if possibleFriendID != profile.userId && !profile.friends.map({$0.userId}).contains(possibleFriendID) {
+                        let possibleFriendProfile = Profile(userId: possibleFriendID)
+                        possibleFriendProfile.from(document: document, rankingUpdater: RankingUpdater()) //TODO: Ojo con el rankingUpdater
                         buffer[possibleFriendID] = possibleFriendProfile
                     }
                 }

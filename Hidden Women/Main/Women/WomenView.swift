@@ -10,7 +10,6 @@ import SwiftUI
 struct WomenView: View {
     @State var searchText: String = ""
     @EnvironmentObject var profile: Profile
-    @AppStorage ("userID") var userID = ""
     @State var showError = false
     @State var errorMessage = ""
     @State var showBanner: Bool = false
@@ -29,7 +28,7 @@ struct WomenView: View {
                     }) { woman in
                         NavigationLink(destination: WomanView(woman: woman)) {
                             HStack {
-                                if userID != "" {
+                                if !profile.isGuest {
                                     Image(systemName: profile.favourites.contains(woman.name["en"] ?? "") ? "heart.fill" : "heart")
                                         .foregroundColor(Color("Morado"))
                                         .onTapGesture{

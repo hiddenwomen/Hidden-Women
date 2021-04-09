@@ -22,7 +22,7 @@ struct GameResult: Identifiable {
         ]
     }
     
-    static func fromDict(dict: [String: Any]) -> GameResult {
+    static func from(dict: [String: Any]) -> GameResult {
         GameResult(
             date: dict["date"] as? Int ?? 0,
             gameType: dict["gameType"] as? String ?? "Error",

@@ -71,7 +71,6 @@ struct SignupView: View {
                             profile.clear()
                             userID = authResult.user.uid
                             profile.userId = userID
-                            //profile.removeFriendListeners()
                             profile.listen(rankingUpdater: rankingUpdater)
                             currentPage = .main
                         }

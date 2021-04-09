@@ -9,7 +9,6 @@ import SwiftUI
 
 struct SocialView: View {
     @EnvironmentObject var profile: Profile
-    @AppStorage ("userID") var userID: String = ""
     @Binding var currentPage: Page
     let iconSize = CGFloat(56 * UIScreen.height / 896)
     let titleSize = CGFloat(34 * UIScreen.height / 896)

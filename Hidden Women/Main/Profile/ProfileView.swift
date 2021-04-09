@@ -13,8 +13,8 @@ enum ProfilePages {
 }
 
 struct ProfileView: View {
-    @EnvironmentObject var profile: Profile
     @AppStorage ("userID") var userID: String = ""
+    @EnvironmentObject var profile: Profile
     @Binding var currentPage: Page
     @State var profilePage: ProfilePages = .profile
     
