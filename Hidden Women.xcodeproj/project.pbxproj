@@ -58,7 +58,7 @@
 		F58D439626203A0B00260758 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D439526203A0B00260758 /* ViewModifiers.swift */; };
 		F58D439926203A6200260758 /* Dictionary+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D439826203A6200260758 /* Dictionary+Localization.swift */; };
 		F58D439C26203A8400260758 /* String+Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D439B26203A8400260758 /* String+Email.swift */; };
-		F58D439F26203AC500260758 /* UIIMage+Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D439E26203AC500260758 /* UIIMage+Scale.swift */; };
+		F58D439F26203AC500260758 /* UiIMage+Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D439E26203AC500260758 /* UiIMage+Scale.swift */; };
 		F5A9822E25F769C1005EB566 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9822D25F769C1005EB566 /* LoginView.swift */; };
 		F5A9823825F7722C005EB566 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9823725F7722C005EB566 /* SignupView.swift */; };
 		F5A9823C25F77814005EB566 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9823B25F77814005EB566 /* MainView.swift */; };
@@ -122,7 +122,7 @@
 		F58D439526203A0B00260758 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
 		F58D439826203A6200260758 /* Dictionary+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Localization.swift"; sourceTree = "<group>"; };
 		F58D439B26203A8400260758 /* String+Email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Email.swift"; sourceTree = "<group>"; };
-		F58D439E26203AC500260758 /* UIIMage+Scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIIMage+Scale.swift"; sourceTree = "<group>"; };
+		F58D439E26203AC500260758 /* UiIMage+Scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiIMage+Scale.swift"; sourceTree = "<group>"; };
 		F5A9822D25F769C1005EB566 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F5A9823725F7722C005EB566 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		F5A9823B25F77814005EB566 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -327,7 +327,7 @@
 				F58D439526203A0B00260758 /* ViewModifiers.swift */,
 				F58D439826203A6200260758 /* Dictionary+Localization.swift */,
 				F58D439B26203A8400260758 /* String+Email.swift */,
-				F58D439E26203AC500260758 /* UIIMage+Scale.swift */,
+				F58D439E26203AC500260758 /* UiIMage+Scale.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -510,7 +510,7 @@
 				F58D439626203A0B00260758 /* ViewModifiers.swift in Sources */,
 				F50B037F2603D8FB00D4EABE /* ProfileView.swift in Sources */,
 				F58710AD25F7611C00B47462 /* Hidden_WomenApp.swift in Sources */,
-				F58D439F26203AC500260758 /* UIIMage+Scale.swift in Sources */,
+				F58D439F26203AC500260758 /* UiIMage+Scale.swift in Sources */,
 				F56A7CA0260F438F003C0A20 /* MyFriendsView.swift in Sources */,
 				F56A7CA3260F4424003C0A20 /* RankingView.swift in Sources */,
 				F50B037125FEBDBE00D4EABE /* ChronoWomanView.swift in Sources */,
