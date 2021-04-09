@@ -22,6 +22,7 @@ struct MakeNewFriendsView: View {
                 HStack {
                     Image(systemName: "magnifyingglass")
                     TextField("Email...", text: $email)
+                        .keyboardType(.emailAddress)
                 }
                 .frame(height: 60)
                 .padding(.horizontal, 20)

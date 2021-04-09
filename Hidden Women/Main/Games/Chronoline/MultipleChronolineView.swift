@@ -46,6 +46,7 @@ struct MultipleChronolineView: View {
                                 .font(.largeTitle)
                                 .padding()
                             Text("_Chronoline Help_")
+                                .padding()
                             Button(action: {
                                 chronoline = chronolineGenerator(women: women, numberOfWomen: 5, x: geo.size.width/2.0, height: geo.size.height)
                                 currentMultipleChronolinePage = .question
@@ -84,11 +85,11 @@ struct MultipleChronolineView: View {
                                 .foregroundColor(Color("Turquesa"))
                                 .frame(width: 125, height: 125)
                             VStack{
-                                Text("\(correctAnswers)")
+                                Text("\(max(0, correctAnswers))")
                                     .foregroundColor(.white)
                                     .fontWeight(.bold)
                                     .font(.largeTitle)
-                                if correctAnswers == 1{
+                                if correctAnswers == 1 {
                                     Text("point")
                                         .foregroundColor(.white)
                                         .font(.subheadline)
@@ -136,7 +137,7 @@ struct MultipleChronolineView: View {
                                         let gameResult = GameResult(
                                             date: Int(Date().timeIntervalSince1970),
                                             gameType: "Chrono",
-                                            points: correctAnswers
+                                            points: max(0, correctAnswers)
                                         )
                                         profile.updateGameResults(withNewGameResult: gameResult) { error in
                                             //TODO: Error

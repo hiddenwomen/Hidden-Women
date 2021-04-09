@@ -42,6 +42,7 @@ struct MultipleTrueOrFalseView: View {
                         .font(.largeTitle)
                         .padding()
                     Text("_TrueOrFalse Help_")
+                        .padding()
                     Button(action: {
                         trueOrFalses = fullTrueOrFalseGenerator(women: women, numberOfQuestions: 5)
                         currentMultipleTrueOrFalsePage = .question
@@ -61,14 +62,14 @@ struct MultipleTrueOrFalseView: View {
                                 .foregroundColor(Color("Turquesa"))
                                 .frame(width: 125, height: 125)
                             VStack{
-                                Text("\(correctAnswers)")
+                                Text("\(max(correctAnswers, 0))")
                                     .foregroundColor(.white)
                                     .fontWeight(.bold)
                                     .font(.largeTitle)
-                                if correctAnswers == 1{
-                                Text("point")
-                                    .foregroundColor(.white)
-                                    .font(.subheadline)
+                                if correctAnswers == 1 {
+                                    Text("point")
+                                        .foregroundColor(.white)
+                                        .font(.subheadline)
                                 } else {
                                     Text("points")
                                         .foregroundColor(.white)
@@ -110,7 +111,7 @@ struct MultipleTrueOrFalseView: View {
                                 let gameResult = GameResult(
                                     date: Int(Date().timeIntervalSince1970),
                                     gameType: "TrueOrFalse",
-                                    points: correctAnswers
+                                    points: max(correctAnswers, 0)
                                 )
                                 profile.updateGameResults(withNewGameResult: gameResult) { error in
                                     //TODO: Error

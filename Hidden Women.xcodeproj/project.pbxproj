@@ -62,6 +62,8 @@
 		F5A9822E25F769C1005EB566 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9822D25F769C1005EB566 /* LoginView.swift */; };
 		F5A9823825F7722C005EB566 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9823725F7722C005EB566 /* SignupView.swift */; };
 		F5A9823C25F77814005EB566 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9823B25F77814005EB566 /* MainView.swift */; };
+		F5B253022620D66600F2C29C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5B253012620D66600F2C29C /* Launch Screen.storyboard */; };
+		F5B253062620DBB500F2C29C /* View+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B253052620DBB500F2C29C /* View+Keyboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +128,8 @@
 		F5A9822D25F769C1005EB566 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F5A9823725F7722C005EB566 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		F5A9823B25F77814005EB566 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		F5B253012620D66600F2C29C /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		F5B253052620DBB500F2C29C /* View+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Keyboard.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,6 +292,7 @@
 				F58710B525F7611D00B47462 /* Info.plist */,
 				F52C5DEB261643F200399F46 /* GoogleService-Info.plist */,
 				F58710B225F7611D00B47462 /* Preview Content */,
+				F5B253012620D66600F2C29C /* Launch Screen.storyboard */,
 			);
 			path = "Hidden Women";
 			sourceTree = "<group>";
@@ -328,6 +333,7 @@
 				F58D439826203A6200260758 /* Dictionary+Localization.swift */,
 				F58D439B26203A8400260758 /* String+Email.swift */,
 				F58D439E26203AC500260758 /* UiIMage+Scale.swift */,
+				F5B253052620DBB500F2C29C /* View+Keyboard.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -424,6 +430,7 @@
 				F58710C025F761F500B47462 /* Podfile in Resources */,
 				F53AA8BB25F8BD750045977A /* women.json in Resources */,
 				F52C5DEC261643F200399F46 /* GoogleService-Info.plist in Resources */,
+				F5B253022620D66600F2C29C /* Launch Screen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +495,7 @@
 				F50B038B2605093300D4EABE /* BannerView.swift in Sources */,
 				CB6826E525FA236200A8190C /* MultipleQuizView.swift in Sources */,
 				F560939A25FB6CB7000E8560 /* TrueOrFalseView.swift in Sources */,
+				F5B253062620DBB500F2C29C /* View+Keyboard.swift in Sources */,
 				F50B037A2601393E00D4EABE /* MultipleChronolineView.swift in Sources */,
 				F560939D25FB6CD0000E8560 /* TrueOrFalse.swift in Sources */,
 				F53AA8BE25FA04890045977A /* SearchBarView.swift in Sources */,

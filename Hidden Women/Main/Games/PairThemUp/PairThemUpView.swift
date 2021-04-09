@@ -211,6 +211,7 @@ struct PairThemUpView: View {
             if picture.coveringWomanName == picture.correctName {
                 correctAnswers += 1
             } else {
+                correctAnswers -= 1
                 buffer.append(PairThemUpMistake(
                                     picture: picture.picture,
                                     correctAnswer: picture.correctName,

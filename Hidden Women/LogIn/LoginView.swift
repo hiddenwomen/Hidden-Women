@@ -28,6 +28,7 @@ struct LoginView: View {
                 HStack {
                     Image(systemName: "envelope")
                     TextField("Email...", text: $email)
+                        .keyboardType(.emailAddress)
                 }
                 .frame(height: 60)
                 .padding(.horizontal, 20)

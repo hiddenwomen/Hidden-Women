@@ -57,6 +57,7 @@ struct MultiplePairThemUpView: View {
                             .font(.largeTitle)
                             .padding()
                         Text("_PairThemUp Help_")
+                            .padding()
                         Button(action: {
                             currentMultiplePairThemUpPage = .question
                             scoreUpdated = false
@@ -94,7 +95,7 @@ struct MultiplePairThemUpView: View {
                                 .foregroundColor(Color("Turquesa"))
                                 .frame(width: 125, height: 125)
                             VStack{
-                                Text("\(correctAnswers)")
+                                Text("\(max(0, correctAnswers))")
                                     .foregroundColor(.white)
                                     .fontWeight(.bold)
                                     .font(.largeTitle)
@@ -153,7 +154,7 @@ struct MultiplePairThemUpView: View {
                                         let gameResult = GameResult(
                                             date: Int(Date().timeIntervalSince1970),
                                             gameType: "PairThemUp",
-                                            points: correctAnswers
+                                            points: max(0, correctAnswers)
                                         )
                                         profile.updateGameResults(withNewGameResult: gameResult) { error in
                                             //TODO: Error

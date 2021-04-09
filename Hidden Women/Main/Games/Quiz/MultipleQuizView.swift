@@ -42,6 +42,7 @@ struct MultipleQuizView: View {
                         .font(.largeTitle)
                         .padding()
                     Text("_Quiz Help_")
+                        .padding()
                     Button(action: {
                         quizzes = fullQuizGenerator(women: women, numberOfQuestions: 5)
                         currentMultipleQuizPage = .question
@@ -62,7 +63,7 @@ struct MultipleQuizView: View {
                                 .foregroundColor(Color("Turquesa"))
                                 .frame(width: 125, height: 125)
                             VStack{
-                                Text("\(correctAnswers)")
+                                Text("\(max(0, correctAnswers))")
                                     .foregroundColor(.white)
                                     .fontWeight(.bold)
                                     .font(.largeTitle)
@@ -119,7 +120,7 @@ struct MultipleQuizView: View {
                                 let gameResult = GameResult(
                                     date: Int(Date().timeIntervalSince1970),
                                     gameType: "Quiz",
-                                    points: correctAnswers
+                                    points: max(0, correctAnswers)
                                 )
                                 profile.updateGameResults(withNewGameResult: gameResult) { error in
                                     //TODO: Error

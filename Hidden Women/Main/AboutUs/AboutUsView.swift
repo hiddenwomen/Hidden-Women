@@ -143,6 +143,9 @@ struct AboutUsView: View {
                 BannerView(title: "Thank you!", text: "Your comment has been sent to GIRLS4STEM.", closeBanner: { showBanner = false })
             }
         }
+        .onTapGesture {
+            hideKeyboard()
+        }
     }
 }
 

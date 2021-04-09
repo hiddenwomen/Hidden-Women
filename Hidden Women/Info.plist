@@ -31,11 +31,9 @@
 	<dict>
 		<key>UIColorName</key>
 		<string>Hueso</string>
-		<key>UIImageName</key>
-		<string>logo_splash</string>
-		<key>UIImageRespectsSafeAreaInsets</key>
-		<true/>
 	</dict>
+	<key>UILaunchStoryboardName</key>
+	<string>Launch Screen</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

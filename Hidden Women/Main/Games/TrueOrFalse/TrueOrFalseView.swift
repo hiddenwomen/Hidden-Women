@@ -35,6 +35,7 @@ struct TrueOrFalseView: View {
                     if trueOrFalse.correct == true {
                         correctAnswers += 1
                     } else {
+                        correctAnswers -= 1
                         mistakes.append(TrueOrFalseMistake(question: trueOrFalse.question, answer: trueOrFalse.answer, isCorrect: trueOrFalse.correct))
 
                     }
@@ -59,6 +60,7 @@ struct TrueOrFalseView: View {
                     if trueOrFalse.correct == false{
                         correctAnswers += 1
                     } else {
+                        correctAnswers -= 1
                         mistakes.append(TrueOrFalseMistake(question: trueOrFalse.question, answer: trueOrFalse.answer, isCorrect: trueOrFalse.correct))
                     }
                     progress += 1.0 / Float(numberOfTrueOrFalses)

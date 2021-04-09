@@ -181,9 +181,6 @@ struct ChronolineView: View {
                 ))
             }
         }
-        if correctAnswers < 0 {
-            correctAnswers = 0
-        }
         mistakes.append(
             ChronolineMistake(chronolineNumber: shownChronoline, mismatches: mistakenWomenList)
         )

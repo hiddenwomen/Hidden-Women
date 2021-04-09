@@ -31,6 +31,7 @@ struct ResetPasswordView: View {
             HStack {
                 Image(systemName: "envelope")
                 TextField("Email...", text: $emailForReset)
+                    .keyboardType(.emailAddress)
             }
             .frame(height: 60)
             .padding(.horizontal, 20)

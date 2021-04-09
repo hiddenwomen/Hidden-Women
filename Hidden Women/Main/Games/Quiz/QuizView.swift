@@ -47,8 +47,9 @@ struct QuizView: View {
                 if chosenAnswer != nil{
                     Button(action: {
                         if chosenAnswer == quiz.correctAnswer {
-                            correctAnswers = correctAnswers + 1
+                            correctAnswers += 1
                         } else {
+                            correctAnswers -= 1
                             mistakes.append(
                                 QuizMistake(question: quiz.question,
                                             correctAnswer: quiz.answers[quiz.correctAnswer],
