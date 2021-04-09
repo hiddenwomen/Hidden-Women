@@ -23,7 +23,6 @@
 		CBF698A4261DB42A00776FF7 /* AboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF698A3261DB42A00776FF7 /* AboutUsView.swift */; };
 		F504D8822610A46D00AB1D08 /* FriendRequestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F504D8812610A46D00AB1D08 /* FriendRequestsView.swift */; };
 		F50B035E25FBE19100D4EABE /* ChronolineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B035D25FBE19100D4EABE /* ChronolineView.swift */; };
-		F50B036425FCA95F00D4EABE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F50B036325FCA95F00D4EABE /* GoogleService-Info.plist */; };
 		F50B037125FEBDBE00D4EABE /* ChronoWomanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B036F25FEBDBD00D4EABE /* ChronoWomanView.swift */; };
 		F50B037225FEBDBE00D4EABE /* ChronolineGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B037025FEBDBE00D4EABE /* ChronolineGenerator.swift */; };
 		F50B037A2601393E00D4EABE /* MultipleChronolineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B03792601393E00D4EABE /* MultipleChronolineView.swift */; };
@@ -31,7 +30,7 @@
 		F50B03822603D9C200D4EABE /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B03812603D9C200D4EABE /* Profile.swift */; };
 		F50B03852604A42800D4EABE /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B03842604A42800D4EABE /* EditProfileView.swift */; };
 		F50B03882604AC3400D4EABE /* SUImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B03872604AC3400D4EABE /* SUImagePickerView.swift */; };
-		F50B038B2605093300D4EABE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B038A2605093300D4EABE /* Utils.swift */; };
+		F50B038B2605093300D4EABE /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B038A2605093300D4EABE /* BannerView.swift */; };
 		F52C5DCD2615DEE300399F46 /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52C5DCC2615DEE300399F46 /* GamesView.swift */; };
 		F52C5DEC261643F200399F46 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F52C5DEB261643F200399F46 /* GoogleService-Info.plist */; };
 		F52C5DEF261738D700399F46 /* FriendProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52C5DEE261738D700399F46 /* FriendProfileView.swift */; };
@@ -55,6 +54,11 @@
 		F58D4385261F571F00260758 /* GameResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D4384261F571F00260758 /* GameResult.swift */; };
 		F58D4388261F589E00260758 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D4387261F589E00260758 /* Chat.swift */; };
 		F58D438C261F615C00260758 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D438B261F615B00260758 /* ChatMessage.swift */; };
+		F58D4393262039EC00260758 /* ScreenSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D4392262039EC00260758 /* ScreenSize.swift */; };
+		F58D439626203A0B00260758 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D439526203A0B00260758 /* ViewModifiers.swift */; };
+		F58D439926203A6200260758 /* Dictionary+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D439826203A6200260758 /* Dictionary+Localization.swift */; };
+		F58D439C26203A8400260758 /* String+Email.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D439B26203A8400260758 /* String+Email.swift */; };
+		F58D439F26203AC500260758 /* UIIMage+Scale.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58D439E26203AC500260758 /* UIIMage+Scale.swift */; };
 		F5A9822E25F769C1005EB566 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9822D25F769C1005EB566 /* LoginView.swift */; };
 		F5A9823825F7722C005EB566 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9823725F7722C005EB566 /* SignupView.swift */; };
 		F5A9823C25F77814005EB566 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A9823B25F77814005EB566 /* MainView.swift */; };
@@ -79,7 +83,6 @@
 		CBF698A3261DB42A00776FF7 /* AboutUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsView.swift; sourceTree = "<group>"; };
 		F504D8812610A46D00AB1D08 /* FriendRequestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendRequestsView.swift; sourceTree = "<group>"; };
 		F50B035D25FBE19100D4EABE /* ChronolineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChronolineView.swift; sourceTree = "<group>"; };
-		F50B036325FCA95F00D4EABE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F50B036F25FEBDBD00D4EABE /* ChronoWomanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChronoWomanView.swift; sourceTree = "<group>"; };
 		F50B037025FEBDBE00D4EABE /* ChronolineGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChronolineGenerator.swift; sourceTree = "<group>"; };
 		F50B03792601393E00D4EABE /* MultipleChronolineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChronolineView.swift; sourceTree = "<group>"; };
@@ -87,7 +90,7 @@
 		F50B03812603D9C200D4EABE /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		F50B03842604A42800D4EABE /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		F50B03872604AC3400D4EABE /* SUImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUImagePickerView.swift; sourceTree = "<group>"; };
-		F50B038A2605093300D4EABE /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		F50B038A2605093300D4EABE /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		F52C5DCC2615DEE300399F46 /* GamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
 		F52C5DEB261643F200399F46 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F52C5DEE261738D700399F46 /* FriendProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendProfileView.swift; sourceTree = "<group>"; };
@@ -115,6 +118,11 @@
 		F58D4384261F571F00260758 /* GameResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResult.swift; sourceTree = "<group>"; };
 		F58D4387261F589E00260758 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
 		F58D438B261F615B00260758 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		F58D4392262039EC00260758 /* ScreenSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSize.swift; sourceTree = "<group>"; };
+		F58D439526203A0B00260758 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
+		F58D439826203A6200260758 /* Dictionary+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Localization.swift"; sourceTree = "<group>"; };
+		F58D439B26203A8400260758 /* String+Email.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Email.swift"; sourceTree = "<group>"; };
+		F58D439E26203AC500260758 /* UIIMage+Scale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIIMage+Scale.swift"; sourceTree = "<group>"; };
 		F5A9822D25F769C1005EB566 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F5A9823725F7722C005EB566 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		F5A9823B25F77814005EB566 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -274,11 +282,11 @@
 			isa = PBXGroup;
 			children = (
 				F58D438F2620380C00260758 /* App */,
-				F52C5DEB261643F200399F46 /* GoogleService-Info.plist */,
-				F5A9823A25F777E5005EB566 /* Main */,
 				F5A9823125F769DB005EB566 /* LogIn */,
+				F5A9823A25F777E5005EB566 /* Main */,
+				F58D4391262039A900260758 /* Utils */,
 				F58710B525F7611D00B47462 /* Info.plist */,
-				F50B036325FCA95F00D4EABE /* GoogleService-Info.plist */,
+				F52C5DEB261643F200399F46 /* GoogleService-Info.plist */,
 				F58710B225F7611D00B47462 /* Preview Content */,
 			);
 			path = "Hidden Women";
@@ -307,9 +315,21 @@
 				F58710AC25F7611C00B47462 /* Hidden_WomenApp.swift */,
 				F58710AE25F7611C00B47462 /* ContentView.swift */,
 				F50B03812603D9C200D4EABE /* Profile.swift */,
-				F50B038A2605093300D4EABE /* Utils.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		F58D4391262039A900260758 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F50B038A2605093300D4EABE /* BannerView.swift */,
+				F58D4392262039EC00260758 /* ScreenSize.swift */,
+				F58D439526203A0B00260758 /* ViewModifiers.swift */,
+				F58D439826203A6200260758 /* Dictionary+Localization.swift */,
+				F58D439B26203A8400260758 /* String+Email.swift */,
+				F58D439E26203AC500260758 /* UIIMage+Scale.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		F5A9823125F769DB005EB566 /* LogIn */ = {
@@ -403,7 +423,6 @@
 				F58710B125F7611D00B47462 /* Assets.xcassets in Resources */,
 				F58710C025F761F500B47462 /* Podfile in Resources */,
 				F53AA8BB25F8BD750045977A /* women.json in Resources */,
-				F50B036425FCA95F00D4EABE /* GoogleService-Info.plist in Resources */,
 				F52C5DEC261643F200399F46 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,12 +478,14 @@
 			files = (
 				F56A7C9D260F241A003C0A20 /* SocialView.swift in Sources */,
 				CB6A1039260F4CEE0052D58E /* MakeNewFriendsView.swift in Sources */,
+				F58D439C26203A8400260758 /* String+Email.swift in Sources */,
 				F52C5DEF261738D700399F46 /* FriendProfileView.swift in Sources */,
 				F52C5DCD2615DEE300399F46 /* GamesView.swift in Sources */,
 				5A7EAA9C25FA535800D042E1 /* QuizGenerator.swift in Sources */,
 				F56093A025FB6F89000E8560 /* MultipleTrueOrFalseView.swift in Sources */,
+				F58D4393262039EC00260758 /* ScreenSize.swift in Sources */,
 				F5A9823825F7722C005EB566 /* SignupView.swift in Sources */,
-				F50B038B2605093300D4EABE /* Utils.swift in Sources */,
+				F50B038B2605093300D4EABE /* BannerView.swift in Sources */,
 				CB6826E525FA236200A8190C /* MultipleQuizView.swift in Sources */,
 				F560939A25FB6CB7000E8560 /* TrueOrFalseView.swift in Sources */,
 				F50B037A2601393E00D4EABE /* MultipleChronolineView.swift in Sources */,
@@ -486,8 +507,10 @@
 				CBF698A4261DB42A00776FF7 /* AboutUsView.swift in Sources */,
 				F58D4388261F589E00260758 /* Chat.swift in Sources */,
 				F50B03822603D9C200D4EABE /* Profile.swift in Sources */,
+				F58D439626203A0B00260758 /* ViewModifiers.swift in Sources */,
 				F50B037F2603D8FB00D4EABE /* ProfileView.swift in Sources */,
 				F58710AD25F7611C00B47462 /* Hidden_WomenApp.swift in Sources */,
+				F58D439F26203AC500260758 /* UIIMage+Scale.swift in Sources */,
 				F56A7CA0260F438F003C0A20 /* MyFriendsView.swift in Sources */,
 				F56A7CA3260F4424003C0A20 /* RankingView.swift in Sources */,
 				F50B037125FEBDBE00D4EABE /* ChronoWomanView.swift in Sources */,
@@ -497,6 +520,7 @@
 				F504D8822610A46D00AB1D08 /* FriendRequestsView.swift in Sources */,
 				F50B035E25FBE19100D4EABE /* ChronolineView.swift in Sources */,
 				F58D438C261F615C00260758 /* ChatMessage.swift in Sources */,
+				F58D439926203A6200260758 /* Dictionary+Localization.swift in Sources */,
 				CB77369925FB79B000A5E550 /* TrueOrFalseGenerator.swift in Sources */,
 				F50B03852604A42800D4EABE /* EditProfileView.swift in Sources */,
 				CB746FFD25F7FC62006795BB /* WomanView.swift in Sources */,

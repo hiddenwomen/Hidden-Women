@@ -21,7 +21,7 @@ class Profile: ObservableObject, Identifiable {
     @Published var friends: [Profile] = []
     @Published var gameResults: [GameResult] = []
     @Published var friendRequests: [String] = []
-    var mainListener: ListenerRegistration? = nil
+    var listener: ListenerRegistration? = nil
 
     var points: Int {
         let limit = Int(Date().timeIntervalSince1970) - oneWeek
@@ -57,9 +57,9 @@ class Profile: ObservableObject, Identifiable {
         gameResults = []
         friendRequests = []
         
-        if mainListener != nil {
-            mainListener?.remove()
-            mainListener = nil
+        if listener != nil {
+            listener?.remove()
+            listener = nil
         }
     }
     
@@ -89,8 +89,28 @@ class Profile: ObservableObject, Identifiable {
         self.pictureFileName = data["pictureFileName"] as? String ?? ""
         self.gameResults = (data["gameResults"] as? [[String: Any]] ?? []).map {GameResult.from(dict: $0)}
         self.friendRequests = data["friendRequests"] as? [String] ?? []
-        self.friends = []
 
+        print("ENTRANDO EN FROM para \(userId)")
+
+        
+        if andFriends {
+            let listOfFriends: Set<String> = Set(data["friends"] as? [String] ?? [])
+            self.friends = Array(listOfFriends.map { friendID in
+                print("***** CARGANDO \(friendID)")
+                let friendProfile = Profile(userId: friendID)
+                friendProfile.load(rankingUpdater: rankingUpdater, andFriends: false)
+                friendProfile.listen(rankingUpdater: rankingUpdater)
+                return friendProfile
+            })
+            print("XXXXX1 \(self.userId) -> \(self.friends)")
+        } else {
+            self.friends = []
+        }
+
+        if oldResultsCount != self.gameResults.count {
+            rankingUpdater.change()
+        }
+        
         if oldPictureFileName != self.pictureFileName {
             let picture = Storage.storage()
                 .reference()
@@ -104,19 +124,8 @@ class Profile: ObservableObject, Identifiable {
             }
         }
         
-        if andFriends {
-            let listOfFriends: Set<String> = Set(data["friends"] as? [String] ?? [])
-            self.friends = Array(listOfFriends.map { friendID in
-                let friendProfile = Profile(userId: friendID)
-                friendProfile.load(rankingUpdater: rankingUpdater, andFriends: false)
-                friendProfile.listen(rankingUpdater: rankingUpdater)
-                return friendProfile
-            })
-        }
+        print("XXXXX2 \(self.userId) -> \(self.friends)")
 
-        if oldResultsCount != self.gameResults.count {
-            rankingUpdater.change()
-        }
     }
     
     
@@ -279,7 +288,7 @@ class Profile: ObservableObject, Identifiable {
 
     func listen(rankingUpdater: RankingUpdater, andFriends: Bool = false) {
         print("!!! Fijo un escuchador para \(userId)")
-        mainListener = Firestore.firestore()
+        listener = Firestore.firestore()
             .collection("users")
             .document(userId)
             .addSnapshotListener { document, error in
@@ -317,6 +326,27 @@ class Profile: ObservableObject, Identifiable {
                         }
                     }
                     
+                }
+            }
+    }
+    
+    func sendFeedback(text: String, onError: @escaping (Error) -> Void) {
+        let comment: [String: String] = [
+            "userId": self.userId,
+            "email": self.isGuest ? "Guest" : self.email,
+            "date": String(Date().timeIntervalSince1970),
+            "comment": text
+        ]
+        
+        Firestore.firestore()
+            .collection("comments")
+            .document("comments")
+            .updateData([
+                "comments": FieldValue.arrayUnion([comment])
+            ]) {
+                error in
+                if let error = error {
+                    onError(error)
                 }
             }
     }

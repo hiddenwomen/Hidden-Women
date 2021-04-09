@@ -38,6 +38,11 @@ struct Chronoline {
     }
 }
 
+struct ChronolineMismatch {
+    let woman: Woman
+    let wrongYear: String
+}
+
 struct ChronolineView: View {
     @Binding var shownChronoline: Int
     @Binding var progress: Float
@@ -163,26 +168,20 @@ struct ChronolineView: View {
     }
     
     func scoreIfSorted() {
-        var isSorted = true
-        let sortedCards = chronoline.cards.sorted(by: {$0.pos.y < $1.pos.y})
-        for i in 0..<sortedCards.count - 1 {
-            if sortedCards[i].woman.birthYearAsInt > sortedCards[i + 1].woman.birthYearAsInt {
-                isSorted = false
+        var mistakenWomenList: [ChronolineMismatch] = []
+        for i in 0..<chronoline.cards.count {
+            if chronoline.sortedYears[i] == chronoline.cards[i].woman.birthYear.localized {
+                correctAnswers += 1
+            } else {
+                mistakenWomenList.append(ChronolineMismatch(
+                    woman: chronoline.cards[i].woman,
+                    wrongYear: chronoline.sortedYears[i]
+                ))
             }
         }
-        if isSorted {
-            correctAnswers += 1
-        } else {
-            var mistakenWomenList: [Woman] = []
-            for card in sortedCards {
-                mistakenWomenList.append(card.woman)
-            }
-            let sortedWomenList: [Woman] = mistakenWomenList.sorted(by: {$0.birthYearAsInt < $1.birthYearAsInt})
-            mistakes.append(
-                ChronolineMistake(chronolineNumber: shownChronoline, sortedWomenList: sortedWomenList, mistakenWomenList: mistakenWomenList)
-            )
-        }
-
+        mistakes.append(
+            ChronolineMistake(chronolineNumber: shownChronoline, mismatches: mistakenWomenList)
+        )
     }
 }
 //struct TimelineView_Previews: PreviewProvider {

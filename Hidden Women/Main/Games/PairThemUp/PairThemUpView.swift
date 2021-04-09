@@ -172,6 +172,7 @@ struct PairThemUpView: View {
                         timeLeft = pairThemUpConfig.availableTime
                     }
                     showTimer = false
+                    activateSubmit = false
                     print("\(correctAnswers) \(mistakes)")
                 }) {
                     Text("Submit")

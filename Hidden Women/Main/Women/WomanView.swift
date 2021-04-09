@@ -47,13 +47,13 @@ struct WomanView: View {
                                     .fill(Color.white)
                                     .frame(
                                         width: (geo.size.width-150-20)/2,
-                                        height: 200 * screenHeight/896
+                                        height: 200 * UIScreen.height/896
                                     )
                                 ForEach(woman.pictures, id: \.self) { picture in
                                     Image(picture)
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(height: 200 * screenHeight/896)
+                                        .frame(height: 200 * UIScreen.height/896)
                                         .onTapGesture {
                                             shownPicture = picture
                                             shownName = woman.name.localized
@@ -64,7 +64,7 @@ struct WomanView: View {
                                     .fill(Color.white)
                                     .frame(
                                         width: (geo.size.width-150-20)/2,
-                                        height: 200 * screenHeight/896
+                                        height: 200 * UIScreen.height/896
                                     )
                             }
                         }

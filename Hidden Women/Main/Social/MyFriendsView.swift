@@ -49,6 +49,7 @@ struct MyFriendsView: View {
             }
         }
         .onAppear {
+            print("MY FRIENDs VIEW \(profile.friends)")
             profile.getChatNotifications(notificationFrom: { friendId in
                 notifications.append(friendId)
             })

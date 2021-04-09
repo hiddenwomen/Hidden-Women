@@ -32,6 +32,9 @@ struct ProfileView: View {
                                 .frame(width: 300, height: 300)
                             Text(profile.name)
                                 .fontWeight(.bold)
+                                .lineLimit(3)
+                                .layoutPriority(1)
+                                .multilineTextAlignment(.center)
                             Text(profile.email)
                             Button(action: {
                                 profilePage = .editProfile

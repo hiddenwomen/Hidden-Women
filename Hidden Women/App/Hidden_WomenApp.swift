@@ -54,7 +54,7 @@ struct Hidden_WomenApp: App {
                     if userID != "" {
                         print("--- Carga del profile")
                         profile.userId = userID
-                        profile.load(rankingUpdater: rankingUpdater)
+                        profile.load(rankingUpdater: rankingUpdater, andFriends: true)
                         profile.listen(rankingUpdater: rankingUpdater, andFriends: true)
                         print("Y escuchador conectado")
                     }

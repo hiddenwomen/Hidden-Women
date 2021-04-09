@@ -14,6 +14,7 @@ struct FindPeopleView: View {
     
     var body: some View {
         VStack {
+            if foundFriends.count > 0 {
             List {
                 ForEach (foundFriends, id: \.self.email) { friend in
                     NavigationLink(destination: FriendProfileView(friendProfile: friend, showFriendRequestButton: true, notifications: $dummy)){
@@ -29,28 +30,41 @@ struct FindPeopleView: View {
                     }
                 }
             }
+            } else {
+                Text("We haven't found anybody with common favourite Hidden Women.")
+                    .font(.title)
+                    .padding()
+            }
         }
         .onAppear{
             profile.getPeopleWithSimilarInterests(
                 onError: { error in
                     print("DEBUG: LISTA VACIA!!!")
                 }
-            ) { snapshot in // TODO: Esto de aquí tiene pinta de ser muy mejorable
+            ) { snapshot in
                 var buffer: [String: Profile] = [:]
-                for document in snapshot.documents {
+                let maxPossibleFriends = 10
+                
+                for i in (0..<snapshot.documents.count).shuffled() {
+                    let document = snapshot.documents[i]
                     let possibleFriendID = document.documentID
-                    if possibleFriendID != profile.userId && !profile.friends.map({$0.userId}).contains(possibleFriendID) {
+                    if (possibleFriendID != profile.userId &&
+                            !profile.friends.map({$0.userId}).contains(possibleFriendID) &&
+                            !profile.friendRequests.contains(possibleFriendID)
+                    ) {
                         let possibleFriendProfile = Profile(userId: possibleFriendID)
-                        possibleFriendProfile.from(document: document, rankingUpdater: RankingUpdater()) //TODO: Ojo con el rankingUpdater
+                        possibleFriendProfile.from(document: document, rankingUpdater: RankingUpdater())
                         buffer[possibleFriendID] = possibleFriendProfile
+                        if buffer.count >= maxPossibleFriends {
+                            break
+                        }
                     }
                 }
                 foundFriends = []
-                for selectedPossibleFriendID in buffer.keys.shuffled()[0..<min(buffer.count, 10)] {
-                    let selectedPossibleFriendProfile = buffer[selectedPossibleFriendID]!
+                for selectedPossibleFriendProfile in buffer.values.sorted(by: {$0.name < $1.name}) {
                     foundFriends.append(selectedPossibleFriendProfile)
                     selectedPossibleFriendProfile.getPicture {
-                        foundFriends[0] = foundFriends[0] // TODO: Cochinada
+                        foundFriends[0] = foundFriends[0] // TODO: actualizar lista
                     }
                 }
             }

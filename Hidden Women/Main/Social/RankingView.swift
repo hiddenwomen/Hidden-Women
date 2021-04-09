@@ -25,9 +25,9 @@ struct RankingView: View {
                             .padding()
                         Image(uiImage: person.picture ?? UIImage())
                             .resizable()
-                            .scaledToFit()
-                            .frame(width: 70)
                             .clipShape(Circle())
+                            .scaledToFill()
+                            .frame(width: 70)
                         VStack (alignment: .leading){
                             Text("\(person.name)")
                                 .font(.title)
@@ -45,6 +45,9 @@ struct RankingView: View {
             rankedPeople = Array(profile.friends.map{$0})
             rankedPeople.append(profile)
             rankedPeople.sort(by: {$0.points > $1.points})
+            for person in rankedPeople {
+                print("\(person.name): \(person.picture!.size)")
+            }
         }
         .onChange(of: rankingUpdater.counter, perform: { _ in
             rankedPeople.sort(by: {$0.points > $1.points})

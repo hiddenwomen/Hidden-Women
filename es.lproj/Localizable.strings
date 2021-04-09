@@ -5,6 +5,7 @@
   Created by Claudia Marzal Polop on 10/3/21.
   
 */
+" was born in " = " nació el año ";
 "_Chronoline Help_" = "En este juego tienes que ordenar una lista de Mujeres Ocultas por su año de macimiento. Por cada mujer en la posición correcta recibirás un punto. ¡Buena suerte!";
 "_PairThemUp Help_" = "En este juego tienes que relacionar fotos de las Mujeres Ocultas con sus respectivos nombres. Por cada pareja correcta recibirás un punto. ¡Buena suerte!";
 "_Quiz Help_" = "En este juego tienes que elegir la respuesta correcta entre cuatro opciones a una pregunta sobre una Mujer Oculta. Por cada respuesta correcta recibirás un punto. ¡Buena suerte!";
@@ -25,7 +26,7 @@
 "Camera" = "Cámara";
 "Cancel" = "Cancelar";
 "Chat" = "Chat";
-"Check how your friends are doing with the games" = "Comprueba cómo les ha ido a tus amigas en los juegos en los últimso 7 días";
+"Check how your friends have been doing with the games in the last 7 days" = "Comprueba cómo les ha ido a tus amigas en los juegos en los últimos 7 días";
 "Check on your friends" = "Mira cómo le va a tus amigas";
 "Choose mode" = "Escoge el modo";
 "Chronoline" = "Cronolínea";
@@ -87,6 +88,7 @@
 "Start" = "Empezar";
 "Submit" = "Envía";
 "Swipe down to hide." = "Desliza hacia abajo para ocultar.";
+"Tap on the picture to change it" = "Toca la imagen para cambiarla";
 "The correct answer was: %@" = "La respuesta correcta era: %@";
 "The user can accept of reject your request." = "La usuaria puede aceptar o rechazar tu solicitud.";
 "Things you should learn:" = "Cosas que deberías aprender:";
@@ -96,6 +98,7 @@
 "Type here..." = "Escribe aquí...";
 "User name..." = "Nombre de usuaria...";
 "We are GIRLS4STEM, a team from Castellón, Spain, and we want to promote women visibility." = "Somos GIRLS4STEM, un equipo de Castellón, y queremos promover la visibilidad de las mujeres.";
+"We haven't found anybody with common favourite Hidden Women." = "No hemos encontrado a nadie con Mujeres Ocultas favoritas en común con las tuyas.";
 "We want to thank Technovation Girls for empowering young girls like us." = "Queremos dar las gracias a Technovation Girls por empoderar a chicas jóvenes como nosotras.";
 "We would also like to thank these institutions for their support:" = "También queremos agradecer el apoyo de estas instituciones:";
 "Welcome, guest!" = "¡Bienvenida, invitada!";
@@ -110,4 +113,5 @@
 "You have no friend requests." = "No tienes solicitudes de amistad.";
 "You have to select some Hidden Women as favourites to find people like you." = "Has de seleccionar Mujeres Ocultas favoritas para encontrar a gente como tú";
 "You ran out of time" = "Te has quedado sin tiempo";
+"You said: " = "Tú has dicho: ";
 "Your answer: %@" = "Tu respuesta: %@";

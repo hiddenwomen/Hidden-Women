@@ -38,7 +38,7 @@ struct MultipleTrueOrFalseView: View {
             case .start:
                 VStack {
                     Spacer()
-                    Text("True or false")
+                    Text("True or False")
                         .font(.largeTitle)
                         .padding()
                     Text("_TrueOrFalse Help_")

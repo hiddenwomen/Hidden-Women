@@ -5,6 +5,7 @@
   Created by Claudia Marzal Polop on 10/3/21.
   
 */
+" was born in " = " va néixer l'any ";
 "_Chronoline Help_" = "En aquest joc has d'ordenar un llistat de Dones Ocultes pel seu any de neixement. Per cada dona en la posició correcta rebràs un punt. Bona sort!";
 "_PairThemUp Help_" = "En aquest joc has de relacionar les fotos de les Dones Ocultes amb els seus respectius noms. Per cada parella correcta rebràs un punt. Bona sort!";
 "_Quiz Help_" = "En aquest joc has d'escollir la resposta correcta entre quatre opcions a una pregunta sobre una Dona Oculta. Per cada resposta correcta rebràs un punt. Bona sort!";
@@ -15,7 +16,8 @@
 "%@ is a..." = "%@ és una...";
 "%@ passed away in " = "%@ va morir en ";
 "%@ was a " = "%@ era una";
-"%@ was awarded with the " = "%@ va ser guardonada amb ";
+"%@ was awarded with the: " = "%@ va ser guardonada amb ";
+"%@ was awarded with..." = "%@ va ser guardonada amb...";
 "%@ was born in " = "%@ va néixer en ";
 "About us" = "Sobre nosaltres";
 "Accept" = "Acceptar";
@@ -87,6 +89,7 @@
 "Start" = "Començar";
 "Submit" = "Envia";
 "Swipe down to hide." = "Llisca cap avall per amagar aquesta pantalla";
+"Tap on the picture to change it" = "Toca la imatge per canviar-la";
 "The correct answer was: %@" = "La resposta correcta era: %@";
 "The user can accept of reject your request." = "L'usuari pot acceptar o rebutjar la teua sol·licitud.";
 "Things you should learn:" = "Coses que pots aprendre:";
@@ -96,6 +99,7 @@
 "Type here..." = "Escriu ací...";
 "User name..." = "Nom d'usuària...";
 "We are GIRLS4STEM, a team from Castellón, Spain, and we want to promote women visibility." = "Som GIRLS4STEM, un equip de Castelló, i volem promoure la visibilitat de les dones.";
+"We haven't found anybody with common favourite Hidden Women." = "No hem trobat a ningú amb Dones Ocultes favorites en comú amb les teues.";
 "We want to thank Technovation Girls for empowering young girls like us." = "Volem agrair a Technovation Girls per empoderar a xiques joves com nosaltres.";
 "We would also like to thank these institutions for their support:" = "També volem agrair el suport d'aquestes institucions:";
 "Welcome, guest!" = "Benvinguda, convidada!";
@@ -111,4 +115,5 @@
 "You have no friend requests." = "No tens sol·licituds d'amistad";
 "You have to select some Hidden Women as favourites to find people like you." = "Has de seleccionar alguna Dona Oculta com a favorita per a trobar gent com tu.";
 "You ran out of time" = "T'has quedat sense temps";
+"You said: " = "Tu has dit: ";
 "Your answer: %@" = "La teua resposta: %@";

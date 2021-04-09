@@ -27,7 +27,7 @@ struct MultipleQuizView: View {
     @State var progress: Float = 0.0
     @State var scoreUpdated: Bool = false
     @State var showTimer: Bool = true
-    @State var timeLeft: Int = trueOrFalseTotalTime
+    @State var timeLeft: Int = quizTotalTime
     @State var mistakes: [QuizMistake] = []
     
     @State var quizzes: [Quiz] =  []
@@ -155,7 +155,7 @@ struct MultipleQuizView: View {
                                             Circle()
                                                 .stroke(Color.gray.opacity(0.2), style: StrokeStyle(lineWidth: 3, lineCap: .round))
                                             Circle()
-                                                .trim(from: 0, to: CGFloat(timeLeft) / CGFloat(trueOrFalseTotalTime))
+                                                .trim(from: 0, to: CGFloat(timeLeft) / CGFloat(quizTotalTime))
                                                 .stroke(Color("Morado"), style: StrokeStyle(lineWidth: 3, lineCap: .round))
                                                 .rotationEffect(.degrees(-90))
                                                 .animation(.easeInOut)

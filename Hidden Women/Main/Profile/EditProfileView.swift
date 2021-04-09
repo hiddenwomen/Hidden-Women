@@ -25,7 +25,7 @@ struct EditProfileView: View {
         VStack {
             Image(uiImage: editedProfile.picture ?? UIImage())
                 .resizable()
-                .scaledToFit()
+                .scaledToFill()
                 .clipShape(Circle())
                 .frame(width: 200, height: 200)
                 .onTapGesture {
@@ -38,6 +38,9 @@ struct EditProfileView: View {
                         isPresented: $showImagePicker
                     )
                 }
+                .padding(.top, 40)
+            Text("Tap on the picture to change it")
+                .font(.caption)
             HStack {
                 Image(systemName: "person")
                 TextField("User name...", text: $editedProfile.name)
@@ -46,7 +49,7 @@ struct EditProfileView: View {
             .padding(.horizontal, 20)
             .background(Color("Hueso"))
             .cornerRadius(16)
-            .padding(.horizontal, 20)
+            .padding(20)
             Button(action: {
                 profile.updateName(name: editedProfile.name) { error in
                     errorTitle = "Error saving profile data"
@@ -69,7 +72,7 @@ struct EditProfileView: View {
             }) {
                 Text("Cancel")
             }
-            
+            .padding(.top, 40)
         }
         .onAppear {
             editedProfile = profile

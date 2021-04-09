@@ -12,12 +12,11 @@ enum MultipleChronolinePages {
     case question
 }
 
-let chronolineTotalTime = 3
+let chronolineTotalTime = 20
 
 struct ChronolineMistake: Identifiable {
     let chronolineNumber: Int
-    let sortedWomenList: [Woman]
-    let mistakenWomenList: [Woman]
+    let mismatches: [ChronolineMismatch]
     let id = UUID()
 }
 
@@ -31,7 +30,7 @@ struct MultipleChronolineView: View {
     let numberOfChronolines = 3
     @State var scoreUpdated: Bool = false
     @State var showTimer: Bool = true
-    @State var timeLeft: Int = trueOrFalseTotalTime
+    @State var timeLeft: Int = chronolineTotalTime
     @State var mistakes: [ChronolineMistake] = []
     
     var body: some View {
@@ -104,29 +103,25 @@ struct MultipleChronolineView: View {
                         Text("Things you should learn:")
                             .font(.title)
                         ScrollView {
-                            VStack (alignment: .leading){
+                            VStack (alignment: .leading) {
                                 ForEach (mistakes) { mistake in
                                     VStack(alignment: .leading) {
                                         HStack {
                                             Image(systemName: "play")
                                             Text("Chronoline").bold() + Text(" \(mistake.chronolineNumber)").bold()
                                         }
-                                        Text("Left: your answer. Right: correct answer.")
-                                        ForEach(0..<mistake.mistakenWomenList.count) { i in
+                                        ForEach(0..<mistake.mismatches.count) { i in
                                             HStack {
-                                                Image(mistake.mistakenWomenList[i].pictures[0])
+                                                Image(mistake.mismatches[i].woman.pictures[0])
                                                     .resizable()
                                                     .scaledToFit()
                                                     .frame(width: 50)
                                                     .padding(.trailing, 10)
-                                                Image(mistake.sortedWomenList[i].pictures[0])
-                                                    .resizable()
-                                                    .scaledToFit()
-                                                    .frame(width: 50)
                                                 VStack(alignment: .leading) {
-                                                    Text(mistake.sortedWomenList[i].name.localized)
-                                                        .fontWeight(.bold)
-                                                    Text(mistake.sortedWomenList[i].birthYear.localized)
+                                                    Text(mistake.mismatches[i].woman.name.localized).bold() +
+                                                        Text(" was born in ").bold() +
+                                                        Text(mistake.mismatches[i].woman.birthYear.localized).bold()
+                                                    Text("You said: ") + Text(mistake.mismatches[i].wrongYear)
                                                 }
                                                 Spacer()
                                             }

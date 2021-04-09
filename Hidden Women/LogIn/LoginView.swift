@@ -57,20 +57,20 @@ struct LoginView: View {
                             errorMessage = error.localizedDescription
                             showErrorAlert = true
                         }) { authResult in
-                        profile.clear()
-                        userID = authResult.user.uid
-                        profile.userId = userID
-                        print("--- desde BOTÓN Sign in")
-                        profile.load(rankingUpdater: rankingUpdater, andFriends: true)
-                        profile.listen(rankingUpdater: rankingUpdater)
-                        currentPage = .main
+                            profile.clear()
+                            userID = authResult.user.uid
+                            profile.userId = userID
+                            print("--- desde BOTÓN Sign in")
+                            profile.load(rankingUpdater: rankingUpdater, andFriends: true)
+                            profile.listen(rankingUpdater: rankingUpdater, andFriends: true)
+                            currentPage = .main
+                        }
+                    }) {
+                        Text("Sign in")
+                            .fontWeight(.bold)
+                            .importantButtonStyle()
                     }
-                }) {
-                    Text("Sign in")
-                        .fontWeight(.bold)
-                        .importantButtonStyle()
-                }
-                .padding()
+                    .padding()
                 HStack {
                     Text("Don't have an account?")
                     Button(action: {currentPage = .signup}) {
