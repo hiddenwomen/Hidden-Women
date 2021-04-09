@@ -33,6 +33,7 @@
 "Chronoline" = "Cronolínia";
 "Continue" = "Continuar";
 "Correct answer: %@" = "La resposta correcta: %@";
+"Do you know a woman who should be added to our Hidden Women list? Do you have some suggestion? Do you like the app? Tell us:" = "Saps d'alguna dona que hauríen d'afegir a la nostra llista de Dones Ocultes? Tens algun suggeriment? T'agrada l'app? Explica'ns:";
 "Don't have an account?" = "No tens un compte?";
 "Edit profile" = "Edita el perfil";
 "Email sent" = "Correu electrònic enviat";
@@ -90,6 +91,7 @@
 "Submit" = "Envia";
 "Swipe down to hide." = "Llisca cap avall per amagar aquesta pantalla";
 "Tap on the picture to change it" = "Toca la imatge per canviar-la";
+"Tell us what you think!" = "Diguen's el que penses!";
 "The correct answer was: %@" = "La resposta correcta era: %@";
 "The user can accept of reject your request." = "L'usuari pot acceptar o rebutjar la teua sol·licitud.";
 "Things you should learn:" = "Coses que pots aprendre:";
@@ -106,6 +108,7 @@
 "When did %@ pass away?" = "Quan va faltar %@?";
 "When was %@ born?" = "Quan va néixer %@?";
 "with instructions on how to reset your password." = "amb instruccions sobre com restablir la contrasenya.";
+"Write you comments here..." = "Escriu els teus comentaris ací...";
 "You are a guest."  = "Eres una convidada.";
 "You can only select three Hidden Women as your favourites." = "Només pots seleccionar tres Dones Ocultes com a favorites.";
 "You chose: %@" = "Vas escollir: %@";

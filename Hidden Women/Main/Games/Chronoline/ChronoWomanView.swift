@@ -20,8 +20,8 @@ struct ChronoWomanView: View {
                 Image(woman.pictures.randomElement()!)
                     .resizable()
                     .scaledToFit()
-                    .clipShape(RoundedRectangle(cornerRadius: 8))
                     .frame(width: width/3, height: 0.8 * height)
+                    .clipShape(RoundedRectangle(cornerRadius: 8))
                 VStack (alignment: .leading) {
                     Text(woman.name.localized)
                         .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)

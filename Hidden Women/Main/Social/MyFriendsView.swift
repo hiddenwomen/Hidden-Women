@@ -23,8 +23,8 @@ struct MyFriendsView: View {
                             Image(uiImage: friend.picture ?? UIImage())
                                 .resizable()
                                 .scaledToFill()
-                                .clipShape(Circle())
                                 .frame(width: 75, height: 75)
+                                .clipShape(Circle())
                             VStack(alignment: .leading) {
                                 Text("\(friend.name)")
                                     .fontWeight(.bold)

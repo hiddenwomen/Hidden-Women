@@ -25,14 +25,15 @@ struct RankingView: View {
                             .padding()
                         Image(uiImage: person.picture ?? UIImage())
                             .resizable()
-                            .clipShape(Circle())
                             .scaledToFill()
                             .frame(width: 70)
+                            .clipShape(Circle())
                         VStack (alignment: .leading){
                             Text("\(person.name)")
                                 .font(.title)
                                 .fontWeight(person.email == profile.email ? .bold : .regular)
                                 .foregroundColor(person.email == profile.email ? Color("Morado") : .black)
+                                .lineLimit(2)
                             Text(
                                 String.localizedStringWithFormat(NSLocalizedString("Points: %@", comment: ""), String(person.points))
                             )

@@ -34,12 +34,16 @@ struct AboutUsView: View {
                         Text("We are GIRLS4STEM, a team from Castellón, Spain, and we want to promote women visibility.")
                             .multilineTextAlignment(.leading)
                             .lineLimit(nil)
+                            .fixedSize(horizontal: false, vertical: true)
                             .padding(.vertical)
+                            .layoutPriority(1)
                     }
                     Group {
                         Text("Do you know a woman who should be added to our Hidden Women list? Do you have some suggestion? Do you like the app? Tell us:")
                             .multilineTextAlignment(.leading)
                             .lineLimit(nil)
+                            .fixedSize(horizontal: false, vertical: true)
+                            .layoutPriority(1)
                         VStack (alignment: .center){
                             ZStack(alignment: .topLeading) {
                                 RoundedRectangle(cornerRadius: 8, style: .continuous)
@@ -52,6 +56,7 @@ struct AboutUsView: View {
                                 TextEditor(text: $userComment)
                                     .foregroundColor(Color("Morado"))
                                     .lineLimit(5)
+                                    .frame(minHeight: 24)
                             }
                             HStack {
                                 Spacer()
@@ -74,7 +79,9 @@ struct AboutUsView: View {
                         VStack (alignment: .leading){
                             Text("We want to thank Technovation Girls for empowering young girls like us.")
                                 .lineLimit(nil)
-                                .padding(.bottom)
+                                .fixedSize(horizontal: false, vertical: true)
+                                .padding(.vertical)
+                                .layoutPriority(1)
                         }
                         Link(destination: URL(string: "https://technovationchallenge.org/")!) {
                             HStack {
@@ -91,7 +98,9 @@ struct AboutUsView: View {
                         VStack (alignment: .leading){
                             Text("We would also like to thank these institutions for their support:")
                                 .lineLimit(nil)
+                                .fixedSize(horizontal: false, vertical: true)
                                 .padding(.vertical)
+                                .layoutPriority(1)
                         }
                         Link(destination: URL(string: "http://isonomia.uji.es/")!) {
                             HStack {

@@ -10,6 +10,7 @@ import SwiftUI
 import Firebase
 
 let oneWeek = 7 * 24 * 60 * 60
+let maxImageSize: Int64 = 128 * 1024 * 1024
 
 class Profile: ObservableObject, Identifiable {
     @Published var userId: String
@@ -115,7 +116,7 @@ class Profile: ObservableObject, Identifiable {
             let picture = Storage.storage()
                 .reference()
                 .child("\(userId)/\(pictureFileName)")
-            picture.getData(maxSize: 128 * 1024 * 1024) { data, error in // TODO: tamaño a constante
+            picture.getData(maxSize: maxImageSize) { data, error in // TODO: tamaño a constante
                 if let _ = error {
                     self.picture = UIImage(named: "unknown")
                 } else {
@@ -128,6 +129,33 @@ class Profile: ObservableObject, Identifiable {
 
     }
     
+    func load(rankingUpdater: RankingUpdater, andFriends: Bool = false) {
+        print("!!! loadProfile \(userId)")
+        Firestore.firestore()
+            .collection("users")
+            .document(userId)
+            .getDocument { document, error in
+                if let document = document, document.exists {
+                    self.from(document: document, rankingUpdater: rankingUpdater, andFriends: andFriends)
+                }
+            }
+    }
+
+    func listen(rankingUpdater: RankingUpdater, andFriends: Bool = false) {
+        print("!!! Fijo un escuchador para \(userId)")
+        listener = Firestore.firestore()
+            .collection("users")
+            .document(userId)
+            .addSnapshotListener { document, error in
+                if let error = error {
+                    print("Error fetching document: \(error)")
+                    return
+                } else if let document = document {
+                    print("--- desde listenToAndUpdateProfile")
+                    self.from(document: document, rankingUpdater: rankingUpdater, andFriends: andFriends)
+                }
+            }
+    }
     
     func updateGameResults(withNewGameResult: GameResult, onError: @escaping (Error) -> Void) {
         gameResults.append(withNewGameResult)
@@ -147,7 +175,7 @@ class Profile: ObservableObject, Identifiable {
     
     func getPicture(onCompletion: @escaping () -> Void) {
         let reference = Storage.storage().reference().child("\(userId)/\(pictureFileName)")
-        reference.getData(maxSize: 128 * 1024 * 1024) { data, error in //TODO: Eso de 128*... huele mal
+        reference.getData(maxSize: maxImageSize) { data, error in
             if let _ = error {
                 self.picture = UIImage(named: "unknown")
             } else {
@@ -261,47 +289,6 @@ class Profile: ObservableObject, Identifiable {
         }
     }
     
-//    func removeFriendListeners() {
-//        if mainListener != nil {
-//            mainListener?.remove()
-//            mainListener = nil
-//            print("*** Desconecto el listener principal")
-//        }
-//        for listener in friendListeners.values {
-//            listener.remove()
-//            print("*** Desconecto el listener de una amiga")
-//        }
-//        friendListeners = [:]
-//    }
-//
-    func load(rankingUpdater: RankingUpdater, andFriends: Bool = false) {
-        print("!!! loadProfile \(userId)")
-        Firestore.firestore()
-            .collection("users")
-            .document(userId)
-            .getDocument { document, error in
-                if let document = document, document.exists {
-                    self.from(document: document, rankingUpdater: rankingUpdater, andFriends: andFriends)
-                }
-            }
-    }
-
-    func listen(rankingUpdater: RankingUpdater, andFriends: Bool = false) {
-        print("!!! Fijo un escuchador para \(userId)")
-        listener = Firestore.firestore()
-            .collection("users")
-            .document(userId)
-            .addSnapshotListener { document, error in
-                if let error = error {
-                    print("Error fetching document: \(error)")
-                    return
-                } else if let _ = document {
-                    print("--- desde listenToAndUpdateProfile")
-                    self.load(rankingUpdater: rankingUpdater, andFriends: andFriends) // TODO: Repensar carga de amigos: loadFriendsProfiles
-                }
-            }
-    }
-
     func getChatNotifications(notificationFrom: @escaping (String)-> Void) {
         Firestore.firestore()
             .collection("chats")

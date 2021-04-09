@@ -169,15 +169,20 @@ struct ChronolineView: View {
     
     func scoreIfSorted() {
         var mistakenWomenList: [ChronolineMismatch] = []
+        let cardsTopDown = chronoline.cards.sorted(by: {$0.pos.y < $1.pos.y})
         for i in 0..<chronoline.cards.count {
-            if chronoline.sortedYears[i] == chronoline.cards[i].woman.birthYear.localized {
+            if chronoline.sortedYears[i] == cardsTopDown[i].woman.birthYear.localized {
                 correctAnswers += 1
             } else {
+                correctAnswers -= 1
                 mistakenWomenList.append(ChronolineMismatch(
                     woman: chronoline.cards[i].woman,
                     wrongYear: chronoline.sortedYears[i]
                 ))
             }
+        }
+        if correctAnswers < 0 {
+            correctAnswers = 0
         }
         mistakes.append(
             ChronolineMistake(chronolineNumber: shownChronoline, mismatches: mistakenWomenList)

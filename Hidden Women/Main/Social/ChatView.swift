@@ -28,7 +28,8 @@ struct ChatBubble<Content>: View where Content: View {
                 Text(topInfo)
                     .font(.caption2)
                     .foregroundColor(.gray)
-                content().clipShape(ChatBubbleShape(direction: direction))
+                content()
+                    .clipShape(ChatBubbleShape(direction: direction))
             }
             if direction == .left {
                 Spacer()
