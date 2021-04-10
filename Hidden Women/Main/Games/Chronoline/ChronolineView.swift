@@ -125,7 +125,7 @@ struct ChronolineView: View {
                 Button(action: {
                     progress += 1.0 / Float(numberOfChronolines)
                     shownChronoline += 1
-                    scoreIfSorted()
+                    score()
                     if shownChronoline < numberOfChronolines {
                         chronoline = chronolineGenerator(
                             women: women,
@@ -151,7 +151,7 @@ struct ChronolineView: View {
                     showTimer = false
                     shownChronoline += 1
                     timeLeft = chronolineTotalTime
-                    scoreIfSorted()
+                    score()
                     if shownChronoline < numberOfChronolines {
                         chronoline = chronolineGenerator(
                             women: women,
@@ -167,7 +167,7 @@ struct ChronolineView: View {
         }
     }
     
-    func scoreIfSorted() {
+    func score() {
         var mistakenWomenList: [ChronolineMismatch] = []
         let cardsTopDown = chronoline.cards.sorted(by: {$0.pos.y < $1.pos.y})
         for i in 0..<chronoline.cards.count {
@@ -176,7 +176,7 @@ struct ChronolineView: View {
             } else {
                 correctAnswers -= 1
                 mistakenWomenList.append(ChronolineMismatch(
-                    woman: chronoline.cards[i].woman,
+                    woman: cardsTopDown[i].woman,
                     wrongYear: chronoline.sortedYears[i]
                 ))
             }
