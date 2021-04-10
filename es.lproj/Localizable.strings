@@ -6,10 +6,10 @@
   
 */
 " was born in " = " nació el año ";
-"_Chronoline Help_" = "En este juego tienes que ordenar una lista de Mujeres Ocultas por su año de macimiento. Por cada mujer en la posición correcta recibirás un punto. ¡Buena suerte!";
-"_PairThemUp Help_" = "En este juego tienes que relacionar fotos de las Mujeres Ocultas con sus respectivos nombres. Por cada pareja correcta recibirás un punto. ¡Buena suerte!";
-"_Quiz Help_" = "En este juego tienes que elegir la respuesta correcta entre cuatro opciones a una pregunta sobre una Mujer Oculta. Por cada respuesta correcta recibirás un punto. ¡Buena suerte!";
-"_TrueOrFalse Help_" = "En este juego tienes que distinguir si una afirmación es verdadera o falsa. Por cada respuesta correcta recibirás un punto. ¡Buena suerte!";
+"_Chronoline Help_" = "En este juego tienes que ordenar una lista de Mujeres Ocultas por su año de macimiento.\nPor cada mujer en la posición correcta recibirás un punto y por cada mujer en posición incorrecta perderás un punto.\n¡Buena suerte!";
+"_PairThemUp Help_" = "En este juego tienes que relacionar fotos de las Mujeres Ocultas con sus respectivos nombres.\nPor cada pareja correcta recibirás un punto y por cada pareja incorrecta perderás un punto.\n¡Buena suerte!";
+"_Quiz Help_" = "En este juego tienes que elegir la respuesta correcta entre cuatro opciones a una pregunta sobre una Mujer Oculta.\nPor cada respuesta correcta recibirás un punto y por cada respuesta incorrecta perderás un punto.\n¡Buena suerte!";
+"_TrueOrFalse Help_" = "En este juego tienes que distinguir si una afirmación es verdadera o falsa.\nPor cada respuesta correcta recibirás un punto y por cada respuesta incorrecta perderás un punto.\n¡Buena suerte!";
 "_Warning Guest_" = "Vas a usar la aplicación como invitada. La funcionalidad de red social no estará activada. Para disfrutar de la aplicación al completo has de registrarte.";
 "... or enter as a" = "... o entra como";
 "%@ is a " = "%@ es ";
@@ -51,6 +51,7 @@
 "Games" = "Juegos";
 "guest" = "invitada";
 "Have you forgotten your password?" = "¿Has olvidado tu contraseña?";
+"Her favourite Hidden Women are: " = "Sus Mujeres Ocultas favoritas son: ";
 "Hidden Women" = "Mujeres Ocultas";
 "Honors and awards" = "Premios y reconocimientos";
 "Left: your answer. Right: correct answer." = "Izquierda: tu respuesta. Derecha: respuesta correcta";
@@ -63,6 +64,7 @@
 "Pair them up"  = "Emparéjalas";
 "Password..." = "Contraseña...";
 "Passwords do not match" = "Las contraseñas no coinciden";
+"Perfect score!" = "¡Puntuación perfecta!";
 "Photo Library" = "Galería de fotos";
 "Please choose your preferred mode to set your profile image" = "Por favor, escoge cómo cargar la foto de perfil";
 "point" = "punto";
@@ -100,7 +102,7 @@
 "Type here..." = "Escribe aquí...";
 "User name..." = "Nombre de usuaria...";
 "We are GIRLS4STEM, a team from Castellón, Spain, and we want to promote women visibility." = "Somos GIRLS4STEM, un equipo de Castellón, y queremos promover la visibilidad de las mujeres.";
-"We haven't found anybody with common favourite Hidden Women." = "No hemos encontrado a nadie con Mujeres Ocultas favoritas en común con las tuyas.";
+"We haven't found anybody with favourite Hidden Women in common with you." = "No hemos encontrado a nadie con Mujeres Ocultas favoritas en común con las tuyas.";
 "We want to thank Technovation Girls for empowering young girls like us." = "Queremos dar las gracias a Technovation Girls por empoderar a chicas jóvenes como nosotras.";
 "We would also like to thank these institutions for their support:" = "También queremos agradecer el apoyo de estas instituciones:";
 "Welcome, guest!" = "¡Bienvenida, invitada!";

@@ -139,8 +139,8 @@ struct ChronolineView: View {
                 }) {
                     Text("Submit")
                         .fontWeight(.bold)
+                        .importantButtonStyle()
                 }
-                .importantButtonStyle()
                 Spacer()
             }
             .onReceive(timer) { _ in

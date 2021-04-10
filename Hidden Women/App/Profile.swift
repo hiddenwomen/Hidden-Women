@@ -96,7 +96,7 @@ class Profile: ObservableObject, Identifiable {
         
         if andFriends {
             let listOfFriends: Set<String> = Set(data["friends"] as? [String] ?? [])
-            self.friends = Array(listOfFriends.map { friendID in
+            self.friends = Array(listOfFriends.filter{$0 != ""}.map { friendID in
                 print("***** CARGANDO \(friendID)")
                 let friendProfile = Profile(userId: friendID)
                 friendProfile.load(rankingUpdater: rankingUpdater, andFriends: false)
@@ -192,12 +192,17 @@ class Profile: ObservableObject, Identifiable {
         let metadata = StorageMetadata()
         metadata.contentType = "image/jpg"
         let newFileName = "\(UUID()).jpg"
-        Storage.storage().reference().child("\(userId)/\(newFileName)").putData(pictureData, metadata: metadata) { metadata, error in
+        Storage.storage()
+            .reference()
+            .child("\(userId)/\(newFileName)")
+            .putData(pictureData, metadata: metadata) { metadata, error in
             if let error = error {
                 onError(error)
             } else {
                 print("!!! Grabo por updatePicture")
+                let oldPictureFileName = self.pictureFileName
                 self.pictureFileName = newFileName
+                
                 Firestore.firestore()
                     .collection("users")
                     .document(self.userId)
@@ -209,6 +214,14 @@ class Profile: ObservableObject, Identifiable {
                             onError(error)
                         }
                     }
+                Storage.storage()
+                    .reference()
+                    .child("\(self.userId)/\(oldPictureFileName)")
+                    .delete(completion: {error in
+                        if let error = error {
+                            onError(error)
+                        }
+                    })
             }
         }
     }

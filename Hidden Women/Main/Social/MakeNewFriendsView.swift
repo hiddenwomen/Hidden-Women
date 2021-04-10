@@ -19,6 +19,8 @@ struct MakeNewFriendsView: View {
             VStack {
                 Text("Send a friend request")
                     .font(.title)
+                    .padding(.horizontal)
+                    .multilineTextAlignment(.center)
                 HStack {
                     Image(systemName: "magnifyingglass")
                     TextField("Email...", text: $email)
@@ -28,7 +30,7 @@ struct MakeNewFriendsView: View {
                 .padding(.horizontal, 20)
                 .background(Color("Hueso"))
                 .cornerRadius(16)
-                .padding(.horizontal, 20)
+                .padding()
                 
                 Button(action: {
                     if possibleFriendUserId != "" {

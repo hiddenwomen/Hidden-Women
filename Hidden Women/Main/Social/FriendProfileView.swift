@@ -21,12 +21,11 @@ struct FriendProfileView: View {
                 VStack {
                     Image(uiImage: friendProfile.picture ?? UIImage())
                         .resizable()
-                        .scaledToFit()
+                        .scaledToFill()
                         .frame(width: 200, height: 200)
                         .clipShape(Circle())
                     Text(friendProfile.name)
                         .fontWeight(.bold)
-                    Text(friendProfile.email)
                     ZStack {
                         Circle()
                             .foregroundColor(Color("Turquesa"))

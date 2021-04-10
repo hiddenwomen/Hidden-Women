@@ -27,7 +27,7 @@ struct ProfileView: View {
                         VStack {
                             Image(uiImage: profile.picture ?? UIImage())
                                 .resizable()
-                                .scaledToFit()
+                                .scaledToFill()
                                 .clipShape(Circle())
                                 .frame(width: 300, height: 300)
                             Text(profile.name)
@@ -35,7 +35,9 @@ struct ProfileView: View {
                                 .lineLimit(3)
                                 .layoutPriority(1)
                                 .multilineTextAlignment(.center)
-                            Text(profile.email)
+                            if profile.userId == userID {
+                                Text(profile.email)
+                            }
                             Button(action: {
                                 profilePage = .editProfile
                             }) {

@@ -36,8 +36,13 @@ struct TrueOrFalseView: View {
                         correctAnswers += 1
                     } else {
                         correctAnswers -= 1
-                        mistakes.append(TrueOrFalseMistake(question: trueOrFalse.question, answer: trueOrFalse.answer, isCorrect: trueOrFalse.correct))
-
+                        mistakes.append(
+                            TrueOrFalseMistake(
+                                question: trueOrFalse.question,
+                                answer: trueOrFalse.answer,
+                                isCorrect: trueOrFalse.correct
+                            )
+                        )
                     }
                     progress += 1.0 / Float(numberOfTrueOrFalses)
                     timer.upstream.connect().cancel()

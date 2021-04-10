@@ -38,8 +38,9 @@ struct FriendRequestsView: View {
                                     Text("Accept")
                                         .fontWeight(.bold)
                                 }
+                                .importantButtonStyle()
+                                .importantButtonStyle()
                             }
-                            .importantButtonStyle()
                             Button(action:  {
                                 profile.rejectFriendRequest(friendRequest: friendRequest)
                             }) {
@@ -48,8 +49,8 @@ struct FriendRequestsView: View {
                                     Text("Reject")
                                         .fontWeight(.bold)
                                 }
+                                .importantButtonStyle(Color("Turquesa"))
                             }
-                            .importantButtonStyle(Color("Turquesa"))
                         }
                     }
                     Divider()

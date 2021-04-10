@@ -2112,11 +2112,9 @@
             ]
         },
         "nationalities": {
-            "en": [
-                "American",
-                "Norteamericana",
-                "Nord-americana"
-            ]
+            "en": ["American"],
+            "es": ["Norteamericana"],
+            "ca": ["Nord-americana"]
         },
         "wikipedia": {
             "en": "Lynn_Margulis",

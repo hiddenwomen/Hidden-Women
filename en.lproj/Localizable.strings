@@ -5,13 +5,13 @@
   Created by Claudia Marzal Polop on 10/3/21.
   
 */
-"_Chronoline Help_" = "In this game you have to sort a list of Hidden Women by their birth year. Each woman in the right position will give you a point. Good luck!";
+"_Chronoline Help_" = "In this game you have to sort a list of Hidden Women by their birth year.\nEach woman in the right position will add one point and each woman in the wrong position will subtract one point.\nGood luck!";
+"_PairThemUp Help_" = "In this game you have to match Hidden Women's pictures with their respective names.\nEach correct match will add one point and each mismatch will subtract one point.\nGood luck!";
+"_TrueOrFalse Help_" = "In this game you have to tell if a statement about a Hidden Woman is true or false.\nEach correct answer will add one point and each incorrect answer will subtract ona point.\nGood luck!";
+"_Quiz Help_" = "In this game you have to choose the correct answer among four options to a question about a Hidden Woman.\nEach correct answer will add one point and each incorrect answer will subtract one point.\nGood luck!";
 "_Warning Guest_" = "You are going to use the app as a guest. The social functionality will not be available. To enjoy the app at its fullest you have to sign up.";
 "%@ was a..." = "%@ was a...";
 "Hidden Women" = "Hidden Women";
 "Profile" = "Profile";
 "Sign out" = "Sign out";
 "When was %@ born?" = "When was %@ born?";
-"_PairThemUp Help_" = "In this game you have to match Hidden Women's pictures with their respective names. Each correct match will give you a point. Good luck!";
-"_TrueOrFalse Help_" = "In this game you have to tell if a statement about a Hidden Woman is true or false. Each correct answer will give a point. Good luck!";
-"_Quiz Help_" = "In this game you have to choose the correct answer among four options to a question about a Hidden Woman. Each correct answer will give you a point. Good luck!";

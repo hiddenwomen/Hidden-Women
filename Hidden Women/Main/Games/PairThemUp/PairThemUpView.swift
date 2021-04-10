@@ -177,8 +177,8 @@ struct PairThemUpView: View {
                 }) {
                     Text("Submit")
                         .fontWeight(.bold)
+                        .importantButtonStyle()
                 }
-                .importantButtonStyle()
             }
         }
         .onReceive(timer) { _ in

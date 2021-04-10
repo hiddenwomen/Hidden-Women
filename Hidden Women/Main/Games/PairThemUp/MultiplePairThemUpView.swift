@@ -64,8 +64,8 @@ struct MultiplePairThemUpView: View {
                         }) {
                             Text("Start")
                                 .bold()
+                                .importantButtonStyle()
                         }
-                        .importantButtonStyle()
                         Spacer()
                     }
                     Spacer()
@@ -111,8 +111,13 @@ struct MultiplePairThemUpView: View {
                             }
                         }
                         .padding()
-                        Text("Things you should learn:")
-                            .font(.title)
+                        if mistakes.count == 0 {
+                            Text("Perfect score!")
+                                .font(.title)
+                        } else {
+                            Text("Things you should learn:")
+                                .font(.title)
+                        }
                         ScrollView {
                             VStack (alignment: .leading){
                                 ForEach(0..<mistakes.count) { m in

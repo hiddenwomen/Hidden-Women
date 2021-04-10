@@ -50,8 +50,8 @@ struct MultipleQuizView: View {
                     }) {
                         Text("Start")
                             .bold()
+                            .importantButtonStyle()
                     }
-                    .importantButtonStyle()
                     .padding()
                     Spacer()
                 }
@@ -79,8 +79,13 @@ struct MultipleQuizView: View {
                             }
                         }
                         .padding()
-                        Text("Things you should learn:")
-                            .font(.title)
+                        if mistakes.count == 0 {
+                            Text("Perfect score!")
+                                .font(.title)
+                        } else {
+                            Text("Things you should learn:")
+                                .font(.title)
+                        }
                         ScrollView {
                             VStack (alignment: .leading){
                                 ForEach (mistakes) { mistake in

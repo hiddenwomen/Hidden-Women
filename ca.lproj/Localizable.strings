@@ -6,10 +6,10 @@
   
 */
 " was born in " = " va néixer l'any ";
-"_Chronoline Help_" = "En aquest joc has d'ordenar un llistat de Dones Ocultes pel seu any de neixement. Per cada dona en la posició correcta rebràs un punt. Bona sort!";
-"_PairThemUp Help_" = "En aquest joc has de relacionar les fotos de les Dones Ocultes amb els seus respectius noms. Per cada parella correcta rebràs un punt. Bona sort!";
-"_Quiz Help_" = "En aquest joc has d'escollir la resposta correcta entre quatre opcions a una pregunta sobre una Dona Oculta. Per cada resposta correcta rebràs un punt. Bona sort!";
-"_TrueOrFalse Help_" = "En aquest joc has de distingir si una afirmació sobre una Dona Oculta és veritable o falsa. Per cada resposta correcta rebràs un punt. Bona sort!";
+"_Chronoline Help_" = "En aquest joc has d'ordenar un llistat de Dones Ocultes pel seu any de neixement.\nPer cada dona en la posició correcta rebràs un punt i per cada dona en una posició incorrecta perdràs un punt.\nBona sort!";
+"_PairThemUp Help_" = "En aquest joc has de relacionar les fotos de les Dones Ocultes amb els seus respectius noms.\nPer cada parella correcta rebràs un punt i per cada parella incorrecta perdràs un punt.\nBona sort!";
+"_Quiz Help_" = "En aquest joc has d'escollir la resposta correcta entre quatre opcions a una pregunta sobre una Dona Oculta.\nPer cada resposta correcta rebràs un punt i per cada resposta incorrecta perdràs un punt.\nBona sort!";
+"_TrueOrFalse Help_" = "En aquest joc has de distingir si una afirmació sobre una Dona Oculta és veritable o falsa.\nPer cada resposta correcta rebràs un punt i per cada resposta incorrecta perdràs un punt.\nBona sort!";
 "_Warning Guest_" = "Vas a usar l'aplicació com a convidada. La funcionalitat de xarxa social no estarà activada. Per a gaudir de l'aplicació al complet has de registrar-te.";
 "... or enter as a" = "... o entra com a";
 "%@ is a " = "%@ és ";
@@ -52,6 +52,7 @@
 "Games" = "Jocs";
 "guest" = "invitada";
 "Have you forgotten your password?" = "Has oblidat la teua contrasenya?";
+"Her favourite Hidden Women are: " = "Les seues Dones Ocultes favorites són: ";
 "Hidden Women" = "Dones Ocultes";
 "Honors and awards" = "Premis i reconeixements";
 "If you tap on the 'Reset Password' button, your password will be reset. We will send an email to" = "Si polses el botó 'Restableix la contrasenya', la contrasenya es restablirà. Enviarem un correu a";
@@ -71,6 +72,7 @@
 "points" = "punts";
 "Points" = "Punts";
 "Profile" = "Perfil";
+"Perfect score!" = "Puntuació perfecta!";
 "Quiz" = "Qüestionari";
 "Ranking" = "Rànquing";
 "Refresh" = "Refresca";
@@ -101,7 +103,7 @@
 "Type here..." = "Escriu ací...";
 "User name..." = "Nom d'usuària...";
 "We are GIRLS4STEM, a team from Castellón, Spain, and we want to promote women visibility." = "Som GIRLS4STEM, un equip de Castelló, i volem promoure la visibilitat de les dones.";
-"We haven't found anybody with common favourite Hidden Women." = "No hem trobat a ningú amb Dones Ocultes favorites en comú amb les teues.";
+"We haven't found anybody with favourite Hidden Women in common with you." = "No hem trobat a ningú amb Dones Ocultes favorites en comú amb les teues.";
 "We want to thank Technovation Girls for empowering young girls like us." = "Volem agrair a Technovation Girls per empoderar a xiques joves com nosaltres.";
 "We would also like to thank these institutions for their support:" = "També volem agrair el suport d'aquestes institucions:";
 "Welcome, guest!" = "Benvinguda, convidada!";
