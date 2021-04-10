@@ -61,7 +61,7 @@ struct FindPeopleView: View {
                                 notifications: $dummy
                             )
                         ){
-                            FindPeopleCardView(friend: friend)
+                            FIndPeopleCardView(friendProfile: friend)
                         }
                     }
                 }

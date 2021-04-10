@@ -251,15 +251,15 @@
 			children = (
 				F56A7C9C260F241A003C0A20 /* SocialView.swift */,
 				CB6A103B260F4E520052D58E /* FindPeopleView.swift */,
+				F5B253122621A7A400F2C29C /* FIndPeopleCardView.swift */,
+				F52C5DEE261738D700399F46 /* FriendProfileView.swift */,
 				F56A7C9F260F438F003C0A20 /* MyFriendsView.swift */,
 				F56A7CA2260F4424003C0A20 /* RankingView.swift */,
 				CB6A1038260F4CEE0052D58E /* MakeNewFriendsView.swift */,
 				F504D8812610A46D00AB1D08 /* FriendRequestsView.swift */,
-				F52C5DEE261738D700399F46 /* FriendProfileView.swift */,
 				F58D4380261B8BAF00260758 /* ChatView.swift */,
 				F58D4387261F589E00260758 /* Chat.swift */,
 				F58D438B261F615B00260758 /* ChatMessage.swift */,
-				F5B253122621A7A400F2C29C /* FIndPeopleCardView.swift */,
 			);
 			path = Social;
 			sourceTree = "<group>";

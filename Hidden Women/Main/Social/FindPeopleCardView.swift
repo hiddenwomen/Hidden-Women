@@ -8,13 +8,23 @@
 import SwiftUI
 
 struct FIndPeopleCardView: View {
+    @ObservedObject var friendProfile: Profile
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct FIndPeopleCardView_Previews: PreviewProvider {
-    static var previews: some View {
-        FIndPeopleCardView()
+        HStack {
+            Image(uiImage: friendProfile.picture ?? UIImage())
+                .resizable()
+                .scaledToFill()
+                .frame(width: 75, height: 75)
+                .clipShape(Circle())
+            VStack(alignment: .leading) {
+                Text(friendProfile.name)
+                    .font(.title)
+                Text("Her favourite Hidden Women are: ")
+                    .font(.caption) +
+                    Text(friendProfile.favourites.joined(separator: ", "))
+                        .font(.caption)
+            }
+        }
     }
 }
