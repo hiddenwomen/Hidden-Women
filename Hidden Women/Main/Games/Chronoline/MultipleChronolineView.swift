@@ -12,7 +12,7 @@ enum MultipleChronolinePages {
     case question
 }
 
-let chronolineTotalTime = 200 //TODO: es 20
+let chronolineTotalTime = 20
 
 struct ChronolineMistake: Identifiable {
     let chronolineNumber: Int

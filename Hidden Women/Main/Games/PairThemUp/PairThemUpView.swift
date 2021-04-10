@@ -81,7 +81,7 @@ struct PairThemUpView: View {
             GeometryReader { geo in
                 ZStack {
                     Rectangle()
-                        .foregroundColor(Color("Hueso"))
+                        .foregroundColor(.white)
                     ForEach(0..<pairThemUpGame.womanNames.count) { i in
                         Circle()
                             .strokeBorder(Color("Morado"), lineWidth: 3)

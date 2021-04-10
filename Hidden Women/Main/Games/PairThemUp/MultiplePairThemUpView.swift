@@ -111,7 +111,7 @@ struct MultiplePairThemUpView: View {
                             }
                         }
                         .padding()
-                        if mistakes.count == 0 {
+                        if mistakes.allSatisfy({$0.count == 0}) {
                             Text("Perfect score!")
                                 .font(.title)
                         } else {

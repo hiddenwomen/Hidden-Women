@@ -32,7 +32,6 @@
 		F50B03882604AC3400D4EABE /* SUImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B03872604AC3400D4EABE /* SUImagePickerView.swift */; };
 		F50B038B2605093300D4EABE /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50B038A2605093300D4EABE /* BannerView.swift */; };
 		F52C5DCD2615DEE300399F46 /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52C5DCC2615DEE300399F46 /* GamesView.swift */; };
-		F52C5DEC261643F200399F46 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F52C5DEB261643F200399F46 /* GoogleService-Info.plist */; };
 		F52C5DEF261738D700399F46 /* FriendProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F52C5DEE261738D700399F46 /* FriendProfileView.swift */; };
 		F53AA8B125F8B6D80045977A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F53AA8B325F8B6D80045977A /* Localizable.strings */; };
 		F53AA8BB25F8BD750045977A /* women.json in Resources */ = {isa = PBXBuildFile; fileRef = F53AA8BA25F8BD750045977A /* women.json */; };
@@ -65,6 +64,7 @@
 		F5B253022620D66600F2C29C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5B253012620D66600F2C29C /* Launch Screen.storyboard */; };
 		F5B253062620DBB500F2C29C /* View+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B253052620DBB500F2C29C /* View+Keyboard.swift */; };
 		F5B253132621A7A400F2C29C /* FIndPeopleCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B253122621A7A400F2C29C /* FIndPeopleCardView.swift */; };
+		F5B2531826220FCB00F2C29C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F5B2531726220FCB00F2C29C /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,7 +95,6 @@
 		F50B03872604AC3400D4EABE /* SUImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUImagePickerView.swift; sourceTree = "<group>"; };
 		F50B038A2605093300D4EABE /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 		F52C5DCC2615DEE300399F46 /* GamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
-		F52C5DEB261643F200399F46 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F52C5DEE261738D700399F46 /* FriendProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendProfileView.swift; sourceTree = "<group>"; };
 		F53AA8B225F8B6D80045977A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F53AA8B525F8B6FA0045977A /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -132,6 +131,7 @@
 		F5B253012620D66600F2C29C /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		F5B253052620DBB500F2C29C /* View+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Keyboard.swift"; sourceTree = "<group>"; };
 		F5B253122621A7A400F2C29C /* FIndPeopleCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FIndPeopleCardView.swift; sourceTree = "<group>"; };
+		F5B2531726220FCB00F2C29C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -288,12 +288,12 @@
 		F58710AB25F7611C00B47462 /* Hidden Women */ = {
 			isa = PBXGroup;
 			children = (
+				F5B2531726220FCB00F2C29C /* GoogleService-Info.plist */,
 				F58D438F2620380C00260758 /* App */,
 				F5A9823125F769DB005EB566 /* LogIn */,
 				F5A9823A25F777E5005EB566 /* Main */,
 				F58D4391262039A900260758 /* Utils */,
 				F58710B525F7611D00B47462 /* Info.plist */,
-				F52C5DEB261643F200399F46 /* GoogleService-Info.plist */,
 				F58710B225F7611D00B47462 /* Preview Content */,
 				F5B253012620D66600F2C29C /* Launch Screen.storyboard */,
 			);
@@ -432,8 +432,8 @@
 				F58710B125F7611D00B47462 /* Assets.xcassets in Resources */,
 				F58710C025F761F500B47462 /* Podfile in Resources */,
 				F53AA8BB25F8BD750045977A /* women.json in Resources */,
-				F52C5DEC261643F200399F46 /* GoogleService-Info.plist in Resources */,
 				F5B253022620D66600F2C29C /* Launch Screen.storyboard in Resources */,
+				F5B2531826220FCB00F2C29C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,7 +689,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = girls4stem.HiddenWomen;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = es.girls4stem.HiddenWomen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -712,7 +713,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = girls4stem.HiddenWomen;
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = es.girls4stem.HiddenWomen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
