@@ -177,7 +177,8 @@ struct SocialView: View {
             .navigationBarHidden(true)
             .navigationBarTitleDisplayMode(.inline)
         }
-        
+        .navigationViewStyle(StackNavigationViewStyle())
+        .padding(0)
     }
 }
 

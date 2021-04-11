@@ -74,6 +74,8 @@ struct WomenView: View {
                     )
                 }
             }
+            .navigationViewStyle(StackNavigationViewStyle())
+            .padding(0)
             if showBanner {
                 BannerView(
                     title: "Only three favourites",

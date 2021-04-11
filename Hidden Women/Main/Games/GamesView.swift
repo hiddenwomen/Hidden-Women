@@ -84,7 +84,9 @@ struct GamesView: View {
             .navigationBarHidden(true)
             .navigationBarTitleDisplayMode(.inline)
         }
-        }
+        .navigationViewStyle(StackNavigationViewStyle())
+        .padding(0)
+    }
 }
 
 struct GamesView_Previews: PreviewProvider {

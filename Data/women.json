@@ -1,5 +1,4 @@
-[
-    {
+[{
         "name": {
             "en": "Ada Lovelace"
         },
@@ -209,6 +208,75 @@
             "en": "Barbara_McClintock",
             "es": "Barbara_McClintock",
             "ca": "Barbara_McClintock"
+        }
+    },
+    {
+        "name": {
+            "en": "Beulah Louise Henry"
+        },
+        "pictures": [
+            "imagen1"
+        ],
+        "bio": {
+            "en": "Beulah Louise Henry was  was an American inventor. In the 1930s, she was given the nickname \"Lady Edison\" for her many inventions. According to the Journal of the Patent Office Society, in 1937, she was known as \"America's leading feminine inventor\". Famed for being a prolific inventor, Henry patented a wide number of products and innovations designed to improve daily life. Her work was so well known and respected that, as of 1937, she had a museum exhibit dedicated to  her in Osaka, Japan, which was seen as an inspiration to aspiring female Japanese inventors.\n",
+            "ca": "Beulah Louise Henry era una inventora estatunidenca.  En la dècada de 1930, va rebre el sobrenom de \"Lady Edison\" per les seves nombroses invencions. Al Diari de la patent Office Society, el 1937, va ser coneguda com \"la principal inventora femenina dels Estats Units\". Afamada per ser una prolífica inventora, Henry va patentar un gran nombre de productes i innovacions dissenyades per millorar la vida diària.  El seu treball era tan conegut i respectat que, a partir de 1937, tenia una exposició de museu dedicada a ella a Osaka, Japó, que va ser vista com una inspiració per a inventores del Japó.\n",
+            "es": "Beulah Louise Henry era una inventora estadounidense. En la década de 1930, recibió el apodo de \"Lady Edison\" por sus múltiples inventos. En \"the Journal of the Patent Office Society\", en 1937, fue reconocida como \"la principal inventora femenina de EEUU\". Afamado por ser una prolífica inventora, Henry patentó un gran número de productos e innovaciones disenyadas para mejorar la vida diaria. Su trabajo fue tan reconocido i respetado que, en 1937, tuvo una exposición de museo dedicada a ella en Osaka, Japón, que fue vista como inspiración para inventoras japonesas.\n"
+        },
+        "birthYear": {
+            "en": "1887"
+        },
+        "deathYear": {
+            "en": "1973"
+        },
+        "awards": {
+            "en": [
+                "National Inventors Hall of Fame"
+            ],
+            "es": [
+                "National Inventors Hall of Fame"
+            ],
+            "ca": [
+                "National Inventors Hall of Fame"
+            ]
+        },
+        "achievements": {
+            "en": [
+                "Inventor of the bobbin-free sewing machine",
+                "Inventor of the vacuum ice cream freezer"
+            ],
+            "es": [
+                "Inventora de la máquina de coser sin bobinas",
+                "Inventora de la máquina congeladora de helados por vacío"
+            ],
+            "ca": [
+                "Inventora de la màquina de cosir sense bobines",
+                "Inventora del congelador per fer gelats per buit"
+            ]
+        },
+        "fields": {
+            "en": [
+                "Inventor"
+            ],
+            "es": [
+                "Inventora"
+            ],
+            "ca": [
+                "Inventora"
+            ]
+        },
+        "nationalities": {
+            "en": [
+                "American"
+            ],
+            "es": [
+                "Estadounidense"
+            ],
+            "ca": [
+                "Nord-americana"
+            ]
+        },
+        "wikipedia": {
+            "en": "Beulah_Louise_Henry"
         }
     },
     {
