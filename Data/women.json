@@ -1,4 +1,5 @@
-[{
+[
+    {
         "name": {
             "en": "Ada Lovelace"
         },
@@ -443,6 +444,77 @@
             "en": "Caroline_Herschel",
             "es": "Carolina_Herschel",
             "ca": "Caroline_Herschel"
+        }
+    },
+    {
+        "name": {
+            "en": "Carol Greider"
+        },
+        "pictures": [
+            "imagen1"
+        ],
+        "bio": {
+            "en": "Carol Widney Greider is an American molecular biologist and Nobel laureate. She joined the University of California, Santa Cruz as a Distinguished Professor in the department of molecular, cell, and developmental biology in October, 2020. Greider discovered the enzyme telomerase in 1984, while she was a graduate student of Elizabeth Blackburn at the University of California, Berkeley. Greider pioneered research on the structure of telomeres, the ends of the chromosomes. She was awarded the 2009 Nobel Prize for Physiology or Medicine, along with Blackburn and Jack W. Szostak, for their discovery that telomeres are protected from progressive shortening by the enzyme telomerase.\n",
+            "ca": "Carol Widney Greider és una biòloga molecular estatunidenca i premi Nobel.  Es va incorporar a la Universitat de Califòrnia, Santa Cruz com a professora distingida al departament de biologia molecular, cel·lular i de desenvolupament a l'octubre de 2020.  Greider va descobrir l'enzim telomerasa el 1984, mentre era estudiant de postgrau de Elizabeth Blackburn a la Universitat de Califòrnia, Berkeley.  Greider va ser pionera en la recerca sobre l'estructura dels telòmers, els extrems dels cromosomes.  Ella  va rebre el Premi Nobel de Fisiologia o Medicina el 2009, juntament amb Blackburn i Jack W. Szostak, pel seu descobriment que els telòmers estan protegits de l'escurçament progressiu per l'enzim telomerasa.\n",
+            "es": "Carol Widney Greider es una bióloga molecular estadounidense y premio Nobel. Se incorporó en la Universidad de California, Santa Cruz como profesora distinguida en el departamento de biología molecular, celular y de desarrollo en octubre de 2020. Greider descubrió la enzima telomerasa el 1984, mientras era estudiante de posgrado de Elizabeth Blackburn en la Universidad de California, Berkeley. Greider fue pionera en la investigación sobre la estructura de los telómeros, los extremos de los cromosomas. Ella recibió el premio Nobel de Fisiología o Medicina el 2009, junto con Blackburn y Jack W. Szostak, por su descubrimiento de que los telómeros están protegidos del acortamiento progresivo por la enzima telomerasa.\n"
+        },
+        "birthYear": {
+            "en": "1961"
+        },
+        "deathYear": {
+            "en": ""
+        },
+        "awards": {
+            "en": [
+                "Albert Lasker prize (2006)",
+                "Nobel Prize in Physiology or Medicine (2009)"
+            ],
+            "es": [
+                "Premio Albert Lasker (2006)",
+                "Premio Nobel en Fisiología o Medicina (2009)"
+            ],
+            "ca": [
+                "Premi Albert Lasker (2006)",
+                "Premi Nobel en Fisiología o Medicina (2009)"
+            ]
+        },
+        "achievements": {
+            "en": [
+                "Discovery of telomerase"
+            ],
+            "es": [
+                "Descubrimiento de la telomerasa"
+            ],
+            "ca": [
+                "Descobriment de la telomerasa"
+            ]
+        },
+        "fields": {
+            "en": [
+                "Molecular biologist"
+            ],
+            "es": [
+                "Biologa molecular"
+            ],
+            "ca": [
+                "Biòloga molecular"
+            ]
+        },
+        "nationalities": {
+            "en": [
+                "American"
+            ],
+            "es": [
+                "Norteamericana"
+            ],
+            "ca": [
+                "Nord-americana"
+            ]
+        },
+        "wikipedia": {
+            "en": "Carol_W._Greider",
+            "es": "Carol_Greider",
+            "ca": "Carol_W._Greider"
         }
     },
     {
@@ -1109,7 +1181,7 @@
             "GertrudeElion3"
         ],
         "bio": {
-            "en": "Gertrude Belle Elion was a biochemist and farmacologist who discovered treatments for leukemia, malaria and urinary infections. In 1944, she got a job as an assistant to George H Hitchings at the Burroughs-Wellcome farmaceutical company. Elion and Hitchings used the biochemical differences between normal human cells and pathogens to design new drugs that could kill or inhibit the reproduction of particular pathogens without harming human cells. They synthesized two derivatives that inhibited the prine biosynthesis. It is considered the first effective anticancer drug against leukemia in children, augmenting survival from 3 to 12 months. They also discovered drugs to fight malaria and immuno-suprresive agents for organ transplants.",
+            "en": "Gertrude Belle Elion was a biochemist and farmacologist who discovered treatments for leukemia, malaria and urinary infections. In 1944, she got a job as an assistant to George H. Hitchings at the Burroughs-Wellcome farmaceutical company. Elion and Hitchings used the biochemical differences between normal human cells and pathogens to design new drugs that could kill or inhibit the reproduction of particular pathogens without harming human cells. They synthesized two derivatives that inhibited the prine biosynthesis. It is considered the first effective anticancer drug against leukemia in children, augmenting survival from 3 to 12 months. They also discovered drugs to fight malaria and immuno-suprresive agents for organ transplants.",
             "es": "Gertrude Belle Elion fue una bioquímica y farmacóloga que descubrió tratamientos para la leucemia, la malaria e infecciones urinarias. En 1944 pudo acceder a un trabajo como ayudante de George H. Hitchings en la compañía farmacéutica Burroughs-Wellcome. Elion y Hitchings utilizaron las diferencias bioquímicas entre células humanas normales y patógenas (agentes causantes de enfermedades) para diseñar fármacos que pudieran eliminar o inhibir la reproducción de patógenos particulares sin dañar las células huéspedes. Sintetizaron dos derivados que inhibían la biosíntesis purínica. Considerado el primer anticanceroso eficaz en la lucha contra la leucemia infantil, permitió aumentar la supervivencia de los niños de 3 a 12 meses. También descubrieron medicamentos contra la malaria e inmunodepresores para pacientes receptores de trasplantes. ",
             "ca": "Gertrude Belle Elion va ser una bioquímica i farmacòloga que va descobrir tractaments per a la leucèmia, la malària i infeccions urinàries. El 1944 va poder accedir a una feina com a ajudant de George H. Hitchings en la companyia farmacèutica Burroughs-Wellcome. Elion i Hitchings van utilitzar les diferències bioquímiques entre cèl·lules humanes normals i patògens (agents causants de malalties) per dissenyar fàrmacs que poguessin eliminar o inhibir la reproducció de patògens particulars sense danyar les cèl·lules hostes. Van sintetitzar dos derivats que inhibien la biosíntesi purínica. Considerat el primer anticancerós eficaç en la lluita contra la leucèmia infantil, va permetre augmentar la supervivència dels nens de 3 a 12 mesos. També van descobrir medicaments contra la malària i immunodepressors per a pacients receptors de trasplantaments."
         },
@@ -1121,13 +1193,22 @@
         },
         "awards": {
             "en": [
-                "Nobel prize in Medicine or Physiology (1988)"
+                "Garvan-Olin Medal (1968)",
+                "Nobel prize in Medicine or Physiology (1988)",
+                "National Medal of Science (1991)",
+                "Lemelson-MIT Prize (1997)"
             ],
             "es": [
-                "Premio Nóbel en Medicina o Fisiología (1988)"
+                "Medalla Garvan-Olin (1968)",
+                "Premio Nóbel en Medicina o Fisiología (1988)",
+                "Medalla Nacional de la Ciencia (1991)",
+                "Premio Lemelson-MIT (1997)"
             ],
             "ca": [
-                "Premi Nobel en Medicina o Fisiologia (1988)"
+                "Medalla Garvan-Olin (1968)",
+                "Premi Nobel en Medicina o Fisiologia (1988)",
+                "Medalla Nacional de la Ciència (1991)",
+                "Premi Lemelson-MIT (1997)"
             ]
         },
         "fields": {
@@ -1146,13 +1227,19 @@
         },
         "achievements": {
             "en": [
-                "Co-discoverer of the first anticancer treatment"
+                "Co-discoverer of the first anticancer treatment",
+                "Innovative methods of rational drug design",
+                "Development of treatments for leukemia, malaria and herpes"
             ],
             "es": [
-                "Codescubridora del primer tratamiento anticáncer"
+                "Codescubridora del primer tratamiento anticáncer",
+                "Métodos innovadores de diseño racional de medicamentos",
+                "Desarrollo de tratamientos para la leucemia, malaria y herpes"
             ],
             "ca": [
-                "Codescobridora del primer tratament anticàncer"
+                "Codescobridora del primer tratament anticàncer",
+                "Métodes innovadors de disseny racional de medicaments",
+                "Desenvolupament de tractaments per a la leucèmia, malèria i herpes"
             ]
         },
         "nationalities": {
@@ -2585,6 +2672,75 @@
     },
     {
         "name": {
+            "en": "María Blasco Marhuenda"
+        },
+        "pictures": [
+            "MariaBlasco1",
+            "MariaBlasco2"
+        ],
+        "bio": {
+            "en": "María Blasco is a Spanish molecular biologist specializing in telomeres and telomerase. She is the current director of the Spanish National Cancer Research Centre (Centro Nacional de Investigaciones Oncológicas, CNIO).\n",
+            "ca": "María Blasco és una científica espanyola especialitzada en els telòmers i la telomerasa. Des del 22 de juny de 2011 dirigeix a Espanya el Centro Nacional de Investigaciones Oncológicas (CNIO).\n",
+            "es": "María Blasco es una bióloga molecular y científica española especializada en los telómeros y la telomerasa. ​Desde el 22 de junio de 2011 dirige en España el Centro Nacional de Investigaciones Oncológicas (CNIO). \n \n"
+        },
+        "birthYear": {"en": "1965"},
+        "deathYear": {"en": ""},
+        "awards": {
+            "en": [
+                "EMBO Gold Medal Heidelberg (2004)",
+                "Jaume I Research Prize (2007)",
+                "Körber European Science Award (2008)"
+            ],
+            "es": [
+                "Medalla de oro EMBO Heidelberg (2004)",
+                "Premio Jaume I a la Investigación (2007)",
+                "Premio Europeo de Ciencia Körber (2008)"
+            ],
+            "ca": [
+                "Medalla d'or EMBO Heidelberg (2004)",
+                "Premi Jaume I a la Recerca (2007)",
+                "Premi Europeu de Ciència Körber (2008)"
+            ]
+        },
+        "achievements": {
+            "en": [
+                "Telomeres research"
+            ],
+            "es": [
+                "Investigación telomeros"
+            ],
+            "ca": [
+                "Investigació telòmers"
+            ]
+        },
+        "fields": {
+            "en": [
+                "Molecular biologist"
+            ],
+            "es": [
+                "Bióloga molecular"
+            ],
+            "ca": [
+                "Biòloga molecular"
+            ]
+        },
+        "nationalities": {
+            "en": [
+                "Spanish"
+            ],
+            "es": [
+                "Española"
+            ],
+            "ca": [
+                "Espanyola"
+            ]
+        },
+        "wikipedia": {
+            "en": "María_Blasco_Marhuenda"
+        }
+    },
+    {
+        "name": {
             "en": "Maria Goeppert-Mayer"
         },
         "pictures": [
@@ -3182,6 +3338,74 @@
             "en": "Marion_Cameron_Gray",
             "es": "Marion_Cameron_Gray",
             "ca": "Marion_Cameron_Gray"
+        }
+    },
+    {
+        "name": {
+            "en": "Martha Coston"
+        },
+        "pictures": [
+            "imagen1"
+        ],
+        "bio": {
+            "en": "Martha Coston was an American inventor and businesswoman, known for her invention of the Coston flare, a signaling device at sea. The flares were initially used for military purposes by the United States Navy and later by Maritime Rescue worldwide. On April 5, 1859, she was granted US Patent No. 23,536 for a night pyrotechnic signal and code system (the patent was granted to her as her late husband's administrator, who passed away in 1848 and was named as the inventor). In 1871, Coston obtained a patent in her own name, patent number 115,935 for Improved Pyrotechnic Night Signals.",
+            "es": "Martha Coston fue una inventora y empresaria estadounidense, conocida por su invención de la bengala Coston, un dispositivo de señalización en el mar. Las bengalas fueron utilizadas inicialmente con fines militares por la Armada de Estados Unidos y posteriormente por Salvamento Marítimo a nivel mundial. El 5 de abril de 1859, se le concedió la patente número 23.536 de EE.UU. para una señal pirotécnica nocturna y un sistema de código (la patente le fue concedida como administradora de su difunto esposo, muerto en 1848, que fue nombrado como inventor). En 1871, Coston obtuvo una patente en su propio nombre, la patente número 115.935 de Mejora en Señales Nocturnas Pirotécnicas. ",
+            "ca": "Martha Coston va ser una inventora i empresària nord-americana, coneguda per la seua invenció de la bengala Coston, un dispositiu de senyalització en la mar. Les bengales van ser utilitzades inicialment amb finalitats militars per l'Armada dels Estats Units i posteriorment per Salvament Marítim a nivell mundial. El 5 d'abril de 1859 se li va concedir la patent número 23.536 dels EUA per a un senyal pirotècnic nocturn i un sistema de codi (la patent li va ser concedida com a administradora del seu difunt marit, mort en 1848, que va ser nomenat oficialment com l'inventor). En 1871, Coston va obtindre una patent en el seu propi nom, la patent número 115.935 de Millora en Senyals Nocturns Pirotècnics."
+        },
+        "birthYear": {
+            "en": "1826"
+        },
+        "deathYear": {
+            "en": "1904"
+        },
+        "awards": {
+            "en": [
+                "National Inventors Hall of Fame"
+            ],
+            "es": [
+                "National Inventors Hall of Fame"
+            ],
+            "ca": [
+                "National Inventors Hall of Fame"
+            ]
+        },
+        "fields": {
+            "en": [
+                "Inventor"
+            ],
+            "es": [
+                "Inventor"
+            ],
+            "ca": [
+                "Inventor"
+            ]
+        },
+        "achievements": {
+            "en": [
+                "Inventor of the Coston flare"
+            ],
+            "es": [
+                "Inventora de la bengala Coston"
+            ],
+            "ca": [
+                "Inventora de la bengala Coston"
+            ]
+        },
+        "nationalities": {
+            "en": [
+                "American"
+            ],
+            "es": [
+                "Estadounidense"
+            ],
+            "ca": [
+                "Nord-americana"
+            ]
+        },
+        "wikipedia": {
+            "en": "Martha_Coston",
+            "es": "Martha_Coston",
+            "ca": "Martha_Coston"
         }
     },
     {
