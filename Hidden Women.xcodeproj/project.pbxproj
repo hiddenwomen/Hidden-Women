@@ -250,16 +250,11 @@
 			isa = PBXGroup;
 			children = (
 				F56A7C9C260F241A003C0A20 /* SocialView.swift */,
-				CB6A103B260F4E520052D58E /* FindPeopleView.swift */,
-				F5B253122621A7A400F2C29C /* FIndPeopleCardView.swift */,
-				F52C5DEE261738D700399F46 /* FriendProfileView.swift */,
-				F56A7C9F260F438F003C0A20 /* MyFriendsView.swift */,
-				F56A7CA2260F4424003C0A20 /* RankingView.swift */,
-				CB6A1038260F4CEE0052D58E /* MakeNewFriendsView.swift */,
-				F504D8812610A46D00AB1D08 /* FriendRequestsView.swift */,
-				F58D4380261B8BAF00260758 /* ChatView.swift */,
-				F58D4387261F589E00260758 /* Chat.swift */,
-				F58D438B261F615B00260758 /* ChatMessage.swift */,
+				F5B2531C2622EBA200F2C29C /* Ranking */,
+				F5B2531D2622EBB400F2C29C /* MyFriends */,
+				F5B2531E2622EBBE00F2C29C /* SendFriendRequest */,
+				F5B2531F2622EBCC00F2C29C /* PeopleLikeMe */,
+				F5B253202622EBD600F2C29C /* FriendRequests */,
 			);
 			path = Social;
 			sourceTree = "<group>";
@@ -288,6 +283,7 @@
 		F58710AB25F7611C00B47462 /* Hidden Women */ = {
 			isa = PBXGroup;
 			children = (
+				F58710B025F7611D00B47462 /* Assets.xcassets */,
 				F5B2531726220FCB00F2C29C /* GoogleService-Info.plist */,
 				F58D438F2620380C00260758 /* App */,
 				F5A9823125F769DB005EB566 /* LogIn */,
@@ -348,7 +344,6 @@
 				F5A9823725F7722C005EB566 /* SignupView.swift */,
 				F53AA8C125FA0EA70045977A /* GuestWarningView.swift */,
 				5AEF0B1E25FC94F1007983CF /* ResetPasswordView.swift */,
-				F58710B025F7611D00B47462 /* Assets.xcassets */,
 			);
 			path = LogIn;
 			sourceTree = "<group>";
@@ -364,6 +359,59 @@
 				CBF698A2261DB40A00776FF7 /* AboutUs */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		F5B2531C2622EBA200F2C29C /* Ranking */ = {
+			isa = PBXGroup;
+			children = (
+				F56A7CA2260F4424003C0A20 /* RankingView.swift */,
+			);
+			path = Ranking;
+			sourceTree = "<group>";
+		};
+		F5B2531D2622EBB400F2C29C /* MyFriends */ = {
+			isa = PBXGroup;
+			children = (
+				F56A7C9F260F438F003C0A20 /* MyFriendsView.swift */,
+				F52C5DEE261738D700399F46 /* FriendProfileView.swift */,
+				F5B253212622EC2700F2C29C /* Chat */,
+			);
+			path = MyFriends;
+			sourceTree = "<group>";
+		};
+		F5B2531E2622EBBE00F2C29C /* SendFriendRequest */ = {
+			isa = PBXGroup;
+			children = (
+				CB6A1038260F4CEE0052D58E /* MakeNewFriendsView.swift */,
+			);
+			path = SendFriendRequest;
+			sourceTree = "<group>";
+		};
+		F5B2531F2622EBCC00F2C29C /* PeopleLikeMe */ = {
+			isa = PBXGroup;
+			children = (
+				CB6A103B260F4E520052D58E /* FindPeopleView.swift */,
+				F5B253122621A7A400F2C29C /* FIndPeopleCardView.swift */,
+			);
+			path = PeopleLikeMe;
+			sourceTree = "<group>";
+		};
+		F5B253202622EBD600F2C29C /* FriendRequests */ = {
+			isa = PBXGroup;
+			children = (
+				F504D8812610A46D00AB1D08 /* FriendRequestsView.swift */,
+			);
+			path = FriendRequests;
+			sourceTree = "<group>";
+		};
+		F5B253212622EC2700F2C29C /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				F58D4380261B8BAF00260758 /* ChatView.swift */,
+				F58D4387261F589E00260758 /* Chat.swift */,
+				F58D438B261F615B00260758 /* ChatMessage.swift */,
+			);
+			path = Chat;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -44,7 +44,7 @@
 "False" = "Fals";
 "Favourite Hidden Women:" = "Dones Ocultes favorites"; // lo vamos a poner con mayusculas o minisculas??
 "Find people like me" = "Trobar gent com jo";
-"Find people with some of your favourite Hidden Women" = "Troba gent amb les mateixes Dones Ocultes favorites";
+"Find people with similar favourite Hidden Women" = "Troba gent amb les mateixes Dones Ocultes favorites";
 "Friend request sent" = "Sol·licitud d'amistad enviada";
 "Friend requests..." = "Sol·licituts d'amistat...";
 "Friend requests" = "Sol·licituds d'amistat";
@@ -103,6 +103,7 @@
 "Type here..." = "Escriu ací...";
 "User name..." = "Nom d'usuària...";
 "We are GIRLS4STEM, a team from Castellón, Spain, and we want to promote women visibility." = "Som GIRLS4STEM, un equip de Castelló, i volem promoure la visibilitat de les dones.";
+"We are very thankful to everybody involved in Wikipedia, a resource that has been invaluable to build this application and to us. So many things to learn from it!" = "Estem molt agraïdes a totes les persones implicades en Wikipedia, un recurs que ha estat valuosísim per a construir aquesta aplicació i per a nosaltres mateix. ¡Tantes coses per aprendre!";
 "We haven't found anybody with favourite Hidden Women in common with you." = "No hem trobat a ningú amb Dones Ocultes favorites en comú amb les teues.";
 "We want to thank Technovation Girls for empowering young girls like us." = "Volem agrair a Technovation Girls per empoderar a xiques joves com nosaltres.";
 "We would also like to thank these institutions for their support:" = "També volem agrair el suport d'aquestes institucions:";

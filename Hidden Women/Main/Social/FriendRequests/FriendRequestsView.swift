@@ -14,7 +14,7 @@ struct FriendRequestsView: View {
     var body: some View {
         HStack {
             Text("Friend requests...")
-                .font(.title)
+                .font(.largeTitle)
         }
         Divider()
         ScrollView {
@@ -22,8 +22,8 @@ struct FriendRequestsView: View {
                 ForEach(profile.friendRequests, id:\.self) { friendRequest in
                     VStack {
                         Text(friendRequest)
-                            .fontWeight(.bold)
-                        HStack {
+                            .font(.title)
+                        VStack {
                             Button(action:  {
                                 getUserId(forEmail: friendRequest, onError: { error in }) { document in
                                     let data = document.data() ?? ["userId": ""]
@@ -39,8 +39,8 @@ struct FriendRequestsView: View {
                                         .fontWeight(.bold)
                                 }
                                 .importantButtonStyle()
-                                .importantButtonStyle()
                             }
+                            .padding()
                             Button(action:  {
                                 profile.rejectFriendRequest(friendRequest: friendRequest)
                             }) {

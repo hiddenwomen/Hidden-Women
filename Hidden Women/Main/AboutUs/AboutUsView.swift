@@ -17,7 +17,7 @@ struct AboutUsView: View {
     }
     
     var body: some View {
-        ZStack {
+        VStack {
             ScrollView {
                 VStack(alignment: .leading) {
                     Group {
@@ -93,7 +93,14 @@ struct AboutUsView: View {
                                 Spacer()
                             }
                         }
-                        
+                      
+                        VStack(alignment: .leading) {
+                            Text("We are very thankful to everybody involved in Wikipedia, a resource that has been invaluable to build this application and to us. So many things to learn from it!")
+                                .lineLimit(nil)
+                                .fixedSize(horizontal: false, vertical: true)
+                                .padding(.vertical)
+                                .layoutPriority(1)
+                        }
                         
                         VStack (alignment: .leading){
                             Text("We would also like to thank these institutions for their support:")
