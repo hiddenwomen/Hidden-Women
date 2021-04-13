@@ -147,7 +147,11 @@ struct AboutUsView: View {
                 .padding()
             }
             if showBanner {
-                BannerView(title: "Thank you!", text: "Your comment has been sent to GIRLS4STEM.", closeBanner: { showBanner = false })
+                BannerView(
+                    title: "Thank you!",
+                    text: "Your comment has been sent to GIRLS4STEM.",
+                    closeBanner: { showBanner = false }
+                )
             }
         }
         .onTapGesture {

@@ -17,9 +17,9 @@ struct BannerView: View {
         VStack {
             HStack {
                 VStack(alignment: .leading, spacing: 2) {
-                    Text(title)
+                    Text(NSLocalizedString(title, comment: ""))
                         .bold()
-                    Text(text)
+                    Text(NSLocalizedString(text, comment: ""))
                         .font(Font.system(size: 15))
                 }
                 Spacer()

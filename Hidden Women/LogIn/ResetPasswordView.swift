@@ -72,7 +72,10 @@ struct ResetPasswordView: View {
             )
         }
             if showBanner {
-                BannerView(title: "Email sent", text: "An email has been sent with instructions on how to reset your password") {
+                BannerView(
+                    title: "Email sent",
+                    text: "An email has been sent with instructions on how to reset your password"
+                 ) {
                     showBanner = false
                     currentPage = .login
                 }
