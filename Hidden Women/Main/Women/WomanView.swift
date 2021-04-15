@@ -128,7 +128,7 @@ struct WomanView: View {
                     .padding()
                 HStack {
                     Text("To know more, go to")
-                    Link("Wikipedia",
+                    Link(NSLocalizedString("Wikipedia", comment: ""),
                          destination: URL(string: woman.wikipediaUrl)!
                     )
                 }

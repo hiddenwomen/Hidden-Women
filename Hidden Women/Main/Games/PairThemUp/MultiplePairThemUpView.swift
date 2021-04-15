@@ -19,7 +19,7 @@ struct PairThemUpConfig {
 }
 
 let pairThemUpConfig = PairThemUpConfig(
-    games: 3,
+    games: 1,
     numberOfWomen: 5,
     availableTime: 20
 )
@@ -126,7 +126,7 @@ struct MultiplePairThemUpView: View {
                                             VStack(alignment: .leading) {
                                                 HStack {
                                                     Image(systemName: "play")
-                                                    Text("Pair them up").bold() + Text(" \(m+1)").bold()
+                                                    Text("Pair them up").bold() + Text(pairThemUpConfig.games > 1 ? " \(m+1)" : "").bold()
                                                 }
                                                 ForEach(0..<mistakes[m].count) { i in
                                                     HStack {

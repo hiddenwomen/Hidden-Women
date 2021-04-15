@@ -42,9 +42,10 @@
 "Error saving profile data" = "Error en desar les dades del perfil";
 "Error setting favorites" = "Error en establir les favorites";
 "False" = "Fals";
-"Favourite Hidden Women:" = "Dones Ocultes favorites"; // lo vamos a poner con mayusculas o minisculas??
+"Favourite Hidden Women:" = "Dones Ocultes favorites";
 "Find people like me" = "Trobar gent com jo";
 "Find people with similar favourite Hidden Women" = "Troba gent amb les mateixes Dones Ocultes favorites";
+"Find possible friends" = "Troba a possibles amigues";
 "Friend request sent" = "Sol·licitud d'amistad enviada";
 "Friend requests..." = "Sol·licituts d'amistat...";
 "Friend requests" = "Sol·licituds d'amistat";
@@ -103,7 +104,7 @@
 "Type here..." = "Escriu ací...";
 "User name..." = "Nom d'usuària...";
 "We are GIRLS4STEM, a team from Castellón, Spain, and we want to promote women visibility." = "Som GIRLS4STEM, un equip de Castelló, i volem promoure la visibilitat de les dones.";
-"We are very thankful to everybody involved in Wikipedia, a resource that has been invaluable to build this application and to us. So many things to learn from it!" = "Estem molt agraïdes a totes les persones implicades en Wikipedia, un recurs que ha estat valuosísim per a construir aquesta aplicació i per a nosaltres mateix. ¡Tantes coses per aprendre!";
+"We are very thankful to everybody involved in Wikipedia, a resource that has been invaluable to build this application and to us. So many things to learn from it! (Copyright disclaimer: Pictures of Hidden Women have been taken from Wikipedia)." = "Estem molt agraïdes a totes les persones implicades en Viquipèdia, un recurs que ha estat valuosísim per a construir aquesta aplicació i per a nosaltres mateix. ¡Tantes coses per aprendre! (Avís sobre copyright: Les fotos de Dones Ocultes s'han extret de Viquipèdia).";
 "We haven't found anybody with favourite Hidden Women in common with you." = "No hem trobat a ningú amb Dones Ocultes favorites en comú amb les teues.";
 "We want to thank Technovation Girls for empowering young girls like us." = "Volem agrair a Technovation Girls per empoderar a xiques joves com nosaltres.";
 "We would also like to thank these institutions for their support:" = "També volem agrair el suport d'aquestes institucions:";
@@ -123,3 +124,4 @@
 "You ran out of time" = "T'has quedat sense temps";
 "You said: " = "Tu has dit: ";
 "Your answer: %@" = "La teua resposta: %@";
+"Wikipedia" = "Viquipèdia";

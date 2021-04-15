@@ -27,7 +27,7 @@ struct MultipleChronolineView: View {
     @State var shownChronoline: Int = 0
     @State var progress: Float = 0.0
     @State var chronoline = chronolineGenerator(women: [], numberOfWomen: 0, x: CGFloat(0.0), height: CGFloat(0.0))
-    let numberOfChronolines = 3
+    let numberOfChronolines = 1
     @State var scoreUpdated: Bool = false
     @State var showTimer: Bool = true
     @State var timeLeft: Int = chronolineTotalTime
@@ -112,9 +112,11 @@ struct MultipleChronolineView: View {
                             VStack (alignment: .leading) {
                                 ForEach (mistakes) { mistake in
                                     VStack(alignment: .leading) {
-                                        HStack {
-                                            Image(systemName: "play")
-                                            Text("Chronoline").bold() + Text(" \(mistake.chronolineNumber)").bold()
+                                        if numberOfChronolines > 1 {
+                                            HStack {
+                                                Image(systemName: "play")
+                                                Text("Chronoline").bold() + Text(" \(mistake.chronolineNumber)").bold()
+                                            }
                                         }
                                         ForEach(0..<mistake.mismatches.count) { i in
                                             HStack {

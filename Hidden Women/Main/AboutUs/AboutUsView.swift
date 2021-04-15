@@ -95,7 +95,7 @@ struct AboutUsView: View {
                         }
                       
                         VStack(alignment: .leading) {
-                            Text("We are very thankful to everybody involved in Wikipedia, a resource that has been invaluable to build this application and to us. So many things to learn from it!")
+                            Text("We are very thankful to everybody involved in Wikipedia, a resource that has been invaluable to build this application and to us. So many things to learn from it! (Copyright disclaimer: Pictures of Hidden Women have been taken from Wikipedia).")
                                 .lineLimit(nil)
                                 .fixedSize(horizontal: false, vertical: true)
                                 .padding(.vertical)
