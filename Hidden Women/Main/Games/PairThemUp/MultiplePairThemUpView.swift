@@ -59,6 +59,14 @@ struct MultiplePairThemUpView: View {
                         Text("_PairThemUp Help_")
                             .padding()
                         Button(action: {
+                            pairThemUp = pairThemUpGenerator(
+                                numberOfWomen: pairThemUpConfig.numberOfWomen,
+                                women: women,
+                                xName: UIScreen.width - 70,
+                                xPicture: 70,
+                                firstY: 70,
+                                lastY: UIScreen.height - 200
+                            )
                             currentMultiplePairThemUpPage = .question
                             scoreUpdated = false
                         }) {

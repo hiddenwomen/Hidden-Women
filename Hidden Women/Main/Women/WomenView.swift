@@ -13,6 +13,7 @@ struct WomenView: View {
     @State var showError = false
     @State var errorMessage = ""
     @State var showBanner: Bool = false
+    @State var showEasterEgg: Bool = false
     
     var body: some View {
         ZStack {
@@ -85,6 +86,10 @@ struct WomenView: View {
                 }
             }
         }
+        .sheet(isPresented: $showEasterEgg) {
+            Text("You found an easter egg!")
+        }
+
     }
 }
 
