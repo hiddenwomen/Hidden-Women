@@ -25,17 +25,17 @@ struct AboutUsView: View {
                             .font(.largeTitle)
                         HStack {
                             Spacer()
-                            Image("logo_nombre")
+                            Image("GIRLS4STEM")
                                 .resizable()
                                 .scaledToFit()
-                                .frame(height: 150)
+                                .frame(height: 200)
                             Spacer()
                         }
-                        Text("We are GIRLS4STEM, a team from Castellón, Spain, and we want to promote women visibility.")
+                        Text("We are the GIRLS4STEM team (Claudia (16), Leire (16), and Mireia (13)), from Castellón, Spain, and we want to promote women visibility.")
                             .multilineTextAlignment(.leading)
                             .lineLimit(nil)
                             .fixedSize(horizontal: false, vertical: true)
-                            .padding(.vertical)
+                            .padding(.bottom)
                             .layoutPriority(1)
                     }
                     Group {
@@ -103,11 +103,21 @@ struct AboutUsView: View {
                         }
                         
                         VStack (alignment: .leading){
-                            Text("We would also like to thank these institutions for their support:")
+                            Text("We would also like to thank these institutions and companies for their support:")
                                 .lineLimit(nil)
                                 .fixedSize(horizontal: false, vertical: true)
                                 .padding(.vertical)
                                 .layoutPriority(1)
+                        }
+                        Link(destination: URL(string: "https://cuatroochenta.com/")!) {
+                            HStack {
+                                Spacer()
+                                Image("cuatrochenta")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(height: 100)
+                                Spacer()
+                            }
                         }
                         Link(destination: URL(string: "http://isonomia.uji.es/")!) {
                             HStack {
