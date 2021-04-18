@@ -151,7 +151,7 @@ class Profile: ObservableObject, Identifiable {
                     print("Error fetching document: \(error)")
                     return
                 } else if let document = document {
-                    print("--- desde listenToAndUpdateProfile")
+                    print("--- desde listenToAndUpdateProfile: \(andFriends)")
                     self.from(document: document, rankingUpdater: rankingUpdater, andFriends: andFriends)
                 }
             }

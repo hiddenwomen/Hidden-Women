@@ -101,7 +101,7 @@ struct MultipleChronolineView: View {
                             }
                         }
                         .padding()
-                        if mistakes.count == 0 {
+                        if mistakes.allSatisfy {$0.mismatches.count == 0} {
                             Text("Perfect score!")
                                 .font(.title)
                         } else {

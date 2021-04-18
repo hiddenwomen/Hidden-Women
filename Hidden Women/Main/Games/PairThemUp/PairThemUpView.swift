@@ -88,13 +88,16 @@ struct PairThemUpView: View {
                             .background(Circle().foregroundColor(pairThemUpGame.womanNames[i].backgroundColor))
                             .frame(width: min(geo.size.width / 4, 120) + 10)
                             .position(pairThemUpGame.womanNames[i].position)
-                        Text(pairThemUpGame.womanNames[i].name)
-                            .bold()
-                            .foregroundColor(Color("Morado"))
-                            .multilineTextAlignment(.trailing)
-                            .frame(maxWidth: geo.size.width / 4 - 10)
-                            .position(x: pairThemUpGame.womanNames[i].position.x - geo.size.width / 4 - 10, y: pairThemUpGame.womanNames[i].position.y)
-                    }
+                        HStack {
+                            Spacer()
+                            Text(pairThemUpGame.womanNames[i].name.replacingOccurrences(of: " ", with: "\n"))
+                                .bold()
+                                .foregroundColor(Color("Morado"))
+                                .multilineTextAlignment(.trailing)
+                        }
+                        .frame(maxWidth: geo.size.width / 3 - 20)
+                        .position(x: pairThemUpGame.womanNames[i].position.x - geo.size.width / 4 - 20, y: pairThemUpGame.womanNames[i].position.y)
+                }
                     ForEach(0..<pairThemUpGame.womanPictures.count) { i in
                         Image(pairThemUpGame.womanPictures[i].picture)
                             .resizable()
