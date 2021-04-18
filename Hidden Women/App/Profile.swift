@@ -19,11 +19,12 @@ class Profile: ObservableObject, Identifiable {
     @Published var favourites: [String] = []
     @Published var picture: UIImage? = UIImage(named: "unknown")
     @Published var pictureFileName: String = ""
-    @Published var friends: [Profile] = []
+    @Published var friendProfiles: [Profile] = []
+    @Published var friends: [String] = []
     @Published var gameResults: [GameResult] = []
     @Published var friendRequests: [String] = []
     var listener: ListenerRegistration? = nil
-
+    
     var points: Int {
         let limit = Int(Date().timeIntervalSince1970) - oneWeek
         return gameResults.points(limit: limit)
@@ -33,6 +34,7 @@ class Profile: ObservableObject, Identifiable {
         return userId == ""
     }
     
+    @AppStorage("userID") var mainUserID = ""
     var id: UUID = UUID()
     
     init(userId: String, name: String = "", email: String = "", favourites: [String] = [], pictureFileName: String = "", gameResults: [GameResult] = []) {
@@ -51,9 +53,10 @@ class Profile: ObservableObject, Identifiable {
         favourites = []
         picture = UIImage(named: "unknown")
         pictureFileName = ""
-        for friend in friends {
+        for friend in friendProfiles {
             friend.clear()
         }
+        friendProfiles = []
         friends = []
         gameResults = []
         friendRequests = []
@@ -71,18 +74,18 @@ class Profile: ObservableObject, Identifiable {
             "email": email,
             "favourites": favourites,
             "pictureFileName": pictureFileName,
-            "friends": friends.map{$0.userId},
+            "friends": friends,
             "gameResults": gameResults.map{$0.toDict()},
-            "friendRequests": friendRequests
+            "friendRequests": friendRequests,
         ]
     }
     
-    func from(document: DocumentSnapshot, rankingUpdater: RankingUpdater, andFriends: Bool = false) {
+    func from(document: DocumentSnapshot, rankingUpdater: RankingUpdater) {
         let oldPictureFileName = self.pictureFileName
         let oldResultsCount = self.gameResults.count
-
+        
         let data = document.data() ?? ["name": ""]
-
+        
         self.userId = data["userId"] as? String ?? ""
         self.name = data["name"] as? String ?? ""
         self.email = data["email"] as? String ?? ""
@@ -90,24 +93,8 @@ class Profile: ObservableObject, Identifiable {
         self.pictureFileName = data["pictureFileName"] as? String ?? ""
         self.gameResults = (data["gameResults"] as? [[String: Any]] ?? []).map {GameResult.from(dict: $0)}
         self.friendRequests = data["friendRequests"] as? [String] ?? []
-
-        print("ENTRANDO EN FROM para \(userId)")
-
+        self.friends = data["friends"] as? [String] ?? []
         
-        if andFriends {
-            let listOfFriends: Set<String> = Set(data["friends"] as? [String] ?? [])
-            self.friends = Array(listOfFriends.filter{$0 != ""}.map { friendID in
-                print("***** CARGANDO \(friendID)")
-                let friendProfile = Profile(userId: friendID)
-                friendProfile.load(rankingUpdater: rankingUpdater, andFriends: false)
-                friendProfile.listen(rankingUpdater: rankingUpdater)
-                return friendProfile
-            })
-            print("XXXXX1 \(self.userId) -> \(self.friends)")
-        } else {
-            self.friends = []
-        }
-
         if oldResultsCount != self.gameResults.count {
             rankingUpdater.change()
         }
@@ -125,23 +112,36 @@ class Profile: ObservableObject, Identifiable {
             }
         }
         
-        print("XXXXX2 \(self.userId) -> \(self.friends)")
-
+        print("XXXXX2 \(self.userId) -> \(self.friendProfiles)")
     }
     
-    func load(rankingUpdater: RankingUpdater, andFriends: Bool = false) {
+    func load(rankingUpdater: RankingUpdater, onCompletion: @escaping () -> Void) {
         print("!!! loadProfile \(userId)")
         Firestore.firestore()
             .collection("users")
             .document(userId)
             .getDocument { document, error in
                 if let document = document, document.exists {
-                    self.from(document: document, rankingUpdater: rankingUpdater, andFriends: andFriends)
+                    self.from(document: document, rankingUpdater: rankingUpdater)
+                    print("Data from user \(self.userId) loaded")
+                    if self.userId == self.mainUserID {
+                        let knownFriends = Set(self.friendProfiles.map{$0.userId}.filter{$0 != ""})
+                        for friendID in self.friends.filter({ $0 != "" && !knownFriends.contains($0) }) {
+                            print("***** CARGANDO \(friendID)")
+                            let friendProfile = Profile(userId: friendID)
+                            friendProfile.load(rankingUpdater: rankingUpdater, onCompletion: onCompletion)
+                            if self.friendProfiles.allSatisfy( { friendProfile.userId != $0.userId } ) {
+                                friendProfile.listen(rankingUpdater: rankingUpdater, onCompletion: onCompletion)
+                                self.friendProfiles.append(friendProfile)
+                            }
+                        }
+                    }
+                    print("XXXXX1 \(self.userId) -> \(self.friendProfiles)")
                 }
             }
     }
-
-    func listen(rankingUpdater: RankingUpdater, andFriends: Bool = false) {
+    
+    func listen(rankingUpdater: RankingUpdater, onCompletion: @escaping () -> Void) {
         print("!!! Fijo un escuchador para \(userId)")
         listener = Firestore.firestore()
             .collection("users")
@@ -151,8 +151,15 @@ class Profile: ObservableObject, Identifiable {
                     print("Error fetching document: \(error)")
                     return
                 } else if let document = document {
-                    print("--- desde listenToAndUpdateProfile: \(andFriends)")
-                    self.from(document: document, rankingUpdater: rankingUpdater, andFriends: andFriends)
+                    print("--- desde listenToAndUpdateProfile:")
+                    if self.userId == self.mainUserID {
+                        let oldFriends = Set(self.friends)
+                        self.from(document: document, rankingUpdater: rankingUpdater)
+                        let newFriends = Set(self.friends)
+                        if oldFriends != newFriends {
+                            self.load(rankingUpdater: rankingUpdater, onCompletion: onCompletion)
+                        }
+                    }
                 }
             }
     }
@@ -196,34 +203,34 @@ class Profile: ObservableObject, Identifiable {
             .reference()
             .child("\(userId)/\(newFileName)")
             .putData(pictureData, metadata: metadata) { metadata, error in
-            if let error = error {
-                onError(error)
-            } else {
-                print("!!! Grabo por updatePicture")
-                let oldPictureFileName = self.pictureFileName
-                self.pictureFileName = newFileName
-                
-                Firestore.firestore()
-                    .collection("users")
-                    .document(self.userId)
-                    .updateData([
-                        "pictureFileName": newFileName
-                    ]) {
-                        error in
-                        if let error = error {
-                            onError(error)
+                if let error = error {
+                    onError(error)
+                } else {
+                    print("!!! Grabo por updatePicture")
+                    let oldPictureFileName = self.pictureFileName
+                    self.pictureFileName = newFileName
+                    
+                    Firestore.firestore()
+                        .collection("users")
+                        .document(self.userId)
+                        .updateData([
+                            "pictureFileName": newFileName
+                        ]) {
+                            error in
+                            if let error = error {
+                                onError(error)
+                            }
                         }
-                    }
-                Storage.storage()
-                    .reference()
-                    .child("\(self.userId)/\(oldPictureFileName)")
-                    .delete(completion: {error in
-                        if let error = error {
-                            onError(error)
-                        }
-                    })
+                    Storage.storage()
+                        .reference()
+                        .child("\(self.userId)/\(oldPictureFileName)")
+                        .delete(completion: {error in
+                            if let error = error {
+                                onError(error)
+                            }
+                        })
+                }
             }
-        }
     }
     
     func updateName(name: String, onError: @escaping (Error) -> Void) {
@@ -241,7 +248,7 @@ class Profile: ObservableObject, Identifiable {
     
     
     func acceptFriendRequest(friendRequest: String, friendUserId: String, rankingUpdater: RankingUpdater) {
-        friendRequests = friendRequests.filter{$0 != friendRequest} //TODO: EL listener puede que haga esto mismo gratis tras ejecutar la siguiente llamada a Firestore
+        friendRequests = friendRequests.filter{$0 != friendRequest}
         print("!!! Grabo por acceptFriendRequest (en \(userId) y en \(friendUserId))")
         Firestore.firestore()
             .collection("users")
@@ -258,9 +265,11 @@ class Profile: ObservableObject, Identifiable {
             ])
         print("--- desde acceptFriendRequest")
         let friendProfile = Profile(userId: friendUserId)
-        friendProfile.load(rankingUpdater: rankingUpdater)
-        friendProfile.listen(rankingUpdater: rankingUpdater)
-        self.friends.append(friendProfile)
+        friendProfile.load(rankingUpdater: rankingUpdater) {
+            self.friendProfiles = self.friendProfiles.sorted(by: { $0.name < $1.name })
+        }
+        friendProfile.listen(rankingUpdater: rankingUpdater, onCompletion: {})
+        self.friendProfiles.append(friendProfile)
     }
     
     func rejectFriendRequest(friendRequest: String) {
@@ -350,12 +359,24 @@ class Profile: ObservableObject, Identifiable {
                 }
             }
     }
-
+    
+    func sendFriendRequest(destinationId: String, onError: @escaping (Error) -> Void) {
+        print("!!! Grabo por sendFriendRequest a \(destinationId) añadiendo \(self.email)")
+        Firestore.firestore()
+            .collection("users")
+            .document(destinationId)
+            .updateData([
+                "friendRequests": FieldValue.arrayUnion([self.email])
+            ]) { error in
+                if let error = error {
+                    onError(error)
+                }
+            }
+    }
+    
 }
 
 
-
-// Friend-related functions
 
 func getUserId(forEmail: String, onError: @escaping (Error) -> Void, onCompletion: @escaping (DocumentSnapshot) -> Void) {
     print("!!! leo por getUserId")
@@ -371,20 +392,7 @@ func getUserId(forEmail: String, onError: @escaping (Error) -> Void, onCompletio
         }
 }
 
-func sendFriendRequest(destinationId: String, withMyProfile: Profile, onError: @escaping (Error) -> Void) {
-    print("!!! Grabo por sendFriendRequest")
-    Firestore.firestore()
-        .collection("users")
-        .document(destinationId)
-        .updateData([
-            "friendRequests": FieldValue.arrayUnion([withMyProfile.email])
-        ]) {
-            error in
-            if let error = error {
-                onError(error)
-            }
-        }
-}
+
 
 
 

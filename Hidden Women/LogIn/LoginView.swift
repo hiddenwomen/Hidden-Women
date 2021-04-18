@@ -62,8 +62,12 @@ struct LoginView: View {
                             userID = authResult.user.uid
                             profile.userId = userID
                             print("--- desde BOTÓN Sign in")
-                            profile.load(rankingUpdater: rankingUpdater, andFriends: true)
-                            profile.listen(rankingUpdater: rankingUpdater, andFriends: true)
+                            profile.load(rankingUpdater: rankingUpdater) {
+                                profile.friendProfiles = profile.friendProfiles.sorted(by: { $0.name < $1.name })
+                            }
+                            profile.listen(rankingUpdater: rankingUpdater) {
+                                profile.friendProfiles = profile.friendProfiles.sorted(by: { $0.name < $1.name })
+                            }
                             currentPage = .main
                         }
                     }) {

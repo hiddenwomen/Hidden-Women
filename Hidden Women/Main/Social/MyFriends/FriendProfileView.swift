@@ -52,7 +52,7 @@ struct FriendProfileView: View {
                             getUserId(forEmail: friendProfile.email, onError: {error in}) { snapshot in
                                 friendUserId = snapshot["userId"] as? String ?? ""
                                 if friendUserId != "" {
-                                    sendFriendRequest(destinationId: friendUserId, withMyProfile: profile, onError: {error in})
+                                    profile.sendFriendRequest(destinationId: friendUserId, onError: {error in})
                                     showBanner = true
                                 }
                             }

@@ -43,7 +43,7 @@ struct RankingView: View {
             }
         }
         .onAppear {
-            rankedPeople = Array(profile.friends.map{$0})
+            rankedPeople = Array(profile.friendProfiles.map{$0})
             rankedPeople.append(profile)
             rankedPeople.sort(by: {$0.points > $1.points})
             for person in rankedPeople {

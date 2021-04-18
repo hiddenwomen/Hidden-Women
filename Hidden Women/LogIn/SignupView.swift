@@ -72,7 +72,9 @@ struct SignupView: View {
                             profile.clear()
                             userID = authResult.user.uid
                             profile.userId = userID
-                            profile.listen(rankingUpdater: rankingUpdater)
+                            profile.listen(rankingUpdater: rankingUpdater) {
+                                profile.friendProfiles = profile.friendProfiles.sorted(by: { $0.name < $1.name })
+                            }
                             currentPage = .main
                         }
                     } else {

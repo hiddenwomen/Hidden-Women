@@ -50,12 +50,15 @@ struct Hidden_WomenApp: App {
                 .environmentObject(profile)
                 .environmentObject(rankingUpdater)
                 .onAppear {
-                    print("EMPIEZA EL ESPECTACULO")
                     if userID != "" {
                         print("--- Carga del profile")
                         profile.userId = userID
-                        profile.load(rankingUpdater: rankingUpdater, andFriends: true)
-                        profile.listen(rankingUpdater: rankingUpdater, andFriends: true) //TODO: Check
+                        profile.load(rankingUpdater: rankingUpdater) {
+                            profile.friendProfiles = profile.friendProfiles.sorted(by: { $0.name < $1.name })
+                        }
+                        profile.listen(rankingUpdater: rankingUpdater) {
+                            profile.friendProfiles = profile.friendProfiles.sorted(by: { $0.name < $1.name })
+                        }
                         print("Y escuchador conectado")
                     }
                 }

@@ -28,7 +28,7 @@ struct FindPeopleView: View {
                         let document = snapshot.documents[i]
                         let possibleFriendID = document.documentID
                         if (possibleFriendID != profile.userId &&
-                                !profile.friends.map({$0.userId}).contains(possibleFriendID) &&
+                                !profile.friendProfiles.map({$0.userId}).contains(possibleFriendID) &&
                                 !profile.friendRequests.contains(possibleFriendID)
                         ) {
                             let possibleFriendProfile = Profile(userId: possibleFriendID)

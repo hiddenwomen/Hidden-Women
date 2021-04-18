@@ -34,7 +34,7 @@ struct MakeNewFriendsView: View {
                 
                 Button(action: {
                     if possibleFriendUserId != "" {
-                        sendFriendRequest(destinationId: possibleFriendUserId, withMyProfile: profile) { error in } // TODO: Tratamiento del error
+                        profile.sendFriendRequest(destinationId: possibleFriendUserId) { error in } // TODO: Tratamiento del error
                         showBanner = true
                     }
                 } ){
@@ -51,7 +51,7 @@ struct MakeNewFriendsView: View {
                         if document.exists {
                             let data = document.data() ?? ["userId": ""]
                             possibleFriendUserId = data["userId"] as? String ?? ""
-                            if profile.friends.map({$0.userId}).contains(possibleFriendUserId) || profile.email == newEmail {
+                            if profile.friendProfiles.map({$0.userId}).contains(possibleFriendUserId) || profile.email == newEmail {
                                 notValidEmail = true
                             }
                         }

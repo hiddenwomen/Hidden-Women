@@ -17,7 +17,7 @@ struct MyFriendsView: View {
                 .font(.largeTitle)
                 .padding()
             List {
-                ForEach(profile.friends, id:\.self.userId) { friend in
+                ForEach(profile.friendProfiles, id:\.self.userId) { friend in
                     NavigationLink(destination: FriendProfileView(friendProfile: friend, showFriendRequestButton: false, notifications: $notifications)) {
                         HStack {
                             Image(uiImage: friend.picture ?? UIImage())
@@ -43,13 +43,14 @@ struct MyFriendsView: View {
                 profile.getChatNotifications(notificationFrom: { friendId in
                     notifications.append(friendId)
                 })
+                profile.friends = profile.friends.sorted(by: {$0 < $1})
             }) {
                 Image(systemName: "arrow.clockwise")
                 Text("Refresh")
             }
         }
         .onAppear {
-            print("MY FRIENDs VIEW \(profile.friends)")
+            print("MY FRIENDs VIEW \(profile.friendProfiles)")
             profile.getChatNotifications(notificationFrom: { friendId in
                 notifications.append(friendId)
             })
