@@ -98,6 +98,7 @@ struct MultiplePairThemUpView: View {
                     }
                 } else {
                     VStack {
+
                         ZStack {
                             Circle()
                                 .foregroundColor(Color("Turquesa"))
@@ -119,6 +120,7 @@ struct MultiplePairThemUpView: View {
                             }
                         }
                         .padding()
+
                         if mistakes.allSatisfy({$0.count == 0}) {
                             Text("Perfect score!")
                                 .font(.title)
@@ -126,33 +128,39 @@ struct MultiplePairThemUpView: View {
                             Text("Things you should learn:")
                                 .font(.title)
                         }
+
+
                         ScrollView {
                             VStack (alignment: .leading){
-                                ForEach(0..<mistakes.count) { m in
+                                ForEach(0..<mistakes.count) { m in // Para cada pantalla m con errores
                                     Group {
-                                        if mistakes[m].count > 0 {
+                                        if mistakes[m].count > 0 { // Hay errores en la pantalla
                                             VStack(alignment: .leading) {
                                                 HStack {
                                                     Image(systemName: "play")
                                                     Text("Pair them up").bold() + Text(pairThemUpConfig.games > 1 ? " \(m+1)" : "").bold()
                                                 }
-                                                ForEach(0..<mistakes[m].count) { i in
-                                                    HStack {
-                                                        Image(mistakes[m][i].picture)
-                                                            .resizable()
-                                                            .scaledToFit()
-                                                            .frame(width: 50)
-                                                            .clipShape(Circle())
-                                                            .padding(.trailing, 10)
-                                                        VStack(alignment: .leading) {
-                                                            Text(
-                                                                String.localizedStringWithFormat(NSLocalizedString("Your answer: %@", comment: ""), NSLocalizedString(mistakes[m][i].incorrectAnswer, comment: ""))
-                                                            )
-                                                            Text(
-                                                                String.localizedStringWithFormat(NSLocalizedString("Correct answer: %@", comment: ""), mistakes[m][i].correctAnswer)
-                                                            )
+                                                Group {
+                                                    ForEach(0..<mistakes[m].count) { i in // Para cada error
+                                                        HStack {
+                                                            
+                                                            Image(mistakes[m][i].picture)
+                                                                .resizable()
+                                                                .scaledToFit()
+                                                                .frame(width: 50)
+                                                                .clipShape(Circle())
+                                                                .padding(.trailing, 10)
+                                                            
+                                                            VStack(alignment: .leading) {
+                                                                Text(
+                                                                    String.localizedStringWithFormat(NSLocalizedString("Your answer: %@", comment: ""), NSLocalizedString(mistakes[m][i].incorrectAnswer, comment: ""))
+                                                                )
+                                                                Text(
+                                                                    String.localizedStringWithFormat(NSLocalizedString("Correct answer: %@", comment: ""), mistakes[m][i].correctAnswer)
+                                                                )
+                                                            }
+                                                            Spacer()
                                                         }
-                                                        Spacer()
                                                     }
                                                 }
                                             }
